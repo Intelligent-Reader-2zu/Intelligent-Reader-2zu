@@ -1,0 +1,4106 @@
+{
+  "status": "succeeded",
+  "text": "3\na compilation of various multi-wavelength observations\nthat span IR, optical/UV, soft, and hard X-rays, and\nwhere tE = σTc/4πGmp = 4.5 × 108yr is the Edding-\nrepresents an update to Ref. [26]. The QLF is fit by a\nton time, and €,Mace corresponds to the fraction of the\ndouble power-law\nmass that is radiated as it falls into the black hole. The\ndn\nφ\nmass that is added to the black hole M is therefore\nφ(L) ≡\n(6)\n(L/Ls)γ1 + (L/Ls)γ2\nd log10 L\nM = (1 − €r)Macc. If we define the bolometric lumi-\nnosity function of quasars φ(L, t)d log10 L as the number\nAll results shown in this work correspond to “global fit\ndensity of quasars per log luminosity, and we suppose\nA” in Ref. [27], in which the model parameters φ., L.,\nthat a fraction δ(M, t) of black holes is active at a time\nγ1, and 72 have a parametrized redshift dependence and\nt, then φ(L, t) is related to the black hole mass function\nare simultaneously fit across all redshifts.\nvia\nEq. can be integrated over time, which results in\n(4)\nφ(L, t)d log10 L = δ(M, t)ψ(M, t)dM.\nλ²c²\n(1 − cr)\nψ0(M) − ψ(M, z) \ntE ln(10)\nThe quantity δ is the BH duty cycle, where (M(M, t)) =\nér\n(10)\ndt ∂φ|\nδ(M, t)M(M, t). Combining Eqs. βand④ we find\ndz\nTe z\nJo\n=λMc²/tε\n(1 − cr)\ndL\nφ(L, t)\n((M, t)ψ(M, t) =\n(5)\ndM\ncrc21n(10)\nwhere ψ0 is the mass function today. For a sufficiently\nhigh redshift z, ψ(M, z) is negligible compared to ψo,\nwe can therefore rewrite the second term on the left-hand\ni.e., in the absence of mergers, the mass function today\nside of Eq.  in terms of the quasar luminosity function\nmust equal the accreted mass. We model the present-day\nmass function as in Refs. [28, 29], which we very briefly\n(1 − ∈r)\nλ²c2\n∂ψ\n∂φ|\n(M, t) +\n= 0, (6)\nsummarize here.\n{ln(10) ∂L\n1e\nεr\nThe present-day SMBH mass function can be esti-\nIL=λMc²/tE\nmated from scaling relations between black hole mass\nMultiplying by the mass and integrating the equation\nand properties of the host galaxy (say, property X) and\nabove over time shows that the black hole mass density\ngalaxy catalogs, which give dn/dX. The scaling relation\nis directly related to the integral of the quasar luminosity\nis expressed as\nfunction\n(11)\nlog10 M = a• + b. log10 X.\nè()φ\n(7)\nρBH\nUsing the galaxy velocity dispersion as our fiducial proxy\nfor SMBH mass, we parametrize the velocity dispersion\ndt\nd log10 Lφ(L, z)L,\ndz\n(8)\nfunction (VDF) as\ncc2\ndz\ne−(010.)º\ndn\ndσ\nwhich is the Sołtan argument [30].\n(12)\ndσ\nΓ(α/β)\nNote that the radiative efficiency only changes an over-\nall amplitude of ρBí, while the Eddington ratio changes\nIncluding scatter in the relation between black hole mass\nboth the amplitude and the shape of the final SMBH\nand galaxy property leads to\nmass function, while keeping the total mass density fixed.\nAs a toy example consider a scenario in which the red-\np(l0g10 M| l0g10 σ) dn\nψo(M) =\nshift evolution of the parameters is negligible, then the\n(13)\ndo\n(σ),\nM log(10)\ndσ\nquasar luminosity function (QLF) is always given by a\ndouble power-law, with a break at a luminosity L.. The\nwhere p is assumed to be log-normal\ncorresponding break in the SMBH mass function will be\nM. = L,tε/λc² and the power-laws of dn/dlog M will\n1\np(log10M|1og10 σ) =\n√2π€0\nbe the same as φ(L). Therefore, reducing (increasing) λ\nincreases (reduces) the characteristic mass of the turn-\nb. log10 σ\nover in the SMBH mass function. In this scenario, black\n× exp\n2\né0\nholes of all masses grow at the same time. The mea-\nsured quasar luminosity function, however, has a break\n(14)\nthat evolves over time, mostly decreasing with redshift.\nThis implies that more massive black holes assemble their\nAs in Refs. 28 29], the adopt the velocity disper-\nmass carlier on.\nsion function as the mass proxy. We therefore use\nX = σ/200km s−1 in Eq. [] and the M − σ relation\nSMBH growth from accretion can thus be modelled\nby directly relating it to the observed QLF. We use the\nfrom Ref. [31], which corresponds to a. = 8.32 ± 0.05,\nbolometric QLF presented in Ref. [27], which is based on\nb. = 5.64 ± 0.32, and €0 = 0.38. For the VDF, we choose",
+  "lines": [
+    "3",
+    "a compilation of various multi-wavelength observations",
+    "that span IR, optical/UV, soft, and hard X-rays, and",
+    "where tE = σTc/4πGmp = 4.5 × 108yr is the Edding-",
+    "represents an update to Ref. [26]. The QLF is fit by a",
+    "ton time, and €,Mace corresponds to the fraction of the",
+    "double power-law",
+    "mass that is radiated as it falls into the black hole. The",
+    "dn",
+    "φ",
+    "mass that is added to the black hole M is therefore",
+    "φ(L) ≡",
+    "(6)",
+    "(L/Ls)γ1 + (L/Ls)γ2",
+    "d log10 L",
+    "M = (1 − €r)Macc. If we define the bolometric lumi-",
+    "nosity function of quasars φ(L, t)d log10 L as the number",
+    "All results shown in this work correspond to “global fit",
+    "density of quasars per log luminosity, and we suppose",
+    "A” in Ref. [27], in which the model parameters φ., L.,",
+    "that a fraction δ(M, t) of black holes is active at a time",
+    "γ1, and 72 have a parametrized redshift dependence and",
+    "t, then φ(L, t) is related to the black hole mass function",
+    "are simultaneously fit across all redshifts.",
+    "via",
+    "Eq. can be integrated over time, which results in",
+    "(4)",
+    "φ(L, t)d log10 L = δ(M, t)ψ(M, t)dM.",
+    "λ²c²",
+    "(1 − cr)",
+    "ψ0(M) − ψ(M, z) ",
+    "tE ln(10)",
+    "The quantity δ is the BH duty cycle, where (M(M, t)) =",
+    "ér",
+    "(10)",
+    "dt ∂φ|",
+    "δ(M, t)M(M, t). Combining Eqs. βand④ we find",
+    "dz",
+    "Te z",
+    "Jo",
+    "=λMc²/tε",
+    "(1 − cr)",
+    "dL",
+    "φ(L, t)",
+    "((M, t)ψ(M, t) =",
+    "(5)",
+    "dM",
+    "crc21n(10)",
+    "where ψ0 is the mass function today. For a sufficiently",
+    "high redshift z, ψ(M, z) is negligible compared to ψo,",
+    "we can therefore rewrite the second term on the left-hand",
+    "i.e., in the absence of mergers, the mass function today",
+    "side of Eq.  in terms of the quasar luminosity function",
+    "must equal the accreted mass. We model the present-day",
+    "mass function as in Refs. [28, 29], which we very briefly",
+    "(1 − ∈r)",
+    "λ²c2",
+    "∂ψ",
+    "∂φ|",
+    "(M, t) +",
+    "= 0, (6)",
+    "summarize here.",
+    "{ln(10) ∂L",
+    "1e",
+    "εr",
+    "The present-day SMBH mass function can be esti-",
+    "IL=λMc²/tE",
+    "mated from scaling relations between black hole mass",
+    "Multiplying by the mass and integrating the equation",
+    "and properties of the host galaxy (say, property X) and",
+    "above over time shows that the black hole mass density",
+    "galaxy catalogs, which give dn/dX. The scaling relation",
+    "is directly related to the integral of the quasar luminosity",
+    "is expressed as",
+    "function",
+    "(11)",
+    "log10 M = a• + b. log10 X.",
+    "è()φ",
+    "(7)",
+    "ρBH",
+    "Using the galaxy velocity dispersion as our fiducial proxy",
+    "for SMBH mass, we parametrize the velocity dispersion",
+    "dt",
+    "d log10 Lφ(L, z)L,",
+    "dz",
+    "(8)",
+    "function (VDF) as",
+    "cc2",
+    "dz",
+    "e−(010.)º",
+    "dn",
+    "dσ",
+    "which is the Sołtan argument [30].",
+    "(12)",
+    "dσ",
+    "Γ(α/β)",
+    "Note that the radiative efficiency only changes an over-",
+    "all amplitude of ρBí, while the Eddington ratio changes",
+    "Including scatter in the relation between black hole mass",
+    "both the amplitude and the shape of the final SMBH",
+    "and galaxy property leads to",
+    "mass function, while keeping the total mass density fixed.",
+    "As a toy example consider a scenario in which the red-",
+    "p(l0g10 M| l0g10 σ) dn",
+    "ψo(M) =",
+    "shift evolution of the parameters is negligible, then the",
+    "(13)",
+    "do",
+    "(σ),",
+    "M log(10)",
+    "dσ",
+    "quasar luminosity function (QLF) is always given by a",
+    "double power-law, with a break at a luminosity L.. The",
+    "where p is assumed to be log-normal",
+    "corresponding break in the SMBH mass function will be",
+    "M. = L,tε/λc² and the power-laws of dn/dlog M will",
+    "1",
+    "p(log10M|1og10 σ) =",
+    "√2π€0",
+    "be the same as φ(L). Therefore, reducing (increasing) λ",
+    "increases (reduces) the characteristic mass of the turn-",
+    "b. log10 σ",
+    "over in the SMBH mass function. In this scenario, black",
+    "× exp",
+    "2",
+    "é0",
+    "holes of all masses grow at the same time. The mea-",
+    "sured quasar luminosity function, however, has a break",
+    "(14)",
+    "that evolves over time, mostly decreasing with redshift.",
+    "This implies that more massive black holes assemble their",
+    "As in Refs. 28 29], the adopt the velocity disper-",
+    "mass carlier on.",
+    "sion function as the mass proxy. We therefore use",
+    "X = σ/200km s−1 in Eq. [] and the M − σ relation",
+    "SMBH growth from accretion can thus be modelled",
+    "by directly relating it to the observed QLF. We use the",
+    "from Ref. [31], which corresponds to a. = 8.32 ± 0.05,",
+    "bolometric QLF presented in Ref. [27], which is based on",
+    "b. = 5.64 ± 0.32, and €0 = 0.38. For the VDF, we choose"
+  ],
+  "items": [
+    {
+      "text": "3",
+      "confidence": 99.998,
+      "bbox_polygon": [
+        [
+          740.0,
+          37.0
+        ],
+        [
+          752.0,
+          37.0
+        ],
+        [
+          752.0,
+          50.0
+        ],
+        [
+          740.0,
+          50.0
+        ]
+      ],
+      "bbox": [
+        740.0,
+        37.0,
+        12.0,
+        13.0
+      ]
+    },
+    {
+      "text": "a compilation of various multi-wavelength observations",
+      "confidence": 99.266,
+      "bbox_polygon": [
+        [
+          420.0,
+          71.0
+        ],
+        [
+          751.0,
+          71.0
+        ],
+        [
+          751.0,
+          87.0
+        ],
+        [
+          420.0,
+          87.0
+        ]
+      ],
+      "bbox": [
+        420.0,
+        71.0,
+        331.0,
+        16.0
+      ]
+    },
+    {
+      "text": "that span IR, optical/UV, soft, and hard X-rays, and",
+      "confidence": 98.208,
+      "bbox_polygon": [
+        [
+          420.0,
+          86.0
+        ],
+        [
+          752.0,
+          86.0
+        ],
+        [
+          752.0,
+          102.0
+        ],
+        [
+          420.0,
+          102.0
+        ]
+      ],
+      "bbox": [
+        420.0,
+        86.0,
+        332.0,
+        16.0
+      ]
+    },
+    {
+      "text": "where tE = σTc/4πGmp = 4.5 × 108yr is the Edding-",
+      "confidence": 97.431,
+      "bbox_polygon": [
+        [
+          69.0,
+          96.0
+        ],
+        [
+          398.0,
+          96.0
+        ],
+        [
+          398.0,
+          113.0
+        ],
+        [
+          69.0,
+          113.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        96.0,
+        329.0,
+        17.0
+      ]
+    },
+    {
+      "text": "represents an update to Ref. [26]. The QLF is fit by a",
+      "confidence": 99.35300000000001,
+      "bbox_polygon": [
+        [
+          420.0,
+          101.0
+        ],
+        [
+          752.0,
+          101.0
+        ],
+        [
+          752.0,
+          118.0
+        ],
+        [
+          420.0,
+          118.0
+        ]
+      ],
+      "bbox": [
+        420.0,
+        101.0,
+        332.0,
+        17.0
+      ]
+    },
+    {
+      "text": "ton time, and €,Mace corresponds to the fraction of the",
+      "confidence": 98.129,
+      "bbox_polygon": [
+        [
+          69.0,
+          114.0
+        ],
+        [
+          400.0,
+          114.0
+        ],
+        [
+          400.0,
+          130.0
+        ],
+        [
+          69.0,
+          130.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        114.0,
+        331.0,
+        16.0
+      ]
+    },
+    {
+      "text": "double power-law",
+      "confidence": 99.994,
+      "bbox_polygon": [
+        [
+          420.0,
+          116.0
+        ],
+        [
+          526.0,
+          116.0
+        ],
+        [
+          526.0,
+          133.0
+        ],
+        [
+          420.0,
+          133.0
+        ]
+      ],
+      "bbox": [
+        420.0,
+        116.0,
+        106.0,
+        17.0
+      ]
+    },
+    {
+      "text": "mass that is radiated as it falls into the black hole. The",
+      "confidence": 98.665,
+      "bbox_polygon": [
+        [
+          68.0,
+          129.0
+        ],
+        [
+          401.0,
+          129.0
+        ],
+        [
+          401.0,
+          145.0
+        ],
+        [
+          68.0,
+          145.0
+        ]
+      ],
+      "bbox": [
+        68.0,
+        129.0,
+        333.0,
+        16.0
+      ]
+    },
+    {
+      "text": "dn",
+      "confidence": 98.942,
+      "bbox_polygon": [
+        [
+          525.0,
+          141.0
+        ],
+        [
+          545.0,
+          141.0
+        ],
+        [
+          545.0,
+          157.0
+        ],
+        [
+          525.0,
+          157.0
+        ]
+      ],
+      "bbox": [
+        525.0,
+        141.0,
+        20.0,
+        16.0
+      ]
+    },
+    {
+      "text": "φ",
+      "confidence": 99.85300000000001,
+      "bbox_polygon": [
+        [
+          632.0,
+          142.0
+        ],
+        [
+          650.0,
+          142.0
+        ],
+        [
+          650.0,
+          160.0
+        ],
+        [
+          632.0,
+          160.0
+        ]
+      ],
+      "bbox": [
+        632.0,
+        142.0,
+        18.0,
+        18.0
+      ]
+    },
+    {
+      "text": "mass that is added to the black hole M is therefore",
+      "confidence": 98.749,
+      "bbox_polygon": [
+        [
+          69.0,
+          144.0
+        ],
+        [
+          401.0,
+          144.0
+        ],
+        [
+          401.0,
+          160.0
+        ],
+        [
+          69.0,
+          160.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        144.0,
+        332.0,
+        16.0
+      ]
+    },
+    {
+      "text": "φ(L) ≡",
+      "confidence": 91.25999999999999,
+      "bbox_polygon": [
+        [
+          461.0,
+          148.0
+        ],
+        [
+          510.0,
+          148.0
+        ],
+        [
+          510.0,
+          169.0
+        ],
+        [
+          461.0,
+          169.0
+        ]
+      ],
+      "bbox": [
+        461.0,
+        148.0,
+        49.0,
+        21.0
+      ]
+    },
+    {
+      "text": "(6)",
+      "confidence": 99.97200000000001,
+      "bbox_polygon": [
+        [
+          729.0,
+          149.0
+        ],
+        [
+          752.0,
+          149.0
+        ],
+        [
+          752.0,
+          169.0
+        ],
+        [
+          729.0,
+          169.0
+        ]
+      ],
+      "bbox": [
+        729.0,
+        149.0,
+        23.0,
+        20.0
+      ]
+    },
+    {
+      "text": "(L/Ls)γ1 + (L/Ls)γ2",
+      "confidence": 85.291,
+      "bbox_polygon": [
+        [
+          575.0,
+          157.0
+        ],
+        [
+          705.0,
+          157.0
+        ],
+        [
+          705.0,
+          177.0
+        ],
+        [
+          575.0,
+          177.0
+        ]
+      ],
+      "bbox": [
+        575.0,
+        157.0,
+        130.0,
+        20.0
+      ]
+    },
+    {
+      "text": "d log10 L",
+      "confidence": 96.795,
+      "bbox_polygon": [
+        [
+          507.0,
+          158.0
+        ],
+        [
+          565.0,
+          158.0
+        ],
+        [
+          565.0,
+          179.0
+        ],
+        [
+          507.0,
+          179.0
+        ]
+      ],
+      "bbox": [
+        507.0,
+        158.0,
+        58.0,
+        21.0
+      ]
+    },
+    {
+      "text": "M = (1 − €r)Macc. If we define the bolometric lumi-",
+      "confidence": 97.066,
+      "bbox_polygon": [
+        [
+          70.0,
+          159.0
+        ],
+        [
+          400.0,
+          159.0
+        ],
+        [
+          400.0,
+          176.0
+        ],
+        [
+          70.0,
+          176.0
+        ]
+      ],
+      "bbox": [
+        70.0,
+        159.0,
+        330.0,
+        17.0
+      ]
+    },
+    {
+      "text": "nosity function of quasars φ(L, t)d log10 L as the number",
+      "confidence": 97.241,
+      "bbox_polygon": [
+        [
+          69.0,
+          175.0
+        ],
+        [
+          401.0,
+          175.0
+        ],
+        [
+          401.0,
+          191.0
+        ],
+        [
+          69.0,
+          191.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        175.0,
+        332.0,
+        16.0
+      ]
+    },
+    {
+      "text": "All results shown in this work correspond to “global fit",
+      "confidence": 99.866,
+      "bbox_polygon": [
+        [
+          421.0,
+          186.0
+        ],
+        [
+          751.0,
+          186.0
+        ],
+        [
+          751.0,
+          202.0
+        ],
+        [
+          421.0,
+          202.0
+        ]
+      ],
+      "bbox": [
+        421.0,
+        186.0,
+        330.0,
+        16.0
+      ]
+    },
+    {
+      "text": "density of quasars per log luminosity, and we suppose",
+      "confidence": 99.595,
+      "bbox_polygon": [
+        [
+          69.0,
+          190.0
+        ],
+        [
+          402.0,
+          190.0
+        ],
+        [
+          402.0,
+          207.0
+        ],
+        [
+          69.0,
+          207.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        190.0,
+        333.0,
+        17.0
+      ]
+    },
+    {
+      "text": "A” in Ref. [27], in which the model parameters φ., L.,",
+      "confidence": 97.813,
+      "bbox_polygon": [
+        [
+          421.0,
+          201.0
+        ],
+        [
+          750.0,
+          201.0
+        ],
+        [
+          750.0,
+          218.0
+        ],
+        [
+          421.0,
+          218.0
+        ]
+      ],
+      "bbox": [
+        421.0,
+        201.0,
+        329.0,
+        17.0
+      ]
+    },
+    {
+      "text": "that a fraction δ(M, t) of black holes is active at a time",
+      "confidence": 99.168,
+      "bbox_polygon": [
+        [
+          69.0,
+          205.0
+        ],
+        [
+          400.0,
+          205.0
+        ],
+        [
+          400.0,
+          221.0
+        ],
+        [
+          69.0,
+          221.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        205.0,
+        331.0,
+        16.0
+      ]
+    },
+    {
+      "text": "γ1, and 72 have a parametrized redshift dependence and",
+      "confidence": 98.441,
+      "bbox_polygon": [
+        [
+          420.0,
+          217.0
+        ],
+        [
+          751.0,
+          217.0
+        ],
+        [
+          751.0,
+          234.0
+        ],
+        [
+          420.0,
+          234.0
+        ]
+      ],
+      "bbox": [
+        420.0,
+        217.0,
+        331.0,
+        17.0
+      ]
+    },
+    {
+      "text": "t, then φ(L, t) is related to the black hole mass function",
+      "confidence": 99.062,
+      "bbox_polygon": [
+        [
+          69.0,
+          221.0
+        ],
+        [
+          400.0,
+          221.0
+        ],
+        [
+          400.0,
+          237.0
+        ],
+        [
+          69.0,
+          237.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        221.0,
+        331.0,
+        16.0
+      ]
+    },
+    {
+      "text": "are simultaneously fit across all redshifts.",
+      "confidence": 99.49900000000001,
+      "bbox_polygon": [
+        [
+          419.0,
+          231.0
+        ],
+        [
+          665.0,
+          231.0
+        ],
+        [
+          665.0,
+          248.0
+        ],
+        [
+          419.0,
+          248.0
+        ]
+      ],
+      "bbox": [
+        419.0,
+        231.0,
+        246.0,
+        17.0
+      ]
+    },
+    {
+      "text": "via",
+      "confidence": 99.713,
+      "bbox_polygon": [
+        [
+          69.0,
+          236.0
+        ],
+        [
+          92.0,
+          236.0
+        ],
+        [
+          92.0,
+          252.0
+        ],
+        [
+          69.0,
+          252.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        236.0,
+        23.0,
+        16.0
+      ]
+    },
+    {
+      "text": "Eq. can be integrated over time, which results in",
+      "confidence": 98.44000000000001,
+      "bbox_polygon": [
+        [
+          434.0,
+          247.0
+        ],
+        [
+          733.0,
+          247.0
+        ],
+        [
+          733.0,
+          264.0
+        ],
+        [
+          434.0,
+          264.0
+        ]
+      ],
+      "bbox": [
+        434.0,
+        247.0,
+        299.0,
+        17.0
+      ]
+    },
+    {
+      "text": "(4)",
+      "confidence": 99.92999999999999,
+      "bbox_polygon": [
+        [
+          379.0,
+          263.0
+        ],
+        [
+          401.0,
+          263.0
+        ],
+        [
+          401.0,
+          283.0
+        ],
+        [
+          379.0,
+          283.0
+        ]
+      ],
+      "bbox": [
+        379.0,
+        263.0,
+        22.0,
+        20.0
+      ]
+    },
+    {
+      "text": "φ(L, t)d log10 L = δ(M, t)ψ(M, t)dM.",
+      "confidence": 97.25,
+      "bbox_polygon": [
+        [
+          127.0,
+          265.0
+        ],
+        [
+          343.0,
+          265.0
+        ],
+        [
+          343.0,
+          281.0
+        ],
+        [
+          127.0,
+          281.0
+        ]
+      ],
+      "bbox": [
+        127.0,
+        265.0,
+        216.0,
+        16.0
+      ]
+    },
+    {
+      "text": "λ²c²",
+      "confidence": 76.58500000000001,
+      "bbox_polygon": [
+        [
+          609.0,
+          271.0
+        ],
+        [
+          643.0,
+          271.0
+        ],
+        [
+          643.0,
+          290.0
+        ],
+        [
+          609.0,
+          290.0
+        ]
+      ],
+      "bbox": [
+        609.0,
+        271.0,
+        34.0,
+        19.0
+      ]
+    },
+    {
+      "text": "(1 − cr)",
+      "confidence": 89.563,
+      "bbox_polygon": [
+        [
+          552.0,
+          272.0
+        ],
+        [
+          604.0,
+          272.0
+        ],
+        [
+          604.0,
+          293.0
+        ],
+        [
+          552.0,
+          293.0
+        ]
+      ],
+      "bbox": [
+        552.0,
+        272.0,
+        52.0,
+        21.0
+      ]
+    },
+    {
+      "text": "ψ0(M) − ψ(M, z) ",
+      "confidence": 93.849,
+      "bbox_polygon": [
+        [
+          435.0,
+          280.0
+        ],
+        [
+          546.0,
+          280.0
+        ],
+        [
+          546.0,
+          300.0
+        ],
+        [
+          435.0,
+          300.0
+        ]
+      ],
+      "bbox": [
+        435.0,
+        280.0,
+        111.0,
+        20.0
+      ]
+    },
+    {
+      "text": "tE ln(10)",
+      "confidence": 87.777,
+      "bbox_polygon": [
+        [
+          598.0,
+          290.0
+        ],
+        [
+          656.0,
+          290.0
+        ],
+        [
+          656.0,
+          311.0
+        ],
+        [
+          598.0,
+          311.0
+        ]
+      ],
+      "bbox": [
+        598.0,
+        290.0,
+        58.0,
+        21.0
+      ]
+    },
+    {
+      "text": "The quantity δ is the BH duty cycle, where (M(M, t)) =",
+      "confidence": 98.964,
+      "bbox_polygon": [
+        [
+          70.0,
+          295.0
+        ],
+        [
+          401.0,
+          295.0
+        ],
+        [
+          401.0,
+          311.0
+        ],
+        [
+          70.0,
+          311.0
+        ]
+      ],
+      "bbox": [
+        70.0,
+        295.0,
+        331.0,
+        16.0
+      ]
+    },
+    {
+      "text": "ér",
+      "confidence": 93.24799999999999,
+      "bbox_polygon": [
+        [
+          570.0,
+          295.0
+        ],
+        [
+          584.0,
+          295.0
+        ],
+        [
+          584.0,
+          308.0
+        ],
+        [
+          570.0,
+          308.0
+        ]
+      ],
+      "bbox": [
+        570.0,
+        295.0,
+        14.0,
+        13.0
+      ]
+    },
+    {
+      "text": "(10)",
+      "confidence": 99.998,
+      "bbox_polygon": [
+        [
+          722.0,
+          302.0
+        ],
+        [
+          752.0,
+          302.0
+        ],
+        [
+          752.0,
+          321.0
+        ],
+        [
+          722.0,
+          321.0
+        ]
+      ],
+      "bbox": [
+        722.0,
+        302.0,
+        30.0,
+        19.0
+      ]
+    },
+    {
+      "text": "dt ∂φ|",
+      "confidence": 95.78999999999999,
+      "bbox_polygon": [
+        [
+          593.0,
+          309.0
+        ],
+        [
+          646.0,
+          309.0
+        ],
+        [
+          646.0,
+          330.0
+        ],
+        [
+          593.0,
+          330.0
+        ]
+      ],
+      "bbox": [
+        593.0,
+        309.0,
+        53.0,
+        21.0
+      ]
+    },
+    {
+      "text": "δ(M, t)M(M, t). Combining Eqs. βand④ we find",
+      "confidence": 93.94200000000001,
+      "bbox_polygon": [
+        [
+          68.0,
+          310.0
+        ],
+        [
+          365.0,
+          310.0
+        ],
+        [
+          365.0,
+          330.0
+        ],
+        [
+          68.0,
+          330.0
+        ]
+      ],
+      "bbox": [
+        68.0,
+        310.0,
+        297.0,
+        20.0
+      ]
+    },
+    {
+      "text": "dz",
+      "confidence": 99.858,
+      "bbox_polygon": [
+        [
+          575.0,
+          322.0
+        ],
+        [
+          592.0,
+          322.0
+        ],
+        [
+          592.0,
+          334.0
+        ],
+        [
+          575.0,
+          334.0
+        ]
+      ],
+      "bbox": [
+        575.0,
+        322.0,
+        17.0,
+        12.0
+      ]
+    },
+    {
+      "text": "Te z",
+      "confidence": 53.861000000000004,
+      "bbox_polygon": [
+        [
+          592.0,
+          327.0
+        ],
+        [
+          648.0,
+          327.0
+        ],
+        [
+          648.0,
+          348.0
+        ],
+        [
+          592.0,
+          348.0
+        ]
+      ],
+      "bbox": [
+        592.0,
+        327.0,
+        56.0,
+        21.0
+      ]
+    },
+    {
+      "text": "Jo",
+      "confidence": 99.565,
+      "bbox_polygon": [
+        [
+          555.0,
+          334.0
+        ],
+        [
+          571.0,
+          334.0
+        ],
+        [
+          571.0,
+          347.0
+        ],
+        [
+          555.0,
+          347.0
+        ]
+      ],
+      "bbox": [
+        555.0,
+        334.0,
+        16.0,
+        13.0
+      ]
+    },
+    {
+      "text": "=λMc²/tε",
+      "confidence": 89.519,
+      "bbox_polygon": [
+        [
+          648.0,
+          334.0
+        ],
+        [
+          705.0,
+          334.0
+        ],
+        [
+          705.0,
+          351.0
+        ],
+        [
+          648.0,
+          351.0
+        ]
+      ],
+      "bbox": [
+        648.0,
+        334.0,
+        57.0,
+        17.0
+      ]
+    },
+    {
+      "text": "(1 − cr)",
+      "confidence": 90.515,
+      "bbox_polygon": [
+        [
+          235.0,
+          337.0
+        ],
+        [
+          288.0,
+          337.0
+        ],
+        [
+          288.0,
+          358.0
+        ],
+        [
+          235.0,
+          358.0
+        ]
+      ],
+      "bbox": [
+        235.0,
+        337.0,
+        53.0,
+        21.0
+      ]
+    },
+    {
+      "text": "dL",
+      "confidence": 99.78399999999999,
+      "bbox_polygon": [
+        [
+          333.0,
+          340.0
+        ],
+        [
+          355.0,
+          340.0
+        ],
+        [
+          355.0,
+          357.0
+        ],
+        [
+          333.0,
+          357.0
+        ]
+      ],
+      "bbox": [
+        333.0,
+        340.0,
+        22.0,
+        17.0
+      ]
+    },
+    {
+      "text": "φ(L, t)",
+      "confidence": 97.665,
+      "bbox_polygon": [
+        [
+          289.0,
+          345.0
+        ],
+        [
+          335.0,
+          345.0
+        ],
+        [
+          335.0,
+          370.0
+        ],
+        [
+          289.0,
+          370.0
+        ]
+      ],
+      "bbox": [
+        289.0,
+        345.0,
+        46.0,
+        25.0
+      ]
+    },
+    {
+      "text": "((M, t)ψ(M, t) =",
+      "confidence": 95.896,
+      "bbox_polygon": [
+        [
+          109.0,
+          347.0
+        ],
+        [
+          230.0,
+          347.0
+        ],
+        [
+          230.0,
+          367.0
+        ],
+        [
+          109.0,
+          367.0
+        ]
+      ],
+      "bbox": [
+        109.0,
+        347.0,
+        121.0,
+        20.0
+      ]
+    },
+    {
+      "text": "(5)",
+      "confidence": 99.995,
+      "bbox_polygon": [
+        [
+          379.0,
+          347.0
+        ],
+        [
+          401.0,
+          347.0
+        ],
+        [
+          401.0,
+          368.0
+        ],
+        [
+          379.0,
+          368.0
+        ]
+      ],
+      "bbox": [
+        379.0,
+        347.0,
+        22.0,
+        21.0
+      ]
+    },
+    {
+      "text": "dM",
+      "confidence": 98.892,
+      "bbox_polygon": [
+        [
+          332.0,
+          355.0
+        ],
+        [
+          361.0,
+          355.0
+        ],
+        [
+          361.0,
+          373.0
+        ],
+        [
+          332.0,
+          373.0
+        ]
+      ],
+      "bbox": [
+        332.0,
+        355.0,
+        29.0,
+        18.0
+      ]
+    },
+    {
+      "text": "crc21n(10)",
+      "confidence": 91.987,
+      "bbox_polygon": [
+        [
+          229.0,
+          356.0
+        ],
+        [
+          295.0,
+          356.0
+        ],
+        [
+          295.0,
+          376.0
+        ],
+        [
+          229.0,
+          376.0
+        ]
+      ],
+      "bbox": [
+        229.0,
+        356.0,
+        66.0,
+        20.0
+      ]
+    },
+    {
+      "text": "where ψ0 is the mass function today. For a sufficiently",
+      "confidence": 98.80499999999999,
+      "bbox_polygon": [
+        [
+          421.0,
+          359.0
+        ],
+        [
+          751.0,
+          359.0
+        ],
+        [
+          751.0,
+          375.0
+        ],
+        [
+          421.0,
+          375.0
+        ]
+      ],
+      "bbox": [
+        421.0,
+        359.0,
+        330.0,
+        16.0
+      ]
+    },
+    {
+      "text": "high redshift z, ψ(M, z) is negligible compared to ψo,",
+      "confidence": 98.455,
+      "bbox_polygon": [
+        [
+          418.0,
+          372.0
+        ],
+        [
+          752.0,
+          373.0
+        ],
+        [
+          752.0,
+          393.0
+        ],
+        [
+          418.0,
+          392.0
+        ]
+      ],
+      "bbox": [
+        418.0,
+        372.0,
+        334.0,
+        21.0
+      ]
+    },
+    {
+      "text": "we can therefore rewrite the second term on the left-hand",
+      "confidence": 99.786,
+      "bbox_polygon": [
+        [
+          70.0,
+          386.0
+        ],
+        [
+          400.0,
+          386.0
+        ],
+        [
+          400.0,
+          402.0
+        ],
+        [
+          70.0,
+          402.0
+        ]
+      ],
+      "bbox": [
+        70.0,
+        386.0,
+        330.0,
+        16.0
+      ]
+    },
+    {
+      "text": "i.e., in the absence of mergers, the mass function today",
+      "confidence": 99.556,
+      "bbox_polygon": [
+        [
+          420.0,
+          390.0
+        ],
+        [
+          750.0,
+          390.0
+        ],
+        [
+          750.0,
+          406.0
+        ],
+        [
+          420.0,
+          406.0
+        ]
+      ],
+      "bbox": [
+        420.0,
+        390.0,
+        330.0,
+        16.0
+      ]
+    },
+    {
+      "text": "side of Eq.  in terms of the quasar luminosity function",
+      "confidence": 98.315,
+      "bbox_polygon": [
+        [
+          69.0,
+          401.0
+        ],
+        [
+          397.0,
+          401.0
+        ],
+        [
+          397.0,
+          417.0
+        ],
+        [
+          69.0,
+          417.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        401.0,
+        328.0,
+        16.0
+      ]
+    },
+    {
+      "text": "must equal the accreted mass. We model the present-day",
+      "confidence": 99.466,
+      "bbox_polygon": [
+        [
+          419.0,
+          405.0
+        ],
+        [
+          750.0,
+          405.0
+        ],
+        [
+          750.0,
+          422.0
+        ],
+        [
+          419.0,
+          422.0
+        ]
+      ],
+      "bbox": [
+        419.0,
+        405.0,
+        331.0,
+        17.0
+      ]
+    },
+    {
+      "text": "mass function as in Refs. [28, 29], which we very briefly",
+      "confidence": 99.884,
+      "bbox_polygon": [
+        [
+          419.0,
+          420.0
+        ],
+        [
+          750.0,
+          420.0
+        ],
+        [
+          750.0,
+          436.0
+        ],
+        [
+          419.0,
+          436.0
+        ]
+      ],
+      "bbox": [
+        419.0,
+        420.0,
+        331.0,
+        16.0
+      ]
+    },
+    {
+      "text": "(1 − ∈r)",
+      "confidence": 86.105,
+      "bbox_polygon": [
+        [
+          153.0,
+          426.0
+        ],
+        [
+          203.0,
+          426.0
+        ],
+        [
+          203.0,
+          447.0
+        ],
+        [
+          153.0,
+          447.0
+        ]
+      ],
+      "bbox": [
+        153.0,
+        426.0,
+        50.0,
+        21.0
+      ]
+    },
+    {
+      "text": "λ²c2",
+      "confidence": 70.09,
+      "bbox_polygon": [
+        [
+          211.0,
+          426.0
+        ],
+        [
+          244.0,
+          426.0
+        ],
+        [
+          244.0,
+          445.0
+        ],
+        [
+          211.0,
+          445.0
+        ]
+      ],
+      "bbox": [
+        211.0,
+        426.0,
+        33.0,
+        19.0
+      ]
+    },
+    {
+      "text": "∂ψ",
+      "confidence": 90.51,
+      "bbox_polygon": [
+        [
+          81.0,
+          427.0
+        ],
+        [
+          105.0,
+          427.0
+        ],
+        [
+          105.0,
+          448.0
+        ],
+        [
+          81.0,
+          448.0
+        ]
+      ],
+      "bbox": [
+        81.0,
+        427.0,
+        24.0,
+        21.0
+      ]
+    },
+    {
+      "text": "∂φ|",
+      "confidence": 96.154,
+      "bbox_polygon": [
+        [
+          256.0,
+          427.0
+        ],
+        [
+          284.0,
+          427.0
+        ],
+        [
+          284.0,
+          447.0
+        ],
+        [
+          256.0,
+          447.0
+        ]
+      ],
+      "bbox": [
+        256.0,
+        427.0,
+        28.0,
+        20.0
+      ]
+    },
+    {
+      "text": "(M, t) +",
+      "confidence": 98.264,
+      "bbox_polygon": [
+        [
+          102.0,
+          436.0
+        ],
+        [
+          156.0,
+          436.0
+        ],
+        [
+          156.0,
+          457.0
+        ],
+        [
+          102.0,
+          457.0
+        ]
+      ],
+      "bbox": [
+        102.0,
+        436.0,
+        54.0,
+        21.0
+      ]
+    },
+    {
+      "text": "= 0, (6)",
+      "confidence": 93.207,
+      "bbox_polygon": [
+        [
+          341.0,
+          436.0
+        ],
+        [
+          402.0,
+          436.0
+        ],
+        [
+          402.0,
+          457.0
+        ],
+        [
+          341.0,
+          457.0
+        ]
+      ],
+      "bbox": [
+        341.0,
+        436.0,
+        61.0,
+        21.0
+      ]
+    },
+    {
+      "text": "summarize here.",
+      "confidence": 99.958,
+      "bbox_polygon": [
+        [
+          419.0,
+          436.0
+        ],
+        [
+          520.0,
+          436.0
+        ],
+        [
+          520.0,
+          452.0
+        ],
+        [
+          419.0,
+          452.0
+        ]
+      ],
+      "bbox": [
+        419.0,
+        436.0,
+        101.0,
+        16.0
+      ]
+    },
+    {
+      "text": "{ln(10) ∂L",
+      "confidence": 85.67099999999999,
+      "bbox_polygon": [
+        [
+          199.0,
+          443.0
+        ],
+        [
+          282.0,
+          441.0
+        ],
+        [
+          283.0,
+          465.0
+        ],
+        [
+          200.0,
+          467.0
+        ]
+      ],
+      "bbox": [
+        199.0,
+        441.0,
+        84.0,
+        26.0
+      ]
+    },
+    {
+      "text": "1e",
+      "confidence": 70.224,
+      "bbox_polygon": [
+        [
+          82.0,
+          442.0
+        ],
+        [
+          103.0,
+          442.0
+        ],
+        [
+          103.0,
+          464.0
+        ],
+        [
+          82.0,
+          464.0
+        ]
+      ],
+      "bbox": [
+        82.0,
+        442.0,
+        21.0,
+        22.0
+      ]
+    },
+    {
+      "text": "εr",
+      "confidence": 54.82599999999999,
+      "bbox_polygon": [
+        [
+          169.0,
+          449.0
+        ],
+        [
+          186.0,
+          449.0
+        ],
+        [
+          186.0,
+          465.0
+        ],
+        [
+          169.0,
+          465.0
+        ]
+      ],
+      "bbox": [
+        169.0,
+        449.0,
+        17.0,
+        16.0
+      ]
+    },
+    {
+      "text": "The present-day SMBH mass function can be esti-",
+      "confidence": 99.82900000000001,
+      "bbox_polygon": [
+        [
+          433.0,
+          450.0
+        ],
+        [
+          750.0,
+          450.0
+        ],
+        [
+          750.0,
+          467.0
+        ],
+        [
+          433.0,
+          467.0
+        ]
+      ],
+      "bbox": [
+        433.0,
+        450.0,
+        317.0,
+        17.0
+      ]
+    },
+    {
+      "text": "IL=λMc²/tE",
+      "confidence": 90.493,
+      "bbox_polygon": [
+        [
+          278.0,
+          451.0
+        ],
+        [
+          344.0,
+          451.0
+        ],
+        [
+          344.0,
+          468.0
+        ],
+        [
+          278.0,
+          468.0
+        ]
+      ],
+      "bbox": [
+        278.0,
+        451.0,
+        66.0,
+        17.0
+      ]
+    },
+    {
+      "text": "mated from scaling relations between black hole mass",
+      "confidence": 99.925,
+      "bbox_polygon": [
+        [
+          420.0,
+          466.0
+        ],
+        [
+          751.0,
+          466.0
+        ],
+        [
+          751.0,
+          482.0
+        ],
+        [
+          420.0,
+          482.0
+        ]
+      ],
+      "bbox": [
+        420.0,
+        466.0,
+        331.0,
+        16.0
+      ]
+    },
+    {
+      "text": "Multiplying by the mass and integrating the equation",
+      "confidence": 99.348,
+      "bbox_polygon": [
+        [
+          70.0,
+          478.0
+        ],
+        [
+          400.0,
+          478.0
+        ],
+        [
+          400.0,
+          494.0
+        ],
+        [
+          70.0,
+          494.0
+        ]
+      ],
+      "bbox": [
+        70.0,
+        478.0,
+        330.0,
+        16.0
+      ]
+    },
+    {
+      "text": "and properties of the host galaxy (say, property X) and",
+      "confidence": 99.0,
+      "bbox_polygon": [
+        [
+          418.0,
+          481.0
+        ],
+        [
+          751.0,
+          480.0
+        ],
+        [
+          751.0,
+          497.0
+        ],
+        [
+          418.0,
+          498.0
+        ]
+      ],
+      "bbox": [
+        418.0,
+        480.0,
+        333.0,
+        18.0
+      ]
+    },
+    {
+      "text": "above over time shows that the black hole mass density",
+      "confidence": 98.901,
+      "bbox_polygon": [
+        [
+          69.0,
+          492.0
+        ],
+        [
+          400.0,
+          493.0
+        ],
+        [
+          400.0,
+          510.0
+        ],
+        [
+          69.0,
+          509.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        492.0,
+        331.0,
+        18.0
+      ]
+    },
+    {
+      "text": "galaxy catalogs, which give dn/dX. The scaling relation",
+      "confidence": 99.251,
+      "bbox_polygon": [
+        [
+          420.0,
+          497.0
+        ],
+        [
+          751.0,
+          497.0
+        ],
+        [
+          751.0,
+          514.0
+        ],
+        [
+          420.0,
+          514.0
+        ]
+      ],
+      "bbox": [
+        420.0,
+        497.0,
+        331.0,
+        17.0
+      ]
+    },
+    {
+      "text": "is directly related to the integral of the quasar luminosity",
+      "confidence": 99.114,
+      "bbox_polygon": [
+        [
+          69.0,
+          507.0
+        ],
+        [
+          400.0,
+          508.0
+        ],
+        [
+          400.0,
+          525.0
+        ],
+        [
+          69.0,
+          524.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        507.0,
+        331.0,
+        18.0
+      ]
+    },
+    {
+      "text": "is expressed as",
+      "confidence": 99.398,
+      "bbox_polygon": [
+        [
+          420.0,
+          512.0
+        ],
+        [
+          510.0,
+          512.0
+        ],
+        [
+          510.0,
+          526.0
+        ],
+        [
+          420.0,
+          526.0
+        ]
+      ],
+      "bbox": [
+        420.0,
+        512.0,
+        90.0,
+        14.0
+      ]
+    },
+    {
+      "text": "function",
+      "confidence": 99.917,
+      "bbox_polygon": [
+        [
+          69.0,
+          523.0
+        ],
+        [
+          123.0,
+          523.0
+        ],
+        [
+          123.0,
+          540.0
+        ],
+        [
+          69.0,
+          540.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        523.0,
+        54.0,
+        17.0
+      ]
+    },
+    {
+      "text": "(11)",
+      "confidence": 99.944,
+      "bbox_polygon": [
+        [
+          722.0,
+          538.0
+        ],
+        [
+          752.0,
+          538.0
+        ],
+        [
+          752.0,
+          557.0
+        ],
+        [
+          722.0,
+          557.0
+        ]
+      ],
+      "bbox": [
+        722.0,
+        538.0,
+        30.0,
+        19.0
+      ]
+    },
+    {
+      "text": "log10 M = a• + b. log10 X.",
+      "confidence": 95.37,
+      "bbox_polygon": [
+        [
+          507.0,
+          540.0
+        ],
+        [
+          663.0,
+          540.0
+        ],
+        [
+          663.0,
+          557.0
+        ],
+        [
+          507.0,
+          557.0
+        ]
+      ],
+      "bbox": [
+        507.0,
+        540.0,
+        156.0,
+        17.0
+      ]
+    },
+    {
+      "text": "è()φ",
+      "confidence": 62.387,
+      "bbox_polygon": [
+        [
+          158.0,
+          554.0
+        ],
+        [
+          233.0,
+          554.0
+        ],
+        [
+          233.0,
+          574.0
+        ],
+        [
+          158.0,
+          574.0
+        ]
+      ],
+      "bbox": [
+        158.0,
+        554.0,
+        75.0,
+        20.0
+      ]
+    },
+    {
+      "text": "(7)",
+      "confidence": 99.97200000000001,
+      "bbox_polygon": [
+        [
+          380.0,
+          555.0
+        ],
+        [
+          401.0,
+          555.0
+        ],
+        [
+          401.0,
+          576.0
+        ],
+        [
+          380.0,
+          576.0
+        ]
+      ],
+      "bbox": [
+        380.0,
+        555.0,
+        21.0,
+        21.0
+      ]
+    },
+    {
+      "text": "ρBH",
+      "confidence": 74.014,
+      "bbox_polygon": [
+        [
+          103.0,
+          557.0
+        ],
+        [
+          136.0,
+          557.0
+        ],
+        [
+          136.0,
+          576.0
+        ],
+        [
+          103.0,
+          576.0
+        ]
+      ],
+      "bbox": [
+        103.0,
+        557.0,
+        33.0,
+        19.0
+      ]
+    },
+    {
+      "text": "Using the galaxy velocity dispersion as our fiducial proxy",
+      "confidence": 98.88900000000001,
+      "bbox_polygon": [
+        [
+          420.0,
+          566.0
+        ],
+        [
+          750.0,
+          567.0
+        ],
+        [
+          750.0,
+          584.0
+        ],
+        [
+          420.0,
+          583.0
+        ]
+      ],
+      "bbox": [
+        420.0,
+        566.0,
+        330.0,
+        18.0
+      ]
+    },
+    {
+      "text": "for SMBH mass, we parametrize the velocity dispersion",
+      "confidence": 99.92699999999999,
+      "bbox_polygon": [
+        [
+          420.0,
+          581.0
+        ],
+        [
+          751.0,
+          581.0
+        ],
+        [
+          751.0,
+          597.0
+        ],
+        [
+          420.0,
+          597.0
+        ]
+      ],
+      "bbox": [
+        420.0,
+        581.0,
+        331.0,
+        16.0
+      ]
+    },
+    {
+      "text": "dt",
+      "confidence": 99.956,
+      "bbox_polygon": [
+        [
+          228.0,
+          583.0
+        ],
+        [
+          246.0,
+          583.0
+        ],
+        [
+          246.0,
+          601.0
+        ],
+        [
+          228.0,
+          601.0
+        ]
+      ],
+      "bbox": [
+        228.0,
+        583.0,
+        18.0,
+        18.0
+      ]
+    },
+    {
+      "text": "d log10 Lφ(L, z)L,",
+      "confidence": 99.244,
+      "bbox_polygon": [
+        [
+          256.0,
+          590.0
+        ],
+        [
+          374.0,
+          590.0
+        ],
+        [
+          374.0,
+          610.0
+        ],
+        [
+          256.0,
+          610.0
+        ]
+      ],
+      "bbox": [
+        256.0,
+        590.0,
+        118.0,
+        20.0
+      ]
+    },
+    {
+      "text": "dz",
+      "confidence": 99.87,
+      "bbox_polygon": [
+        [
+          210.0,
+          592.0
+        ],
+        [
+          229.0,
+          592.0
+        ],
+        [
+          229.0,
+          608.0
+        ],
+        [
+          210.0,
+          608.0
+        ]
+      ],
+      "bbox": [
+        210.0,
+        592.0,
+        19.0,
+        16.0
+      ]
+    },
+    {
+      "text": "(8)",
+      "confidence": 99.993,
+      "bbox_polygon": [
+        [
+          378.0,
+          593.0
+        ],
+        [
+          399.0,
+          593.0
+        ],
+        [
+          399.0,
+          609.0
+        ],
+        [
+          378.0,
+          609.0
+        ]
+      ],
+      "bbox": [
+        378.0,
+        593.0,
+        21.0,
+        16.0
+      ]
+    },
+    {
+      "text": "function (VDF) as",
+      "confidence": 99.91,
+      "bbox_polygon": [
+        [
+          419.0,
+          597.0
+        ],
+        [
+          533.0,
+          597.0
+        ],
+        [
+          533.0,
+          613.0
+        ],
+        [
+          419.0,
+          613.0
+        ]
+      ],
+      "bbox": [
+        419.0,
+        597.0,
+        114.0,
+        16.0
+      ]
+    },
+    {
+      "text": "cc2",
+      "confidence": 89.66300000000001,
+      "bbox_polygon": [
+        [
+          152.0,
+          599.0
+        ],
+        [
+          183.0,
+          599.0
+        ],
+        [
+          183.0,
+          618.0
+        ],
+        [
+          152.0,
+          618.0
+        ]
+      ],
+      "bbox": [
+        152.0,
+        599.0,
+        31.0,
+        19.0
+      ]
+    },
+    {
+      "text": "dz",
+      "confidence": 99.848,
+      "bbox_polygon": [
+        [
+          227.0,
+          600.0
+        ],
+        [
+          249.0,
+          600.0
+        ],
+        [
+          249.0,
+          616.0
+        ],
+        [
+          227.0,
+          616.0
+        ]
+      ],
+      "bbox": [
+        227.0,
+        600.0,
+        22.0,
+        16.0
+      ]
+    },
+    {
+      "text": "e−(010.)º",
+      "confidence": 78.813,
+      "bbox_polygon": [
+        [
+          596.0,
+          622.0
+        ],
+        [
+          656.0,
+          620.0
+        ],
+        [
+          656.0,
+          641.0
+        ],
+        [
+          597.0,
+          643.0
+        ]
+      ],
+      "bbox": [
+        596.0,
+        620.0,
+        60.0,
+        23.0
+      ]
+    },
+    {
+      "text": "dn",
+      "confidence": 99.82,
+      "bbox_polygon": [
+        [
+          484.0,
+          628.0
+        ],
+        [
+          504.0,
+          628.0
+        ],
+        [
+          504.0,
+          645.0
+        ],
+        [
+          484.0,
+          645.0
+        ]
+      ],
+      "bbox": [
+        484.0,
+        628.0,
+        20.0,
+        17.0
+      ]
+    },
+    {
+      "text": "dσ",
+      "confidence": 93.702,
+      "bbox_polygon": [
+        [
+          663.0,
+          628.0
+        ],
+        [
+          682.0,
+          628.0
+        ],
+        [
+          682.0,
+          646.0
+        ],
+        [
+          663.0,
+          646.0
+        ]
+      ],
+      "bbox": [
+        663.0,
+        628.0,
+        19.0,
+        18.0
+      ]
+    },
+    {
+      "text": "which is the Sołtan argument [30].",
+      "confidence": 97.353,
+      "bbox_polygon": [
+        [
+          69.0,
+          629.0
+        ],
+        [
+          272.0,
+          629.0
+        ],
+        [
+          272.0,
+          646.0
+        ],
+        [
+          69.0,
+          646.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        629.0,
+        203.0,
+        17.0
+      ]
+    },
+    {
+      "text": "(12)",
+      "confidence": 99.996,
+      "bbox_polygon": [
+        [
+          723.0,
+          635.0
+        ],
+        [
+          752.0,
+          635.0
+        ],
+        [
+          752.0,
+          655.0
+        ],
+        [
+          723.0,
+          655.0
+        ]
+      ],
+      "bbox": [
+        723.0,
+        635.0,
+        29.0,
+        20.0
+      ]
+    },
+    {
+      "text": "dσ",
+      "confidence": 99.325,
+      "bbox_polygon": [
+        [
+          484.0,
+          642.0
+        ],
+        [
+          503.0,
+          642.0
+        ],
+        [
+          503.0,
+          660.0
+        ],
+        [
+          484.0,
+          660.0
+        ]
+      ],
+      "bbox": [
+        484.0,
+        642.0,
+        19.0,
+        18.0
+      ]
+    },
+    {
+      "text": "Γ(α/β)",
+      "confidence": 99.64699999999999,
+      "bbox_polygon": [
+        [
+          601.0,
+          643.0
+        ],
+        [
+          652.0,
+          643.0
+        ],
+        [
+          652.0,
+          664.0
+        ],
+        [
+          601.0,
+          664.0
+        ]
+      ],
+      "bbox": [
+        601.0,
+        643.0,
+        51.0,
+        21.0
+      ]
+    },
+    {
+      "text": "Note that the radiative efficiency only changes an over-",
+      "confidence": 97.45899999999999,
+      "bbox_polygon": [
+        [
+          82.0,
+          644.0
+        ],
+        [
+          400.0,
+          644.0
+        ],
+        [
+          400.0,
+          661.0
+        ],
+        [
+          82.0,
+          661.0
+        ]
+      ],
+      "bbox": [
+        82.0,
+        644.0,
+        318.0,
+        17.0
+      ]
+    },
+    {
+      "text": "all amplitude of ρBí, while the Eddington ratio changes",
+      "confidence": 99.397,
+      "bbox_polygon": [
+        [
+          69.0,
+          660.0
+        ],
+        [
+          401.0,
+          660.0
+        ],
+        [
+          401.0,
+          677.0
+        ],
+        [
+          69.0,
+          677.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        660.0,
+        332.0,
+        17.0
+      ]
+    },
+    {
+      "text": "Including scatter in the relation between black hole mass",
+      "confidence": 99.485,
+      "bbox_polygon": [
+        [
+          420.0,
+          672.0
+        ],
+        [
+          751.0,
+          672.0
+        ],
+        [
+          751.0,
+          688.0
+        ],
+        [
+          420.0,
+          688.0
+        ]
+      ],
+      "bbox": [
+        420.0,
+        672.0,
+        331.0,
+        16.0
+      ]
+    },
+    {
+      "text": "both the amplitude and the shape of the final SMBH",
+      "confidence": 99.86500000000001,
+      "bbox_polygon": [
+        [
+          69.0,
+          674.0
+        ],
+        [
+          400.0,
+          674.0
+        ],
+        [
+          400.0,
+          691.0
+        ],
+        [
+          69.0,
+          691.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        674.0,
+        331.0,
+        17.0
+      ]
+    },
+    {
+      "text": "and galaxy property leads to",
+      "confidence": 99.993,
+      "bbox_polygon": [
+        [
+          420.0,
+          687.0
+        ],
+        [
+          592.0,
+          687.0
+        ],
+        [
+          592.0,
+          704.0
+        ],
+        [
+          420.0,
+          704.0
+        ]
+      ],
+      "bbox": [
+        420.0,
+        687.0,
+        172.0,
+        17.0
+      ]
+    },
+    {
+      "text": "mass function, while keeping the total mass density fixed.",
+      "confidence": 99.656,
+      "bbox_polygon": [
+        [
+          69.0,
+          690.0
+        ],
+        [
+          399.0,
+          690.0
+        ],
+        [
+          399.0,
+          706.0
+        ],
+        [
+          69.0,
+          706.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        690.0,
+        330.0,
+        16.0
+      ]
+    },
+    {
+      "text": "As a toy example consider a scenario in which the red-",
+      "confidence": 99.803,
+      "bbox_polygon": [
+        [
+          69.0,
+          705.0
+        ],
+        [
+          400.0,
+          705.0
+        ],
+        [
+          400.0,
+          722.0
+        ],
+        [
+          69.0,
+          722.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        705.0,
+        331.0,
+        17.0
+      ]
+    },
+    {
+      "text": "p(l0g10 M| l0g10 σ) dn",
+      "confidence": 94.175,
+      "bbox_polygon": [
+        [
+          540.0,
+          711.0
+        ],
+        [
+          675.0,
+          711.0
+        ],
+        [
+          675.0,
+          734.0
+        ],
+        [
+          540.0,
+          734.0
+        ]
+      ],
+      "bbox": [
+        540.0,
+        711.0,
+        135.0,
+        23.0
+      ]
+    },
+    {
+      "text": "ψo(M) =",
+      "confidence": 89.16,
+      "bbox_polygon": [
+        [
+          451.0,
+          719.0
+        ],
+        [
+          514.0,
+          719.0
+        ],
+        [
+          514.0,
+          743.0
+        ],
+        [
+          451.0,
+          743.0
+        ]
+      ],
+      "bbox": [
+        451.0,
+        719.0,
+        63.0,
+        24.0
+      ]
+    },
+    {
+      "text": "shift evolution of the parameters is negligible, then the",
+      "confidence": 99.535,
+      "bbox_polygon": [
+        [
+          69.0,
+          720.0
+        ],
+        [
+          400.0,
+          720.0
+        ],
+        [
+          400.0,
+          736.0
+        ],
+        [
+          69.0,
+          736.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        720.0,
+        331.0,
+        16.0
+      ]
+    },
+    {
+      "text": "(13)",
+      "confidence": 99.998,
+      "bbox_polygon": [
+        [
+          722.0,
+          721.0
+        ],
+        [
+          751.0,
+          721.0
+        ],
+        [
+          751.0,
+          740.0
+        ],
+        [
+          722.0,
+          740.0
+        ]
+      ],
+      "bbox": [
+        722.0,
+        721.0,
+        29.0,
+        19.0
+      ]
+    },
+    {
+      "text": "do",
+      "confidence": 80.926,
+      "bbox_polygon": [
+        [
+          525.0,
+          722.0
+        ],
+        [
+          543.0,
+          722.0
+        ],
+        [
+          543.0,
+          739.0
+        ],
+        [
+          525.0,
+          739.0
+        ]
+      ],
+      "bbox": [
+        525.0,
+        722.0,
+        18.0,
+        17.0
+      ]
+    },
+    {
+      "text": "(σ),",
+      "confidence": 99.402,
+      "bbox_polygon": [
+        [
+          671.0,
+          722.0
+        ],
+        [
+          696.0,
+          722.0
+        ],
+        [
+          696.0,
+          741.0
+        ],
+        [
+          671.0,
+          741.0
+        ]
+      ],
+      "bbox": [
+        671.0,
+        722.0,
+        25.0,
+        19.0
+      ]
+    },
+    {
+      "text": "M log(10)",
+      "confidence": 99.876,
+      "bbox_polygon": [
+        [
+          566.0,
+          729.0
+        ],
+        [
+          629.0,
+          729.0
+        ],
+        [
+          629.0,
+          749.0
+        ],
+        [
+          566.0,
+          749.0
+        ]
+      ],
+      "bbox": [
+        566.0,
+        729.0,
+        63.0,
+        20.0
+      ]
+    },
+    {
+      "text": "dσ",
+      "confidence": 99.943,
+      "bbox_polygon": [
+        [
+          651.0,
+          730.0
+        ],
+        [
+          672.0,
+          730.0
+        ],
+        [
+          672.0,
+          747.0
+        ],
+        [
+          651.0,
+          747.0
+        ]
+      ],
+      "bbox": [
+        651.0,
+        730.0,
+        21.0,
+        17.0
+      ]
+    },
+    {
+      "text": "quasar luminosity function (QLF) is always given by a",
+      "confidence": 99.202,
+      "bbox_polygon": [
+        [
+          69.0,
+          736.0
+        ],
+        [
+          401.0,
+          736.0
+        ],
+        [
+          401.0,
+          753.0
+        ],
+        [
+          69.0,
+          753.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        736.0,
+        332.0,
+        17.0
+      ]
+    },
+    {
+      "text": "double power-law, with a break at a luminosity L.. The",
+      "confidence": 97.857,
+      "bbox_polygon": [
+        [
+          69.0,
+          751.0
+        ],
+        [
+          402.0,
+          751.0
+        ],
+        [
+          402.0,
+          768.0
+        ],
+        [
+          69.0,
+          768.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        751.0,
+        333.0,
+        17.0
+      ]
+    },
+    {
+      "text": "where p is assumed to be log-normal",
+      "confidence": 99.996,
+      "bbox_polygon": [
+        [
+          421.0,
+          757.0
+        ],
+        [
+          638.0,
+          757.0
+        ],
+        [
+          638.0,
+          773.0
+        ],
+        [
+          421.0,
+          773.0
+        ]
+      ],
+      "bbox": [
+        421.0,
+        757.0,
+        217.0,
+        16.0
+      ]
+    },
+    {
+      "text": "corresponding break in the SMBH mass function will be",
+      "confidence": 99.859,
+      "bbox_polygon": [
+        [
+          69.0,
+          767.0
+        ],
+        [
+          402.0,
+          767.0
+        ],
+        [
+          402.0,
+          783.0
+        ],
+        [
+          69.0,
+          783.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        767.0,
+        333.0,
+        16.0
+      ]
+    },
+    {
+      "text": "M. = L,tε/λc² and the power-laws of dn/dlog M will",
+      "confidence": 97.137,
+      "bbox_polygon": [
+        [
+          70.0,
+          782.0
+        ],
+        [
+          401.0,
+          782.0
+        ],
+        [
+          401.0,
+          798.0
+        ],
+        [
+          70.0,
+          798.0
+        ]
+      ],
+      "bbox": [
+        70.0,
+        782.0,
+        331.0,
+        16.0
+      ]
+    },
+    {
+      "text": "1",
+      "confidence": 99.996,
+      "bbox_polygon": [
+        [
+          575.0,
+          783.0
+        ],
+        [
+          586.0,
+          783.0
+        ],
+        [
+          586.0,
+          797.0
+        ],
+        [
+          575.0,
+          797.0
+        ]
+      ],
+      "bbox": [
+        575.0,
+        783.0,
+        11.0,
+        14.0
+      ]
+    },
+    {
+      "text": "p(log10M|1og10 σ) =",
+      "confidence": 96.44500000000001,
+      "bbox_polygon": [
+        [
+          435.0,
+          792.0
+        ],
+        [
+          559.0,
+          792.0
+        ],
+        [
+          559.0,
+          809.0
+        ],
+        [
+          435.0,
+          809.0
+        ]
+      ],
+      "bbox": [
+        435.0,
+        792.0,
+        124.0,
+        17.0
+      ]
+    },
+    {
+      "text": "√2π€0",
+      "confidence": 87.143,
+      "bbox_polygon": [
+        [
+          561.0,
+          795.0
+        ],
+        [
+          604.0,
+          800.0
+        ],
+        [
+          602.0,
+          822.0
+        ],
+        [
+          559.0,
+          817.0
+        ]
+      ],
+      "bbox": [
+        559.0,
+        795.0,
+        45.0,
+        27.0
+      ]
+    },
+    {
+      "text": "be the same as φ(L). Therefore, reducing (increasing) λ",
+      "confidence": 99.092,
+      "bbox_polygon": [
+        [
+          69.0,
+          797.0
+        ],
+        [
+          401.0,
+          797.0
+        ],
+        [
+          401.0,
+          814.0
+        ],
+        [
+          69.0,
+          814.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        797.0,
+        332.0,
+        17.0
+      ]
+    },
+    {
+      "text": "increases (reduces) the characteristic mass of the turn-",
+      "confidence": 99.717,
+      "bbox_polygon": [
+        [
+          69.0,
+          812.0
+        ],
+        [
+          401.0,
+          812.0
+        ],
+        [
+          401.0,
+          829.0
+        ],
+        [
+          69.0,
+          829.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        812.0,
+        332.0,
+        17.0
+      ]
+    },
+    {
+      "text": "b. log10 σ",
+      "confidence": 92.032,
+      "bbox_polygon": [
+        [
+          643.0,
+          823.0
+        ],
+        [
+          706.0,
+          823.0
+        ],
+        [
+          706.0,
+          843.0
+        ],
+        [
+          643.0,
+          843.0
+        ]
+      ],
+      "bbox": [
+        643.0,
+        823.0,
+        63.0,
+        20.0
+      ]
+    },
+    {
+      "text": "over in the SMBH mass function. In this scenario, black",
+      "confidence": 99.033,
+      "bbox_polygon": [
+        [
+          68.0,
+          828.0
+        ],
+        [
+          400.0,
+          828.0
+        ],
+        [
+          400.0,
+          844.0
+        ],
+        [
+          68.0,
+          844.0
+        ]
+      ],
+      "bbox": [
+        68.0,
+        828.0,
+        332.0,
+        16.0
+      ]
+    },
+    {
+      "text": "× exp",
+      "confidence": 97.80499999999999,
+      "bbox_polygon": [
+        [
+          479.0,
+          830.0
+        ],
+        [
+          519.0,
+          832.0
+        ],
+        [
+          518.0,
+          851.0
+        ],
+        [
+          478.0,
+          849.0
+        ]
+      ],
+      "bbox": [
+        478.0,
+        830.0,
+        41.0,
+        21.0
+      ]
+    },
+    {
+      "text": "2",
+      "confidence": 99.823,
+      "bbox_polygon": [
+        [
+          532.0,
+          839.0
+        ],
+        [
+          549.0,
+          839.0
+        ],
+        [
+          549.0,
+          856.0
+        ],
+        [
+          532.0,
+          856.0
+        ]
+      ],
+      "bbox": [
+        532.0,
+        839.0,
+        17.0,
+        17.0
+      ]
+    },
+    {
+      "text": "é0",
+      "confidence": 77.66,
+      "bbox_polygon": [
+        [
+          622.0,
+          842.0
+        ],
+        [
+          639.0,
+          842.0
+        ],
+        [
+          639.0,
+          859.0
+        ],
+        [
+          622.0,
+          859.0
+        ]
+      ],
+      "bbox": [
+        622.0,
+        842.0,
+        17.0,
+        17.0
+      ]
+    },
+    {
+      "text": "holes of all masses grow at the same time. The mea-",
+      "confidence": 99.31400000000001,
+      "bbox_polygon": [
+        [
+          68.0,
+          843.0
+        ],
+        [
+          401.0,
+          843.0
+        ],
+        [
+          401.0,
+          859.0
+        ],
+        [
+          68.0,
+          859.0
+        ]
+      ],
+      "bbox": [
+        68.0,
+        843.0,
+        333.0,
+        16.0
+      ]
+    },
+    {
+      "text": "sured quasar luminosity function, however, has a break",
+      "confidence": 99.922,
+      "bbox_polygon": [
+        [
+          68.0,
+          859.0
+        ],
+        [
+          401.0,
+          859.0
+        ],
+        [
+          401.0,
+          875.0
+        ],
+        [
+          68.0,
+          875.0
+        ]
+      ],
+      "bbox": [
+        68.0,
+        859.0,
+        333.0,
+        16.0
+      ]
+    },
+    {
+      "text": "(14)",
+      "confidence": 99.991,
+      "bbox_polygon": [
+        [
+          723.0,
+          860.0
+        ],
+        [
+          752.0,
+          860.0
+        ],
+        [
+          752.0,
+          879.0
+        ],
+        [
+          723.0,
+          879.0
+        ]
+      ],
+      "bbox": [
+        723.0,
+        860.0,
+        29.0,
+        19.0
+      ]
+    },
+    {
+      "text": "that evolves over time, mostly decreasing with redshift.",
+      "confidence": 99.96199999999999,
+      "bbox_polygon": [
+        [
+          69.0,
+          874.0
+        ],
+        [
+          400.0,
+          874.0
+        ],
+        [
+          400.0,
+          890.0
+        ],
+        [
+          69.0,
+          890.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        874.0,
+        331.0,
+        16.0
+      ]
+    },
+    {
+      "text": "This implies that more massive black holes assemble their",
+      "confidence": 99.404,
+      "bbox_polygon": [
+        [
+          70.0,
+          889.0
+        ],
+        [
+          402.0,
+          889.0
+        ],
+        [
+          402.0,
+          905.0
+        ],
+        [
+          70.0,
+          905.0
+        ]
+      ],
+      "bbox": [
+        70.0,
+        889.0,
+        332.0,
+        16.0
+      ]
+    },
+    {
+      "text": "As in Refs. 28 29], the adopt the velocity disper-",
+      "confidence": 99.965,
+      "bbox_polygon": [
+        [
+          421.0,
+          889.0
+        ],
+        [
+          750.0,
+          889.0
+        ],
+        [
+          750.0,
+          906.0
+        ],
+        [
+          421.0,
+          906.0
+        ]
+      ],
+      "bbox": [
+        421.0,
+        889.0,
+        329.0,
+        17.0
+      ]
+    },
+    {
+      "text": "mass carlier on.",
+      "confidence": 96.193,
+      "bbox_polygon": [
+        [
+          67.0,
+          904.0
+        ],
+        [
+          165.0,
+          903.0
+        ],
+        [
+          165.0,
+          920.0
+        ],
+        [
+          67.0,
+          921.0
+        ]
+      ],
+      "bbox": [
+        67.0,
+        903.0,
+        98.0,
+        18.0
+      ]
+    },
+    {
+      "text": "sion function as the mass proxy. We therefore use",
+      "confidence": 99.832,
+      "bbox_polygon": [
+        [
+          420.0,
+          904.0
+        ],
+        [
+          751.0,
+          904.0
+        ],
+        [
+          751.0,
+          921.0
+        ],
+        [
+          420.0,
+          921.0
+        ]
+      ],
+      "bbox": [
+        420.0,
+        904.0,
+        331.0,
+        17.0
+      ]
+    },
+    {
+      "text": "X = σ/200km s−1 in Eq. [] and the M − σ relation",
+      "confidence": 94.78,
+      "bbox_polygon": [
+        [
+          418.0,
+          917.0
+        ],
+        [
+          752.0,
+          918.0
+        ],
+        [
+          752.0,
+          938.0
+        ],
+        [
+          418.0,
+          937.0
+        ]
+      ],
+      "bbox": [
+        418.0,
+        917.0,
+        334.0,
+        21.0
+      ]
+    },
+    {
+      "text": "SMBH growth from accretion can thus be modelled",
+      "confidence": 98.86500000000001,
+      "bbox_polygon": [
+        [
+          82.0,
+          920.0
+        ],
+        [
+          401.0,
+          920.0
+        ],
+        [
+          401.0,
+          936.0
+        ],
+        [
+          82.0,
+          936.0
+        ]
+      ],
+      "bbox": [
+        82.0,
+        920.0,
+        319.0,
+        16.0
+      ]
+    },
+    {
+      "text": "by directly relating it to the observed QLF. We use the",
+      "confidence": 98.317,
+      "bbox_polygon": [
+        [
+          69.0,
+          935.0
+        ],
+        [
+          401.0,
+          935.0
+        ],
+        [
+          401.0,
+          951.0
+        ],
+        [
+          69.0,
+          951.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        935.0,
+        332.0,
+        16.0
+      ]
+    },
+    {
+      "text": "from Ref. [31], which corresponds to a. = 8.32 ± 0.05,",
+      "confidence": 98.512,
+      "bbox_polygon": [
+        [
+          419.0,
+          935.0
+        ],
+        [
+          750.0,
+          935.0
+        ],
+        [
+          750.0,
+          951.0
+        ],
+        [
+          419.0,
+          951.0
+        ]
+      ],
+      "bbox": [
+        419.0,
+        935.0,
+        331.0,
+        16.0
+      ]
+    },
+    {
+      "text": "bolometric QLF presented in Ref. [27], which is based on",
+      "confidence": 99.872,
+      "bbox_polygon": [
+        [
+          69.0,
+          950.0
+        ],
+        [
+          402.0,
+          950.0
+        ],
+        [
+          402.0,
+          966.0
+        ],
+        [
+          69.0,
+          966.0
+        ]
+      ],
+      "bbox": [
+        69.0,
+        950.0,
+        333.0,
+        16.0
+      ]
+    },
+    {
+      "text": "b. = 5.64 ± 0.32, and €0 = 0.38. For the VDF, we choose",
+      "confidence": 97.232,
+      "bbox_polygon": [
+        [
+          419.0,
+          950.0
+        ],
+        [
+          752.0,
+          950.0
+        ],
+        [
+          752.0,
+          966.0
+        ],
+        [
+          419.0,
+          966.0
+        ]
+      ],
+      "bbox": [
+        419.0,
+        950.0,
+        333.0,
+        16.0
+      ]
+    }
+  ],
+  "run_ms": [
+    24079.553299998224,
+    19553.197499997623,
+    19565.471799993247
+  ],
+  "latency_ms_p50": 19565.471799993247,
+  "latency_ms_p95": 24079.553299998224,
+  "mean_confidence": 95.62835,
+  "low_confidence_item_ratio": 0.014285714285714285,
+  "bbox_item_ratio": 1.0,
+  "capabilities": {
+    "formula_structure": false,
+    "table_structure": false,
+    "seal_region_class": false,
+    "word_or_line_bbox": true
+  },
+  "stderr": "",
+  "questions": [
+    {
+      "question_id": "Q-PUB-003",
+      "match": "document",
+      "passed": true,
+      "document_hits": {
+        "Eddington": true,
+        "SMBH": true
+      },
+      "matched_line": null,
+      "required_capability": null
+    },
+    {
+      "question_id": "Q-PUB-004",
+      "match": "capability",
+      "passed": false,
+      "document_hits": {},
+      "matched_line": null,
+      "required_capability": "formula_structure"
+    }
+  ]
+}

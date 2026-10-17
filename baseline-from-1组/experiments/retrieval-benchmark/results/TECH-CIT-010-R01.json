@@ -1,0 +1,42 @@
+{
+  "experiment_id": "TECH-CIT-010-R01",
+  "cases": [
+    {
+      "id": "D01",
+      "state": "no_support",
+      "expected_action": "refuse",
+      "observed_action": "refuse",
+      "pass": true
+    },
+    {
+      "id": "D02",
+      "state": "location_missing",
+      "expected_action": "retrieval_or_original",
+      "observed_action": "retrieval_or_original",
+      "pass": true
+    },
+    {
+      "id": "D03",
+      "state": "low_confidence_ocr_or_table",
+      "expected_action": "page_image_warning",
+      "observed_action": "page_image_warning",
+      "pass": true
+    },
+    {
+      "id": "D04",
+      "state": "source_conflict",
+      "expected_action": "human_review",
+      "observed_action": "human_review",
+      "pass": true
+    },
+    {
+      "id": "D05",
+      "state": "exact_support",
+      "expected_action": "answer_with_citation",
+      "observed_action": "answer_with_citation",
+      "pass": true
+    }
+  ],
+  "pass_rate": 1.0,
+  "scope": "Deterministic failure-state policy probe; no UI test."
+}

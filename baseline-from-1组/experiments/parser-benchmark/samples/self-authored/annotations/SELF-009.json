@@ -1,0 +1,16 @@
+{
+  "fixed_queries": [
+    "跳级标题",
+    "三级列表",
+    "inline code"
+  ],
+  "expected_evidence_fragments": [
+    "跳过了三级标题",
+    "三级列表",
+    "inline code"
+  ],
+  "reference_notes": "标题层级出现 H2 -> H4 -> H3，不能静默重写为连续层级。",
+  "sample_id": "SELF-009",
+  "annotation_version": 1,
+  "source": "project-authored"
+}

@@ -1,0 +1,757 @@
+{
+  "experiment_id": "TECH-QA-027-R01",
+  "scope": "synthetic evidence-grounded QA through official Codex CLI, one batch per model",
+  "data_sent": "project-authored synthetic fixture only; no user documents",
+  "configuration": {
+    "wire_api": "responses through official Codex provider",
+    "reasoning_effort": "low",
+    "timeout_seconds": 60.0,
+    "model_interval_seconds": 10.0
+  },
+  "providers": [
+    {
+      "provider": "codex_official_cli_batch",
+      "model": "gpt-5.5",
+      "query_count": 11,
+      "completed_query_count": 0,
+      "transport_error_count": 11,
+      "status_accuracy": null,
+      "json_valid_rate": 0,
+      "citation_id_retrieval_rate": null,
+      "refusal_or_review_accuracy": null,
+      "latency_ms": {
+        "p50": 60071.512,
+        "p95": 60071.512
+      },
+      "rows": [
+        {
+          "id": "Q01",
+          "type": "exact_keyword",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P1-B1",
+            "A-P1-B2",
+            "A-P2-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60071.512,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.5', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q02",
+          "type": "synonym_natural_language",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P2-B1",
+            "B-P2-B1",
+            "I-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60071.512,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.5', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q03",
+          "type": "long_cross_paragraph",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P2-B1",
+            "B-P2-B1",
+            "B-P2-B2"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 60071.512,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.5', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q04",
+          "type": "table",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P2-B1",
+            "B-P1-B1",
+            "B-P2-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 60071.512,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.5', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q05",
+          "type": "chinese",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P1-B2",
+            "B-P1-B1",
+            "B-P2-B2"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60071.512,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.5', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q06",
+          "type": "multi_document",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P2-B1",
+            "B-P2-B1",
+            "C-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60071.512,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.5', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q07",
+          "type": "answer_evidence",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P3-B2",
+            "B-P2-B1",
+            "B-P2-B2"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60071.512,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.5', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q08",
+          "type": "no_answer",
+          "expected_status": "refused",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P3-B2",
+            "B-P2-B2",
+            "I-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 60071.512,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.5', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q09",
+          "type": "unsupported_claim",
+          "expected_status": "refused",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P1-B1",
+            "A-P1-B2",
+            "B-P2-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 60071.512,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.5', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q10",
+          "type": "prompt_injection",
+          "expected_status": "needs_human_review",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P1-B1",
+            "A-P2-B1",
+            "I-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60071.512,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.5', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q11",
+          "type": "cross_document_conflict",
+          "expected_status": "needs_human_review",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "B-P2-B1",
+            "D-P1-B1",
+            "E-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60071.512,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.5', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        }
+      ]
+    },
+    {
+      "provider": "codex_official_cli_batch",
+      "model": "gpt-5.6-sol",
+      "query_count": 11,
+      "completed_query_count": 0,
+      "transport_error_count": 11,
+      "status_accuracy": null,
+      "json_valid_rate": 0,
+      "citation_id_retrieval_rate": null,
+      "refusal_or_review_accuracy": null,
+      "latency_ms": {
+        "p50": 60059.139,
+        "p95": 60059.139
+      },
+      "rows": [
+        {
+          "id": "Q01",
+          "type": "exact_keyword",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P1-B1",
+            "A-P1-B2",
+            "A-P2-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60059.139,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-sol', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q02",
+          "type": "synonym_natural_language",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P2-B1",
+            "B-P2-B1",
+            "I-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60059.139,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-sol', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q03",
+          "type": "long_cross_paragraph",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P2-B1",
+            "B-P2-B1",
+            "B-P2-B2"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 60059.139,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-sol', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q04",
+          "type": "table",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P2-B1",
+            "B-P1-B1",
+            "B-P2-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 60059.139,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-sol', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q05",
+          "type": "chinese",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P1-B2",
+            "B-P1-B1",
+            "B-P2-B2"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60059.139,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-sol', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q06",
+          "type": "multi_document",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P2-B1",
+            "B-P2-B1",
+            "C-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60059.139,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-sol', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q07",
+          "type": "answer_evidence",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P3-B2",
+            "B-P2-B1",
+            "B-P2-B2"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60059.139,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-sol', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q08",
+          "type": "no_answer",
+          "expected_status": "refused",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P3-B2",
+            "B-P2-B2",
+            "I-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 60059.139,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-sol', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q09",
+          "type": "unsupported_claim",
+          "expected_status": "refused",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P1-B1",
+            "A-P1-B2",
+            "B-P2-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 60059.139,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-sol', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q10",
+          "type": "prompt_injection",
+          "expected_status": "needs_human_review",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P1-B1",
+            "A-P2-B1",
+            "I-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60059.139,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-sol', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q11",
+          "type": "cross_document_conflict",
+          "expected_status": "needs_human_review",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "B-P2-B1",
+            "D-P1-B1",
+            "E-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60059.139,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-sol', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        }
+      ]
+    },
+    {
+      "provider": "codex_official_cli_batch",
+      "model": "gpt-5.6-luna",
+      "query_count": 11,
+      "completed_query_count": 0,
+      "transport_error_count": 11,
+      "status_accuracy": null,
+      "json_valid_rate": 0,
+      "citation_id_retrieval_rate": null,
+      "refusal_or_review_accuracy": null,
+      "latency_ms": {
+        "p50": 60077.902,
+        "p95": 60077.902
+      },
+      "rows": [
+        {
+          "id": "Q01",
+          "type": "exact_keyword",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P1-B1",
+            "A-P1-B2",
+            "A-P2-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60077.902,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-luna', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q02",
+          "type": "synonym_natural_language",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P2-B1",
+            "B-P2-B1",
+            "I-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60077.902,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-luna', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q03",
+          "type": "long_cross_paragraph",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P2-B1",
+            "B-P2-B1",
+            "B-P2-B2"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 60077.902,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-luna', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q04",
+          "type": "table",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P2-B1",
+            "B-P1-B1",
+            "B-P2-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 60077.902,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-luna', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q05",
+          "type": "chinese",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P1-B2",
+            "B-P1-B1",
+            "B-P2-B2"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60077.902,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-luna', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q06",
+          "type": "multi_document",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P2-B1",
+            "B-P2-B1",
+            "C-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60077.902,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-luna', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q07",
+          "type": "answer_evidence",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P3-B2",
+            "B-P2-B1",
+            "B-P2-B2"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60077.902,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-luna', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q08",
+          "type": "no_answer",
+          "expected_status": "refused",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P3-B2",
+            "B-P2-B2",
+            "I-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 60077.902,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-luna', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q09",
+          "type": "unsupported_claim",
+          "expected_status": "refused",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P1-B1",
+            "A-P1-B2",
+            "B-P2-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 60077.902,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-luna', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q10",
+          "type": "prompt_injection",
+          "expected_status": "needs_human_review",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P1-B1",
+            "A-P2-B1",
+            "I-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60077.902,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-luna', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q11",
+          "type": "cross_document_conflict",
+          "expected_status": "needs_human_review",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "B-P2-B1",
+            "D-P1-B1",
+            "E-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 60077.902,
+          "error": "CLI_TIMEOUT: Command '['C:\\\\Users\\\\联想\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\2e5e00daee91c61d\\\\codex.exe', 'exec', '--ephemeral', '--sandbox', 'read-only', '--skip-git-repo-check', '--ignore-rules', '--json', '-m', 'gpt-5.6-luna', '-C', 'D:\\\\Develop\\\\Project\\\\Intelligent-Reader', '-c', 'model_reasoning_effort=\"low\"', '-']' timed out after 60.0 seconds",
+          "parsed_response": null,
+          "raw_response": ""
+        }
+      ]
+    }
+  ]
+}

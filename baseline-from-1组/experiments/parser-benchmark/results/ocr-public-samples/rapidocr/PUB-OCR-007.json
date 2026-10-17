@@ -1,0 +1,95 @@
+{
+  "status": "succeeded",
+  "text": "如，\n和对旅游表演形式",
+  "lines": [
+    "如，",
+    "和对旅游表演形式"
+  ],
+  "items": [
+    {
+      "text": "如，",
+      "confidence": 99.772,
+      "bbox_polygon": [
+        [
+          2.0,
+          0.0
+        ],
+        [
+          43.0,
+          0.0
+        ],
+        [
+          44.0,
+          26.0
+        ],
+        [
+          2.0,
+          26.0
+        ]
+      ],
+      "bbox": [
+        2.0,
+        0.0,
+        42.0,
+        26.0
+      ]
+    },
+    {
+      "text": "和对旅游表演形式",
+      "confidence": 99.991,
+      "bbox_polygon": [
+        [
+          55.0,
+          0.0
+        ],
+        [
+          279.0,
+          3.0
+        ],
+        [
+          279.0,
+          32.0
+        ],
+        [
+          54.0,
+          31.0
+        ]
+      ],
+      "bbox": [
+        54.0,
+        0.0,
+        225.0,
+        32.0
+      ]
+    }
+  ],
+  "run_ms": [
+    9201.176900001883,
+    9683.399399997143,
+    9222.396500001196
+  ],
+  "latency_ms_p50": 9222.396500001196,
+  "latency_ms_p95": 9683.399399997143,
+  "mean_confidence": 99.8815,
+  "low_confidence_item_ratio": 0.0,
+  "bbox_item_ratio": 1.0,
+  "capabilities": {
+    "formula_structure": false,
+    "table_structure": false,
+    "seal_region_class": false,
+    "word_or_line_bbox": true
+  },
+  "stderr": "",
+  "questions": [
+    {
+      "question_id": "Q-PUB-010",
+      "match": "document",
+      "passed": true,
+      "document_hits": {
+        "和对旅游表演形式": true
+      },
+      "matched_line": null,
+      "required_capability": null
+    }
+  ]
+}

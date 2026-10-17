@@ -1,0 +1,78 @@
+{
+  "experiment_id": "TECH-STRUCT-006-R01",
+  "outputs": [
+    {
+      "experiment_id": "TECH-STRUCT-006-R01",
+      "sample_id": "SELF-005",
+      "source_path": "samples\\self-authored\\docx\\SELF-005-structured.docx",
+      "source_hash": "77ddbb18413fcf6380e928a300d87d7f41b9a1e6abde0dad23a486615da25431",
+      "format": "DOCX",
+      "paragraph_count_in_document_xml": 21,
+      "explicit_page_break_paragraph_indexes": [
+        19
+      ],
+      "explicit_page_break_count": 1,
+      "section_count": 0,
+      "header_parts": [
+        "word/header1.xml"
+      ],
+      "footer_parts": [
+        "word/footer1.xml"
+      ],
+      "has_footnotes_part": true,
+      "has_endnotes_part": false,
+      "has_comments_part": false,
+      "visual_page_numbers": "not_available_without_fixed_renderer",
+      "boundary": "OOXML signals only; explicit breaks are not a complete visual pagination model."
+    },
+    {
+      "experiment_id": "TECH-STRUCT-006-R01",
+      "sample_id": "SELF-006",
+      "source_path": "samples\\self-authored\\docx\\SELF-006-meeting-notes.docx",
+      "source_hash": "d5c1de233a735f2b963816c3f512f8fee2ed300d91170119d3c88ef4fd0180c1",
+      "format": "DOCX",
+      "paragraph_count_in_document_xml": 22,
+      "explicit_page_break_paragraph_indexes": [
+        20
+      ],
+      "explicit_page_break_count": 1,
+      "section_count": 0,
+      "header_parts": [
+        "word/header1.xml"
+      ],
+      "footer_parts": [
+        "word/footer1.xml"
+      ],
+      "has_footnotes_part": true,
+      "has_endnotes_part": false,
+      "has_comments_part": false,
+      "visual_page_numbers": "not_available_without_fixed_renderer",
+      "boundary": "OOXML signals only; explicit breaks are not a complete visual pagination model."
+    },
+    {
+      "experiment_id": "TECH-STRUCT-006-R01",
+      "sample_id": "SELF-007",
+      "source_path": "samples\\self-authored\\docx\\SELF-007-complex.docx",
+      "source_hash": "493ac305c5918558efd0d352d68bc3917e0d71405cd9aecab5514e52b05fa891",
+      "format": "DOCX",
+      "paragraph_count_in_document_xml": 28,
+      "explicit_page_break_paragraph_indexes": [
+        26
+      ],
+      "explicit_page_break_count": 1,
+      "section_count": 0,
+      "header_parts": [
+        "word/header1.xml"
+      ],
+      "footer_parts": [
+        "word/footer1.xml"
+      ],
+      "has_footnotes_part": true,
+      "has_endnotes_part": false,
+      "has_comments_part": false,
+      "visual_page_numbers": "not_available_without_fixed_renderer",
+      "boundary": "OOXML signals only; explicit breaks are not a complete visual pagination model."
+    }
+  ],
+  "boundary": "No renderer available in this environment."
+}

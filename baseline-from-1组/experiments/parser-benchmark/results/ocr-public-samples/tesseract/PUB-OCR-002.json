@@ -1,0 +1,3497 @@
+{
+  "status": "succeeded",
+  "text": "\"u10}}0q oN iooT\ngx0TxTT= seotoqp seoruoreA\n:shod3o3 anew [Te os Se se 3f 3urAeaef\ndoy wo 6 ey ou seprarp mo10q 04} WO 8 aq HOU,\nv4. 6xOIxTT\n“TEA eaxeM (Teq919 rmo33oq ad TO Tx,\n3Bq9 Peer huop em pue) doy uo 8 oy} 3no sjooueD\nooq eq Wo ZX<y oy 9Bq 998 [Lom 3X9NT \"soqtrrudf\n9 中 Jey eq arour Jo pr 408 Apeanle sqeqI iaod\nSols KONYA aq anad Weg\ntestis “Apredoxd 3 op oy Bt108 says 31\nBSE XOUX TT sof JO UeaAere oxy Jo qno ano} ser 0} oun SBM AHO\nTs Smouy voruoz9q pure pBor ot} uop San .\n1 Pa wH03}0q pure do wioss 314 Te preod squared seorwose, seyeunyz0juy\ni 1s 04920 PH 398 110M are sag ‘uot of om ge +\n用 Surroamnb HA preautoy sue] pue sase\n(Cquertiq os arnok SM 8es0[9 zaKepd rade ove vay soon 19905)\nin 8ar -doyszoop oq op SERIES\nSAeH_ ou wee qpeqnogs ome ss amo weEH S =\nHens) oruoxaA AGRO ety, Suen ASPET\n00\nRage. Pursnoxepanaise\n3 re Si auo ysnf st ”~\n‘08 om axad os fy Mo, \"UT? JO a\nny 38 aq AIaeqoed qe Ee aaeq one Lak 上 AR 01 AoED “re Sa tye\nWOLLO@ FHL NO 只 IIQO STHONVO SKVATV ooP 3xq e 428 而 可 远 司 [ i\nPRA WORE v oq ross ELALGAT te sueadr sn? saoueqo et 和 08 0} rs\nreo Jomsue ayy ea SEO a” Otro: ae Oe",
+  "lines": [
+    "\"u10}}0q oN iooT",
+    "gx0TxTT= seotoqp seoruoreA",
+    ":shod3o3 anew [Te os Se se 3f 3urAeaef",
+    "doy wo 6 ey ou seprarp mo10q 04} WO 8 aq HOU,",
+    "v4. 6xOIxTT",
+    "“TEA eaxeM (Teq919 rmo33oq ad TO Tx,",
+    "3Bq9 Peer huop em pue) doy uo 8 oy} 3no sjooueD",
+    "ooq eq Wo ZX<y oy 9Bq 998 [Lom 3X9NT \"soqtrrudf",
+    "9 中 Jey eq arour Jo pr 408 Apeanle sqeqI iaod",
+    "Sols KONYA aq anad Weg",
+    "testis “Apredoxd 3 op oy Bt108 says 31",
+    "BSE XOUX TT sof JO UeaAere oxy Jo qno ano} ser 0} oun SBM AHO",
+    "Ts Smouy voruoz9q pure pBor ot} uop San .",
+    "1 Pa wH03}0q pure do wioss 314 Te preod squared seorwose, seyeunyz0juy",
+    "i 1s 04920 PH 398 110M are sag ‘uot of om ge +",
+    "用 Surroamnb HA preautoy sue] pue sase",
+    "(Cquertiq os arnok SM 8es0[9 zaKepd rade ove vay soon 19905)",
+    "in 8ar -doyszoop oq op SERIES",
+    "SAeH_ ou wee qpeqnogs ome ss amo weEH S =",
+    "Hens) oruoxaA AGRO ety, Suen ASPET",
+    "00",
+    "Rage. Pursnoxepanaise",
+    "3 re Si auo ysnf st ”~",
+    "‘08 om axad os fy Mo, \"UT? JO a",
+    "ny 38 aq AIaeqoed qe Ee aaeq one Lak 上 AR 01 AoED “re Sa tye",
+    "WOLLO@ FHL NO 只 IIQO STHONVO SKVATV ooP 3xq e 428 而 可 远 司 [ i",
+    "PRA WORE v oq ross ELALGAT te sueadr sn? saoueqo et 和 08 0} rs",
+    "reo Jomsue ayy ea SEO a” Otro: ae Oe"
+  ],
+  "items": [
+    {
+      "text": "\"u10}}0q",
+      "confidence": 21.055161,
+      "bbox": [
+        437,
+        184,
+        48,
+        10
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "oN",
+      "confidence": 81.926804,
+      "bbox": [
+        491,
+        184,
+        19,
+        10
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "iooT",
+      "confidence": 74.421356,
+      "bbox": [
+        516,
+        184,
+        35,
+        12
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "gx0TxTT=",
+      "confidence": 20.469093,
+      "bbox": [
+        287,
+        217,
+        75,
+        9
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "seotoqp",
+      "confidence": 32.517448,
+      "bbox": [
+        365,
+        217,
+        43,
+        10
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "seoruoreA",
+      "confidence": 59.895779,
+      "bbox": [
+        413,
+        217,
+        65,
+        9
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": ":shod3o3",
+      "confidence": 24.783157,
+      "bbox": [
+        296,
+        245,
+        66,
+        11
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "anew",
+      "confidence": 39.466179,
+      "bbox": [
+        367,
+        247,
+        33,
+        10
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "[Te",
+      "confidence": 45.099792,
+      "bbox": [
+        406,
+        247,
+        14,
+        10
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "os",
+      "confidence": 66.740372,
+      "bbox": [
+        426,
+        247,
+        12,
+        7
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": "Se",
+      "confidence": 8.442802,
+      "bbox": [
+        444,
+        248,
+        18,
+        9
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "se",
+      "confidence": 65.176743,
+      "bbox": [
+        468,
+        248,
+        13,
+        6
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 6
+    },
+    {
+      "text": "3f",
+      "confidence": 74.655548,
+      "bbox": [
+        487,
+        248,
+        9,
+        10
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 7
+    },
+    {
+      "text": "3urAeaef",
+      "confidence": 29.792679,
+      "bbox": [
+        501,
+        246,
+        49,
+        14
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 8
+    },
+    {
+      "text": "doy",
+      "confidence": 78.097672,
+      "bbox": [
+        220,
+        259,
+        18,
+        11
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 2,
+      "word": 1
+    },
+    {
+      "text": "wo",
+      "confidence": 77.980278,
+      "bbox": [
+        245,
+        262,
+        13,
+        6
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 2,
+      "word": 2
+    },
+    {
+      "text": "6",
+      "confidence": 96.545517,
+      "bbox": [
+        264,
+        262,
+        6,
+        9
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 2,
+      "word": 3
+    },
+    {
+      "text": "ey",
+      "confidence": 68.302383,
+      "bbox": [
+        276,
+        262,
+        19,
+        10
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 2,
+      "word": 4
+    },
+    {
+      "text": "ou",
+      "confidence": 0.0,
+      "bbox": [
+        301,
+        262,
+        23,
+        9
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 2,
+      "word": 5
+    },
+    {
+      "text": "seprarp",
+      "confidence": 52.601627,
+      "bbox": [
+        330,
+        263,
+        44,
+        10
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 2,
+      "word": 6
+    },
+    {
+      "text": "mo10q",
+      "confidence": 26.414627,
+      "bbox": [
+        379,
+        263,
+        43,
+        10
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 2,
+      "word": 7
+    },
+    {
+      "text": "04}",
+      "confidence": 75.543854,
+      "bbox": [
+        428,
+        263,
+        20,
+        10
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 2,
+      "word": 8
+    },
+    {
+      "text": "WO",
+      "confidence": 63.780102,
+      "bbox": [
+        454,
+        264,
+        15,
+        6
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 2,
+      "word": 9
+    },
+    {
+      "text": "8",
+      "confidence": 91.375847,
+      "bbox": [
+        475,
+        264,
+        7,
+        9
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 2,
+      "word": 10
+    },
+    {
+      "text": "aq",
+      "confidence": 17.912056,
+      "bbox": [
+        488,
+        264,
+        22,
+        10
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 2,
+      "word": 11
+    },
+    {
+      "text": "HOU,",
+      "confidence": 39.955364,
+      "bbox": [
+        516,
+        265,
+        34,
+        10
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 2,
+      "word": 12
+    },
+    {
+      "text": "v4.",
+      "confidence": 33.485237,
+      "bbox": [
+        71,
+        299,
+        19,
+        28
+      ],
+      "block": 8,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "6xOIxTT",
+      "confidence": 0.0,
+      "bbox": [
+        348,
+        309,
+        62,
+        11
+      ],
+      "block": 8,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "“TEA",
+      "confidence": 13.606522,
+      "bbox": [
+        267,
+        339,
+        35,
+        10
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "eaxeM",
+      "confidence": 27.777702,
+      "bbox": [
+        306,
+        340,
+        59,
+        11
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "(Teq919",
+      "confidence": 50.676517,
+      "bbox": [
+        373,
+        341,
+        41,
+        11
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "rmo33oq",
+      "confidence": 38.033676,
+      "bbox": [
+        419,
+        343,
+        44,
+        11
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": "ad",
+      "confidence": 14.82605,
+      "bbox": [
+        468,
+        344,
+        21,
+        10
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "TO",
+      "confidence": 55.959171,
+      "bbox": [
+        495,
+        345,
+        15,
+        6
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 1,
+      "word": 6
+    },
+    {
+      "text": "Tx,",
+      "confidence": 28.292473,
+      "bbox": [
+        515,
+        345,
+        33,
+        10
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 1,
+      "word": 7
+    },
+    {
+      "text": "3Bq9",
+      "confidence": 35.589836,
+      "bbox": [
+        219,
+        353,
+        25,
+        10
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 2,
+      "word": 1
+    },
+    {
+      "text": "Peer",
+      "confidence": 54.404835,
+      "bbox": [
+        251,
+        354,
+        28,
+        10
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 2,
+      "word": 2
+    },
+    {
+      "text": "huop",
+      "confidence": 67.630371,
+      "bbox": [
+        286,
+        355,
+        30,
+        10
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 2,
+      "word": 3
+    },
+    {
+      "text": "em",
+      "confidence": 82.175789,
+      "bbox": [
+        323,
+        356,
+        16,
+        7
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 2,
+      "word": 4
+    },
+    {
+      "text": "pue)",
+      "confidence": 63.007919,
+      "bbox": [
+        347,
+        356,
+        27,
+        11
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 2,
+      "word": 5
+    },
+    {
+      "text": "doy",
+      "confidence": 63.874424,
+      "bbox": [
+        381,
+        355,
+        19,
+        12
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 2,
+      "word": 6
+    },
+    {
+      "text": "uo",
+      "confidence": 84.427582,
+      "bbox": [
+        408,
+        359,
+        13,
+        6
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 2,
+      "word": 7
+    },
+    {
+      "text": "8",
+      "confidence": 96.024635,
+      "bbox": [
+        429,
+        359,
+        6,
+        10
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 2,
+      "word": 8
+    },
+    {
+      "text": "oy}",
+      "confidence": 77.116585,
+      "bbox": [
+        443,
+        360,
+        20,
+        10
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 2,
+      "word": 9
+    },
+    {
+      "text": "3no",
+      "confidence": 84.733437,
+      "bbox": [
+        471,
+        360,
+        21,
+        10
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 2,
+      "word": 10
+    },
+    {
+      "text": "sjooueD",
+      "confidence": 27.69017,
+      "bbox": [
+        500,
+        361,
+        48,
+        10
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 2,
+      "word": 11
+    },
+    {
+      "text": "ooq",
+      "confidence": 49.601562,
+      "bbox": [
+        219,
+        369,
+        41,
+        11
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 3,
+      "word": 1
+    },
+    {
+      "text": "eq",
+      "confidence": 60.789497,
+      "bbox": [
+        265,
+        370,
+        19,
+        10
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 3,
+      "word": 2
+    },
+    {
+      "text": "Wo",
+      "confidence": 53.453907,
+      "bbox": [
+        289,
+        371,
+        13,
+        7
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 3,
+      "word": 3
+    },
+    {
+      "text": "ZX<y",
+      "confidence": 39.802319,
+      "bbox": [
+        307,
+        371,
+        17,
+        10
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 3,
+      "word": 4
+    },
+    {
+      "text": "oy",
+      "confidence": 32.735703,
+      "bbox": [
+        339,
+        372,
+        19,
+        11
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 3,
+      "word": 5
+    },
+    {
+      "text": "9Bq",
+      "confidence": 28.993401,
+      "bbox": [
+        363,
+        373,
+        25,
+        11
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 3,
+      "word": 6
+    },
+    {
+      "text": "998",
+      "confidence": 61.234749,
+      "bbox": [
+        393,
+        374,
+        19,
+        7
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 3,
+      "word": 7
+    },
+    {
+      "text": "[Lom",
+      "confidence": 59.208683,
+      "bbox": [
+        416,
+        375,
+        28,
+        10
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 3,
+      "word": 8
+    },
+    {
+      "text": "3X9NT",
+      "confidence": 49.750404,
+      "bbox": [
+        449,
+        376,
+        32,
+        11
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 3,
+      "word": 9
+    },
+    {
+      "text": "\"soqtrrudf",
+      "confidence": 0.0,
+      "bbox": [
+        486,
+        377,
+        62,
+        11
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 3,
+      "word": 10
+    },
+    {
+      "text": "9",
+      "confidence": 49.158916,
+      "bbox": [
+        218,
+        384,
+        19,
+        11
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 4,
+      "word": 1
+    },
+    {
+      "text": "中",
+      "confidence": 37.370651,
+      "bbox": [
+        228,
+        377,
+        10,
+        32
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 4,
+      "word": 2
+    },
+    {
+      "text": "Jey",
+      "confidence": 22.807755,
+      "bbox": [
+        242,
+        385,
+        26,
+        11
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 4,
+      "word": 3
+    },
+    {
+      "text": "eq",
+      "confidence": 0.0,
+      "bbox": [
+        274,
+        386,
+        28,
+        11
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 4,
+      "word": 4
+    },
+    {
+      "text": "arour",
+      "confidence": 54.16544,
+      "bbox": [
+        309,
+        387,
+        30,
+        8
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 4,
+      "word": 5
+    },
+    {
+      "text": "Jo",
+      "confidence": 95.553467,
+      "bbox": [
+        344,
+        389,
+        13,
+        10
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 4,
+      "word": 6
+    },
+    {
+      "text": "pr",
+      "confidence": 45.647888,
+      "bbox": [
+        363,
+        389,
+        18,
+        10
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 4,
+      "word": 7
+    },
+    {
+      "text": "408",
+      "confidence": 81.781967,
+      "bbox": [
+        387,
+        388,
+        19,
+        11
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 4,
+      "word": 8
+    },
+    {
+      "text": "Apeanle",
+      "confidence": 24.318893,
+      "bbox": [
+        413,
+        389,
+        47,
+        14
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 4,
+      "word": 9
+    },
+    {
+      "text": "sqeqI",
+      "confidence": 46.28532,
+      "bbox": [
+        468,
+        393,
+        41,
+        11
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 4,
+      "word": 10
+    },
+    {
+      "text": "iaod",
+      "confidence": 19.410461,
+      "bbox": [
+        517,
+        394,
+        30,
+        11
+      ],
+      "block": 10,
+      "paragraph": 1,
+      "line": 4,
+      "word": 11
+    },
+    {
+      "text": "Sols",
+      "confidence": 64.185776,
+      "bbox": [
+        655,
+        398,
+        28,
+        9
+      ],
+      "block": 13,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "KONYA",
+      "confidence": 40.800304,
+      "bbox": [
+        692,
+        398,
+        50,
+        11
+      ],
+      "block": 13,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "aq",
+      "confidence": 42.44986,
+      "bbox": [
+        749,
+        400,
+        15,
+        8
+      ],
+      "block": 13,
+      "paragraph": 1,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "anad",
+      "confidence": 29.680779,
+      "bbox": [
+        771,
+        398,
+        24,
+        11
+      ],
+      "block": 13,
+      "paragraph": 1,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": "Weg",
+      "confidence": 30.631721,
+      "bbox": [
+        800,
+        399,
+        29,
+        11
+      ],
+      "block": 13,
+      "paragraph": 1,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "testis",
+      "confidence": 11.002281,
+      "bbox": [
+        341,
+        420,
+        71,
+        14
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "“Apredoxd",
+      "confidence": 6.354523,
+      "bbox": [
+        749,
+        427,
+        173,
+        14
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "3",
+      "confidence": 59.494965,
+      "bbox": [
+        808,
+        418,
+        7,
+        30
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "op",
+      "confidence": 96.487358,
+      "bbox": [
+        820,
+        418,
+        13,
+        30
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": "oy",
+      "confidence": 46.011795,
+      "bbox": [
+        838,
+        418,
+        11,
+        30
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "Bt108",
+      "confidence": 12.754303,
+      "bbox": [
+        855,
+        418,
+        25,
+        30
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 1,
+      "word": 6
+    },
+    {
+      "text": "says",
+      "confidence": 61.582676,
+      "bbox": [
+        885,
+        418,
+        25,
+        30
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 1,
+      "word": 7
+    },
+    {
+      "text": "31",
+      "confidence": 54.747944,
+      "bbox": [
+        915,
+        418,
+        10,
+        30
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 1,
+      "word": 8
+    },
+    {
+      "text": "BSE",
+      "confidence": 0.0,
+      "bbox": [
+        335,
+        436,
+        26,
+        10
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 2,
+      "word": 1
+    },
+    {
+      "text": "XOUX",
+      "confidence": 0.0,
+      "bbox": [
+        368,
+        438,
+        33,
+        10
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 2,
+      "word": 2
+    },
+    {
+      "text": "TT",
+      "confidence": 0.0,
+      "bbox": [
+        405,
+        431,
+        17,
+        32
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 2,
+      "word": 3
+    },
+    {
+      "text": "sof",
+      "confidence": 17.894836,
+      "bbox": [
+        603,
+        438,
+        26,
+        13
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 2,
+      "word": 4
+    },
+    {
+      "text": "JO",
+      "confidence": 75.488777,
+      "bbox": [
+        633,
+        442,
+        13,
+        11
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 2,
+      "word": 5
+    },
+    {
+      "text": "UeaAere",
+      "confidence": 32.429977,
+      "bbox": [
+        652,
+        444,
+        46,
+        13
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 2,
+      "word": 6
+    },
+    {
+      "text": "oxy",
+      "confidence": 43.167416,
+      "bbox": [
+        705,
+        447,
+        39,
+        12
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 2,
+      "word": 7
+    },
+    {
+      "text": "Jo",
+      "confidence": 90.216896,
+      "bbox": [
+        733,
+        434,
+        11,
+        31
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 2,
+      "word": 8
+    },
+    {
+      "text": "qno",
+      "confidence": 0.0,
+      "bbox": [
+        749,
+        447,
+        21,
+        10
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 2,
+      "word": 9
+    },
+    {
+      "text": "ano}",
+      "confidence": 11.286469,
+      "bbox": [
+        774,
+        434,
+        24,
+        31
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 2,
+      "word": 10
+    },
+    {
+      "text": "ser",
+      "confidence": 0.0,
+      "bbox": [
+        805,
+        434,
+        19,
+        31
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 2,
+      "word": 11
+    },
+    {
+      "text": "0}",
+      "confidence": 60.021366,
+      "bbox": [
+        834,
+        434,
+        8,
+        31
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 2,
+      "word": 12
+    },
+    {
+      "text": "oun",
+      "confidence": 6.548996,
+      "bbox": [
+        849,
+        434,
+        22,
+        31
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 2,
+      "word": 13
+    },
+    {
+      "text": "SBM",
+      "confidence": 26.662697,
+      "bbox": [
+        878,
+        434,
+        13,
+        31
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 2,
+      "word": 14
+    },
+    {
+      "text": "AHO",
+      "confidence": 38.696709,
+      "bbox": [
+        898,
+        434,
+        27,
+        31
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 2,
+      "word": 15
+    },
+    {
+      "text": "Ts",
+      "confidence": 23.495605,
+      "bbox": [
+        602,
+        454,
+        16,
+        12
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 3,
+      "word": 1
+    },
+    {
+      "text": "Smouy",
+      "confidence": 54.686146,
+      "bbox": [
+        625,
+        458,
+        43,
+        15
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 3,
+      "word": 2
+    },
+    {
+      "text": "voruoz9q",
+      "confidence": 13.449707,
+      "bbox": [
+        677,
+        463,
+        62,
+        13
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 3,
+      "word": 3
+    },
+    {
+      "text": "pure",
+      "confidence": 0.0,
+      "bbox": [
+        745,
+        465,
+        24,
+        11
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 3,
+      "word": 4
+    },
+    {
+      "text": "pBor",
+      "confidence": 0.0,
+      "bbox": [
+        777,
+        464,
+        27,
+        12
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 3,
+      "word": 5
+    },
+    {
+      "text": "ot}",
+      "confidence": 41.915741,
+      "bbox": [
+        810,
+        464,
+        19,
+        11
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 3,
+      "word": 6
+    },
+    {
+      "text": "uop",
+      "confidence": 0.0,
+      "bbox": [
+        835,
+        463,
+        29,
+        11
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 3,
+      "word": 7
+    },
+    {
+      "text": "San",
+      "confidence": 5.617844,
+      "bbox": [
+        870,
+        460,
+        51,
+        13
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 3,
+      "word": 8
+    },
+    {
+      "text": ".",
+      "confidence": 0.0,
+      "bbox": [
+        1026,
+        481,
+        3,
+        3
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 3,
+      "word": 9
+    },
+    {
+      "text": "1",
+      "confidence": 79.017815,
+      "bbox": [
+        111,
+        472,
+        3,
+        2
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 4,
+      "word": 1
+    },
+    {
+      "text": "Pa",
+      "confidence": 14.776428,
+      "bbox": [
+        335,
+        466,
+        49,
+        12
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 4,
+      "word": 2
+    },
+    {
+      "text": "wH03}0q",
+      "confidence": 0.0,
+      "bbox": [
+        389,
+        470,
+        43,
+        12
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 4,
+      "word": 3
+    },
+    {
+      "text": "pure",
+      "confidence": 71.791504,
+      "bbox": [
+        437,
+        473,
+        24,
+        10
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 4,
+      "word": 4
+    },
+    {
+      "text": "do",
+      "confidence": 42.653042,
+      "bbox": [
+        466,
+        472,
+        20,
+        12
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 4,
+      "word": 5
+    },
+    {
+      "text": "wioss",
+      "confidence": 0.0,
+      "bbox": [
+        492,
+        475,
+        31,
+        11
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 4,
+      "word": 6
+    },
+    {
+      "text": "314",
+      "confidence": 58.935207,
+      "bbox": [
+        528,
+        475,
+        18,
+        10
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 4,
+      "word": 7
+    },
+    {
+      "text": "Te",
+      "confidence": 0.0,
+      "bbox": [
+        602,
+        471,
+        26,
+        15
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 4,
+      "word": 8
+    },
+    {
+      "text": "preod",
+      "confidence": 24.956711,
+      "bbox": [
+        642,
+        478,
+        43,
+        14
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 4,
+      "word": 9
+    },
+    {
+      "text": "squared",
+      "confidence": 71.137787,
+      "bbox": [
+        700,
+        479,
+        54,
+        13
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 4,
+      "word": 10
+    },
+    {
+      "text": "seorwose,",
+      "confidence": 7.554588,
+      "bbox": [
+        767,
+        481,
+        62,
+        12
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 4,
+      "word": 11
+    },
+    {
+      "text": "seyeunyz0juy",
+      "confidence": 0.0,
+      "bbox": [
+        838,
+        478,
+        82,
+        13
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 4,
+      "word": 12
+    },
+    {
+      "text": "i",
+      "confidence": 87.628899,
+      "bbox": [
+        115,
+        477,
+        2,
+        9
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 5,
+      "word": 1
+    },
+    {
+      "text": "1s",
+      "confidence": 54.303879,
+      "bbox": [
+        217,
+        477,
+        10,
+        9
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 5,
+      "word": 2
+    },
+    {
+      "text": "04920",
+      "confidence": 23.426575,
+      "bbox": [
+        233,
+        477,
+        34,
+        11
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 5,
+      "word": 3
+    },
+    {
+      "text": "PH",
+      "confidence": 48.623844,
+      "bbox": [
+        273,
+        479,
+        16,
+        10
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 5,
+      "word": 4
+    },
+    {
+      "text": "398",
+      "confidence": 62.078777,
+      "bbox": [
+        294,
+        479,
+        19,
+        9
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 5,
+      "word": 5
+    },
+    {
+      "text": "110M",
+      "confidence": 42.533768,
+      "bbox": [
+        319,
+        482,
+        27,
+        9
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 5,
+      "word": 6
+    },
+    {
+      "text": "are",
+      "confidence": 0.0,
+      "bbox": [
+        351,
+        483,
+        48,
+        12
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 5,
+      "word": 7
+    },
+    {
+      "text": "sag",
+      "confidence": 40.575565,
+      "bbox": [
+        404,
+        487,
+        21,
+        11
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 5,
+      "word": 8
+    },
+    {
+      "text": "‘uot",
+      "confidence": 0.0,
+      "bbox": [
+        434,
+        489,
+        28,
+        10
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 5,
+      "word": 9
+    },
+    {
+      "text": "of",
+      "confidence": 31.128632,
+      "bbox": [
+        469,
+        488,
+        14,
+        9
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 5,
+      "word": 10
+    },
+    {
+      "text": "om",
+      "confidence": 55.367737,
+      "bbox": [
+        488,
+        491,
+        19,
+        7
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 5,
+      "word": 11
+    },
+    {
+      "text": "ge",
+      "confidence": 22.649719,
+      "bbox": [
+        510,
+        491,
+        22,
+        10
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 5,
+      "word": 12
+    },
+    {
+      "text": "+",
+      "confidence": 29.345184,
+      "bbox": [
+        603,
+        487,
+        10,
+        10
+      ],
+      "block": 15,
+      "paragraph": 1,
+      "line": 5,
+      "word": 13
+    },
+    {
+      "text": "用",
+      "confidence": 35.97525,
+      "bbox": [
+        614,
+        491,
+        7,
+        11
+      ],
+      "block": 17,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "Surroamnb",
+      "confidence": 44.917488,
+      "bbox": [
+        633,
+        492,
+        71,
+        15
+      ],
+      "block": 17,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "HA",
+      "confidence": 49.567734,
+      "bbox": [
+        734,
+        500,
+        16,
+        7
+      ],
+      "block": 17,
+      "paragraph": 1,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "preautoy",
+      "confidence": 0.0,
+      "bbox": [
+        763,
+        498,
+        49,
+        13
+      ],
+      "block": 17,
+      "paragraph": 1,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": "sue]",
+      "confidence": 0.0,
+      "bbox": [
+        823,
+        497,
+        30,
+        11
+      ],
+      "block": 17,
+      "paragraph": 1,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "pue",
+      "confidence": 70.93396,
+      "bbox": [
+        864,
+        496,
+        21,
+        11
+      ],
+      "block": 17,
+      "paragraph": 1,
+      "line": 1,
+      "word": 6
+    },
+    {
+      "text": "sase",
+      "confidence": 25.36615,
+      "bbox": [
+        895,
+        493,
+        25,
+        10
+      ],
+      "block": 17,
+      "paragraph": 1,
+      "line": 1,
+      "word": 7
+    },
+    {
+      "text": "(Cquertiq",
+      "confidence": 5.123291,
+      "bbox": [
+        419,
+        502,
+        62,
+        15
+      ],
+      "block": 17,
+      "paragraph": 2,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "os",
+      "confidence": 95.377556,
+      "bbox": [
+        487,
+        507,
+        13,
+        7
+      ],
+      "block": 17,
+      "paragraph": 2,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "arnok",
+      "confidence": 13.611786,
+      "bbox": [
+        505,
+        504,
+        40,
+        13
+      ],
+      "block": 17,
+      "paragraph": 2,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "SM",
+      "confidence": 13.738472,
+      "bbox": [
+        600,
+        504,
+        13,
+        14
+      ],
+      "block": 17,
+      "paragraph": 2,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": "8es0[9",
+      "confidence": 0.0,
+      "bbox": [
+        618,
+        509,
+        38,
+        15
+      ],
+      "block": 17,
+      "paragraph": 2,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "zaKepd",
+      "confidence": 8.931335,
+      "bbox": [
+        661,
+        507,
+        47,
+        21
+      ],
+      "block": 17,
+      "paragraph": 2,
+      "line": 1,
+      "word": 6
+    },
+    {
+      "text": "rade",
+      "confidence": 37.947105,
+      "bbox": [
+        713,
+        496,
+        50,
+        37
+      ],
+      "block": 17,
+      "paragraph": 2,
+      "line": 1,
+      "word": 7
+    },
+    {
+      "text": "ove",
+      "confidence": 41.446999,
+      "bbox": [
+        767,
+        516,
+        28,
+        12
+      ],
+      "block": 17,
+      "paragraph": 2,
+      "line": 1,
+      "word": 8
+    },
+    {
+      "text": "vay",
+      "confidence": 62.794655,
+      "bbox": [
+        799,
+        514,
+        32,
+        12
+      ],
+      "block": 17,
+      "paragraph": 2,
+      "line": 1,
+      "word": 9
+    },
+    {
+      "text": "soon",
+      "confidence": 0.0,
+      "bbox": [
+        835,
+        502,
+        42,
+        36
+      ],
+      "block": 17,
+      "paragraph": 2,
+      "line": 1,
+      "word": 10
+    },
+    {
+      "text": "19905)",
+      "confidence": 22.013687,
+      "bbox": [
+        886,
+        502,
+        36,
+        36
+      ],
+      "block": 17,
+      "paragraph": 2,
+      "line": 1,
+      "word": 11
+    },
+    {
+      "text": "in",
+      "confidence": 12.618607,
+      "bbox": [
+        599,
+        521,
+        21,
+        26
+      ],
+      "block": 17,
+      "paragraph": 3,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "8ar",
+      "confidence": 34.473671,
+      "bbox": [
+        627,
+        528,
+        20,
+        12
+      ],
+      "block": 17,
+      "paragraph": 3,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "-doyszoop",
+      "confidence": 12.496178,
+      "bbox": [
+        655,
+        529,
+        65,
+        16
+      ],
+      "block": 17,
+      "paragraph": 3,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "oq",
+      "confidence": 41.960663,
+      "bbox": [
+        727,
+        534,
+        23,
+        11
+      ],
+      "block": 17,
+      "paragraph": 3,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": "op",
+      "confidence": 68.045578,
+      "bbox": [
+        757,
+        534,
+        12,
+        10
+      ],
+      "block": 17,
+      "paragraph": 3,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "SERIES",
+      "confidence": 24.662697,
+      "bbox": [
+        776,
+        529,
+        92,
+        15
+      ],
+      "block": 17,
+      "paragraph": 3,
+      "line": 1,
+      "word": 6
+    },
+    {
+      "text": "SAeH_",
+      "confidence": 0.0,
+      "bbox": [
+        598,
+        538,
+        48,
+        26
+      ],
+      "block": 17,
+      "paragraph": 4,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "ou",
+      "confidence": 43.461185,
+      "bbox": [
+        653,
+        548,
+        30,
+        12
+      ],
+      "block": 17,
+      "paragraph": 4,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "wee",
+      "confidence": 16.280212,
+      "bbox": [
+        691,
+        551,
+        35,
+        11
+      ],
+      "block": 17,
+      "paragraph": 4,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "qpeqnogs",
+      "confidence": 0.0,
+      "bbox": [
+        734,
+        550,
+        48,
+        12
+      ],
+      "block": 17,
+      "paragraph": 4,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": "ome",
+      "confidence": 21.947929,
+      "bbox": [
+        788,
+        549,
+        19,
+        11
+      ],
+      "block": 17,
+      "paragraph": 4,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "ss",
+      "confidence": 43.9492,
+      "bbox": [
+        812,
+        547,
+        26,
+        12
+      ],
+      "block": 17,
+      "paragraph": 4,
+      "line": 1,
+      "word": 6
+    },
+    {
+      "text": "amo",
+      "confidence": 50.60025,
+      "bbox": [
+        844,
+        545,
+        18,
+        11
+      ],
+      "block": 17,
+      "paragraph": 4,
+      "line": 1,
+      "word": 7
+    },
+    {
+      "text": "weEH",
+      "confidence": 0.0,
+      "bbox": [
+        867,
+        544,
+        26,
+        10
+      ],
+      "block": 17,
+      "paragraph": 4,
+      "line": 1,
+      "word": 8
+    },
+    {
+      "text": "S",
+      "confidence": 33.824089,
+      "bbox": [
+        900,
+        559,
+        5,
+        7
+      ],
+      "block": 17,
+      "paragraph": 4,
+      "line": 1,
+      "word": 9
+    },
+    {
+      "text": "=",
+      "confidence": 23.712852,
+      "bbox": [
+        905,
+        558,
+        12,
+        11
+      ],
+      "block": 17,
+      "paragraph": 4,
+      "line": 1,
+      "word": 10
+    },
+    {
+      "text": "Hens)",
+      "confidence": 25.357849,
+      "bbox": [
+        613,
+        558,
+        39,
+        17
+      ],
+      "block": 17,
+      "paragraph": 4,
+      "line": 2,
+      "word": 1
+    },
+    {
+      "text": "oruoxaA",
+      "confidence": 56.50753,
+      "bbox": [
+        661,
+        566,
+        63,
+        13
+      ],
+      "block": 17,
+      "paragraph": 4,
+      "line": 2,
+      "word": 2
+    },
+    {
+      "text": "AGRO",
+      "confidence": 10.951126,
+      "bbox": [
+        730,
+        566,
+        39,
+        13
+      ],
+      "block": 17,
+      "paragraph": 4,
+      "line": 2,
+      "word": 3
+    },
+    {
+      "text": "ety,",
+      "confidence": 30.169113,
+      "bbox": [
+        776,
+        566,
+        23,
+        12
+      ],
+      "block": 17,
+      "paragraph": 4,
+      "line": 2,
+      "word": 4
+    },
+    {
+      "text": "Suen",
+      "confidence": 0.0,
+      "bbox": [
+        805,
+        562,
+        47,
+        13
+      ],
+      "block": 17,
+      "paragraph": 4,
+      "line": 2,
+      "word": 5
+    },
+    {
+      "text": "ASPET",
+      "confidence": 17.293129,
+      "bbox": [
+        857,
+        559,
+        43,
+        24
+      ],
+      "block": 17,
+      "paragraph": 4,
+      "line": 2,
+      "word": 6
+    },
+    {
+      "text": "00",
+      "confidence": 48.735207,
+      "bbox": [
+        597,
+        602,
+        34,
+        14
+      ],
+      "block": 20,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "Rage.",
+      "confidence": 17.433182,
+      "bbox": [
+        596,
+        610,
+        31,
+        25
+      ],
+      "block": 20,
+      "paragraph": 1,
+      "line": 2,
+      "word": 1
+    },
+    {
+      "text": "Pursnoxepanaise",
+      "confidence": 0.0,
+      "bbox": [
+        632,
+        614,
+        155,
+        17
+      ],
+      "block": 20,
+      "paragraph": 1,
+      "line": 2,
+      "word": 2
+    },
+    {
+      "text": "3",
+      "confidence": 20.909966,
+      "bbox": [
+        595,
+        635,
+        2,
+        2
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "re",
+      "confidence": 43.236866,
+      "bbox": [
+        636,
+        632,
+        7,
+        8
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "Si",
+      "confidence": 26.874229,
+      "bbox": [
+        650,
+        634,
+        7,
+        8
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "auo",
+      "confidence": 86.67308,
+      "bbox": [
+        697,
+        637,
+        24,
+        8
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": "ysnf",
+      "confidence": 72.016327,
+      "bbox": [
+        726,
+        634,
+        27,
+        13
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "st",
+      "confidence": 83.068146,
+      "bbox": [
+        756,
+        636,
+        11,
+        11
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 1,
+      "word": 6
+    },
+    {
+      "text": "”~",
+      "confidence": 15.733635,
+      "bbox": [
+        1081,
+        639,
+        19,
+        11
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 1,
+      "word": 7
+    },
+    {
+      "text": "‘08",
+      "confidence": 59.281879,
+      "bbox": [
+        270,
+        632,
+        13,
+        9
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 2,
+      "word": 1
+    },
+    {
+      "text": "om",
+      "confidence": 72.361244,
+      "bbox": [
+        288,
+        636,
+        16,
+        7
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 2,
+      "word": 2
+    },
+    {
+      "text": "axad",
+      "confidence": 69.966057,
+      "bbox": [
+        315,
+        638,
+        12,
+        6
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 2,
+      "word": 3
+    },
+    {
+      "text": "os",
+      "confidence": 82.051582,
+      "bbox": [
+        339,
+        626,
+        10,
+        26
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 2,
+      "word": 4
+    },
+    {
+      "text": "fy",
+      "confidence": 38.747211,
+      "bbox": [
+        361,
+        642,
+        2,
+        6
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 2,
+      "word": 5
+    },
+    {
+      "text": "Mo,",
+      "confidence": 58.569508,
+      "bbox": [
+        595,
+        631,
+        14,
+        26
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 2,
+      "word": 6
+    },
+    {
+      "text": "\"UT?",
+      "confidence": 27.68718,
+      "bbox": [
+        653,
+        631,
+        18,
+        27
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 2,
+      "word": 7
+    },
+    {
+      "text": "JO",
+      "confidence": 77.655334,
+      "bbox": [
+        677,
+        637,
+        14,
+        11
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 2,
+      "word": 8
+    },
+    {
+      "text": "a",
+      "confidence": 59.985981,
+      "bbox": [
+        811,
+        647,
+        5,
+        8
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 2,
+      "word": 9
+    },
+    {
+      "text": "ny",
+      "confidence": 17.361534,
+      "bbox": [
+        214,
+        646,
+        19,
+        10
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 3,
+      "word": 1
+    },
+    {
+      "text": "38",
+      "confidence": 44.035881,
+      "bbox": [
+        238,
+        647,
+        24,
+        11
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 3,
+      "word": 2
+    },
+    {
+      "text": "aq",
+      "confidence": 39.282257,
+      "bbox": [
+        267,
+        649,
+        19,
+        11
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 3,
+      "word": 3
+    },
+    {
+      "text": "AIaeqoed",
+      "confidence": 0.0,
+      "bbox": [
+        290,
+        637,
+        70,
+        28
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 3,
+      "word": 4
+    },
+    {
+      "text": "qe",
+      "confidence": 10.310394,
+      "bbox": [
+        364,
+        642,
+        28,
+        18
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 3,
+      "word": 5
+    },
+    {
+      "text": "Ee",
+      "confidence": 19.106461,
+      "bbox": [
+        397,
+        645,
+        39,
+        12
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 3,
+      "word": 6
+    },
+    {
+      "text": "aaeq",
+      "confidence": 55.924992,
+      "bbox": [
+        440,
+        649,
+        30,
+        12
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 3,
+      "word": 7
+    },
+    {
+      "text": "one",
+      "confidence": 29.713104,
+      "bbox": [
+        475,
+        652,
+        28,
+        7
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 3,
+      "word": 8
+    },
+    {
+      "text": "Lak",
+      "confidence": 0.0,
+      "bbox": [
+        509,
+        649,
+        34,
+        13
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 3,
+      "word": 9
+    },
+    {
+      "text": "上",
+      "confidence": 36.032391,
+      "bbox": [
+        595,
+        652,
+        8,
+        10
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 3,
+      "word": 10
+    },
+    {
+      "text": "AR",
+      "confidence": 38.492313,
+      "bbox": [
+        607,
+        644,
+        40,
+        29
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 3,
+      "word": 11
+    },
+    {
+      "text": "01",
+      "confidence": 63.832027,
+      "bbox": [
+        654,
+        652,
+        13,
+        11
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 3,
+      "word": 12
+    },
+    {
+      "text": "AoED",
+      "confidence": 57.223244,
+      "bbox": [
+        674,
+        654,
+        37,
+        12
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 3,
+      "word": 13
+    },
+    {
+      "text": "“re",
+      "confidence": 43.713928,
+      "bbox": [
+        718,
+        654,
+        29,
+        11
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 3,
+      "word": 14
+    },
+    {
+      "text": "Sa",
+      "confidence": 43.933468,
+      "bbox": [
+        752,
+        648,
+        61,
+        28
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 3,
+      "word": 15
+    },
+    {
+      "text": "tye",
+      "confidence": 33.461266,
+      "bbox": [
+        1056,
+        651,
+        44,
+        25
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 3,
+      "word": 16
+    },
+    {
+      "text": "WOLLO@",
+      "confidence": 3.935928,
+      "bbox": [
+        214,
+        662,
+        59,
+        13
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 4,
+      "word": 1
+    },
+    {
+      "text": "FHL",
+      "confidence": 51.701164,
+      "bbox": [
+        284,
+        666,
+        29,
+        12
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 4,
+      "word": 2
+    },
+    {
+      "text": "NO",
+      "confidence": 92.546059,
+      "bbox": [
+        322,
+        669,
+        21,
+        11
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 4,
+      "word": 3
+    },
+    {
+      "text": "只",
+      "confidence": 14.745911,
+      "bbox": [
+        356,
+        663,
+        1,
+        14
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 4,
+      "word": 4
+    },
+    {
+      "text": "IIQO",
+      "confidence": 34.934471,
+      "bbox": [
+        370,
+        659,
+        34,
+        19
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 4,
+      "word": 5
+    },
+    {
+      "text": "STHONVO",
+      "confidence": 37.995979,
+      "bbox": [
+        409,
+        662,
+        68,
+        15
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 4,
+      "word": 6
+    },
+    {
+      "text": "SKVATV",
+      "confidence": 57.217903,
+      "bbox": [
+        482,
+        667,
+        60,
+        11
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 4,
+      "word": 7
+    },
+    {
+      "text": "ooP",
+      "confidence": 3.316231,
+      "bbox": [
+        594,
+        664,
+        49,
+        23
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 4,
+      "word": 8
+    },
+    {
+      "text": "3xq",
+      "confidence": 0.0,
+      "bbox": [
+        650,
+        669,
+        19,
+        12
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 4,
+      "word": 9
+    },
+    {
+      "text": "e",
+      "confidence": 73.719604,
+      "bbox": [
+        677,
+        671,
+        8,
+        8
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 4,
+      "word": 10
+    },
+    {
+      "text": "428",
+      "confidence": 49.008465,
+      "bbox": [
+        692,
+        669,
+        22,
+        13
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 4,
+      "word": 11
+    },
+    {
+      "text": "而",
+      "confidence": 60.77956,
+      "bbox": [
+        721,
+        671,
+        13,
+        10
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 4,
+      "word": 12
+    },
+    {
+      "text": "可",
+      "confidence": 54.730873,
+      "bbox": [
+        744,
+        669,
+        14,
+        12
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 4,
+      "word": 13
+    },
+    {
+      "text": "远",
+      "confidence": 15.18071,
+      "bbox": [
+        757,
+        658,
+        15,
+        33
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 4,
+      "word": 14
+    },
+    {
+      "text": "司",
+      "confidence": 0.0,
+      "bbox": [
+        772,
+        668,
+        6,
+        8
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 4,
+      "word": 15
+    },
+    {
+      "text": "[",
+      "confidence": 0.0,
+      "bbox": [
+        783,
+        666,
+        12,
+        13
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 4,
+      "word": 16
+    },
+    {
+      "text": "i",
+      "confidence": 37.166573,
+      "bbox": [
+        1039,
+        685,
+        6,
+        8
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 4,
+      "word": 17
+    },
+    {
+      "text": "PRA",
+      "confidence": 16.704292,
+      "bbox": [
+        213,
+        677,
+        35,
+        11
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 5,
+      "word": 1
+    },
+    {
+      "text": "WORE",
+      "confidence": 10.611458,
+      "bbox": [
+        252,
+        679,
+        46,
+        13
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 5,
+      "word": 2
+    },
+    {
+      "text": "v",
+      "confidence": 0.515823,
+      "bbox": [
+        305,
+        683,
+        3,
+        6
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 5,
+      "word": 3
+    },
+    {
+      "text": "oq",
+      "confidence": 62.88298,
+      "bbox": [
+        312,
+        684,
+        13,
+        10
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 5,
+      "word": 4
+    },
+    {
+      "text": "ross",
+      "confidence": 25.394852,
+      "bbox": [
+        331,
+        672,
+        30,
+        23
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 5,
+      "word": 5
+    },
+    {
+      "text": "ELALGAT",
+      "confidence": 0.0,
+      "bbox": [
+        364,
+        672,
+        85,
+        24
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 5,
+      "word": 6
+    },
+    {
+      "text": "te",
+      "confidence": 17.848694,
+      "bbox": [
+        460,
+        682,
+        28,
+        11
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 5,
+      "word": 7
+    },
+    {
+      "text": "sueadr",
+      "confidence": 7.044792,
+      "bbox": [
+        499,
+        683,
+        43,
+        8
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 5,
+      "word": 8
+    },
+    {
+      "text": "sn?",
+      "confidence": 42.602425,
+      "bbox": [
+        594,
+        685,
+        14,
+        14
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 5,
+      "word": 9
+    },
+    {
+      "text": "saoueqo",
+      "confidence": 59.748245,
+      "bbox": [
+        626,
+        681,
+        55,
+        18
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 5,
+      "word": 10
+    },
+    {
+      "text": "et",
+      "confidence": 33.52874,
+      "bbox": [
+        686,
+        689,
+        23,
+        11
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 5,
+      "word": 11
+    },
+    {
+      "text": "和",
+      "confidence": 35.12735,
+      "bbox": [
+        713,
+        688,
+        22,
+        11
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 5,
+      "word": 12
+    },
+    {
+      "text": "08",
+      "confidence": 55.09911,
+      "bbox": [
+        738,
+        686,
+        35,
+        22
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 5,
+      "word": 13
+    },
+    {
+      "text": "0}",
+      "confidence": 42.217819,
+      "bbox": [
+        774,
+        684,
+        12,
+        10
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 5,
+      "word": 14
+    },
+    {
+      "text": "rs",
+      "confidence": 34.052307,
+      "bbox": [
+        1083,
+        672,
+        13,
+        36
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 5,
+      "word": 15
+    },
+    {
+      "text": "reo",
+      "confidence": 64.931183,
+      "bbox": [
+        371,
+        686,
+        17,
+        22
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 6,
+      "word": 1
+    },
+    {
+      "text": "Jomsue",
+      "confidence": 84.368195,
+      "bbox": [
+        393,
+        686,
+        43,
+        22
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 6,
+      "word": 2
+    },
+    {
+      "text": "ayy",
+      "confidence": 55.224861,
+      "bbox": [
+        440,
+        697,
+        19,
+        10
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 6,
+      "word": 3
+    },
+    {
+      "text": "ea",
+      "confidence": 49.031601,
+      "bbox": [
+        468,
+        686,
+        20,
+        22
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 6,
+      "word": 4
+    },
+    {
+      "text": "SEO",
+      "confidence": 13.603325,
+      "bbox": [
+        497,
+        698,
+        44,
+        10
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 6,
+      "word": 5
+    },
+    {
+      "text": "a”",
+      "confidence": 0.0,
+      "bbox": [
+        593,
+        702,
+        9,
+        6
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 6,
+      "word": 6
+    },
+    {
+      "text": "Otro:",
+      "confidence": 41.359959,
+      "bbox": [
+        623,
+        698,
+        18,
+        10
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 6,
+      "word": 7
+    },
+    {
+      "text": "ae",
+      "confidence": 44.68771,
+      "bbox": [
+        651,
+        703,
+        25,
+        5
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 6,
+      "word": 8
+    },
+    {
+      "text": "Oe",
+      "confidence": 33.924728,
+      "bbox": [
+        730,
+        702,
+        37,
+        6
+      ],
+      "block": 22,
+      "paragraph": 1,
+      "line": 6,
+      "word": 9
+    }
+  ],
+  "run_ms": [
+    4514.571100000467,
+    3038.2064000004902,
+    3537.154500001634
+  ],
+  "latency_ms_p50": 3537.154500001634,
+  "latency_ms_p95": 4514.571100000467,
+  "mean_confidence": 37.622703518367345,
+  "low_confidence_item_ratio": 0.7836734693877551,
+  "bbox_item_ratio": 1.0,
+  "capabilities": {
+    "formula_structure": false,
+    "table_structure": false,
+    "seal_region_class": false,
+    "word_or_line_bbox": true
+  },
+  "stderr": "Estimating resolution as 137",
+  "questions": [
+    {
+      "question_id": "Q-PUB-002",
+      "match": "document",
+      "passed": false,
+      "document_hits": {
+        "The disappearing sum": false,
+        "94": false,
+        "95": false
+      },
+      "matched_line": null,
+      "required_capability": null
+    }
+  ]
+}

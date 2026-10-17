@@ -1,0 +1,1256 @@
+{
+  "experiment_id": "TECH-OCR-009-R01",
+  "records": [
+    {
+      "source": "TECH-OCR-001-R01",
+      "configuration": "dpi144-psm3-none",
+      "query_page_recall": 1.0,
+      "wrong_page_only_rate": 0.0,
+      "query_hits": {
+        "OCR TEST": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "English abbreviation": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "12345": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "物理页码": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格区域": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "A-01": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "0.95": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格候选单元格": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "page label": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        }
+      }
+    },
+    {
+      "source": "TECH-OCR-001-R01",
+      "configuration": "dpi144-psm3-otsu",
+      "query_page_recall": 1.0,
+      "wrong_page_only_rate": 0.0,
+      "query_hits": {
+        "OCR TEST": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "English abbreviation": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "12345": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "物理页码": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格区域": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "A-01": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "0.95": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格候选单元格": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "page label": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        }
+      }
+    },
+    {
+      "source": "TECH-OCR-001-R01",
+      "configuration": "dpi300-psm3-none",
+      "query_page_recall": 1.0,
+      "wrong_page_only_rate": 0.0,
+      "query_hits": {
+        "OCR TEST": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "English abbreviation": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "12345": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "物理页码": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格区域": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "A-01": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "0.95": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格候选单元格": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "page label": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        }
+      }
+    },
+    {
+      "source": "TECH-OCR-001-R01",
+      "configuration": "dpi300-psm3-otsu",
+      "query_page_recall": 1.0,
+      "wrong_page_only_rate": 0.0,
+      "query_hits": {
+        "OCR TEST": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "English abbreviation": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "12345": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "物理页码": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格区域": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "A-01": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "0.95": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格候选单元格": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "page label": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        }
+      }
+    },
+    {
+      "source": "TECH-OCR-001-R01",
+      "configuration": "dpi300-psm6-none",
+      "query_page_recall": 1.0,
+      "wrong_page_only_rate": 0.0,
+      "query_hits": {
+        "OCR TEST": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "English abbreviation": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "12345": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "物理页码": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格区域": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "A-01": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "0.95": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格候选单元格": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "page label": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        }
+      }
+    },
+    {
+      "source": "TECH-OCR-001-R01",
+      "configuration": "dpi300-psm6-otsu",
+      "query_page_recall": 1.0,
+      "wrong_page_only_rate": 0.0,
+      "query_hits": {
+        "OCR TEST": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "English abbreviation": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "12345": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "物理页码": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格区域": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "A-01": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "0.95": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格候选单元格": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "page label": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        }
+      }
+    },
+    {
+      "source": "TECH-OCR-002-R01",
+      "configuration": "base300",
+      "query_page_recall": 1.0,
+      "wrong_page_only_rate": 0.0,
+      "query_hits": {
+        "OCR TEST": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "English abbreviation": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "12345": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "物理页码": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格区域": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "A-01": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "0.95": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格候选单元格": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "page label": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        }
+      }
+    },
+    {
+      "source": "TECH-OCR-002-R01",
+      "configuration": "downsample150",
+      "query_page_recall": 0.6666666666666666,
+      "wrong_page_only_rate": 0.0,
+      "query_hits": {
+        "OCR TEST": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "English abbreviation": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "12345": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "物理页码": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格区域": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "A-01": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [],
+          "page_recall": false,
+          "wrong_page_only": false
+        },
+        "0.95": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [],
+          "page_recall": false,
+          "wrong_page_only": false
+        },
+        "表格候选单元格": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [],
+          "page_recall": false,
+          "wrong_page_only": false
+        },
+        "page label": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        }
+      }
+    },
+    {
+      "source": "TECH-OCR-002-R01",
+      "configuration": "blur",
+      "query_page_recall": 1.0,
+      "wrong_page_only_rate": 0.0,
+      "query_hits": {
+        "OCR TEST": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "English abbreviation": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "12345": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "物理页码": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格区域": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "A-01": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "0.95": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格候选单元格": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "page label": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        }
+      }
+    },
+    {
+      "source": "TECH-OCR-002-R01",
+      "configuration": "low_contrast_noise",
+      "query_page_recall": 1.0,
+      "wrong_page_only_rate": 0.0,
+      "query_hits": {
+        "OCR TEST": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "English abbreviation": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "12345": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "物理页码": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格区域": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "A-01": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "0.95": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格候选单元格": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "page label": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        }
+      }
+    },
+    {
+      "source": "TECH-OCR-002-R01",
+      "configuration": "rotate3",
+      "query_page_recall": 1.0,
+      "wrong_page_only_rate": 0.0,
+      "query_hits": {
+        "OCR TEST": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "English abbreviation": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "12345": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "物理页码": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格区域": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "A-01": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "0.95": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "表格候选单元格": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        },
+        "page label": {
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "page_recall": true,
+          "wrong_page_only": false
+        }
+      }
+    }
+  ]
+}

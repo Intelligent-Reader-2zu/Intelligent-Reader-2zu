@@ -1,0 +1,159 @@
+{
+  "sample_id": "SELF-002-page-2",
+  "status": "succeeded",
+  "image_path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\results\\text-structure\\rendered\\SELF-002-2.png",
+  "image_shape": [
+    1404,
+    993,
+    3
+  ],
+  "elapsed_ms": 657.2295000005397,
+  "region_type_counts": {
+    "text": 1,
+    "footer": 2
+  },
+  "regions": [
+    {
+      "type": "text",
+      "bbox": [
+        78,
+        83,
+        385,
+        135
+      ],
+      "res": [
+        {
+          "text": "4第二页",
+          "confidence": 0.9998955726623535,
+          "text_region": [
+            [
+              77.0,
+              82.0
+            ],
+            [
+              161.0,
+              82.0
+            ],
+            [
+              161.0,
+              108.0
+            ],
+            [
+              77.0,
+              108.0
+            ]
+          ]
+        },
+        {
+          "text": "第二页用于检查页码、跨页段落和引用位置。",
+          "confidence": 0.9991715550422668,
+          "text_region": [
+            [
+              80.0,
+              118.0
+            ],
+            [
+              387.0,
+              118.0
+            ],
+            [
+              387.0,
+              139.0
+            ],
+            [
+              80.0,
+              139.0
+            ]
+          ]
+        }
+      ],
+      "img_idx": 0,
+      "score": 0.9260780811309814,
+      "region_image_shape": [
+        52,
+        307,
+        3
+      ]
+    },
+    {
+      "type": "footer",
+      "bbox": [
+        738,
+        1345,
+        906,
+        1356
+      ],
+      "res": [
+        {
+          "text": "header/footer and citation test",
+          "confidence": 0.9816190004348755,
+          "text_region": [
+            [
+              733.0,
+              1343.0
+            ],
+            [
+              910.0,
+              1343.0
+            ],
+            [
+              910.0,
+              1362.0
+            ],
+            [
+              733.0,
+              1362.0
+            ]
+          ]
+        }
+      ],
+      "img_idx": 0,
+      "score": 0.8385764360427856,
+      "region_image_shape": [
+        11,
+        168,
+        3
+      ]
+    },
+    {
+      "type": "footer",
+      "bbox": [
+        85,
+        1345,
+        267,
+        1357
+      ],
+      "res": [
+        {
+          "text": "SELF-AUTHORED PDF | physical page 2",
+          "confidence": 0.9717596769332886,
+          "text_region": [
+            [
+              81.0,
+              1340.0
+            ],
+            [
+              306.0,
+              1341.0
+            ],
+            [
+              306.0,
+              1362.0
+            ],
+            [
+              81.0,
+              1360.0
+            ]
+          ]
+        }
+      ],
+      "img_idx": 0,
+      "score": 0.6729444265365601,
+      "region_image_shape": [
+        12,
+        182,
+        3
+      ]
+    }
+  ]
+}

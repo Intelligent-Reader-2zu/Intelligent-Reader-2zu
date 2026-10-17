@@ -1,0 +1,121 @@
+{
+  "experiment_id": "TECH-DOC-007-R01-text-structure",
+  "sample_id": "SELF-007",
+  "format": "DOCX",
+  "status": "scored",
+  "ocr": {
+    "enabled": false,
+    "status": "not_applicable"
+  },
+  "parser": "python-docx",
+  "parser_version": "1.1.2",
+  "paragraph_count": 12,
+  "heading_count": 5,
+  "table_count": 1,
+  "paragraphs": [
+    {
+      "index": 1,
+      "style": "Title",
+      "text": "智能阅读器样本：复杂方案记录"
+    },
+    {
+      "index": 2,
+      "style": "Heading 1",
+      "text": "摘要"
+    },
+    {
+      "index": 3,
+      "style": "Normal",
+      "text": "这是一个包含中英文混排、编号条款、表格和长段落的自制文档。"
+    },
+    {
+      "index": 4,
+      "style": "Heading 1",
+      "text": "A. 数据处理流程"
+    },
+    {
+      "index": 5,
+      "style": "Normal",
+      "text": "输入文件经过格式识别、解析、结构归一化和证据定位。每一步都应保留可复现的配置。"
+    },
+    {
+      "index": 6,
+      "style": "Heading 2",
+      "text": "A.1 失败处理"
+    },
+    {
+      "index": 7,
+      "style": "Normal",
+      "text": "当 OCR 置信度不足时，系统应保留原页图像，并把结果标记为需要人工核验。"
+    },
+    {
+      "index": 8,
+      "style": "Heading 1",
+      "text": "B. 附录"
+    },
+    {
+      "index": 9,
+      "style": "Normal",
+      "text": "附录内容故意放在分页符之后，用于检查跨页段落和页脚处理。"
+    },
+    {
+      "index": 10,
+      "style": "Normal",
+      "text": ""
+    },
+    {
+      "index": 11,
+      "style": "Heading 1",
+      "text": "分页后的附录"
+    },
+    {
+      "index": 12,
+      "style": "Normal",
+      "text": "此段位于显式分页符之后，不能与上一页的段落简单拼接。"
+    }
+  ],
+  "tables": [
+    {
+      "index": 1,
+      "rows": 4,
+      "columns": 4,
+      "text": [
+        [
+          "阶段",
+          "输入",
+          "输出",
+          "风险"
+        ],
+        [
+          "解析",
+          "原始文件",
+          "结构块",
+          "阅读顺序"
+        ],
+        [
+          "检索",
+          "问题",
+          "证据块",
+          "召回不足"
+        ],
+        [
+          "回答",
+          "证据",
+          "引用回答",
+          "无依据生成"
+        ]
+      ]
+    }
+  ],
+  "visual_page_numbers": "not_available_from_python_docx",
+  "query_hits": {
+    "失败处理": true,
+    "跨页段落": true,
+    "无依据生成": false
+  },
+  "text_preview": "智能阅读器样本：复杂方案记录\n摘要\n这是一个包含中英文混排、编号条款、表格和长段落的自制文档。\nA. 数据处理流程\n输入文件经过格式识别、解析、结构归一化和证据定位。每一步都应保留可复现的配置。\nA.1 失败处理\n当 OCR 置信度不足时，系统应保留原页图像，并把结果标记为需要人工核验。\nB. 附录\n附录内容故意放在分页符之后，用于检查跨页段落和页脚处理。\n\n分页后的附录\n此段位于显式分页符之后，不能与上一页的段落简单拼接。",
+  "elapsed_ms": 3.44,
+  "boundary": "DOCX logical structure only; final visual pagination is out of scope.",
+  "source_path": "samples\\self-authored\\docx\\SELF-007-complex.docx",
+  "source_sha256": "493ac305c5918558efd0d352d68bc3917e0d71405cd9aecab5514e52b05fa891"
+}

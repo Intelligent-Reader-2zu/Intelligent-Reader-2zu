@@ -1,0 +1,228 @@
+{
+  "manifest_version": 1,
+  "retrieved_on": "2026-09-23",
+  "purpose": "candidate documents for local parser benchmark; license review remains required",
+  "max_bytes": 62914560,
+  "samples": [
+    {
+      "sample_id": "OPEN-003",
+      "filename": "nist-sp-800-63b.pdf",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\nist-sp-800-63b.pdf",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "US government publication; verify item terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "technical report",
+        "headings",
+        "tables",
+        "footnotes"
+      ],
+      "bytes": 1480377,
+      "sha256": "ccfce7510a1267933f912d023306c6e7d485f21be63d271108b61aad6139127e"
+    },
+    {
+      "sample_id": "OPEN-004",
+      "filename": "w3c-html52.html",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\w3c-html52.html",
+      "source_url": "https://www.w3.org/TR/html52/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML",
+      "license_or_authorization": "W3C document license; verify current notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "code",
+        "lists",
+        "links",
+        "navigation"
+      ],
+      "bytes": 154743,
+      "sha256": "98c3c1f27227d062003f3204c5f06253df186d56af8ec76a912b44aadadea885"
+    },
+    {
+      "sample_id": "OPEN-008",
+      "filename": "nist-ai-rmf-100-1.pdf",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\nist-ai-rmf-100-1.pdf",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "US government publication; verify item terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "long report",
+        "headings",
+        "tables",
+        "appendix",
+        "references"
+      ],
+      "bytes": 1946127,
+      "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1"
+    },
+    {
+      "sample_id": "OPEN-009",
+      "filename": "nist-sp-800-53r5.pdf",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\nist-sp-800-53r5.pdf",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "US government publication; verify item terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "long report",
+        "tables",
+        "numbered controls",
+        "appendix"
+      ],
+      "bytes": 6073678,
+      "sha256": "fc63bcd61715d0181dd8e85998b1e6201ae3515fc6626102101cab1841e11ec6"
+    },
+    {
+      "sample_id": "OPEN-010",
+      "filename": "docling-technical-report.pdf",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\docling-technical-report.pdf",
+      "source_url": "https://arxiv.org/pdf/2408.09869.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "arXiv item license must be recorded",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "two-column",
+        "figures",
+        "tables",
+        "references",
+        "formula"
+      ],
+      "bytes": 5566575,
+      "sha256": "82dd470712ce8389f19f20eb9330475e2166a281f8c7990a9f1d0763d73b4d22"
+    },
+    {
+      "sample_id": "OPEN-011",
+      "filename": "layoutlmv3.pdf",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\layoutlmv3.pdf",
+      "source_url": "https://arxiv.org/pdf/2204.08387.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "arXiv item license must be recorded",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "two-column",
+        "figures",
+        "tables",
+        "formula",
+        "references"
+      ],
+      "bytes": 1245765,
+      "sha256": "bd5395610755a49e6419c406e651906e688e7a0cfe155b3c43566469dfd641fe"
+    },
+    {
+      "sample_id": "WEB-001",
+      "filename": "w3c-webauthn-3.html",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\w3c-webauthn-3.html",
+      "source_url": "https://www.w3.org/TR/webauthn-3/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "W3C document license; verify current notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "navigation",
+        "headings",
+        "code",
+        "links",
+        "tables"
+      ],
+      "bytes": 2739242,
+      "sha256": "157030c980d44a3ce4b1ec5bcfaa16790c7dfefac20709af6ed2b11c7120970b"
+    },
+    {
+      "sample_id": "WEB-002",
+      "filename": "rfc-9110.html",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\rfc-9110.html",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "RFC Trust legal notice; verify redistribution terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "anchors",
+        "headings",
+        "code",
+        "references"
+      ],
+      "bytes": 1187554,
+      "sha256": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5"
+    },
+    {
+      "sample_id": "WEB-003",
+      "filename": "nist-ai-rmf.html",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\nist-ai-rmf.html",
+      "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "NIST website terms; verify page-specific notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "navigation",
+        "article",
+        "links",
+        "metadata"
+      ],
+      "bytes": 93781,
+      "sha256": "5ff9a82864d21da0c2fe09d5ee028c6096c8e4281b04ff7a9d28129458d176ec"
+    },
+    {
+      "sample_id": "WEB-004",
+      "filename": "openstax-anatomy-intro.html",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\openstax-anatomy-intro.html",
+      "source_url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "OpenStax CC BY-NC-SA notice; verify page terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "figures",
+        "links",
+        "navigation",
+        "mixed content"
+      ],
+      "bytes": 334395,
+      "sha256": "b709d19cf8bf3c3c8cf4e20933d36e7be4901ce79cf937f284f000cfabe43330"
+    }
+  ],
+  "skipped": [
+    {
+      "id": "OPEN-005",
+      "reason": "The SSL connection could not be established, see inner exception.",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.txt"
+    },
+    {
+      "id": "OPEN-006",
+      "reason": "Response status code does not indicate success: 404 (Not Found).",
+      "url": "https://www.rfc-editor.org/rfc/pdfrfc/rfc9110.pdf"
+    },
+    {
+      "id": "OPEN-007",
+      "reason": "Response status code does not indicate success: 404 (Not Found).",
+      "url": "https://owasp.org/www-project-top-ten/assets/OWASP_Top_10-2021.pdf"
+    },
+    {
+      "id": "OPEN-012",
+      "reason": "Response status code does not indicate success: 404 (Not Found).",
+      "url": "https://www.rfc-editor.org/rfc/pdfrfc/rfc9457.pdf"
+    },
+    {
+      "id": "PD-001",
+      "reason": "One or more errors occurred. (Received an unexpected EOF or 0 bytes from the transport stream.)",
+      "url": "https://archive.org/download/officialhistory00stafgoog/officialhistory00stafgoog.pdf"
+    }
+  ],
+  "notes": [
+    "Publicly reachable does not automatically mean redistributable or cloud-uploadable.",
+    "Keep cloud_upload_allowed=unknown until the item-level license and service policy are reviewed.",
+    "OpenStax full-book PDFs were deliberately excluded by size; prefer chapter-level HTML or a locally clipped copy after license review.",
+    "PD-002 through PD-006 remain unattempted until exact item identifiers and item-level rights pages are verified; do not fill them with guessed mirrors.",
+    "OPEN-005, OPEN-006, OPEN-007 and OPEN-012 need official replacement URLs before download; current failures are retained for auditability."
+  ]
+}

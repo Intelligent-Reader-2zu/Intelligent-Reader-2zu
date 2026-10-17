@@ -1,0 +1,22 @@
+{
+  "experiment_id": "TECH-QA-024-R01",
+  "date": "2026-10-12",
+  "endpoint": "https://api.ipc.wiki/v1/responses",
+  "model": "gpt-5.5",
+  "request_sent": true,
+  "http_status": 403,
+  "transport": "raw_http",
+  "wire_api": "responses",
+  "used_models_endpoint": false,
+  "used_chat_completions": false,
+  "uploaded_user_documents": false,
+  "quality_score_eligible": false,
+  "java_client_replay": {
+    "input_is_string": true,
+    "stream": false,
+    "store": false,
+    "accept": "application/json",
+    "http_status": 403
+  },
+  "note": "Relay rejected the account/client policy even with the Web project's exact request shape. No client impersonation or bypass was attempted."
+}

@@ -1,0 +1,162 @@
+{
+  "status": "succeeded",
+  "text": "■\n发票专用章\n吗繁物\n■",
+  "lines": [
+    "■",
+    "发票专用章",
+    "吗繁物",
+    "■"
+  ],
+  "items": [
+    {
+      "text": "■",
+      "confidence": 75.669,
+      "bbox_polygon": [
+        [
+          77.0,
+          66.0
+        ],
+        [
+          90.0,
+          66.0
+        ],
+        [
+          90.0,
+          79.0
+        ],
+        [
+          77.0,
+          79.0
+        ]
+      ],
+      "bbox": [
+        77.0,
+        66.0,
+        13.0,
+        13.0
+      ]
+    },
+    {
+      "text": "发票专用章",
+      "confidence": 99.994,
+      "bbox_polygon": [
+        [
+          160.0,
+          347.0
+        ],
+        [
+          477.0,
+          344.0
+        ],
+        [
+          478.0,
+          446.0
+        ],
+        [
+          161.0,
+          449.0
+        ]
+      ],
+      "bbox": [
+        160.0,
+        344.0,
+        318.0,
+        105.0
+      ]
+    },
+    {
+      "text": "吗繁物",
+      "confidence": 99.897,
+      "bbox_polygon": [
+        [
+          182.0,
+          438.0
+        ],
+        [
+          453.0,
+          438.0
+        ],
+        [
+          453.0,
+          516.0
+        ],
+        [
+          182.0,
+          516.0
+        ]
+      ],
+      "bbox": [
+        182.0,
+        438.0,
+        271.0,
+        78.0
+      ]
+    },
+    {
+      "text": "■",
+      "confidence": 85.084,
+      "bbox_polygon": [
+        [
+          70.0,
+          588.0
+        ],
+        [
+          82.0,
+          588.0
+        ],
+        [
+          82.0,
+          601.0
+        ],
+        [
+          70.0,
+          601.0
+        ]
+      ],
+      "bbox": [
+        70.0,
+        588.0,
+        12.0,
+        13.0
+      ]
+    }
+  ],
+  "run_ms": [
+    3944.1144000011263,
+    4317.621599999256,
+    4239.323300003889
+  ],
+  "latency_ms_p50": 4239.323300003889,
+  "latency_ms_p95": 4317.621599999256,
+  "mean_confidence": 90.161,
+  "low_confidence_item_ratio": 0.0,
+  "bbox_item_ratio": 1.0,
+  "capabilities": {
+    "formula_structure": false,
+    "table_structure": false,
+    "seal_region_class": false,
+    "word_or_line_bbox": true
+  },
+  "stderr": "",
+  "questions": [
+    {
+      "question_id": "Q-PUB-007",
+      "match": "document",
+      "passed": false,
+      "document_hits": {
+        "发票专用章": true,
+        "5263647368706": false
+      },
+      "matched_line": null,
+      "required_capability": null
+    },
+    {
+      "question_id": "Q-PUB-008",
+      "match": "capability",
+      "passed": false,
+      "document_hits": {},
+      "matched_line": null,
+      "required_capability": "seal_region_class"
+    }
+  ]
+}

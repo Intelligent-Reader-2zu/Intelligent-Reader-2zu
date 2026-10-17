@@ -1,0 +1,19 @@
+{
+  "experiment_id": "TECH-CIT-EXPERIMENTS-R01",
+  "experiments": [
+    "TECH-CIT-001-R01",
+    "TECH-CIT-003-R01",
+    "TECH-CIT-006-R01",
+    "TECH-CIT-010-R01",
+    "TECH-CIT-011-R01"
+  ],
+  "blocks": 80,
+  "pass_rates": {
+    "TECH-CIT-001-R01": 0.7,
+    "TECH-CIT-003-R01": 1.0,
+    "TECH-CIT-006-R01": 1.0,
+    "TECH-CIT-010-R01": 1.0,
+    "TECH-CIT-011-R01": 1.0
+  },
+  "scope": "First citation-chain probe on existing parser IR; visual page highlight and semantic entailment remain open."
+}

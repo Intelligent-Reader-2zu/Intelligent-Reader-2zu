@@ -1,0 +1,16 @@
+{
+  "fixed_queries": [
+    "引用定位率",
+    "block_id",
+    "脚注"
+  ],
+  "expected_evidence_fragments": [
+    "稳定的 `block_id`",
+    "引用定位率",
+    "这是一个脚注"
+  ],
+  "reference_notes": "标题路径应为 1 目的 > 1.1 关键定义，表格不应被当作普通段落。",
+  "sample_id": "SELF-008",
+  "annotation_version": 1,
+  "source": "project-authored"
+}

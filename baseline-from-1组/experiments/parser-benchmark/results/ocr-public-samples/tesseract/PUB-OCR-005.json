@@ -1,0 +1,44 @@
+{
+  "status": "succeeded",
+  "text": "",
+  "lines": [],
+  "items": [],
+  "run_ms": [
+    824.9480999947991,
+    999.4016999989981,
+    939.7310999993351
+  ],
+  "latency_ms_p50": 939.7310999993351,
+  "latency_ms_p95": 999.4016999989981,
+  "mean_confidence": null,
+  "low_confidence_item_ratio": null,
+  "bbox_item_ratio": null,
+  "capabilities": {
+    "formula_structure": false,
+    "table_structure": false,
+    "seal_region_class": false,
+    "word_or_line_bbox": false
+  },
+  "stderr": "Estimating resolution as 630",
+  "questions": [
+    {
+      "question_id": "Q-PUB-007",
+      "match": "document",
+      "passed": false,
+      "document_hits": {
+        "发票专用章": false,
+        "5263647368706": false
+      },
+      "matched_line": null,
+      "required_capability": null
+    },
+    {
+      "question_id": "Q-PUB-008",
+      "match": "capability",
+      "passed": false,
+      "document_hits": {},
+      "matched_line": null,
+      "required_capability": "seal_region_class"
+    }
+  ]
+}

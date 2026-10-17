@@ -1,0 +1,38 @@
+{
+  "experiment_id": "TECH-DOC-candidate-unstructured-hi_res",
+  "date": "2026-09-24",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "parser": "unstructured",
+  "strategy": "hi_res",
+  "ocr_languages": [
+    "chi_sim",
+    "eng"
+  ],
+  "samples": [
+    "SELF-002",
+    "SELF-004"
+  ],
+  "results": [
+    {
+      "parser": "unstructured",
+      "parser_version": "0.27.8",
+      "status": "failed",
+      "sample_id": "SELF-002",
+      "source_path": "samples\\self-authored\\pdf\\SELF-002-two-column.pdf",
+      "source_sha256": "5423fbf69e921e4cbd3e3efcb2fff533d5b291cc448748085404bab550f23970",
+      "error_type": "XMLSyntaxError",
+      "error": "Input is not proper UTF-8, indicate encoding !\nBytes: 0xC1 0xAA 0xCF 0xEB, line 12, column 60 (<string>, line 12)"
+    },
+    {
+      "parser": "unstructured",
+      "parser_version": "0.27.8",
+      "status": "failed",
+      "sample_id": "SELF-004",
+      "source_path": "samples\\self-authored\\pdf\\SELF-004-scanned.pdf",
+      "source_sha256": "643a6c777485b388c5c856bdcd955f0397d3cdac0586dfd2782567c5fcbda360",
+      "error_type": "XMLSyntaxError",
+      "error": "Input is not proper UTF-8, indicate encoding !\nBytes: 0xC1 0xAA 0xCF 0xEB, line 12, column 60 (<string>, line 12)"
+    }
+  ],
+  "boundary": "Candidate smoke test only; not a quality acceptance result."
+}

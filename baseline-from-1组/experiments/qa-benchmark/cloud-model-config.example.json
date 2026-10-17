@@ -1,0 +1,26 @@
+{
+  "provider": "provider-name",
+  "model_id": "exact-model-id",
+  "api_version": "provider-api-version",
+  "region": "region-or-endpoint",
+  "data_class_allowed": ["public", "internal-approved"],
+  "retention_policy_checked_at": "YYYY-MM-DD",
+  "training_use": "unknown",
+  "structured_output": "client_validation",
+  "max_input_tokens": 8192,
+  "max_output_tokens": 800,
+  "temperature": 0,
+  "timeout_ms": 30000,
+  "retry_policy": {
+    "max_retries": 2,
+    "retry_on": ["429", "5xx", "timeout"]
+  },
+  "pricing_snapshot": {
+    "currency": "USD",
+    "input_per_million": null,
+    "output_per_million": null,
+    "effective_date": "YYYY-MM-DD"
+  },
+  "fallback": "local_evidence_only",
+  "approval_owner": "team-or-role"
+}

@@ -1,0 +1,98 @@
+{
+  "experiment_id": "TECH-QA-022-R01",
+  "scope": "synthetic evidence-grounded cloud QA comparison",
+  "data_sent": "project-authored synthetic fixture only; no user documents",
+  "providers": [
+    {
+      "provider": "openai",
+      "model": "gpt-5.5",
+      "query_count": 3,
+      "completed_query_count": 0,
+      "transport_error_count": 3,
+      "status_accuracy": null,
+      "json_valid_rate": null,
+      "citation_id_retrieval_rate": null,
+      "refusal_or_review_accuracy": null,
+      "gold_coverage": null,
+      "latency_ms": {
+        "p50": null,
+        "p95": null
+      },
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "cost": "not calculated; freeze official price snapshot before procurement",
+      "rows": [
+        {
+          "id": "Q01",
+          "type": "exact_keyword",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P1-B1",
+            "A-P1-B2",
+            "A-P2-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "usage": {},
+          "elapsed_ms": 472.579,
+          "error": "APIConnectionError: Connection error.",
+          "transport_error": true,
+          "raw_response": "",
+          "parsed_response": null
+        },
+        {
+          "id": "Q08",
+          "type": "no_answer",
+          "expected_status": "refused",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P3-B2",
+            "B-P2-B2",
+            "I-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "usage": {},
+          "elapsed_ms": 28.68,
+          "error": "APIConnectionError: Connection error.",
+          "transport_error": true,
+          "raw_response": "",
+          "parsed_response": null
+        },
+        {
+          "id": "Q11",
+          "type": "cross_document_conflict",
+          "expected_status": "needs_human_review",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "B-P2-B1",
+            "D-P1-B1",
+            "E-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "usage": {},
+          "elapsed_ms": 32.938,
+          "error": "APIConnectionError: Connection error.",
+          "transport_error": true,
+          "raw_response": "",
+          "parsed_response": null
+        }
+      ]
+    }
+  ],
+  "boundary": "Raw model outputs are recorded for audit. Automated status/citation checks do not replace human claim-level grading. Costs are not inferred without dated official price snapshots."
+}

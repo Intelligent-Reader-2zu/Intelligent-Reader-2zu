@@ -1,0 +1,16 @@
+{
+  "fixed_queries": [
+    "证据定位流程",
+    "结构块",
+    "网页快照"
+  ],
+  "expected_evidence_fragments": [
+    "正文应与导航、广告和脚本分离",
+    "解析",
+    "检索"
+  ],
+  "reference_notes": "导航、aside 广告和 script 应被分类或降权，不能与 article 正文混在一起。",
+  "sample_id": "SELF-012",
+  "annotation_version": 1,
+  "source": "project-authored"
+}

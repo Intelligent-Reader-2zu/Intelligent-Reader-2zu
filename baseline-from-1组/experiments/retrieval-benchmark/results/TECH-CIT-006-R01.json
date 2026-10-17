@@ -1,0 +1,32 @@
+{
+  "experiment_id": "TECH-CIT-006-R01",
+  "evidence": {
+    "citation_id": "self-001-0391dd982a1c::self-001-0391dd982a1c-e0001",
+    "text": "SELF-AUTHORED PDF | physical page 1\nheader/footer and citation test"
+  },
+  "cases": [
+    {
+      "id": "S01",
+      "claim": "SELF-AUTHORED PDF | phys",
+      "expected": "entailed",
+      "observed": "entailed",
+      "pass": true
+    },
+    {
+      "id": "S02",
+      "claim": "SELF-AUTHORED PDF | phys，但需核验。",
+      "expected": "partially_supported",
+      "observed": "partially_supported",
+      "pass": true
+    },
+    {
+      "id": "S03",
+      "claim": "文档证明所有扫描 PDF 都能稳定识别公式。",
+      "expected": "not_supported",
+      "observed": "not_supported",
+      "pass": true
+    }
+  ],
+  "pass_rate": 1.0,
+  "scope": "Lexical support probe only; must be replaced/augmented by claim-level human or NLI/LLM evaluation."
+}

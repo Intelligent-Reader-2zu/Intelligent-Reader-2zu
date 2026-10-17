@@ -1,0 +1,73 @@
+{
+  "experiment_id": "TECH-STRUCT-015-R01",
+  "scope": "external PDF/HTML conservative baseline IR",
+  "outputs": [
+    {
+      "sample_id": "OPEN-003",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\results\\text-structure\\external-ir\\OPEN-003.json",
+      "summary": {
+        "element_count": 3389,
+        "heading_candidate_count": 420,
+        "page_count": 80,
+        "bbox_completeness": 1.0,
+        "physical_page_completeness": 1.0
+      }
+    },
+    {
+      "sample_id": "OPEN-010",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\results\\text-structure\\external-ir\\OPEN-010.json",
+      "summary": {
+        "element_count": 1279,
+        "heading_candidate_count": 424,
+        "page_count": 9,
+        "bbox_completeness": 1.0,
+        "physical_page_completeness": 1.0
+      }
+    },
+    {
+      "sample_id": "OPEN-011",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\results\\text-structure\\external-ir\\OPEN-011.json",
+      "summary": {
+        "element_count": 1415,
+        "heading_candidate_count": 225,
+        "page_count": 10,
+        "bbox_completeness": 1.0,
+        "physical_page_completeness": 1.0
+      }
+    },
+    {
+      "sample_id": "WEB-001",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\results\\text-structure\\external-ir\\WEB-001.json",
+      "summary": {
+        "element_count": 230,
+        "dom_heading_count": 230,
+        "article_or_main_heading_count": 219,
+        "unique_selector_count": 230,
+        "selector_completeness": 1.0
+      }
+    },
+    {
+      "sample_id": "WEB-002",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\results\\text-structure\\external-ir\\WEB-002.json",
+      "summary": {
+        "element_count": 311,
+        "dom_heading_count": 311,
+        "article_or_main_heading_count": 0,
+        "unique_selector_count": 311,
+        "selector_completeness": 1.0
+      }
+    },
+    {
+      "sample_id": "WEB-004",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\results\\text-structure\\external-ir\\WEB-004.json",
+      "summary": {
+        "element_count": 7,
+        "dom_heading_count": 7,
+        "article_or_main_heading_count": 2,
+        "unique_selector_count": 7,
+        "selector_completeness": 1.0
+      }
+    }
+  ],
+  "boundary": "Candidates and DOM observations only; no gold labels or accuracy claim."
+}

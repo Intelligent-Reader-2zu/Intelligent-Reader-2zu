@@ -1,0 +1,392 @@
+{
+  "experiment_id": "TECH-STRUCT-013-R01",
+  "scope": "unlabeled external annotation queue",
+  "samples": [
+    {
+      "sample_id": "OPEN-003",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf",
+      "source_sha256": "ccfce7510a1267933f912d023306c6e7d485f21be63d271108b61aad6139127e",
+      "license_or_authorization": "US government publication; verify item terms",
+      "cloud_upload_allowed": "unknown",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\nist-sp-800-63b.pdf",
+      "review_status": "draft",
+      "queue": {
+        "kind": "PDF",
+        "page_count": 80,
+        "candidate_pages": [
+          {
+            "physical_page": 1,
+            "text_chars": 1346,
+            "block_count": 11,
+            "image_count": 1,
+            "text_preview": "Date updated: July 24, 2025 Withdrawn NIST Technical Series Publication Warning Notice The attached publication has been withdrawn (archived), and is provided solely for historical purposes. It may have been superseded b",
+            "reason": "opening page; verify cover, title, header/footer and first reading order",
+            "annotation_fields": {
+              "reading_order_rank": "fill",
+              "units": "fill label/text/bbox/heading_level/paragraph_id",
+              "table_grids": "fill if table appears",
+              "uncertainties": "fill when visual evidence is ambiguous"
+            }
+          },
+          {
+            "physical_page": 8,
+            "text_chars": 3662,
+            "block_count": 36,
+            "image_count": 9,
+            "text_preview": "NIST SP 800-63B DIGITAL IDENTITY GUIDELINES: AUTHENTICATION & LIFECYCLE MANAGEMENT v This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.800-63b 5.1.7 Single-Factor Cryptographic Devices ..",
+            "reason": "maximum text density; inspect paragraph boundaries and columns",
+            "annotation_fields": {
+              "reading_order_rank": "fill",
+              "units": "fill label/text/bbox/heading_level/paragraph_id",
+              "table_grids": "fill if table appears",
+              "uncertainties": "fill when visual evidence is ambiguous"
+            }
+          },
+          {
+            "physical_page": 69,
+            "text_chars": 1885,
+            "block_count": 43,
+            "image_count": 0,
+            "text_preview": "NIST SP 800-63B DIGITAL IDENTITY GUIDELINES: AUTHENTICATION & LIFECYCLE MANAGEMENT 58 This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.800-63b Multi-factor authenticators (e.g., multi-fa",
+            "reason": "maximum text block count; inspect fragmentation and reading order",
+            "annotation_fields": {
+              "reading_order_rank": "fill",
+              "units": "fill label/text/bbox/heading_level/paragraph_id",
+              "table_grids": "fill if table appears",
+              "uncertainties": "fill when visual evidence is ambiguous"
+            }
+          },
+          {
+            "physical_page": 9,
+            "text_chars": 3462,
+            "block_count": 36,
+            "image_count": 14,
+            "text_preview": "NIST SP 800-63B DIGITAL IDENTITY GUIDELINES: AUTHENTICATION & LIFECYCLE MANAGEMENT vi This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.800-63b Authenticator Recovery ....................",
+            "reason": "maximum image count; inspect figures, captions and nearby text",
+            "annotation_fields": {
+              "reading_order_rank": "fill",
+              "units": "fill label/text/bbox/heading_level/paragraph_id",
+              "table_grids": "fill if table appears",
+              "uncertainties": "fill when visual evidence is ambiguous"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "OPEN-010",
+      "source_url": "https://arxiv.org/pdf/2408.09869.pdf",
+      "source_sha256": "82dd470712ce8389f19f20eb9330475e2166a281f8c7990a9f1d0763d73b4d22",
+      "license_or_authorization": "arXiv item license must be recorded",
+      "cloud_upload_allowed": "unknown",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\docling-technical-report.pdf",
+      "review_status": "draft",
+      "queue": {
+        "kind": "PDF",
+        "page_count": 9,
+        "candidate_pages": [
+          {
+            "physical_page": 1,
+            "text_chars": 2194,
+            "block_count": 12,
+            "image_count": 1,
+            "text_preview": "Docling Technical Report Version 1.0 Christoph Auer Maksym Lysak Ahmed Nassar Michele Dolfi Nikolaos Livathinos Panos Vagenas Cesar Berrospi Ramis Matteo Omenetti Fabian Lindlbauer Kasper Dinkla Lokesh Mishra Yusik Kim S",
+            "reason": "opening page; verify cover, title, header/footer and first reading order",
+            "annotation_fields": {
+              "reading_order_rank": "fill",
+              "units": "fill label/text/bbox/heading_level/paragraph_id",
+              "table_grids": "fill if table appears",
+              "uncertainties": "fill when visual evidence is ambiguous"
+            }
+          },
+          {
+            "physical_page": 7,
+            "text_chars": 16545,
+            "block_count": 171,
+            "image_count": 5,
+            "text_preview": "Appendix In this section, we illustrate a few examples of Docling’s output in Markdown and JSON. Birgit Pﬁtzmann IBM Research Rueschlikon, Switzerland bpf@zurich.ibm.com Christoph Auer IBM Research Rueschlikon, Switzerla",
+            "reason": "maximum text density; inspect paragraph boundaries and columns",
+            "annotation_fields": {
+              "reading_order_rank": "fill",
+              "units": "fill label/text/bbox/heading_level/paragraph_id",
+              "table_grids": "fill if table appears",
+              "uncertainties": "fill when visual evidence is ambiguous"
+            }
+          },
+          {
+            "physical_page": 3,
+            "text_chars": 3124,
+            "block_count": 21,
+            "image_count": 15,
+            "text_preview": "Layout Analysis Serialize as JSON or Markdown {;} Parse PDF pages Table Structure OCR Model Pipeline Assemble results, Apply document post-processing Figure 1: Sketch of Docling’s default processing pipeline. The inner p",
+            "reason": "maximum image count; inspect figures, captions and nearby text",
+            "annotation_fields": {
+              "reading_order_rank": "fill",
+              "units": "fill label/text/bbox/heading_level/paragraph_id",
+              "table_grids": "fill if table appears",
+              "uncertainties": "fill when visual evidence is ambiguous"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "OPEN-011",
+      "source_url": "https://arxiv.org/pdf/2204.08387.pdf",
+      "source_sha256": "bd5395610755a49e6419c406e651906e688e7a0cfe155b3c43566469dfd641fe",
+      "license_or_authorization": "arXiv item license must be recorded",
+      "cloud_upload_allowed": "unknown",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\layoutlmv3.pdf",
+      "review_status": "draft",
+      "queue": {
+        "kind": "PDF",
+        "page_count": 10,
+        "candidate_pages": [
+          {
+            "physical_page": 1,
+            "text_chars": 4699,
+            "block_count": 22,
+            "image_count": 2,
+            "text_preview": "LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking Yupan Huang∗ Sun Yat-sen University huangyp28@mail2.sysu.edu.cn Tengchao Lv Microsoft Research Asia tengchaolv@microsoft.com Lei Cui Microsoft ",
+            "reason": "opening page; verify cover, title, header/footer and first reading order",
+            "annotation_fields": {
+              "reading_order_rank": "fill",
+              "units": "fill label/text/bbox/heading_level/paragraph_id",
+              "table_grids": "fill if table appears",
+              "uncertainties": "fill when visual evidence is ambiguous"
+            }
+          },
+          {
+            "physical_page": 9,
+            "text_chars": 7628,
+            "block_count": 9,
+            "image_count": 0,
+            "text_preview": "Table 4: Visual information extraction in Chinese F1 score on the EPHOIE test set. Model Subject Test Time Name School #Examination #Seat Class #Student Grade Score Mean BiLSTM+CRF [24] 98.51 100.0 98.87 98.80 75.86 72.7",
+            "reason": "maximum text density; inspect paragraph boundaries and columns",
+            "annotation_fields": {
+              "reading_order_rank": "fill",
+              "units": "fill label/text/bbox/heading_level/paragraph_id",
+              "table_grids": "fill if table appears",
+              "uncertainties": "fill when visual evidence is ambiguous"
+            }
+          },
+          {
+            "physical_page": 3,
+            "text_chars": 3663,
+            "block_count": 90,
+            "image_count": 10,
+            "text_preview": "Multimodal Transformer Seg1 [MASK] 1 + + Seg1 [MASK] 2 + + Seg2 T3 3 + + V1 [MASK] 1 + 2 + 3 + [MASK] [SPE] 0 + Seg3 T4 4 + + SegPAD [CLS] 0 + + 4 + V4 h MLM Head MIM Head T2 h V2 h V3 Pre-training Objectives Word/Patch ",
+            "reason": "maximum text block count; inspect fragmentation and reading order",
+            "annotation_fields": {
+              "reading_order_rank": "fill",
+              "units": "fill label/text/bbox/heading_level/paragraph_id",
+              "table_grids": "fill if table appears",
+              "uncertainties": "fill when visual evidence is ambiguous"
+            }
+          },
+          {
+            "physical_page": 2,
+            "text_chars": 5338,
+            "block_count": 29,
+            "image_count": 10,
+            "text_preview": "Faster R-CNN Linear Embedding CNN Word Embedding Masked Word Token Classification Visual Transformer (Optional) Origin Image Reconstruction (a) Patch (LayoutLMv3) “A few number of tumor cell…” Masked Patch Token Classifi",
+            "reason": "maximum image count; inspect figures, captions and nearby text",
+            "annotation_fields": {
+              "reading_order_rank": "fill",
+              "units": "fill label/text/bbox/heading_level/paragraph_id",
+              "table_grids": "fill if table appears",
+              "uncertainties": "fill when visual evidence is ambiguous"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "WEB-001",
+      "source_url": "https://www.w3.org/TR/webauthn-3/",
+      "source_sha256": "157030c980d44a3ce4b1ec5bcfaa16790c7dfefac20709af6ed2b11c7120970b",
+      "license_or_authorization": "W3C document license; verify current notice",
+      "cloud_upload_allowed": "unknown",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\w3c-webauthn-3.html",
+      "review_status": "draft",
+      "queue": {
+        "kind": "HTML",
+        "candidate_nodes": [
+          {
+            "selector": "html:nth-of-type(1) > head:nth-of-type(1) > body:nth-of-type(1) > div:nth-of-type(1) > h1:nth-of-type(1)",
+            "tag": "h1",
+            "text_preview": "Web Authentication: An API for accessing Public Key Credentials Level 3",
+            "reason": "first h1; verify document title and root heading",
+            "annotation_fields": {
+              "heading_level": "fill for headings only",
+              "role": "fill body/navigation/advertisement/code/table/caption/reference",
+              "parent_selector": "fill",
+              "relations": "fill caption/reference/anchor relations"
+            }
+          },
+          {
+            "selector": "h2[id=\"abstract\"]",
+            "tag": "h2",
+            "text_preview": "Abstract",
+            "reason": "first h2; verify heading path and navigation contamination",
+            "annotation_fields": {
+              "heading_level": "fill for headings only",
+              "role": "fill body/navigation/advertisement/code/table/caption/reference",
+              "parent_selector": "fill",
+              "relations": "fill caption/reference/anchor relations"
+            }
+          },
+          {
+            "selector": "h4[id=\"enum-attestation-convey\"]",
+            "tag": "h4",
+            "text_preview": "5.4.7. Attestation Conveyance Preference Enumeration (enum AttestationConveyancePreference )",
+            "reason": "reference section candidate; verify citation boundary",
+            "annotation_fields": {
+              "heading_level": "fill for headings only",
+              "role": "fill body/navigation/advertisement/code/table/caption/reference",
+              "parent_selector": "fill",
+              "relations": "fill caption/reference/anchor relations"
+            }
+          },
+          {
+            "selector": "figure[id=\"table-authData\"] > table:nth-of-type(1)",
+            "tag": "table",
+            "text_preview": "Name Length (in bytes) Description rpIdHash 32 SHA-256 hash of the RP ID the credential is scoped to. flags 1 Flags (bit 0 is the least significant bit): Bit 0: User Present ( UP ) result. 1 means the user is present . 0",
+            "reason": "first table; verify table role, caption and cell structure",
+            "annotation_fields": {
+              "heading_level": "fill for headings only",
+              "role": "fill body/navigation/advertisement/code/table/caption/reference",
+              "parent_selector": "fill",
+              "relations": "fill caption/reference/anchor relations"
+            }
+          },
+          {
+            "selector": "nav[id=\"toc\"] > ol:nth-of-type(1) > li:nth-of-type(1) > li:nth-of-type(1) > li:nth-of-type(1) > li:nth-of-type(1) > li:nth-of-type(1) > ol:nth-of-type(1) > li:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(2) > span:nth-of-type(1) > code:nth-of-type(1)",
+            "tag": "code",
+            "text_preview": "PublicKeyCredential",
+            "reason": "first code candidate; verify code block boundary",
+            "annotation_fields": {
+              "heading_level": "fill for headings only",
+              "role": "fill body/navigation/advertisement/code/table/caption/reference",
+              "parent_selector": "fill",
+              "relations": "fill caption/reference/anchor relations"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "WEB-002",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "source_sha256": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+      "license_or_authorization": "RFC Trust legal notice; verify redistribution terms",
+      "cloud_upload_allowed": "unknown",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\rfc-9110.html",
+      "review_status": "draft",
+      "queue": {
+        "kind": "HTML",
+        "candidate_nodes": [
+          {
+            "selector": "h1[id=\"rfcnum\"]",
+            "tag": "h1",
+            "text_preview": "RFC 9110",
+            "reason": "first h1; verify document title and root heading",
+            "annotation_fields": {
+              "heading_level": "fill for headings only",
+              "role": "fill body/navigation/advertisement/code/table/caption/reference",
+              "parent_selector": "fill",
+              "relations": "fill caption/reference/anchor relations"
+            }
+          },
+          {
+            "selector": "h2[id=\"abstract\"]",
+            "tag": "h2",
+            "text_preview": "Abstract",
+            "reason": "first h2; verify heading path and navigation contamination",
+            "annotation_fields": {
+              "heading_level": "fill for headings only",
+              "role": "fill body/navigation/advertisement/code/table/caption/reference",
+              "parent_selector": "fill",
+              "relations": "fill caption/reference/anchor relations"
+            }
+          },
+          {
+            "selector": "h3[id=\"name-uri-references\"]",
+            "tag": "h3",
+            "text_preview": "4.1. URI References",
+            "reason": "reference section candidate; verify citation boundary",
+            "annotation_fields": {
+              "heading_level": "fill for headings only",
+              "role": "fill body/navigation/advertisement/code/table/caption/reference",
+              "parent_selector": "fill",
+              "relations": "fill caption/reference/anchor relations"
+            }
+          },
+          {
+            "selector": "html:nth-of-type(1) > body:nth-of-type(1) > table:nth-of-type(1)",
+            "tag": "table",
+            "text_preview": "RFC 9110 HTTP Semantics June 2022 Fielding, et al. Standards Track [Page]",
+            "reason": "first table; verify table role, caption and cell structure",
+            "annotation_fields": {
+              "heading_level": "fill for headings only",
+              "role": "fill body/navigation/advertisement/code/table/caption/reference",
+              "parent_selector": "fill",
+              "relations": "fill caption/reference/anchor relations"
+            }
+          },
+          {
+            "selector": "div[id=\"section-3.6-4.1\"] > pre:nth-of-type(1)",
+            "tag": "pre",
+            "text_preview": "request > UA ======================================= O < response",
+            "reason": "first code candidate; verify code block boundary",
+            "annotation_fields": {
+              "heading_level": "fill for headings only",
+              "role": "fill body/navigation/advertisement/code/table/caption/reference",
+              "parent_selector": "fill",
+              "relations": "fill caption/reference/anchor relations"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "WEB-004",
+      "source_url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction",
+      "source_sha256": "b709d19cf8bf3c3c8cf4e20933d36e7be4901ce79cf937f284f000cfabe43330",
+      "license_or_authorization": "OpenStax CC BY-NC-SA notice; verify page terms",
+      "cloud_upload_allowed": "unknown",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\openstax-anatomy-intro.html",
+      "review_status": "draft",
+      "queue": {
+        "kind": "HTML",
+        "candidate_nodes": [
+          {
+            "selector": "div[id=\"root\"] > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > h1:nth-of-type(1)",
+            "tag": "h1",
+            "text_preview": "Introduction",
+            "reason": "first h1; verify document title and root heading",
+            "annotation_fields": {
+              "heading_level": "fill for headings only",
+              "role": "fill body/navigation/advertisement/code/table/caption/reference",
+              "parent_selector": "fill",
+              "relations": "fill caption/reference/anchor relations"
+            }
+          },
+          {
+            "selector": "div[id=\"eip-646\"] > header:nth-of-type(1) > h2:nth-of-type(1)",
+            "tag": "h2",
+            "text_preview": "Chapter Objectives",
+            "reason": "first h2; verify heading path and navigation contamination",
+            "annotation_fields": {
+              "heading_level": "fill for headings only",
+              "role": "fill body/navigation/advertisement/code/table/caption/reference",
+              "parent_selector": "fill",
+              "relations": "fill caption/reference/anchor relations"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "boundary": "Candidate locations only; no predicted labels, gold annotations, license approval, or accuracy score."
+}

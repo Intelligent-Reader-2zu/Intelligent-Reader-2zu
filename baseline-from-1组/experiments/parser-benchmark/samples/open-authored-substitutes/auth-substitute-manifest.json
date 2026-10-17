@@ -1,0 +1,51 @@
+{
+  "manifest_version": 1,
+  "retrieved_on": "2026-09-23",
+  "purpose": "substitute documents for missing AUTH-005 and AUTH-006 slots",
+  "samples": [
+    {
+      "sample_id": "AUTH-005",
+      "filename": "AUTH-005-substitute-nist-csf-2.0.pdf",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\open-authored-substitutes\\AUTH-005-substitute-nist-csf-2.0.pdf",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "NIST public document; verify item terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "policy sections",
+        "numbered categories",
+        "tables",
+        "appendix",
+        "references"
+      ],
+      "bytes": 1518858,
+      "sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c"
+    },
+    {
+      "sample_id": "AUTH-006",
+      "filename": "AUTH-006-substitute-webdriver2.html",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\open-authored-substitutes\\AUTH-006-substitute-webdriver2.html",
+      "source_url": "https://www.w3.org/TR/webdriver2/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "W3C document license; verify current notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "navigation",
+        "headings",
+        "algorithms",
+        "code",
+        "links",
+        "tables"
+      ],
+      "bytes": 1882653,
+      "sha256": "929f2f0be15b73b0b3e33052f115a47fc1561ec42f0a8992d532780591ae919e"
+    }
+  ],
+  "notes": [
+    "AUTH-005 and AUTH-006 are open-source substitutes, not explicitly authorized real materials.",
+    "Do not merge these entries into the authorized-material count without confirming the intended scope.",
+    "Publicly reachable does not automatically mean cloud-uploadable."
+  ]
+}

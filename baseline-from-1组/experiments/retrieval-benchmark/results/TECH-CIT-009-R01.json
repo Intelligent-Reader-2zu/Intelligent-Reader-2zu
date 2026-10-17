@@ -1,0 +1,81 @@
+{
+  "experiment_id": "TECH-CIT-009-R01",
+  "routes": [
+    {
+      "route": {
+        "citation_id": "self-001-0391dd982a1c::self-001-0391dd982a1c-e0001",
+        "document_id": "self-001-0391dd982a1c",
+        "document_version": "da8fe3be20b08bc1",
+        "block_id": "self-001-0391dd982a1c-e0001",
+        "mode": "page_bbox",
+        "page": 1,
+        "section_path": [],
+        "paragraph": 0,
+        "quote": "SELF-AUTHORED PDF | physical page 1\nheader/footer and citation test"
+      },
+      "pass": true
+    },
+    {
+      "route": {
+        "citation_id": "self-001-0391dd982a1c::self-001-0391dd982a1c-e0002",
+        "document_id": "self-001-0391dd982a1c",
+        "document_version": "da8fe3be20b08bc1",
+        "block_id": "self-001-0391dd982a1c-e0002",
+        "mode": "page_bbox",
+        "page": 1,
+        "section_path": [],
+        "paragraph": 1,
+        "quote": "智能阅读器自制 PDF 样本"
+      },
+      "pass": true
+    },
+    {
+      "route": {
+        "citation_id": "self-001-0391dd982a1c::self-001-0391dd982a1c-e0003",
+        "document_id": "self-001-0391dd982a1c",
+        "document_version": "da8fe3be20b08bc1",
+        "block_id": "self-001-0391dd982a1c-e0003",
+        "mode": "page_bbox",
+        "page": 1,
+        "section_path": [],
+        "paragraph": 2,
+        "quote": "1 研究目标"
+      },
+      "pass": true
+    },
+    {
+      "route": {
+        "citation_id": "self-005-77ddbb18413f::self-005-77ddbb18413f-e0001",
+        "document_id": "self-005-77ddbb18413f",
+        "document_version": "e3f9db6145cb359b",
+        "block_id": "self-005-77ddbb18413f-e0001",
+        "mode": "section_paragraph",
+        "page": null,
+        "section_path": [
+          "智能阅读器样本：结构化课程讲义"
+        ],
+        "paragraph": 0,
+        "quote": "智能阅读器样本：结构化课程讲义"
+      },
+      "pass": true
+    },
+    {
+      "route": {
+        "citation_id": "self-005-77ddbb18413f::self-005-77ddbb18413f-e0002",
+        "document_id": "self-005-77ddbb18413f",
+        "document_version": "e3f9db6145cb359b",
+        "block_id": "self-005-77ddbb18413f-e0002",
+        "mode": "section_paragraph",
+        "page": null,
+        "section_path": [
+          "1 研究目标"
+        ],
+        "paragraph": 1,
+        "quote": "1 研究目标"
+      },
+      "pass": true
+    }
+  ],
+  "route_payload_complete": 1.0,
+  "scope": "Navigation payload contract; not a live UI click test."
+}

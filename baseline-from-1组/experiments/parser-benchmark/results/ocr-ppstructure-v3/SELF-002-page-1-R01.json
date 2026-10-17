@@ -1,0 +1,8 @@
+{
+  "sample_id": "SELF-002-page-1",
+  "status": "failed",
+  "image_path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\results\\text-structure\\rendered\\SELF-002-1.png",
+  "elapsed_ms": 154.57030000106897,
+  "error_type": "NotImplementedError",
+  "error": "(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+}

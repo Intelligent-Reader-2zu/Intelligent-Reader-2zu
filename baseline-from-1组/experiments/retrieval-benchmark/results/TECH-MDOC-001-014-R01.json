@@ -1,0 +1,276 @@
+{
+  "experiment_id": "TECH-MDOC-001-014-R01",
+  "scope": "offline deterministic multi-document retrieval and policy baseline; no model/cloud call",
+  "fixture": {
+    "document_count": 12,
+    "block_count": 43,
+    "query_count": 6
+  },
+  "summary": {
+    "unauthorized_leak_rate": 0.0,
+    "all_queries_authorized": true,
+    "metadata_completeness_rate": 1.0,
+    "authorized_query_mean_coverage": 0.833,
+    "retrieval_latency_ms": {
+      "p50": 0.0147,
+      "p95": 0.6529
+    }
+  },
+  "queries": [
+    {
+      "id": "M01",
+      "type": "authorized_search",
+      "returned": [
+        "DOC-A-v1-1-1",
+        "DOC-A-v1-2-1",
+        "DOC-B-v1-1-1"
+      ],
+      "gold": [
+        "DOC-B-v1-1-1"
+      ],
+      "gold_coverage": 1.0,
+      "unauthorized_leak": false,
+      "metadata_complete": true,
+      "source_version_pairs": [
+        "DOC-A@v1",
+        "DOC-B@v1"
+      ],
+      "context_chars": 108,
+      "elapsed_ms": 0.6529
+    },
+    {
+      "id": "M02",
+      "type": "unauthorized_only",
+      "returned": [],
+      "gold": [],
+      "gold_coverage": 0.0,
+      "unauthorized_leak": false,
+      "metadata_complete": true,
+      "source_version_pairs": [],
+      "context_chars": 0,
+      "elapsed_ms": 0.0199
+    },
+    {
+      "id": "M03",
+      "type": "conflict",
+      "returned": [
+        "CONFLICT-A-v1-1-1",
+        "CONFLICT-B-v2-1-1"
+      ],
+      "gold": [
+        "CONFLICT-A-v1-1-1",
+        "CONFLICT-B-v2-1-1"
+      ],
+      "gold_coverage": 1.0,
+      "unauthorized_leak": false,
+      "metadata_complete": true,
+      "source_version_pairs": [
+        "CONFLICT-A@v1",
+        "CONFLICT-B@v2"
+      ],
+      "context_chars": 42,
+      "elapsed_ms": 0.0156
+    },
+    {
+      "id": "M04",
+      "type": "version",
+      "returned": [
+        "VERSIONED-v1-1-1",
+        "VERSIONED-v2-1-1"
+      ],
+      "gold": [
+        "VERSIONED-v2-1-1"
+      ],
+      "gold_coverage": 1.0,
+      "unauthorized_leak": false,
+      "metadata_complete": true,
+      "source_version_pairs": [
+        "VERSIONED@v1",
+        "VERSIONED@v2"
+      ],
+      "context_chars": 28,
+      "elapsed_ms": 0.0133
+    },
+    {
+      "id": "M05",
+      "type": "sensitivity",
+      "returned": [
+        "PUBLIC-01-v1-1-1",
+        "RESTRICTED-01-v1-1-1"
+      ],
+      "gold": [
+        "RESTRICTED-01-v1-1-1"
+      ],
+      "gold_coverage": 1.0,
+      "unauthorized_leak": false,
+      "metadata_complete": true,
+      "source_version_pairs": [
+        "PUBLIC-01@v1",
+        "RESTRICTED-01@v1"
+      ],
+      "context_chars": 37,
+      "elapsed_ms": 0.0123
+    },
+    {
+      "id": "M06",
+      "type": "same_name",
+      "returned": [
+        "DUP-A-v1-1-1",
+        "DUP-B-v1-1-1"
+      ],
+      "gold": [
+        "DUP-A-v1-1-1",
+        "DUP-B-v1-1-1"
+      ],
+      "gold_coverage": 1.0,
+      "unauthorized_leak": false,
+      "metadata_complete": true,
+      "source_version_pairs": [
+        "DUP-A@v1",
+        "DUP-B@v1"
+      ],
+      "context_chars": 40,
+      "elapsed_ms": 0.0138
+    }
+  ],
+  "conflict": {
+    "both_sources_retrieved": true,
+    "conflict_group_count": 1,
+    "expected_status": "needs_human_review"
+  },
+  "update_delete": {
+    "new_version_is_distinct": true,
+    "latest_version_ranked_first": true,
+    "deleted_document_new_query_empty": true,
+    "tombstone_policy": "new queries exclude deleted document; old citations must be stale"
+  },
+  "sensitivity": {
+    "default_mixed_policy": "deny",
+    "default_mixed_query_denied": true,
+    "public_route_ids": [
+      "PUBLIC-01-v1-1-1"
+    ],
+    "restricted_local_route_ids": [
+      "RESTRICTED-01-v1-1-1"
+    ],
+    "restricted_not_in_public_route": true
+  },
+  "noise": {
+    "global_top_k_document_counts": {
+      "LONG-DOC": 8,
+      "DOC-C": 0,
+      "DOC-B": 0
+    },
+    "per_document_quota_counts": {
+      "LONG-DOC": 2,
+      "DOC-C": 1,
+      "DOC-B": 0
+    },
+    "quota_limits_long_document_concentration": true
+  },
+  "controls": {
+    "cache_acl_isolated": true,
+    "audit_log_raw_text_leak": false,
+    "context_budget": [
+      {
+        "budget_tokens": 2000,
+        "kept_blocks": 71,
+        "estimated_tokens": 1988,
+        "overflow": true
+      },
+      {
+        "budget_tokens": 4000,
+        "kept_blocks": 100,
+        "estimated_tokens": 2800,
+        "overflow": false
+      },
+      {
+        "budget_tokens": 8000,
+        "kept_blocks": 100,
+        "estimated_tokens": 2800,
+        "overflow": false
+      },
+      {
+        "budget_tokens": 16000,
+        "kept_blocks": 100,
+        "estimated_tokens": 2800,
+        "overflow": false
+      }
+    ],
+    "concurrency": [
+      {
+        "workers": 1,
+        "requests": 12,
+        "p95_batch_ms": 1.9639,
+        "unauthorized_leak": false
+      },
+      {
+        "workers": 4,
+        "requests": 12,
+        "p95_batch_ms": 1.2402,
+        "unauthorized_leak": false
+      },
+      {
+        "workers": 8,
+        "requests": 12,
+        "p95_batch_ms": 0.8883,
+        "unauthorized_leak": false
+      },
+      {
+        "workers": 16,
+        "requests": 12,
+        "p95_batch_ms": 0.8588,
+        "unauthorized_leak": false
+      }
+    ]
+  },
+  "scale_matrix": [
+    {
+      "documents": 1,
+      "pages": 1,
+      "evidence_blocks": 1,
+      "context_chars": 19,
+      "retrieval_ms": 0.0142
+    },
+    {
+      "documents": 5,
+      "pages": 5,
+      "evidence_blocks": 5,
+      "context_chars": 95,
+      "retrieval_ms": 0.0243
+    },
+    {
+      "documents": 10,
+      "pages": 10,
+      "evidence_blocks": 10,
+      "context_chars": 190,
+      "retrieval_ms": 0.0393
+    },
+    {
+      "documents": 20,
+      "pages": 20,
+      "evidence_blocks": 16,
+      "context_chars": 304,
+      "retrieval_ms": 0.0734
+    },
+    {
+      "documents": 50,
+      "pages": 50,
+      "evidence_blocks": 16,
+      "context_chars": 304,
+      "retrieval_ms": 0.1642
+    },
+    {
+      "documents": 100,
+      "pages": 100,
+      "evidence_blocks": 16,
+      "context_chars": 304,
+      "retrieval_ms": 0.3151
+    }
+  ],
+  "boundaries": [
+    "Lexical overlap is a plumbing baseline, not a semantic retrieval or answer-quality result.",
+    "Scale timings measure the Python fixture only; local hardware, vector index, model throughput and cloud price remain unverified.",
+    "Deletion result verifies new-query invisibility in the fixture; physical disk, backup and provider deletion require separate tests."
+  ]
+}

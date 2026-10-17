@@ -1,0 +1,55 @@
+{
+  "parser": "markdown-it-py",
+  "parser_version": "4.2.0",
+  "status": "succeeded",
+  "sample_id": "SELF-008",
+  "format": "Markdown",
+  "line_count": 38,
+  "token_count": 66,
+  "heading_count": 4,
+  "headings": [
+    {
+      "level": 1,
+      "text": "智能阅读器 Markdown 自制样本",
+      "map": [
+        0,
+        1
+      ]
+    },
+    {
+      "level": 2,
+      "text": "1 目的",
+      "map": [
+        2,
+        3
+      ]
+    },
+    {
+      "level": 3,
+      "text": "1.1 关键定义",
+      "map": [
+        6,
+        7
+      ]
+    },
+    {
+      "level": 2,
+      "text": "2 指标表",
+      "map": [
+        10,
+        11
+      ]
+    }
+  ],
+  "commonmark_mode": true,
+  "gfm_extensions": "not_enabled_in_baseline",
+  "elapsed_ms": 6.96,
+  "text_preview": "# 智能阅读器 Markdown 自制样本\n\n## 1 目的\n\n本文件用于验证 **标题层级**、GFM 表格、代码块、脚注、数学公式、图片链接和中英文混排。\n\n### 1.1 关键定义\n\n稳定的 `block_id` 应该能回溯到原始段落，而不是只依赖检索结果中的文本片段。\n\n## 2 指标表\n\n| 指标 | 目标 | 说明 |\n| --- | ---: | --- |\n| 正文召回率 | 0.95 | 与人工参考文本比较 |\n| 引用定位率 | 0.90 | 页码或行号可回溯 |\n\n> 风险提示：表格、脚注和公式不能被静默删除。\n\n```python\ndef locate(block_id: str) -> str:\n    return f\"evidence:{block_id}\"\n```\n\n公式示例：$Recall@k = hits / k$。\n\n![结构示意图](assets/layout-placeholder.png)\n\n嵌套列表：\n\n1. 文档导入\n   1. 格式识别\n   2. 原始文件哈希\n2. 证据定位\n\n脚注引用[^1] 应保留与正文的关联。\n\n[^1]: 这是一个脚注，用于测试 GFM 扩展支持。\n",
+  "query_hits": {
+    "引用定位率": true,
+    "block_id": true,
+    "脚注": true
+  },
+  "source_path": "samples\\self-authored\\markdown\\SELF-008-complex.md",
+  "source_sha256": "47b74431f9c801f77325f711649b239b299ffd1f5feab733383672f1f91faf98"
+}

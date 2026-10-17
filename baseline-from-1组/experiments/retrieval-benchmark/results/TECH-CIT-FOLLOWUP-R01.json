@@ -1,0 +1,13 @@
+{
+  "experiment_id": "TECH-CIT-FOLLOWUP-R01",
+  "experiments": [
+    "TECH-CIT-002-R01",
+    "TECH-CIT-004-R01",
+    "TECH-CIT-005-R01",
+    "TECH-CIT-007-R01",
+    "TECH-CIT-008-R01",
+    "TECH-CIT-009-R01",
+    "TECH-CIT-012-R01"
+  ],
+  "scope": "Follow-up citation experiments; UI/semantic claims remain explicitly bounded in each result."
+}

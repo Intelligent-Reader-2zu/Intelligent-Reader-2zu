@@ -1,0 +1,17 @@
+    {
+      "sample_id":"SELF-006",
+      "status":"scored",
+      "format":"DOCX",
+      "parser":"Apache Tika",
+      "parser_version":"3.2.1",
+      "ocr_enabled":false,
+      "config_hash":"c6441ba93c16c1a9e8af451b67d2afa85855e37f98e909ee9fcef9e8ddb341fa",
+      "text_chars":308,
+      "source_path":"D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\self-authored\\docx\\SELF-006-meeting-notes.docx",
+      "source_sha256":"d5c1de233a735f2b963816c3f512f8fee2ed300d91170119d3c88ef4fd0180c1",
+      "query_hits": {"physical_page":false,"heading_path":false,"脚注":false,"跨栏标题":false,"参考文献":false,"Recall@k":false,"合并单元格":false,"DOCX 标题样式":false,"引用定位":false,"block_id":false,"GB18030":false,"段落边界":false},
+      "failure_reason": null,
+      "metadata": {"Content-Type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document","X-TIKA:Parsed-By":"org.apache.tika.parser.DefaultParser","X-TIKA:Parsed-By-Full-Set":"org.apache.tika.parser.DefaultParser","extended-properties:DocSecurityString":"None"},
+      "text_preview":"智能阅读器自制样本 | 页眉测试\n智能阅读器样本：会议记录\n会议主题\n本样本用于测试日期、编号、项目符号、表格和脱敏后的姓名占位符。\n决议\n- 先完成本地解析；- 再比较检索结果；- 最后记录失败案例。\n后续行动\n负责人 A 在 2026-09-30 前补充授权证明，负责人 B 复核表格字段。\n\t编号\n\t行动\n\t负责人\n\t截止日期\n\n\tA-01\n\t补充授权\n\t用户 A（脱敏）\n\t2026-09-30\n\n\tB-01\n\t复核字段\n\t用户 B（脱敏）\n\t2026-10-01\n\n\n\n\n分页后的附录\n此段位于显式分页符之后，不能与上一页的段落简单拼接。\nSELF-AUTHORED | footer reference\n",
+      "boundary":"Text extraction and metadata only; no bbox, AST, OCR, cloud service, vector retrieval, or QA evaluation."
+    }

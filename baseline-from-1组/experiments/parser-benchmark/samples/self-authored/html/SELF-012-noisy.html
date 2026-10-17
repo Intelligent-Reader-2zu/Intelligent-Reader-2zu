@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><title>网页快照样本</title><style>.ad{display:none}</style></head>
+<body>
+  <nav><a href="/">首页</a> <a href="/docs">文档</a> <a href="#method">方法</a></nav>
+  <main>
+    <article>
+      <h1>网页快照：证据定位流程</h1>
+      <p class="meta">版本 1.0 | 2026-09-23 | English label: provenance</p>
+      <h2 id="method">方法</h2>
+      <p>正文应与导航、广告和脚本分离。解析结果需要保留标题、段落、表格和原始链接。</p>
+      <table><thead><tr><th>步骤</th><th>输出</th></tr></thead>
+        <tbody><tr><td>解析</td><td>结构块</td></tr><tr><td>检索</td><td>证据块</td></tr></tbody>
+      </table>
+      <pre><code>document.querySelector('article')</code></pre>
+    </article>
+    <aside class="ad">这是应被识别为噪声的广告占位。</aside>
+  </main>
+  <footer>网页快照页脚 | 原始 URL 和抓取日期应另行登记</footer>
+  <script>console.log('dynamic noise');</script>
+</body></html>

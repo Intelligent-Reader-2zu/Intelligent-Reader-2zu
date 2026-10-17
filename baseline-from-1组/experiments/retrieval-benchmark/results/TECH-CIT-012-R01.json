@@ -1,0 +1,28 @@
+{
+  "experiment_id": "TECH-CIT-012-R01",
+  "cases": [
+    {
+      "id": "V01",
+      "change": "parser_config_changed_same_source",
+      "expected": "stale",
+      "observed": "stale",
+      "pass": true
+    },
+    {
+      "id": "V02",
+      "change": "source_hash_changed",
+      "expected": "stale",
+      "observed": "stale",
+      "pass": true
+    },
+    {
+      "id": "V03",
+      "change": "same_source_same_config",
+      "expected": "valid",
+      "observed": "valid",
+      "pass": true
+    }
+  ],
+  "pass_rate": 1.0,
+  "scope": "Controlled parser/index drift state probe; no production index migration."
+}

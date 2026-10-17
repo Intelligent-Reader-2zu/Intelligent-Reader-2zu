@@ -1,0 +1,8 @@
+{
+  "sample_id": "SELF-004-page-1",
+  "status": "failed",
+  "image_path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\results\\ocr-tesseract-matrix\\dpi144-psm3-none\\page-1.png",
+  "elapsed_ms": 152.31170000333805,
+  "error_type": "NotImplementedError",
+  "error": "(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+}

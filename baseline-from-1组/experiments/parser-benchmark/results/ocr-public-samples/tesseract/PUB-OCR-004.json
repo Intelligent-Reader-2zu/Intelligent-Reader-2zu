@@ -1,0 +1,517 @@
+{
+  "status": "succeeded",
+  "text": "aK\nwe\n(ch\n20 (USN)\n3% (RUS)\n8 (Gah)\n‘8 (oer)\nHE (Aus)\n8 (KOR)\nBa (PN)\nXH (TA)\nsata (FRA)\n(neo)\nam (UK)\nEE (KEN)\nWs (ESP)\nmm CAM)\nam\n人",
+  "lines": [
+    "aK",
+    "we",
+    "(ch",
+    "20 (USN)",
+    "3% (RUS)",
+    "8 (Gah)",
+    "‘8 (oer)",
+    "HE (Aus)",
+    "8 (KOR)",
+    "Ba (PN)",
+    "XH (TA)",
+    "sata (FRA)",
+    "(neo)",
+    "am (UK)",
+    "EE (KEN)",
+    "Ws (ESP)",
+    "mm CAM)",
+    "am",
+    "人"
+  ],
+  "items": [
+    {
+      "text": "aK",
+      "confidence": 35.912079,
+      "bbox": [
+        19,
+        9,
+        17,
+        9
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "we",
+      "confidence": 22.114403,
+      "bbox": [
+        157,
+        9,
+        37,
+        9
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "(ch",
+      "confidence": 30.98909,
+      "bbox": [
+        149,
+        30,
+        47,
+        9
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 2,
+      "word": 1
+    },
+    {
+      "text": "20",
+      "confidence": 28.263252,
+      "bbox": [
+        149,
+        52,
+        17,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 3,
+      "word": 1
+    },
+    {
+      "text": "(USN)",
+      "confidence": 27.972038,
+      "bbox": [
+        172,
+        52,
+        24,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 3,
+      "word": 2
+    },
+    {
+      "text": "3%",
+      "confidence": 21.368286,
+      "bbox": [
+        145,
+        73,
+        25,
+        9
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 4,
+      "word": 1
+    },
+    {
+      "text": "(RUS)",
+      "confidence": 60.005508,
+      "bbox": [
+        177,
+        73,
+        23,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 4,
+      "word": 2
+    },
+    {
+      "text": "8",
+      "confidence": 52.369621,
+      "bbox": [
+        149,
+        94,
+        16,
+        9
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 5,
+      "word": 1
+    },
+    {
+      "text": "(Gah)",
+      "confidence": 5.39476,
+      "bbox": [
+        172,
+        94,
+        24,
+        9
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 5,
+      "word": 2
+    },
+    {
+      "text": "‘8",
+      "confidence": 45.823612,
+      "bbox": [
+        149,
+        116,
+        17,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 6,
+      "word": 1
+    },
+    {
+      "text": "(oer)",
+      "confidence": 67.800911,
+      "bbox": [
+        172,
+        116,
+        24,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 6,
+      "word": 2
+    },
+    {
+      "text": "HE",
+      "confidence": 61.073959,
+      "bbox": [
+        141,
+        137,
+        34,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 7,
+      "word": 1
+    },
+    {
+      "text": "(Aus)",
+      "confidence": 76.62973,
+      "bbox": [
+        181,
+        137,
+        24,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 7,
+      "word": 2
+    },
+    {
+      "text": "8",
+      "confidence": 23.127937,
+      "bbox": [
+        149,
+        158,
+        17,
+        9
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 8,
+      "word": 1
+    },
+    {
+      "text": "(KOR)",
+      "confidence": 85.07328,
+      "bbox": [
+        172,
+        158,
+        24,
+        9
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 8,
+      "word": 2
+    },
+    {
+      "text": "Ba",
+      "confidence": 39.285145,
+      "bbox": [
+        151,
+        180,
+        16,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 9,
+      "word": 1
+    },
+    {
+      "text": "(PN)",
+      "confidence": 39.246845,
+      "bbox": [
+        173,
+        180,
+        22,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 9,
+      "word": 2
+    },
+    {
+      "text": "XH",
+      "confidence": 37.726711,
+      "bbox": [
+        148,
+        201,
+        25,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 10,
+      "word": 1
+    },
+    {
+      "text": "(TA)",
+      "confidence": 39.616261,
+      "bbox": [
+        180,
+        201,
+        18,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 10,
+      "word": 2
+    },
+    {
+      "text": "sata",
+      "confidence": 9.837349,
+      "bbox": [
+        150,
+        222,
+        16,
+        9
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 11,
+      "word": 1
+    },
+    {
+      "text": "(FRA)",
+      "confidence": 69.300591,
+      "bbox": [
+        173,
+        222,
+        22,
+        9
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 11,
+      "word": 2
+    },
+    {
+      "text": "(neo)",
+      "confidence": 20.366844,
+      "bbox": [
+        172,
+        244,
+        24,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 12,
+      "word": 1
+    },
+    {
+      "text": "am",
+      "confidence": 41.990795,
+      "bbox": [
+        145,
+        265,
+        25,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 13,
+      "word": 1
+    },
+    {
+      "text": "(UK)",
+      "confidence": 0.0,
+      "bbox": [
+        177,
+        265,
+        24,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 13,
+      "word": 2
+    },
+    {
+      "text": "EE",
+      "confidence": 55.194286,
+      "bbox": [
+        145,
+        286,
+        25,
+        9
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 14,
+      "word": 1
+    },
+    {
+      "text": "(KEN)",
+      "confidence": 86.770523,
+      "bbox": [
+        177,
+        286,
+        23,
+        9
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 14,
+      "word": 2
+    },
+    {
+      "text": "Ws",
+      "confidence": 33.931725,
+      "bbox": [
+        145,
+        308,
+        26,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 15,
+      "word": 1
+    },
+    {
+      "text": "(ESP)",
+      "confidence": 50.98243,
+      "bbox": [
+        177,
+        308,
+        23,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 15,
+      "word": 2
+    },
+    {
+      "text": "mm",
+      "confidence": 5.304489,
+      "bbox": [
+        145,
+        329,
+        25,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 16,
+      "word": 1
+    },
+    {
+      "text": "CAM)",
+      "confidence": 53.164631,
+      "bbox": [
+        177,
+        329,
+        23,
+        8
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 16,
+      "word": 2
+    },
+    {
+      "text": "am",
+      "confidence": 74.303291,
+      "bbox": [
+        314,
+        9,
+        17,
+        9
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "人",
+      "confidence": 46.826855,
+      "bbox": [
+        318,
+        31,
+        9,
+        7
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 2,
+      "word": 1
+    }
+  ],
+  "run_ms": [
+    1165.6303000054322,
+    1217.134200000146,
+    1150.3752999997232
+  ],
+  "latency_ms_p50": 1165.6303000054322,
+  "latency_ms_p95": 1217.134200000146,
+  "mean_confidence": 42.11772615625,
+  "low_confidence_item_ratio": 0.75,
+  "bbox_item_ratio": 1.0,
+  "capabilities": {
+    "formula_structure": false,
+    "table_structure": false,
+    "seal_region_class": false,
+    "word_or_line_bbox": true
+  },
+  "stderr": "Estimating resolution as 108",
+  "questions": [
+    {
+      "question_id": "Q-PUB-005",
+      "match": "same_line",
+      "passed": false,
+      "document_hits": {
+        "中国": false,
+        "CHN": false,
+        "48": false,
+        "22": false,
+        "30": false,
+        "100": false
+      },
+      "matched_line": null,
+      "required_capability": null
+    },
+    {
+      "question_id": "Q-PUB-006",
+      "match": "capability",
+      "passed": false,
+      "document_hits": {},
+      "matched_line": null,
+      "required_capability": "table_structure"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tool": "tesseract",
+  "version": "tesseract v5.5.3.20260724",
+  "languages": "chi_sim+eng",
+  "psm": 3,
+  "dpi": 144,
+  "sample": "SELF-004",
+  "source_sha256": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+  "results": [
+    {
+      "page": 1,
+      "render_px": [
+        1588,
+        2246
+      ],
+      "exit_code": 0,
+      "elapsed_ms": 2355.01,
+      "word_count": 94,
+      "mean_word_confidence": 91.34,
+      "text_preview": ""
+    },
+    {
+      "page": 2,
+      "render_px": [
+        1644,
+        2284
+      ],
+      "exit_code": 0,
+      "elapsed_ms": 2466.08,
+      "word_count": 87,
+      "mean_word_confidence": 91.55,
+      "text_preview": ""
+    }
+  ],
+  "boundary": "standalone OCR baseline on the current SELF-004 revision; no ground-truth CER/WER; not directly comparable with the 2026-09-24 candidate results whose source_sha256 is 643a6c777485b388c5c856bdcd955f0397d3cdac0586dfd2782567c5fcbda360"
+}

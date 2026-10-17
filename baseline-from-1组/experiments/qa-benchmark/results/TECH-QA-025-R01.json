@@ -1,0 +1,17 @@
+{
+  "experiment_id": "TECH-QA-025-R01",
+  "date": "2026-10-12",
+  "provider": "custom relay through official Codex CLI",
+  "base_url_configured": "https://api.ipc.wiki",
+  "wire_api": "responses",
+  "requires_openai_auth": true,
+  "configured_model": "gpt-5.6-sol",
+  "configured_reasoning_effort": "high",
+  "candidate_smoke_results": {
+    "gpt-5.5": {"status": "success", "elapsed_seconds_approx": 13.3},
+    "gpt-5.6-sol": {"status": "success", "elapsed_seconds_approx": 14.6},
+    "gpt-5.6-luna": {"status": "success", "elapsed_seconds_approx": 15.4}
+  },
+  "generic_bearer_route": "403_codex_official_clients_only",
+  "quality_evaluation_completed": false
+}

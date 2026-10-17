@@ -1,0 +1,96 @@
+{
+  "experiment_id": "TECH-QA-032-R01",
+  "scope": "complete fixed synthetic QA set through official Codex CLI in small batches",
+  "data_sent": "project-authored synthetic fixture only; no user documents",
+  "configuration": {
+    "wire_api": "responses through official Codex provider",
+    "reasoning_effort": "low",
+    "group_size": 3,
+    "timeout_seconds": 60.0,
+    "group_interval_seconds": 5.0,
+    "model_interval_seconds": 10.0
+  },
+  "providers": [
+    {
+      "provider": "codex_official_cli_grouped",
+      "model": "gpt-5.5",
+      "query_count": 3,
+      "completed_query_count": 0,
+      "transport_error_count": 3,
+      "status_accuracy": null,
+      "json_valid_rate": 0,
+      "citation_id_retrieval_rate": null,
+      "refusal_or_review_accuracy": null,
+      "batch_latency_ms": {
+        "p50": 240.912,
+        "p95": 240.912
+      },
+      "rows": [
+        {
+          "id": "Q01",
+          "type": "exact_keyword",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P1-B1",
+            "A-P1-B2",
+            "A-P2-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 240.912,
+          "error": "CLI_EXIT_1: WARNING: failed to clean up stale arg0 temp dirs: 拒绝访问。 (os error 5)\nWARNING: proceeding, even though we could not create PATH aliases: 拒绝访问。 (os error 5) at path \"C:\\\\Users\\\\联想\\\\.codex\\\\tmp\\\\arg0\\\\codex-arg0lZDAzH\"\n2026-10-12T10:29:14.862168Z  WARN codex_state::runtime: failed to open memories db at C:\\Users\\联想\\.codex\\memories_1.sqlite: failed to open memories DB at C:\\Users\\联想\\.codex\\memories_1.sqlite: error returned from database: (code: 14) unable to open database file\n2026-10-12T10:29:14.863364Z  WARN codex_rollout::state_db: failed to initialize state runtime: failed to initialize state runtime at C:\\Users\\联想\\.codex: failed to open memories DB at C:\\Users\\联想\\.codex\\memories_1.sqlite: error returned from database: (code: 14) unable to open database file: error returned from database: (code: 14) unable to open database file: (code: 14) unable to open database file\nError: failed to initialize in-process app-server client: 拒绝访问。 (os error 5)\n",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q02",
+          "type": "synonym_natural_language",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P2-B1",
+            "B-P2-B1",
+            "I-P1-B1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 240.912,
+          "error": "CLI_EXIT_1: WARNING: failed to clean up stale arg0 temp dirs: 拒绝访问。 (os error 5)\nWARNING: proceeding, even though we could not create PATH aliases: 拒绝访问。 (os error 5) at path \"C:\\\\Users\\\\联想\\\\.codex\\\\tmp\\\\arg0\\\\codex-arg0lZDAzH\"\n2026-10-12T10:29:14.862168Z  WARN codex_state::runtime: failed to open memories db at C:\\Users\\联想\\.codex\\memories_1.sqlite: failed to open memories DB at C:\\Users\\联想\\.codex\\memories_1.sqlite: error returned from database: (code: 14) unable to open database file\n2026-10-12T10:29:14.863364Z  WARN codex_rollout::state_db: failed to initialize state runtime: failed to initialize state runtime at C:\\Users\\联想\\.codex: failed to open memories DB at C:\\Users\\联想\\.codex\\memories_1.sqlite: error returned from database: (code: 14) unable to open database file: error returned from database: (code: 14) unable to open database file: (code: 14) unable to open database file\nError: failed to initialize in-process app-server client: 拒绝访问。 (os error 5)\n",
+          "parsed_response": null,
+          "raw_response": ""
+        },
+        {
+          "id": "Q03",
+          "type": "long_cross_paragraph",
+          "expected_status": "answered",
+          "actual_status": null,
+          "status_correct": false,
+          "json_valid": false,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P2-B1",
+            "B-P2-B1",
+            "B-P2-B2"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 240.912,
+          "error": "CLI_EXIT_1: WARNING: failed to clean up stale arg0 temp dirs: 拒绝访问。 (os error 5)\nWARNING: proceeding, even though we could not create PATH aliases: 拒绝访问。 (os error 5) at path \"C:\\\\Users\\\\联想\\\\.codex\\\\tmp\\\\arg0\\\\codex-arg0lZDAzH\"\n2026-10-12T10:29:14.862168Z  WARN codex_state::runtime: failed to open memories db at C:\\Users\\联想\\.codex\\memories_1.sqlite: failed to open memories DB at C:\\Users\\联想\\.codex\\memories_1.sqlite: error returned from database: (code: 14) unable to open database file\n2026-10-12T10:29:14.863364Z  WARN codex_rollout::state_db: failed to initialize state runtime: failed to initialize state runtime at C:\\Users\\联想\\.codex: failed to open memories DB at C:\\Users\\联想\\.codex\\memories_1.sqlite: error returned from database: (code: 14) unable to open database file: error returned from database: (code: 14) unable to open database file: (code: 14) unable to open database file\nError: failed to initialize in-process app-server client: 拒绝访问。 (os error 5)\n",
+          "parsed_response": null,
+          "raw_response": ""
+        }
+      ]
+    }
+  ],
+  "boundary": "Grouped CLI latency includes official client startup and relay overhead; no direct Bearer API cost inference."
+}

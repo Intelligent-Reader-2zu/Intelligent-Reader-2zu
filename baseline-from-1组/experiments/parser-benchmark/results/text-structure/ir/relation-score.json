@@ -1,0 +1,91 @@
+{
+  "experiment_id": "TECH-STRUCT-003-R01",
+  "scope": "confirmed PDF semantic roles and table grid availability",
+  "outputs": [
+    {
+      "experiment_id": "TECH-STRUCT-003-R01",
+      "sample_id": "SELF-001",
+      "parser": "PyMuPDF",
+      "gold_units": 9,
+      "predicted_elements": 10,
+      "matched_units": 6,
+      "bbox_coverage": 0.6666666666666666,
+      "semantic_role_recall": 0.2222222222222222,
+      "footnote_gold": 1,
+      "footnote_semantic_matches": 0,
+      "footer_gold": 2,
+      "footer_semantic_matches": 0,
+      "tables": [
+        {
+          "table_id": "SELF-001-table-01",
+          "gold_shape": [
+            3,
+            3
+          ],
+          "predicted_table_count": 0,
+          "predicted_cell_count": 0,
+          "grid_available": false,
+          "cell_grid_available": false
+        }
+      ],
+      "boundary": "Role and grid scores measure this low-level adapter; they are not a parser-wide accuracy claim."
+    },
+    {
+      "experiment_id": "TECH-STRUCT-003-R01",
+      "sample_id": "SELF-002",
+      "parser": "PyMuPDF",
+      "gold_units": 19,
+      "predicted_elements": 24,
+      "matched_units": 9,
+      "bbox_coverage": 0.47368421052631576,
+      "semantic_role_recall": 0.05263157894736842,
+      "footnote_gold": 1,
+      "footnote_semantic_matches": 0,
+      "footer_gold": 4,
+      "footer_semantic_matches": 0,
+      "tables": [
+        {
+          "table_id": "SELF-002-table-01",
+          "gold_shape": [
+            3,
+            3
+          ],
+          "predicted_table_count": 0,
+          "predicted_cell_count": 0,
+          "grid_available": false,
+          "cell_grid_available": false
+        }
+      ],
+      "boundary": "Role and grid scores measure this low-level adapter; they are not a parser-wide accuracy claim."
+    },
+    {
+      "experiment_id": "TECH-STRUCT-003-R01",
+      "sample_id": "SELF-003",
+      "parser": "PyMuPDF",
+      "gold_units": 9,
+      "predicted_elements": 10,
+      "matched_units": 6,
+      "bbox_coverage": 0.6666666666666666,
+      "semantic_role_recall": 0.2222222222222222,
+      "footnote_gold": 1,
+      "footnote_semantic_matches": 0,
+      "footer_gold": 2,
+      "footer_semantic_matches": 0,
+      "tables": [
+        {
+          "table_id": "SELF-003-table-01",
+          "gold_shape": [
+            3,
+            3
+          ],
+          "predicted_table_count": 0,
+          "predicted_cell_count": 0,
+          "grid_available": false,
+          "cell_grid_available": false
+        }
+      ],
+      "boundary": "Role and grid scores measure this low-level adapter; they are not a parser-wide accuracy claim."
+    }
+  ],
+  "boundary": "No OCR metrics; no claim for unannotated DOCX, Markdown, or TXT semantics."
+}

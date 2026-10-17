@@ -1,0 +1,15 @@
+{
+  "fixed_queries": [
+    "OCR TEST",
+    "物理页码",
+    "低清"
+  ],
+  "expected_evidence_fragments": [
+    "OCR 应保留物理页码",
+    "表格区域"
+  ],
+  "reference_notes": "这是图像型 PDF，不应依赖已有文本层；保存页面截图和 OCR 置信度。",
+  "sample_id": "SELF-004",
+  "annotation_version": 1,
+  "source": "project-authored"
+}

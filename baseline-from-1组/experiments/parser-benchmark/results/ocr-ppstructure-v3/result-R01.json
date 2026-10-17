@@ -1,0 +1,38 @@
+{
+  "experiment_id": "TECH-OCR-020-R01",
+  "status": "partial_or_failed",
+  "paddleocr_version": "3.7.0",
+  "paddle_version": "3.3.1",
+  "python_version": "3.11.16",
+  "settings": {
+    "use_doc_orientation_classify": false,
+    "use_doc_unwarping": false,
+    "use_textline_orientation": false,
+    "use_seal_recognition": false,
+    "use_table_recognition": true,
+    "use_formula_recognition": false,
+    "use_chart_recognition": false,
+    "use_region_detection": false,
+    "lang": "ch"
+  },
+  "model_init_ms": 94508.3947000021,
+  "samples": [
+    {
+      "sample_id": "SELF-002-page-1",
+      "status": "failed",
+      "image_path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\results\\text-structure\\rendered\\SELF-002-1.png",
+      "elapsed_ms": 154.57030000106897,
+      "error_type": "NotImplementedError",
+      "error": "(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+    },
+    {
+      "sample_id": "SELF-004-page-1",
+      "status": "failed",
+      "image_path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\results\\ocr-tesseract-matrix\\dpi144-psm3-none\\page-1.png",
+      "elapsed_ms": 152.31170000333805,
+      "error_type": "NotImplementedError",
+      "error": "(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+    }
+  ],
+  "boundary": "Two project-authored pages; smoke test without manually annotated cell/layout ground truth."
+}

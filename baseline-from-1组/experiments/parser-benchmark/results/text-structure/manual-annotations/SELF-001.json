@@ -1,0 +1,149 @@
+{
+  "experiment_id": "TECH-DOC-007-R02-text-structure",
+  "sample_id": "SELF-001",
+  "source_sha256": "0391dd982a1c426c52ca865bde7c253baaa4071d7ca26317febe2391a5389c93",
+  "annotation_version": 1,
+  "annotation_scope": "non-OCR text structure",
+  "annotator": "user",
+  "confirmation": {
+    "method": "natural_language_dialogue",
+    "response": "全部确认",
+    "confirmed_at": "2026-09-24",
+    "confirmed_items": [
+      "document_title",
+      "heading_levels",
+      "paragraph_boundaries",
+      "table_3x3_without_merged_cells",
+      "footnote_classification",
+      "footer_exclusion",
+      "reading_order"
+    ]
+  },
+  "coordinate_system": "top-left",
+  "coordinate_unit": "PDF point",
+  "page_count": 1,
+  "units": [
+    {
+      "unit_id": "SELF-001-p1-u01",
+      "physical_page": 1,
+      "reading_order_rank": 1,
+      "label": "title",
+      "text": "智能阅读器自制 PDF 样本",
+      "bbox": [194.168518, 60.407471, 401.114532, 79.585205],
+      "heading_level": null,
+      "paragraph_id": null,
+      "include_in_body": true
+    },
+    {
+      "unit_id": "SELF-001-p1-u02",
+      "physical_page": 1,
+      "reading_order_rank": 2,
+      "label": "heading",
+      "text": "1 研究目标",
+      "bbox": [57.023621, 114.287354, 115.60762, 127.07251],
+      "heading_level": 1,
+      "paragraph_id": null,
+      "include_in_body": true
+    },
+    {
+      "unit_id": "SELF-001-p1-u03",
+      "physical_page": 1,
+      "reading_order_rank": 3,
+      "label": "paragraph",
+      "text": "本样本包含中文、English terms、脚注提示和页眉页脚，用于验证正文、标题、段落、页码和引用定位。",
+      "bbox": [57.023621, 135.817383, 498.156128, 145.938965],
+      "heading_level": null,
+      "paragraph_id": "SELF-001-p1-paragraph-01",
+      "include_in_body": true
+    },
+    {
+      "unit_id": "SELF-001-p1-u04",
+      "physical_page": 1,
+      "reading_order_rank": 4,
+      "label": "heading",
+      "text": "2 关键结论",
+      "bbox": [57.023621, 159.287354, 115.60762, 172.07251],
+      "heading_level": 1,
+      "paragraph_id": null,
+      "include_in_body": true
+    },
+    {
+      "unit_id": "SELF-001-p1-u05",
+      "physical_page": 1,
+      "reading_order_rank": 5,
+      "label": "paragraph",
+      "text": "解析结果不能只保留扁平纯文本。每个文本块还需要稳定 ID、标题路径、物理页码和原始位置。",
+      "bbox": [57.023621, 180.817383, 459.367615, 190.938965],
+      "heading_level": null,
+      "paragraph_id": "SELF-001-p1-paragraph-02",
+      "include_in_body": true
+    },
+    {
+      "unit_id": "SELF-001-p1-u06",
+      "physical_page": 1,
+      "reading_order_rank": 6,
+      "label": "table",
+      "text": "字段 | 示例值 | 风险\nphysical_page | 2 | 封面导致打印页码偏移\nheading_path | 1 > 2 | 标题层级可能被误判",
+      "bbox": [83.276841, 193.549, 512.200792, 248.36219],
+      "heading_level": null,
+      "paragraph_id": null,
+      "include_in_body": true,
+      "table_id": "SELF-001-table-01"
+    },
+    {
+      "unit_id": "SELF-001-p1-u07",
+      "physical_page": 1,
+      "reading_order_rank": 7,
+      "label": "footnote",
+      "text": "脚注：这是一个可回溯的脚注占位，用来检查脚注是否被混入正文。",
+      "bbox": [57.023621, 255.441406, 282.023621, 263.432129],
+      "heading_level": null,
+      "paragraph_id": "SELF-001-p1-footnote-01",
+      "include_in_body": false
+    },
+    {
+      "unit_id": "SELF-001-p1-u08",
+      "physical_page": 1,
+      "reading_order_rank": null,
+      "label": "footer",
+      "text": "SELF-AUTHORED PDF | physical page 1",
+      "bbox": [51.023621, 807.859253, 181.59465, 815.317261],
+      "heading_level": null,
+      "paragraph_id": null,
+      "include_in_body": false
+    },
+    {
+      "unit_id": "SELF-001-p1-u09",
+      "physical_page": 1,
+      "reading_order_rank": null,
+      "label": "footer",
+      "text": "header/footer and citation test",
+      "bbox": [441.022491, 807.859253, 544.272644, 815.317261],
+      "heading_level": null,
+      "paragraph_id": null,
+      "include_in_body": false
+    }
+  ],
+  "table_grids": [
+    {
+      "table_id": "SELF-001-table-01",
+      "physical_page": 1,
+      "rows": 3,
+      "columns": 3,
+      "merged_cell_count": 0,
+      "cells": [
+        {"row": 0, "column": 0, "row_span": 1, "col_span": 1, "text": "字段", "bbox": [89.62205, 198.980718, 105.62205, 206.919868]},
+        {"row": 0, "column": 1, "row_span": 1, "col_span": 1, "text": "示例值", "bbox": [197.33855, 198.980718, 221.33855, 206.919868]},
+        {"row": 0, "column": 2, "row_span": 1, "col_span": 1, "text": "风险", "bbox": [333.40155, 198.980718, 349.40155, 206.919868]},
+        {"row": 1, "column": 0, "row_span": 1, "col_span": 1, "text": "physical_page", "bbox": [89.62205, 216.980718, 143.059551, 224.919868]},
+        {"row": 1, "column": 1, "row_span": 1, "col_span": 1, "text": "2", "bbox": [197.33855, 216.980718, 202.029956, 224.919868]},
+        {"row": 1, "column": 2, "row_span": 1, "col_span": 1, "text": "封面导致打印页码偏移", "bbox": [333.40155, 216.980718, 413.40155, 224.919868]},
+        {"row": 2, "column": 0, "row_span": 1, "col_span": 1, "text": "heading_path", "bbox": [89.62205, 234.980718, 141.825176, 242.919868]},
+        {"row": 2, "column": 1, "row_span": 1, "col_span": 1, "text": "1 > 2", "bbox": [197.33855, 234.980718, 217.389331, 242.919868]},
+        {"row": 2, "column": 2, "row_span": 1, "col_span": 1, "text": "标题层级可能被误判", "bbox": [333.40155, 234.980718, 405.40155, 242.919868]}
+      ]
+    }
+  ],
+  "uncertainties": [],
+  "review_status": "confirmed"
+}

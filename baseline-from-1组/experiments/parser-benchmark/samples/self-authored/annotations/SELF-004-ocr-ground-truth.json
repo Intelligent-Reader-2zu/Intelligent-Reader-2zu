@@ -1,0 +1,56 @@
+{
+  "sample_id": "SELF-004",
+  "annotation_version": 1,
+  "annotation_type": "ocr_page_text_ground_truth",
+  "source": "project-authored generator strings",
+  "source_sha256": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+  "normalization": {
+    "unicode": "NFKC",
+    "whitespace": "remove for CER; collapse for WER",
+    "punctuation": "preserve for all-character CER; exclude for alphanumeric WER"
+  },
+  "pages": [
+    {
+      "physical_page": 1,
+      "printed_page_label": "1",
+      "rotation_degrees": 0.0,
+      "lines": [
+        "扫描型中文样本 / OCR TEST",
+        "第 1 页  文档解析质量验证",
+        "本页故意包含中文、English abbreviation、数字 12345 和全角标点。",
+        "OCR 应保留物理页码，并标记可能存在的字符错误。",
+        "表格区域： 解析器应至少保留行列关系或原图位置。",
+        "注：页面略有倾斜，背景包含轻微噪声。",
+        "A-01     0.95     表格候选单元格",
+        "扫描样本页脚 | page label: 1"
+      ]
+    },
+    {
+      "physical_page": 2,
+      "printed_page_label": "2",
+      "rotation_degrees": 1.4,
+      "lines": [
+        "扫描型中文样本 / OCR TEST",
+        "第 2 页  文档解析质量验证",
+        "本页故意包含中文、English abbreviation、数字 12345 和全角标点。",
+        "OCR 应保留物理页码，并标记可能存在的字符错误。",
+        "表格区域： 解析器应至少保留行列关系或原图位置。",
+        "注：页面略有倾斜，背景包含轻微噪声。",
+        "A-01     0.95     表格候选单元格",
+        "扫描样本页脚 | page label: 2"
+      ]
+    }
+  ],
+  "critical_strings": [
+    "OCR TEST",
+    "English abbreviation",
+    "12345",
+    "物理页码",
+    "表格区域",
+    "A-01",
+    "0.95",
+    "表格候选单元格",
+    "page label"
+  ],
+  "boundary": "Ground truth covers visible generated text only. It does not annotate table cells, formulas, stamps, handwriting, or arbitrary real scans."
+}

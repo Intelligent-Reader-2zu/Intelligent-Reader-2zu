@@ -1,0 +1,11 @@
+{
+  "experiment_id": "TECH-CIT-005-R01",
+  "heading_path_exact": true,
+  "heading_text_overlap": 1.0,
+  "raw_block_id_overlap": 1.0,
+  "id_semantic_agreement": 0.353,
+  "plain_config_hash": "d6f3109d30f0be3f",
+  "extended_config_hash": "73265417dca5bc12",
+  "source_hash_equal": true,
+  "scope": "Heading/paragraph stability across two parser configurations for the same Markdown source."
+}

@@ -1,0 +1,10 @@
+{
+  "parser": "unstructured",
+  "parser_version": "0.27.8",
+  "status": "failed",
+  "sample_id": "SELF-004",
+  "source_path": "samples\\self-authored\\pdf\\SELF-004-scanned.pdf",
+  "source_sha256": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+  "error_type": "XMLSyntaxError",
+  "error": "Input is not proper UTF-8, indicate encoding !\nBytes: 0xC1 0xAA 0xCF 0xEB, line 12, column 60 (<string>, line 12)"
+}

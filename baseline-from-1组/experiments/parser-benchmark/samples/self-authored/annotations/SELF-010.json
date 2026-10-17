@@ -1,0 +1,15 @@
+{
+  "fixed_queries": [
+    "长行",
+    "段落边界",
+    "全角标点"
+  ],
+  "expected_evidence_fragments": [
+    "这一段很长",
+    "段落边界只能依据换行和空行推断"
+  ],
+  "reference_notes": "保留 CRLF 的原始行号，同时提供规范化文本用于对照。",
+  "sample_id": "SELF-010",
+  "annotation_version": 1,
+  "source": "project-authored"
+}

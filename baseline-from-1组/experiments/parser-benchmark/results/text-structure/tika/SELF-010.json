@@ -1,0 +1,17 @@
+    {
+      "sample_id":"SELF-010",
+      "status":"scored",
+      "format":"TXT",
+      "parser":"Apache Tika",
+      "parser_version":"3.2.1",
+      "ocr_enabled":false,
+      "config_hash":"c6441ba93c16c1a9e8af451b67d2afa85855e37f98e909ee9fcef9e8ddb341fa",
+      "text_chars":152,
+      "source_path":"D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\self-authored\\txt\\SELF-010-utf8.txt",
+      "source_sha256":"492c649786f64c235b93980876ceb8e11c952629fe155b77aebc7559b6907f8f",
+      "query_hits": {"physical_page":false,"heading_path":false,"脚注":false,"跨栏标题":false,"参考文献":false,"Recall@k":false,"合并单元格":false,"DOCX 标题样式":false,"引用定位":false,"block_id":false,"GB18030":false,"段落边界":true},
+      "failure_reason": null,
+      "metadata": {"Content-Encoding":"UTF-8","Content-Type":"text/plain; charset=UTF-8","X-TIKA:Parsed-By":"org.apache.tika.parser.DefaultParser","X-TIKA:Parsed-By-Full-Set":"org.apache.tika.parser.DefaultParser","X-TIKA:detectedEncoding":"UTF-8","X-TIKA:encodingDetector":"UniversalEncodingDetector"},
+      "text_preview":"智能阅读器纯文本样本\r\n\r\n第一段包含中文、English、12345、全角标点，以及 / slash 和 — punctuation。\r\n这一段很长，用于检查长行是否被错误拆分，以及换行归一化是否会改变证据位置。\r\n\r\n第二段与第一段之间有一个空行。没有标题语法，段落边界只能依据换行和空行推断。\r\n\n",
+      "boundary":"Text extraction and metadata only; no bbox, AST, OCR, cloud service, vector retrieval, or QA evaluation."
+    }

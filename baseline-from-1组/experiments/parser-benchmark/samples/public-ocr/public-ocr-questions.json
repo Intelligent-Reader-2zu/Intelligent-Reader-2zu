@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "scoring_note": "No full manual transcript is available, so this set does not produce CER/WER. It measures only visually verified strings, same-line relations, and explicit structural capability flags.",
+  "questions": [
+    {
+      "id": "Q-PUB-001",
+      "sample_id": "PUB-OCR-001",
+      "question": "Can the photographed upright book recover the section title and both printed page numbers?",
+      "must_contain": ["The disappearing sum", "94", "95"],
+      "match": "document",
+      "capability": "text_and_page_labels"
+    },
+    {
+      "id": "Q-PUB-002",
+      "sample_id": "PUB-OCR-002",
+      "question": "Can the same page be recovered after a 180 degree rotation?",
+      "must_contain": ["The disappearing sum", "94", "95"],
+      "match": "document",
+      "capability": "orientation_180"
+    },
+    {
+      "id": "Q-PUB-003",
+      "sample_id": "PUB-OCR-003",
+      "question": "Can two-column prose recover Eddington and SMBH without treating formula recognition as solved?",
+      "must_contain": ["Eddington", "SMBH"],
+      "match": "document",
+      "capability": "two_column_text"
+    },
+    {
+      "id": "Q-PUB-004",
+      "sample_id": "PUB-OCR-003",
+      "question": "Can formula structure, superscripts, subscripts and operators be returned as structured math?",
+      "must_contain": [],
+      "match": "capability",
+      "required_capability": "formula_structure"
+    },
+    {
+      "id": "Q-PUB-005",
+      "sample_id": "PUB-OCR-004",
+      "question": "Is the China medal row preserved on one OCR line?",
+      "must_contain": ["中国", "CHN", "48", "22", "30", "100"],
+      "match": "same_line",
+      "capability": "table_row_relation"
+    },
+    {
+      "id": "Q-PUB-006",
+      "sample_id": "PUB-OCR-004",
+      "question": "Can the engine return an explicit table grid or cell structure?",
+      "must_contain": [],
+      "match": "capability",
+      "required_capability": "table_structure"
+    },
+    {
+      "id": "Q-PUB-007",
+      "sample_id": "PUB-OCR-005",
+      "question": "Can the seal recover its central label and serial number?",
+      "must_contain": ["发票专用章", "5263647368706"],
+      "match": "document",
+      "capability": "seal_text"
+    },
+    {
+      "id": "Q-PUB-008",
+      "sample_id": "PUB-OCR-005",
+      "question": "Can seal text be separated from background body text by an explicit region class?",
+      "must_contain": [],
+      "match": "capability",
+      "required_capability": "seal_region_class"
+    },
+    {
+      "id": "Q-PUB-009",
+      "sample_id": "PUB-OCR-006",
+      "question": "Can the small table retain the 2.72 value and 744.78 amount in one row?",
+      "must_contain": ["2.72", "744.78"],
+      "match": "same_line",
+      "capability": "table_row_relation"
+    },
+    {
+      "id": "Q-PUB-010",
+      "sample_id": "PUB-OCR-007",
+      "question": "Can the short low-height Chinese crop recover its visible phrase?",
+      "must_contain": ["和对旅游表演形式"],
+      "match": "document",
+      "capability": "chinese_low_height"
+    },
+    {
+      "id": "Q-PUB-011",
+      "sample_id": "PUB-OCR-008",
+      "question": "Can the mixed digit and Chinese crop recover the visible phrase?",
+      "must_contain": ["4年工作报告", "指出"],
+      "match": "document",
+      "capability": "mixed_chinese_digit_low_height"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "experiment_id": "TECH-CIT-011-R01",
+  "allow_list_size": 80,
+  "cases": [
+    {
+      "id": "W01",
+      "model_value": "self-001-0391dd982a1c::self-001-0391dd982a1c-e0001",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "id": "W02",
+      "model_value": "forged::citation",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "id": "W03",
+      "model_value": "self-001-0391dd982a1c::self-001-0391dd982a1c-e0001::forged-page",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    }
+  ],
+  "pass_rate": 1.0,
+  "policy": "Model may return citation_id only; service resolves page/quote from allow-listed evidence."
+}

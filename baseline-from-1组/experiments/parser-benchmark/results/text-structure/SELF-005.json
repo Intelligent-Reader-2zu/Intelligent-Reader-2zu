@@ -1,0 +1,112 @@
+{
+  "experiment_id": "TECH-DOC-007-R01-text-structure",
+  "sample_id": "SELF-005",
+  "format": "DOCX",
+  "status": "scored",
+  "ocr": {
+    "enabled": false,
+    "status": "not_applicable"
+  },
+  "parser": "python-docx",
+  "parser_version": "1.1.2",
+  "paragraph_count": 12,
+  "heading_count": 5,
+  "table_count": 1,
+  "paragraphs": [
+    {
+      "index": 1,
+      "style": "Title",
+      "text": "智能阅读器样本：结构化课程讲义"
+    },
+    {
+      "index": 2,
+      "style": "Heading 1",
+      "text": "1 研究目标"
+    },
+    {
+      "index": 3,
+      "style": "Normal",
+      "text": "本样本用于验证 DOCX 标题样式、页眉页脚、表格、脚注和分页边界。"
+    },
+    {
+      "index": 4,
+      "style": "Heading 2",
+      "text": "1.1 阅读任务"
+    },
+    {
+      "index": 5,
+      "style": "Normal",
+      "text": "读者需要在长文档中定位定义、比较两项方案，并保存可回溯的原文证据。"
+    },
+    {
+      "index": 6,
+      "style": "Heading 1",
+      "text": "2 约束条件"
+    },
+    {
+      "index": 7,
+      "style": "Normal",
+      "text": "The parser must preserve stable block identifiers and the original heading path."
+    },
+    {
+      "index": 8,
+      "style": "Heading 2",
+      "text": "脚注示例"
+    },
+    {
+      "index": 9,
+      "style": "Normal",
+      "text": ""
+    },
+    {
+      "index": 10,
+      "style": "Normal",
+      "text": ""
+    },
+    {
+      "index": 11,
+      "style": "Heading 1",
+      "text": "分页后的附录"
+    },
+    {
+      "index": 12,
+      "style": "Normal",
+      "text": "此段位于显式分页符之后，不能与上一页的段落简单拼接。"
+    }
+  ],
+  "tables": [
+    {
+      "index": 1,
+      "rows": 3,
+      "columns": 3,
+      "text": [
+        [
+          "指标",
+          "目标",
+          "备注"
+        ],
+        [
+          "正文召回",
+          ">= 0.95",
+          "以人工参考文本为准"
+        ],
+        [
+          "引用定位",
+          "页码 + 段落",
+          "保留原文片段"
+        ]
+      ]
+    }
+  ],
+  "visual_page_numbers": "not_available_from_python_docx",
+  "query_hits": {
+    "DOCX 标题样式": true,
+    "引用定位": false,
+    "正文中的脚注标记": false
+  },
+  "text_preview": "智能阅读器样本：结构化课程讲义\n1 研究目标\n本样本用于验证 DOCX 标题样式、页眉页脚、表格、脚注和分页边界。\n1.1 阅读任务\n读者需要在长文档中定位定义、比较两项方案，并保存可回溯的原文证据。\n2 约束条件\nThe parser must preserve stable block identifiers and the original heading path.\n脚注示例\n\n\n分页后的附录\n此段位于显式分页符之后，不能与上一页的段落简单拼接。",
+  "elapsed_ms": 48.48,
+  "boundary": "DOCX logical structure only; final visual pagination is out of scope.",
+  "source_path": "samples\\self-authored\\docx\\SELF-005-structured.docx",
+  "source_sha256": "77ddbb18413fcf6380e928a300d87d7f41b9a1e6abde0dad23a486615da25431"
+}

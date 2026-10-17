@@ -1,0 +1,28 @@
+{
+  "experiment_id": "TECH-CIT-001-R01",
+  "samples": [
+    "SELF-001",
+    "SELF-002",
+    "SELF-003",
+    "SELF-005",
+    "SELF-008"
+  ],
+  "blocks_checked": 80,
+  "core_complete": 56,
+  "core_completeness": 0.7,
+  "physical_page_rate": 0.55,
+  "bbox_rate": 0.55,
+  "offset_length_consistency": 0.7,
+  "required_core_fields": [
+    "document_id",
+    "document_version",
+    "source_hash",
+    "block_id",
+    "section_path",
+    "paragraph",
+    "char_start",
+    "char_end",
+    "text"
+  ],
+  "scope": "Existing parser IR field contract; not claim support or UI validation."
+}

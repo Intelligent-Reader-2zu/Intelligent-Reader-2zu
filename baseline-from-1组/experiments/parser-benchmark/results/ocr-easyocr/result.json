@@ -1,0 +1,11 @@
+{
+  "experiment_id": "TECH-OCR-019-R01",
+  "engine": "EasyOCR",
+  "version": "1.7.2",
+  "torch_version": "2.14.0+cpu",
+  "source_sha256": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+  "status": "model_download_blocked",
+  "error_type": "URLError",
+  "error": "<urlopen error ('已处理证书链，但是在不受信任提供程序信任的根证书中终止。',)>",
+  "boundary": "Runtime import passed, but no OCR quality result was produced because TLS validation rejected the model download endpoint."
+}

@@ -1,0 +1,17 @@
+    {
+      "sample_id":"SELF-007",
+      "status":"scored",
+      "format":"DOCX",
+      "parser":"Apache Tika",
+      "parser_version":"3.2.1",
+      "ocr_enabled":false,
+      "config_hash":"c6441ba93c16c1a9e8af451b67d2afa85855e37f98e909ee9fcef9e8ddb341fa",
+      "text_chars":348,
+      "source_path":"D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\self-authored\\docx\\SELF-007-complex.docx",
+      "source_sha256":"493ac305c5918558efd0d352d68bc3917e0d71405cd9aecab5514e52b05fa891",
+      "query_hits": {"physical_page":false,"heading_path":false,"脚注":false,"跨栏标题":false,"参考文献":false,"Recall@k":false,"合并单元格":false,"DOCX 标题样式":false,"引用定位":false,"block_id":false,"GB18030":false,"段落边界":false},
+      "failure_reason": null,
+      "metadata": {"Content-Type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document","X-TIKA:Parsed-By":"org.apache.tika.parser.DefaultParser","X-TIKA:Parsed-By-Full-Set":"org.apache.tika.parser.DefaultParser","extended-properties:DocSecurityString":"None"},
+      "text_preview":"智能阅读器自制样本 | 页眉测试\n智能阅读器样本：复杂方案记录\n摘要\n这是一个包含中英文混排、编号条款、表格和长段落的自制文档。\nA. 数据处理流程\n输入文件经过格式识别、解析、结构归一化和证据定位。每一步都应保留可复现的配置。\nA.1 失败处理\n当 OCR 置信度不足时，系统应保留原页图像，并把结果标记为需要人工核验。\nB. 附录\n附录内容故意放在分页符之后，用于检查跨页段落和页脚处理。\n\t阶段\n\t输入\n\t输出\n\t风险\n\n\t解析\n\t原始文件\n\t结构块\n\t阅读顺序\n\n\t检索\n\t问题\n\t证据块\n\t召回不足\n\n\t回答\n\t证据\n\t引用回答\n\t无依据生成\n\n\n\n\n分页后的附录\n此段位于显式分页符之后，不能与上一页的段落简单拼接。\nSELF-AUTHORED | footer reference\n",
+      "boundary":"Text extraction and metadata only; no bbox, AST, OCR, cloud service, vector retrieval, or QA evaluation."
+    }

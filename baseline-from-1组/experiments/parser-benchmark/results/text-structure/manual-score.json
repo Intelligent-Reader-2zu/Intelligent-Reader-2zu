@@ -1,0 +1,535 @@
+{
+  "experiment_id": "TECH-DOC-007-R02-manual-score",
+  "annotation_status": "three user-confirmed fixtures",
+  "scope": "non-OCR text structure",
+  "scoring_notes": {
+    "content_character_recall": "character multiset recall after NFKC, case folding, and whitespace removal",
+    "reading_order": "pairwise order among fully located non-table gold units; report coverage separately",
+    "paragraph_boundaries": "exact normalized gold paragraph must appear as one parser element",
+    "not_available": "parser did not expose the semantic field; not treated as pass or fail"
+  },
+  "outputs": [
+    {
+      "experiment_id": "TECH-DOC-007-R02-manual-score",
+      "sample_id": "SELF-001",
+      "parser": "PyMuPDF",
+      "parser_version": "1.25.3",
+      "source_sha256": "0391dd982a1c426c52ca865bde7c253baaa4071d7ca26317febe2391a5389c93",
+      "content_character_recall": 1.0,
+      "reading_order": {
+        "located_units": 6,
+        "gold_units": 6,
+        "unit_coverage": 1.0,
+        "correct_pairs": 15,
+        "comparable_pairs": 15,
+        "pairwise_accuracy": 1.0
+      },
+      "missing_order_unit_ids": [],
+      "paragraph_boundaries": {
+        "status": "scored",
+        "method": "exact normalized gold paragraph appears as one parser element",
+        "gold_count": 2,
+        "matched_count": 2,
+        "exact_boundary_recall": 1.0
+      },
+      "headings": {
+        "status": "not_available",
+        "reason": "parser output has no semantic heading labels"
+      },
+      "footnotes": {
+        "status": "not_available",
+        "gold_count": 1,
+        "reason": "parser output has no semantic footnote labels"
+      },
+      "footers": {
+        "gold_footer_count": 2,
+        "present_in_raw_output": 2,
+        "explicitly_classified_as_furniture": 0,
+        "raw_output_exclusion_rate": 0.0,
+        "present_after_type_filter": 2,
+        "type_filter_exclusion_rate": 0.0
+      },
+      "tables": {
+        "status": "not_available",
+        "gold_table_count": 1,
+        "reason": "parser output has no table grid"
+      },
+      "location_fields": {
+        "element_count": 10,
+        "elements_with_page": 10,
+        "elements_with_bbox": 10
+      },
+      "boundary": "No OCR metrics. Missing semantic fields are not scored as success or failure."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-manual-score",
+      "sample_id": "SELF-001",
+      "parser": "Docling",
+      "parser_version": "2.130.0",
+      "source_sha256": "0391dd982a1c426c52ca865bde7c253baaa4071d7ca26317febe2391a5389c93",
+      "content_character_recall": 1.0,
+      "reading_order": {
+        "located_units": 6,
+        "gold_units": 6,
+        "unit_coverage": 1.0,
+        "correct_pairs": 10,
+        "comparable_pairs": 15,
+        "pairwise_accuracy": 0.6667
+      },
+      "missing_order_unit_ids": [],
+      "paragraph_boundaries": {
+        "status": "scored",
+        "method": "exact normalized gold paragraph appears as one parser element",
+        "gold_count": 2,
+        "matched_count": 2,
+        "exact_boundary_recall": 1.0
+      },
+      "headings": {
+        "status": "scored",
+        "gold_count": 2,
+        "predicted_count": 3,
+        "matched_count": 2,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "footnotes": {
+        "status": "scored",
+        "gold_count": 1,
+        "matched_count": 0,
+        "recall": 0.0
+      },
+      "footers": {
+        "gold_footer_count": 2,
+        "present_in_raw_output": 2,
+        "explicitly_classified_as_furniture": 2,
+        "raw_output_exclusion_rate": 0.0,
+        "present_after_type_filter": 0,
+        "type_filter_exclusion_rate": 1.0
+      },
+      "tables": {
+        "status": "scored",
+        "tables": [
+          {
+            "table_id": "SELF-001-table-01",
+            "status": "scored",
+            "gold_rows": 3,
+            "gold_columns": 3,
+            "predicted_rows": 3,
+            "predicted_columns": 3,
+            "grid_shape_correct": true,
+            "gold_cell_count": 9,
+            "predicted_cell_count": 9,
+            "position_aligned_cell_text_accuracy": 1.0
+          }
+        ]
+      },
+      "location_fields": {
+        "element_count": 9,
+        "elements_with_page": 9,
+        "elements_with_bbox": 9
+      },
+      "boundary": "No OCR metrics. Missing semantic fields are not scored as success or failure."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-manual-score",
+      "sample_id": "SELF-001",
+      "parser": "Apache Tika",
+      "parser_version": "3.2.1",
+      "source_sha256": "0391dd982a1c426c52ca865bde7c253baaa4071d7ca26317febe2391a5389c93",
+      "content_character_recall": 1.0,
+      "reading_order": {
+        "located_units": 6,
+        "gold_units": 6,
+        "unit_coverage": 1.0,
+        "correct_pairs": 15,
+        "comparable_pairs": 15,
+        "pairwise_accuracy": 1.0
+      },
+      "missing_order_unit_ids": [],
+      "paragraph_boundaries": {
+        "status": "scored",
+        "method": "exact normalized gold paragraph appears as one parser element",
+        "gold_count": 2,
+        "matched_count": 2,
+        "exact_boundary_recall": 1.0
+      },
+      "headings": {
+        "status": "not_available",
+        "reason": "parser output has no semantic heading labels"
+      },
+      "footnotes": {
+        "status": "not_available",
+        "gold_count": 1,
+        "reason": "parser output has no semantic footnote labels"
+      },
+      "footers": {
+        "gold_footer_count": 2,
+        "present_in_raw_output": 2,
+        "explicitly_classified_as_furniture": 0,
+        "raw_output_exclusion_rate": 0.0,
+        "present_after_type_filter": 2,
+        "type_filter_exclusion_rate": 0.0
+      },
+      "tables": {
+        "status": "not_available",
+        "gold_table_count": 1,
+        "reason": "parser output has no table grid"
+      },
+      "location_fields": {
+        "element_count": 10,
+        "elements_with_page": 0,
+        "elements_with_bbox": 0
+      },
+      "boundary": "No OCR metrics. Missing semantic fields are not scored as success or failure."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-manual-score",
+      "sample_id": "SELF-002",
+      "parser": "PyMuPDF",
+      "parser_version": "1.25.3",
+      "source_sha256": "614c8a0cd2fe20b50419aa024f71ed93bb7b938c1f7aaf7b2a765dfe9a4fdddb",
+      "content_character_recall": 1.0,
+      "reading_order": {
+        "located_units": 14,
+        "gold_units": 14,
+        "unit_coverage": 1.0,
+        "correct_pairs": 91,
+        "comparable_pairs": 91,
+        "pairwise_accuracy": 1.0
+      },
+      "missing_order_unit_ids": [],
+      "paragraph_boundaries": {
+        "status": "scored",
+        "method": "exact normalized gold paragraph appears as one parser element",
+        "gold_count": 7,
+        "matched_count": 2,
+        "exact_boundary_recall": 0.2857
+      },
+      "headings": {
+        "status": "not_available",
+        "reason": "parser output has no semantic heading labels"
+      },
+      "footnotes": {
+        "status": "not_available",
+        "gold_count": 1,
+        "reason": "parser output has no semantic footnote labels"
+      },
+      "footers": {
+        "gold_footer_count": 4,
+        "present_in_raw_output": 4,
+        "explicitly_classified_as_furniture": 0,
+        "raw_output_exclusion_rate": 0.0,
+        "present_after_type_filter": 4,
+        "type_filter_exclusion_rate": 0.0
+      },
+      "tables": {
+        "status": "not_available",
+        "gold_table_count": 1,
+        "reason": "parser output has no table grid"
+      },
+      "location_fields": {
+        "element_count": 24,
+        "elements_with_page": 24,
+        "elements_with_bbox": 24
+      },
+      "boundary": "No OCR metrics. Missing semantic fields are not scored as success or failure."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-manual-score",
+      "sample_id": "SELF-002",
+      "parser": "Docling",
+      "parser_version": "2.130.0",
+      "source_sha256": "614c8a0cd2fe20b50419aa024f71ed93bb7b938c1f7aaf7b2a765dfe9a4fdddb",
+      "content_character_recall": 1.0,
+      "reading_order": {
+        "located_units": 14,
+        "gold_units": 14,
+        "unit_coverage": 1.0,
+        "correct_pairs": 91,
+        "comparable_pairs": 91,
+        "pairwise_accuracy": 1.0
+      },
+      "missing_order_unit_ids": [],
+      "paragraph_boundaries": {
+        "status": "scored",
+        "method": "exact normalized gold paragraph appears as one parser element",
+        "gold_count": 7,
+        "matched_count": 7,
+        "exact_boundary_recall": 1.0
+      },
+      "headings": {
+        "status": "scored",
+        "gold_count": 5,
+        "predicted_count": 6,
+        "matched_count": 5,
+        "precision": 0.8333,
+        "recall": 1.0,
+        "f1": 0.9091
+      },
+      "footnotes": {
+        "status": "scored",
+        "gold_count": 1,
+        "matched_count": 0,
+        "recall": 0.0
+      },
+      "footers": {
+        "gold_footer_count": 4,
+        "present_in_raw_output": 4,
+        "explicitly_classified_as_furniture": 2,
+        "raw_output_exclusion_rate": 0.0,
+        "present_after_type_filter": 0,
+        "type_filter_exclusion_rate": 1.0
+      },
+      "tables": {
+        "status": "scored",
+        "tables": [
+          {
+            "table_id": "SELF-002-table-01",
+            "status": "scored",
+            "gold_rows": 3,
+            "gold_columns": 3,
+            "predicted_rows": 3,
+            "predicted_columns": 3,
+            "grid_shape_correct": true,
+            "gold_cell_count": 9,
+            "predicted_cell_count": 9,
+            "position_aligned_cell_text_accuracy": 0.7778
+          }
+        ]
+      },
+      "location_fields": {
+        "element_count": 18,
+        "elements_with_page": 18,
+        "elements_with_bbox": 18
+      },
+      "boundary": "No OCR metrics. Missing semantic fields are not scored as success or failure."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-manual-score",
+      "sample_id": "SELF-002",
+      "parser": "Apache Tika",
+      "parser_version": "3.2.1",
+      "source_sha256": "614c8a0cd2fe20b50419aa024f71ed93bb7b938c1f7aaf7b2a765dfe9a4fdddb",
+      "content_character_recall": 1.0,
+      "reading_order": {
+        "located_units": 14,
+        "gold_units": 14,
+        "unit_coverage": 1.0,
+        "correct_pairs": 91,
+        "comparable_pairs": 91,
+        "pairwise_accuracy": 1.0
+      },
+      "missing_order_unit_ids": [],
+      "paragraph_boundaries": {
+        "status": "scored",
+        "method": "exact normalized gold paragraph appears as one parser element",
+        "gold_count": 7,
+        "matched_count": 6,
+        "exact_boundary_recall": 0.8571
+      },
+      "headings": {
+        "status": "not_available",
+        "reason": "parser output has no semantic heading labels"
+      },
+      "footnotes": {
+        "status": "not_available",
+        "gold_count": 1,
+        "reason": "parser output has no semantic footnote labels"
+      },
+      "footers": {
+        "gold_footer_count": 4,
+        "present_in_raw_output": 4,
+        "explicitly_classified_as_furniture": 0,
+        "raw_output_exclusion_rate": 0.0,
+        "present_after_type_filter": 4,
+        "type_filter_exclusion_rate": 0.0
+      },
+      "tables": {
+        "status": "not_available",
+        "gold_table_count": 1,
+        "reason": "parser output has no table grid"
+      },
+      "location_fields": {
+        "element_count": 18,
+        "elements_with_page": 0,
+        "elements_with_bbox": 0
+      },
+      "boundary": "No OCR metrics. Missing semantic fields are not scored as success or failure."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-manual-score",
+      "sample_id": "SELF-003",
+      "parser": "PyMuPDF",
+      "parser_version": "1.25.3",
+      "source_sha256": "e0776c95d8ff89cc61a6cac9558775f07df3dd4eb234ede9ee69ace4c673852a",
+      "content_character_recall": 1.0,
+      "reading_order": {
+        "located_units": 6,
+        "gold_units": 6,
+        "unit_coverage": 1.0,
+        "correct_pairs": 15,
+        "comparable_pairs": 15,
+        "pairwise_accuracy": 1.0
+      },
+      "missing_order_unit_ids": [],
+      "paragraph_boundaries": {
+        "status": "scored",
+        "method": "exact normalized gold paragraph appears as one parser element",
+        "gold_count": 2,
+        "matched_count": 2,
+        "exact_boundary_recall": 1.0
+      },
+      "headings": {
+        "status": "not_available",
+        "reason": "parser output has no semantic heading labels"
+      },
+      "footnotes": {
+        "status": "not_available",
+        "gold_count": 1,
+        "reason": "parser output has no semantic footnote labels"
+      },
+      "footers": {
+        "gold_footer_count": 2,
+        "present_in_raw_output": 2,
+        "explicitly_classified_as_furniture": 0,
+        "raw_output_exclusion_rate": 0.0,
+        "present_after_type_filter": 2,
+        "type_filter_exclusion_rate": 0.0
+      },
+      "tables": {
+        "status": "not_available",
+        "gold_table_count": 1,
+        "reason": "parser output has no table grid"
+      },
+      "location_fields": {
+        "element_count": 10,
+        "elements_with_page": 10,
+        "elements_with_bbox": 10
+      },
+      "boundary": "No OCR metrics. Missing semantic fields are not scored as success or failure."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-manual-score",
+      "sample_id": "SELF-003",
+      "parser": "Docling",
+      "parser_version": "2.130.0",
+      "source_sha256": "e0776c95d8ff89cc61a6cac9558775f07df3dd4eb234ede9ee69ace4c673852a",
+      "content_character_recall": 1.0,
+      "reading_order": {
+        "located_units": 6,
+        "gold_units": 6,
+        "unit_coverage": 1.0,
+        "correct_pairs": 10,
+        "comparable_pairs": 15,
+        "pairwise_accuracy": 0.6667
+      },
+      "missing_order_unit_ids": [],
+      "paragraph_boundaries": {
+        "status": "scored",
+        "method": "exact normalized gold paragraph appears as one parser element",
+        "gold_count": 2,
+        "matched_count": 2,
+        "exact_boundary_recall": 1.0
+      },
+      "headings": {
+        "status": "scored",
+        "gold_count": 2,
+        "predicted_count": 3,
+        "matched_count": 2,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "footnotes": {
+        "status": "scored",
+        "gold_count": 1,
+        "matched_count": 0,
+        "recall": 0.0
+      },
+      "footers": {
+        "gold_footer_count": 2,
+        "present_in_raw_output": 2,
+        "explicitly_classified_as_furniture": 2,
+        "raw_output_exclusion_rate": 0.0,
+        "present_after_type_filter": 0,
+        "type_filter_exclusion_rate": 1.0
+      },
+      "tables": {
+        "status": "scored",
+        "tables": [
+          {
+            "table_id": "SELF-003-table-01",
+            "status": "scored",
+            "gold_rows": 3,
+            "gold_columns": 3,
+            "predicted_rows": 3,
+            "predicted_columns": 3,
+            "grid_shape_correct": true,
+            "gold_cell_count": 9,
+            "predicted_cell_count": 9,
+            "position_aligned_cell_text_accuracy": 1.0
+          }
+        ]
+      },
+      "location_fields": {
+        "element_count": 9,
+        "elements_with_page": 9,
+        "elements_with_bbox": 9
+      },
+      "boundary": "No OCR metrics. Missing semantic fields are not scored as success or failure."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-manual-score",
+      "sample_id": "SELF-003",
+      "parser": "Apache Tika",
+      "parser_version": "3.2.1",
+      "source_sha256": "e0776c95d8ff89cc61a6cac9558775f07df3dd4eb234ede9ee69ace4c673852a",
+      "content_character_recall": 1.0,
+      "reading_order": {
+        "located_units": 6,
+        "gold_units": 6,
+        "unit_coverage": 1.0,
+        "correct_pairs": 15,
+        "comparable_pairs": 15,
+        "pairwise_accuracy": 1.0
+      },
+      "missing_order_unit_ids": [],
+      "paragraph_boundaries": {
+        "status": "scored",
+        "method": "exact normalized gold paragraph appears as one parser element",
+        "gold_count": 2,
+        "matched_count": 2,
+        "exact_boundary_recall": 1.0
+      },
+      "headings": {
+        "status": "not_available",
+        "reason": "parser output has no semantic heading labels"
+      },
+      "footnotes": {
+        "status": "not_available",
+        "gold_count": 1,
+        "reason": "parser output has no semantic footnote labels"
+      },
+      "footers": {
+        "gold_footer_count": 2,
+        "present_in_raw_output": 2,
+        "explicitly_classified_as_furniture": 0,
+        "raw_output_exclusion_rate": 0.0,
+        "present_after_type_filter": 2,
+        "type_filter_exclusion_rate": 0.0
+      },
+      "tables": {
+        "status": "not_available",
+        "gold_table_count": 1,
+        "reason": "parser output has no table grid"
+      },
+      "location_fields": {
+        "element_count": 10,
+        "elements_with_page": 0,
+        "elements_with_bbox": 0
+      },
+      "boundary": "No OCR metrics. Missing semantic fields are not scored as success or failure."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "experiment_id": "TECH-STRUCT-003-R01",
+  "outputs": [
+    {
+      "sample_id": "SELF-001",
+      "relation_counts": {},
+      "warnings": [
+        "PyMuPDF blocks are low-level evidence and are not treated as semantic paragraphs or headings.",
+        "Printed page labels, heading levels, footnotes, and table grids are not inferred in this adapter."
+      ]
+    },
+    {
+      "sample_id": "SELF-002",
+      "relation_counts": {},
+      "warnings": [
+        "PyMuPDF blocks are low-level evidence and are not treated as semantic paragraphs or headings.",
+        "Printed page labels, heading levels, footnotes, and table grids are not inferred in this adapter."
+      ]
+    },
+    {
+      "sample_id": "SELF-003",
+      "relation_counts": {},
+      "warnings": [
+        "PyMuPDF blocks are low-level evidence and are not treated as semantic paragraphs or headings.",
+        "Printed page labels, heading levels, footnotes, and table grids are not inferred in this adapter."
+      ]
+    },
+    {
+      "sample_id": "SELF-005",
+      "relation_counts": {
+        "contains": 16,
+        "table_contains_cell": 9
+      },
+      "warnings": [
+        "python-docx logical parsing does not provide final visual page numbers or bboxes.",
+        "Footnotes, text boxes, list semantics, and rendered header/footer positions need separate validation."
+      ]
+    },
+    {
+      "sample_id": "SELF-006",
+      "relation_counts": {
+        "contains": 18,
+        "table_contains_cell": 12
+      },
+      "warnings": [
+        "python-docx logical parsing does not provide final visual page numbers or bboxes.",
+        "Footnotes, text boxes, list semantics, and rendered header/footer positions need separate validation."
+      ]
+    },
+    {
+      "sample_id": "SELF-007",
+      "relation_counts": {
+        "contains": 23,
+        "table_contains_cell": 16
+      },
+      "warnings": [
+        "python-docx logical parsing does not provide final visual page numbers or bboxes.",
+        "Footnotes, text boxes, list semantics, and rendered header/footer positions need separate validation."
+      ]
+    },
+    {
+      "sample_id": "SELF-008",
+      "relation_counts": {
+        "contains": 16,
+        "footnote_marker_for": 1
+      },
+      "warnings": [
+        "CommonMark mode does not parse GFM tables, footnotes, or math extensions in this run."
+      ]
+    },
+    {
+      "sample_id": "SELF-009",
+      "relation_counts": {
+        "contains": 8
+      },
+      "warnings": [
+        "CommonMark mode does not parse GFM tables, footnotes, or math extensions in this run."
+      ]
+    },
+    {
+      "sample_id": "SELF-010",
+      "relation_counts": {},
+      "warnings": [
+        "TXT has no native heading or semantic paragraph model; blank-line groups are a baseline only."
+      ]
+    },
+    {
+      "sample_id": "SELF-011",
+      "relation_counts": {},
+      "warnings": [
+        "TXT has no native heading or semantic paragraph model; blank-line groups are a baseline only."
+      ]
+    }
+  ],
+  "boundary": "Relations are emitted only when source and target elements are observable; unresolved references remain warnings."
+}

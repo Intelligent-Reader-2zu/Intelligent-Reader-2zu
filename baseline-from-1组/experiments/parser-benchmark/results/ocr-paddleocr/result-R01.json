@@ -1,0 +1,13 @@
+{
+  "experiment_id": "TECH-OCR-016-R01",
+  "engine": "PaddleOCR",
+  "version": "2.10.0",
+  "paddle_version": "3.3.1",
+  "python_version": "3.13.2",
+  "source_sha256": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+  "pages": [
+    {"physical_page": 1, "status": "failed", "error_type": "RuntimeError", "error": "OneDnnContext does not have the input Filter; fused_conv2d"},
+    {"physical_page": 2, "status": "failed", "error_type": "RuntimeError", "error": "OneDnnContext does not have the input Filter; fused_conv2d"}
+  ],
+  "status": "failed_inference_compatibility"
+}

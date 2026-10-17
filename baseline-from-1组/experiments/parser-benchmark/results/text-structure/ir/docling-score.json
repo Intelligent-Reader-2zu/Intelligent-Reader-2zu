@@ -1,0 +1,100 @@
+{
+  "experiment_id": "TECH-STRUCT-004-R01",
+  "scope": "Docling semantic roles and table grid against confirmed text-PDF annotations",
+  "outputs": [
+    {
+      "experiment_id": "TECH-STRUCT-004-R01",
+      "sample_id": "SELF-001",
+      "parser": "Docling",
+      "gold_units": 9,
+      "predicted_elements": 18,
+      "matched_units": 8,
+      "bbox_coverage": 0.8888888888888888,
+      "semantic_role_recall": 0.7777777777777778,
+      "footnote_gold": 1,
+      "footnote_semantic_matches": 0,
+      "footer_gold": 2,
+      "footer_semantic_matches": 2,
+      "tables": [
+        {
+          "table_id": "SELF-001-table-01",
+          "gold_shape": [
+            3,
+            3
+          ],
+          "predicted_shape": [
+            3,
+            3
+          ],
+          "grid_shape_correct": true,
+          "predicted_cell_count": 9,
+          "cell_texts_available": true
+        }
+      ],
+      "boundary": "Docling raw export mapped with OCR and formula enrichment disabled."
+    },
+    {
+      "experiment_id": "TECH-STRUCT-004-R01",
+      "sample_id": "SELF-002",
+      "parser": "Docling",
+      "gold_units": 19,
+      "predicted_elements": 27,
+      "matched_units": 12,
+      "bbox_coverage": 0.631578947368421,
+      "semantic_role_recall": 0.47368421052631576,
+      "footnote_gold": 1,
+      "footnote_semantic_matches": 0,
+      "footer_gold": 4,
+      "footer_semantic_matches": 2,
+      "tables": [
+        {
+          "table_id": "SELF-002-table-01",
+          "gold_shape": [
+            3,
+            3
+          ],
+          "predicted_shape": [
+            3,
+            3
+          ],
+          "grid_shape_correct": true,
+          "predicted_cell_count": 9,
+          "cell_texts_available": true
+        }
+      ],
+      "boundary": "Docling raw export mapped with OCR and formula enrichment disabled."
+    },
+    {
+      "experiment_id": "TECH-STRUCT-004-R01",
+      "sample_id": "SELF-003",
+      "parser": "Docling",
+      "gold_units": 9,
+      "predicted_elements": 18,
+      "matched_units": 8,
+      "bbox_coverage": 0.8888888888888888,
+      "semantic_role_recall": 0.7777777777777778,
+      "footnote_gold": 1,
+      "footnote_semantic_matches": 0,
+      "footer_gold": 2,
+      "footer_semantic_matches": 2,
+      "tables": [
+        {
+          "table_id": "SELF-003-table-01",
+          "gold_shape": [
+            3,
+            3
+          ],
+          "predicted_shape": [
+            3,
+            3
+          ],
+          "grid_shape_correct": true,
+          "predicted_cell_count": 9,
+          "cell_texts_available": true
+        }
+      ],
+      "boundary": "Docling raw export mapped with OCR and formula enrichment disabled."
+    }
+  ],
+  "boundary": "Three self-authored text PDFs only; no OCR or downstream QA claim."
+}

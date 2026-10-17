@@ -1,0 +1,137 @@
+{
+  "status": "succeeded",
+  "text": "4 年 工作 报告 )》 中 指出",
+  "lines": [
+    "4 年 工作 报告 )》 中 指出"
+  ],
+  "items": [
+    {
+      "text": "4",
+      "confidence": 96.792984,
+      "bbox": [
+        4,
+        7,
+        13,
+        19
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "年",
+      "confidence": 94.005119,
+      "bbox": [
+        30,
+        4,
+        14,
+        24
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "工作",
+      "confidence": 96.102005,
+      "bbox": [
+        62,
+        4,
+        40,
+        24
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "报告",
+      "confidence": 92.313377,
+      "bbox": [
+        118,
+        4,
+        62,
+        25
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": ")》",
+      "confidence": 54.131485,
+      "bbox": [
+        180,
+        0,
+        20,
+        32
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "中",
+      "confidence": 88.738747,
+      "bbox": [
+        200,
+        3,
+        18,
+        26
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 6
+    },
+    {
+      "text": "指出",
+      "confidence": 94.785934,
+      "bbox": [
+        234,
+        6,
+        45,
+        22
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 7
+    }
+  ],
+  "run_ms": [
+    888.1418000019039,
+    1017.9095999992569,
+    856.6242000015336
+  ],
+  "latency_ms_p50": 888.1418000019039,
+  "latency_ms_p95": 1017.9095999992569,
+  "mean_confidence": 88.12423585714286,
+  "low_confidence_item_ratio": 0.14285714285714285,
+  "bbox_item_ratio": 1.0,
+  "capabilities": {
+    "formula_structure": false,
+    "table_structure": false,
+    "seal_region_class": false,
+    "word_or_line_bbox": true
+  },
+  "stderr": "",
+  "questions": [
+    {
+      "question_id": "Q-PUB-011",
+      "match": "document",
+      "passed": true,
+      "document_hits": {
+        "4年工作报告": true,
+        "指出": true
+      },
+      "matched_line": null,
+      "required_capability": null
+    }
+  ]
+}

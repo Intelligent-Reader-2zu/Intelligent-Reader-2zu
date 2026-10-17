@@ -1,0 +1,61 @@
+{
+  "experiment_id": "TECH-DOC-007-R01-text-structure",
+  "sample_id": "SELF-009",
+  "format": "Markdown",
+  "status": "scored",
+  "ocr": {
+    "enabled": false,
+    "status": "not_applicable"
+  },
+  "parser": "markdown-it-py",
+  "parser_version": "4.2.0",
+  "commonmark_mode": true,
+  "gfm_extensions": "not_enabled",
+  "line_count": 17,
+  "token_count": 44,
+  "heading_count": 4,
+  "headings": [
+    {
+      "level": 1,
+      "text": "多层目录与不规则标题",
+      "source_line_map": [
+        0,
+        1
+      ]
+    },
+    {
+      "level": 2,
+      "text": "一级标题",
+      "source_line_map": [
+        2,
+        3
+      ]
+    },
+    {
+      "level": 4,
+      "text": "跳级标题",
+      "source_line_map": [
+        6,
+        7
+      ]
+    },
+    {
+      "level": 3,
+      "text": "回到三级",
+      "source_line_map": [
+        10,
+        11
+      ]
+    }
+  ],
+  "query_hits": {
+    "跳级标题": true,
+    "三级列表": true,
+    "inline code": true
+  },
+  "text_preview": "# 多层目录与不规则标题\n\n## 一级标题\n\n正文段落位于标题之后。\n\n#### 跳级标题\n\n跳过了三级标题，用于检查解析器是否强行补齐层级。\n\n### 回到三级\n\n- 一级列表\n  - 二级列表\n    - 三级列表\n\n> 引用块中的 `inline code` 仍然属于正文结构。\n",
+  "elapsed_ms": 1.52,
+  "boundary": "CommonMark structure only; GFM/footnote/math extensions are out of scope.",
+  "source_path": "samples\\self-authored\\markdown\\SELF-009-heading-levels.md",
+  "source_sha256": "6993e1a64c6e119b7647cb9e419104e2ff954db7fccaf9af12a4c143162cb2da"
+}

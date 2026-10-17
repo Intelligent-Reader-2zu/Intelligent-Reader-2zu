@@ -1,0 +1,32 @@
+{
+  "parser": "Docling",
+  "parser_version": "2.130.0",
+  "status": "succeeded",
+  "sample_id": "SELF-004",
+  "page_count_from_export": 2,
+  "text_element_count": 16,
+  "picture_count": 0,
+  "table_count": 0,
+  "elapsed_ms": 26126.2,
+  "text_preview": "## 扫描型中文样本/OCR1 TEST\n\n第1页文档解析质量验证\n\n本页故意包含中文、English abbreviation、数字12345 和全角标点。\n\nOCR应保留物理页码，并标记可能存在的字符错误。\n\n表格区域：解析器应至少保留行列关系或原图位置。\n\n注：页面略有倾斜，背景包含轻微噪声。\n\nA-01 0.95 表格候选单元格\n\n## 扫描型中文样本 / OCR TEST\n\n第2页文档解析质量验证\n\n本页故意包含中文、English abbreviation、数字12345 和全角标点。\n\nOCR应保留物理页码，并标记可能存在的字符错误。\n\n表格区域：解析器应至少保留行列关系或原图位置。\n\n注：页面略有倾斜，背景包含轻微噪声。\n\nA-01 0.95 表格候选单元格",
+  "raw_export_keys": [
+    "schema_name",
+    "version",
+    "name",
+    "origin",
+    "furniture",
+    "body",
+    "groups",
+    "texts",
+    "pictures",
+    "tables",
+    "key_value_items",
+    "form_items",
+    "pages"
+  ],
+  "raw_export_path": "results\\candidate-pdf\\SELF-004.docling.json",
+  "raw_export_sha256": "33db591029b8bff4c41ea29e61bef7b6d04de9741bfae0686fe240278a53988d",
+  "ocr_status": "observed_text_on_scanned_sample; config_not_explicitly_overridden",
+  "source_path": "samples\\self-authored\\pdf\\SELF-004-scanned.pdf",
+  "source_sha256": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63"
+}

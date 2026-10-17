@@ -1,0 +1,65 @@
+{
+  "experiment_id": "TECH-STRUCT-004-R01",
+  "outputs": [
+    {
+      "sample_id": "SELF-001",
+      "element_counts": {
+        "heading": 3,
+        "paragraph": 3,
+        "footer": 2,
+        "table": 1,
+        "table_cell": 9
+      },
+      "relation_counts": {
+        "table_contains_cell": 9,
+        "contains": 12
+      },
+      "field_completeness": {
+        "physical_page": 1.0,
+        "bbox": 1.0,
+        "heading_level": 0.16666666666666666
+      }
+    },
+    {
+      "sample_id": "SELF-002",
+      "element_counts": {
+        "heading": 6,
+        "paragraph": 8,
+        "footer": 3,
+        "table": 1,
+        "table_cell": 9
+      },
+      "relation_counts": {
+        "table_contains_cell": 9,
+        "contains": 17
+      },
+      "field_completeness": {
+        "physical_page": 1.0,
+        "bbox": 1.0,
+        "heading_level": 0.2222222222222222
+      }
+    },
+    {
+      "sample_id": "SELF-003",
+      "element_counts": {
+        "heading": 3,
+        "paragraph": 3,
+        "equation": 1,
+        "footer": 2,
+        "table": 1,
+        "table_cell": 9
+      },
+      "relation_counts": {
+        "contains_equation": 1,
+        "table_contains_cell": 9,
+        "contains": 13
+      },
+      "field_completeness": {
+        "physical_page": 1.0,
+        "bbox": 1.0,
+        "heading_level": 0.15789473684210525
+      }
+    }
+  ],
+  "boundary": "Docling raw export mapping only; no OCR or formula accuracy claim."
+}

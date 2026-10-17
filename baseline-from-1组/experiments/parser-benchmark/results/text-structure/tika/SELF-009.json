@@ -1,0 +1,17 @@
+    {
+      "sample_id":"SELF-009",
+      "status":"scored",
+      "format":"MD",
+      "parser":"Apache Tika",
+      "parser_version":"3.2.1",
+      "ocr_enabled":false,
+      "config_hash":"c6441ba93c16c1a9e8af451b67d2afa85855e37f98e909ee9fcef9e8ddb341fa",
+      "text_chars":144,
+      "source_path":"D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\self-authored\\markdown\\SELF-009-heading-levels.md",
+      "source_sha256":"6993e1a64c6e119b7647cb9e419104e2ff954db7fccaf9af12a4c143162cb2da",
+      "query_hits": {"physical_page":false,"heading_path":false,"脚注":false,"跨栏标题":false,"参考文献":false,"Recall@k":false,"合并单元格":false,"DOCX 标题样式":false,"引用定位":false,"block_id":false,"GB18030":false,"段落边界":false},
+      "failure_reason": null,
+      "metadata": {"Content-Encoding":"UTF-8","Content-Type":"text/plain; charset=UTF-8","X-TIKA:Parsed-By":"org.apache.tika.parser.DefaultParser","X-TIKA:Parsed-By-Full-Set":"org.apache.tika.parser.DefaultParser","X-TIKA:detectedEncoding":"UTF-8","X-TIKA:encodingDetector":"UniversalEncodingDetector"},
+      "text_preview":"# 多层目录与不规则标题\n\n## 一级标题\n\n正文段落位于标题之后。\n\n#### 跳级标题\n\n跳过了三级标题，用于检查解析器是否强行补齐层级。\n\n### 回到三级\n\n- 一级列表\n  - 二级列表\n    - 三级列表\n\n> 引用块中的 `inline code` 仍然属于正文结构。\n\n",
+      "boundary":"Text extraction and metadata only; no bbox, AST, OCR, cloud service, vector retrieval, or QA evaluation."
+    }

@@ -1,0 +1,36 @@
+{
+  "parser": "pdfplumber",
+  "parser_version": "0.11.10",
+  "status": "succeeded",
+  "sample_id": "SELF-004",
+  "page_count": 2,
+  "text_chars": 1,
+  "text_layer_present": false,
+  "pages": [
+    {
+      "physical_page": 1,
+      "text_chars": 0,
+      "word_count": 0,
+      "rect_count": 0,
+      "line_count": 0,
+      "image_count": 1,
+      "table_candidate_count": 0,
+      "bbox_sample": null
+    },
+    {
+      "physical_page": 2,
+      "text_chars": 0,
+      "word_count": 0,
+      "rect_count": 0,
+      "line_count": 0,
+      "image_count": 1,
+      "table_candidate_count": 0,
+      "bbox_sample": null
+    }
+  ],
+  "elapsed_ms": 5.55,
+  "text_preview": "\n",
+  "ocr_status": "not_run",
+  "source_path": "samples\\self-authored\\pdf\\SELF-004-scanned.pdf",
+  "source_sha256": "643a6c777485b388c5c856bdcd955f0397d3cdac0586dfd2782567c5fcbda360"
+}

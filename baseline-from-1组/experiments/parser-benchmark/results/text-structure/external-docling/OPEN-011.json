@@ -1,0 +1,294 @@
+{
+  "experiment_id": "TECH-STRUCT-016-R01",
+  "sample_id": "OPEN-011",
+  "status": "succeeded",
+  "parser": "Docling",
+  "parser_version": "2.130.0",
+  "source_path": "samples\\external-candidates\\layoutlmv3.pdf",
+  "source_sha256": "bd5395610755a49e6419c406e651906e688e7a0cfe155b3c43566469dfd641fe",
+  "ocr": {
+    "enabled": false,
+    "status": "explicitly_disabled"
+  },
+  "pipeline_options": {
+    "do_ocr": false,
+    "do_table_structure": true,
+    "do_formula_enrichment": false,
+    "generate_page_images": false,
+    "generate_picture_images": false
+  },
+  "raw_export_path": "results\\text-structure\\external-docling\\OPEN-011.docling.json",
+  "raw_export_sha256": "04fe82c5e4989d13062448c382d530266ca3d58fe67355b9ae0c2f6f50bd42ef",
+  "metrics": {
+    "page_count": 10,
+    "text_count": 292,
+    "table_count": 4,
+    "table_cell_count": 382,
+    "picture_count": 5,
+    "text_labels": {
+      "page_header": 1,
+      "section_header": 21,
+      "text": 188,
+      "caption": 11,
+      "list_item": 68,
+      "formula": 3
+    },
+    "section_header_count": 21,
+    "section_header_preview": [
+      {
+        "text": "ABSTRACT",
+        "level": 1,
+        "page_no": 1,
+        "bbox": {
+          "l": 53.797999999999945,
+          "t": 569.5289147999997,
+          "r": 111.94350299999994,
+          "b": 560.4615275647055,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "CCS CONCEPTS",
+        "level": 1,
+        "page_no": 1,
+        "bbox": {
+          "l": 53.798,
+          "t": 337.1979148,
+          "r": 134.81988570000001,
+          "b": 328.13052756470586,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "KEYWORDS",
+        "level": 1,
+        "page_no": 1,
+        "bbox": {
+          "l": 53.79800000000003,
+          "t": 291.1699148,
+          "r": 115.66350610000003,
+          "b": 282.1025275647059,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "ACM Reference Format:",
+        "level": 1,
+        "page_no": 1,
+        "bbox": {
+          "l": 53.503,
+          "t": 261.4402228,
+          "r": 140.4966415,
+          "b": 254.81566321176467,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking",
+        "level": 1,
+        "page_no": 1,
+        "bbox": {
+          "l": 136.893,
+          "t": 707.7715948,
+          "r": 475.10674839999984,
+          "b": 672.5853538556999,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "1 INTRODUCTION",
+        "level": 1,
+        "page_no": 1,
+        "bbox": {
+          "l": 317.95500000000004,
+          "t": 346.29791479999994,
+          "r": 420.68599470000004,
+          "b": 337.2305275647058,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "2 LAYOUTLMV3",
+        "level": 1,
+        "page_no": 2,
+        "bbox": {
+          "l": 317.955,
+          "t": 327.17191479999997,
+          "r": 407.25689259999996,
+          "b": 318.10452756470585,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "2.1 ModelArchitecture",
+        "level": 1,
+        "page_no": 2,
+        "bbox": {
+          "l": 317.955,
+          "t": 291.5039148,
+          "r": 438.89328260000013,
+          "b": 282.4365275647059,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "2.2 Pre-trainingObjectives",
+        "level": 1,
+        "page_no": 3,
+        "bbox": {
+          "l": 317.955,
+          "t": 181.91391479999993,
+          "r": 456.9914795,
+          "b": 172.84652756470587,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "3 EXPERIMENTS",
+        "level": 1,
+        "page_no": 4,
+        "bbox": {
+          "l": 53.798,
+          "t": 142.81091479999998,
+          "r": 147.48535080000002,
+          "b": 133.74352756470591,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "3.1 ModelConfigurations",
+        "level": 1,
+        "page_no": 4,
+        "bbox": {
+          "l": 53.798,
+          "t": 127.11991480000006,
+          "r": 186.8344745,
+          "b": 118.05252756470588,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "3.2 Pre-trainingLayoutLMv3",
+        "level": 1,
+        "page_no": 4,
+        "bbox": {
+          "l": 317.95500000000004,
+          "t": 459.6509148,
+          "r": 467.96603410000006,
+          "b": 450.5835275647059,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "3.3 Fine-tuningonMultimodalTasks",
+        "level": 1,
+        "page_no": 4,
+        "bbox": {
+          "l": 317.955,
+          "t": 227.66791480000006,
+          "r": 508.67879530000005,
+          "b": 218.60052756470589,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "3.4 Fine-tuningonaVisionTask",
+        "level": 1,
+        "page_no": 6,
+        "bbox": {
+          "l": 317.955,
+          "t": 401.0929148,
+          "r": 485.8787763,
+          "b": 392.0255275647059,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "3.5 AblationStudy",
+        "level": 1,
+        "page_no": 7,
+        "bbox": {
+          "l": 53.798,
+          "t": 149.03791479999995,
+          "r": 152.64535510000002,
+          "b": 139.9705275647059,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "4 RELATEDWORK",
+        "level": 1,
+        "page_no": 8,
+        "bbox": {
+          "l": 53.798,
+          "t": 565.4759148,
+          "r": 157.5871774,
+          "b": 556.4085275647059,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "5 CONCLUSIONANDFUTUREWORK",
+        "level": 1,
+        "page_no": 8,
+        "bbox": {
+          "l": 317.955,
+          "t": 377.1819148,
+          "r": 517.5369845,
+          "b": 368.1145275647059,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "6 ACKNOWLEDGEMENT",
+        "level": 1,
+        "page_no": 8,
+        "bbox": {
+          "l": 317.955,
+          "t": 166.97091479999995,
+          "r": 453.17329449999994,
+          "b": 157.90352756470588,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "A APPENDIX",
+        "level": 1,
+        "page_no": 9,
+        "bbox": {
+          "l": 53.798,
+          "t": 583.4439148,
+          "r": 128.80897159999998,
+          "b": 574.3765275647058,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "A.1 LayoutLMv3inChinese",
+        "level": 1,
+        "page_no": 9,
+        "bbox": {
+          "l": 53.798,
+          "t": 567.7529148,
+          "r": 198.4853933,
+          "b": 558.6855275647058,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "REFERENCES",
+        "level": 1,
+        "page_no": 9,
+        "bbox": {
+          "l": 53.798,
+          "t": 215.0749148,
+          "r": 123.21260330000001,
+          "b": 206.00752756470592,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ]
+  },
+  "elapsed_ms": 20441.74,
+  "boundary": "External text-layer PDF smoke test; no gold labels, OCR, reading-order, or QA accuracy claim."
+}

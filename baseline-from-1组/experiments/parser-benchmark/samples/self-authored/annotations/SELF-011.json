@@ -1,0 +1,14 @@
+{
+  "fixed_queries": [
+    "GB18030",
+    "旧式换行"
+  ],
+  "expected_evidence_fragments": [
+    "历史编码样本",
+    "GB18030"
+  ],
+  "reference_notes": "解析器不应在 UTF-8 解码失败后静默丢弃中文。",
+  "sample_id": "SELF-011",
+  "annotation_version": 1,
+  "source": "project-authored"
+}

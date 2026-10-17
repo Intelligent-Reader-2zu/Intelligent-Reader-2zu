@@ -1,0 +1,38 @@
+{
+  "parser": "PyMuPDF",
+  "parser_version": "1.25.3",
+  "status": "succeeded",
+  "sample_id": "SELF-004",
+  "format": "PDF",
+  "pages": [
+    {
+      "physical_page": 1,
+      "text_chars": 0,
+      "block_count": 0,
+      "image_count": 1,
+      "bbox_sample": null
+    },
+    {
+      "physical_page": 2,
+      "text_chars": 0,
+      "block_count": 0,
+      "image_count": 1,
+      "bbox_sample": null
+    }
+  ],
+  "page_count": 2,
+  "text_chars": 1,
+  "block_count": 0,
+  "image_count": 2,
+  "text_layer_present": false,
+  "ocr_status": "not_run",
+  "elapsed_ms": 6.54,
+  "text_preview": "\n",
+  "query_hits": {
+    "OCR TEST": false,
+    "物理页码": false,
+    "低清": false
+  },
+  "source_path": "samples\\self-authored\\pdf\\SELF-004-scanned.pdf",
+  "source_sha256": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63"
+}

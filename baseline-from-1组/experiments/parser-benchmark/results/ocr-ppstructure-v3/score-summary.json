@@ -1,0 +1,104 @@
+{
+  "experiment_ids": [
+    "TECH-OCR-020-R02",
+    "TECH-OCR-020-R03"
+  ],
+  "r02": {
+    "self_002_page_1": {
+      "status": "succeeded",
+      "elapsed_ms": 823111.5471000012,
+      "layout_label_counts": {
+        "table": 1,
+        "text": 7,
+        "paragraph_title": 5,
+        "footer": 2,
+        "reference": 1
+      },
+      "parsing_block_count": 15,
+      "ordered_block_count": 11,
+      "table_count": 1,
+      "table_cell_box_count": 9,
+      "expected_table_shape": [
+        3,
+        3
+      ],
+      "html_table_shape": [
+        3,
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "html_cells_in_correct_position": 5,
+      "html_cell_count": 9,
+      "html_cell_position_accuracy": 0.5555555555555556,
+      "observed_html_rows": [
+        [
+          "字段",
+          "示例值",
+          "风险"
+        ],
+        [
+          "physical_page 2",
+          "",
+          "封面导致打印页码偏移"
+        ],
+        [
+          "",
+          "",
+          "标题层级可能被误判"
+        ]
+      ]
+    },
+    "self_004_page_1": {
+      "experiment_id": "TECH-OCR-020-R02",
+      "sample_id": "SELF-004-page-1",
+      "status": "failed_native_exit",
+      "image_path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\results\\ocr-tesseract-matrix\\dpi144-psm3-none\\page-1.png",
+      "image_width": 1588,
+      "image_height": 2246,
+      "process_exit_code": 1,
+      "python_exception_captured": false,
+      "standalone_retry_reproduced": true,
+      "note": "The process exited without a Python traceback before a page result could be serialized. The same input was retried in a fresh process after the multi-page run and reproduced exit code 1. This is a runtime/resource failure, not an OCR quality score.",
+      "input_sha256": "3bfc6ad38f0f825b6ee1582f84708ae2ac49e6de14fed1049efab2306b7d237b"
+    }
+  },
+  "r03": {
+    "sample_id": "SELF-004-page-1-1000px",
+    "input_size": [
+      1000,
+      1414
+    ],
+    "model_init_ms": 9787.635799999407,
+    "elapsed_ms": 118593.42230000038,
+    "cer_all": 0.006024096385542169,
+    "cer_chinese": 0.0,
+    "wer_latin_number": 0.3333333333333333,
+    "critical_string_recall": 1.0,
+    "critical_string_hits": {
+      "OCR TEST": true,
+      "English abbreviation": true,
+      "12345": true,
+      "物理页码": true,
+      "表格区域": true,
+      "A-01": true,
+      "0.95": true,
+      "表格候选单元格": true,
+      "page label": true
+    },
+    "line_bbox_coverage": 1.0,
+    "layout_label_counts": {
+      "text": 7,
+      "paragraph_title": 1
+    },
+    "table_count": 0
+  },
+  "model_cache": {
+    "file_count": 48,
+    "bytes": 944516233
+  },
+  "source_pdf_sha256": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+  "boundary": "R02/R03 are smoke tests on project-authored pages. R03 is a downscaled diagnostic and must not be mixed with the original-resolution quality matrix."
+}

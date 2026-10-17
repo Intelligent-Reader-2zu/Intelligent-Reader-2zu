@@ -1,0 +1,160 @@
+{
+  "experiment_id": "TECH-DOC-candidate-pdfplumber-default",
+  "date": "2026-09-24",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "parser": "pdfplumber",
+  "strategy": null,
+  "samples": [
+    "SELF-001",
+    "SELF-002",
+    "SELF-003",
+    "SELF-004"
+  ],
+  "results": [
+    {
+      "parser": "pdfplumber",
+      "parser_version": "0.11.10",
+      "status": "succeeded",
+      "sample_id": "SELF-001",
+      "page_count": 1,
+      "text_chars": 292,
+      "text_layer_present": true,
+      "pages": [
+        {
+          "physical_page": 1,
+          "text_chars": 292,
+          "word_count": 33,
+          "rect_count": 1,
+          "line_count": 8,
+          "image_count": 0,
+          "table_candidate_count": 1,
+          "bbox_sample": [
+            194.16852,
+            61.58522400000004,
+            320.16852,
+            79.58522400000004
+          ]
+        }
+      ],
+      "elapsed_ms": 14.63,
+      "text_preview": "智能阅读器自制 PDF 样本\n1 研究目标\n本样本包含中文、English terms、脚注提示和页眉页脚，用于验证正文、标题、段落、页码和引用定位。\n2 关键结论\n解析结果不能只保留扁平纯文本。每个文本块还需要稳定 ID、标题路径、物理页码和原始位置。\n字段 示例值 风险\nphysical_page 2 封面导致打印页码偏移\nheading_path 1 > 2 标题层级可能被误判\n脚注：这是一个可回溯的脚注占位，用来检查脚注是否被混入正文。\nSELF-AUTHORED PDF | physical page 1 header/footer and citation test",
+      "ocr_status": "not_run",
+      "source_path": "samples\\self-authored\\pdf\\SELF-001-single-column.pdf",
+      "source_sha256": "0391dd982a1c426c52ca865bde7c253baaa4071d7ca26317febe2391a5389c93"
+    },
+    {
+      "parser": "pdfplumber",
+      "parser_version": "0.11.10",
+      "status": "succeeded",
+      "sample_id": "SELF-002",
+      "page_count": 2,
+      "text_chars": 481,
+      "text_layer_present": true,
+      "pages": [
+        {
+          "physical_page": 1,
+          "text_chars": 386,
+          "word_count": 47,
+          "rect_count": 1,
+          "line_count": 8,
+          "image_count": 0,
+          "table_candidate_count": 1,
+          "bbox_sample": [
+            60.94022,
+            55.91592400000002,
+            186.94022,
+            73.91592400000002
+          ]
+        },
+        {
+          "physical_page": 2,
+          "text_chars": 94,
+          "word_count": 13,
+          "rect_count": 0,
+          "line_count": 0,
+          "image_count": 0,
+          "table_candidate_count": 0,
+          "bbox_sample": [
+            48.51969,
+            54.39541600000007,
+            55.5567996,
+            66.39541600000007
+          ]
+        }
+      ],
+      "elapsed_ms": 19.52,
+      "text_preview": "智能阅读器自制 PDF 样本\n跨栏标题和参考文献会故意让阅读顺序变得敏感。\n1 研究目标\n本样本包含中文、English terms、脚注提示和页眉页\n脚，用于验证正文、标题、段落、页码和引用定位。\n2 关键结论\n解析结果不能只保留扁平纯文本。每个文本块还需要稳\n定 ID、标题路径、物理页码和原始位置。\n字段 示例值 风险\nphysical_page 2 封面导致打印页码偏移\nheading_path 1 > 2 标题层级可能被误判\n脚注：这是一个可回溯的脚注占位，用来检查脚注是否被混入正文。\n3 参考文献\n[1] A. Reader. Document provenance and evidence\nblocks. 2026.\nSELF-AUTHORED PDF | physical page 1 header/footer and citation test\n4 第二页\n第二页用于检查页码、跨页段落和引用位置。\nSELF-AUTHORED PDF | physical page 2 header/footer and citation test",
+      "ocr_status": "not_run",
+      "source_path": "samples\\self-authored\\pdf\\SELF-002-two-column.pdf",
+      "source_sha256": "5423fbf69e921e4cbd3e3efcb2fff533d5b291cc448748085404bab550f23970"
+    },
+    {
+      "parser": "pdfplumber",
+      "parser_version": "0.11.10",
+      "status": "succeeded",
+      "sample_id": "SELF-003",
+      "page_count": 1,
+      "text_chars": 286,
+      "text_layer_present": true,
+      "pages": [
+        {
+          "physical_page": 1,
+          "text_chars": 286,
+          "word_count": 37,
+          "rect_count": 1,
+          "line_count": 8,
+          "image_count": 0,
+          "table_candidate_count": 1,
+          "bbox_sample": [
+            160.83162000000002,
+            61.58522400000004,
+            286.83162000000004,
+            79.58522400000004
+          ]
+        }
+      ],
+      "elapsed_ms": 14.41,
+      "text_preview": "智能阅读器自制 PDF：表格与公式\n1 研究目标\n本样本专门覆盖复杂表格、合并概念、公式文本和图注。公式示例：Recall@k = hits / k。\n2 关键结论\n解析结果不能只保留扁平纯文本。每个文本块还需要稳定 ID、标题路径、物理页码和原始位置。\n指标 公式/值 解释\nRecall@k hits / k 检索命中比例\n表格结构 row + col 合并单元格需保留\n脚注：这是一个可回溯的脚注占位，用来检查脚注是否被混入正文。\nSELF-AUTHORED PDF | physical page 1 header/footer and citation test",
+      "ocr_status": "not_run",
+      "source_path": "samples\\self-authored\\pdf\\SELF-003-table-formula.pdf",
+      "source_sha256": "e0776c95d8ff89cc61a6cac9558775f07df3dd4eb234ede9ee69ace4c673852a"
+    },
+    {
+      "parser": "pdfplumber",
+      "parser_version": "0.11.10",
+      "status": "succeeded",
+      "sample_id": "SELF-004",
+      "page_count": 2,
+      "text_chars": 1,
+      "text_layer_present": false,
+      "pages": [
+        {
+          "physical_page": 1,
+          "text_chars": 0,
+          "word_count": 0,
+          "rect_count": 0,
+          "line_count": 0,
+          "image_count": 1,
+          "table_candidate_count": 0,
+          "bbox_sample": null
+        },
+        {
+          "physical_page": 2,
+          "text_chars": 0,
+          "word_count": 0,
+          "rect_count": 0,
+          "line_count": 0,
+          "image_count": 1,
+          "table_candidate_count": 0,
+          "bbox_sample": null
+        }
+      ],
+      "elapsed_ms": 5.55,
+      "text_preview": "\n",
+      "ocr_status": "not_run",
+      "source_path": "samples\\self-authored\\pdf\\SELF-004-scanned.pdf",
+      "source_sha256": "643a6c777485b388c5c856bdcd955f0397d3cdac0586dfd2782567c5fcbda360"
+    }
+  ],
+  "boundary": "Candidate smoke test only; not a quality acceptance result."
+}

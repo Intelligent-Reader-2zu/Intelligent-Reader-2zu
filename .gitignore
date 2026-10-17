@@ -1,0 +1,21 @@
+.idea
+**/target/
+.venv-parser/
+__pycache__/
+*.py[cod]
+.runtime/
+
+# 1 组基线实验的模型缓存
+baseline-from-1组/experiments/parser-benchmark/tmp/
+baseline-from-1组/experiments/parser-benchmark/results/ocr-paddleocr/model-cache/
+baseline-from-1组/experiments/parser-benchmark/results/ocr-ppstructure/model-cache/
+baseline-from-1组/experiments/parser-benchmark/results/ocr-easyocr/model-cache/
+baseline-from-1组/experiments/parser-benchmark/results/ocr-ppstructure-v3/model-cache/
+baseline-from-1组/experiments/retrieval-benchmark/models/bge-small-zh-v1.5/model.safetensors
+
+# 2 组：含个人信息的原始材料，一律不入库
+docs/需求建模/2组-work/访谈/raw-local/
+*.zip
+*.m4a
+*.mp3
+*样本*

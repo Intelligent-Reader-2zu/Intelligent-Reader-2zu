@@ -1,0 +1,21 @@
+{
+  "experiment_id": "TECH-CIT-002-R01",
+  "cases": [
+    {
+      "id": "P01",
+      "physical_page": 1,
+      "page_label": "1",
+      "pass": true
+    },
+    {
+      "id": "P02",
+      "physical_page": 2,
+      "page_label": "2",
+      "pass": true
+    }
+  ],
+  "physical_to_label_rate": 1.0,
+  "missing_label_blocks": 36,
+  "policy": "Store physical_page and page_label separately; null is preferred to a guessed label.",
+  "scope": "Controlled page-label mapping using authorized OCR ground truth; not a universal PDF page-label claim."
+}

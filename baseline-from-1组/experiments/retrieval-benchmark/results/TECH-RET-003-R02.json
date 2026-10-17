@@ -1,0 +1,344 @@
+{
+  "experiment_id": "TECH-RET-003-R02",
+  "status": "PASS",
+  "model": "BAAI/bge-small-zh-v1.5",
+  "model_revision": "7999e1d3359715c523056ef9478215996d62a620",
+  "model_file_sha256": {
+    "config.json": "3853a7979202c348751b753e36f579c41d8da7d36af617d3d907e1fc9b441f2a",
+    "model.safetensors": "354763b9b1357bc9c44f62c6be2276321081ed2567773608c0d0785b61d5a026",
+    "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+    "sentence_bert_config.json": "84e39fda68ccbff05bfa723ae9c0e70e23e2ec373b76e0f8c6e71af72a693cbf",
+    "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+    "tokenizer.json": "48cea5d44424912a6fd1ea647bf4fe50b55ab8b1e5879c3275f80e339e8fae26",
+    "tokenizer_config.json": "e6f3b96db926a37d4039995fbf5ad17de158dfb8f6343d607e4dbaad18d75f5a",
+    "vocab.txt": "45bbac6b341c319adc98a532532882e91a9cefc0329aa57bac9ae761c27b291c",
+    "1_Pooling\\config.json": "aaa8861589f80c961a03cc86c7eeaef7605c1676b9ab55329d33a304738769c6"
+  },
+  "model_bytes": 96378172,
+  "embedding_dimension": 512,
+  "normalization": "L2/unit norm via normalize_embeddings=True; cosine equals dot product",
+  "device": "cpu",
+  "blocks": 11,
+  "queries": 8,
+  "document_encoding_ms": 124.874,
+  "summary": {
+    "vector_real": {
+      "recall_at_3_answerable": 1.0,
+      "hit_rate_answerable": 1.0,
+      "mrr_answerable": 0.857,
+      "false_positive_at_3_answerable": 0.667,
+      "no_answer_false_positive_rate": 1.0,
+      "mean_query_ms": 11.694,
+      "p50_query_ms": 11.621,
+      "p95_query_ms": 12.943
+    },
+    "hybrid_rrf_real": {
+      "recall_at_3_answerable": 1.0,
+      "hit_rate_answerable": 1.0,
+      "mrr_answerable": 0.905,
+      "false_positive_at_3_answerable": 0.667,
+      "no_answer_false_positive_rate": 1.0,
+      "mean_query_ms": 11.694,
+      "p50_query_ms": 11.621,
+      "p95_query_ms": 12.943
+    }
+  },
+  "rows": [
+    {
+      "id": "Q01",
+      "question": "BM25 词频 逆文档频率 文档长度",
+      "gold": [
+        "A-P1-B2"
+      ],
+      "methods": {
+        "vector_real": {
+          "ranked_block_ids": [
+            "A-P1-B2",
+            "C-P2-B1",
+            "A-P3-B1"
+          ],
+          "recall_at_3": 1.0,
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "false_positive_at_3": 0.6666666666666666,
+          "nonzero_candidate": true,
+          "abstention_correct": false,
+          "latency_ms": 10.667
+        },
+        "hybrid_rrf_real": {
+          "ranked_block_ids": [
+            "A-P1-B2",
+            "C-P2-B1",
+            "A-P3-B1"
+          ],
+          "recall_at_3": 1.0,
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "false_positive_at_3": 0.6666666666666666,
+          "nonzero_candidate": true,
+          "abstention_correct": false,
+          "latency_ms": 10.667
+        }
+      }
+    },
+    {
+      "id": "Q02",
+      "question": "怎么找到意思相近的内容？",
+      "gold": [
+        "A-P2-B1"
+      ],
+      "methods": {
+        "vector_real": {
+          "ranked_block_ids": [
+            "A-P2-B1",
+            "B-P2-B1",
+            "A-P1-B1"
+          ],
+          "recall_at_3": 1.0,
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "false_positive_at_3": 0.6666666666666666,
+          "nonzero_candidate": true,
+          "abstention_correct": false,
+          "latency_ms": 10.622
+        },
+        "hybrid_rrf_real": {
+          "ranked_block_ids": [
+            "A-P2-B1",
+            "B-P2-B1",
+            "A-P1-B1"
+          ],
+          "recall_at_3": 1.0,
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "false_positive_at_3": 0.6666666666666666,
+          "nonzero_candidate": true,
+          "abstention_correct": false,
+          "latency_ms": 10.622
+        }
+      }
+    },
+    {
+      "id": "Q03",
+      "question": "为什么检索块要保留上下文并能回到原文？",
+      "gold": [
+        "A-P2-B2",
+        "A-P3-B2"
+      ],
+      "methods": {
+        "vector_real": {
+          "ranked_block_ids": [
+            "B-P2-B2",
+            "A-P3-B2",
+            "B-P2-B1"
+          ],
+          "recall_at_3": 1.0,
+          "hit_rate": 1.0,
+          "mrr": 0.5,
+          "false_positive_at_3": 0.6666666666666666,
+          "nonzero_candidate": true,
+          "abstention_correct": false,
+          "latency_ms": 11.395
+        },
+        "hybrid_rrf_real": {
+          "ranked_block_ids": [
+            "B-P2-B2",
+            "B-P2-B1",
+            "A-P3-B2"
+          ],
+          "recall_at_3": 1.0,
+          "hit_rate": 1.0,
+          "mrr": 0.3333333333333333,
+          "false_positive_at_3": 0.6666666666666666,
+          "nonzero_candidate": true,
+          "abstention_correct": false,
+          "latency_ms": 11.395
+        }
+      }
+    },
+    {
+      "id": "Q04",
+      "question": "哪种方式同义问法强且维护成本中高？",
+      "gold": [
+        "A-P3-B1"
+      ],
+      "methods": {
+        "vector_real": {
+          "ranked_block_ids": [
+            "A-P3-B1",
+            "B-P2-B1",
+            "A-P2-B1"
+          ],
+          "recall_at_3": 1.0,
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "false_positive_at_3": 0.6666666666666666,
+          "nonzero_candidate": true,
+          "abstention_correct": false,
+          "latency_ms": 11.621
+        },
+        "hybrid_rrf_real": {
+          "ranked_block_ids": [
+            "A-P3-B1",
+            "B-P1-B1",
+            "A-P2-B1"
+          ],
+          "recall_at_3": 1.0,
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "false_positive_at_3": 0.6666666666666666,
+          "nonzero_candidate": true,
+          "abstention_correct": false,
+          "latency_ms": 11.621
+        }
+      }
+    },
+    {
+      "id": "Q05",
+      "question": "敏感资料没有网络时用什么索引？",
+      "gold": [
+        "B-P1-B1"
+      ],
+      "methods": {
+        "vector_real": {
+          "ranked_block_ids": [
+            "B-P1-B1",
+            "B-P2-B2",
+            "B-P2-B1"
+          ],
+          "recall_at_3": 1.0,
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "false_positive_at_3": 0.6666666666666666,
+          "nonzero_candidate": true,
+          "abstention_correct": false,
+          "latency_ms": 11.943
+        },
+        "hybrid_rrf_real": {
+          "ranked_block_ids": [
+            "B-P1-B1",
+            "B-P2-B2",
+            "A-P3-B2"
+          ],
+          "recall_at_3": 1.0,
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "false_positive_at_3": 0.6666666666666666,
+          "nonzero_candidate": true,
+          "abstention_correct": false,
+          "latency_ms": 11.943
+        }
+      }
+    },
+    {
+      "id": "Q06",
+      "question": "跨文档回答前需要做什么并如何处理冲突？",
+      "gold": [
+        "B-P2-B1"
+      ],
+      "methods": {
+        "vector_real": {
+          "ranked_block_ids": [
+            "B-P2-B1",
+            "B-P1-B1",
+            "B-P2-B2"
+          ],
+          "recall_at_3": 1.0,
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "false_positive_at_3": 0.6666666666666666,
+          "nonzero_candidate": true,
+          "abstention_correct": false,
+          "latency_ms": 12.798
+        },
+        "hybrid_rrf_real": {
+          "ranked_block_ids": [
+            "B-P2-B1",
+            "A-P2-B1",
+            "B-P1-B1"
+          ],
+          "recall_at_3": 1.0,
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "false_positive_at_3": 0.6666666666666666,
+          "nonzero_candidate": true,
+          "abstention_correct": false,
+          "latency_ms": 12.798
+        }
+      }
+    },
+    {
+      "id": "Q07",
+      "question": "检索结果为什么必须包含回答所需的原文？",
+      "gold": [
+        "A-P3-B2"
+      ],
+      "methods": {
+        "vector_real": {
+          "ranked_block_ids": [
+            "B-P2-B2",
+            "A-P3-B2",
+            "B-P2-B1"
+          ],
+          "recall_at_3": 1.0,
+          "hit_rate": 1.0,
+          "mrr": 0.5,
+          "false_positive_at_3": 0.6666666666666666,
+          "nonzero_candidate": true,
+          "abstention_correct": false,
+          "latency_ms": 12.943
+        },
+        "hybrid_rrf_real": {
+          "ranked_block_ids": [
+            "A-P3-B2",
+            "B-P2-B2",
+            "B-P2-B1"
+          ],
+          "recall_at_3": 1.0,
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "false_positive_at_3": 0.6666666666666666,
+          "nonzero_candidate": true,
+          "abstention_correct": false,
+          "latency_ms": 12.943
+        }
+      }
+    },
+    {
+      "id": "Q08",
+      "question": "系统是否支持脑电波直接读取？",
+      "gold": [],
+      "methods": {
+        "vector_real": {
+          "ranked_block_ids": [
+            "B-P2-B2",
+            "A-P1-B1",
+            "C-P2-B1"
+          ],
+          "recall_at_3": 0.0,
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "false_positive_at_3": 1.0,
+          "nonzero_candidate": true,
+          "abstention_correct": false,
+          "latency_ms": 11.565
+        },
+        "hybrid_rrf_real": {
+          "ranked_block_ids": [
+            "B-P2-B2",
+            "A-P1-B1",
+            "A-P3-B2"
+          ],
+          "recall_at_3": 0.0,
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "false_positive_at_3": 1.0,
+          "nonzero_candidate": true,
+          "abstention_correct": false,
+          "latency_ms": 11.565
+        }
+      }
+    }
+  ],
+  "boundary": "Small fixed synthetic set; model quality is not a production-scale or domain-gated conclusion."
+}

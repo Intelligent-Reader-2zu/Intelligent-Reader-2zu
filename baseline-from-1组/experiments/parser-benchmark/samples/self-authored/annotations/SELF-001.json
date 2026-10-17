@@ -1,0 +1,16 @@
+{
+  "fixed_queries": [
+    "physical_page",
+    "heading_path",
+    "脚注"
+  ],
+  "expected_evidence_fragments": [
+    "物理页码",
+    "标题路径",
+    "脚注占位"
+  ],
+  "reference_notes": "单栏 PDF 的文本顺序应稳定，页脚不应被误当正文。",
+  "sample_id": "SELF-001",
+  "annotation_version": 1,
+  "source": "project-authored"
+}

@@ -1,0 +1,16 @@
+{
+  "fixed_queries": [
+    "失败处理",
+    "跨页段落",
+    "无依据生成"
+  ],
+  "expected_evidence_fragments": [
+    "OCR 置信度不足",
+    "保留原页图像",
+    "无依据生成"
+  ],
+  "reference_notes": "检查复杂方案中的多级标题、长段落、表格和分页符。",
+  "sample_id": "SELF-007",
+  "annotation_version": 1,
+  "source": "project-authored"
+}

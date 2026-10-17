@@ -1,0 +1,58 @@
+{
+  "experiment_id": "TECH-DOC-007-R01-text-structure",
+  "sample_id": "SELF-004",
+  "format": "PDF",
+  "status": "out_of_scope_no_text_layer",
+  "ocr": {
+    "enabled": false,
+    "status": "not_run"
+  },
+  "pymupdf": {
+    "version": "1.25.3",
+    "pages": [
+      {
+        "physical_page": 1,
+        "text_chars": 0,
+        "block_count": 0,
+        "word_count": 0,
+        "bbox_sample": null
+      },
+      {
+        "physical_page": 2,
+        "text_chars": 0,
+        "block_count": 0,
+        "word_count": 0,
+        "bbox_sample": null
+      }
+    ]
+  },
+  "pdfplumber": {
+    "version": "0.11.10",
+    "pages": [
+      {
+        "physical_page": 1,
+        "text_chars": 0,
+        "word_count": 0,
+        "table_candidate_count": 0
+      },
+      {
+        "physical_page": 2,
+        "text_chars": 0,
+        "word_count": 0,
+        "table_candidate_count": 0
+      }
+    ]
+  },
+  "page_count": 2,
+  "text_chars": 1,
+  "query_hits": {
+    "OCR TEST": false,
+    "物理页码": false,
+    "低清": false
+  },
+  "text_preview": "\n",
+  "elapsed_ms": 4.76,
+  "boundary": "Text-layer/structure experiment only; OCR quality is out of scope.",
+  "source_path": "samples\\self-authored\\pdf\\SELF-004-scanned.pdf",
+  "source_sha256": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63"
+}

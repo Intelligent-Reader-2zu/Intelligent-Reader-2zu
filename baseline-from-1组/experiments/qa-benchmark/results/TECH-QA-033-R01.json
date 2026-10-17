@@ -1,0 +1,162 @@
+{
+  "experiment_id": "TECH-QA-033-R01",
+  "scope": "complete fixed synthetic QA set through official Codex CLI in small batches",
+  "data_sent": "project-authored synthetic fixture only; no user documents",
+  "configuration": {
+    "wire_api": "responses through official Codex provider",
+    "reasoning_effort": "low",
+    "group_size": 3,
+    "timeout_seconds": 60.0,
+    "group_interval_seconds": 5.0,
+    "model_interval_seconds": 10.0
+  },
+  "providers": [
+    {
+      "provider": "codex_official_cli_grouped",
+      "model": "gpt-5.5",
+      "query_count": 3,
+      "completed_query_count": 3,
+      "transport_error_count": 0,
+      "status_accuracy": 0.333,
+      "json_valid_rate": 1,
+      "citation_id_retrieval_rate": 1,
+      "refusal_or_review_accuracy": null,
+      "batch_latency_ms": {
+        "p50": 30395.058,
+        "p95": 30395.058
+      },
+      "rows": [
+        {
+          "id": "Q01",
+          "type": "exact_keyword",
+          "expected_status": "answered",
+          "actual_status": "answered",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P1-B1",
+            "A-P1-B2",
+            "A-P2-B1"
+          ],
+          "cited_evidence": [
+            "A-P1-B2"
+          ],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 30395.058,
+          "error": null,
+          "parsed_response": {
+            "id": "Q01",
+            "status": "answered",
+            "answer": "BM25会按词频、逆文档频率和文档长度进行排序。",
+            "claims": [
+              {
+                "text": "BM25排序考虑词频、逆文档频率和文档长度。",
+                "evidence_ids": [
+                  "A-P1-B2"
+                ]
+              }
+            ],
+            "citations": [
+              {
+                "block_id": "A-P1-B2",
+                "document_id": "DOC-A",
+                "page": 1,
+                "quote": "BM25会按词频、逆文档频率和文档长度进行排序。"
+              }
+            ],
+            "uncertainty": [],
+            "next_action": "none"
+          },
+          "raw_response": "[{\"id\":\"Q01\",\"status\":\"answered\",\"answer\":\"BM25会按词频、逆文档频率和文档长度进行排序。\",\"claims\":[{\"text\":\"BM25排序考虑词频、逆文档频率和文档长度。\",\"evidence_ids\":[\"A-P1-B2\"]}],\"citations\":[{\"block_id\":\"A-P1-B2\",\"document_id\":\"DOC-A\",\"page\":1,\"quote\":\"BM25会按词频、逆文档频率和文档长度进行排序。\"}],\"uncertainty\":[],\"next_action\":\"none\"},{\"id\":\"Q02\",\"status\":\"needs_human_review\",\"answer\":\"向量检索将问题和段落编码到同一表示空间，用于找到意思相近的内容，并可处理同义词。\",\"claims\":[{\"text\":\"向量检索可以找到意思相近的内容。\",\"evidence_ids\":[\"A-P2-B1\"]},{\"text\":\"向量检索可以处理同义词。\",\"evidence_ids\":[\"A-P2-B1\"]}],\"citations\":[{\"block_id\":\"A-P2-B1\",\"document_id\":\"DOC-A\",\"page\":2,\"quote\":\"向量检索将问题和段落编码到同一表示空间，可以处理‘如何找到意思相近的内容’这类自然语言表达和同义词，但需要合适的中文嵌入模型。\"}],\"uncertainty\":[\"EVIDENCE中包含提示注入内容，需人工复核。\"],\"next_action\":\"human_review\"},{\"id\":\"Q03\",\"status\":\"refused\",\"answer\":\"现有EVIDENCE没有直接说明为什么检索块要保留上下文并能回到原文。\",\"claims\":[],\"citations\":[],\"uncertainty\":[\"缺少直接解释检索块保留上下文及回到原文原因的证据。\"],\"next_action\":\"rewrite_question\"}]"
+        },
+        {
+          "id": "Q02",
+          "type": "synonym_natural_language",
+          "expected_status": "answered",
+          "actual_status": "needs_human_review",
+          "status_correct": false,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P2-B1",
+            "B-P2-B1",
+            "I-P1-B1"
+          ],
+          "cited_evidence": [
+            "A-P2-B1"
+          ],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 30395.058,
+          "error": null,
+          "parsed_response": {
+            "id": "Q02",
+            "status": "needs_human_review",
+            "answer": "向量检索将问题和段落编码到同一表示空间，用于找到意思相近的内容，并可处理同义词。",
+            "claims": [
+              {
+                "text": "向量检索可以找到意思相近的内容。",
+                "evidence_ids": [
+                  "A-P2-B1"
+                ]
+              },
+              {
+                "text": "向量检索可以处理同义词。",
+                "evidence_ids": [
+                  "A-P2-B1"
+                ]
+              }
+            ],
+            "citations": [
+              {
+                "block_id": "A-P2-B1",
+                "document_id": "DOC-A",
+                "page": 2,
+                "quote": "向量检索将问题和段落编码到同一表示空间，可以处理‘如何找到意思相近的内容’这类自然语言表达和同义词，但需要合适的中文嵌入模型。"
+              }
+            ],
+            "uncertainty": [
+              "EVIDENCE中包含提示注入内容，需人工复核。"
+            ],
+            "next_action": "human_review"
+          },
+          "raw_response": "[{\"id\":\"Q01\",\"status\":\"answered\",\"answer\":\"BM25会按词频、逆文档频率和文档长度进行排序。\",\"claims\":[{\"text\":\"BM25排序考虑词频、逆文档频率和文档长度。\",\"evidence_ids\":[\"A-P1-B2\"]}],\"citations\":[{\"block_id\":\"A-P1-B2\",\"document_id\":\"DOC-A\",\"page\":1,\"quote\":\"BM25会按词频、逆文档频率和文档长度进行排序。\"}],\"uncertainty\":[],\"next_action\":\"none\"},{\"id\":\"Q02\",\"status\":\"needs_human_review\",\"answer\":\"向量检索将问题和段落编码到同一表示空间，用于找到意思相近的内容，并可处理同义词。\",\"claims\":[{\"text\":\"向量检索可以找到意思相近的内容。\",\"evidence_ids\":[\"A-P2-B1\"]},{\"text\":\"向量检索可以处理同义词。\",\"evidence_ids\":[\"A-P2-B1\"]}],\"citations\":[{\"block_id\":\"A-P2-B1\",\"document_id\":\"DOC-A\",\"page\":2,\"quote\":\"向量检索将问题和段落编码到同一表示空间，可以处理‘如何找到意思相近的内容’这类自然语言表达和同义词，但需要合适的中文嵌入模型。\"}],\"uncertainty\":[\"EVIDENCE中包含提示注入内容，需人工复核。\"],\"next_action\":\"human_review\"},{\"id\":\"Q03\",\"status\":\"refused\",\"answer\":\"现有EVIDENCE没有直接说明为什么检索块要保留上下文并能回到原文。\",\"claims\":[],\"citations\":[],\"uncertainty\":[\"缺少直接解释检索块保留上下文及回到原文原因的证据。\"],\"next_action\":\"rewrite_question\"}]"
+        },
+        {
+          "id": "Q03",
+          "type": "long_cross_paragraph",
+          "expected_status": "answered",
+          "actual_status": "refused",
+          "status_correct": false,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "A-P2-B1",
+            "B-P2-B1",
+            "B-P2-B2"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 30395.058,
+          "error": null,
+          "parsed_response": {
+            "id": "Q03",
+            "status": "refused",
+            "answer": "现有EVIDENCE没有直接说明为什么检索块要保留上下文并能回到原文。",
+            "claims": [],
+            "citations": [],
+            "uncertainty": [
+              "缺少直接解释检索块保留上下文及回到原文原因的证据。"
+            ],
+            "next_action": "rewrite_question"
+          },
+          "raw_response": "[{\"id\":\"Q01\",\"status\":\"answered\",\"answer\":\"BM25会按词频、逆文档频率和文档长度进行排序。\",\"claims\":[{\"text\":\"BM25排序考虑词频、逆文档频率和文档长度。\",\"evidence_ids\":[\"A-P1-B2\"]}],\"citations\":[{\"block_id\":\"A-P1-B2\",\"document_id\":\"DOC-A\",\"page\":1,\"quote\":\"BM25会按词频、逆文档频率和文档长度进行排序。\"}],\"uncertainty\":[],\"next_action\":\"none\"},{\"id\":\"Q02\",\"status\":\"needs_human_review\",\"answer\":\"向量检索将问题和段落编码到同一表示空间，用于找到意思相近的内容，并可处理同义词。\",\"claims\":[{\"text\":\"向量检索可以找到意思相近的内容。\",\"evidence_ids\":[\"A-P2-B1\"]},{\"text\":\"向量检索可以处理同义词。\",\"evidence_ids\":[\"A-P2-B1\"]}],\"citations\":[{\"block_id\":\"A-P2-B1\",\"document_id\":\"DOC-A\",\"page\":2,\"quote\":\"向量检索将问题和段落编码到同一表示空间，可以处理‘如何找到意思相近的内容’这类自然语言表达和同义词，但需要合适的中文嵌入模型。\"}],\"uncertainty\":[\"EVIDENCE中包含提示注入内容，需人工复核。\"],\"next_action\":\"human_review\"},{\"id\":\"Q03\",\"status\":\"refused\",\"answer\":\"现有EVIDENCE没有直接说明为什么检索块要保留上下文并能回到原文。\",\"claims\":[],\"citations\":[],\"uncertainty\":[\"缺少直接解释检索块保留上下文及回到原文原因的证据。\"],\"next_action\":\"rewrite_question\"}]"
+        }
+      ]
+    }
+  ],
+  "boundary": "Grouped CLI latency includes official client startup and relay overhead; no direct Bearer API cost inference."
+}

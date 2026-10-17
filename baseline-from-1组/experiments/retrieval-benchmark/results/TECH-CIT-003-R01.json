@@ -1,0 +1,80 @@
+{
+  "experiment_id": "TECH-CIT-003-R01",
+  "cases": [
+    {
+      "id": "L01",
+      "kind": "exact",
+      "citation": {
+        "citation_id": "self-001-0391dd982a1c::self-001-0391dd982a1c-e0001",
+        "document_version": "da8fe3be20b08bc1",
+        "char_start": 0,
+        "char_end": 67,
+        "quote": "SELF-AUTHORED PDF | physical page 1\nheader/footer and citation test"
+      },
+      "expected": "exact",
+      "observed": "exact",
+      "pass": true
+    },
+    {
+      "id": "L02",
+      "kind": "normalized_quote",
+      "citation": {
+        "citation_id": "self-001-0391dd982a1c::self-001-0391dd982a1c-e0001",
+        "document_version": "da8fe3be20b08bc1",
+        "char_start": 0,
+        "char_end": 67,
+        "quote": "SELF-AUTHORED  PDF  |  physical  page  1  header/footer  and  citation  test"
+      },
+      "expected": "recovered",
+      "observed": "recovered",
+      "pass": true
+    },
+    {
+      "id": "L03",
+      "kind": "stale_version",
+      "citation": {
+        "citation_id": "self-001-0391dd982a1c::self-001-0391dd982a1c-e0001",
+        "document_version": "stale-version",
+        "char_start": 0,
+        "char_end": 67,
+        "quote": "SELF-AUTHORED PDF | physical page 1\nheader/footer and citation test"
+      },
+      "expected": "stale",
+      "observed": "stale",
+      "pass": true
+    },
+    {
+      "id": "L04",
+      "kind": "invalid_offset",
+      "citation": {
+        "citation_id": "self-001-0391dd982a1c::self-001-0391dd982a1c-e0001",
+        "document_version": "da8fe3be20b08bc1",
+        "char_start": 0,
+        "char_end": 71,
+        "quote": "SELF-AUTHORED PDF | physical page 1\nheader/footer and citation test"
+      },
+      "expected": "invalid",
+      "observed": "invalid",
+      "pass": true
+    },
+    {
+      "id": "L05",
+      "kind": "page_only_fallback",
+      "citation": {
+        "citation_id": "self-001-0391dd982a1c::self-001-0391dd982a1c-e0001",
+        "document_version": "da8fe3be20b08bc1"
+      },
+      "expected": "page_only",
+      "observed": "page_only",
+      "pass": true
+    }
+  ],
+  "pass_rate": 1.0,
+  "locator_order": [
+    "source_hash/version + block + offsets",
+    "quote normalization",
+    "page_only",
+    "invalid"
+  ],
+  "scope": "Deterministic quote/offset probe; no visual highlight or semantic entailment claim."
+}

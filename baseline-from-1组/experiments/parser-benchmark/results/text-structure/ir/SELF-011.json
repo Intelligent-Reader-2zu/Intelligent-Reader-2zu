@@ -1,0 +1,64 @@
+{
+  "experiment_id": "TECH-STRUCT-002-R01",
+  "sample_id": "SELF-011",
+  "doc_id": "self-011-a952ff9b3573",
+  "source_path": "samples\\self-authored\\txt\\SELF-011-gb18030.txt",
+  "source_hash": "a952ff9b35731ac0e6977789c187e7b1ee8dba91cd1d19c16180668dc34ab754",
+  "source_format": "TXT",
+  "parser_name": "explicit-encoding-baseline",
+  "parser_version": null,
+  "config": {
+    "encoding_fallback": [
+      "utf-8",
+      "gb18030"
+    ],
+    "paragraph_rule": "blank_line"
+  },
+  "config_hash": "075a684422f20c5c",
+  "elements": [
+    {
+      "element_id": "self-011-a952ff9b3573-e0001",
+      "element_type": "paragraph",
+      "text": "历史编码样本\n本文件使用 GB18030 编码，包含中文标点、英文缩写 OCR 和旧式换行。",
+      "normalized_text": "历史编码样本 本文件使用 GB18030 编码,包含中文标点、英文缩写 OCR 和旧式换行。",
+      "ordinal": 0,
+      "parent_element_id": null,
+      "children_ids": [],
+      "heading_path": [],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 0,
+      "physical_page": null,
+      "printed_page_label": null,
+      "bbox": null,
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": 1,
+      "source_line_end": 2,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    }
+  ],
+  "relations": [],
+  "warnings": [
+    "TXT has no native heading or semantic paragraph model; blank-line groups are a baseline only."
+  ],
+  "encoding": "gb18030",
+  "element_counts": {
+    "paragraph": 1
+  },
+  "field_completeness": {
+    "physical_page": 0.0,
+    "bbox": 0.0,
+    "heading_path": 1.0,
+    "source_line_start": 1.0,
+    "char_start": 0.0
+  },
+  "status": "scored",
+  "relation_counts": {},
+  "relation_policy": "conservative; no relation is emitted without a source or target element"
+}

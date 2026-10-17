@@ -1,0 +1,28 @@
+{
+  "model_id": "exact-local-model-id",
+  "weights_path": "models/model-file.gguf",
+  "weights_sha256": "record-after-download",
+  "license": "record-from-model-card",
+  "runtime": "llama.cpp | ollama | vllm | transformers",
+  "runtime_version": "pin-version",
+  "quantization": "Q4_K_M",
+  "context_tokens": 8192,
+  "batch_size": 1,
+  "device": "cpu-or-gpu-id",
+  "temperature": 0,
+  "top_p": 1,
+  "max_output_tokens": 800,
+  "structured_output": "grammar-or-client-validation",
+  "offline_only": true,
+  "log_policy": "no-document-content",
+  "fallback": "local_evidence_only",
+  "measurements": {
+    "load_ms": null,
+    "ttft_ms": null,
+    "tokens_per_second": null,
+    "p50_ms": null,
+    "p95_ms": null,
+    "peak_memory_mb": null,
+    "peak_vram_mb": null
+  }
+}

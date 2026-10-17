@@ -1,0 +1,1210 @@
+{
+  "experiment_id": "TECH-STRUCT-004-R01",
+  "sample_id": "SELF-002",
+  "doc_id": "self-002-614c8a0cd2fe",
+  "source_path": "samples\\self-authored\\pdf\\SELF-002-two-column.pdf",
+  "source_hash": "614c8a0cd2fe20b50419aa024f71ed93bb7b938c1f7aaf7b2a765dfe9a4fdddb",
+  "source_format": "PDF",
+  "parser_name": "Docling",
+  "parser_version": "2.130.0",
+  "config": {
+    "do_ocr": false,
+    "do_table_structure": true,
+    "do_formula_enrichment": false
+  },
+  "config_hash": "3e28da84a1d4ad46",
+  "elements": [
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0001",
+      "element_type": "heading",
+      "text": "智能阅读器自制 PDF 样本",
+      "normalized_text": "智能阅读器自制 PDF 样本",
+      "ordinal": 0,
+      "parent_element_id": null,
+      "children_ids": [
+        "self-002-614c8a0cd2fe-e0002"
+      ],
+      "heading_path": [
+        "智能阅读器自制 PDF 样本"
+      ],
+      "heading_level": 1,
+      "label": "section_header",
+      "role": "title",
+      "reading_order_index": 0,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        194.16859,
+        788.9843586,
+        401.1070659999999,
+        771.121271829304
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0002",
+      "element_type": "paragraph",
+      "text": "跨栏标题和参考文献会故意让阅读顺序变得敏感。",
+      "normalized_text": "跨栏标题和参考文献会故意让阅读顺序变得敏感。",
+      "ordinal": 1,
+      "parent_element_id": "self-002-614c8a0cd2fe-e0001",
+      "children_ids": [],
+      "heading_path": [
+        "智能阅读器自制 PDF 样本"
+      ],
+      "heading_level": null,
+      "label": "text",
+      "role": null,
+      "reading_order_index": 1,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        48.51969,
+        761.05540315,
+        257.51968999999997,
+        751.6276629099104
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0003",
+      "element_type": "heading",
+      "text": "1 研究目标",
+      "normalized_text": "1 研究目标",
+      "ordinal": 2,
+      "parent_element_id": null,
+      "children_ids": [
+        "self-002-614c8a0cd2fe-e0004"
+      ],
+      "heading_path": [
+        "1 研究目标"
+      ],
+      "heading_level": 1,
+      "label": "section_header",
+      "role": "title",
+      "reading_order_index": 2,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        48.51969,
+        652.0525724,
+        107.10758039999999,
+        640.1438478862026
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0004",
+      "element_type": "paragraph",
+      "text": "本样本包含中文、English terms、脚注提示和页眉页 脚，用于验证正文、标题、段落、页码和引用定位。",
+      "normalized_text": "本样本包含中文、English terms、脚注提示和页眉页 脚，用于验证正文、标题、段落、页码和引用定位。",
+      "ordinal": 3,
+      "parent_element_id": "self-002-614c8a0cd2fe-e0003",
+      "children_ids": [],
+      "heading_path": [
+        "1 研究目标"
+      ],
+      "heading_level": null,
+      "label": "text",
+      "role": null,
+      "reading_order_index": 3,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        48.51969,
+        630.66170315,
+        271.14346805,
+        606.2339629099105
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0005",
+      "element_type": "heading",
+      "text": "2 关键结论",
+      "normalized_text": "2 关键结论",
+      "ordinal": 4,
+      "parent_element_id": null,
+      "children_ids": [
+        "self-002-614c8a0cd2fe-e0006",
+        "self-002-614c8a0cd2fe-e0007",
+        "self-002-614c8a0cd2fe-e0008"
+      ],
+      "heading_path": [
+        "2 关键结论"
+      ],
+      "heading_level": 1,
+      "label": "section_header",
+      "role": "title",
+      "reading_order_index": 4,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        48.51969,
+        592.0525724,
+        107.10758039999999,
+        580.1438478862026
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0006",
+      "element_type": "paragraph",
+      "text": "解析结果不能只保留扁平纯文本。每个文本块还需要稳 定 ID、标题路径、物理页码和原始位置。",
+      "normalized_text": "解析结果不能只保留扁平纯文本。每个文本块还需要稳 定 ID、标题路径、物理页码和原始位置。",
+      "ordinal": 5,
+      "parent_element_id": "self-002-614c8a0cd2fe-e0005",
+      "children_ids": [],
+      "heading_path": [
+        "2 关键结论"
+      ],
+      "heading_level": null,
+      "label": "text",
+      "role": null,
+      "reading_order_index": 5,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        48.51969,
+        570.66170315,
+        276.51968999999997,
+        546.2339629099105
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0007",
+      "element_type": "paragraph",
+      "text": "脚注：这是一个可回溯的脚注占位，用来检查脚注是否被混入正文。",
+      "normalized_text": "脚注：这是一个可回溯的脚注占位，用来检查脚注是否被混入正文。",
+      "ordinal": 6,
+      "parent_element_id": "self-002-614c8a0cd2fe-e0005",
+      "children_ids": [],
+      "heading_path": [
+        "2 关键结论"
+      ],
+      "heading_level": null,
+      "label": "text",
+      "role": null,
+      "reading_order_index": 6,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        48.51969,
+        481.14900775,
+        273.51968999999997,
+        473.70605492887665
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0008",
+      "element_type": "paragraph",
+      "text": "左栏补充段落：阅读顺序应先完成当前栏，再进入同页 另一栏；解析器不能把页脚插入正文。",
+      "normalized_text": "左栏补充段落：阅读顺序应先完成当前栏，再进入同页 另一栏；解析器不能把页脚插入正文。",
+      "ordinal": 7,
+      "parent_element_id": "self-002-614c8a0cd2fe-e0005",
+      "children_ids": [],
+      "heading_path": [
+        "2 关键结论"
+      ],
+      "heading_level": null,
+      "label": "text",
+      "role": null,
+      "reading_order_index": 7,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        48.51969,
+        464.66170315,
+        276.51968999999997,
+        440.2339629099104
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0009",
+      "element_type": "heading",
+      "text": "右栏内容",
+      "normalized_text": "右栏内容",
+      "ordinal": 8,
+      "parent_element_id": null,
+      "children_ids": [
+        "self-002-614c8a0cd2fe-e0010"
+      ],
+      "heading_path": [
+        "右栏内容"
+      ],
+      "heading_level": 1,
+      "label": "section_header",
+      "role": "title",
+      "reading_order_index": 8,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        314.9764,
+        677.0604724,
+        362.9764,
+        665.1517478862025
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0010",
+      "element_type": "paragraph",
+      "text": "右栏补充段落：引用定位需要同时记录物理页码、文本 块和坐标，表格应保持行列关系。",
+      "normalized_text": "右栏补充段落：引用定位需要同时记录物理页码、文本 块和坐标，表格应保持行列关系。",
+      "ordinal": 9,
+      "parent_element_id": "self-002-614c8a0cd2fe-e0009",
+      "children_ids": [],
+      "heading_path": [
+        "右栏内容"
+      ],
+      "heading_level": null,
+      "label": "text",
+      "role": null,
+      "reading_order_index": 9,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        314.9764,
+        655.66960315,
+        542.9764,
+        631.2418629099104
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0011",
+      "element_type": "heading",
+      "text": "3 参考文献",
+      "normalized_text": "3 参考文献",
+      "ordinal": 10,
+      "parent_element_id": null,
+      "children_ids": [
+        "self-002-614c8a0cd2fe-e0012"
+      ],
+      "heading_path": [
+        "3 参考文献"
+      ],
+      "heading_level": 1,
+      "label": "section_header",
+      "role": "title",
+      "reading_order_index": 10,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        314.9764,
+        617.0604724,
+        373.5642904,
+        605.1517478862025
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0012",
+      "element_type": "paragraph",
+      "text": "[1] A. Reader. Document provenance and evidence blocks. 2026.",
+      "normalized_text": "[1] A. Reader. Document provenance and evidence blocks. 2026.",
+      "ordinal": 11,
+      "parent_element_id": "self-002-614c8a0cd2fe-e0011",
+      "children_ids": [],
+      "heading_path": [
+        "3 参考文献"
+      ],
+      "heading_level": null,
+      "label": "text",
+      "role": null,
+      "reading_order_index": 11,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        314.9764,
+        595.66960315,
+        545.3189232999998,
+        571.2418629099104
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0013",
+      "element_type": "footer",
+      "text": "SELF-AUTHORED PDF | physical page 1",
+      "normalized_text": "SELF-AUTHORED PDF | physical page 1",
+      "ordinal": 12,
+      "parent_element_id": null,
+      "children_ids": [],
+      "heading_path": [
+        "3 参考文献"
+      ],
+      "heading_level": null,
+      "label": "page_footer",
+      "role": "footer",
+      "reading_order_index": 12,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        51.02362,
+        33.64089390000004,
+        181.58319039999992,
+        26.694137933618208
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0014",
+      "element_type": "footer",
+      "text": "header/footer and citation test",
+      "normalized_text": "header/footer and citation test",
+      "ordinal": 13,
+      "parent_element_id": null,
+      "children_ids": [],
+      "heading_path": [
+        "3 参考文献"
+      ],
+      "heading_level": null,
+      "label": "page_footer",
+      "role": "footer",
+      "reading_order_index": 13,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        441.0225,
+        33.64089390000004,
+        544.2519907,
+        26.694137933618208
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0015",
+      "element_type": "heading",
+      "text": "4 第二页",
+      "normalized_text": "4 第二页",
+      "ordinal": 14,
+      "parent_element_id": null,
+      "children_ids": [
+        "self-002-614c8a0cd2fe-e0016"
+      ],
+      "heading_path": [
+        "4 第二页"
+      ],
+      "heading_level": 1,
+      "label": "section_header",
+      "role": "title",
+      "reading_order_index": 14,
+      "physical_page": 2,
+      "printed_page_label": null,
+      "bbox": [
+        48.51969,
+        790.4462724,
+        95.10758039999999,
+        778.5375478862026
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0016",
+      "element_type": "paragraph",
+      "text": "第二页用于检查页码、跨页段落和引用位置。",
+      "normalized_text": "第二页用于检查页码、跨页段落和引用位置。",
+      "ordinal": 15,
+      "parent_element_id": "self-002-614c8a0cd2fe-e0015",
+      "children_ids": [],
+      "heading_path": [
+        "4 第二页"
+      ],
+      "heading_level": null,
+      "label": "text",
+      "role": null,
+      "reading_order_index": 15,
+      "physical_page": 2,
+      "printed_page_label": null,
+      "bbox": [
+        48.51969,
+        769.05540315,
+        238.51969,
+        759.6276629099104
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0017",
+      "element_type": "footer",
+      "text": "SELF-AUTHORED PDF | physical page 2 header/footer and citation test",
+      "normalized_text": "SELF-AUTHORED PDF | physical page 2 header/footer and citation test",
+      "ordinal": 16,
+      "parent_element_id": null,
+      "children_ids": [],
+      "heading_path": [
+        "4 第二页"
+      ],
+      "heading_level": null,
+      "label": "page_footer",
+      "role": "footer",
+      "reading_order_index": 16,
+      "physical_page": 2,
+      "printed_page_label": null,
+      "bbox": [
+        51.02362,
+        33.64089390000004,
+        544.2519907,
+        26.694137933618208
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0018",
+      "element_type": "table",
+      "text": "",
+      "normalized_text": "",
+      "ordinal": 17,
+      "parent_element_id": null,
+      "children_ids": [
+        "self-002-614c8a0cd2fe-e0019",
+        "self-002-614c8a0cd2fe-e0020",
+        "self-002-614c8a0cd2fe-e0021",
+        "self-002-614c8a0cd2fe-e0022",
+        "self-002-614c8a0cd2fe-e0023",
+        "self-002-614c8a0cd2fe-e0024",
+        "self-002-614c8a0cd2fe-e0025",
+        "self-002-614c8a0cd2fe-e0026",
+        "self-002-614c8a0cd2fe-e0027"
+      ],
+      "heading_path": [
+        "4 第二页"
+      ],
+      "heading_level": null,
+      "label": "table",
+      "role": null,
+      "reading_order_index": 17,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        47.57207173802165,
+        543.5329186611729,
+        281.02947089114605,
+        489.106815280869
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0019",
+      "element_type": "table_cell",
+      "text": "字段",
+      "normalized_text": "字段",
+      "ordinal": 18,
+      "parent_element_id": "self-002-614c8a0cd2fe-e0018",
+      "children_ids": [],
+      "heading_path": [
+        "4 第二页"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 18,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        54.18898,
+        303.8626184,
+        70.18898,
+        311.80176807586497
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 0,
+      "col_index": 0,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0020",
+      "element_type": "table_cell",
+      "text": "示例值",
+      "normalized_text": "示例值",
+      "ordinal": 19,
+      "parent_element_id": "self-002-614c8a0cd2fe-e0018",
+      "children_ids": [],
+      "heading_path": [
+        "4 第二页"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 19,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        110.88189,
+        303.8626184,
+        134.88189,
+        311.80176807586497
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 0,
+      "col_index": 1,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0021",
+      "element_type": "table_cell",
+      "text": "风险",
+      "normalized_text": "风险",
+      "ordinal": 20,
+      "parent_element_id": "self-002-614c8a0cd2fe-e0018",
+      "children_ids": [],
+      "heading_path": [
+        "4 第二页"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 20,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        181.74808000000002,
+        303.8626184,
+        197.74808000000002,
+        311.80176807586497
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 0,
+      "col_index": 2,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0022",
+      "element_type": "table_cell",
+      "text": "physical_page",
+      "normalized_text": "physical_page",
+      "ordinal": 21,
+      "parent_element_id": "self-002-614c8a0cd2fe-e0018",
+      "children_ids": [],
+      "heading_path": [
+        "4 第二页"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 21,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        54.18898,
+        321.8626184,
+        107.62648080000002,
+        329.80176807586497
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 1,
+      "col_index": 0,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0023",
+      "element_type": "table_cell",
+      "text": "2",
+      "normalized_text": "2",
+      "ordinal": 22,
+      "parent_element_id": "self-002-614c8a0cd2fe-e0018",
+      "children_ids": [],
+      "heading_path": [
+        "4 第二页"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 22,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        110.88189,
+        321.8626184,
+        115.5732964,
+        329.80176807586497
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 1,
+      "col_index": 1,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0024",
+      "element_type": "table_cell",
+      "text": "封面导致打印页码偏移",
+      "normalized_text": "封面导致打印页码偏移",
+      "ordinal": 23,
+      "parent_element_id": "self-002-614c8a0cd2fe-e0018",
+      "children_ids": [],
+      "heading_path": [
+        "4 第二页"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 23,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        181.74808000000002,
+        321.8626184,
+        261.74808,
+        329.80176807586497
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 1,
+      "col_index": 2,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0025",
+      "element_type": "table_cell",
+      "text": "heading_path1",
+      "normalized_text": "heading_path1",
+      "ordinal": 24,
+      "parent_element_id": "self-002-614c8a0cd2fe-e0018",
+      "children_ids": [],
+      "heading_path": [
+        "4 第二页"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 24,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        54.18898,
+        339.86261840000003,
+        115.5732964,
+        347.8017680758649
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 2,
+      "col_index": 0,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0026",
+      "element_type": "table_cell",
+      "text": "> 2",
+      "normalized_text": "> 2",
+      "ordinal": 25,
+      "parent_element_id": "self-002-614c8a0cd2fe-e0018",
+      "children_ids": [],
+      "heading_path": [
+        "4 第二页"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 25,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        117.94048360000001,
+        339.86261840000003,
+        130.9326708,
+        347.8017680758649
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 2,
+      "col_index": 1,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    },
+    {
+      "element_id": "self-002-614c8a0cd2fe-e0027",
+      "element_type": "table_cell",
+      "text": "标题层级可能被误判",
+      "normalized_text": "标题层级可能被误判",
+      "ordinal": 26,
+      "parent_element_id": "self-002-614c8a0cd2fe-e0018",
+      "children_ids": [],
+      "heading_path": [
+        "4 第二页"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 26,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        181.74808000000002,
+        339.86261840000003,
+        253.74808000000002,
+        347.8017680758649
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 2,
+      "col_index": 2,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0001",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0019",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0002",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0020",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0003",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0021",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0004",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0022",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0005",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0023",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0006",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0024",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0007",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0025",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0008",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0026",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0009",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0027",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0010",
+      "relation_type": "contains",
+      "source_element_id": "self-002-614c8a0cd2fe-e0001",
+      "target_element_id": "self-002-614c8a0cd2fe-e0002",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0011",
+      "relation_type": "contains",
+      "source_element_id": "self-002-614c8a0cd2fe-e0003",
+      "target_element_id": "self-002-614c8a0cd2fe-e0004",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0012",
+      "relation_type": "contains",
+      "source_element_id": "self-002-614c8a0cd2fe-e0005",
+      "target_element_id": "self-002-614c8a0cd2fe-e0006",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0013",
+      "relation_type": "contains",
+      "source_element_id": "self-002-614c8a0cd2fe-e0005",
+      "target_element_id": "self-002-614c8a0cd2fe-e0007",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0014",
+      "relation_type": "contains",
+      "source_element_id": "self-002-614c8a0cd2fe-e0005",
+      "target_element_id": "self-002-614c8a0cd2fe-e0008",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0015",
+      "relation_type": "contains",
+      "source_element_id": "self-002-614c8a0cd2fe-e0009",
+      "target_element_id": "self-002-614c8a0cd2fe-e0010",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0016",
+      "relation_type": "contains",
+      "source_element_id": "self-002-614c8a0cd2fe-e0011",
+      "target_element_id": "self-002-614c8a0cd2fe-e0012",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0017",
+      "relation_type": "contains",
+      "source_element_id": "self-002-614c8a0cd2fe-e0015",
+      "target_element_id": "self-002-614c8a0cd2fe-e0016",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0018",
+      "relation_type": "contains",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0019",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0019",
+      "relation_type": "contains",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0020",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0020",
+      "relation_type": "contains",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0021",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0021",
+      "relation_type": "contains",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0022",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0022",
+      "relation_type": "contains",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0023",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0023",
+      "relation_type": "contains",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0024",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0024",
+      "relation_type": "contains",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0025",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0025",
+      "relation_type": "contains",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0026",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-002-614c8a0cd2fe-r0026",
+      "relation_type": "contains",
+      "source_element_id": "self-002-614c8a0cd2fe-e0018",
+      "target_element_id": "self-002-614c8a0cd2fe-e0027",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    }
+  ],
+  "warnings": [
+    "Docling text/table export is mapped without OCR or formula enrichment."
+  ],
+  "relation_counts": {
+    "table_contains_cell": 9,
+    "contains": 17
+  },
+  "element_counts": {
+    "heading": 6,
+    "paragraph": 8,
+    "footer": 3,
+    "table": 1,
+    "table_cell": 9
+  },
+  "field_completeness": {
+    "physical_page": 1.0,
+    "bbox": 1.0,
+    "heading_level": 0.2222222222222222
+  },
+  "status": "scored"
+}

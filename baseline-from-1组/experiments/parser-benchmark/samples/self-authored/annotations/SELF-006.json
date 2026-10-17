@@ -1,0 +1,16 @@
+{
+  "fixed_queries": [
+    "2026-09-30",
+    "补充授权",
+    "脱敏"
+  ],
+  "expected_evidence_fragments": [
+    "补充授权",
+    "用户 A（脱敏）",
+    "复核表格字段"
+  ],
+  "reference_notes": "检查日期、行动项、负责人占位符和表格列语义。",
+  "sample_id": "SELF-006",
+  "annotation_version": 1,
+  "source": "project-authored"
+}

@@ -1,0 +1,15 @@
+{
+  "fixed_queries": [
+    "Recall@k",
+    "合并单元格",
+    "公式"
+  ],
+  "expected_evidence_fragments": [
+    "Recall@k",
+    "合并单元格需保留"
+  ],
+  "reference_notes": "表格和公式应保留为结构化候选或明确降级信息。",
+  "sample_id": "SELF-003",
+  "annotation_version": 1,
+  "source": "project-authored"
+}

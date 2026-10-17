@@ -1,0 +1,1315 @@
+{
+  "status": "succeeded",
+  "text": "大\n95\n76\nLook! No bottom.\nVeronica's choices=11×10×3\nleaving it as a 3 so all we've got now is:\nThen the 3 on the bottom divides into the 9 on top\n8\n11×10×9\ncancels out the 8 on top (and we don't need that\nnumbers. Next we'll see that the 4×2 on the bottom\nPow! That's already got rid of more than half the\n4××2×1\nif she's going to do it properly.\n11×10×9×8\nonly has time to kiss four out of the eleven of them\nbit from top and bottom and get:\nOf  o    s     hi\nUnfortunately Veronica's\neyns s as eard\nyou're so brilliant.)\nIPa r cobhis\nfor fun without a calculator these days because\nto and tell them that this is the sort of thing you do\nescorted her safely back to her\nso  e te o    s t ed\nhaev a\nha te t t tn ee bal\n(Before we continue, grab this book and show\nGumos\nIesg a e e ey\nThe Tdi sum\n4×××××××××2×1\n11×10×9×8×7×6×5×4×3×2×1\nL×节\nfeatures youll find at: www.mur\n11!\namazing\nthe other lottery chances is just\nyou'l ever have with a pencil so here we go...\nwokoo\nwe'll move on to something else.\nAtw W   eS S  sun\n口",
+  "lines": [
+    "大",
+    "95",
+    "76",
+    "Look! No bottom.",
+    "Veronica's choices=11×10×3",
+    "leaving it as a 3 so all we've got now is:",
+    "Then the 3 on the bottom divides into the 9 on top",
+    "8",
+    "11×10×9",
+    "cancels out the 8 on top (and we don't need that",
+    "numbers. Next we'll see that the 4×2 on the bottom",
+    "Pow! That's already got rid of more than half the",
+    "4××2×1",
+    "if she's going to do it properly.",
+    "11×10×9×8",
+    "only has time to kiss four out of the eleven of them",
+    "bit from top and bottom and get:",
+    "Of  o    s     hi",
+    "Unfortunately Veronica's",
+    "eyns s as eard",
+    "you're so brilliant.)",
+    "IPa r cobhis",
+    "for fun without a calculator these days because",
+    "to and tell them that this is the sort of thing you do",
+    "escorted her safely back to her",
+    "so  e te o    s t ed",
+    "haev a",
+    "ha te t t tn ee bal",
+    "(Before we continue, grab this book and show",
+    "Gumos",
+    "Iesg a e e ey",
+    "The Tdi sum",
+    "4×××××××××2×1",
+    "11×10×9×8×7×6×5×4×3×2×1",
+    "L×节",
+    "features youll find at: www.mur",
+    "11!",
+    "amazing",
+    "the other lottery chances is just",
+    "you'l ever have with a pencil so here we go...",
+    "wokoo",
+    "we'll move on to something else.",
+    "Atw W   eS S  sun",
+    "口"
+  ],
+  "items": [
+    {
+      "text": "大",
+      "confidence": 99.705,
+      "bbox_polygon": [
+        [
+          410.0,
+          63.0
+        ],
+        [
+          423.0,
+          63.0
+        ],
+        [
+          423.0,
+          76.0
+        ],
+        [
+          410.0,
+          76.0
+        ]
+      ],
+      "bbox": [
+        410.0,
+        63.0,
+        13.0,
+        13.0
+      ]
+    },
+    {
+      "text": "95",
+      "confidence": 88.191,
+      "bbox_polygon": [
+        [
+          368.0,
+          133.0
+        ],
+        [
+          397.0,
+          133.0
+        ],
+        [
+          397.0,
+          156.0
+        ],
+        [
+          368.0,
+          156.0
+        ]
+      ],
+      "bbox": [
+        368.0,
+        133.0,
+        29.0,
+        23.0
+      ]
+    },
+    {
+      "text": "76",
+      "confidence": 74.46199999999999,
+      "bbox_polygon": [
+        [
+          772.0,
+          140.0
+        ],
+        [
+          801.0,
+          140.0
+        ],
+        [
+          801.0,
+          164.0
+        ],
+        [
+          772.0,
+          164.0
+        ]
+      ],
+      "bbox": [
+        772.0,
+        140.0,
+        29.0,
+        24.0
+      ]
+    },
+    {
+      "text": "Look! No bottom.",
+      "confidence": 99.992,
+      "bbox_polygon": [
+        [
+          432.0,
+          175.0
+        ],
+        [
+          556.0,
+          178.0
+        ],
+        [
+          555.0,
+          200.0
+        ],
+        [
+          431.0,
+          197.0
+        ]
+      ],
+      "bbox": [
+        431.0,
+        175.0,
+        125.0,
+        25.0
+      ]
+    },
+    {
+      "text": "Veronica's choices=11×10×3",
+      "confidence": 99.749,
+      "bbox_polygon": [
+        [
+          283.0,
+          211.0
+        ],
+        [
+          480.0,
+          211.0
+        ],
+        [
+          480.0,
+          230.0
+        ],
+        [
+          283.0,
+          230.0
+        ]
+      ],
+      "bbox": [
+        283.0,
+        211.0,
+        197.0,
+        19.0
+      ]
+    },
+    {
+      "text": "leaving it as a 3 so all we've got now is:",
+      "confidence": 98.321,
+      "bbox_polygon": [
+        [
+          291.0,
+          238.0
+        ],
+        [
+          553.0,
+          242.0
+        ],
+        [
+          553.0,
+          262.0
+        ],
+        [
+          291.0,
+          259.0
+        ]
+      ],
+      "bbox": [
+        291.0,
+        238.0,
+        262.0,
+        24.0
+      ]
+    },
+    {
+      "text": "Then the 3 on the bottom divides into the 9 on top",
+      "confidence": 98.907,
+      "bbox_polygon": [
+        [
+          215.0,
+          252.0
+        ],
+        [
+          553.0,
+          258.0
+        ],
+        [
+          553.0,
+          280.0
+        ],
+        [
+          215.0,
+          274.0
+        ]
+      ],
+      "bbox": [
+        215.0,
+        252.0,
+        338.0,
+        28.0
+      ]
+    },
+    {
+      "text": "8",
+      "confidence": 99.373,
+      "bbox_polygon": [
+        [
+          371.0,
+          289.0
+        ],
+        [
+          388.0,
+          289.0
+        ],
+        [
+          388.0,
+          307.0
+        ],
+        [
+          371.0,
+          307.0
+        ]
+      ],
+      "bbox": [
+        371.0,
+        289.0,
+        17.0,
+        18.0
+      ]
+    },
+    {
+      "text": "11×10×9",
+      "confidence": 99.97,
+      "bbox_polygon": [
+        [
+          342.0,
+          302.0
+        ],
+        [
+          415.0,
+          304.0
+        ],
+        [
+          414.0,
+          324.0
+        ],
+        [
+          342.0,
+          322.0
+        ]
+      ],
+      "bbox": [
+        342.0,
+        302.0,
+        73.0,
+        22.0
+      ]
+    },
+    {
+      "text": "cancels out the 8 on top (and we don't need that",
+      "confidence": 99.06700000000001,
+      "bbox_polygon": [
+        [
+          213.0,
+          345.0
+        ],
+        [
+          552.0,
+          354.0
+        ],
+        [
+          552.0,
+          375.0
+        ],
+        [
+          213.0,
+          366.0
+        ]
+      ],
+      "bbox": [
+        213.0,
+        345.0,
+        339.0,
+        30.0
+      ]
+    },
+    {
+      "text": "numbers. Next we'll see that the 4×2 on the bottom",
+      "confidence": 98.092,
+      "bbox_polygon": [
+        [
+          213.0,
+          361.0
+        ],
+        [
+          552.0,
+          371.0
+        ],
+        [
+          551.0,
+          393.0
+        ],
+        [
+          213.0,
+          383.0
+        ]
+      ],
+      "bbox": [
+        213.0,
+        361.0,
+        339.0,
+        32.0
+      ]
+    },
+    {
+      "text": "Pow! That's already got rid of more than half the",
+      "confidence": 98.787,
+      "bbox_polygon": [
+        [
+          212.0,
+          376.0
+        ],
+        [
+          551.0,
+          388.0
+        ],
+        [
+          550.0,
+          410.0
+        ],
+        [
+          212.0,
+          398.0
+        ]
+      ],
+      "bbox": [
+        212.0,
+        376.0,
+        339.0,
+        34.0
+      ]
+    },
+    {
+      "text": "4××2×1",
+      "confidence": 70.645,
+      "bbox_polygon": [
+        [
+          338.0,
+          413.0
+        ],
+        [
+          417.0,
+          417.0
+        ],
+        [
+          416.0,
+          437.0
+        ],
+        [
+          337.0,
+          434.0
+        ]
+      ],
+      "bbox": [
+        337.0,
+        413.0,
+        80.0,
+        24.0
+      ]
+    },
+    {
+      "text": "if she's going to do it properly.",
+      "confidence": 98.231,
+      "bbox_polygon": [
+        [
+          746.0,
+          420.0
+        ],
+        [
+          926.0,
+          424.0
+        ],
+        [
+          926.0,
+          447.0
+        ],
+        [
+          746.0,
+          443.0
+        ]
+      ],
+      "bbox": [
+        746.0,
+        420.0,
+        180.0,
+        27.0
+      ]
+    },
+    {
+      "text": "11×10×9×8",
+      "confidence": 99.941,
+      "bbox_polygon": [
+        [
+          330.0,
+          428.0
+        ],
+        [
+          423.0,
+          433.0
+        ],
+        [
+          422.0,
+          453.0
+        ],
+        [
+          329.0,
+          448.0
+        ]
+      ],
+      "bbox": [
+        329.0,
+        428.0,
+        94.0,
+        25.0
+      ]
+    },
+    {
+      "text": "only has time to kiss four out of the eleven of them",
+      "confidence": 99.86500000000001,
+      "bbox_polygon": [
+        [
+          596.0,
+          429.0
+        ],
+        [
+          927.0,
+          439.0
+        ],
+        [
+          927.0,
+          468.0
+        ],
+        [
+          596.0,
+          458.0
+        ]
+      ],
+      "bbox": [
+        596.0,
+        429.0,
+        331.0,
+        39.0
+      ]
+    },
+    {
+      "text": "bit from top and bottom and get:",
+      "confidence": 99.993,
+      "bbox_polygon": [
+        [
+          330.0,
+          458.0
+        ],
+        [
+          550.0,
+          469.0
+        ],
+        [
+          549.0,
+          491.0
+        ],
+        [
+          329.0,
+          480.0
+        ]
+      ],
+      "bbox": [
+        329.0,
+        458.0,
+        221.0,
+        33.0
+      ]
+    },
+    {
+      "text": "Of  o    s     hi",
+      "confidence": 55.519,
+      "bbox_polygon": [
+        [
+          212.0,
+          468.0
+        ],
+        [
+          536.0,
+          484.0
+        ],
+        [
+          535.0,
+          506.0
+        ],
+        [
+          211.0,
+          490.0
+        ]
+      ],
+      "bbox": [
+        211.0,
+        468.0,
+        325.0,
+        38.0
+      ]
+    },
+    {
+      "text": "Unfortunately Veronica's",
+      "confidence": 99.558,
+      "bbox_polygon": [
+        [
+          752.0,
+          474.0
+        ],
+        [
+          922.0,
+          474.0
+        ],
+        [
+          922.0,
+          493.0
+        ],
+        [
+          752.0,
+          493.0
+        ]
+      ],
+      "bbox": [
+        752.0,
+        474.0,
+        170.0,
+        19.0
+      ]
+    },
+    {
+      "text": "eyns s as eard",
+      "confidence": 68.816,
+      "bbox_polygon": [
+        [
+          748.0,
+          491.0
+        ],
+        [
+          924.0,
+          488.0
+        ],
+        [
+          924.0,
+          510.0
+        ],
+        [
+          749.0,
+          513.0
+        ]
+      ],
+      "bbox": [
+        748.0,
+        488.0,
+        176.0,
+        25.0
+      ]
+    },
+    {
+      "text": "you're so brilliant.)",
+      "confidence": 98.367,
+      "bbox_polygon": [
+        [
+          413.0,
+          495.0
+        ],
+        [
+          550.0,
+          500.0
+        ],
+        [
+          549.0,
+          523.0
+        ],
+        [
+          412.0,
+          517.0
+        ]
+      ],
+      "bbox": [
+        412.0,
+        495.0,
+        138.0,
+        28.0
+      ]
+    },
+    {
+      "text": "IPa r cobhis",
+      "confidence": 50.243,
+      "bbox_polygon": [
+        [
+          595.0,
+          496.0
+        ],
+        [
+          719.0,
+          506.0
+        ],
+        [
+          717.0,
+          532.0
+        ],
+        [
+          593.0,
+          522.0
+        ]
+      ],
+      "bbox": [
+        593.0,
+        496.0,
+        126.0,
+        36.0
+      ]
+    },
+    {
+      "text": "for fun without a calculator these days because",
+      "confidence": 99.84100000000001,
+      "bbox_polygon": [
+        [
+          210.0,
+          498.0
+        ],
+        [
+          550.0,
+          515.0
+        ],
+        [
+          549.0,
+          540.0
+        ],
+        [
+          209.0,
+          523.0
+        ]
+      ],
+      "bbox": [
+        209.0,
+        498.0,
+        341.0,
+        42.0
+      ]
+    },
+    {
+      "text": "to and tell them that this is the sort of thing you do",
+      "confidence": 98.529,
+      "bbox_polygon": [
+        [
+          210.0,
+          512.0
+        ],
+        [
+          550.0,
+          532.0
+        ],
+        [
+          549.0,
+          557.0
+        ],
+        [
+          209.0,
+          537.0
+        ]
+      ],
+      "bbox": [
+        209.0,
+        512.0,
+        341.0,
+        45.0
+      ]
+    },
+    {
+      "text": "escorted her safely back to her",
+      "confidence": 99.958,
+      "bbox_polygon": [
+        [
+          718.0,
+          525.0
+        ],
+        [
+          923.0,
+          519.0
+        ],
+        [
+          924.0,
+          541.0
+        ],
+        [
+          718.0,
+          548.0
+        ]
+      ],
+      "bbox": [
+        718.0,
+        519.0,
+        206.0,
+        29.0
+      ]
+    },
+    {
+      "text": "so  e te o    s t ed",
+      "confidence": 57.282,
+      "bbox_polygon": [
+        [
+          210.0,
+          529.0
+        ],
+        [
+          550.0,
+          548.0
+        ],
+        [
+          548.0,
+          573.0
+        ],
+        [
+          209.0,
+          554.0
+        ]
+      ],
+      "bbox": [
+        209.0,
+        529.0,
+        341.0,
+        44.0
+      ]
+    },
+    {
+      "text": "haev a",
+      "confidence": 58.133,
+      "bbox_polygon": [
+        [
+          596.0,
+          530.0
+        ],
+        [
+          655.0,
+          538.0
+        ],
+        [
+          652.0,
+          561.0
+        ],
+        [
+          593.0,
+          553.0
+        ]
+      ],
+      "bbox": [
+        593.0,
+        530.0,
+        62.0,
+        31.0
+      ]
+    },
+    {
+      "text": "ha te t t tn ee bal",
+      "confidence": 56.291999999999994,
+      "bbox_polygon": [
+        [
+          727.0,
+          542.0
+        ],
+        [
+          922.0,
+          535.0
+        ],
+        [
+          923.0,
+          558.0
+        ],
+        [
+          728.0,
+          565.0
+        ]
+      ],
+      "bbox": [
+        727.0,
+        535.0,
+        196.0,
+        30.0
+      ]
+    },
+    {
+      "text": "(Before we continue, grab this book and show",
+      "confidence": 99.73100000000001,
+      "bbox_polygon": [
+        [
+          210.0,
+          544.0
+        ],
+        [
+          549.0,
+          564.0
+        ],
+        [
+          547.0,
+          589.0
+        ],
+        [
+          209.0,
+          569.0
+        ]
+      ],
+      "bbox": [
+        209.0,
+        544.0,
+        340.0,
+        45.0
+      ]
+    },
+    {
+      "text": "Gumos",
+      "confidence": 77.563,
+      "bbox_polygon": [
+        [
+          596.0,
+          545.0
+        ],
+        [
+          656.0,
+          555.0
+        ],
+        [
+          652.0,
+          579.0
+        ],
+        [
+          592.0,
+          569.0
+        ]
+      ],
+      "bbox": [
+        592.0,
+        545.0,
+        64.0,
+        34.0
+      ]
+    },
+    {
+      "text": "Iesg a e e ey",
+      "confidence": 54.120999999999995,
+      "bbox_polygon": [
+        [
+          725.0,
+          560.0
+        ],
+        [
+          921.0,
+          552.0
+        ],
+        [
+          922.0,
+          574.0
+        ],
+        [
+          726.0,
+          582.0
+        ]
+      ],
+      "bbox": [
+        725.0,
+        552.0,
+        197.0,
+        30.0
+      ]
+    },
+    {
+      "text": "The Tdi sum",
+      "confidence": 70.643,
+      "bbox_polygon": [
+        [
+          789.0,
+          574.0
+        ],
+        [
+          920.0,
+          567.0
+        ],
+        [
+          921.0,
+          590.0
+        ],
+        [
+          790.0,
+          597.0
+        ]
+      ],
+      "bbox": [
+        789.0,
+        567.0,
+        132.0,
+        30.0
+      ]
+    },
+    {
+      "text": "4×××××××××2×1",
+      "confidence": 65.281,
+      "bbox_polygon": [
+        [
+          222.0,
+          578.0
+        ],
+        [
+          455.0,
+          595.0
+        ],
+        [
+          453.0,
+          616.0
+        ],
+        [
+          220.0,
+          599.0
+        ]
+      ],
+      "bbox": [
+        220.0,
+        578.0,
+        235.0,
+        38.0
+      ]
+    },
+    {
+      "text": "11×10×9×8×7×6×5×4×3×2×1",
+      "confidence": 99.937,
+      "bbox_polygon": [
+        [
+          221.0,
+          593.0
+        ],
+        [
+          460.0,
+          611.0
+        ],
+        [
+          458.0,
+          633.0
+        ],
+        [
+          219.0,
+          614.0
+        ]
+      ],
+      "bbox": [
+        219.0,
+        593.0,
+        241.0,
+        40.0
+      ]
+    },
+    {
+      "text": "L×节",
+      "confidence": 59.389,
+      "bbox_polygon": [
+        [
+          479.0,
+          598.0
+        ],
+        [
+          525.0,
+          598.0
+        ],
+        [
+          525.0,
+          620.0
+        ],
+        [
+          479.0,
+          620.0
+        ]
+      ],
+      "bbox": [
+        479.0,
+        598.0,
+        46.0,
+        22.0
+      ]
+    },
+    {
+      "text": "features youll find at: www.mur",
+      "confidence": 96.641,
+      "bbox_polygon": [
+        [
+          726.0,
+          608.0
+        ],
+        [
+          920.0,
+          598.0
+        ],
+        [
+          921.0,
+          624.0
+        ],
+        [
+          728.0,
+          634.0
+        ]
+      ],
+      "bbox": [
+        726.0,
+        598.0,
+        195.0,
+        36.0
+      ]
+    },
+    {
+      "text": "11!",
+      "confidence": 98.787,
+      "bbox_polygon": [
+        [
+          482.0,
+          614.0
+        ],
+        [
+          516.0,
+          614.0
+        ],
+        [
+          516.0,
+          635.0
+        ],
+        [
+          482.0,
+          635.0
+        ]
+      ],
+      "bbox": [
+        482.0,
+        614.0,
+        34.0,
+        21.0
+      ]
+    },
+    {
+      "text": "amazing",
+      "confidence": 99.995,
+      "bbox_polygon": [
+        [
+          595.0,
+          614.0
+        ],
+        [
+          651.0,
+          626.0
+        ],
+        [
+          647.0,
+          646.0
+        ],
+        [
+          591.0,
+          634.0
+        ]
+      ],
+      "bbox": [
+        591.0,
+        614.0,
+        60.0,
+        32.0
+      ]
+    },
+    {
+      "text": "the other lottery chances is just",
+      "confidence": 99.98599999999999,
+      "bbox_polygon": [
+        [
+          719.0,
+          629.0
+        ],
+        [
+          918.0,
+          615.0
+        ],
+        [
+          919.0,
+          638.0
+        ],
+        [
+          721.0,
+          652.0
+        ]
+      ],
+      "bbox": [
+        719.0,
+        615.0,
+        200.0,
+        37.0
+      ]
+    },
+    {
+      "text": "you'l ever have with a pencil so here we go...",
+      "confidence": 94.697,
+      "bbox_polygon": [
+        [
+          254.0,
+          624.0
+        ],
+        [
+          548.0,
+          643.0
+        ],
+        [
+          546.0,
+          669.0
+        ],
+        [
+          253.0,
+          650.0
+        ]
+      ],
+      "bbox": [
+        253.0,
+        624.0,
+        295.0,
+        45.0
+      ]
+    },
+    {
+      "text": "wokoo",
+      "confidence": 59.538999999999994,
+      "bbox_polygon": [
+        [
+          594.0,
+          630.0
+        ],
+        [
+          654.0,
+          645.0
+        ],
+        [
+          650.0,
+          664.0
+        ],
+        [
+          589.0,
+          649.0
+        ]
+      ],
+      "bbox": [
+        589.0,
+        630.0,
+        65.0,
+        34.0
+      ]
+    },
+    {
+      "text": "we'll move on to something else.",
+      "confidence": 97.221,
+      "bbox_polygon": [
+        [
+          714.0,
+          645.0
+        ],
+        [
+          917.0,
+          631.0
+        ],
+        [
+          918.0,
+          654.0
+        ],
+        [
+          715.0,
+          668.0
+        ]
+      ],
+      "bbox": [
+        714.0,
+        631.0,
+        204.0,
+        37.0
+      ]
+    },
+    {
+      "text": "Atw W   eS S  sun",
+      "confidence": 56.959,
+      "bbox_polygon": [
+        [
+          208.0,
+          636.0
+        ],
+        [
+          547.0,
+          660.0
+        ],
+        [
+          545.0,
+          688.0
+        ],
+        [
+          206.0,
+          664.0
+        ]
+      ],
+      "bbox": [
+        206.0,
+        636.0,
+        341.0,
+        52.0
+      ]
+    },
+    {
+      "text": "口",
+      "confidence": 95.695,
+      "bbox_polygon": [
+        [
+          92.0,
+          672.0
+        ],
+        [
+          111.0,
+          672.0
+        ],
+        [
+          111.0,
+          687.0
+        ],
+        [
+          92.0,
+          687.0
+        ]
+      ],
+      "bbox": [
+        92.0,
+        672.0,
+        19.0,
+        15.0
+      ]
+    }
+  ],
+  "run_ms": [
+    11004.475299996557,
+    10146.161299999221,
+    10167.946800000209
+  ],
+  "latency_ms_p50": 10167.946800000209,
+  "latency_ms_p95": 11004.475299996557,
+  "mean_confidence": 86.18213636363636,
+  "low_confidence_item_ratio": 0.20454545454545456,
+  "bbox_item_ratio": 1.0,
+  "capabilities": {
+    "formula_structure": false,
+    "table_structure": false,
+    "seal_region_class": false,
+    "word_or_line_bbox": true
+  },
+  "stderr": "",
+  "questions": [
+    {
+      "question_id": "Q-PUB-002",
+      "match": "document",
+      "passed": false,
+      "document_hits": {
+        "The disappearing sum": false,
+        "94": false,
+        "95": true
+      },
+      "matched_line": null,
+      "required_capability": null
+    }
+  ]
+}

@@ -1,0 +1,404 @@
+{
+  "experiment_id": "TECH-STRUCT-016-R01",
+  "sample_id": "OPEN-010",
+  "status": "succeeded",
+  "parser": "Docling",
+  "parser_version": "2.130.0",
+  "source_path": "samples\\external-candidates\\docling-technical-report.pdf",
+  "source_sha256": "82dd470712ce8389f19f20eb9330475e2166a281f8c7990a9f1d0763d73b4d22",
+  "ocr": {
+    "enabled": false,
+    "status": "explicitly_disabled"
+  },
+  "pipeline_options": {
+    "do_ocr": false,
+    "do_table_structure": true,
+    "do_formula_enrichment": false,
+    "generate_page_images": false,
+    "generate_picture_images": false
+  },
+  "raw_export_path": "results\\text-structure\\external-docling\\OPEN-010.docling.json",
+  "raw_export_sha256": "9f291441f62d3694d1fe850c6797a46ba353fb61c634098fc6a527a9efbf037b",
+  "metrics": {
+    "page_count": 9,
+    "text_count": 739,
+    "table_count": 3,
+    "table_cell_count": 36,
+    "picture_count": 5,
+    "text_labels": {
+      "page_header": 2,
+      "section_header": 30,
+      "text": 666,
+      "page_footer": 10,
+      "list_item": 22,
+      "code": 1,
+      "footnote": 1,
+      "caption": 7
+    },
+    "section_header_count": 30,
+    "section_header_preview": [
+      {
+        "text": "Docling Technical Report",
+        "level": 1,
+        "page_no": 1,
+        "bbox": {
+          "l": 212.59,
+          "t": 566.639626,
+          "r": 399.4115208,
+          "b": 551.1629813999999,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Version 1.0",
+        "level": 1,
+        "page_no": 1,
+        "bbox": {
+          "l": 283.31,
+          "t": 511.9776526,
+          "r": 328.6896429999999,
+          "b": 503.42577439292035,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Abstract",
+        "level": 1,
+        "page_no": 1,
+        "bbox": {
+          "l": 283.758,
+          "t": 393.159088,
+          "r": 328.24329919999997,
+          "b": 382.41136320000004,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "1 Introduction",
+        "level": 1,
+        "page_no": 1,
+        "bbox": {
+          "l": 107.99999999999994,
+          "t": 267.802088,
+          "r": 190.8136704,
+          "b": 257.0543632000001,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "2 GettingStarted",
+        "level": 1,
+        "page_no": 2,
+        "bbox": {
+          "l": 108.0,
+          "t": 572.4900879999999,
+          "r": 205.29141760000007,
+          "b": 561.7423631999999,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "3 Processingpipeline",
+        "level": 1,
+        "page_no": 2,
+        "bbox": {
+          "l": 108.0,
+          "t": 297.5980879999999,
+          "r": 223.69047040000004,
+          "b": 286.85036319999995,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "3.1 PDFbackends",
+        "level": 1,
+        "page_no": 2,
+        "bbox": {
+          "l": 108.0,
+          "t": 161.43419399999993,
+          "r": 192.03453100000004,
+          "b": 152.47781659999998,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "3.2 AImodels",
+        "level": 1,
+        "page_no": 3,
+        "bbox": {
+          "l": 108.00000000000003,
+          "t": 426.4261940000001,
+          "r": 173.86274860000006,
+          "b": 417.4698166000001,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Layout Analysis Model",
+        "level": 1,
+        "page_no": 3,
+        "bbox": {
+          "l": 108.0,
+          "t": 313.7181940000001,
+          "r": 206.28104900000005,
+          "b": 304.7618166000001,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Table Structure Recognition",
+        "level": 1,
+        "page_no": 3,
+        "bbox": {
+          "l": 108.0,
+          "t": 175.05819400000019,
+          "r": 228.10910560000008,
+          "b": 166.10181660000012,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "OCR",
+        "level": 1,
+        "page_no": 4,
+        "bbox": {
+          "l": 108.0,
+          "t": 650.6341940000001,
+          "r": 130.1368972,
+          "b": 641.6778166000001,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "3.3 Assembly",
+        "level": 1,
+        "page_no": 4,
+        "bbox": {
+          "l": 108.00000000000006,
+          "t": 526.1751940000001,
+          "r": 171.3720986000001,
+          "b": 517.2188166000002,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "3.4 Extensibility",
+        "level": 1,
+        "page_no": 4,
+        "bbox": {
+          "l": 108.00000000000006,
+          "t": 416.75919400000015,
+          "r": 184.1142640000001,
+          "b": 407.80281660000014,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "4 Performance",
+        "level": 1,
+        "page_no": 4,
+        "bbox": {
+          "l": 107.99999999999994,
+          "t": 244.75808800000027,
+          "r": 191.78204160000004,
+          "b": 234.01036320000026,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "5 Applications",
+        "level": 1,
+        "page_no": 5,
+        "bbox": {
+          "l": 108.00000000000001,
+          "t": 528.628088,
+          "r": 190.072448,
+          "b": 517.8803632,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "6 Futureworkandcontributions",
+        "level": 1,
+        "page_no": 5,
+        "bbox": {
+          "l": 108.00000000000006,
+          "t": 346.7880880000001,
+          "r": 283.77730560000015,
+          "b": 336.0403632000001,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "References",
+        "level": 1,
+        "page_no": 5,
+        "bbox": {
+          "l": 108.00000000000009,
+          "t": 181.28808800000024,
+          "r": 163.54385920000016,
+          "b": 170.54036320000023,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Appendix",
+        "level": 1,
+        "page_no": 7,
+        "bbox": {
+          "l": 108.0,
+          "t": 718.2860880000001,
+          "r": 157.53039360000002,
+          "b": 707.5383632,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "DocLayNet: A Large Human-Annotated Dataset for Document-Layout Analysis",
+        "level": 1,
+        "page_no": 7,
+        "bbox": {
+          "l": 329.60160378558874,
+          "t": 667.2908484337102,
+          "r": 520.7848406846038,
+          "b": 662.7175214987101,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "ABSTRACT",
+        "level": 1,
+        "page_no": 7,
+        "bbox": {
+          "l": 329.60160378558874,
+          "t": 614.9494336829902,
+          "r": 357.91616072459834,
+          "b": 610.3761067479901,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "CCS CONCEPTS",
+        "level": 1,
+        "page_no": 7,
+        "bbox": {
+          "l": 329.60160378558874,
+          "t": 542.4437034135501,
+          "r": 370.50681501203456,
+          "b": 537.87037647855,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "KEYWORDS",
+        "level": 1,
+        "page_no": 7,
+        "bbox": {
+          "l": 329.60160378558874,
+          "t": 479.1620749239502,
+          "r": 359.920904255645,
+          "b": 474.58874798895005,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "ACM Reference Format:",
+        "level": 1,
+        "page_no": 7,
+        "bbox": {
+          "l": 329.60160378558874,
+          "t": 458.5687314154701,
+          "r": 388.24781708698765,
+          "b": 453.99540448047003,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "DocLayNet: A Large Human-Annotated Dataset for Document-Layout Analysis",
+        "level": 1,
+        "page_no": 7,
+        "bbox": {
+          "l": 144.3986539132768,
+          "t": 669.6826518609483,
+          "r": 291.9444243859824,
+          "b": 654.0538840779224,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "ABSTRACT",
+        "level": 1,
+        "page_no": 7,
+        "bbox": {
+          "l": 124.55262175421036,
+          "t": 607.9520956577478,
+          "r": 146.1211149403173,
+          "b": 602.5215286743751,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "CCS CONCEPTS",
+        "level": 1,
+        "page_no": 7,
+        "bbox": {
+          "l": 124.55262175421036,
+          "t": 495.4482015247195,
+          "r": 154.60688045837853,
+          "b": 490.01763454134675,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "KEYWORDS",
+        "level": 1,
+        "page_no": 7,
+        "bbox": {
+          "l": 222.5390207120533,
+          "t": 480.06568823463607,
+          "r": 245.4874118674777,
+          "b": 474.63512125126334,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "ACM Reference Format:",
+        "level": 1,
+        "page_no": 7,
+        "bbox": {
+          "l": 222.42959341051457,
+          "t": 462.0861694370455,
+          "r": 254.69901524228345,
+          "b": 458.11864123451926,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "5 EXPERIMENTS",
+        "level": 1,
+        "page_no": 8,
+        "bbox": {
+          "l": 122.99872750652476,
+          "t": 338.0934617900201,
+          "r": 163.04465184815228,
+          "b": 331.83570323547144,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Baselines for Object Detection",
+        "level": 1,
+        "page_no": 8,
+        "bbox": {
+          "l": 235.91056828312725,
+          "t": 377.12235126722504,
+          "r": 299.55598297093286,
+          "b": 370.86459271267637,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ]
+  },
+  "elapsed_ms": 11927.94,
+  "boundary": "External text-layer PDF smoke test; no gold labels, OCR, reading-order, or QA accuracy claim."
+}

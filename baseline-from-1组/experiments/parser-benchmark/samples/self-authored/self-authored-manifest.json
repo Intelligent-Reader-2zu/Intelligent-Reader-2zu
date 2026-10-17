@@ -1,0 +1,384 @@
+{
+  "manifest_version": 1,
+  "generated_on": "2026-09-24",
+  "generator": "generate_self_authored_samples.py",
+  "license_or_authorization_default": "project-authored; no third-party content",
+  "cloud_upload_allowed_default": "no",
+  "samples": [
+    {
+      "sample_id": "SELF-008",
+      "path": "samples/self-authored/markdown/SELF-008-complex.md",
+      "source": "project-authored",
+      "license_or_authorization": "project-authored; no third-party content",
+      "format": "MD",
+      "bytes": 931,
+      "pages": null,
+      "line_count": 38,
+      "char_count_utf8": 521,
+      "sha256": "47b74431f9c801f77325f711649b239b299ffd1f5feab733383672f1f91faf98",
+      "languages": [
+        "Chinese",
+        "English"
+      ],
+      "layout_features": [
+        "GFM table",
+        "code block",
+        "footnote",
+        "formula",
+        "image link",
+        "nested list"
+      ],
+      "expected_risks": [
+        "dialect extensions",
+        "asset link"
+      ],
+      "cloud_upload_allowed": "no",
+      "generated_on": "2026-09-24",
+      "generator_version": "1.0",
+      "annotation": "annotations/SELF-008.json"
+    },
+    {
+      "sample_id": "SELF-009",
+      "path": "samples/self-authored/markdown/SELF-009-heading-levels.md",
+      "source": "project-authored",
+      "license_or_authorization": "project-authored; no third-party content",
+      "format": "MD",
+      "bytes": 309,
+      "pages": null,
+      "line_count": 17,
+      "char_count_utf8": 143,
+      "sha256": "6993e1a64c6e119b7647cb9e419104e2ff954db7fccaf9af12a4c143162cb2da",
+      "languages": [
+        "Chinese",
+        "English"
+      ],
+      "layout_features": [
+        "heading level gap",
+        "nested list",
+        "blockquote",
+        "inline code"
+      ],
+      "expected_risks": [
+        "heading normalization",
+        "list nesting"
+      ],
+      "cloud_upload_allowed": "no",
+      "generated_on": "2026-09-24",
+      "generator_version": "1.0",
+      "annotation": "annotations/SELF-009.json"
+    },
+    {
+      "sample_id": "SELF-010",
+      "path": "samples/self-authored/txt/SELF-010-utf8.txt",
+      "source": "project-authored",
+      "license_or_authorization": "project-authored; no third-party content",
+      "format": "TXT",
+      "bytes": 361,
+      "pages": null,
+      "line_count": 6,
+      "char_count_utf8": 151,
+      "sha256": "492c649786f64c235b93980876ceb8e11c952629fe155b77aebc7559b6907f8f",
+      "languages": [
+        "Chinese",
+        "English"
+      ],
+      "layout_features": [
+        "UTF-8",
+        "CRLF",
+        "long line",
+        "blank line",
+        "mixed language"
+      ],
+      "expected_risks": [
+        "paragraph boundary",
+        "line normalization"
+      ],
+      "cloud_upload_allowed": "no",
+      "generated_on": "2026-09-24",
+      "generator_version": "1.0",
+      "annotation": "annotations/SELF-010.json"
+    },
+    {
+      "sample_id": "SELF-011",
+      "path": "samples/self-authored/txt/SELF-011-gb18030.txt",
+      "source": "project-authored",
+      "license_or_authorization": "project-authored; no third-party content",
+      "format": "TXT",
+      "bytes": 80,
+      "pages": null,
+      "line_count": 2,
+      "char_count_utf8": 66,
+      "sha256": "a952ff9b35731ac0e6977789c187e7b1ee8dba91cd1d19c16180668dc34ab754",
+      "languages": [
+        "Chinese",
+        "English"
+      ],
+      "layout_features": [
+        "GB18030",
+        "CRLF",
+        "Chinese punctuation"
+      ],
+      "expected_risks": [
+        "encoding detection",
+        "replacement characters"
+      ],
+      "cloud_upload_allowed": "no",
+      "generated_on": "2026-09-24",
+      "generator_version": "1.0",
+      "annotation": "annotations/SELF-011.json"
+    },
+    {
+      "sample_id": "SELF-012",
+      "path": "samples/self-authored/html/SELF-012-noisy.html",
+      "source": "project-authored",
+      "license_or_authorization": "project-authored; no third-party content",
+      "format": "HTML",
+      "bytes": 1047,
+      "pages": null,
+      "line_count": 21,
+      "char_count_utf8": 825,
+      "sha256": "e00bfbcede7bf4b28300617ba5c26447c74ef7560d44f8033bfc4a0d094dabba",
+      "languages": [
+        "Chinese",
+        "English"
+      ],
+      "layout_features": [
+        "navigation",
+        "article",
+        "table",
+        "script",
+        "ad noise",
+        "footer"
+      ],
+      "expected_risks": [
+        "content extraction",
+        "dynamic noise"
+      ],
+      "cloud_upload_allowed": "no",
+      "generated_on": "2026-09-24",
+      "generator_version": "1.0",
+      "annotation": "annotations/SELF-012.json"
+    },
+    {
+      "sample_id": "SELF-005",
+      "path": "samples/self-authored/docx/SELF-005-structured.docx",
+      "source": "project-authored",
+      "license_or_authorization": "project-authored; no third-party content",
+      "format": "DOCX",
+      "bytes": 3545,
+      "pages": null,
+      "line_count": 19,
+      "char_count_utf8": 3417,
+      "sha256": "77ddbb18413fcf6380e928a300d87d7f41b9a1e6abde0dad23a486615da25431",
+      "languages": [
+        "Chinese",
+        "English"
+      ],
+      "layout_features": [
+        "Heading 1/2",
+        "table",
+        "header",
+        "footer",
+        "footnote",
+        "page break"
+      ],
+      "expected_risks": [
+        "style mapping",
+        "pagination"
+      ],
+      "cloud_upload_allowed": "no",
+      "generated_on": "2026-09-24",
+      "generator_version": "1.0",
+      "annotation": "annotations/SELF-005.json"
+    },
+    {
+      "sample_id": "SELF-006",
+      "path": "samples/self-authored/docx/SELF-006-meeting-notes.docx",
+      "source": "project-authored",
+      "license_or_authorization": "project-authored; no third-party content",
+      "format": "DOCX",
+      "bytes": 3414,
+      "pages": null,
+      "line_count": 17,
+      "char_count_utf8": 3292,
+      "sha256": "d5c1de233a735f2b963816c3f512f8fee2ed300d91170119d3c88ef4fd0180c1",
+      "languages": [
+        "Chinese",
+        "English"
+      ],
+      "layout_features": [
+        "date",
+        "action table",
+        "bullets",
+        "redacted names"
+      ],
+      "expected_risks": [
+        "list extraction",
+        "table semantics"
+      ],
+      "cloud_upload_allowed": "no",
+      "generated_on": "2026-09-24",
+      "generator_version": "1.0",
+      "annotation": "annotations/SELF-006.json"
+    },
+    {
+      "sample_id": "SELF-007",
+      "path": "samples/self-authored/docx/SELF-007-complex.docx",
+      "source": "project-authored",
+      "license_or_authorization": "project-authored; no third-party content",
+      "format": "DOCX",
+      "bytes": 3575,
+      "pages": null,
+      "line_count": 16,
+      "char_count_utf8": 3446,
+      "sha256": "493ac305c5918558efd0d352d68bc3917e0d71405cd9aecab5514e52b05fa891",
+      "languages": [
+        "Chinese",
+        "English"
+      ],
+      "layout_features": [
+        "multilingual",
+        "table",
+        "long paragraph",
+        "page break",
+        "footnote"
+      ],
+      "expected_risks": [
+        "structure loss",
+        "cross-page paragraph"
+      ],
+      "cloud_upload_allowed": "no",
+      "generated_on": "2026-09-24",
+      "generator_version": "1.0",
+      "annotation": "annotations/SELF-007.json"
+    },
+    {
+      "sample_id": "SELF-001",
+      "path": "samples/self-authored/pdf/SELF-001-single-column.pdf",
+      "source": "project-authored",
+      "license_or_authorization": "project-authored; no third-party content",
+      "format": "PDF text",
+      "bytes": 59367,
+      "pages": 1,
+      "line_count": 357,
+      "char_count_utf8": 56509,
+      "sha256": "0391dd982a1c426c52ca865bde7c253baaa4071d7ca26317febe2391a5389c93",
+      "languages": [
+        "Chinese",
+        "English"
+      ],
+      "layout_features": [
+        "single column",
+        "header",
+        "footer",
+        "footnote",
+        "table",
+        "page number"
+      ],
+      "expected_risks": [
+        "reading order",
+        "printed page label"
+      ],
+      "cloud_upload_allowed": "no",
+      "generated_on": "2026-09-24",
+      "generator_version": "1.0",
+      "annotation": "annotations/SELF-001.json"
+    },
+    {
+      "sample_id": "SELF-003",
+      "path": "samples/self-authored/pdf/SELF-003-table-formula.pdf",
+      "source": "project-authored",
+      "license_or_authorization": "project-authored; no third-party content",
+      "format": "PDF text",
+      "bytes": 59335,
+      "pages": 1,
+      "line_count": 324,
+      "char_count_utf8": 56305,
+      "sha256": "e0776c95d8ff89cc61a6cac9558775f07df3dd4eb234ede9ee69ace4c673852a",
+      "languages": [
+        "Chinese",
+        "English"
+      ],
+      "layout_features": [
+        "table",
+        "formula",
+        "figure caption",
+        "mixed language"
+      ],
+      "expected_risks": [
+        "table structure",
+        "formula extraction"
+      ],
+      "cloud_upload_allowed": "no",
+      "generated_on": "2026-09-24",
+      "generator_version": "1.0",
+      "annotation": "annotations/SELF-003.json"
+    },
+    {
+      "sample_id": "SELF-002",
+      "path": "samples/self-authored/pdf/SELF-002-two-column.pdf",
+      "source": "project-authored",
+      "license_or_authorization": "project-authored; no third-party content",
+      "format": "PDF text",
+      "bytes": 79526,
+      "pages": 2,
+      "line_count": 402,
+      "char_count_utf8": 75704,
+      "sha256": "614c8a0cd2fe20b50419aa024f71ed93bb7b938c1f7aaf7b2a765dfe9a4fdddb",
+      "languages": [
+        "Chinese",
+        "English"
+      ],
+      "layout_features": [
+        "two columns",
+        "cross-column heading",
+        "references",
+        "table"
+      ],
+      "expected_risks": [
+        "column order",
+        "citation bbox"
+      ],
+      "cloud_upload_allowed": "no",
+      "generated_on": "2026-09-24",
+      "generator_version": "1.0",
+      "annotation": "annotations/SELF-002.json"
+    },
+    {
+      "sample_id": "SELF-004",
+      "path": "samples/self-authored/pdf/SELF-004-scanned.pdf",
+      "source": "project-authored",
+      "license_or_authorization": "project-authored; no third-party content",
+      "format": "PDF scan",
+      "bytes": 254860,
+      "pages": 2,
+      "line_count": 3736,
+      "char_count_utf8": 247767,
+      "sha256": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+      "languages": [
+        "Chinese",
+        "English"
+      ],
+      "layout_features": [
+        "image-only",
+        "Chinese OCR",
+        "English abbreviation",
+        "tilt",
+        "noise"
+      ],
+      "expected_risks": [
+        "OCR CER",
+        "low confidence"
+      ],
+      "cloud_upload_allowed": "no",
+      "generated_on": "2026-09-24",
+      "generator_version": "1.0",
+      "annotation": "annotations/SELF-004.json"
+    }
+  ],
+  "skipped_optional_outputs": [],
+  "notes": [
+    "These samples are controlled fixtures, not evidence that a parser supports all real-world documents.",
+    "Keep source files and annotations together; do not silently normalize or overwrite the originals."
+  ]
+}

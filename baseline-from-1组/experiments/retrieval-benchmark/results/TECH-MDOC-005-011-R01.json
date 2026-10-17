@@ -1,0 +1,393 @@
+{
+  "experiment_id": "TECH-MDOC-005-011-R01",
+  "scope": "real local embedding multi-document retrieval; synthetic fixture only; no cloud call",
+  "model": "BAAI/bge-small-zh-v1.5",
+  "model_revision": "7999e1d3359715c523056ef9478215996d62a620",
+  "model_bytes": 96378172,
+  "model_sha256": {
+    "config.json": "3853a7979202c348751b753e36f579c41d8da7d36af617d3d907e1fc9b441f2a",
+    "model.safetensors": "354763b9b1357bc9c44f62c6be2276321081ed2567773608c0d0785b61d5a026",
+    "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+    "sentence_bert_config.json": "84e39fda68ccbff05bfa723ae9c0e70e23e2ec373b76e0f8c6e71af72a693cbf",
+    "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+    "tokenizer.json": "48cea5d44424912a6fd1ea647bf4fe50b55ab8b1e5879c3275f80e339e8fae26",
+    "tokenizer_config.json": "e6f3b96db926a37d4039995fbf5ad17de158dfb8f6343d607e4dbaad18d75f5a",
+    "vocab.txt": "45bbac6b341c319adc98a532532882e91a9cefc0329aa57bac9ae761c27b291c",
+    "1_Pooling\\config.json": "aaa8861589f80c961a03cc86c7eeaef7605c1676b9ab55329d33a304738769c6"
+  },
+  "device": "cpu",
+  "embedding_dimension": 512,
+  "document_count": 43,
+  "document_encoding_ms": 320.583,
+  "summary": {
+    "bm25": {
+      "answerable_mean_coverage": 1.0,
+      "unauthorized_leak_rate": 0.0,
+      "mean_context_chars": 42.5,
+      "query_p50_ms": 11.106,
+      "query_p95_ms": 11.45
+    },
+    "vector_real": {
+      "answerable_mean_coverage": 1.0,
+      "unauthorized_leak_rate": 0.0,
+      "mean_context_chars": 60.5,
+      "query_p50_ms": 11.106,
+      "query_p95_ms": 11.45
+    },
+    "hybrid_rrf_real": {
+      "answerable_mean_coverage": 1.0,
+      "unauthorized_leak_rate": 0.0,
+      "mean_context_chars": 60.5,
+      "query_p50_ms": 11.106,
+      "query_p95_ms": 11.45
+    }
+  },
+  "rows": [
+    {
+      "id": "M01",
+      "type": "authorized_search",
+      "gold": [
+        "DOC-B-v1-1-1"
+      ],
+      "methods": {
+        "bm25": {
+          "returned": [
+            "DOC-B-v1-1-1",
+            "DOC-A-v1-1-1",
+            "DOC-A-v1-2-1"
+          ],
+          "gold_coverage": 1.0,
+          "unauthorized_leak": false,
+          "source_versions": [
+            "DOC-A@v1",
+            "DOC-B@v1"
+          ],
+          "context_chars": 108
+        },
+        "vector_real": {
+          "returned": [
+            "DOC-B-v1-1-1",
+            "DOC-A-v1-1-1",
+            "DOC-A-v1-2-1"
+          ],
+          "gold_coverage": 1.0,
+          "unauthorized_leak": false,
+          "source_versions": [
+            "DOC-A@v1",
+            "DOC-B@v1"
+          ],
+          "context_chars": 108
+        },
+        "hybrid_rrf_real": {
+          "returned": [
+            "DOC-B-v1-1-1",
+            "DOC-A-v1-1-1",
+            "DOC-A-v1-2-1"
+          ],
+          "gold_coverage": 1.0,
+          "unauthorized_leak": false,
+          "source_versions": [
+            "DOC-A@v1",
+            "DOC-B@v1"
+          ],
+          "context_chars": 108
+        }
+      }
+    },
+    {
+      "id": "M02",
+      "type": "unauthorized_only",
+      "gold": [],
+      "methods": {
+        "bm25": {
+          "returned": [],
+          "gold_coverage": 0.0,
+          "unauthorized_leak": false,
+          "source_versions": [],
+          "context_chars": 0
+        },
+        "vector_real": {
+          "returned": [
+            "DOC-A-v1-1-1",
+            "DOC-B-v1-1-1",
+            "DOC-A-v1-2-1"
+          ],
+          "gold_coverage": 0.0,
+          "unauthorized_leak": false,
+          "source_versions": [
+            "DOC-A@v1",
+            "DOC-B@v1"
+          ],
+          "context_chars": 108
+        },
+        "hybrid_rrf_real": {
+          "returned": [
+            "DOC-A-v1-1-1",
+            "DOC-A-v1-2-1",
+            "DOC-B-v1-1-1"
+          ],
+          "gold_coverage": 0.0,
+          "unauthorized_leak": false,
+          "source_versions": [
+            "DOC-A@v1",
+            "DOC-B@v1"
+          ],
+          "context_chars": 108
+        }
+      }
+    },
+    {
+      "id": "M03",
+      "type": "conflict",
+      "gold": [
+        "CONFLICT-A-v1-1-1",
+        "CONFLICT-B-v2-1-1"
+      ],
+      "methods": {
+        "bm25": {
+          "returned": [
+            "CONFLICT-A-v1-1-1",
+            "CONFLICT-B-v2-1-1"
+          ],
+          "gold_coverage": 1.0,
+          "unauthorized_leak": false,
+          "source_versions": [
+            "CONFLICT-A@v1",
+            "CONFLICT-B@v2"
+          ],
+          "context_chars": 42
+        },
+        "vector_real": {
+          "returned": [
+            "CONFLICT-A-v1-1-1",
+            "CONFLICT-B-v2-1-1"
+          ],
+          "gold_coverage": 1.0,
+          "unauthorized_leak": false,
+          "source_versions": [
+            "CONFLICT-A@v1",
+            "CONFLICT-B@v2"
+          ],
+          "context_chars": 42
+        },
+        "hybrid_rrf_real": {
+          "returned": [
+            "CONFLICT-A-v1-1-1",
+            "CONFLICT-B-v2-1-1"
+          ],
+          "gold_coverage": 1.0,
+          "unauthorized_leak": false,
+          "source_versions": [
+            "CONFLICT-A@v1",
+            "CONFLICT-B@v2"
+          ],
+          "context_chars": 42
+        }
+      }
+    },
+    {
+      "id": "M04",
+      "type": "version",
+      "gold": [
+        "VERSIONED-v2-1-1"
+      ],
+      "methods": {
+        "bm25": {
+          "returned": [
+            "VERSIONED-v2-1-1",
+            "VERSIONED-v1-1-1"
+          ],
+          "gold_coverage": 1.0,
+          "unauthorized_leak": false,
+          "source_versions": [
+            "VERSIONED@v1",
+            "VERSIONED@v2"
+          ],
+          "context_chars": 28
+        },
+        "vector_real": {
+          "returned": [
+            "VERSIONED-v2-1-1",
+            "VERSIONED-v1-1-1"
+          ],
+          "gold_coverage": 1.0,
+          "unauthorized_leak": false,
+          "source_versions": [
+            "VERSIONED@v1",
+            "VERSIONED@v2"
+          ],
+          "context_chars": 28
+        },
+        "hybrid_rrf_real": {
+          "returned": [
+            "VERSIONED-v2-1-1",
+            "VERSIONED-v1-1-1"
+          ],
+          "gold_coverage": 1.0,
+          "unauthorized_leak": false,
+          "source_versions": [
+            "VERSIONED@v1",
+            "VERSIONED@v2"
+          ],
+          "context_chars": 28
+        }
+      }
+    },
+    {
+      "id": "M05",
+      "type": "sensitivity",
+      "gold": [
+        "RESTRICTED-01-v1-1-1"
+      ],
+      "methods": {
+        "bm25": {
+          "returned": [
+            "RESTRICTED-01-v1-1-1",
+            "PUBLIC-01-v1-1-1"
+          ],
+          "gold_coverage": 1.0,
+          "unauthorized_leak": false,
+          "source_versions": [
+            "PUBLIC-01@v1",
+            "RESTRICTED-01@v1"
+          ],
+          "context_chars": 37
+        },
+        "vector_real": {
+          "returned": [
+            "RESTRICTED-01-v1-1-1",
+            "PUBLIC-01-v1-1-1"
+          ],
+          "gold_coverage": 1.0,
+          "unauthorized_leak": false,
+          "source_versions": [
+            "PUBLIC-01@v1",
+            "RESTRICTED-01@v1"
+          ],
+          "context_chars": 37
+        },
+        "hybrid_rrf_real": {
+          "returned": [
+            "RESTRICTED-01-v1-1-1",
+            "PUBLIC-01-v1-1-1"
+          ],
+          "gold_coverage": 1.0,
+          "unauthorized_leak": false,
+          "source_versions": [
+            "PUBLIC-01@v1",
+            "RESTRICTED-01@v1"
+          ],
+          "context_chars": 37
+        }
+      }
+    },
+    {
+      "id": "M06",
+      "type": "same_name",
+      "gold": [
+        "DUP-A-v1-1-1",
+        "DUP-B-v1-1-1"
+      ],
+      "methods": {
+        "bm25": {
+          "returned": [
+            "DUP-A-v1-1-1",
+            "DUP-B-v1-1-1"
+          ],
+          "gold_coverage": 1.0,
+          "unauthorized_leak": false,
+          "source_versions": [
+            "DUP-A@v1",
+            "DUP-B@v1"
+          ],
+          "context_chars": 40
+        },
+        "vector_real": {
+          "returned": [
+            "DUP-A-v1-1-1",
+            "DUP-B-v1-1-1"
+          ],
+          "gold_coverage": 1.0,
+          "unauthorized_leak": false,
+          "source_versions": [
+            "DUP-A@v1",
+            "DUP-B@v1"
+          ],
+          "context_chars": 40
+        },
+        "hybrid_rrf_real": {
+          "returned": [
+            "DUP-A-v1-1-1",
+            "DUP-B-v1-1-1"
+          ],
+          "gold_coverage": 1.0,
+          "unauthorized_leak": false,
+          "source_versions": [
+            "DUP-A@v1",
+            "DUP-B@v1"
+          ],
+          "context_chars": 40
+        }
+      }
+    }
+  ],
+  "scale": [
+    {
+      "documents": 1,
+      "blocks": 1,
+      "embedding_encode_ms": 12.969,
+      "bm25_query_ms": 0.015,
+      "embedding_dimension": 512
+    },
+    {
+      "documents": 5,
+      "blocks": 5,
+      "embedding_encode_ms": 37.588,
+      "bm25_query_ms": 0.055,
+      "embedding_dimension": 512
+    },
+    {
+      "documents": 10,
+      "blocks": 10,
+      "embedding_encode_ms": 71.292,
+      "bm25_query_ms": 0.079,
+      "embedding_dimension": 512
+    },
+    {
+      "documents": 20,
+      "blocks": 20,
+      "embedding_encode_ms": 111.841,
+      "bm25_query_ms": 0.134,
+      "embedding_dimension": 512
+    },
+    {
+      "documents": 50,
+      "blocks": 50,
+      "embedding_encode_ms": 247.277,
+      "bm25_query_ms": 0.293,
+      "embedding_dimension": 512
+    },
+    {
+      "documents": 100,
+      "blocks": 100,
+      "embedding_encode_ms": 384.749,
+      "bm25_query_ms": 0.516,
+      "embedding_dimension": 512
+    },
+    {
+      "documents": 500,
+      "blocks": 500,
+      "embedding_encode_ms": 1708.799,
+      "bm25_query_ms": 2.37,
+      "embedding_dimension": 512
+    },
+    {
+      "documents": 1000,
+      "blocks": 1000,
+      "embedding_encode_ms": 3372.526,
+      "bm25_query_ms": 5.091,
+      "embedding_dimension": 512
+    }
+  ],
+  "boundary": "This measures local embedding/retrieval plumbing on a small synthetic set. It does not establish semantic QA quality, production throughput, cloud cost, or deletion compliance."
+}

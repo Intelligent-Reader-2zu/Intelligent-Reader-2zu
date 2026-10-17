@@ -1,0 +1,733 @@
+{
+  "experiment_id": "TECH-OCR-020-R03",
+  "status": "succeeded",
+  "paddleocr_version": "3.7.0",
+  "paddle_version": "3.3.1",
+  "python_version": "3.11.16",
+  "settings": {
+    "use_doc_orientation_classify": false,
+    "use_doc_unwarping": false,
+    "use_textline_orientation": false,
+    "use_seal_recognition": false,
+    "use_table_recognition": true,
+    "use_formula_recognition": false,
+    "use_chart_recognition": false,
+    "use_region_detection": false,
+    "lang": "ch",
+    "use_table_orientation_classify": false,
+    "device": "cpu",
+    "enable_mkldnn": false
+  },
+  "model_init_ms": 9787.635799999407,
+  "samples": [
+    {
+      "sample_id": "SELF-004-page-1-1000px",
+      "status": "succeeded",
+      "image_path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\results\\ocr-ppstructure-v3\\inputs\\SELF-004-page-1-1000px.png",
+      "elapsed_ms": 118593.42230000038,
+      "outputs": [
+        {
+          "res": {
+            "input_path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\results\\ocr-ppstructure-v3\\inputs\\SELF-004-page-1-1000px.png",
+            "page_index": null,
+            "page_count": null,
+            "width": 1000,
+            "height": 1414,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_seal_recognition": false,
+              "use_table_recognition": true,
+              "use_formula_recognition": false,
+              "use_chart_recognition": false,
+              "use_region_detection": false,
+              "format_block_content": false,
+              "markdown_ignore_labels": [
+                "number",
+                "footnote",
+                "header",
+                "header_image",
+                "footer",
+                "footer_image",
+                "aside_text"
+              ]
+            },
+            "parsing_res_list": [
+              {
+                "block_label": "doc_title",
+                "block_content": "扫描型中文样本/OCRTEST ",
+                "block_bbox": [
+                  71,
+                  77,
+                  337,
+                  98
+                ],
+                "block_id": 0,
+                "block_order": 1
+              },
+              {
+                "block_label": "text",
+                "block_content": "第1页文档解析质量验证",
+                "block_bbox": [
+                  77,
+                  158,
+                  252,
+                  173
+                ],
+                "block_id": 1,
+                "block_order": 2
+              },
+              {
+                "block_label": "text",
+                "block_content": "本页故意包含中文、Englishabbreviation、数字12345和全角标点",
+                "block_bbox": [
+                  77,
+                  218,
+                  524,
+                  234
+                ],
+                "block_id": 2,
+                "block_order": 3
+              },
+              {
+                "block_label": "text",
+                "block_content": "OCR应保留物理页码，并标记可能存在的字符错误。",
+                "block_bbox": [
+                  77,
+                  279,
+                  412,
+                  294
+                ],
+                "block_id": 3,
+                "block_order": 4
+              },
+              {
+                "block_label": "text",
+                "block_content": "表格区域：解析器应至少保留行列关系或原图位置。",
+                "block_bbox": [
+                  77,
+                  339,
+                  409,
+                  355
+                ],
+                "block_id": 4,
+                "block_order": 5
+              },
+              {
+                "block_label": "text",
+                "block_content": "注：页面略有倾斜，背景包含轻微噪声。",
+                "block_bbox": [
+                  77,
+                  400,
+                  333,
+                  415
+                ],
+                "block_id": 5,
+                "block_order": 6
+              },
+              {
+                "block_label": "text",
+                "block_content": "A-010.95表格候选单元格",
+                "block_bbox": [
+                  78,
+                  493,
+                  287,
+                  509
+                ],
+                "block_id": 6,
+                "block_order": 7
+              },
+              {
+                "block_label": "text",
+                "block_content": "扫描样本页脚|page label：1",
+                "block_bbox": [
+                  79,
+                  1306,
+                  267,
+                  1324
+                ],
+                "block_id": 7,
+                "block_order": 8
+              }
+            ],
+            "layout_det_res": {
+              "input_path": null,
+              "page_index": null,
+              "boxes": [
+                {
+                  "cls_id": 2,
+                  "label": "text",
+                  "score": 0.8980183005332947,
+                  "coordinate": [
+                    77.8370361328125,
+                    339.81671142578125,
+                    409.9696960449219,
+                    355.319091796875
+                  ]
+                },
+                {
+                  "cls_id": 2,
+                  "label": "text",
+                  "score": 0.8975918292999268,
+                  "coordinate": [
+                    77.65657043457031,
+                    400.27008056640625,
+                    333.67510986328125,
+                    415.63665771484375
+                  ]
+                },
+                {
+                  "cls_id": 2,
+                  "label": "text",
+                  "score": 0.8956235647201538,
+                  "coordinate": [
+                    78.09384155273438,
+                    493.7886962890625,
+                    287.9381103515625,
+                    509.1185302734375
+                  ]
+                },
+                {
+                  "cls_id": 2,
+                  "label": "text",
+                  "score": 0.8937033414840698,
+                  "coordinate": [
+                    77.9952392578125,
+                    279.388671875,
+                    412.6278991699219,
+                    294.7021484375
+                  ]
+                },
+                {
+                  "cls_id": 2,
+                  "label": "text",
+                  "score": 0.891537070274353,
+                  "coordinate": [
+                    77.78359985351562,
+                    218.85214233398438,
+                    524.0234375,
+                    234.56137084960938
+                  ]
+                },
+                {
+                  "cls_id": 2,
+                  "label": "text",
+                  "score": 0.8705947399139404,
+                  "coordinate": [
+                    77.75509643554688,
+                    158.41075134277344,
+                    252.62216186523438,
+                    173.8095245361328
+                  ]
+                },
+                {
+                  "cls_id": 2,
+                  "label": "text",
+                  "score": 0.6211986541748047,
+                  "coordinate": [
+                    79.455322265625,
+                    1306.730224609375,
+                    267.41314697265625,
+                    1324.263916015625
+                  ]
+                },
+                {
+                  "cls_id": 0,
+                  "label": "paragraph_title",
+                  "score": 0.5562867522239685,
+                  "coordinate": [
+                    71.95698547363281,
+                    77.64929962158203,
+                    337.702880859375,
+                    98.83914947509766
+                  ]
+                }
+              ]
+            },
+            "overall_ocr_res": {
+              "input_path": null,
+              "page_index": null,
+              "model_settings": {
+                "use_doc_preprocessor": false,
+                "use_textline_orientation": false
+              },
+              "dt_polys": [
+                [
+                  [
+                    75,
+                    78
+                  ],
+                  [
+                    338,
+                    77
+                  ],
+                  [
+                    338,
+                    98
+                  ],
+                  [
+                    75,
+                    99
+                  ]
+                ],
+                [
+                  [
+                    80,
+                    158
+                  ],
+                  [
+                    251,
+                    158
+                  ],
+                  [
+                    251,
+                    175
+                  ],
+                  [
+                    80,
+                    175
+                  ]
+                ],
+                [
+                  [
+                    82,
+                    219
+                  ],
+                  [
+                    522,
+                    219
+                  ],
+                  [
+                    522,
+                    236
+                  ],
+                  [
+                    82,
+                    236
+                  ]
+                ],
+                [
+                  [
+                    82,
+                    279
+                  ],
+                  [
+                    411,
+                    279
+                  ],
+                  [
+                    411,
+                    296
+                  ],
+                  [
+                    82,
+                    296
+                  ]
+                ],
+                [
+                  [
+                    82,
+                    340
+                  ],
+                  [
+                    410,
+                    340
+                  ],
+                  [
+                    410,
+                    358
+                  ],
+                  [
+                    82,
+                    358
+                  ]
+                ],
+                [
+                  [
+                    81,
+                    401
+                  ],
+                  [
+                    334,
+                    401
+                  ],
+                  [
+                    334,
+                    418
+                  ],
+                  [
+                    81,
+                    418
+                  ]
+                ],
+                [
+                  [
+                    80,
+                    493
+                  ],
+                  [
+                    133,
+                    493
+                  ],
+                  [
+                    133,
+                    511
+                  ],
+                  [
+                    80,
+                    511
+                  ]
+                ],
+                [
+                  [
+                    131,
+                    493
+                  ],
+                  [
+                    183,
+                    493
+                  ],
+                  [
+                    183,
+                    511
+                  ],
+                  [
+                    131,
+                    511
+                  ]
+                ],
+                [
+                  [
+                    182,
+                    494
+                  ],
+                  [
+                    287,
+                    494
+                  ],
+                  [
+                    287,
+                    511
+                  ],
+                  [
+                    182,
+                    511
+                  ]
+                ],
+                [
+                  [
+                    80,
+                    1307
+                  ],
+                  [
+                    269,
+                    1307
+                  ],
+                  [
+                    269,
+                    1327
+                  ],
+                  [
+                    80,
+                    1327
+                  ]
+                ]
+              ],
+              "text_det_params": {
+                "limit_side_len": 736,
+                "limit_type": "min",
+                "thresh": 0.3,
+                "max_side_limit": 4000,
+                "box_thresh": 0.6,
+                "unclip_ratio": 1.5
+              },
+              "text_type": "general",
+              "textline_orientation_angles": [
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+              ],
+              "text_rec_score_thresh": 0.0,
+              "return_word_box": false,
+              "rec_texts": [
+                "扫描型中文样本/OCRTEST",
+                "第1页文档解析质量验证",
+                "本页故意包含中文、Englishabbreviation、数字12345和全角标点",
+                "OCR应保留物理页码，并标记可能存在的字符错误。",
+                "表格区域：解析器应至少保留行列关系或原图位置。",
+                "注：页面略有倾斜，背景包含轻微噪声。",
+                "A-01",
+                "0.95",
+                "表格候选单元格",
+                "扫描样本页脚|page label：1"
+              ],
+              "rec_scores": [
+                0.9846000075340271,
+                0.9987085461616516,
+                0.9840011596679688,
+                0.9892969131469727,
+                0.9981476068496704,
+                0.9971334934234619,
+                0.9990037679672241,
+                0.9997227787971497,
+                0.9984843134880066,
+                0.9392557740211487
+              ],
+              "rec_polys": [
+                [
+                  [
+                    75,
+                    78
+                  ],
+                  [
+                    338,
+                    77
+                  ],
+                  [
+                    338,
+                    98
+                  ],
+                  [
+                    75,
+                    99
+                  ]
+                ],
+                [
+                  [
+                    80,
+                    158
+                  ],
+                  [
+                    251,
+                    158
+                  ],
+                  [
+                    251,
+                    175
+                  ],
+                  [
+                    80,
+                    175
+                  ]
+                ],
+                [
+                  [
+                    82,
+                    219
+                  ],
+                  [
+                    522,
+                    219
+                  ],
+                  [
+                    522,
+                    236
+                  ],
+                  [
+                    82,
+                    236
+                  ]
+                ],
+                [
+                  [
+                    82,
+                    279
+                  ],
+                  [
+                    411,
+                    279
+                  ],
+                  [
+                    411,
+                    296
+                  ],
+                  [
+                    82,
+                    296
+                  ]
+                ],
+                [
+                  [
+                    82,
+                    340
+                  ],
+                  [
+                    410,
+                    340
+                  ],
+                  [
+                    410,
+                    358
+                  ],
+                  [
+                    82,
+                    358
+                  ]
+                ],
+                [
+                  [
+                    81,
+                    401
+                  ],
+                  [
+                    334,
+                    401
+                  ],
+                  [
+                    334,
+                    418
+                  ],
+                  [
+                    81,
+                    418
+                  ]
+                ],
+                [
+                  [
+                    80,
+                    493
+                  ],
+                  [
+                    133,
+                    493
+                  ],
+                  [
+                    133,
+                    511
+                  ],
+                  [
+                    80,
+                    511
+                  ]
+                ],
+                [
+                  [
+                    131,
+                    493
+                  ],
+                  [
+                    183,
+                    493
+                  ],
+                  [
+                    183,
+                    511
+                  ],
+                  [
+                    131,
+                    511
+                  ]
+                ],
+                [
+                  [
+                    182,
+                    494
+                  ],
+                  [
+                    287,
+                    494
+                  ],
+                  [
+                    287,
+                    511
+                  ],
+                  [
+                    182,
+                    511
+                  ]
+                ],
+                [
+                  [
+                    80,
+                    1307
+                  ],
+                  [
+                    269,
+                    1307
+                  ],
+                  [
+                    269,
+                    1327
+                  ],
+                  [
+                    80,
+                    1327
+                  ]
+                ]
+              ],
+              "rec_boxes": [
+                [
+                  75,
+                  77,
+                  338,
+                  99
+                ],
+                [
+                  80,
+                  158,
+                  251,
+                  175
+                ],
+                [
+                  82,
+                  219,
+                  522,
+                  236
+                ],
+                [
+                  82,
+                  279,
+                  411,
+                  296
+                ],
+                [
+                  82,
+                  340,
+                  410,
+                  358
+                ],
+                [
+                  81,
+                  401,
+                  334,
+                  418
+                ],
+                [
+                  80,
+                  493,
+                  133,
+                  511
+                ],
+                [
+                  131,
+                  493,
+                  183,
+                  511
+                ],
+                [
+                  182,
+                  494,
+                  287,
+                  511
+                ],
+                [
+                  80,
+                  1307,
+                  269,
+                  1327
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "boundary": "Two project-authored pages; smoke test without manually annotated cell/layout ground truth."
+}

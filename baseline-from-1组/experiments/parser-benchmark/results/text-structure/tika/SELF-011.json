@@ -1,0 +1,17 @@
+    {
+      "sample_id":"SELF-011",
+      "status":"limited_no_text",
+      "format":"TXT",
+      "parser":"Apache Tika",
+      "parser_version":"3.2.1",
+      "ocr_enabled":false,
+      "config_hash":"c6441ba93c16c1a9e8af451b67d2afa85855e37f98e909ee9fcef9e8ddb341fa",
+      "text_chars":0,
+      "source_path":"D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\self-authored\\txt\\SELF-011-gb18030.txt",
+      "source_sha256":"a952ff9b35731ac0e6977789c187e7b1ee8dba91cd1d19c16180668dc34ab754",
+      "query_hits": {"physical_page":false,"heading_path":false,"脚注":false,"跨栏标题":false,"参考文献":false,"Recall@k":false,"合并单元格":false,"DOCX 标题样式":false,"引用定位":false,"block_id":false,"GB18030":false,"段落边界":false},
+      "failure_reason":"Tika returned no text; likely unsupported encoding or EmptyParser path",
+      "metadata": {"Content-Type":"application/octet-stream","X-TIKA:Parsed-By":"org.apache.tika.parser.EmptyParser","X-TIKA:Parsed-By-Full-Set":"org.apache.tika.parser.EmptyParser"},
+      "text_preview":"",
+      "boundary":"Text extraction and metadata only; no bbox, AST, OCR, cloud service, vector retrieval, or QA evaluation."
+    }

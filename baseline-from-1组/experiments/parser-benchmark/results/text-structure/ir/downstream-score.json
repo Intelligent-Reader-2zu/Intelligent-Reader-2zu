@@ -1,0 +1,578 @@
+{
+  "experiment_id": "TECH-STRUCT-008-R01",
+  "scope": "navigation path and source-location retention after fixed evidence lookup",
+  "outputs": [
+    {
+      "sample_id": "SELF-001",
+      "format": "PDF",
+      "parser": "Docling",
+      "mode": "docling-pdf",
+      "query_count": 6,
+      "query_recall": 1.0,
+      "heading_path_retention": 1.0,
+      "location_retention": 1.0,
+      "hits": [
+        {
+          "query": "physical_page",
+          "matched": true,
+          "element_id": "self-001-0391dd982a1c-e0013",
+          "element_type": "table_cell",
+          "heading_path": [
+            "智能阅读器自制 PDF 样本"
+          ],
+          "location": {
+            "kind": "pdf_page_bbox",
+            "physical_page": 1,
+            "bbox": [
+              89.62205,
+              216.9807184,
+              143.0595508,
+              224.919868075865
+            ]
+          },
+          "is_table_or_equation": true
+        },
+        {
+          "query": "heading_path",
+          "matched": true,
+          "element_id": "self-001-0391dd982a1c-e0016",
+          "element_type": "table_cell",
+          "heading_path": [
+            "智能阅读器自制 PDF 样本"
+          ],
+          "location": {
+            "kind": "pdf_page_bbox",
+            "physical_page": 1,
+            "bbox": [
+              89.62205,
+              234.9807184,
+              141.82517560000002,
+              242.919868075865
+            ]
+          },
+          "is_table_or_equation": true
+        },
+        {
+          "query": "脚注",
+          "matched": true,
+          "element_id": "self-001-0391dd982a1c-e0002",
+          "element_type": "paragraph",
+          "heading_path": [
+            "1 研究目标"
+          ],
+          "location": {
+            "kind": "pdf_page_bbox",
+            "physical_page": 1,
+            "bbox": [
+              57.02362,
+              705.54360315,
+              498.14739805000005,
+              696.1158629099104
+            ]
+          },
+          "is_table_or_equation": false
+        },
+        {
+          "query": "物理页码",
+          "matched": true,
+          "element_id": "self-001-0391dd982a1c-e0004",
+          "element_type": "paragraph",
+          "heading_path": [
+            "2 关键结论"
+          ],
+          "location": {
+            "kind": "pdf_page_bbox",
+            "physical_page": 1,
+            "bbox": [
+              57.02362,
+              660.54360315,
+              459.36346375,
+              651.1158629099104
+            ]
+          },
+          "is_table_or_equation": false
+        },
+        {
+          "query": "标题路径",
+          "matched": true,
+          "element_id": "self-001-0391dd982a1c-e0004",
+          "element_type": "paragraph",
+          "heading_path": [
+            "2 关键结论"
+          ],
+          "location": {
+            "kind": "pdf_page_bbox",
+            "physical_page": 1,
+            "bbox": [
+              57.02362,
+              660.54360315,
+              459.36346375,
+              651.1158629099104
+            ]
+          },
+          "is_table_or_equation": false
+        },
+        {
+          "query": "脚注占位",
+          "matched": true,
+          "element_id": "self-001-0391dd982a1c-e0005",
+          "element_type": "paragraph",
+          "heading_path": [
+            "2 关键结论"
+          ],
+          "location": {
+            "kind": "pdf_page_bbox",
+            "physical_page": 1,
+            "bbox": [
+              57.02362,
+              586.03090775,
+              282.02362,
+              578.5879549288766
+            ]
+          },
+          "is_table_or_equation": false
+        }
+      ],
+      "boundary": "Fixed keyword/evidence checks only; not semantic retrieval or answer correctness."
+    },
+    {
+      "sample_id": "SELF-002",
+      "format": "PDF",
+      "parser": "Docling",
+      "mode": "docling-pdf",
+      "query_count": 5,
+      "query_recall": 1.0,
+      "heading_path_retention": 1.0,
+      "location_retention": 1.0,
+      "hits": [
+        {
+          "query": "跨栏标题",
+          "matched": true,
+          "element_id": "self-002-614c8a0cd2fe-e0002",
+          "element_type": "paragraph",
+          "heading_path": [
+            "智能阅读器自制 PDF 样本"
+          ],
+          "location": {
+            "kind": "pdf_page_bbox",
+            "physical_page": 1,
+            "bbox": [
+              48.51969,
+              761.05540315,
+              257.51968999999997,
+              751.6276629099104
+            ]
+          },
+          "is_table_or_equation": false
+        },
+        {
+          "query": "参考文献",
+          "matched": true,
+          "element_id": "self-002-614c8a0cd2fe-e0002",
+          "element_type": "paragraph",
+          "heading_path": [
+            "智能阅读器自制 PDF 样本"
+          ],
+          "location": {
+            "kind": "pdf_page_bbox",
+            "physical_page": 1,
+            "bbox": [
+              48.51969,
+              761.05540315,
+              257.51968999999997,
+              751.6276629099104
+            ]
+          },
+          "is_table_or_equation": false
+        },
+        {
+          "query": "阅读顺序",
+          "matched": true,
+          "element_id": "self-002-614c8a0cd2fe-e0002",
+          "element_type": "paragraph",
+          "heading_path": [
+            "智能阅读器自制 PDF 样本"
+          ],
+          "location": {
+            "kind": "pdf_page_bbox",
+            "physical_page": 1,
+            "bbox": [
+              48.51969,
+              761.05540315,
+              257.51968999999997,
+              751.6276629099104
+            ]
+          },
+          "is_table_or_equation": false
+        },
+        {
+          "query": "跨栏标题和参考文献",
+          "matched": true,
+          "element_id": "self-002-614c8a0cd2fe-e0002",
+          "element_type": "paragraph",
+          "heading_path": [
+            "智能阅读器自制 PDF 样本"
+          ],
+          "location": {
+            "kind": "pdf_page_bbox",
+            "physical_page": 1,
+            "bbox": [
+              48.51969,
+              761.05540315,
+              257.51968999999997,
+              751.6276629099104
+            ]
+          },
+          "is_table_or_equation": false
+        },
+        {
+          "query": "第二页用于检查页码",
+          "matched": true,
+          "element_id": "self-002-614c8a0cd2fe-e0016",
+          "element_type": "paragraph",
+          "heading_path": [
+            "4 第二页"
+          ],
+          "location": {
+            "kind": "pdf_page_bbox",
+            "physical_page": 2,
+            "bbox": [
+              48.51969,
+              769.05540315,
+              238.51969,
+              759.6276629099104
+            ]
+          },
+          "is_table_or_equation": false
+        }
+      ],
+      "boundary": "Fixed keyword/evidence checks only; not semantic retrieval or answer correctness."
+    },
+    {
+      "sample_id": "SELF-003",
+      "format": "PDF",
+      "parser": "Docling",
+      "mode": "docling-pdf",
+      "query_count": 5,
+      "query_recall": 1.0,
+      "heading_path_retention": 1.0,
+      "location_retention": 1.0,
+      "hits": [
+        {
+          "query": "Recall@k",
+          "matched": true,
+          "element_id": "self-003-e0776c95d8ff-e0002",
+          "element_type": "paragraph",
+          "heading_path": [
+            "1 研究目标"
+          ],
+          "location": {
+            "kind": "pdf_page_bbox",
+            "physical_page": 1,
+            "bbox": [
+              57.02362,
+              705.54360315,
+              436.99114805000005,
+              696.1158629099104
+            ]
+          },
+          "is_table_or_equation": false
+        },
+        {
+          "query": "合并单元格",
+          "matched": true,
+          "element_id": "self-003-e0776c95d8ff-e0019",
+          "element_type": "table_cell",
+          "heading_path": [
+            "智能阅读器自制 PDF：表格与公式"
+          ],
+          "location": {
+            "kind": "pdf_page_bbox",
+            "physical_page": 1,
+            "bbox": [
+              333.40155000000004,
+              234.9807184,
+              397.40155,
+              242.919868075865
+            ]
+          },
+          "is_table_or_equation": true
+        },
+        {
+          "query": "公式",
+          "matched": true,
+          "element_id": "self-003-e0776c95d8ff-e0002",
+          "element_type": "paragraph",
+          "heading_path": [
+            "1 研究目标"
+          ],
+          "location": {
+            "kind": "pdf_page_bbox",
+            "physical_page": 1,
+            "bbox": [
+              57.02362,
+              705.54360315,
+              436.99114805000005,
+              696.1158629099104
+            ]
+          },
+          "is_table_or_equation": false
+        },
+        {
+          "query": "Recall@k",
+          "matched": true,
+          "element_id": "self-003-e0776c95d8ff-e0002",
+          "element_type": "paragraph",
+          "heading_path": [
+            "1 研究目标"
+          ],
+          "location": {
+            "kind": "pdf_page_bbox",
+            "physical_page": 1,
+            "bbox": [
+              57.02362,
+              705.54360315,
+              436.99114805000005,
+              696.1158629099104
+            ]
+          },
+          "is_table_or_equation": false
+        },
+        {
+          "query": "合并单元格需保留",
+          "matched": true,
+          "element_id": "self-003-e0776c95d8ff-e0019",
+          "element_type": "table_cell",
+          "heading_path": [
+            "智能阅读器自制 PDF：表格与公式"
+          ],
+          "location": {
+            "kind": "pdf_page_bbox",
+            "physical_page": 1,
+            "bbox": [
+              333.40155000000004,
+              234.9807184,
+              397.40155,
+              242.919868075865
+            ]
+          },
+          "is_table_or_equation": true
+        }
+      ],
+      "boundary": "Fixed keyword/evidence checks only; not semantic retrieval or answer correctness."
+    },
+    {
+      "sample_id": "SELF-008",
+      "format": "Markdown",
+      "parser": "markdown-it-py",
+      "mode": "markdown-extended",
+      "query_count": 6,
+      "query_recall": 1.0,
+      "heading_path_retention": 1.0,
+      "location_retention": 1.0,
+      "hits": [
+        {
+          "query": "引用定位率",
+          "matched": true,
+          "element_id": "self-008-47b74431f9c8-e0014",
+          "element_type": "table_cell",
+          "heading_path": [
+            "智能阅读器 Markdown 自制样本",
+            "2 指标表"
+          ],
+          "location": {
+            "kind": "source_line",
+            "start": 16,
+            "end": 16
+          },
+          "is_table_or_equation": true
+        },
+        {
+          "query": "block_id",
+          "matched": true,
+          "element_id": "self-008-47b74431f9c8-e0005",
+          "element_type": "paragraph",
+          "heading_path": [
+            "智能阅读器 Markdown 自制样本",
+            "1 目的",
+            "1.1 关键定义"
+          ],
+          "location": {
+            "kind": "source_line",
+            "start": 9,
+            "end": 9
+          },
+          "is_table_or_equation": false
+        },
+        {
+          "query": "脚注",
+          "matched": true,
+          "element_id": "self-008-47b74431f9c8-e0003",
+          "element_type": "paragraph",
+          "heading_path": [
+            "智能阅读器 Markdown 自制样本",
+            "1 目的"
+          ],
+          "location": {
+            "kind": "source_line",
+            "start": 5,
+            "end": 5
+          },
+          "is_table_or_equation": false
+        },
+        {
+          "query": "稳定的 `block_id`",
+          "matched": true,
+          "element_id": "self-008-47b74431f9c8-e0005",
+          "element_type": "paragraph",
+          "heading_path": [
+            "智能阅读器 Markdown 自制样本",
+            "1 目的",
+            "1.1 关键定义"
+          ],
+          "location": {
+            "kind": "source_line",
+            "start": 9,
+            "end": 9
+          },
+          "is_table_or_equation": false
+        },
+        {
+          "query": "引用定位率",
+          "matched": true,
+          "element_id": "self-008-47b74431f9c8-e0014",
+          "element_type": "table_cell",
+          "heading_path": [
+            "智能阅读器 Markdown 自制样本",
+            "2 指标表"
+          ],
+          "location": {
+            "kind": "source_line",
+            "start": 16,
+            "end": 16
+          },
+          "is_table_or_equation": true
+        },
+        {
+          "query": "这是一个脚注",
+          "matched": true,
+          "element_id": "self-008-47b74431f9c8-e0028",
+          "element_type": "footnote_definition",
+          "heading_path": [
+            "智能阅读器 Markdown 自制样本",
+            "2 指标表"
+          ],
+          "location": {
+            "kind": "source_line",
+            "start": 38,
+            "end": 38
+          },
+          "is_table_or_equation": false
+        }
+      ],
+      "boundary": "Fixed keyword/evidence checks only; not semantic retrieval or answer correctness."
+    },
+    {
+      "sample_id": "SELF-012",
+      "format": "HTML",
+      "parser": "BeautifulSoup DOM baseline",
+      "mode": "html-dom",
+      "query_count": 6,
+      "query_recall": 1.0,
+      "heading_path_retention": 1.0,
+      "location_retention": 1.0,
+      "hits": [
+        {
+          "query": "证据定位流程",
+          "matched": true,
+          "element_id": "self-012-e00bfbcede7b-e0001",
+          "element_type": "heading",
+          "heading_path": [
+            "网页快照：证据定位流程"
+          ],
+          "location": {
+            "kind": "html_selector",
+            "selector": "h1"
+          },
+          "is_table_or_equation": false
+        },
+        {
+          "query": "结构块",
+          "matched": true,
+          "element_id": "self-012-e00bfbcede7b-e0005",
+          "element_type": "table",
+          "heading_path": [
+            "网页快照：证据定位流程",
+            "方法"
+          ],
+          "location": {
+            "kind": "html_selector",
+            "selector": "table"
+          },
+          "is_table_or_equation": true
+        },
+        {
+          "query": "网页快照",
+          "matched": true,
+          "element_id": "self-012-e00bfbcede7b-e0001",
+          "element_type": "heading",
+          "heading_path": [
+            "网页快照：证据定位流程"
+          ],
+          "location": {
+            "kind": "html_selector",
+            "selector": "h1"
+          },
+          "is_table_or_equation": false
+        },
+        {
+          "query": "正文应与导航、广告和脚本分离",
+          "matched": true,
+          "element_id": "self-012-e00bfbcede7b-e0004",
+          "element_type": "paragraph",
+          "heading_path": [
+            "网页快照：证据定位流程",
+            "方法"
+          ],
+          "location": {
+            "kind": "html_selector",
+            "selector": "p"
+          },
+          "is_table_or_equation": false
+        },
+        {
+          "query": "解析",
+          "matched": true,
+          "element_id": "self-012-e00bfbcede7b-e0004",
+          "element_type": "paragraph",
+          "heading_path": [
+            "网页快照：证据定位流程",
+            "方法"
+          ],
+          "location": {
+            "kind": "html_selector",
+            "selector": "p"
+          },
+          "is_table_or_equation": false
+        },
+        {
+          "query": "检索",
+          "matched": true,
+          "element_id": "self-012-e00bfbcede7b-e0005",
+          "element_type": "table",
+          "heading_path": [
+            "网页快照：证据定位流程",
+            "方法"
+          ],
+          "location": {
+            "kind": "html_selector",
+            "selector": "table"
+          },
+          "is_table_or_equation": true
+        }
+      ],
+      "boundary": "Fixed keyword/evidence checks only; not semantic retrieval or answer correctness."
+    }
+  ],
+  "boundary": "No vector retrieval, QA model, or user click instrumentation."
+}

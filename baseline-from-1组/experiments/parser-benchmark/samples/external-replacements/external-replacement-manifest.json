@@ -1,0 +1,251 @@
+{
+  "manifest_version": 1,
+  "retrieved_on": "2026-09-23",
+  "purpose": "simple substitutes for unresolved external parser-benchmark slots",
+  "samples": [
+    {
+      "sample_id": "SUB-OPEN-001",
+      "replacement_for": "OPEN-001",
+      "filename": "openstax-biology-intro.html",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\openstax-biology-intro.html",
+      "source_url": "https://openstax.org/books/biology-2e/pages/1-introduction",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "OpenStax CC BY-NC-SA notice; verify page terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "figures",
+        "links",
+        "navigation",
+        "mixed content"
+      ],
+      "bytes": 355276,
+      "sha256": "e8280e9c6786d829e67e4e15e7c0b290063182e20f96a6506f5ce30384360086"
+    },
+    {
+      "sample_id": "SUB-OPEN-002",
+      "replacement_for": "OPEN-002",
+      "filename": "openstax-psychology-intro.html",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\openstax-psychology-intro.html",
+      "source_url": "https://openstax.org/books/psychology-2e/pages/1-introduction",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "OpenStax CC BY-NC-SA notice; verify page terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "figures",
+        "links",
+        "navigation",
+        "mixed content"
+      ],
+      "bytes": 264298,
+      "sha256": "3f5c5124242200753645678f84feff8de35566d94325fc6363617ba9fc3a0c12"
+    },
+    {
+      "sample_id": "SUB-OPEN-005",
+      "replacement_for": "OPEN-005",
+      "filename": "w3c-webauthn-2.html",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\w3c-webauthn-2.html",
+      "source_url": "https://www.w3.org/TR/webauthn-2/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "W3C document license; verify current notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "code",
+        "lists",
+        "links",
+        "algorithms"
+      ],
+      "bytes": 1711644,
+      "sha256": "c2465c074ad03054fafc1001ae93997ab0d506ab3597f6a539ce0d14cf3e605a"
+    },
+    {
+      "sample_id": "SUB-OPEN-006",
+      "replacement_for": "OPEN-006",
+      "filename": "w3c-dom.html",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\w3c-dom.html",
+      "source_url": "https://www.w3.org/TR/dom/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "W3C document license; verify current notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "code",
+        "lists",
+        "anchors",
+        "references"
+      ],
+      "bytes": 3158685,
+      "sha256": "bfde1117739cf93463ed17ba0af7d663abf098fbd126f2bcf92e93ce7d787487"
+    },
+    {
+      "sample_id": "SUB-OPEN-007",
+      "replacement_for": "OPEN-007",
+      "filename": "owasp-top-10-2021.html",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\owasp-top-10-2021.html",
+      "source_url": "https://owasp.org/Top10/2021/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "OWASP project page; verify document notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "lists",
+        "links",
+        "navigation",
+        "tables"
+      ],
+      "bytes": 26209,
+      "sha256": "c1f4fffd562ec6da8f603f61e0789860b54cab49b656151cbd263da7c969b127"
+    },
+    {
+      "sample_id": "SUB-OPEN-012",
+      "replacement_for": "OPEN-012",
+      "filename": "rfc-9457.html",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\rfc-9457.html",
+      "source_url": "https://datatracker.ietf.org/doc/html/rfc9457",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "IETF RFC Trust legal notice; verify redistribution terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "lists",
+        "code",
+        "references",
+        "anchors"
+      ],
+      "bytes": 119326,
+      "sha256": "d8ae2786aee3680f5452bb74d8c825a350e2e847b56d4e9c581684f924e5d15e"
+    },
+    {
+      "sample_id": "SUB-PD-001",
+      "replacement_for": "PD-001",
+      "filename": "nist-sp-800-171r3.pdf",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\nist-sp-800-171r3.pdf",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r3.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "US government publication; verify item terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "long report",
+        "headings",
+        "tables",
+        "appendix",
+        "references"
+      ],
+      "bytes": 1593213,
+      "sha256": "3e4631df8b5d61f40a6e542b52779ef30ddbbfff31e09214fa94ad6e6f5e6d08"
+    },
+    {
+      "sample_id": "SUB-PD-002",
+      "replacement_for": "PD-002",
+      "filename": "nist-sp-800-218.pdf",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\nist-sp-800-218.pdf",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "US government publication; verify item terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "tables",
+        "numbered practices",
+        "appendix"
+      ],
+      "bytes": 739891,
+      "sha256": "617746e553a9e2da49bfbd4eef0dfc3094758a39b869314e4173ac36605cde22"
+    },
+    {
+      "sample_id": "SUB-PD-003",
+      "replacement_for": "PD-003",
+      "filename": "nist-sp-800-61r3.pdf",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\nist-sp-800-61r3.pdf",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "US government publication; verify item terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "long report",
+        "headings",
+        "tables",
+        "references"
+      ],
+      "bytes": 1040566,
+      "sha256": "e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d"
+    },
+    {
+      "sample_id": "SUB-PD-004",
+      "replacement_for": "PD-004",
+      "filename": "w3c-css-text-3.html",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\w3c-css-text-3.html",
+      "source_url": "https://www.w3.org/TR/css-text-3/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "W3C document license; verify current notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "algorithms",
+        "definitions",
+        "tables",
+        "references"
+      ],
+      "bytes": 540326,
+      "sha256": "17c26f1b41455947f106dac81736944b12da328ee4892c7c5b601f5b65ced55a"
+    },
+    {
+      "sample_id": "SUB-PD-005",
+      "replacement_for": "PD-005",
+      "filename": "w3c-svg2.html",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\w3c-svg2.html",
+      "source_url": "https://www.w3.org/TR/SVG2/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "W3C document license; verify current notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "code",
+        "figures",
+        "links",
+        "references"
+      ],
+      "bytes": 75616,
+      "sha256": "462109d31d230c4345071b99a70ac06253453551f92409f2eddc64d49f00bca9"
+    },
+    {
+      "sample_id": "SUB-PD-006",
+      "replacement_for": "PD-006",
+      "filename": "w3c-png.html",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\w3c-png.html",
+      "source_url": "https://www.w3.org/TR/PNG/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "W3C document license; verify current notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "tables",
+        "figures",
+        "definitions",
+        "references"
+      ],
+      "bytes": 656574,
+      "sha256": "a3ac82bb9eb8664b93961a2a9ff6def3d70e3a9f63d92721143c1f391d04edec"
+    }
+  ],
+  "skipped": [],
+  "notes": [
+    "These are substitutes, not claims that the original public-domain or exact-format slot was fulfilled.",
+    "Publicly reachable does not automatically mean redistributable or cloud-uploadable.",
+    "Keep cloud_upload_allowed=unknown until item-level terms and service policy are reviewed."
+  ]
+}

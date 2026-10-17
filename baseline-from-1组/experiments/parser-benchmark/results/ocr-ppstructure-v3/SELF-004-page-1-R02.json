@@ -1,0 +1,13 @@
+{
+  "experiment_id": "TECH-OCR-020-R02",
+  "sample_id": "SELF-004-page-1",
+  "status": "failed_native_exit",
+  "image_path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\results\\ocr-tesseract-matrix\\dpi144-psm3-none\\page-1.png",
+  "image_width": 1588,
+  "image_height": 2246,
+  "process_exit_code": 1,
+  "python_exception_captured": false,
+  "standalone_retry_reproduced": true,
+  "note": "The process exited without a Python traceback before a page result could be serialized. The same input was retried in a fresh process after the multi-page run and reproduced exit code 1. This is a runtime/resource failure, not an OCR quality score.",
+  "input_sha256": "3bfc6ad38f0f825b6ee1582f84708ae2ac49e6de14fed1049efab2306b7d237b"
+}

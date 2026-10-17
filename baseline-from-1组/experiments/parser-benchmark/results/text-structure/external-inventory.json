@@ -1,0 +1,1031 @@
+{
+  "experiment_id": "TECH-STRUCT-011-R01",
+  "scope": "downloaded external sample hash and cheap structure inventory",
+  "manifests": [
+    "samples\\external-candidates\\external-candidate-manifest.json",
+    "samples\\external-replacements\\external-replacement-manifest.json",
+    "samples\\open-authored-substitutes\\auth-substitute-manifest.json"
+  ],
+  "sample_count": 24,
+  "status_counts": {
+    "ok": 24
+  },
+  "samples": [
+    {
+      "sample_id": "OPEN-003",
+      "filename": "nist-sp-800-63b.pdf",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "US government publication; verify item terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "technical report",
+        "headings",
+        "tables",
+        "footnotes"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\nist-sp-800-63b.pdf",
+      "exists": true,
+      "status": "ok",
+      "bytes": 1480377,
+      "manifest_sha256": "ccfce7510a1267933f912d023306c6e7d485f21be63d271108b61aad6139127e",
+      "actual_sha256": "ccfce7510a1267933f912d023306c6e7d485f21be63d271108b61aad6139127e",
+      "signals": {
+        "page_count": 80,
+        "text_chars": 202509,
+        "image_count": 69,
+        "toc_entry_count": 120,
+        "toc_max_level": 4,
+        "page_stats_sample": [
+          {
+            "text_chars": 1346,
+            "block_count": 11
+          },
+          {
+            "text_chars": 465,
+            "block_count": 11
+          },
+          {
+            "text_chars": 1265,
+            "block_count": 26
+          }
+        ],
+        "text_layer_present": true
+      },
+      "manifest": "samples\\external-candidates\\external-candidate-manifest.json"
+    },
+    {
+      "sample_id": "OPEN-004",
+      "filename": "w3c-html52.html",
+      "source_url": "https://www.w3.org/TR/html52/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML",
+      "license_or_authorization": "W3C document license; verify current notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "code",
+        "lists",
+        "links",
+        "navigation"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\w3c-html52.html",
+      "exists": true,
+      "status": "ok",
+      "bytes": 154743,
+      "manifest_sha256": "98c3c1f27227d062003f3204c5f06253df186d56af8ec76a912b44aadadea885",
+      "actual_sha256": "98c3c1f27227d062003f3204c5f06253df186d56af8ec76a912b44aadadea885",
+      "signals": {
+        "text_chars": 42159,
+        "heading_count": 3,
+        "heading_levels": {
+          "1": 1,
+          "2": 2,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        "table_count": 0,
+        "pre_or_code_count": 370,
+        "link_count": 1270,
+        "nav_count": 1,
+        "script_count": 6,
+        "style_count": 0
+      },
+      "manifest": "samples\\external-candidates\\external-candidate-manifest.json"
+    },
+    {
+      "sample_id": "OPEN-008",
+      "filename": "nist-ai-rmf-100-1.pdf",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "US government publication; verify item terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "long report",
+        "headings",
+        "tables",
+        "appendix",
+        "references"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\nist-ai-rmf-100-1.pdf",
+      "exists": true,
+      "status": "ok",
+      "bytes": 1946127,
+      "manifest_sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "actual_sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "signals": {
+        "page_count": 48,
+        "text_chars": 106478,
+        "image_count": 10,
+        "toc_entry_count": 30,
+        "toc_max_level": 3,
+        "page_stats_sample": [
+          {
+            "text_chars": 77,
+            "block_count": 2
+          },
+          {
+            "text_chars": 377,
+            "block_count": 6
+          },
+          {
+            "text_chars": 1536,
+            "block_count": 5
+          }
+        ],
+        "text_layer_present": true
+      },
+      "manifest": "samples\\external-candidates\\external-candidate-manifest.json"
+    },
+    {
+      "sample_id": "OPEN-009",
+      "filename": "nist-sp-800-53r5.pdf",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "US government publication; verify item terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "long report",
+        "tables",
+        "numbered controls",
+        "appendix"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\nist-sp-800-53r5.pdf",
+      "exists": true,
+      "status": "ok",
+      "bytes": 6073678,
+      "manifest_sha256": "fc63bcd61715d0181dd8e85998b1e6201ae3515fc6626102101cab1841e11ec6",
+      "actual_sha256": "fc63bcd61715d0181dd8e85998b1e6201ae3515fc6626102101cab1841e11ec6",
+      "signals": {
+        "page_count": 492,
+        "text_chars": 1651615,
+        "image_count": 498,
+        "toc_entry_count": 358,
+        "toc_max_level": 3,
+        "page_stats_sample": [
+          {
+            "text_chars": 269,
+            "block_count": 9
+          },
+          {
+            "text_chars": 578,
+            "block_count": 17
+          },
+          {
+            "text_chars": 3552,
+            "block_count": 32
+          }
+        ],
+        "text_layer_present": true
+      },
+      "manifest": "samples\\external-candidates\\external-candidate-manifest.json"
+    },
+    {
+      "sample_id": "OPEN-010",
+      "filename": "docling-technical-report.pdf",
+      "source_url": "https://arxiv.org/pdf/2408.09869.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "arXiv item license must be recorded",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "two-column",
+        "figures",
+        "tables",
+        "references",
+        "formula"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\docling-technical-report.pdf",
+      "exists": true,
+      "status": "ok",
+      "bytes": 5566575,
+      "manifest_sha256": "82dd470712ce8389f19f20eb9330475e2166a281f8c7990a9f1d0763d73b4d22",
+      "actual_sha256": "82dd470712ce8389f19f20eb9330475e2166a281f8c7990a9f1d0763d73b4d22",
+      "signals": {
+        "page_count": 9,
+        "text_chars": 44251,
+        "image_count": 25,
+        "toc_entry_count": 10,
+        "toc_max_level": 2,
+        "page_stats_sample": [
+          {
+            "text_chars": 2194,
+            "block_count": 12
+          },
+          {
+            "text_chars": 3384,
+            "block_count": 14
+          },
+          {
+            "text_chars": 3124,
+            "block_count": 21
+          }
+        ],
+        "text_layer_present": true
+      },
+      "manifest": "samples\\external-candidates\\external-candidate-manifest.json"
+    },
+    {
+      "sample_id": "OPEN-011",
+      "filename": "layoutlmv3.pdf",
+      "source_url": "https://arxiv.org/pdf/2204.08387.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "arXiv item license must be recorded",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "two-column",
+        "figures",
+        "tables",
+        "formula",
+        "references"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\layoutlmv3.pdf",
+      "exists": true,
+      "status": "ok",
+      "bytes": 1245765,
+      "manifest_sha256": "bd5395610755a49e6419c406e651906e688e7a0cfe155b3c43566469dfd641fe",
+      "actual_sha256": "bd5395610755a49e6419c406e651906e688e7a0cfe155b3c43566469dfd641fe",
+      "signals": {
+        "page_count": 10,
+        "text_chars": 55762,
+        "image_count": 23,
+        "toc_entry_count": 17,
+        "toc_max_level": 2,
+        "page_stats_sample": [
+          {
+            "text_chars": 4699,
+            "block_count": 22
+          },
+          {
+            "text_chars": 5338,
+            "block_count": 29
+          },
+          {
+            "text_chars": 3663,
+            "block_count": 90
+          }
+        ],
+        "text_layer_present": true
+      },
+      "manifest": "samples\\external-candidates\\external-candidate-manifest.json"
+    },
+    {
+      "sample_id": "WEB-001",
+      "filename": "w3c-webauthn-3.html",
+      "source_url": "https://www.w3.org/TR/webauthn-3/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "W3C document license; verify current notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "navigation",
+        "headings",
+        "code",
+        "links",
+        "tables"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\w3c-webauthn-3.html",
+      "exists": true,
+      "status": "ok",
+      "bytes": 2739242,
+      "manifest_sha256": "157030c980d44a3ce4b1ec5bcfaa16790c7dfefac20709af6ed2b11c7120970b",
+      "actual_sha256": "157030c980d44a3ce4b1ec5bcfaa16790c7dfefac20709af6ed2b11c7120970b",
+      "signals": {
+        "text_chars": 594252,
+        "heading_count": 230,
+        "heading_levels": {
+          "1": 1,
+          "2": 24,
+          "3": 90,
+          "4": 94,
+          "5": 21,
+          "6": 0
+        },
+        "table_count": 17,
+        "pre_or_code_count": 2527,
+        "link_count": 8490,
+        "nav_count": 1,
+        "script_count": 5,
+        "style_count": 12
+      },
+      "manifest": "samples\\external-candidates\\external-candidate-manifest.json"
+    },
+    {
+      "sample_id": "WEB-002",
+      "filename": "rfc-9110.html",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "RFC Trust legal notice; verify redistribution terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "anchors",
+        "headings",
+        "code",
+        "references"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\rfc-9110.html",
+      "exists": true,
+      "status": "ok",
+      "bytes": 1187554,
+      "manifest_sha256": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+      "actual_sha256": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+      "signals": {
+        "text_chars": 466592,
+        "heading_count": 311,
+        "heading_levels": {
+          "1": 2,
+          "2": 28,
+          "3": 124,
+          "4": 142,
+          "5": 15,
+          "6": 0
+        },
+        "table_count": 13,
+        "pre_or_code_count": 161,
+        "link_count": 5430,
+        "nav_count": 1,
+        "script_count": 2,
+        "style_count": 1
+      },
+      "manifest": "samples\\external-candidates\\external-candidate-manifest.json"
+    },
+    {
+      "sample_id": "WEB-003",
+      "filename": "nist-ai-rmf.html",
+      "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "NIST website terms; verify page-specific notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "navigation",
+        "article",
+        "links",
+        "metadata"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\nist-ai-rmf.html",
+      "exists": true,
+      "status": "ok",
+      "bytes": 93781,
+      "manifest_sha256": "5ff9a82864d21da0c2fe09d5ee028c6096c8e4281b04ff7a9d28129458d176ec",
+      "actual_sha256": "5ff9a82864d21da0c2fe09d5ee028c6096c8e4281b04ff7a9d28129458d176ec",
+      "signals": {
+        "text_chars": 7174,
+        "heading_count": 12,
+        "heading_levels": {
+          "1": 1,
+          "2": 6,
+          "3": 5,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        "table_count": 0,
+        "pre_or_code_count": 0,
+        "link_count": 166,
+        "nav_count": 2,
+        "script_count": 12,
+        "style_count": 0
+      },
+      "manifest": "samples\\external-candidates\\external-candidate-manifest.json"
+    },
+    {
+      "sample_id": "WEB-004",
+      "filename": "openstax-anatomy-intro.html",
+      "source_url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "OpenStax CC BY-NC-SA notice; verify page terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "figures",
+        "links",
+        "navigation",
+        "mixed content"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\openstax-anatomy-intro.html",
+      "exists": true,
+      "status": "ok",
+      "bytes": 334395,
+      "manifest_sha256": "b709d19cf8bf3c3c8cf4e20933d36e7be4901ce79cf937f284f000cfabe43330",
+      "actual_sha256": "b709d19cf8bf3c3c8cf4e20933d36e7be4901ce79cf937f284f000cfabe43330",
+      "signals": {
+        "text_chars": 4968,
+        "heading_count": 7,
+        "heading_levels": {
+          "1": 1,
+          "2": 3,
+          "3": 3,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        "table_count": 0,
+        "pre_or_code_count": 0,
+        "link_count": 31,
+        "nav_count": 0,
+        "script_count": 14,
+        "style_count": 1
+      },
+      "manifest": "samples\\external-candidates\\external-candidate-manifest.json"
+    },
+    {
+      "sample_id": "SUB-OPEN-001",
+      "filename": "openstax-biology-intro.html",
+      "source_url": "https://openstax.org/books/biology-2e/pages/1-introduction",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "OpenStax CC BY-NC-SA notice; verify page terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "figures",
+        "links",
+        "navigation",
+        "mixed content"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\openstax-biology-intro.html",
+      "exists": true,
+      "status": "ok",
+      "bytes": 355276,
+      "manifest_sha256": "e8280e9c6786d829e67e4e15e7c0b290063182e20f96a6506f5ce30384360086",
+      "actual_sha256": "e8280e9c6786d829e67e4e15e7c0b290063182e20f96a6506f5ce30384360086",
+      "signals": {
+        "text_chars": 3491,
+        "heading_count": 7,
+        "heading_levels": {
+          "1": 1,
+          "2": 3,
+          "3": 3,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        "table_count": 0,
+        "pre_or_code_count": 0,
+        "link_count": 33,
+        "nav_count": 0,
+        "script_count": 14,
+        "style_count": 1
+      },
+      "manifest": "samples\\external-replacements\\external-replacement-manifest.json"
+    },
+    {
+      "sample_id": "SUB-OPEN-002",
+      "filename": "openstax-psychology-intro.html",
+      "source_url": "https://openstax.org/books/psychology-2e/pages/1-introduction",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "OpenStax CC BY-NC-SA notice; verify page terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "figures",
+        "links",
+        "navigation",
+        "mixed content"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\openstax-psychology-intro.html",
+      "exists": true,
+      "status": "ok",
+      "bytes": 264298,
+      "manifest_sha256": "3f5c5124242200753645678f84feff8de35566d94325fc6363617ba9fc3a0c12",
+      "actual_sha256": "3f5c5124242200753645678f84feff8de35566d94325fc6363617ba9fc3a0c12",
+      "signals": {
+        "text_chars": 4569,
+        "heading_count": 7,
+        "heading_levels": {
+          "1": 1,
+          "2": 3,
+          "3": 3,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        "table_count": 0,
+        "pre_or_code_count": 0,
+        "link_count": 35,
+        "nav_count": 0,
+        "script_count": 14,
+        "style_count": 1
+      },
+      "manifest": "samples\\external-replacements\\external-replacement-manifest.json"
+    },
+    {
+      "sample_id": "SUB-OPEN-005",
+      "filename": "w3c-webauthn-2.html",
+      "source_url": "https://www.w3.org/TR/webauthn-2/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "W3C document license; verify current notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "code",
+        "lists",
+        "links",
+        "algorithms"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\w3c-webauthn-2.html",
+      "exists": true,
+      "status": "ok",
+      "bytes": 1711644,
+      "manifest_sha256": "c2465c074ad03054fafc1001ae93997ab0d506ab3597f6a539ce0d14cf3e605a",
+      "actual_sha256": "c2465c074ad03054fafc1001ae93997ab0d506ab3597f6a539ce0d14cf3e605a",
+      "signals": {
+        "text_chars": 543975,
+        "heading_count": 175,
+        "heading_levels": {
+          "1": 1,
+          "2": 24,
+          "3": 70,
+          "4": 74,
+          "5": 6,
+          "6": 0
+        },
+        "table_count": 14,
+        "pre_or_code_count": 1483,
+        "link_count": 10696,
+        "nav_count": 1,
+        "script_count": 3,
+        "style_count": 8
+      },
+      "manifest": "samples\\external-replacements\\external-replacement-manifest.json"
+    },
+    {
+      "sample_id": "SUB-OPEN-006",
+      "filename": "w3c-dom.html",
+      "source_url": "https://www.w3.org/TR/dom/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "W3C document license; verify current notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "code",
+        "lists",
+        "anchors",
+        "references"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\w3c-dom.html",
+      "exists": true,
+      "status": "ok",
+      "bytes": 3158685,
+      "manifest_sha256": "bfde1117739cf93463ed17ba0af7d663abf098fbd126f2bcf92e93ce7d787487",
+      "actual_sha256": "bfde1117739cf93463ed17ba0af7d663abf098fbd126f2bcf92e93ce7d787487",
+      "signals": {
+        "text_chars": 412266,
+        "heading_count": 93,
+        "heading_levels": {
+          "1": 1,
+          "2": 18,
+          "3": 50,
+          "4": 17,
+          "5": 7,
+          "6": 0
+        },
+        "table_count": 2,
+        "pre_or_code_count": 2922,
+        "link_count": 9753,
+        "nav_count": 1,
+        "script_count": 7,
+        "style_count": 3
+      },
+      "manifest": "samples\\external-replacements\\external-replacement-manifest.json"
+    },
+    {
+      "sample_id": "SUB-OPEN-007",
+      "filename": "owasp-top-10-2021.html",
+      "source_url": "https://owasp.org/Top10/2021/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "OWASP project page; verify document notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "lists",
+        "links",
+        "navigation",
+        "tables"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\owasp-top-10-2021.html",
+      "exists": true,
+      "status": "ok",
+      "bytes": 26209,
+      "manifest_sha256": "c1f4fffd562ec6da8f603f61e0789860b54cab49b656151cbd263da7c969b127",
+      "actual_sha256": "c1f4fffd562ec6da8f603f61e0789860b54cab49b656151cbd263da7c969b127",
+      "signals": {
+        "text_chars": 2068,
+        "heading_count": 4,
+        "heading_levels": {
+          "1": 1,
+          "2": 2,
+          "3": 1,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        "table_count": 0,
+        "pre_or_code_count": 0,
+        "link_count": 59,
+        "nav_count": 8,
+        "script_count": 5,
+        "style_count": 1
+      },
+      "manifest": "samples\\external-replacements\\external-replacement-manifest.json"
+    },
+    {
+      "sample_id": "SUB-OPEN-012",
+      "filename": "rfc-9457.html",
+      "source_url": "https://datatracker.ietf.org/doc/html/rfc9457",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "IETF RFC Trust legal notice; verify redistribution terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "lists",
+        "code",
+        "references",
+        "anchors"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\rfc-9457.html",
+      "exists": true,
+      "status": "ok",
+      "bytes": 119326,
+      "manifest_sha256": "d8ae2786aee3680f5452bb74d8c825a350e2e847b56d4e9c581684f924e5d15e",
+      "actual_sha256": "d8ae2786aee3680f5452bb74d8c825a350e2e847b56d4e9c581684f924e5d15e",
+      "signals": {
+        "text_chars": 34288,
+        "heading_count": 31,
+        "heading_levels": {
+          "1": 2,
+          "2": 17,
+          "3": 6,
+          "4": 6,
+          "5": 0,
+          "6": 0
+        },
+        "table_count": 3,
+        "pre_or_code_count": 9,
+        "link_count": 379,
+        "nav_count": 3,
+        "script_count": 5,
+        "style_count": 1
+      },
+      "manifest": "samples\\external-replacements\\external-replacement-manifest.json"
+    },
+    {
+      "sample_id": "SUB-PD-001",
+      "filename": "nist-sp-800-171r3.pdf",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r3.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "US government publication; verify item terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "long report",
+        "headings",
+        "tables",
+        "appendix",
+        "references"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\nist-sp-800-171r3.pdf",
+      "exists": true,
+      "status": "ok",
+      "bytes": 1593213,
+      "manifest_sha256": "3e4631df8b5d61f40a6e542b52779ef30ddbbfff31e09214fa94ad6e6f5e6d08",
+      "actual_sha256": "3e4631df8b5d61f40a6e542b52779ef30ddbbfff31e09214fa94ad6e6f5e6d08",
+      "signals": {
+        "page_count": 120,
+        "text_chars": 263747,
+        "image_count": 45,
+        "toc_entry_count": 160,
+        "toc_max_level": 3,
+        "page_stats_sample": [
+          {
+            "text_chars": 265,
+            "block_count": 6
+          },
+          {
+            "text_chars": 548,
+            "block_count": 12
+          },
+          {
+            "text_chars": 3340,
+            "block_count": 9
+          }
+        ],
+        "text_layer_present": true
+      },
+      "manifest": "samples\\external-replacements\\external-replacement-manifest.json"
+    },
+    {
+      "sample_id": "SUB-PD-002",
+      "filename": "nist-sp-800-218.pdf",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "US government publication; verify item terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "tables",
+        "numbered practices",
+        "appendix"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\nist-sp-800-218.pdf",
+      "exists": true,
+      "status": "ok",
+      "bytes": 739891,
+      "manifest_sha256": "617746e553a9e2da49bfbd4eef0dfc3094758a39b869314e4173ac36605cde22",
+      "actual_sha256": "617746e553a9e2da49bfbd4eef0dfc3094758a39b869314e4173ac36605cde22",
+      "signals": {
+        "page_count": 36,
+        "text_chars": 107932,
+        "image_count": 6,
+        "toc_entry_count": 13,
+        "toc_max_level": 2,
+        "page_stats_sample": [
+          {
+            "text_chars": 327,
+            "block_count": 17
+          },
+          {
+            "text_chars": 828,
+            "block_count": 15
+          },
+          {
+            "text_chars": 3046,
+            "block_count": 12
+          }
+        ],
+        "text_layer_present": true
+      },
+      "manifest": "samples\\external-replacements\\external-replacement-manifest.json"
+    },
+    {
+      "sample_id": "SUB-PD-003",
+      "filename": "nist-sp-800-61r3.pdf",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "US government publication; verify item terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "long report",
+        "headings",
+        "tables",
+        "references"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\nist-sp-800-61r3.pdf",
+      "exists": true,
+      "status": "ok",
+      "bytes": 1040566,
+      "manifest_sha256": "e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d",
+      "actual_sha256": "e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d",
+      "signals": {
+        "page_count": 48,
+        "text_chars": 107986,
+        "image_count": 12,
+        "toc_entry_count": 15,
+        "toc_max_level": 2,
+        "page_stats_sample": [
+          {
+            "text_chars": 322,
+            "block_count": 8
+          },
+          {
+            "text_chars": 741,
+            "block_count": 16
+          },
+          {
+            "text_chars": 3278,
+            "block_count": 9
+          }
+        ],
+        "text_layer_present": true
+      },
+      "manifest": "samples\\external-replacements\\external-replacement-manifest.json"
+    },
+    {
+      "sample_id": "SUB-PD-004",
+      "filename": "w3c-css-text-3.html",
+      "source_url": "https://www.w3.org/TR/css-text-3/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "W3C document license; verify current notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "algorithms",
+        "definitions",
+        "tables",
+        "references"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\w3c-css-text-3.html",
+      "exists": true,
+      "status": "ok",
+      "bytes": 540326,
+      "manifest_sha256": "17c26f1b41455947f106dac81736944b12da328ee4892c7c5b601f5b65ced55a",
+      "actual_sha256": "17c26f1b41455947f106dac81736944b12da328ee4892c7c5b601f5b65ced55a",
+      "signals": {
+        "text_chars": 141115,
+        "heading_count": 74,
+        "heading_levels": {
+          "1": 1,
+          "2": 26,
+          "3": 34,
+          "4": 13,
+          "5": 0,
+          "6": 0
+        },
+        "table_count": 22,
+        "pre_or_code_count": 161,
+        "link_count": 1575,
+        "nav_count": 1,
+        "script_count": 5,
+        "style_count": 12
+      },
+      "manifest": "samples\\external-replacements\\external-replacement-manifest.json"
+    },
+    {
+      "sample_id": "SUB-PD-005",
+      "filename": "w3c-svg2.html",
+      "source_url": "https://www.w3.org/TR/SVG2/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "W3C document license; verify current notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "code",
+        "figures",
+        "links",
+        "references"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\w3c-svg2.html",
+      "exists": true,
+      "status": "ok",
+      "bytes": 75616,
+      "manifest_sha256": "462109d31d230c4345071b99a70ac06253453551f92409f2eddc64d49f00bca9",
+      "actual_sha256": "462109d31d230c4345071b99a70ac06253453551f92409f2eddc64d49f00bca9",
+      "signals": {
+        "text_chars": 25061,
+        "heading_count": 6,
+        "heading_levels": {
+          "1": 1,
+          "2": 5,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        "table_count": 0,
+        "pre_or_code_count": 1,
+        "link_count": 534,
+        "nav_count": 1,
+        "script_count": 2,
+        "style_count": 0
+      },
+      "manifest": "samples\\external-replacements\\external-replacement-manifest.json"
+    },
+    {
+      "sample_id": "SUB-PD-006",
+      "filename": "w3c-png.html",
+      "source_url": "https://www.w3.org/TR/PNG/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "W3C document license; verify current notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "headings",
+        "tables",
+        "figures",
+        "definitions",
+        "references"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-replacements\\w3c-png.html",
+      "exists": true,
+      "status": "ok",
+      "bytes": 656574,
+      "manifest_sha256": "a3ac82bb9eb8664b93961a2a9ff6def3d70e3a9f63d92721143c1f391d04edec",
+      "actual_sha256": "a3ac82bb9eb8664b93961a2a9ff6def3d70e3a9f63d92721143c1f391d04edec",
+      "signals": {
+        "text_chars": 256764,
+        "heading_count": 185,
+        "heading_levels": {
+          "1": 1,
+          "2": 26,
+          "3": 93,
+          "4": 40,
+          "5": 22,
+          "6": 3
+        },
+        "table_count": 56,
+        "pre_or_code_count": 239,
+        "link_count": 2425,
+        "nav_count": 1,
+        "script_count": 5,
+        "style_count": 8
+      },
+      "manifest": "samples\\external-replacements\\external-replacement-manifest.json"
+    },
+    {
+      "sample_id": "AUTH-005",
+      "filename": "AUTH-005-substitute-nist-csf-2.0.pdf",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "retrieved_on": "2026-09-23",
+      "format": "PDF text",
+      "license_or_authorization": "NIST public document; verify item terms",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "policy sections",
+        "numbered categories",
+        "tables",
+        "appendix",
+        "references"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\open-authored-substitutes\\AUTH-005-substitute-nist-csf-2.0.pdf",
+      "exists": true,
+      "status": "ok",
+      "bytes": 1518858,
+      "manifest_sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "actual_sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "signals": {
+        "page_count": 32,
+        "text_chars": 69733,
+        "image_count": 13,
+        "toc_entry_count": 12,
+        "toc_max_level": 2,
+        "page_stats_sample": [
+          {
+            "text_chars": 202,
+            "block_count": 3
+          },
+          {
+            "text_chars": 2284,
+            "block_count": 14
+          },
+          {
+            "text_chars": 515,
+            "block_count": 4
+          }
+        ],
+        "text_layer_present": true
+      },
+      "manifest": "samples\\open-authored-substitutes\\auth-substitute-manifest.json"
+    },
+    {
+      "sample_id": "AUTH-006",
+      "filename": "AUTH-006-substitute-webdriver2.html",
+      "source_url": "https://www.w3.org/TR/webdriver2/",
+      "retrieved_on": "2026-09-23",
+      "format": "HTML snapshot",
+      "license_or_authorization": "W3C document license; verify current notice",
+      "cloud_upload_allowed": "unknown",
+      "expected_layout_features": [
+        "navigation",
+        "headings",
+        "algorithms",
+        "code",
+        "links",
+        "tables"
+      ],
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\open-authored-substitutes\\AUTH-006-substitute-webdriver2.html",
+      "exists": true,
+      "status": "ok",
+      "bytes": 1882653,
+      "manifest_sha256": "929f2f0be15b73b0b3e33052f115a47fc1561ec42f0a8992d532780591ae919e",
+      "actual_sha256": "929f2f0be15b73b0b3e33052f115a47fc1561ec42f0a8992d532780591ae919e",
+      "signals": {
+        "text_chars": 362698,
+        "heading_count": 135,
+        "heading_levels": {
+          "1": 1,
+          "2": 28,
+          "3": 64,
+          "4": 37,
+          "5": 5,
+          "6": 0
+        },
+        "table_count": 97,
+        "pre_or_code_count": 1721,
+        "link_count": 9871,
+        "nav_count": 1,
+        "script_count": 6,
+        "style_count": 12
+      },
+      "manifest": "samples\\open-authored-substitutes\\auth-substitute-manifest.json"
+    }
+  ],
+  "boundary": "Inventory only; no license approval, gold labels, parser accuracy, OCR, retrieval, or QA evaluation."
+}

@@ -1,0 +1,73 @@
+{
+  "experiment_id": "TECH-CIT-004-R01",
+  "cases": [
+    {
+      "id": "base300-p1",
+      "words": 97,
+      "valid_bbox": 97,
+      "bbox_rate": 1.0,
+      "coordinate_system": "image_top_left_xywh",
+      "rotation_degrees": 0.0,
+      "scale": 1.5,
+      "transform_status": "PASS"
+    },
+    {
+      "id": "base300-p2",
+      "words": 88,
+      "valid_bbox": 88,
+      "bbox_rate": 1.0,
+      "coordinate_system": "image_top_left_xywh",
+      "rotation_degrees": 0.0,
+      "scale": 1.5,
+      "transform_status": "PASS"
+    },
+    {
+      "id": "rotate3-p1",
+      "words": 94,
+      "valid_bbox": 94,
+      "bbox_rate": 1.0,
+      "coordinate_system": "image_top_left_xywh",
+      "rotation_degrees": 3.0,
+      "scale": 1.5,
+      "transform_status": "PASS"
+    },
+    {
+      "id": "rotate3-p2",
+      "words": 94,
+      "valid_bbox": 94,
+      "bbox_rate": 1.0,
+      "coordinate_system": "image_top_left_xywh",
+      "rotation_degrees": 3.0,
+      "scale": 1.5,
+      "transform_status": "PASS"
+    }
+  ],
+  "pdf_cases": [
+    {
+      "sample": "SELF-001",
+      "checked": 10,
+      "pdf_bbox_rate": 1.0,
+      "rendered_pixel_bbox_rate": 1.0,
+      "coordinate_system": "pdf_points_top_left_to_rendered_pixels",
+      "scale": 1.5
+    },
+    {
+      "sample": "SELF-002",
+      "checked": 24,
+      "pdf_bbox_rate": 1.0,
+      "rendered_pixel_bbox_rate": 1.0,
+      "coordinate_system": "pdf_points_top_left_to_rendered_pixels",
+      "scale": 1.5
+    },
+    {
+      "sample": "SELF-003",
+      "checked": 10,
+      "pdf_bbox_rate": 1.0,
+      "rendered_pixel_bbox_rate": 1.0,
+      "coordinate_system": "pdf_points_top_left_to_rendered_pixels",
+      "scale": 1.5
+    }
+  ],
+  "all_bbox_in_bounds": true,
+  "scope": "Coordinate validity and transform smoke test; no human highlight IoU because OCR ground truth has no word-level gold polygons."
+}

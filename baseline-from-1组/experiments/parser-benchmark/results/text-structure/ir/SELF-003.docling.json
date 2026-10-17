@@ -1,0 +1,917 @@
+{
+  "experiment_id": "TECH-STRUCT-004-R01",
+  "sample_id": "SELF-003",
+  "doc_id": "self-003-e0776c95d8ff",
+  "source_path": "samples\\self-authored\\pdf\\SELF-003-table-formula.pdf",
+  "source_hash": "e0776c95d8ff89cc61a6cac9558775f07df3dd4eb234ede9ee69ace4c673852a",
+  "source_format": "PDF",
+  "parser_name": "Docling",
+  "parser_version": "2.130.0",
+  "config": {
+    "do_ocr": false,
+    "do_table_structure": true,
+    "do_formula_enrichment": false
+  },
+  "config_hash": "3e28da84a1d4ad46",
+  "elements": [
+    {
+      "element_id": "self-003-e0776c95d8ff-e0001",
+      "element_type": "heading",
+      "text": "1 研究目标",
+      "normalized_text": "1 研究目标",
+      "ordinal": 0,
+      "parent_element_id": null,
+      "children_ids": [
+        "self-003-e0776c95d8ff-e0002"
+      ],
+      "heading_path": [
+        "1 研究目标"
+      ],
+      "heading_level": 1,
+      "label": "section_header",
+      "role": "title",
+      "reading_order_index": 0,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        57.02362,
+        726.9344724,
+        115.6115104,
+        715.0257478862026
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0002",
+      "element_type": "paragraph",
+      "text": "本样本专门覆盖复杂表格、合并概念、公式文本和图注。公式示例：Recall@k = hits / k。",
+      "normalized_text": "本样本专门覆盖复杂表格、合并概念、公式文本和图注。公式示例：Recall@k = hits / k。",
+      "ordinal": 1,
+      "parent_element_id": "self-003-e0776c95d8ff-e0001",
+      "children_ids": [
+        "self-003-e0776c95d8ff-e0003"
+      ],
+      "heading_path": [
+        "1 研究目标"
+      ],
+      "heading_level": null,
+      "label": "text",
+      "role": null,
+      "reading_order_index": 1,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        57.02362,
+        705.54360315,
+        436.99114805000005,
+        696.1158629099104
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0003",
+      "element_type": "equation",
+      "text": "Recall@k = hits / k",
+      "normalized_text": "Recall@k = hits / k",
+      "ordinal": 2,
+      "parent_element_id": "self-003-e0776c95d8ff-e0002",
+      "children_ids": [],
+      "heading_path": [],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 2,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        57.02362,
+        705.54360315,
+        436.99114805000005,
+        696.1158629099104
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "notation": "conservative-inline-regex",
+      "verified": false
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0004",
+      "element_type": "heading",
+      "text": "2 关键结论",
+      "normalized_text": "2 关键结论",
+      "ordinal": 3,
+      "parent_element_id": null,
+      "children_ids": [
+        "self-003-e0776c95d8ff-e0005",
+        "self-003-e0776c95d8ff-e0006"
+      ],
+      "heading_path": [
+        "2 关键结论"
+      ],
+      "heading_level": 1,
+      "label": "section_header",
+      "role": "title",
+      "reading_order_index": 3,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        57.02362,
+        681.9344724,
+        115.6115104,
+        670.0257478862026
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0005",
+      "element_type": "paragraph",
+      "text": "解析结果不能只保留扁平纯文本。每个文本块还需要稳定 ID、标题路径、物理页码和原始位置。",
+      "normalized_text": "解析结果不能只保留扁平纯文本。每个文本块还需要稳定 ID、标题路径、物理页码和原始位置。",
+      "ordinal": 4,
+      "parent_element_id": "self-003-e0776c95d8ff-e0004",
+      "children_ids": [],
+      "heading_path": [
+        "2 关键结论"
+      ],
+      "heading_level": null,
+      "label": "text",
+      "role": null,
+      "reading_order_index": 4,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        57.02362,
+        660.54360315,
+        459.36346375,
+        651.1158629099104
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0006",
+      "element_type": "paragraph",
+      "text": "脚注：这是一个可回溯的脚注占位，用来检查脚注是否被混入正文。",
+      "normalized_text": "脚注：这是一个可回溯的脚注占位，用来检查脚注是否被混入正文。",
+      "ordinal": 5,
+      "parent_element_id": "self-003-e0776c95d8ff-e0004",
+      "children_ids": [],
+      "heading_path": [
+        "2 关键结论"
+      ],
+      "heading_level": null,
+      "label": "text",
+      "role": null,
+      "reading_order_index": 5,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        57.02362,
+        586.03090775,
+        282.02362,
+        578.5879549288766
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0007",
+      "element_type": "heading",
+      "text": "智能阅读器自制 PDF：表格与公式",
+      "normalized_text": "智能阅读器自制 PDF：表格与公式",
+      "ordinal": 6,
+      "parent_element_id": null,
+      "children_ids": [],
+      "heading_path": [
+        "智能阅读器自制 PDF：表格与公式"
+      ],
+      "heading_level": 1,
+      "label": "section_header",
+      "role": "title",
+      "reading_order_index": 6,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        160.83162000000002,
+        780.4803585999999,
+        434.4439248,
+        762.617271829304
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0008",
+      "element_type": "footer",
+      "text": "SELF-AUTHORED PDF | physical page 1",
+      "normalized_text": "SELF-AUTHORED PDF | physical page 1",
+      "ordinal": 7,
+      "parent_element_id": null,
+      "children_ids": [],
+      "heading_path": [
+        "智能阅读器自制 PDF：表格与公式"
+      ],
+      "heading_level": null,
+      "label": "page_footer",
+      "role": "footer",
+      "reading_order_index": 7,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        51.02362,
+        33.64089390000004,
+        181.58319039999992,
+        26.694137933618208
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0009",
+      "element_type": "footer",
+      "text": "header/footer and citation test",
+      "normalized_text": "header/footer and citation test",
+      "ordinal": 8,
+      "parent_element_id": null,
+      "children_ids": [],
+      "heading_path": [
+        "智能阅读器自制 PDF：表格与公式"
+      ],
+      "heading_level": null,
+      "label": "page_footer",
+      "role": "footer",
+      "reading_order_index": 8,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        441.0225,
+        33.64089390000004,
+        544.2519907,
+        26.694137933618208
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0010",
+      "element_type": "table",
+      "text": "",
+      "normalized_text": "",
+      "ordinal": 9,
+      "parent_element_id": null,
+      "children_ids": [
+        "self-003-e0776c95d8ff-e0011",
+        "self-003-e0776c95d8ff-e0012",
+        "self-003-e0776c95d8ff-e0013",
+        "self-003-e0776c95d8ff-e0014",
+        "self-003-e0776c95d8ff-e0015",
+        "self-003-e0776c95d8ff-e0016",
+        "self-003-e0776c95d8ff-e0017",
+        "self-003-e0776c95d8ff-e0018",
+        "self-003-e0776c95d8ff-e0019"
+      ],
+      "heading_path": [
+        "智能阅读器自制 PDF：表格与公式"
+      ],
+      "heading_level": null,
+      "label": "table",
+      "role": null,
+      "reading_order_index": 9,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        83.32688193183233,
+        648.4037892629193,
+        512.161715704018,
+        593.5955032427754
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0011",
+      "element_type": "table_cell",
+      "text": "指标",
+      "normalized_text": "指标",
+      "ordinal": 10,
+      "parent_element_id": "self-003-e0776c95d8ff-e0010",
+      "children_ids": [],
+      "heading_path": [
+        "智能阅读器自制 PDF：表格与公式"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 10,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        89.62205,
+        198.9807184,
+        105.62205,
+        206.919868075865
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 0,
+      "col_index": 0,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0012",
+      "element_type": "table_cell",
+      "text": "公式/值",
+      "normalized_text": "公式/值",
+      "ordinal": 11,
+      "parent_element_id": "self-003-e0776c95d8ff-e0010",
+      "children_ids": [],
+      "heading_path": [
+        "智能阅读器自制 PDF：表格与公式"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 11,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        197.33855,
+        198.9807184,
+        224.7565188,
+        206.919868075865
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 0,
+      "col_index": 1,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0013",
+      "element_type": "table_cell",
+      "text": "解释",
+      "normalized_text": "解释",
+      "ordinal": 12,
+      "parent_element_id": "self-003-e0776c95d8ff-e0010",
+      "children_ids": [],
+      "heading_path": [
+        "智能阅读器自制 PDF：表格与公式"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 12,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        333.40155000000004,
+        198.9807184,
+        349.40155,
+        206.919868075865
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 0,
+      "col_index": 2,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0014",
+      "element_type": "table_cell",
+      "text": "Recall@k",
+      "normalized_text": "Recall@k",
+      "ordinal": 13,
+      "parent_element_id": "self-003-e0776c95d8ff-e0010",
+      "children_ids": [],
+      "heading_path": [
+        "智能阅读器自制 PDF：表格与公式"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 13,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        89.62205,
+        216.9807184,
+        124.6806436,
+        224.919868075865
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 1,
+      "col_index": 0,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0015",
+      "element_type": "table_cell",
+      "text": "hits / k",
+      "normalized_text": "hits / k",
+      "ordinal": 14,
+      "parent_element_id": "self-003-e0776c95d8ff-e0010",
+      "children_ids": [],
+      "heading_path": [
+        "智能阅读器自制 PDF：表格与公式"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 14,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        197.33855,
+        216.9807184,
+        223.5846436,
+        224.919868075865
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 1,
+      "col_index": 1,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0016",
+      "element_type": "table_cell",
+      "text": "检索命中比例",
+      "normalized_text": "检索命中比例",
+      "ordinal": 15,
+      "parent_element_id": "self-003-e0776c95d8ff-e0010",
+      "children_ids": [],
+      "heading_path": [
+        "智能阅读器自制 PDF：表格与公式"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 15,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        333.40155000000004,
+        216.9807184,
+        381.40155,
+        224.919868075865
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 1,
+      "col_index": 2,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0017",
+      "element_type": "table_cell",
+      "text": "表格结构",
+      "normalized_text": "表格结构",
+      "ordinal": 16,
+      "parent_element_id": "self-003-e0776c95d8ff-e0010",
+      "children_ids": [],
+      "heading_path": [
+        "智能阅读器自制 PDF：表格与公式"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 16,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        89.62205,
+        234.9807184,
+        121.62205,
+        242.919868075865
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 2,
+      "col_index": 0,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0018",
+      "element_type": "table_cell",
+      "text": "row + col",
+      "normalized_text": "row + col",
+      "ordinal": 17,
+      "parent_element_id": "self-003-e0776c95d8ff-e0010",
+      "children_ids": [],
+      "heading_path": [
+        "智能阅读器自制 PDF：表格与公式"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 17,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        197.33855,
+        234.9807184,
+        233.69011159999997,
+        242.919868075865
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 2,
+      "col_index": 1,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    },
+    {
+      "element_id": "self-003-e0776c95d8ff-e0019",
+      "element_type": "table_cell",
+      "text": "合并单元格需保留",
+      "normalized_text": "合并单元格需保留",
+      "ordinal": 18,
+      "parent_element_id": "self-003-e0776c95d8ff-e0010",
+      "children_ids": [],
+      "heading_path": [
+        "智能阅读器自制 PDF：表格与公式"
+      ],
+      "heading_level": null,
+      "label": null,
+      "role": null,
+      "reading_order_index": 18,
+      "physical_page": 1,
+      "printed_page_label": null,
+      "bbox": [
+        333.40155000000004,
+        234.9807184,
+        397.40155,
+        242.919868075865
+      ],
+      "char_start": null,
+      "char_end": null,
+      "source_line_start": null,
+      "source_line_end": null,
+      "column_id": null,
+      "confidence": null,
+      "confidence_by_field": {},
+      "asset_ref": null,
+      "style_ref": null,
+      "row_index": 2,
+      "col_index": 2,
+      "rowspan": 1,
+      "colspan": 1,
+      "column_header": false
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0001",
+      "relation_type": "contains_equation",
+      "source_element_id": "self-003-e0776c95d8ff-e0002",
+      "target_element_id": "self-003-e0776c95d8ff-e0003",
+      "confidence": null,
+      "evidence": "inline_formula_regex"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0002",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0011",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0003",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0012",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0004",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0013",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0005",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0014",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0006",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0015",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0007",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0016",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0008",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0017",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0009",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0018",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0010",
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0019",
+      "confidence": null,
+      "evidence": "docling_table_grid"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0011",
+      "relation_type": "contains",
+      "source_element_id": "self-003-e0776c95d8ff-e0001",
+      "target_element_id": "self-003-e0776c95d8ff-e0002",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0012",
+      "relation_type": "contains",
+      "source_element_id": "self-003-e0776c95d8ff-e0002",
+      "target_element_id": "self-003-e0776c95d8ff-e0003",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0013",
+      "relation_type": "contains",
+      "source_element_id": "self-003-e0776c95d8ff-e0004",
+      "target_element_id": "self-003-e0776c95d8ff-e0005",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0014",
+      "relation_type": "contains",
+      "source_element_id": "self-003-e0776c95d8ff-e0004",
+      "target_element_id": "self-003-e0776c95d8ff-e0006",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0015",
+      "relation_type": "contains",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0011",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0016",
+      "relation_type": "contains",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0012",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0017",
+      "relation_type": "contains",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0013",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0018",
+      "relation_type": "contains",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0014",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0019",
+      "relation_type": "contains",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0015",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0020",
+      "relation_type": "contains",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0016",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0021",
+      "relation_type": "contains",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0017",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0022",
+      "relation_type": "contains",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0018",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    },
+    {
+      "relation_id": "self-003-e0776c95d8ff-r0023",
+      "relation_type": "contains",
+      "source_element_id": "self-003-e0776c95d8ff-e0010",
+      "target_element_id": "self-003-e0776c95d8ff-e0019",
+      "confidence": null,
+      "evidence": "docling_parent_link"
+    }
+  ],
+  "warnings": [
+    "Docling text/table export is mapped without OCR or formula enrichment."
+  ],
+  "relation_counts": {
+    "contains_equation": 1,
+    "table_contains_cell": 9,
+    "contains": 13
+  },
+  "element_counts": {
+    "heading": 3,
+    "paragraph": 3,
+    "equation": 1,
+    "footer": 2,
+    "table": 1,
+    "table_cell": 9
+  },
+  "field_completeness": {
+    "physical_page": 1.0,
+    "bbox": 1.0,
+    "heading_level": 0.15789473684210525
+  },
+  "status": "scored"
+}

@@ -1,0 +1,96 @@
+{
+  "status": "succeeded",
+  "text": "4年工作报告》\n中指出",
+  "lines": [
+    "4年工作报告》",
+    "中指出"
+  ],
+  "items": [
+    {
+      "text": "4年工作报告》",
+      "confidence": 99.878,
+      "bbox_polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          198.0,
+          0.0
+        ],
+        [
+          197.0,
+          32.0
+        ],
+        [
+          0.0,
+          32.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        198.0,
+        32.0
+      ]
+    },
+    {
+      "text": "中指出",
+      "confidence": 99.98599999999999,
+      "bbox_polygon": [
+        [
+          189.0,
+          0.0
+        ],
+        [
+          279.0,
+          0.0
+        ],
+        [
+          279.0,
+          32.0
+        ],
+        [
+          189.0,
+          32.0
+        ]
+      ],
+      "bbox": [
+        189.0,
+        0.0,
+        90.0,
+        32.0
+      ]
+    }
+  ],
+  "run_ms": [
+    8419.875900006446,
+    8568.502300004184,
+    8929.055499997048
+  ],
+  "latency_ms_p50": 8568.502300004184,
+  "latency_ms_p95": 8929.055499997048,
+  "mean_confidence": 99.93199999999999,
+  "low_confidence_item_ratio": 0.0,
+  "bbox_item_ratio": 1.0,
+  "capabilities": {
+    "formula_structure": false,
+    "table_structure": false,
+    "seal_region_class": false,
+    "word_or_line_bbox": true
+  },
+  "stderr": "",
+  "questions": [
+    {
+      "question_id": "Q-PUB-011",
+      "match": "document",
+      "passed": true,
+      "document_hits": {
+        "4年工作报告": true,
+        "指出": true
+      },
+      "matched_line": null,
+      "required_capability": null
+    }
+  ]
+}

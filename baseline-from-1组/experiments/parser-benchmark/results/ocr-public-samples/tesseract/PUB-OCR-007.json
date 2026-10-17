@@ -1,0 +1,136 @@
+{
+  "status": "succeeded",
+  "text": "如 ， 和 对 旅游 表演 形式",
+  "lines": [
+    "如 ， 和 对 旅游 表演 形式"
+  ],
+  "items": [
+    {
+      "text": "如",
+      "confidence": 93.104073,
+      "bbox": [
+        5,
+        3,
+        33,
+        20
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "，",
+      "confidence": 89.468773,
+      "bbox": [
+        39,
+        0,
+        22,
+        32
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "和",
+      "confidence": 93.068474,
+      "bbox": [
+        61,
+        5,
+        23,
+        19
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "对",
+      "confidence": 95.714806,
+      "bbox": [
+        91,
+        6,
+        21,
+        20
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": "旅游",
+      "confidence": 95.84243,
+      "bbox": [
+        116,
+        7,
+        163,
+        23
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "表演",
+      "confidence": 96.537086,
+      "bbox": [
+        183,
+        0,
+        52,
+        32
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 6
+    },
+    {
+      "text": "形式",
+      "confidence": 94.490654,
+      "bbox": [
+        235,
+        0,
+        44,
+        32
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 7
+    }
+  ],
+  "run_ms": [
+    903.4809000004316,
+    924.6343999984674,
+    879.972100003215
+  ],
+  "latency_ms_p50": 903.4809000004316,
+  "latency_ms_p95": 924.6343999984674,
+  "mean_confidence": 94.03232799999999,
+  "low_confidence_item_ratio": 0.0,
+  "bbox_item_ratio": 1.0,
+  "capabilities": {
+    "formula_structure": false,
+    "table_structure": false,
+    "seal_region_class": false,
+    "word_or_line_bbox": true
+  },
+  "stderr": "",
+  "questions": [
+    {
+      "question_id": "Q-PUB-010",
+      "match": "document",
+      "passed": true,
+      "document_hits": {
+        "和对旅游表演形式": true
+      },
+      "matched_line": null,
+      "required_capability": null
+    }
+  ]
+}

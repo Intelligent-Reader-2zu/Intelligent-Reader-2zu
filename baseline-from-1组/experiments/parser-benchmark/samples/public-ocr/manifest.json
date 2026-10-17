@@ -1,0 +1,127 @@
+{
+  "manifest_version": 1,
+  "experiment_id": "TECH-OCR-023-R01",
+  "retrieved_on": "2026-09-28",
+  "source_repository": "https://github.com/PaddlePaddle/PaddleOCR",
+  "source_commit": "dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf",
+  "repository_license": "Apache-2.0",
+  "license_file": "PaddleOCR-LICENSE.txt",
+  "license_scope_note": "The repository declares Apache-2.0. Some sample images may originate from third-party datasets; this manifest does not assert that repository licensing resolves every upstream image right. Use is limited to local technical evaluation until per-dataset provenance is verified.",
+  "cloud_upload_allowed": "no",
+  "download_method": "GitHub REST git/blob API over verified TLS; Base64 decoded locally",
+  "samples": [
+    {
+      "id": "PUB-OCR-001",
+      "file": "PADDLE-book.jpg",
+      "repository_path": "tests/test_files/book.jpg",
+      "blob_sha": "05897ee7569343dc19d3d137a60c7bdb71ca55a1",
+      "sha256": "782cc71a2730020ea8da815de3e40a964b7f150c183d1f8c01dd211de9dcbcc4",
+      "width": 1100,
+      "height": 708,
+      "included": true,
+      "features": ["english", "photographed_book", "two_pages", "background_clutter", "printed_page_numbers", "arithmetic_symbols"]
+    },
+    {
+      "id": "PUB-OCR-002",
+      "file": "PADDLE-book-rot180.jpg",
+      "repository_path": "tests/test_files/book_rot180.jpg",
+      "blob_sha": "64f8af101d48f2b4d295766307cf290cd63cc888",
+      "sha256": "6fb6b8ea8836a0acb46762a85d2bcf97100e33f0c4b49dcfc0b97f5955f4e534",
+      "width": 1100,
+      "height": 708,
+      "included": true,
+      "features": ["english", "rotation_180", "photographed_book", "background_clutter"]
+    },
+    {
+      "id": "PUB-OCR-003",
+      "file": "PADDLE-doc-with-formula.png",
+      "repository_path": "tests/test_files/doc_with_formula.png",
+      "blob_sha": "a7e7f22c2c2247654e7f22e03bafcc51a7091859",
+      "sha256": "6b07d28527dc9e930804fa73df562f1a81599c6b8a1a8bbc2a80742fa9f26e80",
+      "width": 816,
+      "height": 1056,
+      "included": true,
+      "features": ["english", "two_column", "formula", "special_symbols", "printed_page_number"]
+    },
+    {
+      "id": "PUB-OCR-004",
+      "file": "PADDLE-medal-table.png",
+      "repository_path": "tests/test_files/medal_table.png",
+      "blob_sha": "d4f6b3f6ab216810f97fc178801f0683ef2e2ccd",
+      "sha256": "6d50148ceccb2d5cecc50b084b5105e3167f2d55a8899b29e04c3ebe46e88fa8",
+      "width": 550,
+      "height": 345,
+      "included": true,
+      "features": ["chinese", "english_abbreviation", "numbers", "bordered_table"]
+    },
+    {
+      "id": "PUB-OCR-005",
+      "file": "PADDLE-seal.png",
+      "repository_path": "tests/test_files/seal.png",
+      "blob_sha": "b814e413b6679fb2dc1960f8fc64116215a55eea",
+      "sha256": "be29cb91999450742958c62ead08f93825b92e5fa4290c063cc7991259da6c24",
+      "width": 640,
+      "height": 640,
+      "included": true,
+      "features": ["chinese", "red_seal", "curved_text", "background_text", "numbers"]
+    },
+    {
+      "id": "PUB-OCR-006",
+      "file": "PADDLE-table.jpg",
+      "repository_path": "tests/test_files/table.jpg",
+      "blob_sha": "07059ca42c738e9aca0716f480c1a805c875b1bb",
+      "sha256": "acd113bb3a89b488941ee0962776a28e45897fa2802cd306ec3bb68d9043115c",
+      "width": 551,
+      "height": 132,
+      "included": true,
+      "features": ["english", "numbers", "bordered_table", "small_image"]
+    },
+    {
+      "id": "PUB-OCR-007",
+      "file": "PADDLE-ch-doc1.jpg",
+      "repository_path": "docs/datasets/images/ch_doc1.jpg",
+      "blob_sha": "53534400ab5b5cf0eb6291fc3bb483c4e2fa0406",
+      "sha256": "19588f23a55ded05245de1fcfdfe2425b1ee913522d16d743d4f04306b878dee",
+      "width": 280,
+      "height": 32,
+      "included": true,
+      "features": ["chinese", "low_height_text_line"]
+    },
+    {
+      "id": "PUB-OCR-008",
+      "file": "PADDLE-ch-doc3.jpg",
+      "repository_path": "docs/datasets/images/ch_doc3.jpg",
+      "blob_sha": "c0c2053643c6211b9c2017e305c5fa05bba0cc66",
+      "sha256": "e6ec7927162c3f138f43f5fd4ccf4fdaad6899a257098361e72356f76d062675",
+      "width": 280,
+      "height": 32,
+      "included": true,
+      "features": ["chinese", "mixed_digit", "low_height_text_line"]
+    },
+    {
+      "id": "PUB-OCR-CTRL-001",
+      "file": "PADDLE-sample.pdf",
+      "repository_path": "langchain-paddleocr/tests/data/sample_pdf.pdf",
+      "blob_sha": "6384246e891c59abf174e7225ed7f793e814ed69",
+      "sha256": "8823befbdda8816c7b1ecad80e8ec4b854f0f189c635f08aa179c0b3ce181789",
+      "pages": 4,
+      "included": false,
+      "control_role": "text_layer_detection",
+      "exclusion_reason": "The PDF already contains a usable text layer and should not enter the scanned-PDF OCR path."
+    }
+  ],
+  "excluded_downloads": [
+    {
+      "files": ["PADDLE-xfund-zh-0.jpg", "PADDLE-xfund-zh-1.jpg", "PADDLE-funsd-en-form.jpg"],
+      "reason": "Dataset visualization or form samples include colored ground-truth overlays and personal-looking fields; excluded from OCR quality scoring."
+    },
+    {
+      "files": ["PADDLE-cdla-val-0633.jpg", "PADDLE-cdla-val-0941.jpg", "PADDLE-candidate-00006737.jpg", "PADDLE-candidate-00057937.jpg", "PADDLE-candidate-185310636.jpg", "PADDLE-candidate-185393805.jpg"],
+      "reason": "Rendered ground-truth boxes or labels are burned into the image and would contaminate text/layout conclusions."
+    },
+    {
+      "files": ["PADDLE-candidate-254.jpg"],
+      "reason": "Redundant English receipt candidate; kept locally but not needed for the minimal phase-one matrix."
+    }
+  ]
+}

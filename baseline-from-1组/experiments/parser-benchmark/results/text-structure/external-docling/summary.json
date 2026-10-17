@@ -1,0 +1,1122 @@
+{
+  "experiment_id": "TECH-STRUCT-016-R01",
+  "parser": "Docling",
+  "parser_version": "2.130.0",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "samples": [
+    "OPEN-003",
+    "OPEN-010",
+    "OPEN-011"
+  ],
+  "cache_environment": {
+    "TMP": "D:\\docling-cache\\tmp",
+    "TEMP": "D:\\docling-cache\\tmp",
+    "APPDATA": "D:\\docling-cache\\appdata",
+    "LOCALAPPDATA": "D:\\docling-cache\\localappdata",
+    "XDG_CACHE_HOME": "D:\\docling-cache",
+    "HF_HOME": "D:\\docling-cache\\hf"
+  },
+  "outputs": [
+    {
+      "experiment_id": "TECH-STRUCT-016-R01",
+      "sample_id": "OPEN-003",
+      "status": "succeeded",
+      "parser": "Docling",
+      "parser_version": "2.130.0",
+      "source_path": "samples\\external-candidates\\nist-sp-800-63b.pdf",
+      "source_sha256": "ccfce7510a1267933f912d023306c6e7d485f21be63d271108b61aad6139127e",
+      "ocr": {
+        "enabled": false,
+        "status": "explicitly_disabled"
+      },
+      "pipeline_options": {
+        "do_ocr": false,
+        "do_table_structure": true,
+        "do_formula_enrichment": false,
+        "generate_page_images": false,
+        "generate_picture_images": false
+      },
+      "raw_export_path": "results\\text-structure\\external-docling\\OPEN-003.docling.json",
+      "raw_export_sha256": "63e4e76169a7a3f1568bf849c695caaa2a01e76f7d2c3f602e55ac4ba6ec3e72",
+      "metrics": {
+        "page_count": 80,
+        "text_count": 1071,
+        "table_count": 19,
+        "table_cell_count": 656,
+        "picture_count": 12,
+        "text_labels": {
+          "section_header": 149,
+          "page_footer": 78,
+          "text": 429,
+          "page_header": 230,
+          "caption": 6,
+          "list_item": 179
+        },
+        "section_header_count": 149,
+        "section_header_preview": [
+          {
+            "text": "Withdrawn NIST Technical Series Publication",
+            "level": 1,
+            "page_no": 1,
+            "bbox": {
+              "l": 101.94,
+              "t": 703.43664,
+              "r": 510.00803400000007,
+              "b": 684.8454019634263,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "NIST Special Publication 800-63B",
+            "level": 1,
+            "page_no": 2,
+            "bbox": {
+              "l": 249.6,
+              "t": 716.1470400000001,
+              "r": 540.31248,
+              "b": 698.8640254545455,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Digital Identity Guidelines",
+            "level": 1,
+            "page_no": 2,
+            "bbox": {
+              "l": 236.16,
+              "t": 662.98896,
+              "r": 540.6173999999995,
+              "b": 638.6261563636364,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Privacy Authors:",
+            "level": 1,
+            "page_no": 2,
+            "bbox": {
+              "l": 437.07264,
+              "t": 434.7561600000001,
+              "r": 539.867664,
+              "b": 422.67887272727285,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Usability Authors:",
+            "level": 1,
+            "page_no": 2,
+            "bbox": {
+              "l": 429.13824,
+              "t": 374.52432000000005,
+              "r": 539.8704479999999,
+              "b": 362.4470327272728,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "NIST Special Publication 800-63B",
+            "level": 1,
+            "page_no": 3,
+            "bbox": {
+              "l": 249.6,
+              "t": 716.1470400000001,
+              "r": 540.31248,
+              "b": 698.8640254545455,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Digital Identity Guidelines",
+            "level": 1,
+            "page_no": 3,
+            "bbox": {
+              "l": 236.16,
+              "t": 676.6689600000001,
+              "r": 540.6173999999995,
+              "b": 652.3061563636364,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Authority",
+            "level": 1,
+            "page_no": 4,
+            "bbox": {
+              "l": 281.52,
+              "t": 717.5846399999999,
+              "r": 330.3896639999997,
+              "b": 706.8654690909091,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Comments on this publication may be submitted to:",
+            "level": 1,
+            "page_no": 4,
+            "bbox": {
+              "l": 170.16,
+              "t": 224.38464,
+              "r": 441.74289599999906,
+              "b": 213.66546909090903,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Reports on Computer Systems Technology",
+            "level": 1,
+            "page_no": 5,
+            "bbox": {
+              "l": 182.64,
+              "t": 717.312,
+              "r": 429.3120000000002,
+              "b": 705.6607272727273,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Abstract",
+            "level": 1,
+            "page_no": 5,
+            "bbox": {
+              "l": 281.52,
+              "t": 541.632,
+              "r": 330.396,
+              "b": 529.9807272727272,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Keywords",
+            "level": 1,
+            "page_no": 5,
+            "bbox": {
+              "l": 277.20000000000005,
+              "t": 393.31199999999984,
+              "r": 334.5120000000001,
+              "b": 381.6607272727271,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Acknowledgments",
+            "level": 1,
+            "page_no": 6,
+            "bbox": {
+              "l": 252.96,
+              "t": 692.832,
+              "r": 359.232,
+              "b": 681.1807272727273,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Requirements Notation and Conventions",
+            "level": 1,
+            "page_no": 6,
+            "bbox": {
+              "l": 189.59999999999997,
+              "t": 492.43200000000036,
+              "r": 422.35080000000005,
+              "b": 480.78072727272763,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Table of Contents",
+            "level": 1,
+            "page_no": 7,
+            "bbox": {
+              "l": 255.36,
+              "t": 717.312,
+              "r": 356.83200000000005,
+              "b": 705.6607272727273,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Errata",
+            "level": 1,
+            "page_no": 11,
+            "bbox": {
+              "l": 288.48,
+              "t": 703.6320000000001,
+              "r": 322.9920000000001,
+              "b": 691.9807272727273,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "1 Purpose",
+            "level": 1,
+            "page_no": 12,
+            "bbox": {
+              "l": 72.0,
+              "t": 709.872,
+              "r": 148.99200000000002,
+              "b": 698.2207272727272,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "2 Introduction",
+            "level": 1,
+            "page_no": 13,
+            "bbox": {
+              "l": 72.0,
+              "t": 715.872,
+              "r": 171.012,
+              "b": 704.2207272727272,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "3 Definitions and Abbreviations",
+            "level": 1,
+            "page_no": 15,
+            "bbox": {
+              "l": 72.0,
+              "t": 684.192,
+              "r": 270.91200000000003,
+              "b": 672.5407272727273,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "4 Authenticator Assurance Levels",
+            "level": 1,
+            "page_no": 16,
+            "bbox": {
+              "l": 72.0,
+              "t": 715.872,
+              "r": 284.35320000000013,
+              "b": 704.2207272727272,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Authenticator Assurance Level 1",
+            "level": 1,
+            "page_no": 16,
+            "bbox": {
+              "l": 100.79568,
+              "t": 409.90464,
+              "r": 272.0371199999998,
+              "b": 399.18546909090907,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "4.1.1 Permitted Authenticator Types",
+            "level": 1,
+            "page_no": 16,
+            "bbox": {
+              "l": 72.0,
+              "t": 278.38464,
+              "r": 268.23048000000017,
+              "b": 267.665469090909,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "4.1.2 Authenticator and Verifier Requirements",
+            "level": 1,
+            "page_no": 17,
+            "bbox": {
+              "l": 72.0,
+              "t": 717.5846399999999,
+              "r": 319.602912,
+              "b": 706.8654690909091,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "4.1.3 Reauthentication",
+            "level": 1,
+            "page_no": 17,
+            "bbox": {
+              "l": 72.0,
+              "t": 532.78464,
+              "r": 197.53583999999998,
+              "b": 522.0654690909091,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "4.1.4 Security Controls",
+            "level": 1,
+            "page_no": 17,
+            "bbox": {
+              "l": 72.0,
+              "t": 440.86463999999995,
+              "r": 199.82332800000015,
+              "b": 430.14546909090905,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "4.1.5 Records Retention Policy",
+            "level": 1,
+            "page_no": 17,
+            "bbox": {
+              "l": 72.0,
+              "t": 348.94464,
+              "r": 241.57771200000008,
+              "b": 338.2254690909091,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Authenticator Assurance Level 2",
+            "level": 1,
+            "page_no": 17,
+            "bbox": {
+              "l": 100.79568,
+              "t": 229.66463999999996,
+              "r": 272.0382239999998,
+              "b": 218.9454690909091,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "4.2.1 Permitted Authenticator Types",
+            "level": 1,
+            "page_no": 18,
+            "bbox": {
+              "l": 72.0,
+              "t": 717.5846399999999,
+              "r": 268.23048000000017,
+              "b": 706.8654690909091,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "4.2.2 Authenticator and Verifier Requirements",
+            "level": 1,
+            "page_no": 18,
+            "bbox": {
+              "l": 72.0,
+              "t": 298.54463999999996,
+              "r": 319.602912,
+              "b": 287.82546909090905,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "4.2.3 Reauthentication",
+            "level": 1,
+            "page_no": 19,
+            "bbox": {
+              "l": 72.0,
+              "t": 597.10464,
+              "r": 197.52369599999992,
+              "b": 586.3854690909092,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          }
+        ]
+      },
+      "elapsed_ms": 92599.21,
+      "boundary": "External text-layer PDF smoke test; no gold labels, OCR, reading-order, or QA accuracy claim."
+    },
+    {
+      "experiment_id": "TECH-STRUCT-016-R01",
+      "sample_id": "OPEN-010",
+      "status": "succeeded",
+      "parser": "Docling",
+      "parser_version": "2.130.0",
+      "source_path": "samples\\external-candidates\\docling-technical-report.pdf",
+      "source_sha256": "82dd470712ce8389f19f20eb9330475e2166a281f8c7990a9f1d0763d73b4d22",
+      "ocr": {
+        "enabled": false,
+        "status": "explicitly_disabled"
+      },
+      "pipeline_options": {
+        "do_ocr": false,
+        "do_table_structure": true,
+        "do_formula_enrichment": false,
+        "generate_page_images": false,
+        "generate_picture_images": false
+      },
+      "raw_export_path": "results\\text-structure\\external-docling\\OPEN-010.docling.json",
+      "raw_export_sha256": "9f291441f62d3694d1fe850c6797a46ba353fb61c634098fc6a527a9efbf037b",
+      "metrics": {
+        "page_count": 9,
+        "text_count": 739,
+        "table_count": 3,
+        "table_cell_count": 36,
+        "picture_count": 5,
+        "text_labels": {
+          "page_header": 2,
+          "section_header": 30,
+          "text": 666,
+          "page_footer": 10,
+          "list_item": 22,
+          "code": 1,
+          "footnote": 1,
+          "caption": 7
+        },
+        "section_header_count": 30,
+        "section_header_preview": [
+          {
+            "text": "Docling Technical Report",
+            "level": 1,
+            "page_no": 1,
+            "bbox": {
+              "l": 212.59,
+              "t": 566.639626,
+              "r": 399.4115208,
+              "b": 551.1629813999999,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Version 1.0",
+            "level": 1,
+            "page_no": 1,
+            "bbox": {
+              "l": 283.31,
+              "t": 511.9776526,
+              "r": 328.6896429999999,
+              "b": 503.42577439292035,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Abstract",
+            "level": 1,
+            "page_no": 1,
+            "bbox": {
+              "l": 283.758,
+              "t": 393.159088,
+              "r": 328.24329919999997,
+              "b": 382.41136320000004,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "1 Introduction",
+            "level": 1,
+            "page_no": 1,
+            "bbox": {
+              "l": 107.99999999999994,
+              "t": 267.802088,
+              "r": 190.8136704,
+              "b": 257.0543632000001,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "2 GettingStarted",
+            "level": 1,
+            "page_no": 2,
+            "bbox": {
+              "l": 108.0,
+              "t": 572.4900879999999,
+              "r": 205.29141760000007,
+              "b": 561.7423631999999,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "3 Processingpipeline",
+            "level": 1,
+            "page_no": 2,
+            "bbox": {
+              "l": 108.0,
+              "t": 297.5980879999999,
+              "r": 223.69047040000004,
+              "b": 286.85036319999995,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "3.1 PDFbackends",
+            "level": 1,
+            "page_no": 2,
+            "bbox": {
+              "l": 108.0,
+              "t": 161.43419399999993,
+              "r": 192.03453100000004,
+              "b": 152.47781659999998,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "3.2 AImodels",
+            "level": 1,
+            "page_no": 3,
+            "bbox": {
+              "l": 108.00000000000003,
+              "t": 426.4261940000001,
+              "r": 173.86274860000006,
+              "b": 417.4698166000001,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Layout Analysis Model",
+            "level": 1,
+            "page_no": 3,
+            "bbox": {
+              "l": 108.0,
+              "t": 313.7181940000001,
+              "r": 206.28104900000005,
+              "b": 304.7618166000001,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Table Structure Recognition",
+            "level": 1,
+            "page_no": 3,
+            "bbox": {
+              "l": 108.0,
+              "t": 175.05819400000019,
+              "r": 228.10910560000008,
+              "b": 166.10181660000012,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "OCR",
+            "level": 1,
+            "page_no": 4,
+            "bbox": {
+              "l": 108.0,
+              "t": 650.6341940000001,
+              "r": 130.1368972,
+              "b": 641.6778166000001,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "3.3 Assembly",
+            "level": 1,
+            "page_no": 4,
+            "bbox": {
+              "l": 108.00000000000006,
+              "t": 526.1751940000001,
+              "r": 171.3720986000001,
+              "b": 517.2188166000002,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "3.4 Extensibility",
+            "level": 1,
+            "page_no": 4,
+            "bbox": {
+              "l": 108.00000000000006,
+              "t": 416.75919400000015,
+              "r": 184.1142640000001,
+              "b": 407.80281660000014,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "4 Performance",
+            "level": 1,
+            "page_no": 4,
+            "bbox": {
+              "l": 107.99999999999994,
+              "t": 244.75808800000027,
+              "r": 191.78204160000004,
+              "b": 234.01036320000026,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "5 Applications",
+            "level": 1,
+            "page_no": 5,
+            "bbox": {
+              "l": 108.00000000000001,
+              "t": 528.628088,
+              "r": 190.072448,
+              "b": 517.8803632,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "6 Futureworkandcontributions",
+            "level": 1,
+            "page_no": 5,
+            "bbox": {
+              "l": 108.00000000000006,
+              "t": 346.7880880000001,
+              "r": 283.77730560000015,
+              "b": 336.0403632000001,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "References",
+            "level": 1,
+            "page_no": 5,
+            "bbox": {
+              "l": 108.00000000000009,
+              "t": 181.28808800000024,
+              "r": 163.54385920000016,
+              "b": 170.54036320000023,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Appendix",
+            "level": 1,
+            "page_no": 7,
+            "bbox": {
+              "l": 108.0,
+              "t": 718.2860880000001,
+              "r": 157.53039360000002,
+              "b": 707.5383632,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "DocLayNet: A Large Human-Annotated Dataset for Document-Layout Analysis",
+            "level": 1,
+            "page_no": 7,
+            "bbox": {
+              "l": 329.60160378558874,
+              "t": 667.2908484337102,
+              "r": 520.7848406846038,
+              "b": 662.7175214987101,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "ABSTRACT",
+            "level": 1,
+            "page_no": 7,
+            "bbox": {
+              "l": 329.60160378558874,
+              "t": 614.9494336829902,
+              "r": 357.91616072459834,
+              "b": 610.3761067479901,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "CCS CONCEPTS",
+            "level": 1,
+            "page_no": 7,
+            "bbox": {
+              "l": 329.60160378558874,
+              "t": 542.4437034135501,
+              "r": 370.50681501203456,
+              "b": 537.87037647855,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "KEYWORDS",
+            "level": 1,
+            "page_no": 7,
+            "bbox": {
+              "l": 329.60160378558874,
+              "t": 479.1620749239502,
+              "r": 359.920904255645,
+              "b": 474.58874798895005,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "ACM Reference Format:",
+            "level": 1,
+            "page_no": 7,
+            "bbox": {
+              "l": 329.60160378558874,
+              "t": 458.5687314154701,
+              "r": 388.24781708698765,
+              "b": 453.99540448047003,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "DocLayNet: A Large Human-Annotated Dataset for Document-Layout Analysis",
+            "level": 1,
+            "page_no": 7,
+            "bbox": {
+              "l": 144.3986539132768,
+              "t": 669.6826518609483,
+              "r": 291.9444243859824,
+              "b": 654.0538840779224,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "ABSTRACT",
+            "level": 1,
+            "page_no": 7,
+            "bbox": {
+              "l": 124.55262175421036,
+              "t": 607.9520956577478,
+              "r": 146.1211149403173,
+              "b": 602.5215286743751,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "CCS CONCEPTS",
+            "level": 1,
+            "page_no": 7,
+            "bbox": {
+              "l": 124.55262175421036,
+              "t": 495.4482015247195,
+              "r": 154.60688045837853,
+              "b": 490.01763454134675,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "KEYWORDS",
+            "level": 1,
+            "page_no": 7,
+            "bbox": {
+              "l": 222.5390207120533,
+              "t": 480.06568823463607,
+              "r": 245.4874118674777,
+              "b": 474.63512125126334,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "ACM Reference Format:",
+            "level": 1,
+            "page_no": 7,
+            "bbox": {
+              "l": 222.42959341051457,
+              "t": 462.0861694370455,
+              "r": 254.69901524228345,
+              "b": 458.11864123451926,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "5 EXPERIMENTS",
+            "level": 1,
+            "page_no": 8,
+            "bbox": {
+              "l": 122.99872750652476,
+              "t": 338.0934617900201,
+              "r": 163.04465184815228,
+              "b": 331.83570323547144,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "Baselines for Object Detection",
+            "level": 1,
+            "page_no": 8,
+            "bbox": {
+              "l": 235.91056828312725,
+              "t": 377.12235126722504,
+              "r": 299.55598297093286,
+              "b": 370.86459271267637,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          }
+        ]
+      },
+      "elapsed_ms": 11927.94,
+      "boundary": "External text-layer PDF smoke test; no gold labels, OCR, reading-order, or QA accuracy claim."
+    },
+    {
+      "experiment_id": "TECH-STRUCT-016-R01",
+      "sample_id": "OPEN-011",
+      "status": "succeeded",
+      "parser": "Docling",
+      "parser_version": "2.130.0",
+      "source_path": "samples\\external-candidates\\layoutlmv3.pdf",
+      "source_sha256": "bd5395610755a49e6419c406e651906e688e7a0cfe155b3c43566469dfd641fe",
+      "ocr": {
+        "enabled": false,
+        "status": "explicitly_disabled"
+      },
+      "pipeline_options": {
+        "do_ocr": false,
+        "do_table_structure": true,
+        "do_formula_enrichment": false,
+        "generate_page_images": false,
+        "generate_picture_images": false
+      },
+      "raw_export_path": "results\\text-structure\\external-docling\\OPEN-011.docling.json",
+      "raw_export_sha256": "04fe82c5e4989d13062448c382d530266ca3d58fe67355b9ae0c2f6f50bd42ef",
+      "metrics": {
+        "page_count": 10,
+        "text_count": 292,
+        "table_count": 4,
+        "table_cell_count": 382,
+        "picture_count": 5,
+        "text_labels": {
+          "page_header": 1,
+          "section_header": 21,
+          "text": 188,
+          "caption": 11,
+          "list_item": 68,
+          "formula": 3
+        },
+        "section_header_count": 21,
+        "section_header_preview": [
+          {
+            "text": "ABSTRACT",
+            "level": 1,
+            "page_no": 1,
+            "bbox": {
+              "l": 53.797999999999945,
+              "t": 569.5289147999997,
+              "r": 111.94350299999994,
+              "b": 560.4615275647055,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "CCS CONCEPTS",
+            "level": 1,
+            "page_no": 1,
+            "bbox": {
+              "l": 53.798,
+              "t": 337.1979148,
+              "r": 134.81988570000001,
+              "b": 328.13052756470586,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "KEYWORDS",
+            "level": 1,
+            "page_no": 1,
+            "bbox": {
+              "l": 53.79800000000003,
+              "t": 291.1699148,
+              "r": 115.66350610000003,
+              "b": 282.1025275647059,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "ACM Reference Format:",
+            "level": 1,
+            "page_no": 1,
+            "bbox": {
+              "l": 53.503,
+              "t": 261.4402228,
+              "r": 140.4966415,
+              "b": 254.81566321176467,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking",
+            "level": 1,
+            "page_no": 1,
+            "bbox": {
+              "l": 136.893,
+              "t": 707.7715948,
+              "r": 475.10674839999984,
+              "b": 672.5853538556999,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "1 INTRODUCTION",
+            "level": 1,
+            "page_no": 1,
+            "bbox": {
+              "l": 317.95500000000004,
+              "t": 346.29791479999994,
+              "r": 420.68599470000004,
+              "b": 337.2305275647058,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "2 LAYOUTLMV3",
+            "level": 1,
+            "page_no": 2,
+            "bbox": {
+              "l": 317.955,
+              "t": 327.17191479999997,
+              "r": 407.25689259999996,
+              "b": 318.10452756470585,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "2.1 ModelArchitecture",
+            "level": 1,
+            "page_no": 2,
+            "bbox": {
+              "l": 317.955,
+              "t": 291.5039148,
+              "r": 438.89328260000013,
+              "b": 282.4365275647059,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "2.2 Pre-trainingObjectives",
+            "level": 1,
+            "page_no": 3,
+            "bbox": {
+              "l": 317.955,
+              "t": 181.91391479999993,
+              "r": 456.9914795,
+              "b": 172.84652756470587,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "3 EXPERIMENTS",
+            "level": 1,
+            "page_no": 4,
+            "bbox": {
+              "l": 53.798,
+              "t": 142.81091479999998,
+              "r": 147.48535080000002,
+              "b": 133.74352756470591,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "3.1 ModelConfigurations",
+            "level": 1,
+            "page_no": 4,
+            "bbox": {
+              "l": 53.798,
+              "t": 127.11991480000006,
+              "r": 186.8344745,
+              "b": 118.05252756470588,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "3.2 Pre-trainingLayoutLMv3",
+            "level": 1,
+            "page_no": 4,
+            "bbox": {
+              "l": 317.95500000000004,
+              "t": 459.6509148,
+              "r": 467.96603410000006,
+              "b": 450.5835275647059,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "3.3 Fine-tuningonMultimodalTasks",
+            "level": 1,
+            "page_no": 4,
+            "bbox": {
+              "l": 317.955,
+              "t": 227.66791480000006,
+              "r": 508.67879530000005,
+              "b": 218.60052756470589,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "3.4 Fine-tuningonaVisionTask",
+            "level": 1,
+            "page_no": 6,
+            "bbox": {
+              "l": 317.955,
+              "t": 401.0929148,
+              "r": 485.8787763,
+              "b": 392.0255275647059,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "3.5 AblationStudy",
+            "level": 1,
+            "page_no": 7,
+            "bbox": {
+              "l": 53.798,
+              "t": 149.03791479999995,
+              "r": 152.64535510000002,
+              "b": 139.9705275647059,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "4 RELATEDWORK",
+            "level": 1,
+            "page_no": 8,
+            "bbox": {
+              "l": 53.798,
+              "t": 565.4759148,
+              "r": 157.5871774,
+              "b": 556.4085275647059,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "5 CONCLUSIONANDFUTUREWORK",
+            "level": 1,
+            "page_no": 8,
+            "bbox": {
+              "l": 317.955,
+              "t": 377.1819148,
+              "r": 517.5369845,
+              "b": 368.1145275647059,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "6 ACKNOWLEDGEMENT",
+            "level": 1,
+            "page_no": 8,
+            "bbox": {
+              "l": 317.955,
+              "t": 166.97091479999995,
+              "r": 453.17329449999994,
+              "b": 157.90352756470588,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "A APPENDIX",
+            "level": 1,
+            "page_no": 9,
+            "bbox": {
+              "l": 53.798,
+              "t": 583.4439148,
+              "r": 128.80897159999998,
+              "b": 574.3765275647058,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "A.1 LayoutLMv3inChinese",
+            "level": 1,
+            "page_no": 9,
+            "bbox": {
+              "l": 53.798,
+              "t": 567.7529148,
+              "r": 198.4853933,
+              "b": 558.6855275647058,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          },
+          {
+            "text": "REFERENCES",
+            "level": 1,
+            "page_no": 9,
+            "bbox": {
+              "l": 53.798,
+              "t": 215.0749148,
+              "r": 123.21260330000001,
+              "b": 206.00752756470592,
+              "coord_origin": "BOTTOMLEFT"
+            }
+          }
+        ]
+      },
+      "elapsed_ms": 20441.74,
+      "boundary": "External text-layer PDF smoke test; no gold labels, OCR, reading-order, or QA accuracy claim."
+    }
+  ],
+  "boundary": "External text-layer PDF smoke test; no gold labels, OCR, reading-order, or QA accuracy claim."
+}

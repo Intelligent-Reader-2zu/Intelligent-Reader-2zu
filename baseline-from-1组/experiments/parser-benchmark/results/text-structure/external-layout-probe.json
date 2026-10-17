@@ -1,0 +1,541 @@
+{
+  "experiment_id": "TECH-STRUCT-012-R01",
+  "scope": "representative external PDF/HTML layout-risk probe",
+  "selected_sample_ids": [
+    "OPEN-003",
+    "OPEN-010",
+    "OPEN-011",
+    "WEB-001",
+    "WEB-002",
+    "WEB-004"
+  ],
+  "probes": [
+    {
+      "sample_id": "OPEN-003",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\nist-sp-800-63b.pdf",
+      "probe": {
+        "kind": "PDF",
+        "page_count": 80,
+        "toc_entry_count": 120,
+        "toc_preview": [
+          [
+            1,
+            "NIST SP 800-63B, Digital Identity Guidelines: Authentication and Lifecycle Management",
+            2
+          ],
+          [
+            1,
+            "1 Purpose",
+            12
+          ],
+          [
+            1,
+            "2 Introduction",
+            13
+          ],
+          [
+            1,
+            "3 Definitions and Abbreviations",
+            15
+          ],
+          [
+            1,
+            "4 Authenticator Assurance Levels",
+            16
+          ],
+          [
+            2,
+            "4.1 Authenticator Assurance Level 1",
+            16
+          ],
+          [
+            3,
+            "4.1.1 Permitted Authenticator Types",
+            16
+          ],
+          [
+            3,
+            "4.1.2 Authenticator and Verifier Requirements",
+            17
+          ],
+          [
+            3,
+            "4.1.3 Reauthentication",
+            17
+          ],
+          [
+            3,
+            "4.1.4 Security Controls",
+            17
+          ],
+          [
+            3,
+            "4.1.5 Records Retention Policy",
+            17
+          ],
+          [
+            2,
+            "4.2 Authenticator Assurance Level 2",
+            17
+          ]
+        ],
+        "suspected_multi_column_page_count": 1,
+        "suspected_multi_column_page_ratio": 0.0125,
+        "multi_column_pages_preview": [
+          {
+            "page": 53,
+            "x_cluster_count": 2
+          }
+        ],
+        "heuristic_warning": "x-coordinate clusters are a layout-risk signal, not a reading-order label"
+      }
+    },
+    {
+      "sample_id": "OPEN-010",
+      "source_url": "https://arxiv.org/pdf/2408.09869.pdf",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\docling-technical-report.pdf",
+      "probe": {
+        "kind": "PDF",
+        "page_count": 9,
+        "toc_entry_count": 10,
+        "toc_preview": [
+          [
+            1,
+            "Introduction",
+            1
+          ],
+          [
+            1,
+            "Getting Started",
+            2
+          ],
+          [
+            1,
+            "Processing pipeline",
+            2
+          ],
+          [
+            2,
+            "PDF backends",
+            2
+          ],
+          [
+            2,
+            "AI models",
+            3
+          ],
+          [
+            2,
+            "Assembly",
+            4
+          ],
+          [
+            2,
+            "Extensibility",
+            4
+          ],
+          [
+            1,
+            "Performance",
+            4
+          ],
+          [
+            1,
+            "Applications",
+            5
+          ],
+          [
+            1,
+            "Future work and contributions",
+            5
+          ]
+        ],
+        "suspected_multi_column_page_count": 1,
+        "suspected_multi_column_page_ratio": 0.1111111111111111,
+        "multi_column_pages_preview": [
+          {
+            "page": 1,
+            "x_cluster_count": 2
+          }
+        ],
+        "heuristic_warning": "x-coordinate clusters are a layout-risk signal, not a reading-order label"
+      }
+    },
+    {
+      "sample_id": "OPEN-011",
+      "source_url": "https://arxiv.org/pdf/2204.08387.pdf",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\layoutlmv3.pdf",
+      "probe": {
+        "kind": "PDF",
+        "page_count": 10,
+        "toc_entry_count": 17,
+        "toc_preview": [
+          [
+            1,
+            "Abstract",
+            1
+          ],
+          [
+            1,
+            "1 Introduction",
+            1
+          ],
+          [
+            1,
+            "2 LayoutLMv3",
+            2
+          ],
+          [
+            2,
+            "2.1 Model Architecture",
+            2
+          ],
+          [
+            2,
+            "2.2 Pre-training Objectives",
+            3
+          ],
+          [
+            1,
+            "3 Experiments",
+            4
+          ],
+          [
+            2,
+            "3.1 Model Configurations",
+            4
+          ],
+          [
+            2,
+            "3.2 Pre-training LayoutLMv3",
+            4
+          ],
+          [
+            2,
+            "3.3 Fine-tuning on Multimodal Tasks",
+            4
+          ],
+          [
+            2,
+            "3.4 Fine-tuning on a Vision Task",
+            6
+          ],
+          [
+            2,
+            "3.5 Ablation Study",
+            7
+          ],
+          [
+            1,
+            "4 Related Work",
+            8
+          ]
+        ],
+        "suspected_multi_column_page_count": 0,
+        "suspected_multi_column_page_ratio": 0.0,
+        "multi_column_pages_preview": [],
+        "heuristic_warning": "x-coordinate clusters are a layout-risk signal, not a reading-order label"
+      }
+    },
+    {
+      "sample_id": "WEB-001",
+      "source_url": "https://www.w3.org/TR/webauthn-3/",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\w3c-webauthn-3.html",
+      "probe": {
+        "kind": "HTML",
+        "heading_count": 230,
+        "heading_preview": [
+          {
+            "level": 1,
+            "text": "Web Authentication: An API for accessing Public Key Credentials Level 3",
+            "id": null
+          },
+          {
+            "level": 2,
+            "text": "Abstract",
+            "id": "abstract"
+          },
+          {
+            "level": 2,
+            "text": "Status of this document",
+            "id": "sotd"
+          },
+          {
+            "level": 2,
+            "text": "Table of Contents",
+            "id": "contents"
+          },
+          {
+            "level": 2,
+            "text": "1. Introduction",
+            "id": "sctn-intro"
+          },
+          {
+            "level": 3,
+            "text": "1.1. Specification Roadmap",
+            "id": "sctn-spec-roadmap"
+          },
+          {
+            "level": 3,
+            "text": "1.2. Use Cases",
+            "id": "sctn-use-cases"
+          },
+          {
+            "level": 4,
+            "text": "1.2.1. Consumer with Multi-Device Credentials",
+            "id": "sctn-usecase-consumer-mdc"
+          },
+          {
+            "level": 5,
+            "text": "1.2.1.1. Registration",
+            "id": "sctn-usecase-consumer-mdc-reg"
+          },
+          {
+            "level": 5,
+            "text": "1.2.1.2. Authentication",
+            "id": "sctn-usecase-consumer-mdc-auth"
+          },
+          {
+            "level": 4,
+            "text": "1.2.2. Workforce with Single-Device Credentials",
+            "id": "sctn-usecase-workforce-sdc"
+          },
+          {
+            "level": 5,
+            "text": "1.2.2.1. Registration",
+            "id": "sctn-usecase-workforce-sdc-reg"
+          },
+          {
+            "level": 5,
+            "text": "1.2.2.2. Authentication",
+            "id": "sctn-usecase-workforce-sdc-auth"
+          },
+          {
+            "level": 4,
+            "text": "1.2.3. Other Use Cases and Configurations",
+            "id": "sctn-other-configurations"
+          },
+          {
+            "level": 3,
+            "text": "1.3. Sample API Usage Scenarios",
+            "id": "sctn-sample-scenarios"
+          },
+          {
+            "level": 4,
+            "text": "1.3.1. Registration",
+            "id": "sctn-sample-registration"
+          },
+          {
+            "level": 4,
+            "text": "1.3.2. Registration Specifically with User-Verifying Platform Authenticator",
+            "id": "sctn-sample-registration-with-platform-authenticator"
+          },
+          {
+            "level": 4,
+            "text": "1.3.3. Authentication",
+            "id": "sctn-sample-authentication"
+          },
+          {
+            "level": 4,
+            "text": "1.3.4. Aborting Authentication Operations",
+            "id": "sctn-sample-aborting"
+          },
+          {
+            "level": 4,
+            "text": "1.3.5. Decommissioning",
+            "id": "sctn-sample-decommissioning"
+          }
+        ],
+        "heading_id_count": 229,
+        "unique_heading_id_ratio": 1.0,
+        "table_count": 17,
+        "code_block_count": 2527,
+        "anchor_count": 8490,
+        "nav_count": 1,
+        "article_count": 0,
+        "script_count": 5,
+        "style_count": 12,
+        "heuristic_warning": "DOM heading counts include navigation or generated content until article extraction is applied"
+      }
+    },
+    {
+      "sample_id": "WEB-002",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\rfc-9110.html",
+      "probe": {
+        "kind": "HTML",
+        "heading_count": 311,
+        "heading_preview": [
+          {
+            "level": 1,
+            "text": "RFC 9110",
+            "id": "rfcnum"
+          },
+          {
+            "level": 1,
+            "text": "HTTP Semantics",
+            "id": "title"
+          },
+          {
+            "level": 2,
+            "text": "Abstract",
+            "id": "abstract"
+          },
+          {
+            "level": 2,
+            "text": "Status of This Memo",
+            "id": "name-status-of-this-memo"
+          },
+          {
+            "level": 2,
+            "text": "Copyright Notice",
+            "id": "name-copyright-notice"
+          },
+          {
+            "level": 2,
+            "text": "Table of Contents",
+            "id": "name-table-of-contents"
+          },
+          {
+            "level": 2,
+            "text": "1. Introduction",
+            "id": "name-introduction"
+          },
+          {
+            "level": 3,
+            "text": "1.1. Purpose",
+            "id": "name-purpose"
+          },
+          {
+            "level": 3,
+            "text": "1.2. History and Evolution",
+            "id": "name-history-and-evolution"
+          },
+          {
+            "level": 3,
+            "text": "1.3. Core Semantics",
+            "id": "name-core-semantics"
+          },
+          {
+            "level": 3,
+            "text": "1.4. Specifications Obsoleted by This Document",
+            "id": "name-specifications-obsoleted-by"
+          },
+          {
+            "level": 2,
+            "text": "2. Conformance",
+            "id": "name-conformance"
+          },
+          {
+            "level": 3,
+            "text": "2.1. Syntax Notation",
+            "id": "name-syntax-notation"
+          },
+          {
+            "level": 3,
+            "text": "2.2. Requirements Notation",
+            "id": "name-requirements-notation"
+          },
+          {
+            "level": 3,
+            "text": "2.3. Length Requirements",
+            "id": "name-length-requirements"
+          },
+          {
+            "level": 3,
+            "text": "2.4. Error Handling",
+            "id": "name-error-handling"
+          },
+          {
+            "level": 3,
+            "text": "2.5. Protocol Version",
+            "id": "name-protocol-version"
+          },
+          {
+            "level": 2,
+            "text": "3. Terminology and Core Concepts",
+            "id": "name-terminology-and-core-concep"
+          },
+          {
+            "level": 3,
+            "text": "3.1. Resources",
+            "id": "name-resources"
+          },
+          {
+            "level": 3,
+            "text": "3.2. Representations",
+            "id": "name-representations"
+          }
+        ],
+        "heading_id_count": 311,
+        "unique_heading_id_ratio": 1.0,
+        "table_count": 13,
+        "code_block_count": 161,
+        "anchor_count": 5430,
+        "nav_count": 1,
+        "article_count": 0,
+        "script_count": 2,
+        "style_count": 1,
+        "heuristic_warning": "DOM heading counts include navigation or generated content until article extraction is applied"
+      }
+    },
+    {
+      "sample_id": "WEB-004",
+      "source_url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction",
+      "path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\openstax-anatomy-intro.html",
+      "probe": {
+        "kind": "HTML",
+        "heading_count": 7,
+        "heading_preview": [
+          {
+            "level": 1,
+            "text": "Introduction",
+            "id": null
+          },
+          {
+            "level": 2,
+            "text": "Chapter Objectives",
+            "id": null
+          },
+          {
+            "level": 2,
+            "text": "Introduction",
+            "id": "page_ccc4ed14-6c87-408b-9934-7a0d279d853a_titlecreatedbycookbook"
+          },
+          {
+            "level": 2,
+            "text": "OpenStax’s mission is to make an amazing education accessible for all.",
+            "id": null
+          },
+          {
+            "level": 3,
+            "text": "Help",
+            "id": null
+          },
+          {
+            "level": 3,
+            "text": "OpenStax",
+            "id": null
+          },
+          {
+            "level": 3,
+            "text": "Policies",
+            "id": null
+          }
+        ],
+        "heading_id_count": 1,
+        "unique_heading_id_ratio": 1.0,
+        "table_count": 0,
+        "code_block_count": 0,
+        "anchor_count": 31,
+        "nav_count": 0,
+        "article_count": 0,
+        "script_count": 14,
+        "style_count": 1,
+        "heuristic_warning": "DOM heading counts include navigation or generated content until article extraction is applied"
+      }
+    }
+  ],
+  "boundary": "Heuristic signals only; no gold labels, reading-order accuracy, title F1, license approval, retrieval, or QA evaluation."
+}

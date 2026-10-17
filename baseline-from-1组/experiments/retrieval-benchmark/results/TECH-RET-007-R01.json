@@ -1,0 +1,153 @@
+{
+  "experiment_id": "TECH-RET-007-R01",
+  "required_fields": [
+    "document_id",
+    "document_version",
+    "source_hash",
+    "block_id",
+    "page",
+    "section_path",
+    "paragraph",
+    "char_start",
+    "char_end",
+    "text"
+  ],
+  "checked_evidence": 95,
+  "complete_evidence": 0,
+  "completeness": 0.0,
+  "failures_sample": [
+    {
+      "query_id": "Q01",
+      "method": "keyword",
+      "block_id": "A-P1-B2",
+      "missing": [
+        "document_version",
+        "source_hash",
+        "char_start",
+        "char_end"
+      ]
+    },
+    {
+      "query_id": "Q01",
+      "method": "keyword",
+      "block_id": "A-P1-B1",
+      "missing": [
+        "document_version",
+        "source_hash",
+        "char_start",
+        "char_end"
+      ]
+    },
+    {
+      "query_id": "Q01",
+      "method": "keyword",
+      "block_id": "A-P2-B1",
+      "missing": [
+        "document_version",
+        "source_hash",
+        "char_start",
+        "char_end"
+      ]
+    },
+    {
+      "query_id": "Q01",
+      "method": "bm25",
+      "block_id": "A-P1-B2",
+      "missing": [
+        "document_version",
+        "source_hash",
+        "char_start",
+        "char_end"
+      ]
+    },
+    {
+      "query_id": "Q01",
+      "method": "bm25",
+      "block_id": "A-P1-B1",
+      "missing": [
+        "document_version",
+        "source_hash",
+        "char_start",
+        "char_end"
+      ]
+    },
+    {
+      "query_id": "Q01",
+      "method": "bm25",
+      "block_id": "B-P2-B1",
+      "missing": [
+        "document_version",
+        "source_hash",
+        "char_start",
+        "char_end"
+      ]
+    },
+    {
+      "query_id": "Q01",
+      "method": "vector_proxy",
+      "block_id": "A-P1-B2",
+      "missing": [
+        "document_version",
+        "source_hash",
+        "char_start",
+        "char_end"
+      ]
+    },
+    {
+      "query_id": "Q01",
+      "method": "vector_proxy",
+      "block_id": "A-P1-B1",
+      "missing": [
+        "document_version",
+        "source_hash",
+        "char_start",
+        "char_end"
+      ]
+    },
+    {
+      "query_id": "Q01",
+      "method": "vector_proxy",
+      "block_id": "B-P2-B1",
+      "missing": [
+        "document_version",
+        "source_hash",
+        "char_start",
+        "char_end"
+      ]
+    },
+    {
+      "query_id": "Q01",
+      "method": "hybrid_rrf",
+      "block_id": "A-P1-B2",
+      "missing": [
+        "document_version",
+        "source_hash",
+        "char_start",
+        "char_end"
+      ]
+    },
+    {
+      "query_id": "Q01",
+      "method": "hybrid_rrf",
+      "block_id": "A-P1-B1",
+      "missing": [
+        "document_version",
+        "source_hash",
+        "char_start",
+        "char_end"
+      ]
+    },
+    {
+      "query_id": "Q01",
+      "method": "hybrid_rrf",
+      "block_id": "B-P2-B1",
+      "missing": [
+        "document_version",
+        "source_hash",
+        "char_start",
+        "char_end"
+      ]
+    }
+  ],
+  "interpretation": "当前合成检索结果保留页码/章节/段落/原文，但未提供版本、源哈希和字符偏移；字段已显式返回 null，不能宣称引用链路完整。"
+}

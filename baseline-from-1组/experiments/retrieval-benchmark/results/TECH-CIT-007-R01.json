@@ -1,0 +1,20 @@
+{
+  "experiment_id": "TECH-CIT-007-R01",
+  "visible_sources": 2,
+  "denied_sources_filtered": 1,
+  "conflict_detected": true,
+  "answer_status": "needs_human_review",
+  "source_groups": [
+    {
+      "document_id": "doc-a",
+      "version": "v1",
+      "value": "段落"
+    },
+    {
+      "document_id": "doc-b",
+      "version": "v2",
+      "value": "页码"
+    }
+  ],
+  "scope": "Controlled multi-document provenance and permission probe; no model generation."
+}

@@ -1,0 +1,32 @@
+{
+  "parser": "Docling",
+  "parser_version": "2.130.0",
+  "status": "succeeded",
+  "sample_id": "SELF-003",
+  "page_count_from_export": 1,
+  "text_element_count": 8,
+  "picture_count": 0,
+  "table_count": 1,
+  "elapsed_ms": 19586.38,
+  "text_preview": "## 1 研究目标\n\n本样本专门覆盖复杂表格、合并概念、公式文本和图注。公式示例：Recall@k = hits / k。\n\n## 2 关键结论\n\n解析结果不能只保留扁平纯文本。每个文本块还需要稳定 ID、标题路径、物理页码和原始位置。\n\n| 指标       | 公式/值      | 解释       |\n|----------|-----------|----------|\n| Recall@k | hits / k  | 检索命中比例   |\n| 表格结构     | row + col | 合并单元格需保留 |\n\n脚注：这是一个可回溯的脚注占位，用来检查脚注是否被混入正文。\n\n## 智能阅读器自制 PDF：表格与公式",
+  "raw_export_keys": [
+    "schema_name",
+    "version",
+    "name",
+    "origin",
+    "furniture",
+    "body",
+    "groups",
+    "texts",
+    "pictures",
+    "tables",
+    "key_value_items",
+    "form_items",
+    "pages"
+  ],
+  "raw_export_path": "results\\candidate-pdf\\SELF-003.docling.json",
+  "raw_export_sha256": "902309db29a4f1acdf821e6dcaa8c7d01a89ebc3e24005c415ef0e26abbd7780",
+  "ocr_status": "observed_text_on_scanned_sample; config_not_explicitly_overridden",
+  "source_path": "samples\\self-authored\\pdf\\SELF-003-table-formula.pdf",
+  "source_sha256": "e0776c95d8ff89cc61a6cac9558775f07df3dd4eb234ede9ee69ace4c673852a"
+}

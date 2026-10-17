@@ -1,0 +1,15 @@
+{
+  "fixed_queries": [
+    "DOCX 标题样式",
+    "引用定位",
+    "正文中的脚注标记"
+  ],
+  "expected_evidence_fragments": [
+    "Heading 1/2/3",
+    "稳定 block identifiers"
+  ],
+  "reference_notes": "保留 Heading 样式、表格、脚注、页眉页脚和显式分页符。",
+  "sample_id": "SELF-005",
+  "annotation_version": 1,
+  "source": "project-authored"
+}

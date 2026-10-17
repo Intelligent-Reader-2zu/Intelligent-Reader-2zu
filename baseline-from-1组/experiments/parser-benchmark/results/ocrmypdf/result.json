@@ -1,0 +1,27 @@
+{
+  "experiment_id": "TECH-OCR-017-R01",
+  "source_sha256": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+  "output_sha256": "488808c5be85ac749cc25742e7b4231a830a9d8231ddf82918f9db5bf9dd9979",
+  "ocrmypdf_version": "17.12.1",
+  "tesseract_version": "5.5.3.20260724",
+  "languages": ["chi_sim", "eng"],
+  "configuration": ["--pdf-renderer", "sandwich", "--deskew", "--force-ocr"],
+  "elapsed_ms": 3471.88,
+  "source_pages": 2,
+  "output_pages": 2,
+  "page_sizes_preserved": true,
+  "source_bytes": 254860,
+  "output_bytes": 119916,
+  "visual_render_check": "passed_all_pages",
+  "latin_number_queries": {
+    "OCR TEST": true,
+    "12345": true,
+    "A-01": true,
+    "0.95": true,
+    "page label": true
+  },
+  "chinese_text_extraction": "failed_mojibake_with_pypdf",
+  "hocr_renderer": "failed_xml_parse_invalid_token",
+  "clean_option": "not_run_missing_unpaper",
+  "conclusion": "PDF wrapper is operational with sandwich renderer and preserves page geometry/visuals, but Chinese searchable text is not acceptable in the current Windows Tesseract stack."
+}

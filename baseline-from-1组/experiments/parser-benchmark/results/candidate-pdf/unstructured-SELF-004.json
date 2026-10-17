@@ -1,0 +1,21 @@
+{
+  "parser": "Unstructured",
+  "parser_version": "0.27.8",
+  "status": "succeeded",
+  "sample_id": "SELF-004",
+  "strategy": "fast",
+  "element_count": 2,
+  "element_types": {
+    "PageBreak": 2
+  },
+  "physical_pages_observed": [],
+  "text_chars": 1,
+  "text_layer_present": false,
+  "elapsed_ms": 15.44,
+  "text_preview": "\n",
+  "raw_element_path": "results\\candidate-pdf\\SELF-004.unstructured.json",
+  "raw_element_sha256": "43484be2f179acef8b4f835e1307f232d36b553be19a9a8ba9129a11ea7aa370",
+  "ocr_status": "fast_strategy_no_explicit_ocr",
+  "source_path": "samples\\self-authored\\pdf\\SELF-004-scanned.pdf",
+  "source_sha256": "643a6c777485b388c5c856bdcd955f0397d3cdac0586dfd2782567c5fcbda360"
+}

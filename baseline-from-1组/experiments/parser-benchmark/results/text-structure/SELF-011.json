@@ -1,0 +1,26 @@
+{
+  "experiment_id": "TECH-DOC-007-R01-text-structure",
+  "sample_id": "SELF-011",
+  "format": "TXT",
+  "status": "scored",
+  "ocr": {
+    "enabled": false,
+    "status": "not_applicable"
+  },
+  "parser": "explicit-encoding-baseline",
+  "parser_version": "stdlib",
+  "encoding": "gb18030",
+  "initial_utf8_decode_error": "'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte",
+  "line_count": 2,
+  "paragraph_count_by_blank_line": 1,
+  "crlf_count": 2,
+  "query_hits": {
+    "GB18030": true,
+    "旧式换行": true
+  },
+  "text_preview": "历史编码样本\r\n本文件使用 GB18030 编码，包含中文标点、英文缩写 OCR 和旧式换行。\r\n",
+  "elapsed_ms": 1.64,
+  "boundary": "Encoding and line/blank-line structure only; no semantic paragraph inference.",
+  "source_path": "samples\\self-authored\\txt\\SELF-011-gb18030.txt",
+  "source_sha256": "a952ff9b35731ac0e6977789c187e7b1ee8dba91cd1d19c16180668dc34ab754"
+}

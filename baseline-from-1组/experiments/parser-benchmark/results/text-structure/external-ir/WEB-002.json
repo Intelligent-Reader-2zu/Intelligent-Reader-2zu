@@ -1,0 +1,4690 @@
+{
+  "sample_id": "WEB-002",
+  "source_format": "HTML",
+  "source_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+  "source_path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\rfc-9110.html",
+  "source_hash": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+  "parser_name": "BeautifulSoup DOM conservative baseline",
+  "parser_version": null,
+  "config_hash": "html-heading-dom-v1",
+  "elements": [
+    {
+      "element_id": "web-002-e00001",
+      "element_type": "heading",
+      "text": "RFC 9110",
+      "normalized_text": "rfc 9110",
+      "heading_level": 1,
+      "heading_path": [],
+      "source_selector": "h1[id=\"rfcnum\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00002",
+      "element_type": "heading",
+      "text": "HTTP Semantics",
+      "normalized_text": "http semantics",
+      "heading_level": 1,
+      "heading_path": [],
+      "source_selector": "h1[id=\"title\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00003",
+      "element_type": "heading",
+      "text": "Abstract",
+      "normalized_text": "abstract",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"abstract\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00004",
+      "element_type": "heading",
+      "text": "Status of This Memo",
+      "normalized_text": "status of this memo",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-status-of-this-memo\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00005",
+      "element_type": "heading",
+      "text": "Copyright Notice",
+      "normalized_text": "copyright notice",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-copyright-notice\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00006",
+      "element_type": "heading",
+      "text": "Table of Contents",
+      "normalized_text": "table of contents",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-table-of-contents\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00007",
+      "element_type": "heading",
+      "text": "1. Introduction",
+      "normalized_text": "1. introduction",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-introduction\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00008",
+      "element_type": "heading",
+      "text": "1.1. Purpose",
+      "normalized_text": "1.1. purpose",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-purpose\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00009",
+      "element_type": "heading",
+      "text": "1.2. History and Evolution",
+      "normalized_text": "1.2. history and evolution",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-history-and-evolution\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00010",
+      "element_type": "heading",
+      "text": "1.3. Core Semantics",
+      "normalized_text": "1.3. core semantics",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-core-semantics\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00011",
+      "element_type": "heading",
+      "text": "1.4. Specifications Obsoleted by This Document",
+      "normalized_text": "1.4. specifications obsoleted by this document",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-specifications-obsoleted-by\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00012",
+      "element_type": "heading",
+      "text": "2. Conformance",
+      "normalized_text": "2. conformance",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-conformance\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00013",
+      "element_type": "heading",
+      "text": "2.1. Syntax Notation",
+      "normalized_text": "2.1. syntax notation",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-syntax-notation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00014",
+      "element_type": "heading",
+      "text": "2.2. Requirements Notation",
+      "normalized_text": "2.2. requirements notation",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-requirements-notation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00015",
+      "element_type": "heading",
+      "text": "2.3. Length Requirements",
+      "normalized_text": "2.3. length requirements",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-length-requirements\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00016",
+      "element_type": "heading",
+      "text": "2.4. Error Handling",
+      "normalized_text": "2.4. error handling",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-error-handling\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00017",
+      "element_type": "heading",
+      "text": "2.5. Protocol Version",
+      "normalized_text": "2.5. protocol version",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-protocol-version\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00018",
+      "element_type": "heading",
+      "text": "3. Terminology and Core Concepts",
+      "normalized_text": "3. terminology and core concepts",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-terminology-and-core-concep\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00019",
+      "element_type": "heading",
+      "text": "3.1. Resources",
+      "normalized_text": "3.1. resources",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-resources\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00020",
+      "element_type": "heading",
+      "text": "3.2. Representations",
+      "normalized_text": "3.2. representations",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-representations\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00021",
+      "element_type": "heading",
+      "text": "3.3. Connections, Clients, and Servers",
+      "normalized_text": "3.3. connections, clients, and servers",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-connections-clients-and-ser\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00022",
+      "element_type": "heading",
+      "text": "3.4. Messages",
+      "normalized_text": "3.4. messages",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-messages\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00023",
+      "element_type": "heading",
+      "text": "3.5. User Agents",
+      "normalized_text": "3.5. user agents",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-user-agents\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00024",
+      "element_type": "heading",
+      "text": "3.6. Origin Server",
+      "normalized_text": "3.6. origin server",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-origin-server\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00025",
+      "element_type": "heading",
+      "text": "3.7. Intermediaries",
+      "normalized_text": "3.7. intermediaries",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-intermediaries\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00026",
+      "element_type": "heading",
+      "text": "3.8. Caches",
+      "normalized_text": "3.8. caches",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-caches\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00027",
+      "element_type": "heading",
+      "text": "3.9. Example Message Exchange",
+      "normalized_text": "3.9. example message exchange",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-example-message-exchange\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00028",
+      "element_type": "heading",
+      "text": "4. Identifiers in HTTP",
+      "normalized_text": "4. identifiers in http",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-identifiers-in-http\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00029",
+      "element_type": "heading",
+      "text": "4.1. URI References",
+      "normalized_text": "4.1. uri references",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-uri-references\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00030",
+      "element_type": "heading",
+      "text": "4.2. HTTP-Related URI Schemes",
+      "normalized_text": "4.2. http-related uri schemes",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-http-related-uri-schemes\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00031",
+      "element_type": "heading",
+      "text": "4.2.1. http URI Scheme",
+      "normalized_text": "4.2.1. http uri scheme",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-http-uri-scheme\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00032",
+      "element_type": "heading",
+      "text": "4.2.2. https URI Scheme",
+      "normalized_text": "4.2.2. https uri scheme",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-https-uri-scheme\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00033",
+      "element_type": "heading",
+      "text": "4.2.3. http(s) Normalization and Comparison",
+      "normalized_text": "4.2.3. http(s) normalization and comparison",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-https-normalization-and-com\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00034",
+      "element_type": "heading",
+      "text": "4.2.4. Deprecation of userinfo in http(s) URIs",
+      "normalized_text": "4.2.4. deprecation of userinfo in http(s) uris",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-deprecation-of-userinfo-in-\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00035",
+      "element_type": "heading",
+      "text": "4.2.5. http(s) References with Fragment Identifiers",
+      "normalized_text": "4.2.5. http(s) references with fragment identifiers",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-https-references-with-fragm\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00036",
+      "element_type": "heading",
+      "text": "4.3. Authoritative Access",
+      "normalized_text": "4.3. authoritative access",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-authoritative-access\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00037",
+      "element_type": "heading",
+      "text": "4.3.1. URI Origin",
+      "normalized_text": "4.3.1. uri origin",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-uri-origin\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00038",
+      "element_type": "heading",
+      "text": "4.3.2. http Origins",
+      "normalized_text": "4.3.2. http origins",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-http-origins\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00039",
+      "element_type": "heading",
+      "text": "4.3.3. https Origins",
+      "normalized_text": "4.3.3. https origins",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-https-origins\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00040",
+      "element_type": "heading",
+      "text": "4.3.4. https Certificate Verification",
+      "normalized_text": "4.3.4. https certificate verification",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-https-certificate-verificat\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00041",
+      "element_type": "heading",
+      "text": "4.3.5. IP-ID Reference Identity",
+      "normalized_text": "4.3.5. ip-id reference identity",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-ip-id-reference-identity\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00042",
+      "element_type": "heading",
+      "text": "5. Fields",
+      "normalized_text": "5. fields",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-fields\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00043",
+      "element_type": "heading",
+      "text": "5.1. Field Names",
+      "normalized_text": "5.1. field names",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-field-names\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00044",
+      "element_type": "heading",
+      "text": "5.2. Field Lines and Combined Field Value",
+      "normalized_text": "5.2. field lines and combined field value",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-field-lines-and-combined-fi\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00045",
+      "element_type": "heading",
+      "text": "5.3. Field Order",
+      "normalized_text": "5.3. field order",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-field-order\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00046",
+      "element_type": "heading",
+      "text": "5.4. Field Limits",
+      "normalized_text": "5.4. field limits",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-field-limits\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00047",
+      "element_type": "heading",
+      "text": "5.5. Field Values",
+      "normalized_text": "5.5. field values",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-field-values\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00048",
+      "element_type": "heading",
+      "text": "5.6. Common Rules for Defining Field Values",
+      "normalized_text": "5.6. common rules for defining field values",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-common-rules-for-defining-f\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00049",
+      "element_type": "heading",
+      "text": "5.6.1. Lists (#rule ABNF Extension)",
+      "normalized_text": "5.6.1. lists (#rule abnf extension)",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-lists-rule-abnf-extension\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00050",
+      "element_type": "heading",
+      "text": "5.6.1.1. Sender Requirements",
+      "normalized_text": "5.6.1.1. sender requirements",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"name-sender-requirements\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00051",
+      "element_type": "heading",
+      "text": "5.6.1.2. Recipient Requirements",
+      "normalized_text": "5.6.1.2. recipient requirements",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"name-recipient-requirements\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00052",
+      "element_type": "heading",
+      "text": "5.6.2. Tokens",
+      "normalized_text": "5.6.2. tokens",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-tokens\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00053",
+      "element_type": "heading",
+      "text": "5.6.3. Whitespace",
+      "normalized_text": "5.6.3. whitespace",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-whitespace\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00054",
+      "element_type": "heading",
+      "text": "5.6.4. Quoted Strings",
+      "normalized_text": "5.6.4. quoted strings",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-quoted-strings\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00055",
+      "element_type": "heading",
+      "text": "5.6.5. Comments",
+      "normalized_text": "5.6.5. comments",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-comments\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00056",
+      "element_type": "heading",
+      "text": "5.6.6. Parameters",
+      "normalized_text": "5.6.6. parameters",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-parameters\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00057",
+      "element_type": "heading",
+      "text": "5.6.7. Date/Time Formats",
+      "normalized_text": "5.6.7. date/time formats",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-date-time-formats\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00058",
+      "element_type": "heading",
+      "text": "6. Message Abstraction",
+      "normalized_text": "6. message abstraction",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-message-abstraction\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00059",
+      "element_type": "heading",
+      "text": "6.1. Framing and Completeness",
+      "normalized_text": "6.1. framing and completeness",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-framing-and-completeness\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00060",
+      "element_type": "heading",
+      "text": "6.2. Control Data",
+      "normalized_text": "6.2. control data",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-control-data\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00061",
+      "element_type": "heading",
+      "text": "6.3. Header Fields",
+      "normalized_text": "6.3. header fields",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-header-fields\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00062",
+      "element_type": "heading",
+      "text": "6.4. Content",
+      "normalized_text": "6.4. content",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-content\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00063",
+      "element_type": "heading",
+      "text": "6.4.1. Content Semantics",
+      "normalized_text": "6.4.1. content semantics",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-content-semantics\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00064",
+      "element_type": "heading",
+      "text": "6.4.2. Identifying Content",
+      "normalized_text": "6.4.2. identifying content",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-identifying-content\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00065",
+      "element_type": "heading",
+      "text": "6.5. Trailer Fields",
+      "normalized_text": "6.5. trailer fields",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-trailer-fields\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00066",
+      "element_type": "heading",
+      "text": "6.5.1. Limitations on Use of Trailers",
+      "normalized_text": "6.5.1. limitations on use of trailers",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-limitations-on-use-of-trail\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00067",
+      "element_type": "heading",
+      "text": "6.5.2. Processing Trailer Fields",
+      "normalized_text": "6.5.2. processing trailer fields",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-processing-trailer-fields\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00068",
+      "element_type": "heading",
+      "text": "6.6. Message Metadata",
+      "normalized_text": "6.6. message metadata",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-message-metadata\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00069",
+      "element_type": "heading",
+      "text": "6.6.1. Date",
+      "normalized_text": "6.6.1. date",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-date\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00070",
+      "element_type": "heading",
+      "text": "6.6.2. Trailer",
+      "normalized_text": "6.6.2. trailer",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-trailer\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00071",
+      "element_type": "heading",
+      "text": "7. Routing HTTP Messages",
+      "normalized_text": "7. routing http messages",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-routing-http-messages\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00072",
+      "element_type": "heading",
+      "text": "7.1. Determining the Target Resource",
+      "normalized_text": "7.1. determining the target resource",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-determining-the-target-reso\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00073",
+      "element_type": "heading",
+      "text": "7.2. Host and :authority",
+      "normalized_text": "7.2. host and :authority",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-host-and-authority\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00074",
+      "element_type": "heading",
+      "text": "7.3. Routing Inbound Requests",
+      "normalized_text": "7.3. routing inbound requests",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-routing-inbound-requests\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00075",
+      "element_type": "heading",
+      "text": "7.3.1. To a Cache",
+      "normalized_text": "7.3.1. to a cache",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-to-a-cache\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00076",
+      "element_type": "heading",
+      "text": "7.3.2. To a Proxy",
+      "normalized_text": "7.3.2. to a proxy",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-to-a-proxy\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00077",
+      "element_type": "heading",
+      "text": "7.3.3. To the Origin",
+      "normalized_text": "7.3.3. to the origin",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-to-the-origin\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00078",
+      "element_type": "heading",
+      "text": "7.4. Rejecting Misdirected Requests",
+      "normalized_text": "7.4. rejecting misdirected requests",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-rejecting-misdirected-reque\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00079",
+      "element_type": "heading",
+      "text": "7.5. Response Correlation",
+      "normalized_text": "7.5. response correlation",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-response-correlation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00080",
+      "element_type": "heading",
+      "text": "7.6. Message Forwarding",
+      "normalized_text": "7.6. message forwarding",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-message-forwarding\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00081",
+      "element_type": "heading",
+      "text": "7.6.1. Connection",
+      "normalized_text": "7.6.1. connection",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-connection\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00082",
+      "element_type": "heading",
+      "text": "7.6.2. Max-Forwards",
+      "normalized_text": "7.6.2. max-forwards",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-max-forwards\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00083",
+      "element_type": "heading",
+      "text": "7.6.3. Via",
+      "normalized_text": "7.6.3. via",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-via\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00084",
+      "element_type": "heading",
+      "text": "7.7. Message Transformations",
+      "normalized_text": "7.7. message transformations",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-message-transformations\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00085",
+      "element_type": "heading",
+      "text": "7.8. Upgrade",
+      "normalized_text": "7.8. upgrade",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-upgrade\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00086",
+      "element_type": "heading",
+      "text": "8. Representation Data and Metadata",
+      "normalized_text": "8. representation data and metadata",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-representation-data-and-met\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00087",
+      "element_type": "heading",
+      "text": "8.1. Representation Data",
+      "normalized_text": "8.1. representation data",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-representation-data\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00088",
+      "element_type": "heading",
+      "text": "8.2. Representation Metadata",
+      "normalized_text": "8.2. representation metadata",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-representation-metadata\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00089",
+      "element_type": "heading",
+      "text": "8.3. Content-Type",
+      "normalized_text": "8.3. content-type",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-content-type\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00090",
+      "element_type": "heading",
+      "text": "8.3.1. Media Type",
+      "normalized_text": "8.3.1. media type",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-media-type\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00091",
+      "element_type": "heading",
+      "text": "8.3.2. Charset",
+      "normalized_text": "8.3.2. charset",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-charset\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00092",
+      "element_type": "heading",
+      "text": "8.3.3. Multipart Types",
+      "normalized_text": "8.3.3. multipart types",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-multipart-types\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00093",
+      "element_type": "heading",
+      "text": "8.4. Content-Encoding",
+      "normalized_text": "8.4. content-encoding",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-content-encoding\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00094",
+      "element_type": "heading",
+      "text": "8.4.1. Content Codings",
+      "normalized_text": "8.4.1. content codings",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-content-codings\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00095",
+      "element_type": "heading",
+      "text": "8.4.1.1. Compress Coding",
+      "normalized_text": "8.4.1.1. compress coding",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"name-compress-coding\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00096",
+      "element_type": "heading",
+      "text": "8.4.1.2. Deflate Coding",
+      "normalized_text": "8.4.1.2. deflate coding",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"name-deflate-coding\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00097",
+      "element_type": "heading",
+      "text": "8.4.1.3. Gzip Coding",
+      "normalized_text": "8.4.1.3. gzip coding",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"name-gzip-coding\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00098",
+      "element_type": "heading",
+      "text": "8.5. Content-Language",
+      "normalized_text": "8.5. content-language",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-content-language\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00099",
+      "element_type": "heading",
+      "text": "8.5.1. Language Tags",
+      "normalized_text": "8.5.1. language tags",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-language-tags\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00100",
+      "element_type": "heading",
+      "text": "8.6. Content-Length",
+      "normalized_text": "8.6. content-length",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-content-length\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00101",
+      "element_type": "heading",
+      "text": "8.7. Content-Location",
+      "normalized_text": "8.7. content-location",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-content-location\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00102",
+      "element_type": "heading",
+      "text": "8.8. Validator Fields",
+      "normalized_text": "8.8. validator fields",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-validator-fields\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00103",
+      "element_type": "heading",
+      "text": "8.8.1. Weak versus Strong",
+      "normalized_text": "8.8.1. weak versus strong",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-weak-versus-strong\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00104",
+      "element_type": "heading",
+      "text": "8.8.2. Last-Modified",
+      "normalized_text": "8.8.2. last-modified",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-last-modified\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00105",
+      "element_type": "heading",
+      "text": "8.8.2.1. Generation",
+      "normalized_text": "8.8.2.1. generation",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"name-generation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00106",
+      "element_type": "heading",
+      "text": "8.8.2.2. Comparison",
+      "normalized_text": "8.8.2.2. comparison",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"name-comparison\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00107",
+      "element_type": "heading",
+      "text": "8.8.3. ETag",
+      "normalized_text": "8.8.3. etag",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-etag\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00108",
+      "element_type": "heading",
+      "text": "8.8.3.1. Generation",
+      "normalized_text": "8.8.3.1. generation",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"name-generation-2\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00109",
+      "element_type": "heading",
+      "text": "8.8.3.2. Comparison",
+      "normalized_text": "8.8.3.2. comparison",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"name-comparison-2\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00110",
+      "element_type": "heading",
+      "text": "8.8.3.3. Example: Entity Tags Varying on Content-Negotiated Resources",
+      "normalized_text": "8.8.3.3. example: entity tags varying on content-negotiated resources",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"name-example-entity-tags-varying\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00111",
+      "element_type": "heading",
+      "text": "9. Methods",
+      "normalized_text": "9. methods",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-methods\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00112",
+      "element_type": "heading",
+      "text": "9.1. Overview",
+      "normalized_text": "9.1. overview",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-overview\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00113",
+      "element_type": "heading",
+      "text": "9.2. Common Method Properties",
+      "normalized_text": "9.2. common method properties",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-common-method-properties\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00114",
+      "element_type": "heading",
+      "text": "9.2.1. Safe Methods",
+      "normalized_text": "9.2.1. safe methods",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-safe-methods\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00115",
+      "element_type": "heading",
+      "text": "9.2.2. Idempotent Methods",
+      "normalized_text": "9.2.2. idempotent methods",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-idempotent-methods\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00116",
+      "element_type": "heading",
+      "text": "9.2.3. Methods and Caching",
+      "normalized_text": "9.2.3. methods and caching",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-methods-and-caching\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00117",
+      "element_type": "heading",
+      "text": "9.3. Method Definitions",
+      "normalized_text": "9.3. method definitions",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-method-definitions\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00118",
+      "element_type": "heading",
+      "text": "9.3.1. GET",
+      "normalized_text": "9.3.1. get",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-get\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00119",
+      "element_type": "heading",
+      "text": "9.3.2. HEAD",
+      "normalized_text": "9.3.2. head",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-head\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00120",
+      "element_type": "heading",
+      "text": "9.3.3. POST",
+      "normalized_text": "9.3.3. post",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-post\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00121",
+      "element_type": "heading",
+      "text": "9.3.4. PUT",
+      "normalized_text": "9.3.4. put",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-put\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00122",
+      "element_type": "heading",
+      "text": "9.3.5. DELETE",
+      "normalized_text": "9.3.5. delete",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-delete\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00123",
+      "element_type": "heading",
+      "text": "9.3.6. CONNECT",
+      "normalized_text": "9.3.6. connect",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-connect\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00124",
+      "element_type": "heading",
+      "text": "9.3.7. OPTIONS",
+      "normalized_text": "9.3.7. options",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-options\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00125",
+      "element_type": "heading",
+      "text": "9.3.8. TRACE",
+      "normalized_text": "9.3.8. trace",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-trace\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00126",
+      "element_type": "heading",
+      "text": "10. Message Context",
+      "normalized_text": "10. message context",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-message-context\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00127",
+      "element_type": "heading",
+      "text": "10.1. Request Context Fields",
+      "normalized_text": "10.1. request context fields",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-request-context-fields\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00128",
+      "element_type": "heading",
+      "text": "10.1.1. Expect",
+      "normalized_text": "10.1.1. expect",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-expect\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00129",
+      "element_type": "heading",
+      "text": "10.1.2. From",
+      "normalized_text": "10.1.2. from",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-from\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00130",
+      "element_type": "heading",
+      "text": "10.1.3. Referer",
+      "normalized_text": "10.1.3. referer",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-referer\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00131",
+      "element_type": "heading",
+      "text": "10.1.4. TE",
+      "normalized_text": "10.1.4. te",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-te\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00132",
+      "element_type": "heading",
+      "text": "10.1.5. User-Agent",
+      "normalized_text": "10.1.5. user-agent",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-user-agent\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00133",
+      "element_type": "heading",
+      "text": "10.2. Response Context Fields",
+      "normalized_text": "10.2. response context fields",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-response-context-fields\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00134",
+      "element_type": "heading",
+      "text": "10.2.1. Allow",
+      "normalized_text": "10.2.1. allow",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-allow\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00135",
+      "element_type": "heading",
+      "text": "10.2.2. Location",
+      "normalized_text": "10.2.2. location",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-location\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00136",
+      "element_type": "heading",
+      "text": "10.2.3. Retry-After",
+      "normalized_text": "10.2.3. retry-after",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-retry-after\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00137",
+      "element_type": "heading",
+      "text": "10.2.4. Server",
+      "normalized_text": "10.2.4. server",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-server\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00138",
+      "element_type": "heading",
+      "text": "11. HTTP Authentication",
+      "normalized_text": "11. http authentication",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-http-authentication\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00139",
+      "element_type": "heading",
+      "text": "11.1. Authentication Scheme",
+      "normalized_text": "11.1. authentication scheme",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-authentication-scheme\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00140",
+      "element_type": "heading",
+      "text": "11.2. Authentication Parameters",
+      "normalized_text": "11.2. authentication parameters",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-authentication-parameters\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00141",
+      "element_type": "heading",
+      "text": "11.3. Challenge and Response",
+      "normalized_text": "11.3. challenge and response",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-challenge-and-response\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00142",
+      "element_type": "heading",
+      "text": "11.4. Credentials",
+      "normalized_text": "11.4. credentials",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-credentials\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00143",
+      "element_type": "heading",
+      "text": "11.5. Establishing a Protection Space (Realm)",
+      "normalized_text": "11.5. establishing a protection space (realm)",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-establishing-a-protection-s\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00144",
+      "element_type": "heading",
+      "text": "11.6. Authenticating Users to Origin Servers",
+      "normalized_text": "11.6. authenticating users to origin servers",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-authenticating-users-to-ori\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00145",
+      "element_type": "heading",
+      "text": "11.6.1. WWW-Authenticate",
+      "normalized_text": "11.6.1. www-authenticate",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-www-authenticate\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00146",
+      "element_type": "heading",
+      "text": "11.6.2. Authorization",
+      "normalized_text": "11.6.2. authorization",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-authorization\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00147",
+      "element_type": "heading",
+      "text": "11.6.3. Authentication-Info",
+      "normalized_text": "11.6.3. authentication-info",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-authentication-info\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00148",
+      "element_type": "heading",
+      "text": "11.7. Authenticating Clients to Proxies",
+      "normalized_text": "11.7. authenticating clients to proxies",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-authenticating-clients-to-p\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00149",
+      "element_type": "heading",
+      "text": "11.7.1. Proxy-Authenticate",
+      "normalized_text": "11.7.1. proxy-authenticate",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-proxy-authenticate\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00150",
+      "element_type": "heading",
+      "text": "11.7.2. Proxy-Authorization",
+      "normalized_text": "11.7.2. proxy-authorization",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-proxy-authorization\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00151",
+      "element_type": "heading",
+      "text": "11.7.3. Proxy-Authentication-Info",
+      "normalized_text": "11.7.3. proxy-authentication-info",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-proxy-authentication-info\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00152",
+      "element_type": "heading",
+      "text": "12. Content Negotiation",
+      "normalized_text": "12. content negotiation",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-content-negotiation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00153",
+      "element_type": "heading",
+      "text": "12.1. Proactive Negotiation",
+      "normalized_text": "12.1. proactive negotiation",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-proactive-negotiation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00154",
+      "element_type": "heading",
+      "text": "12.2. Reactive Negotiation",
+      "normalized_text": "12.2. reactive negotiation",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-reactive-negotiation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00155",
+      "element_type": "heading",
+      "text": "12.3. Request Content Negotiation",
+      "normalized_text": "12.3. request content negotiation",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-request-content-negotiation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00156",
+      "element_type": "heading",
+      "text": "12.4. Content Negotiation Field Features",
+      "normalized_text": "12.4. content negotiation field features",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-content-negotiation-field-f\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00157",
+      "element_type": "heading",
+      "text": "12.4.1. Absence",
+      "normalized_text": "12.4.1. absence",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-absence\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00158",
+      "element_type": "heading",
+      "text": "12.4.2. Quality Values",
+      "normalized_text": "12.4.2. quality values",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-quality-values\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00159",
+      "element_type": "heading",
+      "text": "12.4.3. Wildcard Values",
+      "normalized_text": "12.4.3. wildcard values",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-wildcard-values\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00160",
+      "element_type": "heading",
+      "text": "12.5. Content Negotiation Fields",
+      "normalized_text": "12.5. content negotiation fields",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-content-negotiation-fields\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00161",
+      "element_type": "heading",
+      "text": "12.5.1. Accept",
+      "normalized_text": "12.5.1. accept",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-accept\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00162",
+      "element_type": "heading",
+      "text": "12.5.2. Accept-Charset",
+      "normalized_text": "12.5.2. accept-charset",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-accept-charset\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00163",
+      "element_type": "heading",
+      "text": "12.5.3. Accept-Encoding",
+      "normalized_text": "12.5.3. accept-encoding",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-accept-encoding\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00164",
+      "element_type": "heading",
+      "text": "12.5.4. Accept-Language",
+      "normalized_text": "12.5.4. accept-language",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-accept-language\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00165",
+      "element_type": "heading",
+      "text": "12.5.5. Vary",
+      "normalized_text": "12.5.5. vary",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-vary\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00166",
+      "element_type": "heading",
+      "text": "13. Conditional Requests",
+      "normalized_text": "13. conditional requests",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-conditional-requests\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00167",
+      "element_type": "heading",
+      "text": "13.1. Preconditions",
+      "normalized_text": "13.1. preconditions",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-preconditions\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00168",
+      "element_type": "heading",
+      "text": "13.1.1. If-Match",
+      "normalized_text": "13.1.1. if-match",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-if-match\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00169",
+      "element_type": "heading",
+      "text": "13.1.2. If-None-Match",
+      "normalized_text": "13.1.2. if-none-match",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-if-none-match\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00170",
+      "element_type": "heading",
+      "text": "13.1.3. If-Modified-Since",
+      "normalized_text": "13.1.3. if-modified-since",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-if-modified-since\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00171",
+      "element_type": "heading",
+      "text": "13.1.4. If-Unmodified-Since",
+      "normalized_text": "13.1.4. if-unmodified-since",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-if-unmodified-since\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00172",
+      "element_type": "heading",
+      "text": "13.1.5. If-Range",
+      "normalized_text": "13.1.5. if-range",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-if-range\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00173",
+      "element_type": "heading",
+      "text": "13.2. Evaluation of Preconditions",
+      "normalized_text": "13.2. evaluation of preconditions",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-evaluation-of-preconditions\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00174",
+      "element_type": "heading",
+      "text": "13.2.1. When to Evaluate",
+      "normalized_text": "13.2.1. when to evaluate",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-when-to-evaluate\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00175",
+      "element_type": "heading",
+      "text": "13.2.2. Precedence of Preconditions",
+      "normalized_text": "13.2.2. precedence of preconditions",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-precedence-of-preconditions\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00176",
+      "element_type": "heading",
+      "text": "14. Range Requests",
+      "normalized_text": "14. range requests",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-range-requests\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00177",
+      "element_type": "heading",
+      "text": "14.1. Range Units",
+      "normalized_text": "14.1. range units",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-range-units\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00178",
+      "element_type": "heading",
+      "text": "14.1.1. Range Specifiers",
+      "normalized_text": "14.1.1. range specifiers",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-range-specifiers\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00179",
+      "element_type": "heading",
+      "text": "14.1.2. Byte Ranges",
+      "normalized_text": "14.1.2. byte ranges",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-byte-ranges\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00180",
+      "element_type": "heading",
+      "text": "14.2. Range",
+      "normalized_text": "14.2. range",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-range\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00181",
+      "element_type": "heading",
+      "text": "14.3. Accept-Ranges",
+      "normalized_text": "14.3. accept-ranges",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-accept-ranges\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00182",
+      "element_type": "heading",
+      "text": "14.4. Content-Range",
+      "normalized_text": "14.4. content-range",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-content-range\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00183",
+      "element_type": "heading",
+      "text": "14.5. Partial PUT",
+      "normalized_text": "14.5. partial put",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-partial-put\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00184",
+      "element_type": "heading",
+      "text": "14.6. Media Type multipart/byteranges",
+      "normalized_text": "14.6. media type multipart/byteranges",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-media-type-multipart-bytera\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00185",
+      "element_type": "heading",
+      "text": "15. Status Codes",
+      "normalized_text": "15. status codes",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-status-codes\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00186",
+      "element_type": "heading",
+      "text": "15.1. Overview of Status Codes",
+      "normalized_text": "15.1. overview of status codes",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-overview-of-status-codes\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00187",
+      "element_type": "heading",
+      "text": "15.2. Informational 1xx",
+      "normalized_text": "15.2. informational 1xx",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-informational-1xx\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00188",
+      "element_type": "heading",
+      "text": "15.2.1. 100 Continue",
+      "normalized_text": "15.2.1. 100 continue",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-100-continue\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00189",
+      "element_type": "heading",
+      "text": "15.2.2. 101 Switching Protocols",
+      "normalized_text": "15.2.2. 101 switching protocols",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-101-switching-protocols\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00190",
+      "element_type": "heading",
+      "text": "15.3. Successful 2xx",
+      "normalized_text": "15.3. successful 2xx",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-successful-2xx\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00191",
+      "element_type": "heading",
+      "text": "15.3.1. 200 OK",
+      "normalized_text": "15.3.1. 200 ok",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-200-ok\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00192",
+      "element_type": "heading",
+      "text": "15.3.2. 201 Created",
+      "normalized_text": "15.3.2. 201 created",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-201-created\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00193",
+      "element_type": "heading",
+      "text": "15.3.3. 202 Accepted",
+      "normalized_text": "15.3.3. 202 accepted",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-202-accepted\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00194",
+      "element_type": "heading",
+      "text": "15.3.4. 203 Non-Authoritative Information",
+      "normalized_text": "15.3.4. 203 non-authoritative information",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-203-non-authoritative-infor\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00195",
+      "element_type": "heading",
+      "text": "15.3.5. 204 No Content",
+      "normalized_text": "15.3.5. 204 no content",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-204-no-content\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00196",
+      "element_type": "heading",
+      "text": "15.3.6. 205 Reset Content",
+      "normalized_text": "15.3.6. 205 reset content",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-205-reset-content\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00197",
+      "element_type": "heading",
+      "text": "15.3.7. 206 Partial Content",
+      "normalized_text": "15.3.7. 206 partial content",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-206-partial-content\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00198",
+      "element_type": "heading",
+      "text": "15.3.7.1. Single Part",
+      "normalized_text": "15.3.7.1. single part",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"name-single-part\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00199",
+      "element_type": "heading",
+      "text": "15.3.7.2. Multiple Parts",
+      "normalized_text": "15.3.7.2. multiple parts",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"name-multiple-parts\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00200",
+      "element_type": "heading",
+      "text": "15.3.7.3. Combining Parts",
+      "normalized_text": "15.3.7.3. combining parts",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"name-combining-parts\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00201",
+      "element_type": "heading",
+      "text": "15.4. Redirection 3xx",
+      "normalized_text": "15.4. redirection 3xx",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-redirection-3xx\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00202",
+      "element_type": "heading",
+      "text": "15.4.1. 300 Multiple Choices",
+      "normalized_text": "15.4.1. 300 multiple choices",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-300-multiple-choices\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00203",
+      "element_type": "heading",
+      "text": "15.4.2. 301 Moved Permanently",
+      "normalized_text": "15.4.2. 301 moved permanently",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-301-moved-permanently\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00204",
+      "element_type": "heading",
+      "text": "15.4.3. 302 Found",
+      "normalized_text": "15.4.3. 302 found",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-302-found\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00205",
+      "element_type": "heading",
+      "text": "15.4.4. 303 See Other",
+      "normalized_text": "15.4.4. 303 see other",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-303-see-other\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00206",
+      "element_type": "heading",
+      "text": "15.4.5. 304 Not Modified",
+      "normalized_text": "15.4.5. 304 not modified",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-304-not-modified\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00207",
+      "element_type": "heading",
+      "text": "15.4.6. 305 Use Proxy",
+      "normalized_text": "15.4.6. 305 use proxy",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-305-use-proxy\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00208",
+      "element_type": "heading",
+      "text": "15.4.7. 306 (Unused)",
+      "normalized_text": "15.4.7. 306 (unused)",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-306-unused\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00209",
+      "element_type": "heading",
+      "text": "15.4.8. 307 Temporary Redirect",
+      "normalized_text": "15.4.8. 307 temporary redirect",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-307-temporary-redirect\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00210",
+      "element_type": "heading",
+      "text": "15.4.9. 308 Permanent Redirect",
+      "normalized_text": "15.4.9. 308 permanent redirect",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-308-permanent-redirect\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00211",
+      "element_type": "heading",
+      "text": "15.5. Client Error 4xx",
+      "normalized_text": "15.5. client error 4xx",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-client-error-4xx\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00212",
+      "element_type": "heading",
+      "text": "15.5.1. 400 Bad Request",
+      "normalized_text": "15.5.1. 400 bad request",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-400-bad-request\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00213",
+      "element_type": "heading",
+      "text": "15.5.2. 401 Unauthorized",
+      "normalized_text": "15.5.2. 401 unauthorized",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-401-unauthorized\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00214",
+      "element_type": "heading",
+      "text": "15.5.3. 402 Payment Required",
+      "normalized_text": "15.5.3. 402 payment required",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-402-payment-required\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00215",
+      "element_type": "heading",
+      "text": "15.5.4. 403 Forbidden",
+      "normalized_text": "15.5.4. 403 forbidden",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-403-forbidden\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00216",
+      "element_type": "heading",
+      "text": "15.5.5. 404 Not Found",
+      "normalized_text": "15.5.5. 404 not found",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-404-not-found\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00217",
+      "element_type": "heading",
+      "text": "15.5.6. 405 Method Not Allowed",
+      "normalized_text": "15.5.6. 405 method not allowed",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-405-method-not-allowed\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00218",
+      "element_type": "heading",
+      "text": "15.5.7. 406 Not Acceptable",
+      "normalized_text": "15.5.7. 406 not acceptable",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-406-not-acceptable\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00219",
+      "element_type": "heading",
+      "text": "15.5.8. 407 Proxy Authentication Required",
+      "normalized_text": "15.5.8. 407 proxy authentication required",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-407-proxy-authentication-re\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00220",
+      "element_type": "heading",
+      "text": "15.5.9. 408 Request Timeout",
+      "normalized_text": "15.5.9. 408 request timeout",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-408-request-timeout\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00221",
+      "element_type": "heading",
+      "text": "15.5.10. 409 Conflict",
+      "normalized_text": "15.5.10. 409 conflict",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-409-conflict\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00222",
+      "element_type": "heading",
+      "text": "15.5.11. 410 Gone",
+      "normalized_text": "15.5.11. 410 gone",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-410-gone\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00223",
+      "element_type": "heading",
+      "text": "15.5.12. 411 Length Required",
+      "normalized_text": "15.5.12. 411 length required",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-411-length-required\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00224",
+      "element_type": "heading",
+      "text": "15.5.13. 412 Precondition Failed",
+      "normalized_text": "15.5.13. 412 precondition failed",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-412-precondition-failed\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00225",
+      "element_type": "heading",
+      "text": "15.5.14. 413 Content Too Large",
+      "normalized_text": "15.5.14. 413 content too large",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-413-content-too-large\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00226",
+      "element_type": "heading",
+      "text": "15.5.15. 414 URI Too Long",
+      "normalized_text": "15.5.15. 414 uri too long",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-414-uri-too-long\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00227",
+      "element_type": "heading",
+      "text": "15.5.16. 415 Unsupported Media Type",
+      "normalized_text": "15.5.16. 415 unsupported media type",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-415-unsupported-media-type\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00228",
+      "element_type": "heading",
+      "text": "15.5.17. 416 Range Not Satisfiable",
+      "normalized_text": "15.5.17. 416 range not satisfiable",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-416-range-not-satisfiable\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00229",
+      "element_type": "heading",
+      "text": "15.5.18. 417 Expectation Failed",
+      "normalized_text": "15.5.18. 417 expectation failed",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-417-expectation-failed\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00230",
+      "element_type": "heading",
+      "text": "15.5.19. 418 (Unused)",
+      "normalized_text": "15.5.19. 418 (unused)",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-418-unused\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00231",
+      "element_type": "heading",
+      "text": "15.5.20. 421 Misdirected Request",
+      "normalized_text": "15.5.20. 421 misdirected request",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-421-misdirected-request\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00232",
+      "element_type": "heading",
+      "text": "15.5.21. 422 Unprocessable Content",
+      "normalized_text": "15.5.21. 422 unprocessable content",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-422-unprocessable-content\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00233",
+      "element_type": "heading",
+      "text": "15.5.22. 426 Upgrade Required",
+      "normalized_text": "15.5.22. 426 upgrade required",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-426-upgrade-required\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00234",
+      "element_type": "heading",
+      "text": "15.6. Server Error 5xx",
+      "normalized_text": "15.6. server error 5xx",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-server-error-5xx\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00235",
+      "element_type": "heading",
+      "text": "15.6.1. 500 Internal Server Error",
+      "normalized_text": "15.6.1. 500 internal server error",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-500-internal-server-error\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00236",
+      "element_type": "heading",
+      "text": "15.6.2. 501 Not Implemented",
+      "normalized_text": "15.6.2. 501 not implemented",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-501-not-implemented\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00237",
+      "element_type": "heading",
+      "text": "15.6.3. 502 Bad Gateway",
+      "normalized_text": "15.6.3. 502 bad gateway",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-502-bad-gateway\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00238",
+      "element_type": "heading",
+      "text": "15.6.4. 503 Service Unavailable",
+      "normalized_text": "15.6.4. 503 service unavailable",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-503-service-unavailable\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00239",
+      "element_type": "heading",
+      "text": "15.6.5. 504 Gateway Timeout",
+      "normalized_text": "15.6.5. 504 gateway timeout",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-504-gateway-timeout\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00240",
+      "element_type": "heading",
+      "text": "15.6.6. 505 HTTP Version Not Supported",
+      "normalized_text": "15.6.6. 505 http version not supported",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-505-http-version-not-suppor\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00241",
+      "element_type": "heading",
+      "text": "16. Extending HTTP",
+      "normalized_text": "16. extending http",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-extending-http\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00242",
+      "element_type": "heading",
+      "text": "16.1. Method Extensibility",
+      "normalized_text": "16.1. method extensibility",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-method-extensibility\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00243",
+      "element_type": "heading",
+      "text": "16.1.1. Method Registry",
+      "normalized_text": "16.1.1. method registry",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-method-registry\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00244",
+      "element_type": "heading",
+      "text": "16.1.2. Considerations for New Methods",
+      "normalized_text": "16.1.2. considerations for new methods",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-considerations-for-new-meth\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00245",
+      "element_type": "heading",
+      "text": "16.2. Status Code Extensibility",
+      "normalized_text": "16.2. status code extensibility",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-status-code-extensibility\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00246",
+      "element_type": "heading",
+      "text": "16.2.1. Status Code Registry",
+      "normalized_text": "16.2.1. status code registry",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-status-code-registry\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00247",
+      "element_type": "heading",
+      "text": "16.2.2. Considerations for New Status Codes",
+      "normalized_text": "16.2.2. considerations for new status codes",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-considerations-for-new-stat\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00248",
+      "element_type": "heading",
+      "text": "16.3. Field Extensibility",
+      "normalized_text": "16.3. field extensibility",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-field-extensibility\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00249",
+      "element_type": "heading",
+      "text": "16.3.1. Field Name Registry",
+      "normalized_text": "16.3.1. field name registry",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-field-name-registry\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00250",
+      "element_type": "heading",
+      "text": "16.3.2. Considerations for New Fields",
+      "normalized_text": "16.3.2. considerations for new fields",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-considerations-for-new-fiel\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00251",
+      "element_type": "heading",
+      "text": "16.3.2.1. Considerations for New Field Names",
+      "normalized_text": "16.3.2.1. considerations for new field names",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"name-considerations-for-new-field\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00252",
+      "element_type": "heading",
+      "text": "16.3.2.2. Considerations for New Field Values",
+      "normalized_text": "16.3.2.2. considerations for new field values",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"name-considerations-for-new-field-\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00253",
+      "element_type": "heading",
+      "text": "16.4. Authentication Scheme Extensibility",
+      "normalized_text": "16.4. authentication scheme extensibility",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-authentication-scheme-exten\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00254",
+      "element_type": "heading",
+      "text": "16.4.1. Authentication Scheme Registry",
+      "normalized_text": "16.4.1. authentication scheme registry",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-authentication-scheme-regis\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00255",
+      "element_type": "heading",
+      "text": "16.4.2. Considerations for New Authentication Schemes",
+      "normalized_text": "16.4.2. considerations for new authentication schemes",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-considerations-for-new-auth\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00256",
+      "element_type": "heading",
+      "text": "16.5. Range Unit Extensibility",
+      "normalized_text": "16.5. range unit extensibility",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-range-unit-extensibility\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00257",
+      "element_type": "heading",
+      "text": "16.5.1. Range Unit Registry",
+      "normalized_text": "16.5.1. range unit registry",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-range-unit-registry\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00258",
+      "element_type": "heading",
+      "text": "16.5.2. Considerations for New Range Units",
+      "normalized_text": "16.5.2. considerations for new range units",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-considerations-for-new-rang\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00259",
+      "element_type": "heading",
+      "text": "16.6. Content Coding Extensibility",
+      "normalized_text": "16.6. content coding extensibility",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-content-coding-extensibilit\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00260",
+      "element_type": "heading",
+      "text": "16.6.1. Content Coding Registry",
+      "normalized_text": "16.6.1. content coding registry",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-content-coding-registry\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00261",
+      "element_type": "heading",
+      "text": "16.6.2. Considerations for New Content Codings",
+      "normalized_text": "16.6.2. considerations for new content codings",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-considerations-for-new-cont\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00262",
+      "element_type": "heading",
+      "text": "16.7. Upgrade Token Registry",
+      "normalized_text": "16.7. upgrade token registry",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-upgrade-token-registry\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00263",
+      "element_type": "heading",
+      "text": "17. Security Considerations",
+      "normalized_text": "17. security considerations",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-security-considerations\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00264",
+      "element_type": "heading",
+      "text": "17.1. Establishing Authority",
+      "normalized_text": "17.1. establishing authority",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-establishing-authority\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00265",
+      "element_type": "heading",
+      "text": "17.2. Risks of Intermediaries",
+      "normalized_text": "17.2. risks of intermediaries",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-risks-of-intermediaries\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00266",
+      "element_type": "heading",
+      "text": "17.3. Attacks Based on File and Path Names",
+      "normalized_text": "17.3. attacks based on file and path names",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-attacks-based-on-file-and-p\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00267",
+      "element_type": "heading",
+      "text": "17.4. Attacks Based on Command, Code, or Query Injection",
+      "normalized_text": "17.4. attacks based on command, code, or query injection",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-attacks-based-on-command-co\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00268",
+      "element_type": "heading",
+      "text": "17.5. Attacks via Protocol Element Length",
+      "normalized_text": "17.5. attacks via protocol element length",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-attacks-via-protocol-elemen\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00269",
+      "element_type": "heading",
+      "text": "17.6. Attacks Using Shared-Dictionary Compression",
+      "normalized_text": "17.6. attacks using shared-dictionary compression",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-attacks-using-shared-dictio\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00270",
+      "element_type": "heading",
+      "text": "17.7. Disclosure of Personal Information",
+      "normalized_text": "17.7. disclosure of personal information",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-disclosure-of-personal-info\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00271",
+      "element_type": "heading",
+      "text": "17.8. Privacy of Server Log Information",
+      "normalized_text": "17.8. privacy of server log information",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-privacy-of-server-log-infor\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00272",
+      "element_type": "heading",
+      "text": "17.9. Disclosure of Sensitive Information in URIs",
+      "normalized_text": "17.9. disclosure of sensitive information in uris",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-disclosure-of-sensitive-inf\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00273",
+      "element_type": "heading",
+      "text": "17.10. Application Handling of Field Names",
+      "normalized_text": "17.10. application handling of field names",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-application-handling-of-fie\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00274",
+      "element_type": "heading",
+      "text": "17.11. Disclosure of Fragment after Redirects",
+      "normalized_text": "17.11. disclosure of fragment after redirects",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-disclosure-of-fragment-afte\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00275",
+      "element_type": "heading",
+      "text": "17.12. Disclosure of Product Information",
+      "normalized_text": "17.12. disclosure of product information",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-disclosure-of-product-infor\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00276",
+      "element_type": "heading",
+      "text": "17.13. Browser Fingerprinting",
+      "normalized_text": "17.13. browser fingerprinting",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-browser-fingerprinting\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00277",
+      "element_type": "heading",
+      "text": "17.14. Validator Retention",
+      "normalized_text": "17.14. validator retention",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-validator-retention\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00278",
+      "element_type": "heading",
+      "text": "17.15. Denial-of-Service Attacks Using Range",
+      "normalized_text": "17.15. denial-of-service attacks using range",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-denial-of-service-attacks-u\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00279",
+      "element_type": "heading",
+      "text": "17.16. Authentication Considerations",
+      "normalized_text": "17.16. authentication considerations",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-authentication-consideratio\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00280",
+      "element_type": "heading",
+      "text": "17.16.1. Confidentiality of Credentials",
+      "normalized_text": "17.16.1. confidentiality of credentials",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-confidentiality-of-credenti\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00281",
+      "element_type": "heading",
+      "text": "17.16.2. Credentials and Idle Clients",
+      "normalized_text": "17.16.2. credentials and idle clients",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-credentials-and-idle-client\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00282",
+      "element_type": "heading",
+      "text": "17.16.3. Protection Spaces",
+      "normalized_text": "17.16.3. protection spaces",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-protection-spaces\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00283",
+      "element_type": "heading",
+      "text": "17.16.4. Additional Response Fields",
+      "normalized_text": "17.16.4. additional response fields",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"name-additional-response-fields\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00284",
+      "element_type": "heading",
+      "text": "18. IANA Considerations",
+      "normalized_text": "18. iana considerations",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-iana-considerations\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00285",
+      "element_type": "heading",
+      "text": "18.1. URI Scheme Registration",
+      "normalized_text": "18.1. uri scheme registration",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-uri-scheme-registration\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00286",
+      "element_type": "heading",
+      "text": "18.2. Method Registration",
+      "normalized_text": "18.2. method registration",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-method-registration\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00287",
+      "element_type": "heading",
+      "text": "18.3. Status Code Registration",
+      "normalized_text": "18.3. status code registration",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-status-code-registration\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00288",
+      "element_type": "heading",
+      "text": "18.4. Field Name Registration",
+      "normalized_text": "18.4. field name registration",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-field-name-registration\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00289",
+      "element_type": "heading",
+      "text": "18.5. Authentication Scheme Registration",
+      "normalized_text": "18.5. authentication scheme registration",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-authentication-scheme-regist\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00290",
+      "element_type": "heading",
+      "text": "18.6. Content Coding Registration",
+      "normalized_text": "18.6. content coding registration",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-content-coding-registration\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00291",
+      "element_type": "heading",
+      "text": "18.7. Range Unit Registration",
+      "normalized_text": "18.7. range unit registration",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-range-unit-registration\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00292",
+      "element_type": "heading",
+      "text": "18.8. Media Type Registration",
+      "normalized_text": "18.8. media type registration",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-media-type-registration\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00293",
+      "element_type": "heading",
+      "text": "18.9. Port Registration",
+      "normalized_text": "18.9. port registration",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-port-registration\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00294",
+      "element_type": "heading",
+      "text": "18.10. Upgrade Token Registration",
+      "normalized_text": "18.10. upgrade token registration",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-upgrade-token-registration\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00295",
+      "element_type": "heading",
+      "text": "19. References",
+      "normalized_text": "19. references",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-references\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00296",
+      "element_type": "heading",
+      "text": "19.1. Normative References",
+      "normalized_text": "19.1. normative references",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-normative-references\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00297",
+      "element_type": "heading",
+      "text": "19.2. Informative References",
+      "normalized_text": "19.2. informative references",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-informative-references\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00298",
+      "element_type": "heading",
+      "text": "Appendix A. Collected ABNF",
+      "normalized_text": "appendix a. collected abnf",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-collected-abnf\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00299",
+      "element_type": "heading",
+      "text": "Appendix B. Changes from Previous RFCs",
+      "normalized_text": "appendix b. changes from previous rfcs",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-changes-from-previous-rfcs\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00300",
+      "element_type": "heading",
+      "text": "B.1. Changes from RFC 2818",
+      "normalized_text": "b.1. changes from rfc 2818",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-changes-from-rfc-2818\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00301",
+      "element_type": "heading",
+      "text": "B.2. Changes from RFC 7230",
+      "normalized_text": "b.2. changes from rfc 7230",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-changes-from-rfc-7230\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00302",
+      "element_type": "heading",
+      "text": "B.3. Changes from RFC 7231",
+      "normalized_text": "b.3. changes from rfc 7231",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-changes-from-rfc-7231\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00303",
+      "element_type": "heading",
+      "text": "B.4. Changes from RFC 7232",
+      "normalized_text": "b.4. changes from rfc 7232",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-changes-from-rfc-7232\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00304",
+      "element_type": "heading",
+      "text": "B.5. Changes from RFC 7233",
+      "normalized_text": "b.5. changes from rfc 7233",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-changes-from-rfc-7233\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00305",
+      "element_type": "heading",
+      "text": "B.6. Changes from RFC 7235",
+      "normalized_text": "b.6. changes from rfc 7235",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-changes-from-rfc-7235\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00306",
+      "element_type": "heading",
+      "text": "B.7. Changes from RFC 7538",
+      "normalized_text": "b.7. changes from rfc 7538",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-changes-from-rfc-7538\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00307",
+      "element_type": "heading",
+      "text": "B.8. Changes from RFC 7615",
+      "normalized_text": "b.8. changes from rfc 7615",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-changes-from-rfc-7615\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00308",
+      "element_type": "heading",
+      "text": "B.9. Changes from RFC 7694",
+      "normalized_text": "b.9. changes from rfc 7694",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"name-changes-from-rfc-7694\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00309",
+      "element_type": "heading",
+      "text": "Acknowledgements",
+      "normalized_text": "acknowledgements",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-acknowledgements\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00310",
+      "element_type": "heading",
+      "text": "Index",
+      "normalized_text": "index",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-index\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-002-e00311",
+      "element_type": "heading",
+      "text": "Authors' Addresses",
+      "normalized_text": "authors' addresses",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"name-authors-addresses\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    }
+  ],
+  "summary": {
+    "element_count": 311,
+    "dom_heading_count": 311,
+    "article_or_main_heading_count": 0,
+    "unique_selector_count": 311,
+    "selector_completeness": 1.0
+  },
+  "noise_counts": {
+    "nav": 1,
+    "script": 2,
+    "style": 1
+  },
+  "boundary": "DOM heading observations only; no article extraction, table semantics, citation accuracy, or gold-label claim."
+}

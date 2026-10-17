@@ -1,0 +1,130 @@
+{
+  "sample_id": "WEB-004",
+  "source_format": "HTML",
+  "source_url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction",
+  "source_path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\openstax-anatomy-intro.html",
+  "source_hash": "b709d19cf8bf3c3c8cf4e20933d36e7be4901ce79cf937f284f000cfabe43330",
+  "parser_name": "BeautifulSoup DOM conservative baseline",
+  "parser_version": null,
+  "config_hash": "html-heading-dom-v1",
+  "elements": [
+    {
+      "element_id": "web-004-e00001",
+      "element_type": "heading",
+      "text": "Introduction",
+      "normalized_text": "introduction",
+      "heading_level": 1,
+      "heading_path": [],
+      "source_selector": "div[id=\"root\"] > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > h1:nth-of-type(1)",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-004-e00002",
+      "element_type": "heading",
+      "text": "Chapter Objectives",
+      "normalized_text": "chapter objectives",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "div[id=\"eip-646\"] > header:nth-of-type(1) > h2:nth-of-type(1)",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-004-e00003",
+      "element_type": "heading",
+      "text": "Introduction",
+      "normalized_text": "introduction",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"page_ccc4ed14-6c87-408b-9934-7a0d279d853a_titlecreatedbycookbook\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-004-e00004",
+      "element_type": "heading",
+      "text": "OpenStax’s mission is to make an amazing education accessible for all.",
+      "normalized_text": "openstax’s mission is to make an amazing education accessible for all.",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "div[id=\"root\"] > div:nth-of-type(3) > div:nth-of-type(4) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > footer:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > h2:nth-of-type(1)",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-004-e00005",
+      "element_type": "heading",
+      "text": "Help",
+      "normalized_text": "help",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "div[id=\"root\"] > div:nth-of-type(3) > div:nth-of-type(4) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > footer:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > h3:nth-of-type(1)",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-004-e00006",
+      "element_type": "heading",
+      "text": "OpenStax",
+      "normalized_text": "openstax",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "div[id=\"root\"] > div:nth-of-type(3) > div:nth-of-type(4) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > footer:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(3) > h3:nth-of-type(1)",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-004-e00007",
+      "element_type": "heading",
+      "text": "Policies",
+      "normalized_text": "policies",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "div[id=\"root\"] > div:nth-of-type(3) > div:nth-of-type(4) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > footer:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(4) > h3:nth-of-type(1)",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    }
+  ],
+  "summary": {
+    "element_count": 7,
+    "dom_heading_count": 7,
+    "article_or_main_heading_count": 2,
+    "unique_selector_count": 7,
+    "selector_completeness": 1.0
+  },
+  "noise_counts": {
+    "nav": 0,
+    "script": 14,
+    "style": 1
+  },
+  "boundary": "DOM heading observations only; no article extraction, table semantics, citation accuracy, or gold-label claim."
+}

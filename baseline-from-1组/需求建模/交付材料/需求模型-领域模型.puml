@@ -1,0 +1,130 @@
+@startuml
+title 智能阅读器需求模型 V0.2｜领域模型
+hide methods
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam defaultFontName Microsoft YaHei
+skinparam linetype ortho
+
+class Workspace {
+  workspace_id
+  policy
+  storage_quota
+}
+class User {
+  user_id
+  role
+  locale
+}
+class DocumentSpace {
+  space_id
+  name
+  authorization_scope
+}
+class Document {
+  document_id
+  title
+  format
+  sensitivity
+  authorization_status
+}
+class DocumentVersion {
+  version_id
+  source_hash
+  imported_at
+  stale
+}
+class ParseRun {
+  parser_version
+  config_hash
+  status
+  warnings
+}
+class Page {
+  physical_page
+  page_label
+  asset_ref
+}
+class ContentBlock {
+  block_id
+  block_type
+  text
+  section_path
+  char_start/end
+  bbox
+  confidence
+}
+class PermissionGrant {
+  subject
+  resource
+  action
+  policy_version
+}
+class DocumentSet {
+  set_id
+  selected_scope
+}
+class Query {
+  query_id
+  text
+  created_at
+}
+class Evidence {
+  evidence_id
+  location_status
+  contract_status
+}
+class Answer {
+  answer_id
+  status
+  model
+  needs_review
+}
+class Claim {
+  claim_id
+  text
+  support_status
+}
+class Citation {
+  citation_id
+  quote
+  page
+  locator
+}
+class Note {
+  note_id
+  type
+  body
+  tags
+}
+class ExportJob {
+  format
+  status
+}
+
+Workspace "1" o-- "1..*" User
+Workspace "1" o-- "0..*" DocumentSpace
+DocumentSpace "1" o-- "0..*" Document
+Document "1" o-- "1..*" DocumentVersion
+DocumentVersion "1" o-- "0..*" ParseRun
+DocumentVersion "1" o-- "1..*" Page
+Page "1" o-- "0..*" ContentBlock
+DocumentSpace "1" o-- "0..*" PermissionGrant
+DocumentSet "1" o-- "1..*" DocumentVersion
+User "1" -- "0..*" Query
+Query "1" --> "1" DocumentSet
+Query "1" --> "0..1" Answer
+Answer "1" o-- "1..*" Claim
+Claim "1" o-- "0..*" Citation
+Citation "1" --> "1" Evidence
+Evidence "1" --> "1" ContentBlock
+User "1" -- "0..*" Note
+Note "0..*" --> "0..1" ContentBlock
+Note "0..*" --> "0..1" Answer
+User "1" -- "0..*" ExportJob
+ExportJob "1" --> "1..*" Note
+ExportJob "1" --> "0..*" Citation
+PermissionGrant ..> DocumentVersion : filters
+Answer ..> PermissionGrant : gate
+Answer ..> Evidence : requires contract
+@enduml

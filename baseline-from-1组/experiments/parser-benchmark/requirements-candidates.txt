@@ -1,0 +1,14 @@
+# Candidate parser runtime pins for the local PDF benchmark.
+# Python runtime tested: 3.13.2 on Windows 11 x64.
+PyMuPDF==1.25.3
+reportlab==5.0.1
+pdfplumber==0.11.10
+docling==2.130.0
+unstructured[pdf]==0.27.8
+unstructured-inference==1.6.13
+# OCR candidates in the shared Python 3.13 runtime. This Paddle pair is
+# blocked at CPU inference compatibility; the working Python 3.11 pair is
+# pinned separately in requirements-paddle311.txt.
+paddleocr==2.10.0
+paddlepaddle==3.3.1
+ocrmypdf==17.12.1

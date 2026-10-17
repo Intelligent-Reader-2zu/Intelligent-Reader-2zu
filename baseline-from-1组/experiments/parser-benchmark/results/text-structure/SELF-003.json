@@ -1,0 +1,50 @@
+{
+  "experiment_id": "TECH-DOC-007-R01-text-structure",
+  "sample_id": "SELF-003",
+  "format": "PDF",
+  "status": "scored",
+  "ocr": {
+    "enabled": false,
+    "status": "not_run"
+  },
+  "pymupdf": {
+    "version": "1.25.3",
+    "pages": [
+      {
+        "physical_page": 1,
+        "text_chars": 287,
+        "block_count": 10,
+        "word_count": 37,
+        "bbox_sample": [
+          51.02362060546875,
+          807.8592529296875,
+          108.29061889648438,
+          815.3172607421875
+        ]
+      }
+    ]
+  },
+  "pdfplumber": {
+    "version": "0.11.10",
+    "pages": [
+      {
+        "physical_page": 1,
+        "text_chars": 286,
+        "word_count": 37,
+        "table_candidate_count": 1
+      }
+    ]
+  },
+  "page_count": 1,
+  "text_chars": 287,
+  "query_hits": {
+    "Recall@k": true,
+    "合并单元格": true,
+    "公式": true
+  },
+  "text_preview": "SELF-AUTHORED PDF | physical page 1\nheader/footer and citation test\n智能阅读器自制 PDF：表格与公式\n1 研究目标\n本样本专门覆盖复杂表格、合并概念、公式文本和图注。公式示例：Recall@k = hits / k。\n2 关键结论\n解析结果不能只保留扁平纯文本。每个文本块还需要稳定 ID、标题路径、物理页码和原始位置。\n指标\n公式/值\n解释\nRecall@k\nhits / k\n检索命中比例\n表格结构\nrow + col\n合并单元格需保留\n脚注：这是一个可回溯的脚注占位，用来检查脚注是否被混入正文。\n",
+  "elapsed_ms": 15.83,
+  "boundary": "Text-layer/structure experiment only; OCR quality is out of scope.",
+  "source_path": "samples\\self-authored\\pdf\\SELF-003-table-formula.pdf",
+  "source_sha256": "e0776c95d8ff89cc61a6cac9558775f07df3dd4eb234ede9ee69ace4c673852a"
+}

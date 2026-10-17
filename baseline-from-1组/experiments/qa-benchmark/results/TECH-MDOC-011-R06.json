@@ -1,0 +1,893 @@
+{
+  "experiment_id": "TECH-MDOC-011-R06",
+  "scope": "multi-document synthetic QA through official Codex CLI/Responses in groups",
+  "data_sent": "project-authored synthetic evidence only; restricted evidence excluded from cloud route",
+  "configuration": {
+    "wire_api": "Responses through official Codex provider",
+    "reasoning_effort": "low",
+    "group_size": 3,
+    "timeout_seconds": 60.0
+  },
+  "providers": [
+    {
+      "provider": "codex_official_cli_multidoc_grouped",
+      "model": "gpt-5.5",
+      "query_count": 6,
+      "completed_query_count": 6,
+      "transport_error_count": 0,
+      "status_accuracy": 1,
+      "json_valid_rate": 1,
+      "citation_id_retrieval_rate": 1,
+      "refusal_or_review_accuracy": 1,
+      "batch_latency_ms": {
+        "p50": 24067.725,
+        "p95": 30163.131
+      },
+      "rows": [
+        {
+          "id": "M01",
+          "type": "authorized_search",
+          "expected_status": "answered",
+          "actual_status": "answered",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "DOC-A-v1-1-1",
+            "DOC-A-v1-2-1",
+            "DOC-B-v1-1-1"
+          ],
+          "cited_evidence": [
+            "DOC-A-v1-1-1",
+            "DOC-B-v1-1-1"
+          ],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 17972.318,
+          "error": null,
+          "parsed_response": {
+            "id": "M01",
+            "status": "answered",
+            "answer": "跨文档问答应先按权限过滤，再合并不同来源证据，并显示来源文档和版本；统一文档中间表示保留文档标识、版本、页码、章节路径和字符偏移。",
+            "claims": [
+              {
+                "text": "跨文档问答必须先按权限过滤，再合并不同来源的证据，并显示来源文档和版本。",
+                "evidence_ids": [
+                  "DOC-B-v1-1-1"
+                ]
+              },
+              {
+                "text": "统一文档中间表示保留 document_id、版本、页码、章节路径和字符偏移。",
+                "evidence_ids": [
+                  "DOC-A-v1-1-1"
+                ]
+              }
+            ],
+            "citations": [
+              {
+                "block_id": "DOC-B-v1-1-1",
+                "document_id": "DOC-B",
+                "document_version": "v1",
+                "source": "fixture",
+                "quote": "跨文档问答必须先按权限过滤，再合并不同来源的证据，并显示来源文档和版本。"
+              },
+              {
+                "block_id": "DOC-A-v1-1-1",
+                "document_id": "DOC-A",
+                "document_version": "v1",
+                "source": "fixture",
+                "quote": "统一文档中间表示保留 document_id、版本、页码、章节路径和字符偏移。"
+              }
+            ],
+            "uncertainty": [],
+            "next_action": "none"
+          }
+        },
+        {
+          "id": "M02",
+          "type": "unauthorized_only",
+          "expected_status": "refused",
+          "actual_status": "refused",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 17972.318,
+          "error": null,
+          "parsed_response": {
+            "id": "M02",
+            "status": "refused",
+            "answer": "当前授权和云端策略下没有足够证据回答该问题。",
+            "claims": [],
+            "citations": [],
+            "uncertainty": [
+              "当前授权和云端策略下没有可发送的证据"
+            ],
+            "next_action": "none"
+          }
+        },
+        {
+          "id": "M03",
+          "type": "conflict",
+          "expected_status": "needs_human_review",
+          "actual_status": "needs_human_review",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "CONFLICT-A-v1-1-1",
+            "CONFLICT-B-v2-1-1"
+          ],
+          "cited_evidence": [
+            "CONFLICT-A-v1-1-1",
+            "CONFLICT-B-v2-1-1"
+          ],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 17972.318,
+          "error": null,
+          "parsed_response": {
+            "id": "M03",
+            "status": "needs_human_review",
+            "answer": "证据存在冲突：policy-system-a 规定保留 30 天，policy-system-b 规定保留 90 天，无法安全合并。",
+            "claims": [
+              {
+                "text": "policy-system-a 规定日志和问答记录保留 30 天，期满后删除。",
+                "evidence_ids": [
+                  "CONFLICT-A-v1-1-1"
+                ]
+              },
+              {
+                "text": "policy-system-b 规定日志和问答记录保留 90 天，期满后删除。",
+                "evidence_ids": [
+                  "CONFLICT-B-v2-1-1"
+                ]
+              }
+            ],
+            "citations": [
+              {
+                "block_id": "CONFLICT-A-v1-1-1",
+                "document_id": "CONFLICT-A",
+                "document_version": "v1",
+                "source": "policy-system-a",
+                "quote": "日志和问答记录保留 30 天，期满后删除。"
+              },
+              {
+                "block_id": "CONFLICT-B-v2-1-1",
+                "document_id": "CONFLICT-B",
+                "document_version": "v2",
+                "source": "policy-system-b",
+                "quote": "日志和问答记录保留 90 天，期满后删除。"
+              }
+            ],
+            "uncertainty": [
+              "适用的保留策略来源和版本不明确"
+            ],
+            "next_action": "human_review"
+          }
+        },
+        {
+          "id": "M04",
+          "type": "version",
+          "expected_status": "answered",
+          "actual_status": "answered",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "VERSIONED-v1-1-1",
+            "VERSIONED-v2-1-1"
+          ],
+          "cited_evidence": [
+            "VERSIONED-v2-1-1"
+          ],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 30163.131,
+          "error": null,
+          "parsed_response": {
+            "id": "M04",
+            "status": "answered",
+            "answer": "新版配置的最大并发为 8。",
+            "claims": [
+              {
+                "text": "新版配置规定最大并发为 8。",
+                "evidence_ids": [
+                  "VERSIONED-v2-1-1"
+                ]
+              }
+            ],
+            "citations": [
+              {
+                "block_id": "VERSIONED-v2-1-1",
+                "document_id": "VERSIONED",
+                "document_version": "v2",
+                "source": "config-repo",
+                "quote": "新版配置规定最大并发为 8。"
+              }
+            ],
+            "uncertainty": [],
+            "next_action": "none"
+          }
+        },
+        {
+          "id": "M05",
+          "type": "sensitivity",
+          "expected_status": "refused",
+          "actual_status": "refused",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "PUBLIC-01-v1-1-1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 30163.131,
+          "error": null,
+          "parsed_response": {
+            "id": "M05",
+            "status": "refused",
+            "answer": "现有证据不足以确认敏感内容是否支持本地索引。",
+            "claims": [],
+            "citations": [],
+            "uncertainty": [
+              "证据仅说明支持文档检索，未说明敏感内容或本地索引。"
+            ],
+            "next_action": "rewrite_question"
+          }
+        },
+        {
+          "id": "M06",
+          "type": "same_name",
+          "expected_status": "answered",
+          "actual_status": "answered",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "DUP-A-v1-1-1",
+            "DUP-B-v1-1-1"
+          ],
+          "cited_evidence": [
+            "DUP-A-v1-1-1",
+            "DUP-B-v1-1-1"
+          ],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 30163.131,
+          "error": null,
+          "parsed_response": {
+            "id": "M06",
+            "status": "answered",
+            "answer": "相同标题的两份内容分别来自 source-a 和 source-b；source-a 更新时间较早，source-b 更新时间较晚。",
+            "claims": [
+              {
+                "text": "第一份来源为 source-a，更新时间较早。",
+                "evidence_ids": [
+                  "DUP-A-v1-1-1"
+                ]
+              },
+              {
+                "text": "第二份来源为 source-b，更新时间较晚。",
+                "evidence_ids": [
+                  "DUP-B-v1-1-1"
+                ]
+              }
+            ],
+            "citations": [
+              {
+                "block_id": "DUP-A-v1-1-1",
+                "document_id": "DUP-A",
+                "document_version": "v1",
+                "source": "source-a",
+                "quote": "相同标题的第一份来源内容，更新时间较早。"
+              },
+              {
+                "block_id": "DUP-B-v1-1-1",
+                "document_id": "DUP-B",
+                "document_version": "v1",
+                "source": "source-b",
+                "quote": "相同标题的第二份来源内容，更新时间较晚。"
+              }
+            ],
+            "uncertainty": [],
+            "next_action": "none"
+          }
+        }
+      ]
+    },
+    {
+      "provider": "codex_official_cli_multidoc_grouped",
+      "model": "gpt-5.6-sol",
+      "query_count": 6,
+      "completed_query_count": 6,
+      "transport_error_count": 0,
+      "status_accuracy": 1,
+      "json_valid_rate": 1,
+      "citation_id_retrieval_rate": 0.667,
+      "refusal_or_review_accuracy": 1,
+      "batch_latency_ms": {
+        "p50": 18857.374,
+        "p95": 18925.148
+      },
+      "rows": [
+        {
+          "id": "M01",
+          "type": "authorized_search",
+          "expected_status": "answered",
+          "actual_status": "answered",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "DOC-A-v1-1-1",
+            "DOC-A-v1-2-1",
+            "DOC-B-v1-1-1"
+          ],
+          "cited_evidence": [
+            "DOC-A-v1-1-1",
+            "DOC-B-v1-1-1"
+          ],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 18925.148,
+          "error": null,
+          "parsed_response": {
+            "id": "M01",
+            "status": "answered",
+            "answer": "跨文档问答应先按权限过滤，再合并不同来源证据，并显示来源文档和版本；统一文档中间表示保留 document_id、版本、页码、章节路径和字符偏移。",
+            "claims": [
+              {
+                "text": "跨文档问答必须先按权限过滤，再合并不同来源的证据，并显示来源文档和版本。",
+                "evidence_ids": [
+                  "DOC-B-v1-1-1"
+                ]
+              },
+              {
+                "text": "统一文档中间表示保留 document_id、版本、页码、章节路径和字符偏移。",
+                "evidence_ids": [
+                  "DOC-A-v1-1-1"
+                ]
+              }
+            ],
+            "citations": [
+              {
+                "block_id": "DOC-B-v1-1-1",
+                "document_id": "DOC-B",
+                "document_version": "v1",
+                "source": "fixture",
+                "quote": "跨文档问答必须先按权限过滤，再合并不同来源的证据，并显示来源文档和版本。"
+              },
+              {
+                "block_id": "DOC-A-v1-1-1",
+                "document_id": "DOC-A",
+                "document_version": "v1",
+                "source": "fixture",
+                "quote": "统一文档中间表示保留 document_id、版本、页码、章节路径和字符偏移。"
+              }
+            ],
+            "uncertainty": [],
+            "next_action": "none"
+          }
+        },
+        {
+          "id": "M02",
+          "type": "unauthorized_only",
+          "expected_status": "refused",
+          "actual_status": "refused",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 18925.148,
+          "error": null,
+          "parsed_response": {
+            "id": "M02",
+            "status": "refused",
+            "answer": "当前授权和云端策略下没有可发送的证据，无法回答该问题。",
+            "claims": [],
+            "citations": [],
+            "uncertainty": [
+              "没有可用证据"
+            ],
+            "next_action": "none"
+          }
+        },
+        {
+          "id": "M03",
+          "type": "conflict",
+          "expected_status": "needs_human_review",
+          "actual_status": "needs_human_review",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "CONFLICT-A-v1-1-1",
+            "CONFLICT-B-v2-1-1"
+          ],
+          "cited_evidence": [
+            "CONFLICT-A-v1-1-1",
+            "CONFLICT-B-v2-1-1"
+          ],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 18925.148,
+          "error": null,
+          "parsed_response": {
+            "id": "M03",
+            "status": "needs_human_review",
+            "answer": "日志和问答记录保留期限存在冲突：CONFLICT-A 规定 30 天，CONFLICT-B 规定 90 天。",
+            "claims": [
+              {
+                "text": "CONFLICT-A 规定日志和问答记录保留 30 天，期满后删除。",
+                "evidence_ids": [
+                  "CONFLICT-A-v1-1-1"
+                ]
+              },
+              {
+                "text": "CONFLICT-B 规定日志和问答记录保留 90 天，期满后删除。",
+                "evidence_ids": [
+                  "CONFLICT-B-v2-1-1"
+                ]
+              }
+            ],
+            "citations": [
+              {
+                "block_id": "CONFLICT-A-v1-1-1",
+                "document_id": "CONFLICT-A",
+                "document_version": "v1",
+                "source": "policy-system-a",
+                "quote": "日志和问答记录保留 30 天，期满后删除。"
+              },
+              {
+                "block_id": "CONFLICT-B-v2-1-1",
+                "document_id": "CONFLICT-B",
+                "document_version": "v2",
+                "source": "policy-system-b",
+                "quote": "日志和问答记录保留 90 天，期满后删除。"
+              }
+            ],
+            "uncertainty": [
+              "不同来源规定的保留期限不一致"
+            ],
+            "next_action": "human_review"
+          }
+        },
+        {
+          "id": "M04",
+          "type": "version",
+          "expected_status": "answered",
+          "actual_status": "answered",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "VERSIONED-v1-1-1",
+            "VERSIONED-v2-1-1"
+          ],
+          "cited_evidence": [
+            "EVIDENCE VERSIONED-v2-1-1"
+          ],
+          "citation_ids_in_retrieved": false,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 18789.599,
+          "error": null,
+          "parsed_response": {
+            "id": "M04",
+            "status": "answered",
+            "answer": "新版配置规定最大并发为8。",
+            "claims": [
+              {
+                "text": "新版配置最大并发为8。",
+                "evidence_ids": [
+                  "EVIDENCE VERSIONED-v2-1-1"
+                ]
+              }
+            ],
+            "citations": [
+              {
+                "block_id": "EVIDENCE VERSIONED-v2-1-1",
+                "document_id": "VERSIONED",
+                "document_version": "v2",
+                "source": "config-repo",
+                "quote": "新版配置规定最大并发为 8。"
+              }
+            ],
+            "uncertainty": [],
+            "next_action": "none"
+          }
+        },
+        {
+          "id": "M05",
+          "type": "sensitivity",
+          "expected_status": "refused",
+          "actual_status": "refused",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "PUBLIC-01-v1-1-1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 18789.599,
+          "error": null,
+          "parsed_response": {
+            "id": "M05",
+            "status": "refused",
+            "answer": "现有证据仅说明支持文档检索，无法确认敏感内容是否支持本地索引。",
+            "claims": [],
+            "citations": [],
+            "uncertainty": [
+              "缺少关于敏感内容本地索引的证据。"
+            ],
+            "next_action": "open_source"
+          }
+        },
+        {
+          "id": "M06",
+          "type": "same_name",
+          "expected_status": "answered",
+          "actual_status": "answered",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "DUP-A-v1-1-1",
+            "DUP-B-v1-1-1"
+          ],
+          "cited_evidence": [
+            "EVIDENCE DUP-A-v1-1-1",
+            "EVIDENCE DUP-B-v1-1-1"
+          ],
+          "citation_ids_in_retrieved": false,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 18789.599,
+          "error": null,
+          "parsed_response": {
+            "id": "M06",
+            "status": "answered",
+            "answer": "相同标题的两份内容中，source-b 来源的更新时间较晚，source-a 来源较早。",
+            "claims": [
+              {
+                "text": "source-a 来源内容更新时间较早。",
+                "evidence_ids": [
+                  "EVIDENCE DUP-A-v1-1-1"
+                ]
+              },
+              {
+                "text": "source-b 来源内容更新时间较晚。",
+                "evidence_ids": [
+                  "EVIDENCE DUP-B-v1-1-1"
+                ]
+              }
+            ],
+            "citations": [
+              {
+                "block_id": "EVIDENCE DUP-A-v1-1-1",
+                "document_id": "DUP-A",
+                "document_version": "v1",
+                "source": "source-a",
+                "quote": "相同标题的第一份来源内容，更新时间较早。"
+              },
+              {
+                "block_id": "EVIDENCE DUP-B-v1-1-1",
+                "document_id": "DUP-B",
+                "document_version": "v1",
+                "source": "source-b",
+                "quote": "相同标题的第二份来源内容，更新时间较晚。"
+              }
+            ],
+            "uncertainty": [
+              "证据未提供具体更新时间。"
+            ],
+            "next_action": "none"
+          }
+        }
+      ]
+    },
+    {
+      "provider": "codex_official_cli_multidoc_grouped",
+      "model": "gpt-5.6-luna",
+      "query_count": 6,
+      "completed_query_count": 6,
+      "transport_error_count": 0,
+      "status_accuracy": 1,
+      "json_valid_rate": 1,
+      "citation_id_retrieval_rate": 1,
+      "refusal_or_review_accuracy": 1,
+      "batch_latency_ms": {
+        "p50": 17154.105,
+        "p95": 17311.476
+      },
+      "rows": [
+        {
+          "id": "M01",
+          "type": "authorized_search",
+          "expected_status": "answered",
+          "actual_status": "answered",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "DOC-A-v1-1-1",
+            "DOC-A-v1-2-1",
+            "DOC-B-v1-1-1"
+          ],
+          "cited_evidence": [
+            "DOC-A-v1-1-1",
+            "DOC-B-v1-1-1"
+          ],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 17311.476,
+          "error": null,
+          "parsed_response": {
+            "id": "M01",
+            "status": "answered",
+            "answer": "跨文档问答应先按权限过滤，再合并证据，并保留和显示来源文档及版本信息。",
+            "claims": [
+              {
+                "text": "跨文档问答必须先按权限过滤，再合并不同来源的证据。",
+                "evidence_ids": [
+                  "DOC-B-v1-1-1"
+                ]
+              },
+              {
+                "text": "应显示来源文档和版本，统一文档中间表示保留 document_id 和版本。",
+                "evidence_ids": [
+                  "DOC-B-v1-1-1",
+                  "DOC-A-v1-1-1"
+                ]
+              }
+            ],
+            "citations": [
+              {
+                "block_id": "DOC-B-v1-1-1",
+                "document_id": "DOC-B",
+                "document_version": "v1",
+                "source": "fixture",
+                "quote": "跨文档问答必须先按权限过滤，再合并不同来源的证据，并显示来源文档和版本。"
+              },
+              {
+                "block_id": "DOC-A-v1-1-1",
+                "document_id": "DOC-A",
+                "document_version": "v1",
+                "source": "fixture",
+                "quote": "统一文档中间表示保留 document_id、版本、页码、章节路径和字符偏移。"
+              }
+            ],
+            "uncertainty": [],
+            "next_action": "none"
+          }
+        },
+        {
+          "id": "M02",
+          "type": "unauthorized_only",
+          "expected_status": "refused",
+          "actual_status": "refused",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 17311.476,
+          "error": null,
+          "parsed_response": {
+            "id": "M02",
+            "status": "refused",
+            "answer": "当前授权和云端策略下没有可发送的证据，无法回答。",
+            "claims": [],
+            "citations": [],
+            "uncertainty": [
+              "缺少可用证据"
+            ],
+            "next_action": "open_source"
+          }
+        },
+        {
+          "id": "M03",
+          "type": "conflict",
+          "expected_status": "needs_human_review",
+          "actual_status": "needs_human_review",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "CONFLICT-A-v1-1-1",
+            "CONFLICT-B-v2-1-1"
+          ],
+          "cited_evidence": [
+            "CONFLICT-A-v1-1-1",
+            "CONFLICT-B-v2-1-1"
+          ],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 17311.476,
+          "error": null,
+          "parsed_response": {
+            "id": "M03",
+            "status": "needs_human_review",
+            "answer": "日志和问答记录保留期限存在冲突：CONFLICT-A 为30天，CONFLICT-B 为90天。",
+            "claims": [
+              {
+                "text": "CONFLICT-A 规定保留30天。",
+                "evidence_ids": [
+                  "CONFLICT-A-v1-1-1"
+                ]
+              },
+              {
+                "text": "CONFLICT-B 规定保留90天。",
+                "evidence_ids": [
+                  "CONFLICT-B-v2-1-1"
+                ]
+              }
+            ],
+            "citations": [
+              {
+                "block_id": "CONFLICT-A-v1-1-1",
+                "document_id": "CONFLICT-A",
+                "document_version": "v1",
+                "source": "policy-system-a",
+                "quote": "日志和问答记录保留 30 天，期满后删除。"
+              },
+              {
+                "block_id": "CONFLICT-B-v2-1-1",
+                "document_id": "CONFLICT-B",
+                "document_version": "v2",
+                "source": "policy-system-b",
+                "quote": "日志和问答记录保留 90 天，期满后删除。"
+              }
+            ],
+            "uncertainty": [
+              "两个来源对保留期限规定不一致"
+            ],
+            "next_action": "human_review"
+          }
+        },
+        {
+          "id": "M04",
+          "type": "version",
+          "expected_status": "answered",
+          "actual_status": "answered",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "VERSIONED-v1-1-1",
+            "VERSIONED-v2-1-1"
+          ],
+          "cited_evidence": [
+            "VERSIONED-v2-1-1"
+          ],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 16996.734,
+          "error": null,
+          "parsed_response": {
+            "id": "M04",
+            "status": "answered",
+            "answer": "新版配置最大并发为8。",
+            "claims": [
+              {
+                "text": "新版配置规定最大并发为8。",
+                "evidence_ids": [
+                  "VERSIONED-v2-1-1"
+                ]
+              }
+            ],
+            "citations": [
+              {
+                "block_id": "VERSIONED-v2-1-1",
+                "document_id": "VERSIONED",
+                "document_version": "v2",
+                "source": "config-repo",
+                "quote": "新版配置规定最大并发为 8。"
+              }
+            ],
+            "uncertainty": [],
+            "next_action": "none"
+          }
+        },
+        {
+          "id": "M05",
+          "type": "sensitivity",
+          "expected_status": "refused",
+          "actual_status": "refused",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "PUBLIC-01-v1-1-1"
+          ],
+          "cited_evidence": [],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 0.0,
+          "elapsed_ms": 16996.734,
+          "error": null,
+          "parsed_response": {
+            "id": "M05",
+            "status": "refused",
+            "answer": "现有证据不足以确认敏感内容是否支持本地索引。",
+            "claims": [],
+            "citations": [],
+            "uncertainty": [
+              "证据仅说明支持文档检索，未说明敏感内容或本地索引。"
+            ],
+            "next_action": "open_source"
+          }
+        },
+        {
+          "id": "M06",
+          "type": "same_name",
+          "expected_status": "answered",
+          "actual_status": "answered",
+          "status_correct": true,
+          "json_valid": true,
+          "parse_note": null,
+          "retrieved_evidence": [
+            "DUP-A-v1-1-1",
+            "DUP-B-v1-1-1"
+          ],
+          "cited_evidence": [
+            "DUP-A-v1-1-1",
+            "DUP-B-v1-1-1"
+          ],
+          "citation_ids_in_retrieved": true,
+          "gold_coverage": 1.0,
+          "elapsed_ms": 16996.734,
+          "error": null,
+          "parsed_response": {
+            "id": "M06",
+            "status": "answered",
+            "answer": "相同标题的来源有source-a和source-b；source-a更新时间较早，source-b更新时间较晚。",
+            "claims": [
+              {
+                "text": "第一份来源为source-a，更新时间较早。",
+                "evidence_ids": [
+                  "DUP-A-v1-1-1"
+                ]
+              },
+              {
+                "text": "第二份来源为source-b，更新时间较晚。",
+                "evidence_ids": [
+                  "DUP-B-v1-1-1"
+                ]
+              }
+            ],
+            "citations": [
+              {
+                "block_id": "DUP-A-v1-1-1",
+                "document_id": "DUP-A",
+                "document_version": "v1",
+                "source": "source-a",
+                "quote": "相同标题的第一份来源内容，更新时间较早。"
+              },
+              {
+                "block_id": "DUP-B-v1-1-1",
+                "document_id": "DUP-B",
+                "document_version": "v1",
+                "source": "source-b",
+                "quote": "相同标题的第二份来源内容，更新时间较晚。"
+              }
+            ],
+            "uncertainty": [],
+            "next_action": "none"
+          }
+        }
+      ]
+    }
+  ],
+  "boundary": "Grouped CLI latency includes official client startup and relay overhead. This is not a cloud price or production SLA measurement."
+}

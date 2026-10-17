@@ -1,0 +1,371 @@
+{
+  "experiment_id": "TECH-DOC-007-R02-text-structure",
+  "scope": "non-OCR text/layout evidence checks",
+  "outputs": [
+    {
+      "experiment_id": "TECH-DOC-007-R02-text-structure",
+      "parser": "pymupdf",
+      "sample_id": "SELF-001",
+      "fixture_status": "usable_for_basic_text_structure",
+      "status": "scored",
+      "page_count": 1,
+      "text_chars": 292,
+      "fragment_recall": 1.0,
+      "fragment_hits": {
+        "物理页码": true,
+        "标题路径": true,
+        "脚注占位": true
+      },
+      "query_recall": 1.0,
+      "query_hits": {
+        "physical_page": true,
+        "heading_path": true,
+        "脚注": true
+      },
+      "bbox_text_block_count": 10,
+      "manual_required": [
+        "reading_order_sequence",
+        "paragraph_boundaries",
+        "heading_level_and_path",
+        "table_cell_grid_and_spans",
+        "header_footer_classification"
+      ],
+      "excluded_metrics": [],
+      "boundary": "Automatic fragment/query checks are not a substitute for human structural gold labels."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-text-structure",
+      "parser": "pymupdf",
+      "sample_id": "SELF-002",
+      "fixture_status": "usable_regenerated_two_column_fixture",
+      "status": "scored",
+      "page_count": 2,
+      "text_chars": 570,
+      "fragment_recall": 1.0,
+      "fragment_hits": {
+        "跨栏标题和参考文献": true,
+        "第二页用于检查页码": true
+      },
+      "query_recall": 1.0,
+      "query_hits": {
+        "跨栏标题": true,
+        "参考文献": true,
+        "阅读顺序": true
+      },
+      "bbox_text_block_count": 24,
+      "manual_required": [
+        "reading_order_sequence",
+        "paragraph_boundaries",
+        "heading_level_and_path",
+        "table_cell_grid_and_spans",
+        "header_footer_classification"
+      ],
+      "excluded_metrics": [],
+      "boundary": "Automatic fragment/query checks are not a substitute for human structural gold labels."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-text-structure",
+      "parser": "pymupdf",
+      "sample_id": "SELF-003",
+      "fixture_status": "usable_for_basic_table_and_formula_presence_only",
+      "status": "scored",
+      "page_count": 1,
+      "text_chars": 286,
+      "fragment_recall": 1.0,
+      "fragment_hits": {
+        "Recall@k": true,
+        "合并单元格需保留": true
+      },
+      "query_recall": 1.0,
+      "query_hits": {
+        "Recall@k": true,
+        "合并单元格": true,
+        "公式": true
+      },
+      "bbox_text_block_count": 10,
+      "manual_required": [
+        "reading_order_sequence",
+        "paragraph_boundaries",
+        "heading_level_and_path",
+        "table_cell_grid_and_spans",
+        "header_footer_classification"
+      ],
+      "excluded_metrics": [],
+      "boundary": "Automatic fragment/query checks are not a substitute for human structural gold labels."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-text-structure",
+      "parser": "baseline",
+      "sample_id": "SELF-001",
+      "fixture_status": "usable_for_basic_text_structure",
+      "status": "scored",
+      "page_count": 1,
+      "text_chars": 292,
+      "fragment_recall": 1.0,
+      "fragment_hits": {
+        "物理页码": true,
+        "标题路径": true,
+        "脚注占位": true
+      },
+      "query_recall": 1.0,
+      "query_hits": {
+        "physical_page": true,
+        "heading_path": true,
+        "脚注": true
+      },
+      "bbox_text_block_count": 0,
+      "manual_required": [
+        "reading_order_sequence",
+        "paragraph_boundaries",
+        "heading_level_and_path",
+        "table_cell_grid_and_spans",
+        "header_footer_classification"
+      ],
+      "excluded_metrics": [],
+      "boundary": "Automatic fragment/query checks are not a substitute for human structural gold labels."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-text-structure",
+      "parser": "baseline",
+      "sample_id": "SELF-002",
+      "fixture_status": "usable_regenerated_two_column_fixture",
+      "status": "scored",
+      "page_count": 2,
+      "text_chars": 570,
+      "fragment_recall": 1.0,
+      "fragment_hits": {
+        "跨栏标题和参考文献": true,
+        "第二页用于检查页码": true
+      },
+      "query_recall": 1.0,
+      "query_hits": {
+        "跨栏标题": true,
+        "参考文献": true,
+        "阅读顺序": true
+      },
+      "bbox_text_block_count": 0,
+      "manual_required": [
+        "reading_order_sequence",
+        "paragraph_boundaries",
+        "heading_level_and_path",
+        "table_cell_grid_and_spans",
+        "header_footer_classification"
+      ],
+      "excluded_metrics": [],
+      "boundary": "Automatic fragment/query checks are not a substitute for human structural gold labels."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-text-structure",
+      "parser": "baseline",
+      "sample_id": "SELF-003",
+      "fixture_status": "usable_for_basic_table_and_formula_presence_only",
+      "status": "scored",
+      "page_count": 1,
+      "text_chars": 286,
+      "fragment_recall": 1.0,
+      "fragment_hits": {
+        "Recall@k": true,
+        "合并单元格需保留": true
+      },
+      "query_recall": 1.0,
+      "query_hits": {
+        "Recall@k": true,
+        "合并单元格": true,
+        "公式": true
+      },
+      "bbox_text_block_count": 0,
+      "manual_required": [
+        "reading_order_sequence",
+        "paragraph_boundaries",
+        "heading_level_and_path",
+        "table_cell_grid_and_spans",
+        "header_footer_classification"
+      ],
+      "excluded_metrics": [],
+      "boundary": "Automatic fragment/query checks are not a substitute for human structural gold labels."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-text-structure",
+      "parser": "docling",
+      "sample_id": "SELF-001",
+      "fixture_status": "usable_for_basic_text_structure",
+      "status": "scored",
+      "page_count": 1,
+      "text_chars": 296,
+      "fragment_recall": 1.0,
+      "fragment_hits": {
+        "物理页码": true,
+        "标题路径": true,
+        "脚注占位": true
+      },
+      "query_recall": 1.0,
+      "query_hits": {
+        "physical_page": true,
+        "heading_path": true,
+        "脚注": true
+      },
+      "bbox_text_block_count": 0,
+      "manual_required": [
+        "reading_order_sequence",
+        "paragraph_boundaries",
+        "heading_level_and_path",
+        "table_cell_grid_and_spans",
+        "header_footer_classification"
+      ],
+      "excluded_metrics": [],
+      "boundary": "Automatic fragment/query checks are not a substitute for human structural gold labels."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-text-structure",
+      "parser": "docling",
+      "sample_id": "SELF-002",
+      "fixture_status": "usable_regenerated_two_column_fixture",
+      "status": "scored",
+      "page_count": 2,
+      "text_chars": 514,
+      "fragment_recall": 1.0,
+      "fragment_hits": {
+        "跨栏标题和参考文献": true,
+        "第二页用于检查页码": true
+      },
+      "query_recall": 1.0,
+      "query_hits": {
+        "跨栏标题": true,
+        "参考文献": true,
+        "阅读顺序": true
+      },
+      "bbox_text_block_count": 0,
+      "manual_required": [
+        "reading_order_sequence",
+        "paragraph_boundaries",
+        "heading_level_and_path",
+        "table_cell_grid_and_spans",
+        "header_footer_classification"
+      ],
+      "excluded_metrics": [],
+      "boundary": "Automatic fragment/query checks are not a substitute for human structural gold labels."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-text-structure",
+      "parser": "docling",
+      "sample_id": "SELF-003",
+      "fixture_status": "usable_for_basic_table_and_formula_presence_only",
+      "status": "scored",
+      "page_count": 1,
+      "text_chars": 287,
+      "fragment_recall": 1.0,
+      "fragment_hits": {
+        "Recall@k": true,
+        "合并单元格需保留": true
+      },
+      "query_recall": 1.0,
+      "query_hits": {
+        "Recall@k": true,
+        "合并单元格": true,
+        "公式": true
+      },
+      "bbox_text_block_count": 0,
+      "manual_required": [
+        "reading_order_sequence",
+        "paragraph_boundaries",
+        "heading_level_and_path",
+        "table_cell_grid_and_spans",
+        "header_footer_classification"
+      ],
+      "excluded_metrics": [],
+      "boundary": "Automatic fragment/query checks are not a substitute for human structural gold labels."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-text-structure",
+      "parser": "tika",
+      "sample_id": "SELF-001",
+      "fixture_status": "usable_for_basic_text_structure",
+      "status": "scored",
+      "page_count": null,
+      "text_chars": 292,
+      "fragment_recall": 1.0,
+      "fragment_hits": {
+        "物理页码": true,
+        "标题路径": true,
+        "脚注占位": true
+      },
+      "query_recall": 1.0,
+      "query_hits": {
+        "physical_page": true,
+        "heading_path": true,
+        "脚注": true
+      },
+      "bbox_text_block_count": 0,
+      "manual_required": [
+        "reading_order_sequence",
+        "paragraph_boundaries",
+        "heading_level_and_path",
+        "table_cell_grid_and_spans",
+        "header_footer_classification"
+      ],
+      "excluded_metrics": [],
+      "boundary": "Automatic fragment/query checks are not a substitute for human structural gold labels."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-text-structure",
+      "parser": "tika",
+      "sample_id": "SELF-002",
+      "fixture_status": "usable_regenerated_two_column_fixture",
+      "status": "scored",
+      "page_count": null,
+      "text_chars": 570,
+      "fragment_recall": 1.0,
+      "fragment_hits": {
+        "跨栏标题和参考文献": true,
+        "第二页用于检查页码": true
+      },
+      "query_recall": 1.0,
+      "query_hits": {
+        "跨栏标题": true,
+        "参考文献": true,
+        "阅读顺序": true
+      },
+      "bbox_text_block_count": 0,
+      "manual_required": [
+        "reading_order_sequence",
+        "paragraph_boundaries",
+        "heading_level_and_path",
+        "table_cell_grid_and_spans",
+        "header_footer_classification"
+      ],
+      "excluded_metrics": [],
+      "boundary": "Automatic fragment/query checks are not a substitute for human structural gold labels."
+    },
+    {
+      "experiment_id": "TECH-DOC-007-R02-text-structure",
+      "parser": "tika",
+      "sample_id": "SELF-003",
+      "fixture_status": "usable_for_basic_table_and_formula_presence_only",
+      "status": "scored",
+      "page_count": null,
+      "text_chars": 286,
+      "fragment_recall": 1.0,
+      "fragment_hits": {
+        "Recall@k": true,
+        "合并单元格需保留": true
+      },
+      "query_recall": 1.0,
+      "query_hits": {
+        "Recall@k": true,
+        "合并单元格": true,
+        "公式": true
+      },
+      "bbox_text_block_count": 0,
+      "manual_required": [
+        "reading_order_sequence",
+        "paragraph_boundaries",
+        "heading_level_and_path",
+        "table_cell_grid_and_spans",
+        "header_footer_classification"
+      ],
+      "excluded_metrics": [],
+      "boundary": "Automatic fragment/query checks are not a substitute for human structural gold labels."
+    }
+  ],
+  "manual_annotation_status": "required_for_reading_order_paragraph_heading_table_metrics"
+}

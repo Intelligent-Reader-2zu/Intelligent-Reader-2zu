@@ -1,0 +1,34 @@
+{
+  "experiment_id": "TECH-MDOC-004-009-013-R01",
+  "scope": "SQLite FTS5 persistent local lifecycle, isolation and concurrency; synthetic English fixture",
+  "database": {
+    "fts5": true,
+    "secure_delete": true,
+    "temporary": true
+  },
+  "checks": {
+    "authorized_result": true,
+    "unauthorized_result_empty": true,
+    "restricted_default_denied": true,
+    "restricted_local_route_available": true,
+    "acl_revoke_cache_not_reused": true,
+    "current_version_available": true,
+    "stale_version_not_in_ready_query": true,
+    "deleted_new_query_empty": true,
+    "deleted_chunk_rows_zero": true,
+    "deleted_fts_rows_zero": true,
+    "concurrent_unauthorized_leak": false
+  },
+  "metrics": {
+    "cache_entries": 10,
+    "concurrent_requests": 60,
+    "concurrent_workers": 16,
+    "concurrent_batch_ms": 93.061,
+    "concurrent_p95_proxy_ms": 1.551
+  },
+  "boundary": [
+    "SQLite temporary database is a local lifecycle proxy, not the production vector store.",
+    "secure_delete and zero row counts do not prove disk, backup or cloud-provider erasure.",
+    "Concurrency check exercises ACL consistency under parallel reads, not model generation throughput."
+  ]
+}

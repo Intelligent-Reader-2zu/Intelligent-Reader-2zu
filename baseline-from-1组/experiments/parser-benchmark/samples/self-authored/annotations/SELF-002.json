@@ -1,0 +1,15 @@
+{
+  "fixed_queries": [
+    "跨栏标题",
+    "参考文献",
+    "阅读顺序"
+  ],
+  "expected_evidence_fragments": [
+    "跨栏标题和参考文献",
+    "第二页用于检查页码"
+  ],
+  "reference_notes": "比较默认顺序与按栏顺序的差异，并保留页码。",
+  "sample_id": "SELF-002",
+  "annotation_version": 1,
+  "source": "project-authored"
+}

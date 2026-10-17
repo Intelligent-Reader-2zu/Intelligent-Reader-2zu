@@ -1,0 +1,402 @@
+{
+  "experiment_id": "TECH-STRUCT-016-R01",
+  "sample_id": "OPEN-003",
+  "status": "succeeded",
+  "parser": "Docling",
+  "parser_version": "2.130.0",
+  "source_path": "samples\\external-candidates\\nist-sp-800-63b.pdf",
+  "source_sha256": "ccfce7510a1267933f912d023306c6e7d485f21be63d271108b61aad6139127e",
+  "ocr": {
+    "enabled": false,
+    "status": "explicitly_disabled"
+  },
+  "pipeline_options": {
+    "do_ocr": false,
+    "do_table_structure": true,
+    "do_formula_enrichment": false,
+    "generate_page_images": false,
+    "generate_picture_images": false
+  },
+  "raw_export_path": "results\\text-structure\\external-docling\\OPEN-003.docling.json",
+  "raw_export_sha256": "63e4e76169a7a3f1568bf849c695caaa2a01e76f7d2c3f602e55ac4ba6ec3e72",
+  "metrics": {
+    "page_count": 80,
+    "text_count": 1071,
+    "table_count": 19,
+    "table_cell_count": 656,
+    "picture_count": 12,
+    "text_labels": {
+      "section_header": 149,
+      "page_footer": 78,
+      "text": 429,
+      "page_header": 230,
+      "caption": 6,
+      "list_item": 179
+    },
+    "section_header_count": 149,
+    "section_header_preview": [
+      {
+        "text": "Withdrawn NIST Technical Series Publication",
+        "level": 1,
+        "page_no": 1,
+        "bbox": {
+          "l": 101.94,
+          "t": 703.43664,
+          "r": 510.00803400000007,
+          "b": 684.8454019634263,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "NIST Special Publication 800-63B",
+        "level": 1,
+        "page_no": 2,
+        "bbox": {
+          "l": 249.6,
+          "t": 716.1470400000001,
+          "r": 540.31248,
+          "b": 698.8640254545455,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Digital Identity Guidelines",
+        "level": 1,
+        "page_no": 2,
+        "bbox": {
+          "l": 236.16,
+          "t": 662.98896,
+          "r": 540.6173999999995,
+          "b": 638.6261563636364,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Privacy Authors:",
+        "level": 1,
+        "page_no": 2,
+        "bbox": {
+          "l": 437.07264,
+          "t": 434.7561600000001,
+          "r": 539.867664,
+          "b": 422.67887272727285,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Usability Authors:",
+        "level": 1,
+        "page_no": 2,
+        "bbox": {
+          "l": 429.13824,
+          "t": 374.52432000000005,
+          "r": 539.8704479999999,
+          "b": 362.4470327272728,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "NIST Special Publication 800-63B",
+        "level": 1,
+        "page_no": 3,
+        "bbox": {
+          "l": 249.6,
+          "t": 716.1470400000001,
+          "r": 540.31248,
+          "b": 698.8640254545455,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Digital Identity Guidelines",
+        "level": 1,
+        "page_no": 3,
+        "bbox": {
+          "l": 236.16,
+          "t": 676.6689600000001,
+          "r": 540.6173999999995,
+          "b": 652.3061563636364,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Authority",
+        "level": 1,
+        "page_no": 4,
+        "bbox": {
+          "l": 281.52,
+          "t": 717.5846399999999,
+          "r": 330.3896639999997,
+          "b": 706.8654690909091,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Comments on this publication may be submitted to:",
+        "level": 1,
+        "page_no": 4,
+        "bbox": {
+          "l": 170.16,
+          "t": 224.38464,
+          "r": 441.74289599999906,
+          "b": 213.66546909090903,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Reports on Computer Systems Technology",
+        "level": 1,
+        "page_no": 5,
+        "bbox": {
+          "l": 182.64,
+          "t": 717.312,
+          "r": 429.3120000000002,
+          "b": 705.6607272727273,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Abstract",
+        "level": 1,
+        "page_no": 5,
+        "bbox": {
+          "l": 281.52,
+          "t": 541.632,
+          "r": 330.396,
+          "b": 529.9807272727272,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Keywords",
+        "level": 1,
+        "page_no": 5,
+        "bbox": {
+          "l": 277.20000000000005,
+          "t": 393.31199999999984,
+          "r": 334.5120000000001,
+          "b": 381.6607272727271,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Acknowledgments",
+        "level": 1,
+        "page_no": 6,
+        "bbox": {
+          "l": 252.96,
+          "t": 692.832,
+          "r": 359.232,
+          "b": 681.1807272727273,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Requirements Notation and Conventions",
+        "level": 1,
+        "page_no": 6,
+        "bbox": {
+          "l": 189.59999999999997,
+          "t": 492.43200000000036,
+          "r": 422.35080000000005,
+          "b": 480.78072727272763,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Table of Contents",
+        "level": 1,
+        "page_no": 7,
+        "bbox": {
+          "l": 255.36,
+          "t": 717.312,
+          "r": 356.83200000000005,
+          "b": 705.6607272727273,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Errata",
+        "level": 1,
+        "page_no": 11,
+        "bbox": {
+          "l": 288.48,
+          "t": 703.6320000000001,
+          "r": 322.9920000000001,
+          "b": 691.9807272727273,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "1 Purpose",
+        "level": 1,
+        "page_no": 12,
+        "bbox": {
+          "l": 72.0,
+          "t": 709.872,
+          "r": 148.99200000000002,
+          "b": 698.2207272727272,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "2 Introduction",
+        "level": 1,
+        "page_no": 13,
+        "bbox": {
+          "l": 72.0,
+          "t": 715.872,
+          "r": 171.012,
+          "b": 704.2207272727272,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "3 Definitions and Abbreviations",
+        "level": 1,
+        "page_no": 15,
+        "bbox": {
+          "l": 72.0,
+          "t": 684.192,
+          "r": 270.91200000000003,
+          "b": 672.5407272727273,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "4 Authenticator Assurance Levels",
+        "level": 1,
+        "page_no": 16,
+        "bbox": {
+          "l": 72.0,
+          "t": 715.872,
+          "r": 284.35320000000013,
+          "b": 704.2207272727272,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Authenticator Assurance Level 1",
+        "level": 1,
+        "page_no": 16,
+        "bbox": {
+          "l": 100.79568,
+          "t": 409.90464,
+          "r": 272.0371199999998,
+          "b": 399.18546909090907,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "4.1.1 Permitted Authenticator Types",
+        "level": 1,
+        "page_no": 16,
+        "bbox": {
+          "l": 72.0,
+          "t": 278.38464,
+          "r": 268.23048000000017,
+          "b": 267.665469090909,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "4.1.2 Authenticator and Verifier Requirements",
+        "level": 1,
+        "page_no": 17,
+        "bbox": {
+          "l": 72.0,
+          "t": 717.5846399999999,
+          "r": 319.602912,
+          "b": 706.8654690909091,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "4.1.3 Reauthentication",
+        "level": 1,
+        "page_no": 17,
+        "bbox": {
+          "l": 72.0,
+          "t": 532.78464,
+          "r": 197.53583999999998,
+          "b": 522.0654690909091,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "4.1.4 Security Controls",
+        "level": 1,
+        "page_no": 17,
+        "bbox": {
+          "l": 72.0,
+          "t": 440.86463999999995,
+          "r": 199.82332800000015,
+          "b": 430.14546909090905,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "4.1.5 Records Retention Policy",
+        "level": 1,
+        "page_no": 17,
+        "bbox": {
+          "l": 72.0,
+          "t": 348.94464,
+          "r": 241.57771200000008,
+          "b": 338.2254690909091,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "Authenticator Assurance Level 2",
+        "level": 1,
+        "page_no": 17,
+        "bbox": {
+          "l": 100.79568,
+          "t": 229.66463999999996,
+          "r": 272.0382239999998,
+          "b": 218.9454690909091,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "4.2.1 Permitted Authenticator Types",
+        "level": 1,
+        "page_no": 18,
+        "bbox": {
+          "l": 72.0,
+          "t": 717.5846399999999,
+          "r": 268.23048000000017,
+          "b": 706.8654690909091,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "4.2.2 Authenticator and Verifier Requirements",
+        "level": 1,
+        "page_no": 18,
+        "bbox": {
+          "l": 72.0,
+          "t": 298.54463999999996,
+          "r": 319.602912,
+          "b": 287.82546909090905,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "text": "4.2.3 Reauthentication",
+        "level": 1,
+        "page_no": 19,
+        "bbox": {
+          "l": 72.0,
+          "t": 597.10464,
+          "r": 197.52369599999992,
+          "b": 586.3854690909092,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ]
+  },
+  "elapsed_ms": 92599.21,
+  "boundary": "External text-layer PDF smoke test; no gold labels, OCR, reading-order, or QA accuracy claim."
+}

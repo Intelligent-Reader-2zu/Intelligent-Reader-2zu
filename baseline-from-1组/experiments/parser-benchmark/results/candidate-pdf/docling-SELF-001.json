@@ -1,0 +1,32 @@
+{
+  "parser": "Docling",
+  "parser_version": "2.130.0",
+  "status": "succeeded",
+  "sample_id": "SELF-001",
+  "page_count_from_export": 1,
+  "text_element_count": 8,
+  "picture_count": 0,
+  "table_count": 1,
+  "elapsed_ms": 27980.42,
+  "text_preview": "## 1 研究目标\n\n本样本包含中文、English terms、脚注提示和页眉页脚，用于验证正文、标题、段落、页码和引用定位。\n\n## 2 关键结论\n\n解析结果不能只保留扁平纯文本。每个文本块还需要稳定 ID、标题路径、物理页码和原始位置。\n\n| 字段            | 示例值   | 风险         |\n|---------------|-------|------------|\n| physical_page | 2     | 封面导致打印页码偏移 |\n| heading_path  | 1 > 2 | 标题层级可能被误判  |\n\n脚注：这是一个可回溯的脚注占位，用来检查脚注是否被混入正文。\n\n## 智能阅读器自制 PDF 样本",
+  "raw_export_keys": [
+    "schema_name",
+    "version",
+    "name",
+    "origin",
+    "furniture",
+    "body",
+    "groups",
+    "texts",
+    "pictures",
+    "tables",
+    "key_value_items",
+    "form_items",
+    "pages"
+  ],
+  "raw_export_path": "results\\candidate-pdf\\SELF-001.docling.json",
+  "raw_export_sha256": "7e3c1870747ded42e2ecadeaee998476fa191418e738693c66295b26de4c7e57",
+  "ocr_status": "observed_text_on_scanned_sample; config_not_explicitly_overridden",
+  "source_path": "samples\\self-authored\\pdf\\SELF-001-single-column.pdf",
+  "source_sha256": "0391dd982a1c426c52ca865bde7c253baaa4071d7ca26317febe2391a5389c93"
+}

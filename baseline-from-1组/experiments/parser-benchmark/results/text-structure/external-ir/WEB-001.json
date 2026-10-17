@@ -1,0 +1,3475 @@
+{
+  "sample_id": "WEB-001",
+  "source_format": "HTML",
+  "source_url": "https://www.w3.org/TR/webauthn-3/",
+  "source_path": "D:\\Develop\\Project\\Intelligent-Reader\\experiments\\parser-benchmark\\samples\\external-candidates\\w3c-webauthn-3.html",
+  "source_hash": "157030c980d44a3ce4b1ec5bcfaa16790c7dfefac20709af6ed2b11c7120970b",
+  "parser_name": "BeautifulSoup DOM conservative baseline",
+  "parser_version": null,
+  "config_hash": "html-heading-dom-v1",
+  "elements": [
+    {
+      "element_id": "web-001-e00001",
+      "element_type": "heading",
+      "text": "Web Authentication: An API for accessing Public Key Credentials Level 3",
+      "normalized_text": "web authentication: an api for accessing public key credentials level 3",
+      "heading_level": 1,
+      "heading_path": [],
+      "source_selector": "html:nth-of-type(1) > head:nth-of-type(1) > body:nth-of-type(1) > div:nth-of-type(1) > h1:nth-of-type(1)",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-001-e00002",
+      "element_type": "heading",
+      "text": "Abstract",
+      "normalized_text": "abstract",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"abstract\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-001-e00003",
+      "element_type": "heading",
+      "text": "Status of this document",
+      "normalized_text": "status of this document",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sotd\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-001-e00004",
+      "element_type": "heading",
+      "text": "Table of Contents",
+      "normalized_text": "table of contents",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"contents\"]",
+      "role": "navigation_candidate",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-001-e00005",
+      "element_type": "heading",
+      "text": "1. Introduction",
+      "normalized_text": "1. introduction",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sctn-intro\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00006",
+      "element_type": "heading",
+      "text": "1.1. Specification Roadmap",
+      "normalized_text": "1.1. specification roadmap",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-spec-roadmap\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00007",
+      "element_type": "heading",
+      "text": "1.2. Use Cases",
+      "normalized_text": "1.2. use cases",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-use-cases\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00008",
+      "element_type": "heading",
+      "text": "1.2.1. Consumer with Multi-Device Credentials",
+      "normalized_text": "1.2.1. consumer with multi-device credentials",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-usecase-consumer-mdc\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00009",
+      "element_type": "heading",
+      "text": "1.2.1.1. Registration",
+      "normalized_text": "1.2.1.1. registration",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"sctn-usecase-consumer-mdc-reg\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00010",
+      "element_type": "heading",
+      "text": "1.2.1.2. Authentication",
+      "normalized_text": "1.2.1.2. authentication",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"sctn-usecase-consumer-mdc-auth\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00011",
+      "element_type": "heading",
+      "text": "1.2.2. Workforce with Single-Device Credentials",
+      "normalized_text": "1.2.2. workforce with single-device credentials",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-usecase-workforce-sdc\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00012",
+      "element_type": "heading",
+      "text": "1.2.2.1. Registration",
+      "normalized_text": "1.2.2.1. registration",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"sctn-usecase-workforce-sdc-reg\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00013",
+      "element_type": "heading",
+      "text": "1.2.2.2. Authentication",
+      "normalized_text": "1.2.2.2. authentication",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"sctn-usecase-workforce-sdc-auth\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00014",
+      "element_type": "heading",
+      "text": "1.2.3. Other Use Cases and Configurations",
+      "normalized_text": "1.2.3. other use cases and configurations",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-other-configurations\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00015",
+      "element_type": "heading",
+      "text": "1.3. Sample API Usage Scenarios",
+      "normalized_text": "1.3. sample api usage scenarios",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-sample-scenarios\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00016",
+      "element_type": "heading",
+      "text": "1.3.1. Registration",
+      "normalized_text": "1.3.1. registration",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-sample-registration\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00017",
+      "element_type": "heading",
+      "text": "1.3.2. Registration Specifically with User-Verifying Platform Authenticator",
+      "normalized_text": "1.3.2. registration specifically with user-verifying platform authenticator",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-sample-registration-with-platform-authenticator\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00018",
+      "element_type": "heading",
+      "text": "1.3.3. Authentication",
+      "normalized_text": "1.3.3. authentication",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-sample-authentication\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00019",
+      "element_type": "heading",
+      "text": "1.3.4. Aborting Authentication Operations",
+      "normalized_text": "1.3.4. aborting authentication operations",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-sample-aborting\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00020",
+      "element_type": "heading",
+      "text": "1.3.5. Decommissioning",
+      "normalized_text": "1.3.5. decommissioning",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-sample-decommissioning\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00021",
+      "element_type": "heading",
+      "text": "1.4. Platform-Specific Implementation Guidance",
+      "normalized_text": "1.4. platform-specific implementation guidance",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-platform-impl-guidance\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00022",
+      "element_type": "heading",
+      "text": "2. Conformance",
+      "normalized_text": "2. conformance",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sctn-conformance\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00023",
+      "element_type": "heading",
+      "text": "2.1. User Agents",
+      "normalized_text": "2.1. user agents",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-conforming-user-agents\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00024",
+      "element_type": "heading",
+      "text": "2.1.1. Enumerations as DOMString types",
+      "normalized_text": "2.1.1. enumerations as domstring types",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sct-domstring-backwards-compatibility\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00025",
+      "element_type": "heading",
+      "text": "2.2. Authenticators",
+      "normalized_text": "2.2. authenticators",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-conforming-authenticators\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00026",
+      "element_type": "heading",
+      "text": "2.2.1. Backwards Compatibility with FIDO U2F",
+      "normalized_text": "2.2.1. backwards compatibility with fido u2f",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-conforming-authenticators-u2f\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00027",
+      "element_type": "heading",
+      "text": "2.3. WebAuthn Relying Parties",
+      "normalized_text": "2.3. webauthn relying parties",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-conforming-relying-parties\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00028",
+      "element_type": "heading",
+      "text": "2.4. All Conformance Classes",
+      "normalized_text": "2.4. all conformance classes",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-conforming-all-classes\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00029",
+      "element_type": "heading",
+      "text": "3. Dependencies",
+      "normalized_text": "3. dependencies",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sctn-dependencies\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00030",
+      "element_type": "heading",
+      "text": "4. Terminology",
+      "normalized_text": "4. terminology",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sctn-terminology\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00031",
+      "element_type": "heading",
+      "text": "5. Web Authentication API",
+      "normalized_text": "5. web authentication api",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sctn-api\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00032",
+      "element_type": "heading",
+      "text": "5.1. PublicKeyCredential Interface",
+      "normalized_text": "5.1. publickeycredential interface",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"iface-pkcredential\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00033",
+      "element_type": "heading",
+      "text": "5.1.1. CredentialCreationOptions Dictionary Extension",
+      "normalized_text": "5.1.1. credentialcreationoptions dictionary extension",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-credentialcreationoptions-extension\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00034",
+      "element_type": "heading",
+      "text": "5.1.2. CredentialRequestOptions Dictionary Extension",
+      "normalized_text": "5.1.2. credentialrequestoptions dictionary extension",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-credentialrequestoptions-extension\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00035",
+      "element_type": "heading",
+      "text": "5.1.3. Create a New Credential - PublicKeyCredential’s [[Create]](origin, options, sameOriginWithAncestors) Internal Method",
+      "normalized_text": "5.1.3. create a new credential - publickeycredential’s [[create]](origin, options, sameoriginwithancestors) internal method",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-createCredential\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00036",
+      "element_type": "heading",
+      "text": "5.1.3.1. Create Request Exceptions",
+      "normalized_text": "5.1.3.1. create request exceptions",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"sctn-create-request-exceptions\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00037",
+      "element_type": "heading",
+      "text": "5.1.4. Use an Existing Credential to Make an Assertion",
+      "normalized_text": "5.1.4. use an existing credential to make an assertion",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-getAssertion\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00038",
+      "element_type": "heading",
+      "text": "5.1.4.1. PublicKeyCredential’s [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) Internal Method",
+      "normalized_text": "5.1.4.1. publickeycredential’s [[discoverfromexternalsource]](origin, options, sameoriginwithancestors) internal method",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"sctn-discover-from-external-source\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00039",
+      "element_type": "heading",
+      "text": "5.1.4.2. Issuing a Credential Request to an Authenticator",
+      "normalized_text": "5.1.4.2. issuing a credential request to an authenticator",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"sctn-issuing-cred-request-to-authenticator\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00040",
+      "element_type": "heading",
+      "text": "5.1.4.3. Get Request Exceptions",
+      "normalized_text": "5.1.4.3. get request exceptions",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"sctn-get-request-exceptions\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00041",
+      "element_type": "heading",
+      "text": "5.1.5. Store an Existing Credential - PublicKeyCredential’s [[Store]](credential, sameOriginWithAncestors) Internal Method",
+      "normalized_text": "5.1.5. store an existing credential - publickeycredential’s [[store]](credential, sameoriginwithancestors) internal method",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-storeCredential\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00042",
+      "element_type": "heading",
+      "text": "5.1.6. Availability of User-Verifying Platform Authenticator - PublicKeyCredential’s isUserVerifyingPlatformAuthenticatorAvailable() Method",
+      "normalized_text": "5.1.6. availability of user-verifying platform authenticator - publickeycredential’s isuserverifyingplatformauthenticatoravailable() method",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-isUserVerifyingPlatformAuthenticatorAvailable\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00043",
+      "element_type": "heading",
+      "text": "5.1.7. Availability of client capabilities - PublicKeyCredential’s getClientCapabilities() Method",
+      "normalized_text": "5.1.7. availability of client capabilities - publickeycredential’s getclientcapabilities() method",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-getClientCapabilities\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00044",
+      "element_type": "heading",
+      "text": "5.1.8. Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+      "normalized_text": "5.1.8. deserialize registration ceremony options - publickeycredential’s parsecreationoptionsfromjson() method",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-parseCreationOptionsFromJSON\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00045",
+      "element_type": "heading",
+      "text": "5.1.9. Deserialize Authentication ceremony options - PublicKeyCredential’s parseRequestOptionsFromJSON() Methods",
+      "normalized_text": "5.1.9. deserialize authentication ceremony options - publickeycredential’s parserequestoptionsfromjson() methods",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-parseRequestOptionsFromJSON\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00046",
+      "element_type": "heading",
+      "text": "5.1.10. Signal Credential Changes to the Authenticator - PublicKeyCredential’s signal methods",
+      "normalized_text": "5.1.10. signal credential changes to the authenticator - publickeycredential’s signal methods",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-signal-methods\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00047",
+      "element_type": "heading",
+      "text": "5.1.10.1. Asynchronous RP ID validation algorithm",
+      "normalized_text": "5.1.10.1. asynchronous rp id validation algorithm",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"sctn-signal-methods-async-rp-id-validation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00048",
+      "element_type": "heading",
+      "text": "5.1.10.2. signalUnknownCredential(options)",
+      "normalized_text": "5.1.10.2. signalunknowncredential(options)",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"sctn-signalUnknownCredential\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00049",
+      "element_type": "heading",
+      "text": "5.1.10.3. signalAllAcceptedCredentials(options)",
+      "normalized_text": "5.1.10.3. signalallacceptedcredentials(options)",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"sctn-signalAllAcceptedCredentials\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00050",
+      "element_type": "heading",
+      "text": "5.1.10.4. signalCurrentUserDetails(options)",
+      "normalized_text": "5.1.10.4. signalcurrentuserdetails(options)",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"sctn-signalCurrentUserDetails\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00051",
+      "element_type": "heading",
+      "text": "5.2. Authenticator Responses (interface AuthenticatorResponse )",
+      "normalized_text": "5.2. authenticator responses (interface authenticatorresponse )",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"iface-authenticatorresponse\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00052",
+      "element_type": "heading",
+      "text": "5.2.1. Information About Public Key Credential (interface AuthenticatorAttestationResponse )",
+      "normalized_text": "5.2.1. information about public key credential (interface authenticatorattestationresponse )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"iface-authenticatorattestationresponse\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00053",
+      "element_type": "heading",
+      "text": "5.2.1.1. Easily accessing credential data",
+      "normalized_text": "5.2.1.1. easily accessing credential data",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"sctn-public-key-easy\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00054",
+      "element_type": "heading",
+      "text": "5.2.2. Web Authentication Assertion (interface AuthenticatorAssertionResponse )",
+      "normalized_text": "5.2.2. web authentication assertion (interface authenticatorassertionresponse )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"iface-authenticatorassertionresponse\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00055",
+      "element_type": "heading",
+      "text": "5.3. Parameters for Credential Generation (dictionary PublicKeyCredentialParameters )",
+      "normalized_text": "5.3. parameters for credential generation (dictionary publickeycredentialparameters )",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"dictionary-credential-params\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00056",
+      "element_type": "heading",
+      "text": "5.4. Options for Credential Creation (dictionary PublicKeyCredentialCreationOptions )",
+      "normalized_text": "5.4. options for credential creation (dictionary publickeycredentialcreationoptions )",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"dictionary-makecredentialoptions\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00057",
+      "element_type": "heading",
+      "text": "5.4.1. Public Key Entity Description (dictionary PublicKeyCredentialEntity )",
+      "normalized_text": "5.4.1. public key entity description (dictionary publickeycredentialentity )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"dictionary-pkcredentialentity\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00058",
+      "element_type": "heading",
+      "text": "5.4.2. Relying Party Parameters for Credential Generation (dictionary PublicKeyCredentialRpEntity )",
+      "normalized_text": "5.4.2. relying party parameters for credential generation (dictionary publickeycredentialrpentity )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"dictionary-rp-credential-params\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00059",
+      "element_type": "heading",
+      "text": "5.4.3. User Account Parameters for Credential Generation (dictionary PublicKeyCredentialUserEntity )",
+      "normalized_text": "5.4.3. user account parameters for credential generation (dictionary publickeycredentialuserentity )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"dictionary-user-credential-params\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00060",
+      "element_type": "heading",
+      "text": "5.4.4. Authenticator Selection Criteria (dictionary AuthenticatorSelectionCriteria )",
+      "normalized_text": "5.4.4. authenticator selection criteria (dictionary authenticatorselectioncriteria )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"dictionary-authenticatorSelection\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00061",
+      "element_type": "heading",
+      "text": "5.4.5. Authenticator Attachment Enumeration (enum AuthenticatorAttachment )",
+      "normalized_text": "5.4.5. authenticator attachment enumeration (enum authenticatorattachment )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"enum-attachment\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00062",
+      "element_type": "heading",
+      "text": "5.4.6. Resident Key Requirement Enumeration (enum ResidentKeyRequirement )",
+      "normalized_text": "5.4.6. resident key requirement enumeration (enum residentkeyrequirement )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"enum-residentKeyRequirement\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00063",
+      "element_type": "heading",
+      "text": "5.4.7. Attestation Conveyance Preference Enumeration (enum AttestationConveyancePreference )",
+      "normalized_text": "5.4.7. attestation conveyance preference enumeration (enum attestationconveyancepreference )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"enum-attestation-convey\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00064",
+      "element_type": "heading",
+      "text": "5.5. Options for Assertion Generation (dictionary PublicKeyCredentialRequestOptions )",
+      "normalized_text": "5.5. options for assertion generation (dictionary publickeycredentialrequestoptions )",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"dictionary-assertion-options\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00065",
+      "element_type": "heading",
+      "text": "5.6. Abort Operations with AbortSignal",
+      "normalized_text": "5.6. abort operations with abortsignal",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-abortoperation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00066",
+      "element_type": "heading",
+      "text": "5.7. WebAuthn Extensions Inputs and Outputs",
+      "normalized_text": "5.7. webauthn extensions inputs and outputs",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-extensions-inputs-outputs\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00067",
+      "element_type": "heading",
+      "text": "5.7.1. Authentication Extensions Client Inputs (dictionary AuthenticationExtensionsClientInputs )",
+      "normalized_text": "5.7.1. authentication extensions client inputs (dictionary authenticationextensionsclientinputs )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"iface-authentication-extensions-client-inputs\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00068",
+      "element_type": "heading",
+      "text": "5.7.2. Authentication Extensions Client Outputs (dictionary AuthenticationExtensionsClientOutputs )",
+      "normalized_text": "5.7.2. authentication extensions client outputs (dictionary authenticationextensionsclientoutputs )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"iface-authentication-extensions-client-outputs\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00069",
+      "element_type": "heading",
+      "text": "5.7.3. Authentication Extensions Authenticator Inputs (CDDL type AuthenticationExtensionsAuthenticatorInputs )",
+      "normalized_text": "5.7.3. authentication extensions authenticator inputs (cddl type authenticationextensionsauthenticatorinputs )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"iface-authentication-extensions-authenticator-inputs\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00070",
+      "element_type": "heading",
+      "text": "5.7.4. Authentication Extensions Authenticator Outputs (CDDL type AuthenticationExtensionsAuthenticatorOutputs )",
+      "normalized_text": "5.7.4. authentication extensions authenticator outputs (cddl type authenticationextensionsauthenticatoroutputs )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"iface-authentication-extensions-authenticator-outputs\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00071",
+      "element_type": "heading",
+      "text": "5.8. Supporting Data Structures",
+      "normalized_text": "5.8. supporting data structures",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-supporting-data-structures\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00072",
+      "element_type": "heading",
+      "text": "5.8.1. Client Data Used in WebAuthn Signatures (dictionary CollectedClientData )",
+      "normalized_text": "5.8.1. client data used in webauthn signatures (dictionary collectedclientdata )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"dictionary-client-data\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00073",
+      "element_type": "heading",
+      "text": "5.8.1.1. Serialization",
+      "normalized_text": "5.8.1.1. serialization",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"clientdatajson-serialization\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00074",
+      "element_type": "heading",
+      "text": "5.8.1.2. Limited Verification Algorithm",
+      "normalized_text": "5.8.1.2. limited verification algorithm",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"clientdatajson-verification\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00075",
+      "element_type": "heading",
+      "text": "5.8.1.3. Future development",
+      "normalized_text": "5.8.1.3. future development",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"clientdatajson-development\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00076",
+      "element_type": "heading",
+      "text": "5.8.2. Credential Type Enumeration (enum PublicKeyCredentialType )",
+      "normalized_text": "5.8.2. credential type enumeration (enum publickeycredentialtype )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"enum-credentialType\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00077",
+      "element_type": "heading",
+      "text": "5.8.3. Credential Descriptor (dictionary PublicKeyCredentialDescriptor )",
+      "normalized_text": "5.8.3. credential descriptor (dictionary publickeycredentialdescriptor )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"dictionary-credential-descriptor\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00078",
+      "element_type": "heading",
+      "text": "5.8.4. Authenticator Transport Enumeration (enum AuthenticatorTransport )",
+      "normalized_text": "5.8.4. authenticator transport enumeration (enum authenticatortransport )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"enum-transport\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00079",
+      "element_type": "heading",
+      "text": "5.8.5. Cryptographic Algorithm Identifier (typedef COSEAlgorithmIdentifier )",
+      "normalized_text": "5.8.5. cryptographic algorithm identifier (typedef cosealgorithmidentifier )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-alg-identifier\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00080",
+      "element_type": "heading",
+      "text": "5.8.6. User Verification Requirement Enumeration (enum UserVerificationRequirement )",
+      "normalized_text": "5.8.6. user verification requirement enumeration (enum userverificationrequirement )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"enum-userVerificationRequirement\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00081",
+      "element_type": "heading",
+      "text": "5.8.7. Client Capability Enumeration (enum ClientCapability )",
+      "normalized_text": "5.8.7. client capability enumeration (enum clientcapability )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"enum-clientCapability\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00082",
+      "element_type": "heading",
+      "text": "5.8.8. User-agent Hints Enumeration (enum PublicKeyCredentialHint )",
+      "normalized_text": "5.8.8. user-agent hints enumeration (enum publickeycredentialhint )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"enum-hints\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00083",
+      "element_type": "heading",
+      "text": "5.9. Permissions Policy integration",
+      "normalized_text": "5.9. permissions policy integration",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-permissions-policy\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00084",
+      "element_type": "heading",
+      "text": "5.10. Using Web Authentication within iframe elements",
+      "normalized_text": "5.10. using web authentication within iframe elements",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-iframe-guidance\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00085",
+      "element_type": "heading",
+      "text": "5.11. Using Web Authentication across related origins",
+      "normalized_text": "5.11. using web authentication across related origins",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-related-origins\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00086",
+      "element_type": "heading",
+      "text": "5.11.1. Validating Related Origins",
+      "normalized_text": "5.11.1. validating related origins",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-validating-relation-origin\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00087",
+      "element_type": "heading",
+      "text": "6. WebAuthn Authenticator Model",
+      "normalized_text": "6. webauthn authenticator model",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sctn-authenticator-model\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00088",
+      "element_type": "heading",
+      "text": "6.1. Authenticator Data",
+      "normalized_text": "6.1. authenticator data",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-authenticator-data\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00089",
+      "element_type": "heading",
+      "text": "6.1.1. Signature Counter Considerations",
+      "normalized_text": "6.1.1. signature counter considerations",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-sign-counter\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00090",
+      "element_type": "heading",
+      "text": "6.1.2. FIDO U2F Signature Format Compatibility",
+      "normalized_text": "6.1.2. fido u2f signature format compatibility",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-fido-u2f-sig-format-compat\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00091",
+      "element_type": "heading",
+      "text": "6.1.3. Credential Backup State",
+      "normalized_text": "6.1.3. credential backup state",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-credential-backup\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00092",
+      "element_type": "heading",
+      "text": "6.2. Authenticator Taxonomy",
+      "normalized_text": "6.2. authenticator taxonomy",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-authenticator-taxonomy\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00093",
+      "element_type": "heading",
+      "text": "6.2.1. Authenticator Attachment Modality",
+      "normalized_text": "6.2.1. authenticator attachment modality",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-authenticator-attachment-modality\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00094",
+      "element_type": "heading",
+      "text": "6.2.2. Credential Storage Modality",
+      "normalized_text": "6.2.2. credential storage modality",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-credential-storage-modality\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00095",
+      "element_type": "heading",
+      "text": "6.2.3. Authentication Factor Capability",
+      "normalized_text": "6.2.3. authentication factor capability",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-authentication-factor-capability\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00096",
+      "element_type": "heading",
+      "text": "6.3. Authenticator Operations",
+      "normalized_text": "6.3. authenticator operations",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-authenticator-ops\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00097",
+      "element_type": "heading",
+      "text": "6.3.1. Lookup Credential Source by Credential ID Algorithm",
+      "normalized_text": "6.3.1. lookup credential source by credential id algorithm",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-op-lookup-credsource-by-credid\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00098",
+      "element_type": "heading",
+      "text": "6.3.2. The authenticatorMakeCredential Operation",
+      "normalized_text": "6.3.2. the authenticatormakecredential operation",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-op-make-cred\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00099",
+      "element_type": "heading",
+      "text": "6.3.3. The authenticatorGetAssertion Operation",
+      "normalized_text": "6.3.3. the authenticatorgetassertion operation",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-op-get-assertion\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00100",
+      "element_type": "heading",
+      "text": "6.3.4. The authenticatorCancel Operation",
+      "normalized_text": "6.3.4. the authenticatorcancel operation",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-op-cancel\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00101",
+      "element_type": "heading",
+      "text": "6.3.5. The silentCredentialDiscovery operation",
+      "normalized_text": "6.3.5. the silentcredentialdiscovery operation",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-op-silent-discovery\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00102",
+      "element_type": "heading",
+      "text": "6.4. String Handling",
+      "normalized_text": "6.4. string handling",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-strings\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00103",
+      "element_type": "heading",
+      "text": "6.4.1. String Truncation",
+      "normalized_text": "6.4.1. string truncation",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-strings-truncation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00104",
+      "element_type": "heading",
+      "text": "6.4.1.1. String Truncation by Clients",
+      "normalized_text": "6.4.1.1. string truncation by clients",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"sctn-strings-truncation-client\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00105",
+      "element_type": "heading",
+      "text": "6.4.1.2. String Truncation by Authenticators",
+      "normalized_text": "6.4.1.2. string truncation by authenticators",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"sctn-strings-truncation-authenticator\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00106",
+      "element_type": "heading",
+      "text": "6.4.2. Language and Direction Encoding",
+      "normalized_text": "6.4.2. language and direction encoding",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-strings-langdir\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00107",
+      "element_type": "heading",
+      "text": "6.5. Attestation",
+      "normalized_text": "6.5. attestation",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-attestation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00108",
+      "element_type": "heading",
+      "text": "6.5.1. Attested Credential Data",
+      "normalized_text": "6.5.1. attested credential data",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-attested-credential-data\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00109",
+      "element_type": "heading",
+      "text": "6.5.1.1. Examples of credentialPublicKey Values Encoded in COSE_Key Format",
+      "normalized_text": "6.5.1.1. examples of credentialpublickey values encoded in cose_key format",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"sctn-encoded-credPubKey-examples\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00110",
+      "element_type": "heading",
+      "text": "6.5.2. Attestation Statement Formats",
+      "normalized_text": "6.5.2. attestation statement formats",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-attestation-formats\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00111",
+      "element_type": "heading",
+      "text": "6.5.3. Attestation Types",
+      "normalized_text": "6.5.3. attestation types",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-attestation-types\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00112",
+      "element_type": "heading",
+      "text": "6.5.4. Generating an Attestation Object",
+      "normalized_text": "6.5.4. generating an attestation object",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-generating-an-attestation-object\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00113",
+      "element_type": "heading",
+      "text": "6.5.5. Signature Formats for Packed Attestation, FIDO U2F Attestation, and Assertion Signatures",
+      "normalized_text": "6.5.5. signature formats for packed attestation, fido u2f attestation, and assertion signatures",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-signature-attestation-types\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00114",
+      "element_type": "heading",
+      "text": "7. WebAuthn Relying Party Operations",
+      "normalized_text": "7. webauthn relying party operations",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sctn-rp-operations\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00115",
+      "element_type": "heading",
+      "text": "7.1. Registering a New Credential",
+      "normalized_text": "7.1. registering a new credential",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-registering-a-new-credential\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00116",
+      "element_type": "heading",
+      "text": "7.2. Verifying an Authentication Assertion",
+      "normalized_text": "7.2. verifying an authentication assertion",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-verifying-assertion\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00117",
+      "element_type": "heading",
+      "text": "8. Defined Attestation Statement Formats",
+      "normalized_text": "8. defined attestation statement formats",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sctn-defined-attestation-formats\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00118",
+      "element_type": "heading",
+      "text": "8.1. Attestation Statement Format Identifiers",
+      "normalized_text": "8.1. attestation statement format identifiers",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-attstn-fmt-ids\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00119",
+      "element_type": "heading",
+      "text": "8.2. Packed Attestation Statement Format",
+      "normalized_text": "8.2. packed attestation statement format",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-packed-attestation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00120",
+      "element_type": "heading",
+      "text": "8.2.1. Certificate Requirements for Packed Attestation Statements",
+      "normalized_text": "8.2.1. certificate requirements for packed attestation statements",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-packed-attestation-cert-requirements\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00121",
+      "element_type": "heading",
+      "text": "8.2.2. Certificate Requirements for Enterprise Packed Attestation Statements",
+      "normalized_text": "8.2.2. certificate requirements for enterprise packed attestation statements",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-enterprise-packed-attestation-cert-requirements\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00122",
+      "element_type": "heading",
+      "text": "8.3. TPM Attestation Statement Format",
+      "normalized_text": "8.3. tpm attestation statement format",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-tpm-attestation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00123",
+      "element_type": "heading",
+      "text": "8.3.1. TPM Attestation Statement Certificate Requirements",
+      "normalized_text": "8.3.1. tpm attestation statement certificate requirements",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-tpm-cert-requirements\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00124",
+      "element_type": "heading",
+      "text": "8.4. Android Key Attestation Statement Format",
+      "normalized_text": "8.4. android key attestation statement format",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-android-key-attestation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00125",
+      "element_type": "heading",
+      "text": "8.4.1. Android Key Attestation Statement Certificate Requirements",
+      "normalized_text": "8.4.1. android key attestation statement certificate requirements",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-key-attstn-cert-requirements\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00126",
+      "element_type": "heading",
+      "text": "8.5. Android SafetyNet Attestation Statement Format",
+      "normalized_text": "8.5. android safetynet attestation statement format",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-android-safetynet-attestation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00127",
+      "element_type": "heading",
+      "text": "8.6. FIDO U2F Attestation Statement Format",
+      "normalized_text": "8.6. fido u2f attestation statement format",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-fido-u2f-attestation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00128",
+      "element_type": "heading",
+      "text": "8.7. None Attestation Statement Format",
+      "normalized_text": "8.7. none attestation statement format",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-none-attestation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00129",
+      "element_type": "heading",
+      "text": "8.8. Apple Anonymous Attestation Statement Format",
+      "normalized_text": "8.8. apple anonymous attestation statement format",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-apple-anonymous-attestation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00130",
+      "element_type": "heading",
+      "text": "8.9. Compound Attestation Statement Format",
+      "normalized_text": "8.9. compound attestation statement format",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-compound-attestation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00131",
+      "element_type": "heading",
+      "text": "9. WebAuthn Extensions",
+      "normalized_text": "9. webauthn extensions",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sctn-extensions\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00132",
+      "element_type": "heading",
+      "text": "9.1. Extension Identifiers",
+      "normalized_text": "9.1. extension identifiers",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-extension-id\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00133",
+      "element_type": "heading",
+      "text": "9.2. Defining Extensions",
+      "normalized_text": "9.2. defining extensions",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-extension-specification\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00134",
+      "element_type": "heading",
+      "text": "9.3. Extending Request Parameters",
+      "normalized_text": "9.3. extending request parameters",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-extension-request-parameters\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00135",
+      "element_type": "heading",
+      "text": "9.4. Client Extension Processing",
+      "normalized_text": "9.4. client extension processing",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-client-extension-processing\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00136",
+      "element_type": "heading",
+      "text": "9.5. Authenticator Extension Processing",
+      "normalized_text": "9.5. authenticator extension processing",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-authenticator-extension-processing\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00137",
+      "element_type": "heading",
+      "text": "10. Defined Extensions",
+      "normalized_text": "10. defined extensions",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sctn-defined-extensions\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00138",
+      "element_type": "heading",
+      "text": "10.1. Client Extensions",
+      "normalized_text": "10.1. client extensions",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-defined-client-extensions\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00139",
+      "element_type": "heading",
+      "text": "10.1.1. FIDO AppID Extension (appid)",
+      "normalized_text": "10.1.1. fido appid extension (appid)",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-appid-extension\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00140",
+      "element_type": "heading",
+      "text": "10.1.2. FIDO AppID Exclusion Extension (appidExclude)",
+      "normalized_text": "10.1.2. fido appid exclusion extension (appidexclude)",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-appid-exclude-extension\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00141",
+      "element_type": "heading",
+      "text": "10.1.3. Credential Properties Extension ( credProps )",
+      "normalized_text": "10.1.3. credential properties extension ( credprops )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-authenticator-credential-properties-extension\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00142",
+      "element_type": "heading",
+      "text": "10.1.4. Pseudo-random function extension ( prf )",
+      "normalized_text": "10.1.4. pseudo-random function extension ( prf )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"prf-extension\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00143",
+      "element_type": "heading",
+      "text": "10.1.5. Large blob storage extension ( largeBlob )",
+      "normalized_text": "10.1.5. large blob storage extension ( largeblob )",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-large-blob-extension\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00144",
+      "element_type": "heading",
+      "text": "10.2. Authenticator Extensions",
+      "normalized_text": "10.2. authenticator extensions",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-defined-authenticator-extensions\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00145",
+      "element_type": "heading",
+      "text": "11. User Agent Automation",
+      "normalized_text": "11. user agent automation",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sctn-automation\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00146",
+      "element_type": "heading",
+      "text": "11.1. WebAuthn WebDriver Extension Capability",
+      "normalized_text": "11.1. webauthn webdriver extension capability",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-automation-webdriver-capability\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00147",
+      "element_type": "heading",
+      "text": "11.1.1. Authenticator Extension Capabilities",
+      "normalized_text": "11.1.1. authenticator extension capabilities",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-authenticator-extension-capabilities\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00148",
+      "element_type": "heading",
+      "text": "11.2. Virtual Authenticators",
+      "normalized_text": "11.2. virtual authenticators",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-automation-virtual-authenticators\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00149",
+      "element_type": "heading",
+      "text": "11.3. Add Virtual Authenticator",
+      "normalized_text": "11.3. add virtual authenticator",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-automation-add-virtual-authenticator\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00150",
+      "element_type": "heading",
+      "text": "11.4. Remove Virtual Authenticator",
+      "normalized_text": "11.4. remove virtual authenticator",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-automation-remove-virtual-authenticator\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00151",
+      "element_type": "heading",
+      "text": "11.5. Add Credential",
+      "normalized_text": "11.5. add credential",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-automation-add-credential\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00152",
+      "element_type": "heading",
+      "text": "11.6. Get Credentials",
+      "normalized_text": "11.6. get credentials",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-automation-get-credentials\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00153",
+      "element_type": "heading",
+      "text": "11.7. Remove Credential",
+      "normalized_text": "11.7. remove credential",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-automation-remove-credential\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00154",
+      "element_type": "heading",
+      "text": "11.8. Remove All Credentials",
+      "normalized_text": "11.8. remove all credentials",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-automation-remove-all-credentials\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00155",
+      "element_type": "heading",
+      "text": "11.9. Set User Verified",
+      "normalized_text": "11.9. set user verified",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-automation-set-user-verified\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00156",
+      "element_type": "heading",
+      "text": "11.10. Set Credential Properties",
+      "normalized_text": "11.10. set credential properties",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-automation-set-credential-properties\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00157",
+      "element_type": "heading",
+      "text": "12. IANA Considerations",
+      "normalized_text": "12. iana considerations",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sctn-IANA\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00158",
+      "element_type": "heading",
+      "text": "12.1. WebAuthn Attestation Statement Format Identifier Registrations Updates",
+      "normalized_text": "12.1. webauthn attestation statement format identifier registrations updates",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-att-fmt-reg-update\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00159",
+      "element_type": "heading",
+      "text": "12.2. WebAuthn Attestation Statement Format Identifier Registrations",
+      "normalized_text": "12.2. webauthn attestation statement format identifier registrations",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-att-fmt-reg\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00160",
+      "element_type": "heading",
+      "text": "12.3. WebAuthn Extension Identifier Registrations Updates",
+      "normalized_text": "12.3. webauthn extension identifier registrations updates",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-extensions-reg-update\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00161",
+      "element_type": "heading",
+      "text": "12.4. WebAuthn Extension Identifier Registrations",
+      "normalized_text": "12.4. webauthn extension identifier registrations",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-extensions-reg\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00162",
+      "element_type": "heading",
+      "text": "12.5. Well-Known URI Registration",
+      "normalized_text": "12.5. well-known uri registration",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-well-known-uri-reg\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00163",
+      "element_type": "heading",
+      "text": "13. Security Considerations",
+      "normalized_text": "13. security considerations",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sctn-security-considerations\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00164",
+      "element_type": "heading",
+      "text": "13.1. Credential ID Unsigned",
+      "normalized_text": "13.1. credential id unsigned",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-credentialIdSecurity\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00165",
+      "element_type": "heading",
+      "text": "13.2. Physical Proximity between Client and Authenticator",
+      "normalized_text": "13.2. physical proximity between client and authenticator",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-client-authenticator-proximity\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00166",
+      "element_type": "heading",
+      "text": "13.3. Security considerations for authenticators",
+      "normalized_text": "13.3. security considerations for authenticators",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-security-considerations-authenticator\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00167",
+      "element_type": "heading",
+      "text": "13.3.1. Attestation Certificate Hierarchy",
+      "normalized_text": "13.3.1. attestation certificate hierarchy",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-cert-hierarchy\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00168",
+      "element_type": "heading",
+      "text": "13.3.2. Attestation Certificate and Attestation Certificate CA Compromise",
+      "normalized_text": "13.3.2. attestation certificate and attestation certificate ca compromise",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-ca-compromise\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00169",
+      "element_type": "heading",
+      "text": "13.4. Security considerations for Relying Parties",
+      "normalized_text": "13.4. security considerations for relying parties",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-security-considerations-rp\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00170",
+      "element_type": "heading",
+      "text": "13.4.1. Security Benefits for WebAuthn Relying Parties",
+      "normalized_text": "13.4.1. security benefits for webauthn relying parties",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-rp-benefits\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00171",
+      "element_type": "heading",
+      "text": "13.4.2. Visibility Considerations for Embedded Usage",
+      "normalized_text": "13.4.2. visibility considerations for embedded usage",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-seccons-visibility\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00172",
+      "element_type": "heading",
+      "text": "13.4.3. Cryptographic Challenges",
+      "normalized_text": "13.4.3. cryptographic challenges",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-cryptographic-challenges\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00173",
+      "element_type": "heading",
+      "text": "13.4.4. Attestation Limitations",
+      "normalized_text": "13.4.4. attestation limitations",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-attestation-limitations\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00174",
+      "element_type": "heading",
+      "text": "13.4.5. Revoked Attestation Certificates",
+      "normalized_text": "13.4.5. revoked attestation certificates",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-revoked-attestation-certificates\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00175",
+      "element_type": "heading",
+      "text": "13.4.6. Credential Loss and Key Mobility",
+      "normalized_text": "13.4.6. credential loss and key mobility",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-credential-loss-key-mobility\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00176",
+      "element_type": "heading",
+      "text": "13.4.7. Unprotected account detection",
+      "normalized_text": "13.4.7. unprotected account detection",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-unprotected-account-detection\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00177",
+      "element_type": "heading",
+      "text": "13.4.8. Code injection attacks",
+      "normalized_text": "13.4.8. code injection attacks",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-code-injection\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00178",
+      "element_type": "heading",
+      "text": "13.4.9. Validating the origin of a credential",
+      "normalized_text": "13.4.9. validating the origin of a credential",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-validating-origin\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00179",
+      "element_type": "heading",
+      "text": "14. Privacy Considerations",
+      "normalized_text": "14. privacy considerations",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sctn-privacy-considerations\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00180",
+      "element_type": "heading",
+      "text": "14.1. De-anonymization Prevention Measures",
+      "normalized_text": "14.1. de-anonymization prevention measures",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-privacy-attacks\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00181",
+      "element_type": "heading",
+      "text": "14.2. Anonymous, Scoped, Non-correlatable Public Key Credentials",
+      "normalized_text": "14.2. anonymous, scoped, non-correlatable public key credentials",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-non-correlatable-credentials\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00182",
+      "element_type": "heading",
+      "text": "14.3. Authenticator-local Biometric Recognition",
+      "normalized_text": "14.3. authenticator-local biometric recognition",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-biometric-privacy\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00183",
+      "element_type": "heading",
+      "text": "14.4. Privacy considerations for authenticators",
+      "normalized_text": "14.4. privacy considerations for authenticators",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-privacy-considerations-authenticator\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00184",
+      "element_type": "heading",
+      "text": "14.4.1. Attestation Privacy",
+      "normalized_text": "14.4.1. attestation privacy",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-attestation-privacy\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00185",
+      "element_type": "heading",
+      "text": "14.4.2. Privacy of personally identifying information Stored in Authenticators",
+      "normalized_text": "14.4.2. privacy of personally identifying information stored in authenticators",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-pii-privacy\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00186",
+      "element_type": "heading",
+      "text": "14.5. Privacy considerations for clients",
+      "normalized_text": "14.5. privacy considerations for clients",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-privacy-considerations-client\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00187",
+      "element_type": "heading",
+      "text": "14.5.1. Registration Ceremony Privacy",
+      "normalized_text": "14.5.1. registration ceremony privacy",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-make-credential-privacy\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00188",
+      "element_type": "heading",
+      "text": "14.5.2. Authentication Ceremony Privacy",
+      "normalized_text": "14.5.2. authentication ceremony privacy",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-assertion-privacy\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00189",
+      "element_type": "heading",
+      "text": "14.5.3. Privacy Between Operating System Accounts",
+      "normalized_text": "14.5.3. privacy between operating system accounts",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-os-account-privacy\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00190",
+      "element_type": "heading",
+      "text": "14.5.4. Disclosing Client Capabilities",
+      "normalized_text": "14.5.4. disclosing client capabilities",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-disclosing-client-capabilities\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00191",
+      "element_type": "heading",
+      "text": "14.5.5. Cross-Origin Usage of WebAuthn Credentials",
+      "normalized_text": "14.5.5. cross-origin usage of webauthn credentials",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-cross-origin-use\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00192",
+      "element_type": "heading",
+      "text": "14.6. Privacy considerations for Relying Parties",
+      "normalized_text": "14.6. privacy considerations for relying parties",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-privacy-considerations-rp\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00193",
+      "element_type": "heading",
+      "text": "14.6.1. User Handle Contents",
+      "normalized_text": "14.6.1. user handle contents",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-user-handle-privacy\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00194",
+      "element_type": "heading",
+      "text": "14.6.2. Username Enumeration",
+      "normalized_text": "14.6.2. username enumeration",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-username-enumeration\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00195",
+      "element_type": "heading",
+      "text": "14.6.3. Privacy leak via credential IDs",
+      "normalized_text": "14.6.3. privacy leak via credential ids",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"sctn-credential-id-privacy-leak\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00196",
+      "element_type": "heading",
+      "text": "15. Accessibility Considerations",
+      "normalized_text": "15. accessibility considerations",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sctn-accessiblility-considerations\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00197",
+      "element_type": "heading",
+      "text": "15.1. Recommended Range for Ceremony Timeouts",
+      "normalized_text": "15.1. recommended range for ceremony timeouts",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-timeout-recommended-range\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00198",
+      "element_type": "heading",
+      "text": "16. Test Vectors",
+      "normalized_text": "16. test vectors",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sctn-test-vectors\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00199",
+      "element_type": "heading",
+      "text": "16.1. Attestation trust root certificate",
+      "normalized_text": "16.1. attestation trust root certificate",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-test-vectors-attestation-root-cert\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00200",
+      "element_type": "heading",
+      "text": "16.2. ES256 Credential with No Attestation",
+      "normalized_text": "16.2. es256 credential with no attestation",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-test-vectors-none-es256\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00201",
+      "element_type": "heading",
+      "text": "16.3. ES256 Credential with Self Attestation",
+      "normalized_text": "16.3. es256 credential with self attestation",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-test-vectors-packed-self-es256\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00202",
+      "element_type": "heading",
+      "text": "16.4. ES256 Credential with \"crossOrigin\": true in clientDataJSON",
+      "normalized_text": "16.4. es256 credential with \"crossorigin\": true in clientdatajson",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-test-vectors-none-es256-crossOrigin\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00203",
+      "element_type": "heading",
+      "text": "16.5. ES256 Credential with \"topOrigin\" in clientDataJSON",
+      "normalized_text": "16.5. es256 credential with \"toporigin\" in clientdatajson",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-test-vectors-none-es256-topOrigin\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00204",
+      "element_type": "heading",
+      "text": "16.6. ES256 Credential with very long credential ID",
+      "normalized_text": "16.6. es256 credential with very long credential id",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-test-vectors-none-es256-long-credential-id\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00205",
+      "element_type": "heading",
+      "text": "16.7. Packed Attestation with ES256 Credential",
+      "normalized_text": "16.7. packed attestation with es256 credential",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-test-vectors-packed-es256\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00206",
+      "element_type": "heading",
+      "text": "16.8. Packed Attestation with ES384 Credential",
+      "normalized_text": "16.8. packed attestation with es384 credential",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-test-vectors-packed-es384\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00207",
+      "element_type": "heading",
+      "text": "16.9. Packed Attestation with ES512 Credential",
+      "normalized_text": "16.9. packed attestation with es512 credential",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-test-vectors-packed-es512\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00208",
+      "element_type": "heading",
+      "text": "16.10. Packed Attestation with RS256 Credential",
+      "normalized_text": "16.10. packed attestation with rs256 credential",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-test-vectors-packed-rs256\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00209",
+      "element_type": "heading",
+      "text": "16.11. Packed Attestation with Ed25519 Credential",
+      "normalized_text": "16.11. packed attestation with ed25519 credential",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-test-vectors-packed-eddsa\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00210",
+      "element_type": "heading",
+      "text": "16.12. Packed Attestation with Ed448 Credential",
+      "normalized_text": "16.12. packed attestation with ed448 credential",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-test-vectors-packed-ed448\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00211",
+      "element_type": "heading",
+      "text": "16.13. TPM Attestation with ES256 Credential",
+      "normalized_text": "16.13. tpm attestation with es256 credential",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-test-vectors-tpm-es256\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00212",
+      "element_type": "heading",
+      "text": "16.14. Android Key Attestation with ES256 Credential",
+      "normalized_text": "16.14. android key attestation with es256 credential",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-test-vectors-android-key-es256\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00213",
+      "element_type": "heading",
+      "text": "16.15. Apple Anonymous Attestation with ES256 Credential",
+      "normalized_text": "16.15. apple anonymous attestation with es256 credential",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-test-vectors-apple-es256\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00214",
+      "element_type": "heading",
+      "text": "16.16. FIDO U2F Attestation with ES256 Credential",
+      "normalized_text": "16.16. fido u2f attestation with es256 credential",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"sctn-test-vectors-fido-u2f-es256\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00215",
+      "element_type": "heading",
+      "text": "16.17. Test Vectors for WebAuthn Extensions",
+      "normalized_text": "16.17. test vectors for webauthn extensions",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"test-vectors-extensions\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00216",
+      "element_type": "heading",
+      "text": "16.17.1. Pseudo-random function extension (prf)",
+      "normalized_text": "16.17.1. pseudo-random function extension (prf)",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"test-vectors-extensions-prf\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00217",
+      "element_type": "heading",
+      "text": "16.17.1.1. Web Authentication API",
+      "normalized_text": "16.17.1.1. web authentication api",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"test-vectors-extensions-prf-webauthn\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00218",
+      "element_type": "heading",
+      "text": "16.17.1.2. CTAP2 hmac-secret extension",
+      "normalized_text": "16.17.1.2. ctap2 hmac-secret extension",
+      "heading_level": 5,
+      "heading_path": [],
+      "source_selector": "h5[id=\"test-vectors-extensions-prf-ctap\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00219",
+      "element_type": "heading",
+      "text": "17. Acknowledgements",
+      "normalized_text": "17. acknowledgements",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"sctn-acknowledgements\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00220",
+      "element_type": "heading",
+      "text": "18. Revision History",
+      "normalized_text": "18. revision history",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"revision-history\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00221",
+      "element_type": "heading",
+      "text": "18.1. Changes since Web Authentication Level 2 [webauthn-2-20210408]",
+      "normalized_text": "18.1. changes since web authentication level 2 [webauthn-2-20210408]",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"changes-since-l2\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00222",
+      "element_type": "heading",
+      "text": "18.1.1. Substantive Changes",
+      "normalized_text": "18.1.1. substantive changes",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"changes-l3-substantive\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00223",
+      "element_type": "heading",
+      "text": "18.1.2. Editorial Changes",
+      "normalized_text": "18.1.2. editorial changes",
+      "heading_level": 4,
+      "heading_path": [],
+      "source_selector": "h4[id=\"changes-l3-editorial\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": true
+    },
+    {
+      "element_id": "web-001-e00224",
+      "element_type": "heading",
+      "text": "Index",
+      "normalized_text": "index",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"index\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-001-e00225",
+      "element_type": "heading",
+      "text": "Terms defined by this specification",
+      "normalized_text": "terms defined by this specification",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"index-defined-here\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-001-e00226",
+      "element_type": "heading",
+      "text": "Terms defined by reference",
+      "normalized_text": "terms defined by reference",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"index-defined-elsewhere\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-001-e00227",
+      "element_type": "heading",
+      "text": "References",
+      "normalized_text": "references",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"references\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-001-e00228",
+      "element_type": "heading",
+      "text": "Normative References",
+      "normalized_text": "normative references",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"normative\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-001-e00229",
+      "element_type": "heading",
+      "text": "Informative References",
+      "normalized_text": "informative references",
+      "heading_level": 3,
+      "heading_path": [],
+      "source_selector": "h3[id=\"informative\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    },
+    {
+      "element_id": "web-001-e00230",
+      "element_type": "heading",
+      "text": "IDL Index",
+      "normalized_text": "idl index",
+      "heading_level": 2,
+      "heading_path": [],
+      "source_selector": "h2[id=\"idl-index\"]",
+      "role": "dom_heading",
+      "confidence": null,
+      "warnings": [
+        "DOM heading may belong to navigation or generated content"
+      ],
+      "in_article_or_main": false
+    }
+  ],
+  "summary": {
+    "element_count": 230,
+    "dom_heading_count": 230,
+    "article_or_main_heading_count": 219,
+    "unique_selector_count": 230,
+    "selector_completeness": 1.0
+  },
+  "noise_counts": {
+    "nav": 1,
+    "script": 5,
+    "style": 12
+  },
+  "boundary": "DOM heading observations only; no article extraction, table semantics, citation accuracy, or gold-label claim."
+}

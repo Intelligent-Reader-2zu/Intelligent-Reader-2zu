@@ -1,0 +1,55 @@
+{
+  "experiment_id": "TECH-QA-016-R01",
+  "scope": "local model environment gate; no model download or installation",
+  "hardware": {
+    "memory_total_gib": 15.73,
+    "memory_available_gib": 3.7,
+    "memory_percent_used": 76.5,
+    "disk_d_free_gib": 21.37,
+    "gpu": {
+      "available": true,
+      "gpus": [
+        {
+          "name": "NVIDIA GeForce RTX 2050",
+          "memory_total": "4096 MiB",
+          "driver_version": "560.81"
+        }
+      ]
+    }
+  },
+  "runtime": {
+    "python": "D:\\Python\\python.EXE",
+    "torch_version": "2.14.0+cpu",
+    "torch_cuda_available": false,
+    "libraries": {
+      "torch": true,
+      "transformers": true,
+      "llama_cpp": false,
+      "ollama": false,
+      "vllm": false,
+      "bitsandbytes": false
+    }
+  },
+  "model_files": {
+    "count": 1,
+    "generative_candidates": [],
+    "note": "Existing BGE embedding weights are not a generative QA model."
+  },
+  "assessment": {
+    "light_path": "conditional_not_ready",
+    "light_path_reasons": [
+      "4GB GPU can only be considered for small quantized models or partial offload",
+      "current PyTorch is CPU-only; CUDA inference is unavailable",
+      "no local generation runtime is installed",
+      "no local generative model weights are present",
+      "current available memory is below the 8 GiB trial headroom target"
+    ],
+    "high_quality_path": "not_feasible_on_current_device",
+    "high_quality_reasons": [
+      "4GB VRAM is below a practical 14B/32B interactive target",
+      "CUDA inference and a local generation runtime are unavailable",
+      "current free memory and disk headroom should not be consumed by a large weight download"
+    ],
+    "safe_next_step": "free memory or use a separate machine, install a pinned CPU/GPU runtime, then test a 4B/8B quantized model without uploading documents"
+  }
+}

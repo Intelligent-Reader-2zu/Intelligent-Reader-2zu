@@ -1,0 +1,105 @@
+{
+  "experiment_id": "TECH-DOC-007-R01-text-structure",
+  "sample_id": "SELF-006",
+  "format": "DOCX",
+  "status": "scored",
+  "ocr": {
+    "enabled": false,
+    "status": "not_applicable"
+  },
+  "parser": "python-docx",
+  "parser_version": "1.1.2",
+  "paragraph_count": 10,
+  "heading_count": 4,
+  "table_count": 1,
+  "paragraphs": [
+    {
+      "index": 1,
+      "style": "Title",
+      "text": "智能阅读器样本：会议记录"
+    },
+    {
+      "index": 2,
+      "style": "Heading 1",
+      "text": "会议主题"
+    },
+    {
+      "index": 3,
+      "style": "Normal",
+      "text": "本样本用于测试日期、编号、项目符号、表格和脱敏后的姓名占位符。"
+    },
+    {
+      "index": 4,
+      "style": "Heading 1",
+      "text": "决议"
+    },
+    {
+      "index": 5,
+      "style": "Normal",
+      "text": "- 先完成本地解析；- 再比较检索结果；- 最后记录失败案例。"
+    },
+    {
+      "index": 6,
+      "style": "Heading 2",
+      "text": "后续行动"
+    },
+    {
+      "index": 7,
+      "style": "Normal",
+      "text": "负责人 A 在 2026-09-30 前补充授权证明，负责人 B 复核表格字段。"
+    },
+    {
+      "index": 8,
+      "style": "Normal",
+      "text": ""
+    },
+    {
+      "index": 9,
+      "style": "Heading 1",
+      "text": "分页后的附录"
+    },
+    {
+      "index": 10,
+      "style": "Normal",
+      "text": "此段位于显式分页符之后，不能与上一页的段落简单拼接。"
+    }
+  ],
+  "tables": [
+    {
+      "index": 1,
+      "rows": 3,
+      "columns": 4,
+      "text": [
+        [
+          "编号",
+          "行动",
+          "负责人",
+          "截止日期"
+        ],
+        [
+          "A-01",
+          "补充授权",
+          "用户 A（脱敏）",
+          "2026-09-30"
+        ],
+        [
+          "B-01",
+          "复核字段",
+          "用户 B（脱敏）",
+          "2026-10-01"
+        ]
+      ]
+    }
+  ],
+  "visual_page_numbers": "not_available_from_python_docx",
+  "query_hits": {
+    "2026-09-30": true,
+    "补充授权": true,
+    "脱敏": true
+  },
+  "text_preview": "智能阅读器样本：会议记录\n会议主题\n本样本用于测试日期、编号、项目符号、表格和脱敏后的姓名占位符。\n决议\n- 先完成本地解析；- 再比较检索结果；- 最后记录失败案例。\n后续行动\n负责人 A 在 2026-09-30 前补充授权证明，负责人 B 复核表格字段。\n\n分页后的附录\n此段位于显式分页符之后，不能与上一页的段落简单拼接。",
+  "elapsed_ms": 5.25,
+  "boundary": "DOCX logical structure only; final visual pagination is out of scope.",
+  "source_path": "samples\\self-authored\\docx\\SELF-006-meeting-notes.docx",
+  "source_sha256": "d5c1de233a735f2b963816c3f512f8fee2ed300d91170119d3c88ef4fd0180c1"
+}

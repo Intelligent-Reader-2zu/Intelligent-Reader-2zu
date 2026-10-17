@@ -1,0 +1,27 @@
+{
+  "experiment_id": "TECH-DOC-007-R01-text-structure",
+  "sample_id": "SELF-002",
+  "status": "scored",
+  "parser": "Docling",
+  "parser_version": "2.130.0",
+  "ocr": {
+    "enabled": false,
+    "status": "explicitly_disabled"
+  },
+  "pipeline_options": {
+    "do_ocr": false,
+    "do_table_structure": true,
+    "do_formula_enrichment": false
+  },
+  "page_count": 2,
+  "text_element_count": 17,
+  "table_count": 1,
+  "picture_count": 0,
+  "text_preview": "## 智能阅读器自制 PDF 样本\n\n跨栏标题和参考文献会故意让阅读顺序变得敏感。\n\n## 1 研究目标\n\n本样本包含中文、English terms、脚注提示和页眉页 脚，用于验证正文、标题、段落、页码和引用定位。\n\n## 2 关键结论\n\n解析结果不能只保留扁平纯文本。每个文本块还需要稳 定 ID、标题路径、物理页码和原始位置。\n\n| 字段            | 示例值   | 风险         |\n|---------------|-------|------------|\n| physical_page | 2     | 封面导致打印页码偏移 |\n| heading_path1 | > 2   | 标题层级可能被误判  |\n\n脚注：这是一个可回溯的脚注占位，用来检查脚注是否被混入正文。\n\n左栏补充段落：阅读顺序应先完成当前栏，再进入同页 另一栏；解析器不能把页脚插入正文。\n\n## 右栏内容\n\n右栏补充段落：引用定位需要同时记录物理页码、文本 块和坐标，表格应保持行列关系。\n\n## 3 参考文献\n\n[1] A. Reader. Document provenance and evidence blocks. 2026.\n\n## 4 第二页\n\n第二页用于检查页码、跨页段落和引用位置。",
+  "raw_export_path": "results\\text-structure\\docling\\SELF-002.docling.json",
+  "raw_export_sha256": "75354056c817d7f8dd065855a2b6fb4d1948c33e6899f19225470692c4c1f2b6",
+  "elapsed_ms": 10600.44,
+  "source_path": "samples\\self-authored\\pdf\\SELF-002-two-column.pdf",
+  "source_sha256": "614c8a0cd2fe20b50419aa024f71ed93bb7b938c1f7aaf7b2a765dfe9a4fdddb",
+  "boundary": "Text-layer/layout/table experiment only; OCR quality is out of scope."
+}

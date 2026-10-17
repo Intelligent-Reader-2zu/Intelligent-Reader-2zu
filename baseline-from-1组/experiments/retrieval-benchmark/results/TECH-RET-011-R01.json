@@ -1,0 +1,467 @@
+{
+  "experiment_id": "TECH-RET-011-R01",
+  "artifacts": {
+    "ocr": "ocr-baseline/SELF-004-p{1,2}.txt.txt",
+    "structured_ir_samples": [
+      "SELF-002",
+      "SELF-003",
+      "SELF-005",
+      "SELF-008"
+    ]
+  },
+  "ocr_page_recall_at_3": 1.0,
+  "structured_ir_hit_at_3": 1.0,
+  "ocr_evidence_page_rate": 1.0,
+  "cases": [
+    {
+      "id": "OCR-01",
+      "kind": "ocr",
+      "query": "OCR TEST",
+      "gold_pages": [
+        1,
+        2
+      ],
+      "ranked_block_ids": [
+        "SELF-004-p1-ocr",
+        "SELF-004-p2-ocr"
+      ],
+      "returned_pages": [
+        1,
+        2
+      ],
+      "hit_at_3": true,
+      "evidence_has_original_text": true,
+      "evidence_has_page": true,
+      "evidence": [
+        {
+          "document_id": "SELF-004",
+          "source_hash": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+          "block_id": "SELF-004-p1-ocr",
+          "page": 1,
+          "section_path": [
+            "OCR page"
+          ],
+          "paragraph": 1,
+          "text": "扫描型中文样本 / OCR TEST\n\n第 1 页 文档解析质量验证\n\n本页故意包含中文、English abbreviation、数字 12345 和全角标点。\nOCR 应保留物理页码，并标记可能存在的字符错误。\n\n表格区域: 解析器应至少保留行列关系或原图位置。\n\n注: 页面略有倾斜，背景包含轻微噪声。\n\nA-01 0.95 ”表格候选单元格\n\n扫描样本页脚 | page label: 1\n\n",
+          "block_type": "ocr_page"
+        },
+        {
+          "document_id": "SELF-004",
+          "source_hash": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+          "block_id": "SELF-004-p2-ocr",
+          "page": 2,
+          "section_path": [
+            "OCR page"
+          ],
+          "paragraph": 1,
+          "text": "扫描型中文样本 / OCR TEST\n\n第 2 页 文档解析质量验证\n\n本页故意包含中文、English abbreviation、 数字 12345 和全角标点。\nOCR 应保留物理页码，并标记可能存在的字符错误。\n\nSRE: 解析器应至少保留行列关系或原图位置。\n\n注: 页面略有倾斜，背景包含轻微噪声。\n\nA-01 0.95 ”表格候选单元格\n\n扫描样本页脚 page label: 2\n\n",
+          "block_type": "ocr_page"
+        }
+      ]
+    },
+    {
+      "id": "OCR-02",
+      "kind": "ocr",
+      "query": "12345",
+      "gold_pages": [
+        1,
+        2
+      ],
+      "ranked_block_ids": [
+        "SELF-004-p1-ocr",
+        "SELF-004-p2-ocr"
+      ],
+      "returned_pages": [
+        1,
+        2
+      ],
+      "hit_at_3": true,
+      "evidence_has_original_text": true,
+      "evidence_has_page": true,
+      "evidence": [
+        {
+          "document_id": "SELF-004",
+          "source_hash": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+          "block_id": "SELF-004-p1-ocr",
+          "page": 1,
+          "section_path": [
+            "OCR page"
+          ],
+          "paragraph": 1,
+          "text": "扫描型中文样本 / OCR TEST\n\n第 1 页 文档解析质量验证\n\n本页故意包含中文、English abbreviation、数字 12345 和全角标点。\nOCR 应保留物理页码，并标记可能存在的字符错误。\n\n表格区域: 解析器应至少保留行列关系或原图位置。\n\n注: 页面略有倾斜，背景包含轻微噪声。\n\nA-01 0.95 ”表格候选单元格\n\n扫描样本页脚 | page label: 1\n\n",
+          "block_type": "ocr_page"
+        },
+        {
+          "document_id": "SELF-004",
+          "source_hash": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+          "block_id": "SELF-004-p2-ocr",
+          "page": 2,
+          "section_path": [
+            "OCR page"
+          ],
+          "paragraph": 1,
+          "text": "扫描型中文样本 / OCR TEST\n\n第 2 页 文档解析质量验证\n\n本页故意包含中文、English abbreviation、 数字 12345 和全角标点。\nOCR 应保留物理页码，并标记可能存在的字符错误。\n\nSRE: 解析器应至少保留行列关系或原图位置。\n\n注: 页面略有倾斜，背景包含轻微噪声。\n\nA-01 0.95 ”表格候选单元格\n\n扫描样本页脚 page label: 2\n\n",
+          "block_type": "ocr_page"
+        }
+      ]
+    },
+    {
+      "id": "OCR-03",
+      "kind": "ocr",
+      "query": "物理页码",
+      "gold_pages": [
+        1,
+        2
+      ],
+      "ranked_block_ids": [
+        "SELF-004-p1-ocr",
+        "SELF-004-p2-ocr"
+      ],
+      "returned_pages": [
+        1,
+        2
+      ],
+      "hit_at_3": true,
+      "evidence_has_original_text": true,
+      "evidence_has_page": true,
+      "evidence": [
+        {
+          "document_id": "SELF-004",
+          "source_hash": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+          "block_id": "SELF-004-p1-ocr",
+          "page": 1,
+          "section_path": [
+            "OCR page"
+          ],
+          "paragraph": 1,
+          "text": "扫描型中文样本 / OCR TEST\n\n第 1 页 文档解析质量验证\n\n本页故意包含中文、English abbreviation、数字 12345 和全角标点。\nOCR 应保留物理页码，并标记可能存在的字符错误。\n\n表格区域: 解析器应至少保留行列关系或原图位置。\n\n注: 页面略有倾斜，背景包含轻微噪声。\n\nA-01 0.95 ”表格候选单元格\n\n扫描样本页脚 | page label: 1\n\n",
+          "block_type": "ocr_page"
+        },
+        {
+          "document_id": "SELF-004",
+          "source_hash": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+          "block_id": "SELF-004-p2-ocr",
+          "page": 2,
+          "section_path": [
+            "OCR page"
+          ],
+          "paragraph": 1,
+          "text": "扫描型中文样本 / OCR TEST\n\n第 2 页 文档解析质量验证\n\n本页故意包含中文、English abbreviation、 数字 12345 和全角标点。\nOCR 应保留物理页码，并标记可能存在的字符错误。\n\nSRE: 解析器应至少保留行列关系或原图位置。\n\n注: 页面略有倾斜，背景包含轻微噪声。\n\nA-01 0.95 ”表格候选单元格\n\n扫描样本页脚 page label: 2\n\n",
+          "block_type": "ocr_page"
+        }
+      ]
+    },
+    {
+      "id": "OCR-04",
+      "kind": "ocr",
+      "query": "A-01",
+      "gold_pages": [
+        1,
+        2
+      ],
+      "ranked_block_ids": [
+        "SELF-004-p1-ocr",
+        "SELF-004-p2-ocr"
+      ],
+      "returned_pages": [
+        1,
+        2
+      ],
+      "hit_at_3": true,
+      "evidence_has_original_text": true,
+      "evidence_has_page": true,
+      "evidence": [
+        {
+          "document_id": "SELF-004",
+          "source_hash": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+          "block_id": "SELF-004-p1-ocr",
+          "page": 1,
+          "section_path": [
+            "OCR page"
+          ],
+          "paragraph": 1,
+          "text": "扫描型中文样本 / OCR TEST\n\n第 1 页 文档解析质量验证\n\n本页故意包含中文、English abbreviation、数字 12345 和全角标点。\nOCR 应保留物理页码，并标记可能存在的字符错误。\n\n表格区域: 解析器应至少保留行列关系或原图位置。\n\n注: 页面略有倾斜，背景包含轻微噪声。\n\nA-01 0.95 ”表格候选单元格\n\n扫描样本页脚 | page label: 1\n\n",
+          "block_type": "ocr_page"
+        },
+        {
+          "document_id": "SELF-004",
+          "source_hash": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+          "block_id": "SELF-004-p2-ocr",
+          "page": 2,
+          "section_path": [
+            "OCR page"
+          ],
+          "paragraph": 1,
+          "text": "扫描型中文样本 / OCR TEST\n\n第 2 页 文档解析质量验证\n\n本页故意包含中文、English abbreviation、 数字 12345 和全角标点。\nOCR 应保留物理页码，并标记可能存在的字符错误。\n\nSRE: 解析器应至少保留行列关系或原图位置。\n\n注: 页面略有倾斜，背景包含轻微噪声。\n\nA-01 0.95 ”表格候选单元格\n\n扫描样本页脚 page label: 2\n\n",
+          "block_type": "ocr_page"
+        }
+      ]
+    },
+    {
+      "id": "OCR-05",
+      "kind": "ocr",
+      "query": "表格候选单元格",
+      "gold_pages": [
+        1,
+        2
+      ],
+      "ranked_block_ids": [
+        "SELF-004-p1-ocr",
+        "SELF-004-p2-ocr"
+      ],
+      "returned_pages": [
+        1,
+        2
+      ],
+      "hit_at_3": true,
+      "evidence_has_original_text": true,
+      "evidence_has_page": true,
+      "evidence": [
+        {
+          "document_id": "SELF-004",
+          "source_hash": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+          "block_id": "SELF-004-p1-ocr",
+          "page": 1,
+          "section_path": [
+            "OCR page"
+          ],
+          "paragraph": 1,
+          "text": "扫描型中文样本 / OCR TEST\n\n第 1 页 文档解析质量验证\n\n本页故意包含中文、English abbreviation、数字 12345 和全角标点。\nOCR 应保留物理页码，并标记可能存在的字符错误。\n\n表格区域: 解析器应至少保留行列关系或原图位置。\n\n注: 页面略有倾斜，背景包含轻微噪声。\n\nA-01 0.95 ”表格候选单元格\n\n扫描样本页脚 | page label: 1\n\n",
+          "block_type": "ocr_page"
+        },
+        {
+          "document_id": "SELF-004",
+          "source_hash": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+          "block_id": "SELF-004-p2-ocr",
+          "page": 2,
+          "section_path": [
+            "OCR page"
+          ],
+          "paragraph": 1,
+          "text": "扫描型中文样本 / OCR TEST\n\n第 2 页 文档解析质量验证\n\n本页故意包含中文、English abbreviation、 数字 12345 和全角标点。\nOCR 应保留物理页码，并标记可能存在的字符错误。\n\nSRE: 解析器应至少保留行列关系或原图位置。\n\n注: 页面略有倾斜，背景包含轻微噪声。\n\nA-01 0.95 ”表格候选单元格\n\n扫描样本页脚 page label: 2\n\n",
+          "block_type": "ocr_page"
+        }
+      ]
+    },
+    {
+      "id": "IR-01",
+      "kind": "structured_ir",
+      "query": "Recall@k",
+      "gold_pages": [
+        1
+      ],
+      "ranked_block_ids": [
+        "self-003-e0776c95d8ff-e0004",
+        "self-003-e0776c95d8ff-e0008",
+        "self-008-47b74431f9c8-e0009"
+      ],
+      "returned_pages": [
+        1
+      ],
+      "hit_at_3": true,
+      "evidence_has_original_text": true,
+      "evidence_has_page": false,
+      "evidence": [
+        {
+          "document_id": "self-003-e0776c95d8ff",
+          "source_hash": "e0776c95d8ff89cc61a6cac9558775f07df3dd4eb234ede9ee69ace4c673852a",
+          "block_id": "self-003-e0776c95d8ff-e0004",
+          "page": 1,
+          "section_path": [],
+          "paragraph": 3,
+          "char_start": 93,
+          "char_end": 143,
+          "bbox": [
+            57.02362060546875,
+            135.8173828125,
+            436.98565673828125,
+            145.93896484375
+          ],
+          "text": "本样本专门覆盖复杂表格、合并概念、公式文本和图注。公式示例：Recall@k = hits / k。",
+          "block_type": "paragraph"
+        },
+        {
+          "document_id": "self-003-e0776c95d8ff",
+          "source_hash": "e0776c95d8ff89cc61a6cac9558775f07df3dd4eb234ede9ee69ace4c673852a",
+          "block_id": "self-003-e0776c95d8ff-e0008",
+          "page": 1,
+          "section_path": [],
+          "paragraph": 7,
+          "char_start": 207,
+          "char_end": 231,
+          "bbox": [
+            89.6220474243164,
+            216.535400390625,
+            381.4015197753906,
+            225.058837890625
+          ],
+          "text": "Recall@k\nhits / k\n检索命中比例",
+          "block_type": "paragraph"
+        },
+        {
+          "document_id": "self-008-47b74431f9c8",
+          "source_hash": "47b74431f9c801f77325f711649b239b299ffd1f5feab733383672f1f91faf98",
+          "block_id": "self-008-47b74431f9c8-e0009",
+          "page": null,
+          "section_path": [
+            "智能阅读器 Markdown 自制样本",
+            "2 指标表"
+          ],
+          "paragraph": 8,
+          "char_start": 354,
+          "char_end": 381,
+          "bbox": null,
+          "text": "公式示例：$Recall@k = hits / k$。",
+          "block_type": "paragraph"
+        }
+      ]
+    },
+    {
+      "id": "IR-02",
+      "kind": "structured_ir",
+      "query": "physical_page",
+      "gold_pages": [
+        1
+      ],
+      "ranked_block_ids": [
+        "self-002-614c8a0cd2fe-e0011"
+      ],
+      "returned_pages": [
+        1
+      ],
+      "hit_at_3": true,
+      "evidence_has_original_text": true,
+      "evidence_has_page": true,
+      "evidence": [
+        {
+          "document_id": "self-002-614c8a0cd2fe",
+          "source_hash": "614c8a0cd2fe20b50419aa024f71ed93bb7b938c1f7aaf7b2a765dfe9a4fdddb",
+          "block_id": "self-002-614c8a0cd2fe-e0011",
+          "page": 1,
+          "section_path": [],
+          "paragraph": 10,
+          "char_start": 231,
+          "char_end": 257,
+          "bbox": [
+            54.18898010253906,
+            321.4172668457031,
+            261.7480773925781,
+            329.9407043457031
+          ],
+          "text": "physical_page 2\n封面导致打印页码偏移",
+          "block_type": "paragraph"
+        }
+      ]
+    },
+    {
+      "id": "IR-03",
+      "kind": "structured_ir",
+      "query": "heading_path",
+      "gold_pages": [
+        1
+      ],
+      "ranked_block_ids": [
+        "self-002-614c8a0cd2fe-e0012"
+      ],
+      "returned_pages": [
+        1
+      ],
+      "hit_at_3": true,
+      "evidence_has_original_text": true,
+      "evidence_has_page": true,
+      "evidence": [
+        {
+          "document_id": "self-002-614c8a0cd2fe",
+          "source_hash": "614c8a0cd2fe20b50419aa024f71ed93bb7b938c1f7aaf7b2a765dfe9a4fdddb",
+          "block_id": "self-002-614c8a0cd2fe-e0012",
+          "page": 1,
+          "section_path": [],
+          "paragraph": 11,
+          "char_start": 258,
+          "char_end": 286,
+          "bbox": [
+            54.18898010253906,
+            339.4172668457031,
+            253.74807739257812,
+            347.9407043457031
+          ],
+          "text": "heading_path 1 > 2\n标题层级可能被误判",
+          "block_type": "paragraph"
+        }
+      ]
+    },
+    {
+      "id": "IR-04",
+      "kind": "structured_ir",
+      "query": "参考文献",
+      "gold_pages": [
+        1
+      ],
+      "ranked_block_ids": [
+        "self-002-614c8a0cd2fe-e0003",
+        "self-002-614c8a0cd2fe-e0019",
+        "self-005-77ddbb18413f-e0014"
+      ],
+      "returned_pages": [
+        1
+      ],
+      "hit_at_3": true,
+      "evidence_has_original_text": true,
+      "evidence_has_page": false,
+      "evidence": [
+        {
+          "document_id": "self-002-614c8a0cd2fe",
+          "source_hash": "614c8a0cd2fe20b50419aa024f71ed93bb7b938c1f7aaf7b2a765dfe9a4fdddb",
+          "block_id": "self-002-614c8a0cd2fe-e0003",
+          "page": 1,
+          "section_path": [],
+          "paragraph": 2,
+          "char_start": 83,
+          "char_end": 105,
+          "bbox": [
+            48.519691467285156,
+            80.3055419921875,
+            257.5196838378906,
+            90.4271240234375
+          ],
+          "text": "跨栏标题和参考文献会故意让阅读顺序变得敏感。",
+          "block_type": "paragraph"
+        },
+        {
+          "document_id": "self-002-614c8a0cd2fe",
+          "source_hash": "614c8a0cd2fe20b50419aa024f71ed93bb7b938c1f7aaf7b2a765dfe9a4fdddb",
+          "block_id": "self-002-614c8a0cd2fe-e0019",
+          "page": 1,
+          "section_path": [],
+          "paragraph": 18,
+          "char_start": 407,
+          "char_end": 413,
+          "bbox": [
+            314.9764099121094,
+            224.16131591796875,
+            373.5604248046875,
+            236.94647216796875
+          ],
+          "text": "3 参考文献",
+          "block_type": "paragraph"
+        },
+        {
+          "document_id": "self-005-77ddbb18413f",
+          "source_hash": "77ddbb18413fcf6380e928a300d87d7f41b9a1e6abde0dad23a486615da25431",
+          "block_id": "self-005-77ddbb18413f-e0014",
+          "page": null,
+          "section_path": [
+            "2 约束条件"
+          ],
+          "paragraph": 13,
+          "char_start": null,
+          "char_end": null,
+          "bbox": null,
+          "text": "以人工参考文本为准",
+          "block_type": "table_cell"
+        }
+      ]
+    }
+  ],
+  "boundary": "Keyword/OCR and parser-IR traceability only; no embedding quality claim."
+}

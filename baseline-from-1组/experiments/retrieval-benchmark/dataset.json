@@ -1,0 +1,26 @@
+{
+  "dataset": "SELF-RET-001 synthetic Chinese multi-document evidence set",
+  "blocks": [
+    {"document_id":"DOC-A","block_id":"A-P1-B1","page":1,"section_path":"第1章/检索架构","paragraph":1,"block_type":"paragraph","text":"智能阅读器采用统一文档中间表示，把解析器输出转换为带有文档ID、版本、页码、章节路径、段落和字符偏移的内容块。"},
+    {"document_id":"DOC-A","block_id":"A-P1-B2","page":1,"section_path":"第1章/检索架构","paragraph":2,"block_type":"paragraph","text":"全文检索适合查找版本号、专有名词、引用编号和用户记得的原句；BM25会按词频、逆文档频率和文档长度进行排序。"},
+    {"document_id":"DOC-A","block_id":"A-P2-B1","page":2,"section_path":"第2章/语义检索","paragraph":1,"block_type":"paragraph","text":"向量检索将问题和段落编码到同一表示空间，可以处理‘如何找到意思相近的内容’这类自然语言表达和同义词，但需要合适的中文嵌入模型。"},
+    {"document_id":"DOC-A","block_id":"A-P2-B2","page":2,"section_path":"第2章/语义检索","paragraph":2,"block_type":"paragraph","text":"长段落和跨段问题需要邻接窗口或父章节扩展；单独返回一个过短的块可能缺失条件、例外和结论。"},
+    {"document_id":"DOC-A","block_id":"A-P3-B1","page":3,"section_path":"第3章/表格与引用","paragraph":1,"block_type":"table","text":"检索方式与适用场景如下。","table_text":"方式 | 精确词 | 同义问法 | 维护成本\n关键词/BM25 | 强 | 弱 | 低\n向量 | 中 | 强 | 中\n混合 | 强 | 强 | 中高"},
+    {"document_id":"DOC-A","block_id":"A-P3-B2","page":3,"section_path":"第3章/表格与引用","paragraph":2,"block_type":"paragraph","text":"证据结果必须携带原文、document_id、block_id、物理页码、章节路径和段落编号；只有分数而没有原文不能直接支持回答。"},
+    {"document_id":"DOC-B","block_id":"B-P1-B1","page":1,"section_path":"第1节/离线能力","paragraph":1,"block_type":"paragraph","text":"敏感资料和无网络场景优先使用本地索引。全文索引资源占用较小，向量索引需要嵌入模型和额外存储，混合方案需要同时维护两套索引。"},
+    {"document_id":"DOC-B","block_id":"B-P2-B1","page":2,"section_path":"第2节/多文档","paragraph":1,"block_type":"paragraph","text":"跨文档问答必须先按权限过滤，再合并不同来源的证据。回答应显示来源文档和版本，不能因为相似内容而隐藏冲突。"},
+    {"document_id":"DOC-B","block_id":"B-P2-B2","page":2,"section_path":"第2节/多文档","paragraph":2,"block_type":"paragraph","text":"当全文和向量检索都没有找到支持性原文时，系统应返回未找到依据，提供原文浏览或建议用户改写问题，而不是猜测答案。"},
+    {"document_id":"DOC-C","block_id":"C-P1-B1","page":1,"section_path":"附录/失败案例","paragraph":1,"block_type":"paragraph","text":"页眉页脚重复文本会污染排序；OCR中的形近字、数字和单位错误会造成漏召回或错误命中。低置信度内容需要标记并允许查看原页。"},
+    {"document_id":"DOC-C","block_id":"C-P2-B1","page":2,"section_path":"附录/性能","paragraph":1,"block_type":"paragraph","text":"检索评估可记录 Recall@K、命中率、MRR、nDCG、误召回率、p50/p95延迟和索引资源。不同分块规则或嵌入模型必须单独记录版本。"}
+  ],
+  "queries": [
+    {"id":"Q01","type":"exact_keyword","question":"BM25 词频 逆文档频率 文档长度","gold":["A-P1-B2"]},
+    {"id":"Q02","type":"synonym_natural_language","question":"怎么找到意思相近的内容？","gold":["A-P2-B1"]},
+    {"id":"Q03","type":"long_cross_paragraph","question":"为什么检索块要保留上下文并能回到原文？","gold":["A-P2-B2","A-P3-B2"]},
+    {"id":"Q04","type":"table","question":"哪种方式同义问法强且维护成本中高？","gold":["A-P3-B1"]},
+    {"id":"Q05","type":"chinese","question":"敏感资料没有网络时用什么索引？","gold":["B-P1-B1"]},
+    {"id":"Q06","type":"multi_document","question":"跨文档回答前需要做什么并如何处理冲突？","gold":["B-P2-B1"]},
+    {"id":"Q07","type":"answer_evidence","question":"检索结果为什么必须包含回答所需的原文？","gold":["A-P3-B2"]},
+    {"id":"Q08","type":"no_answer","question":"系统是否支持脑电波直接读取？","gold":[]}
+  ]
+}

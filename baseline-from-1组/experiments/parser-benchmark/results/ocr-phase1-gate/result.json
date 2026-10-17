@@ -1,0 +1,1499 @@
+{
+  "experiment_id": "TECH-OCR-022-R01",
+  "source_sha256": "ab008a1879ed22c5f92abe0dab30f1bbd2ffe2e462b1b2c25ec55cc7fa03fa63",
+  "provisional_gates": {
+    "page_success_rate_min": 1.0,
+    "cer_all_max": 0.05,
+    "cer_chinese_max": 0.03,
+    "wer_latin_number_max": 0.1,
+    "query_expected_page_recall_min": 1.0,
+    "citation_line_bbox_coverage_min": 1.0,
+    "wrong_page_hit_count_max": 0,
+    "negative_query_hit_count_max": 0
+  },
+  "queries": [
+    {
+      "id": "Q01",
+      "text": "OCR TEST",
+      "expected_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "Q02",
+      "text": "English abbreviation",
+      "expected_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "Q03",
+      "text": "12345",
+      "expected_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "Q04",
+      "text": "物理页码",
+      "expected_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "Q05",
+      "text": "表格区域",
+      "expected_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "Q06",
+      "text": "A-01 0.95",
+      "expected_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "Q07",
+      "text": "表格候选单元格",
+      "expected_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "Q08",
+      "text": "page label: 1",
+      "expected_pages": [
+        1
+      ]
+    },
+    {
+      "id": "Q09",
+      "text": "page label: 2",
+      "expected_pages": [
+        2
+      ]
+    },
+    {
+      "id": "Q10",
+      "text": "第 1 页 文档解析质量验证",
+      "expected_pages": [
+        1
+      ]
+    },
+    {
+      "id": "Q11",
+      "text": "第 2 页 文档解析质量验证",
+      "expected_pages": [
+        2
+      ]
+    }
+  ],
+  "negative_queries": [
+    "X-99",
+    "不存在的审批结论"
+  ],
+  "candidates": [
+    {
+      "engine": "Tesseract",
+      "configuration": "dpi144-psm3-none",
+      "page_success_rate": 1.0,
+      "cer_all": 0.02108433734939759,
+      "cer_chinese": 0.02,
+      "wer_latin_number": 0.041666666666666664,
+      "critical_string_recall": 0.9444444444444444,
+      "timing_ms": 2441.55690000116,
+      "timing_scope": "end_to_end_mean",
+      "query_expected_page_recall": 0.9444444444444444,
+      "citation_line_bbox_coverage": 0.9444444444444444,
+      "wrong_page_hit_count": 0,
+      "negative_query_hit_count": 0,
+      "queries": [
+        {
+          "id": "Q01",
+          "text": "OCR TEST",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q02",
+          "text": "English abbreviation",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q03",
+          "text": "12345",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q04",
+          "text": "物理页码",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q05",
+          "text": "表格区域",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1
+          ],
+          "located_pages": [
+            1
+          ]
+        },
+        {
+          "id": "Q06",
+          "text": "A-01 0.95",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q07",
+          "text": "表格候选单元格",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q08",
+          "text": "page label: 1",
+          "expected_pages": [
+            1
+          ],
+          "returned_pages": [
+            1
+          ],
+          "located_pages": [
+            1
+          ]
+        },
+        {
+          "id": "Q09",
+          "text": "page label: 2",
+          "expected_pages": [
+            2
+          ],
+          "returned_pages": [
+            2
+          ],
+          "located_pages": [
+            2
+          ]
+        },
+        {
+          "id": "Q10",
+          "text": "第 1 页 文档解析质量验证",
+          "expected_pages": [
+            1
+          ],
+          "returned_pages": [
+            1
+          ],
+          "located_pages": [
+            1
+          ]
+        },
+        {
+          "id": "Q11",
+          "text": "第 2 页 文档解析质量验证",
+          "expected_pages": [
+            2
+          ],
+          "returned_pages": [
+            2
+          ],
+          "located_pages": [
+            2
+          ]
+        }
+      ],
+      "negative_queries": {
+        "X-99": [],
+        "不存在的审批结论": []
+      },
+      "gate": {
+        "passed": false,
+        "checks": {
+          "page_success_rate": true,
+          "cer_all": true,
+          "cer_chinese": true,
+          "wer_latin_number": true,
+          "query_expected_page_recall": false,
+          "citation_line_bbox_coverage": false,
+          "wrong_page_hit_count": true,
+          "negative_query_hit_count": true
+        }
+      }
+    },
+    {
+      "engine": "Tesseract",
+      "configuration": "dpi300-psm3-none",
+      "page_success_rate": 1.0,
+      "cer_all": 0.030120481927710843,
+      "cer_chinese": 0.025,
+      "wer_latin_number": 0.08333333333333333,
+      "critical_string_recall": 1.0,
+      "timing_ms": 5062.867050000932,
+      "timing_scope": "end_to_end_mean",
+      "query_expected_page_recall": 0.9444444444444444,
+      "citation_line_bbox_coverage": 0.9444444444444444,
+      "wrong_page_hit_count": 0,
+      "negative_query_hit_count": 0,
+      "queries": [
+        {
+          "id": "Q01",
+          "text": "OCR TEST",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q02",
+          "text": "English abbreviation",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q03",
+          "text": "12345",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q04",
+          "text": "物理页码",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q05",
+          "text": "表格区域",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q06",
+          "text": "A-01 0.95",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            2
+          ],
+          "located_pages": [
+            2
+          ]
+        },
+        {
+          "id": "Q07",
+          "text": "表格候选单元格",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q08",
+          "text": "page label: 1",
+          "expected_pages": [
+            1
+          ],
+          "returned_pages": [
+            1
+          ],
+          "located_pages": [
+            1
+          ]
+        },
+        {
+          "id": "Q09",
+          "text": "page label: 2",
+          "expected_pages": [
+            2
+          ],
+          "returned_pages": [
+            2
+          ],
+          "located_pages": [
+            2
+          ]
+        },
+        {
+          "id": "Q10",
+          "text": "第 1 页 文档解析质量验证",
+          "expected_pages": [
+            1
+          ],
+          "returned_pages": [
+            1
+          ],
+          "located_pages": [
+            1
+          ]
+        },
+        {
+          "id": "Q11",
+          "text": "第 2 页 文档解析质量验证",
+          "expected_pages": [
+            2
+          ],
+          "returned_pages": [
+            2
+          ],
+          "located_pages": [
+            2
+          ]
+        }
+      ],
+      "negative_queries": {
+        "X-99": [],
+        "不存在的审批结论": []
+      },
+      "gate": {
+        "passed": false,
+        "checks": {
+          "page_success_rate": true,
+          "cer_all": true,
+          "cer_chinese": true,
+          "wer_latin_number": true,
+          "query_expected_page_recall": false,
+          "citation_line_bbox_coverage": false,
+          "wrong_page_hit_count": true,
+          "negative_query_hit_count": true
+        }
+      }
+    },
+    {
+      "engine": "RapidOCR",
+      "configuration": "dpi144",
+      "page_success_rate": 1.0,
+      "cer_all": 0.04216867469879518,
+      "cer_chinese": 0.0,
+      "wer_latin_number": 0.08333333333333333,
+      "critical_string_recall": 1.0,
+      "timing_ms": 2507.6135499984957,
+      "timing_scope": "ocr_only_mean",
+      "query_expected_page_recall": 1.0,
+      "citation_line_bbox_coverage": 1.0,
+      "wrong_page_hit_count": 0,
+      "negative_query_hit_count": 0,
+      "queries": [
+        {
+          "id": "Q01",
+          "text": "OCR TEST",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q02",
+          "text": "English abbreviation",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q03",
+          "text": "12345",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q04",
+          "text": "物理页码",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q05",
+          "text": "表格区域",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q06",
+          "text": "A-01 0.95",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q07",
+          "text": "表格候选单元格",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q08",
+          "text": "page label: 1",
+          "expected_pages": [
+            1
+          ],
+          "returned_pages": [
+            1
+          ],
+          "located_pages": [
+            1
+          ]
+        },
+        {
+          "id": "Q09",
+          "text": "page label: 2",
+          "expected_pages": [
+            2
+          ],
+          "returned_pages": [
+            2
+          ],
+          "located_pages": [
+            2
+          ]
+        },
+        {
+          "id": "Q10",
+          "text": "第 1 页 文档解析质量验证",
+          "expected_pages": [
+            1
+          ],
+          "returned_pages": [
+            1
+          ],
+          "located_pages": [
+            1
+          ]
+        },
+        {
+          "id": "Q11",
+          "text": "第 2 页 文档解析质量验证",
+          "expected_pages": [
+            2
+          ],
+          "returned_pages": [
+            2
+          ],
+          "located_pages": [
+            2
+          ]
+        }
+      ],
+      "negative_queries": {
+        "X-99": [],
+        "不存在的审批结论": []
+      },
+      "gate": {
+        "passed": true,
+        "checks": {
+          "page_success_rate": true,
+          "cer_all": true,
+          "cer_chinese": true,
+          "wer_latin_number": true,
+          "query_expected_page_recall": true,
+          "citation_line_bbox_coverage": true,
+          "wrong_page_hit_count": true,
+          "negative_query_hit_count": true
+        }
+      }
+    },
+    {
+      "engine": "RapidOCR",
+      "configuration": "dpi300",
+      "page_success_rate": 1.0,
+      "cer_all": 0.045180722891566265,
+      "cer_chinese": 0.0,
+      "wer_latin_number": 0.16666666666666666,
+      "critical_string_recall": 1.0,
+      "timing_ms": 2092.516599997907,
+      "timing_scope": "ocr_only_mean",
+      "query_expected_page_recall": 1.0,
+      "citation_line_bbox_coverage": 1.0,
+      "wrong_page_hit_count": 0,
+      "negative_query_hit_count": 0,
+      "queries": [
+        {
+          "id": "Q01",
+          "text": "OCR TEST",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q02",
+          "text": "English abbreviation",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q03",
+          "text": "12345",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q04",
+          "text": "物理页码",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q05",
+          "text": "表格区域",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q06",
+          "text": "A-01 0.95",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q07",
+          "text": "表格候选单元格",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q08",
+          "text": "page label: 1",
+          "expected_pages": [
+            1
+          ],
+          "returned_pages": [
+            1
+          ],
+          "located_pages": [
+            1
+          ]
+        },
+        {
+          "id": "Q09",
+          "text": "page label: 2",
+          "expected_pages": [
+            2
+          ],
+          "returned_pages": [
+            2
+          ],
+          "located_pages": [
+            2
+          ]
+        },
+        {
+          "id": "Q10",
+          "text": "第 1 页 文档解析质量验证",
+          "expected_pages": [
+            1
+          ],
+          "returned_pages": [
+            1
+          ],
+          "located_pages": [
+            1
+          ]
+        },
+        {
+          "id": "Q11",
+          "text": "第 2 页 文档解析质量验证",
+          "expected_pages": [
+            2
+          ],
+          "returned_pages": [
+            2
+          ],
+          "located_pages": [
+            2
+          ]
+        }
+      ],
+      "negative_queries": {
+        "X-99": [],
+        "不存在的审批结论": []
+      },
+      "gate": {
+        "passed": false,
+        "checks": {
+          "page_success_rate": true,
+          "cer_all": true,
+          "cer_chinese": true,
+          "wer_latin_number": false,
+          "query_expected_page_recall": true,
+          "citation_line_bbox_coverage": true,
+          "wrong_page_hit_count": true,
+          "negative_query_hit_count": true
+        }
+      }
+    },
+    {
+      "engine": "PaddleOCR",
+      "configuration": "dpi144",
+      "page_success_rate": 1.0,
+      "cer_all": 0.08433734939759036,
+      "cer_chinese": 0.0,
+      "wer_latin_number": 0.41666666666666663,
+      "critical_string_recall": 1.0,
+      "timing_ms": 1277.6392000014312,
+      "timing_scope": "ocr_only_p95",
+      "query_expected_page_recall": 1.0,
+      "citation_line_bbox_coverage": 1.0,
+      "wrong_page_hit_count": 0,
+      "negative_query_hit_count": 0,
+      "queries": [
+        {
+          "id": "Q01",
+          "text": "OCR TEST",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q02",
+          "text": "English abbreviation",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q03",
+          "text": "12345",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q04",
+          "text": "物理页码",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q05",
+          "text": "表格区域",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q06",
+          "text": "A-01 0.95",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q07",
+          "text": "表格候选单元格",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q08",
+          "text": "page label: 1",
+          "expected_pages": [
+            1
+          ],
+          "returned_pages": [
+            1
+          ],
+          "located_pages": [
+            1
+          ]
+        },
+        {
+          "id": "Q09",
+          "text": "page label: 2",
+          "expected_pages": [
+            2
+          ],
+          "returned_pages": [
+            2
+          ],
+          "located_pages": [
+            2
+          ]
+        },
+        {
+          "id": "Q10",
+          "text": "第 1 页 文档解析质量验证",
+          "expected_pages": [
+            1
+          ],
+          "returned_pages": [
+            1
+          ],
+          "located_pages": [
+            1
+          ]
+        },
+        {
+          "id": "Q11",
+          "text": "第 2 页 文档解析质量验证",
+          "expected_pages": [
+            2
+          ],
+          "returned_pages": [
+            2
+          ],
+          "located_pages": [
+            2
+          ]
+        }
+      ],
+      "negative_queries": {
+        "X-99": [],
+        "不存在的审批结论": []
+      },
+      "gate": {
+        "passed": false,
+        "checks": {
+          "page_success_rate": true,
+          "cer_all": false,
+          "cer_chinese": true,
+          "wer_latin_number": false,
+          "query_expected_page_recall": true,
+          "citation_line_bbox_coverage": true,
+          "wrong_page_hit_count": true,
+          "negative_query_hit_count": true
+        }
+      }
+    },
+    {
+      "engine": "PaddleOCR",
+      "configuration": "dpi300",
+      "page_success_rate": 1.0,
+      "cer_all": 0.08433734939759036,
+      "cer_chinese": 0.0,
+      "wer_latin_number": 0.5,
+      "critical_string_recall": 1.0,
+      "timing_ms": 981.0777999955462,
+      "timing_scope": "ocr_only_p95",
+      "query_expected_page_recall": 1.0,
+      "citation_line_bbox_coverage": 1.0,
+      "wrong_page_hit_count": 0,
+      "negative_query_hit_count": 0,
+      "queries": [
+        {
+          "id": "Q01",
+          "text": "OCR TEST",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q02",
+          "text": "English abbreviation",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q03",
+          "text": "12345",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q04",
+          "text": "物理页码",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q05",
+          "text": "表格区域",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q06",
+          "text": "A-01 0.95",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q07",
+          "text": "表格候选单元格",
+          "expected_pages": [
+            1,
+            2
+          ],
+          "returned_pages": [
+            1,
+            2
+          ],
+          "located_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Q08",
+          "text": "page label: 1",
+          "expected_pages": [
+            1
+          ],
+          "returned_pages": [
+            1
+          ],
+          "located_pages": [
+            1
+          ]
+        },
+        {
+          "id": "Q09",
+          "text": "page label: 2",
+          "expected_pages": [
+            2
+          ],
+          "returned_pages": [
+            2
+          ],
+          "located_pages": [
+            2
+          ]
+        },
+        {
+          "id": "Q10",
+          "text": "第 1 页 文档解析质量验证",
+          "expected_pages": [
+            1
+          ],
+          "returned_pages": [
+            1
+          ],
+          "located_pages": [
+            1
+          ]
+        },
+        {
+          "id": "Q11",
+          "text": "第 2 页 文档解析质量验证",
+          "expected_pages": [
+            2
+          ],
+          "returned_pages": [
+            2
+          ],
+          "located_pages": [
+            2
+          ]
+        }
+      ],
+      "negative_queries": {
+        "X-99": [],
+        "不存在的审批结论": []
+      },
+      "gate": {
+        "passed": false,
+        "checks": {
+          "page_success_rate": true,
+          "cer_all": false,
+          "cer_chinese": true,
+          "wer_latin_number": false,
+          "query_expected_page_recall": true,
+          "citation_line_bbox_coverage": true,
+          "wrong_page_hit_count": true,
+          "negative_query_hit_count": true
+        }
+      }
+    }
+  ],
+  "degradation": [
+    {
+      "engine": "Tesseract",
+      "variant": "base300",
+      "cer_all": 0.06325301204819277,
+      "cer_chinese": 0.05,
+      "wer_latin_number": 0.08333333333333333,
+      "critical_string_recall": 0.8333333333333333,
+      "timing_ms": 1242.7342500013765,
+      "timing_scope": "end_to_end",
+      "gate": {
+        "passed": false,
+        "checks": {
+          "page_success_rate": true,
+          "cer_all": false,
+          "cer_chinese": false,
+          "wer_latin_number": true,
+          "critical_string_recall": false
+        }
+      }
+    },
+    {
+      "engine": "Tesseract",
+      "variant": "downsample150",
+      "cer_all": 0.10240963855421686,
+      "cer_chinese": 0.08499999999999999,
+      "wer_latin_number": 0.16666666666666666,
+      "critical_string_recall": 0.6666666666666666,
+      "timing_ms": 1257.4335000008432,
+      "timing_scope": "end_to_end",
+      "gate": {
+        "passed": false,
+        "checks": {
+          "page_success_rate": true,
+          "cer_all": false,
+          "cer_chinese": false,
+          "wer_latin_number": false,
+          "critical_string_recall": false
+        }
+      }
+    },
+    {
+      "engine": "Tesseract",
+      "variant": "blur",
+      "cer_all": 0.11144578313253012,
+      "cer_chinese": 0.125,
+      "wer_latin_number": 0.25,
+      "critical_string_recall": 0.8333333333333333,
+      "timing_ms": 1278.3948500000406,
+      "timing_scope": "end_to_end",
+      "gate": {
+        "passed": false,
+        "checks": {
+          "page_success_rate": true,
+          "cer_all": false,
+          "cer_chinese": false,
+          "wer_latin_number": false,
+          "critical_string_recall": false
+        }
+      }
+    },
+    {
+      "engine": "Tesseract",
+      "variant": "low_contrast_noise",
+      "cer_all": 0.06927710843373494,
+      "cer_chinese": 0.06,
+      "wer_latin_number": 0.125,
+      "critical_string_recall": 0.8333333333333333,
+      "timing_ms": 1257.4440000007598,
+      "timing_scope": "end_to_end",
+      "gate": {
+        "passed": false,
+        "checks": {
+          "page_success_rate": true,
+          "cer_all": false,
+          "cer_chinese": false,
+          "wer_latin_number": false,
+          "critical_string_recall": false
+        }
+      }
+    },
+    {
+      "engine": "Tesseract",
+      "variant": "rotate3",
+      "cer_all": 0.04216867469879518,
+      "cer_chinese": 0.055,
+      "wer_latin_number": 0.08333333333333333,
+      "critical_string_recall": 1.0,
+      "timing_ms": 1245.6819500002894,
+      "timing_scope": "end_to_end",
+      "gate": {
+        "passed": false,
+        "checks": {
+          "page_success_rate": true,
+          "cer_all": true,
+          "cer_chinese": false,
+          "wer_latin_number": true,
+          "critical_string_recall": true
+        }
+      }
+    },
+    {
+      "engine": "RapidOCR",
+      "variant": "base300",
+      "cer_all": 0.045180722891566265,
+      "cer_chinese": 0.0,
+      "wer_latin_number": 0.16666666666666666,
+      "critical_string_recall": 1.0,
+      "timing_ms": 5280.546950001735,
+      "timing_scope": "ocr_only",
+      "gate": {
+        "passed": false,
+        "checks": {
+          "page_success_rate": true,
+          "cer_all": true,
+          "cer_chinese": true,
+          "wer_latin_number": false,
+          "critical_string_recall": true
+        }
+      }
+    },
+    {
+      "engine": "RapidOCR",
+      "variant": "downsample150",
+      "cer_all": 0.08734939759036145,
+      "cer_chinese": 0.0,
+      "wer_latin_number": 0.0,
+      "critical_string_recall": 1.0,
+      "timing_ms": 4253.1053999991855,
+      "timing_scope": "ocr_only",
+      "gate": {
+        "passed": false,
+        "checks": {
+          "page_success_rate": true,
+          "cer_all": false,
+          "cer_chinese": true,
+          "wer_latin_number": true,
+          "critical_string_recall": true
+        }
+      }
+    },
+    {
+      "engine": "RapidOCR",
+      "variant": "blur",
+      "cer_all": 0.08734939759036145,
+      "cer_chinese": 0.0,
+      "wer_latin_number": 0.08333333333333333,
+      "critical_string_recall": 1.0,
+      "timing_ms": 4143.957600001158,
+      "timing_scope": "ocr_only",
+      "gate": {
+        "passed": false,
+        "checks": {
+          "page_success_rate": true,
+          "cer_all": false,
+          "cer_chinese": true,
+          "wer_latin_number": true,
+          "critical_string_recall": true
+        }
+      }
+    },
+    {
+      "engine": "RapidOCR",
+      "variant": "low_contrast_noise",
+      "cer_all": 0.04216867469879518,
+      "cer_chinese": 0.0,
+      "wer_latin_number": 0.16666666666666666,
+      "critical_string_recall": 1.0,
+      "timing_ms": 4364.5689000004495,
+      "timing_scope": "ocr_only",
+      "gate": {
+        "passed": false,
+        "checks": {
+          "page_success_rate": true,
+          "cer_all": true,
+          "cer_chinese": true,
+          "wer_latin_number": false,
+          "critical_string_recall": true
+        }
+      }
+    },
+    {
+      "engine": "RapidOCR",
+      "variant": "rotate3",
+      "cer_all": 0.08734939759036145,
+      "cer_chinese": 0.0,
+      "wer_latin_number": 0.0,
+      "critical_string_recall": 1.0,
+      "timing_ms": 4690.044949998992,
+      "timing_scope": "ocr_only",
+      "gate": {
+        "passed": false,
+        "checks": {
+          "page_success_rate": true,
+          "cer_all": false,
+          "cer_chinese": true,
+          "wer_latin_number": true,
+          "critical_string_recall": true
+        }
+      }
+    }
+  ],
+  "decision": {
+    "primary_candidate": "RapidOCR dpi144",
+    "fallback_candidate": "Tesseract dpi300-psm3-none",
+    "layout_enhancement": "disabled by default; PP-StructureV3 asynchronous experiment only",
+    "scope": "Clear, near-upright printed single-column scans only; all other scans are best-effort with original-page review."
+  },
+  "boundary": "Provisional phase-one gate derived from a two-page project-authored fixture and synthetic degradations; not a production acceptance threshold."
+}

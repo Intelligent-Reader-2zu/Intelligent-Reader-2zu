@@ -1,0 +1,241 @@
+{
+  "experiment_id": "TECH-STRUCT-007-R01",
+  "sample_id": "SELF-012",
+  "doc_id": "self-012-e00bfbcede7b",
+  "source_path": "samples\\self-authored\\html\\SELF-012-noisy.html",
+  "source_hash": "e00bfbcede7bf4b28300617ba5c26447c74ef7560d44f8033bfc4a0d094dabba",
+  "source_format": "HTML",
+  "parser_name": "BeautifulSoup DOM baseline",
+  "parser_version": null,
+  "config": {
+    "root": "article",
+    "noise_tags": [
+      "nav",
+      "aside",
+      "script",
+      "style"
+    ]
+  },
+  "elements": [
+    {
+      "element_id": "self-012-e00bfbcede7b-e0001",
+      "element_type": "heading",
+      "text": "网页快照：证据定位流程",
+      "heading_level": 1,
+      "heading_path": [
+        "网页快照：证据定位流程"
+      ],
+      "parent_element_id": null,
+      "source_selector": "h1:nth-of-type(1)",
+      "children_ids": [
+        "self-012-e00bfbcede7b-e0003"
+      ]
+    },
+    {
+      "element_id": "self-012-e00bfbcede7b-e0002",
+      "element_type": "paragraph",
+      "text": "版本 1.0 | 2026-09-23 | English label: provenance",
+      "heading_path": [
+        "网页快照：证据定位流程"
+      ],
+      "source_selector": "p.meta",
+      "children_ids": []
+    },
+    {
+      "element_id": "self-012-e00bfbcede7b-e0003",
+      "element_type": "heading",
+      "text": "方法",
+      "heading_level": 2,
+      "heading_path": [
+        "网页快照：证据定位流程",
+        "方法"
+      ],
+      "parent_element_id": "self-012-e00bfbcede7b-e0001",
+      "source_selector": "h2#method",
+      "children_ids": []
+    },
+    {
+      "element_id": "self-012-e00bfbcede7b-e0004",
+      "element_type": "paragraph",
+      "text": "正文应与导航、广告和脚本分离。解析结果需要保留标题、段落、表格和原始链接。",
+      "heading_path": [
+        "网页快照：证据定位流程",
+        "方法"
+      ],
+      "source_selector": "p:nth-of-type(2)",
+      "children_ids": []
+    },
+    {
+      "element_id": "self-012-e00bfbcede7b-e0005",
+      "element_type": "table",
+      "text": "步骤 输出 解析 结构块 检索 证据块",
+      "heading_path": [
+        "网页快照：证据定位流程",
+        "方法"
+      ],
+      "row_count": 3,
+      "column_count": 2,
+      "source_selector": "table:nth-of-type(1)",
+      "children_ids": [
+        "self-012-e00bfbcede7b-e0006",
+        "self-012-e00bfbcede7b-e0007",
+        "self-012-e00bfbcede7b-e0008",
+        "self-012-e00bfbcede7b-e0009",
+        "self-012-e00bfbcede7b-e0010",
+        "self-012-e00bfbcede7b-e0011"
+      ]
+    },
+    {
+      "element_id": "self-012-e00bfbcede7b-e0006",
+      "element_type": "table_cell",
+      "text": "步骤",
+      "parent_element_id": "self-012-e00bfbcede7b-e0005",
+      "row_index": 0,
+      "col_index": 0,
+      "children_ids": []
+    },
+    {
+      "element_id": "self-012-e00bfbcede7b-e0007",
+      "element_type": "table_cell",
+      "text": "输出",
+      "parent_element_id": "self-012-e00bfbcede7b-e0005",
+      "row_index": 0,
+      "col_index": 1,
+      "children_ids": []
+    },
+    {
+      "element_id": "self-012-e00bfbcede7b-e0008",
+      "element_type": "table_cell",
+      "text": "解析",
+      "parent_element_id": "self-012-e00bfbcede7b-e0005",
+      "row_index": 1,
+      "col_index": 0,
+      "children_ids": []
+    },
+    {
+      "element_id": "self-012-e00bfbcede7b-e0009",
+      "element_type": "table_cell",
+      "text": "结构块",
+      "parent_element_id": "self-012-e00bfbcede7b-e0005",
+      "row_index": 1,
+      "col_index": 1,
+      "children_ids": []
+    },
+    {
+      "element_id": "self-012-e00bfbcede7b-e0010",
+      "element_type": "table_cell",
+      "text": "检索",
+      "parent_element_id": "self-012-e00bfbcede7b-e0005",
+      "row_index": 2,
+      "col_index": 0,
+      "children_ids": []
+    },
+    {
+      "element_id": "self-012-e00bfbcede7b-e0011",
+      "element_type": "table_cell",
+      "text": "证据块",
+      "parent_element_id": "self-012-e00bfbcede7b-e0005",
+      "row_index": 2,
+      "col_index": 1,
+      "children_ids": []
+    },
+    {
+      "element_id": "self-012-e00bfbcede7b-e0012",
+      "element_type": "code_block",
+      "text": "document.querySelector('article')",
+      "heading_path": [
+        "网页快照：证据定位流程",
+        "方法"
+      ],
+      "language": null,
+      "source_selector": "pre:nth-of-type(1)",
+      "children_ids": []
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-012-e00bfbcede7b-e0005",
+      "target_element_id": "self-012-e00bfbcede7b-e0006",
+      "evidence": "dom_table"
+    },
+    {
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-012-e00bfbcede7b-e0005",
+      "target_element_id": "self-012-e00bfbcede7b-e0007",
+      "evidence": "dom_table"
+    },
+    {
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-012-e00bfbcede7b-e0005",
+      "target_element_id": "self-012-e00bfbcede7b-e0008",
+      "evidence": "dom_table"
+    },
+    {
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-012-e00bfbcede7b-e0005",
+      "target_element_id": "self-012-e00bfbcede7b-e0009",
+      "evidence": "dom_table"
+    },
+    {
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-012-e00bfbcede7b-e0005",
+      "target_element_id": "self-012-e00bfbcede7b-e0010",
+      "evidence": "dom_table"
+    },
+    {
+      "relation_type": "table_contains_cell",
+      "source_element_id": "self-012-e00bfbcede7b-e0005",
+      "target_element_id": "self-012-e00bfbcede7b-e0011",
+      "evidence": "dom_table"
+    },
+    {
+      "relation_type": "document_root",
+      "source_element_id": "self-012-e00bfbcede7b-e0001",
+      "target_element_id": null,
+      "evidence": "article_root"
+    }
+  ],
+  "warnings": [
+    "DOM baseline uses article as root; dynamic rendering and shadow DOM are not tested."
+  ],
+  "noise_elements": [
+    {
+      "element_type": "noise",
+      "text": ".ad{display:none}",
+      "source_selector": "style"
+    },
+    {
+      "element_type": "noise",
+      "text": "首页 文档 方法",
+      "source_selector": "nav"
+    },
+    {
+      "element_type": "noise",
+      "text": "这是应被识别为噪声的广告占位。",
+      "source_selector": "aside.ad"
+    },
+    {
+      "element_type": "footer",
+      "text": "网页快照页脚 | 原始 URL 和抓取日期应另行登记",
+      "source_selector": "footer"
+    },
+    {
+      "element_type": "noise",
+      "text": "console.log('dynamic noise');",
+      "source_selector": "script"
+    }
+  ],
+  "element_counts": {
+    "heading": 2,
+    "paragraph": 2,
+    "table": 1,
+    "table_cell": 6,
+    "code_block": 1
+  },
+  "noise_counts": {
+    "noise": 4,
+    "footer": 1
+  },
+  "status": "scored"
+}

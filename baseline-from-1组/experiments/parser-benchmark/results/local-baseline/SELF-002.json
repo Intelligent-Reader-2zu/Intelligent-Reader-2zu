@@ -1,0 +1,48 @@
+{
+  "parser": "PyMuPDF",
+  "parser_version": "1.25.3",
+  "status": "succeeded",
+  "sample_id": "SELF-002",
+  "format": "PDF",
+  "pages": [
+    {
+      "physical_page": 1,
+      "text_chars": 476,
+      "block_count": 21,
+      "image_count": 0,
+      "bbox_sample": [
+        51.02362060546875,
+        807.8592529296875,
+        544.2726440429688,
+        815.3172607421875
+      ]
+    },
+    {
+      "physical_page": 2,
+      "text_chars": 95,
+      "block_count": 3,
+      "image_count": 0,
+      "bbox_sample": [
+        51.02362060546875,
+        807.8592529296875,
+        544.2726440429688,
+        815.3172607421875
+      ]
+    }
+  ],
+  "page_count": 2,
+  "text_chars": 572,
+  "block_count": 24,
+  "image_count": 0,
+  "text_layer_present": true,
+  "ocr_status": "not_run",
+  "elapsed_ms": 8.19,
+  "text_preview": "SELF-AUTHORED PDF | physical page 1\nheader/footer and citation test\n智能阅读器自制 PDF 样本\n跨栏标题和参考文献会故意让阅读顺序变得敏感。\n1 研究目标\n本样本包含中文、English terms、脚注提示和页眉页\n脚，用于验证正文、标题、段落、页码和引用定位。\n2 关键结论\n解析结果不能只保留扁平纯文本。每个文本块还需要稳\n定 ID、标题路径、物理页码和原始位置。\n字段\n示例值\n风险\nphysical_page 2\n封面导致打印页码偏移\nheading_path 1 > 2\n标题层级可能被误判\n脚注：这是一个可回溯的脚注占位，用来检查脚注是否被混入正文。\n左栏补充段落：阅读顺序应先完成当前栏，再进入同页\n另一栏；解析器不能把页脚插入正文。\n右栏内容\n右栏补充段落：引用定位需要同时记录物理页码、文本\n块和坐标，表格应保持行列关系。\n3 参考文献\n[1] A. Reader. Document provenance and evidence\nblocks. 2026.\n\nSELF-AUTHORED PDF | physical page 2\nheader/footer and citation test\n4 第二页\n第二页用于检查页码、跨页段落和引用位置。\n",
+  "query_hits": {
+    "跨栏标题": true,
+    "参考文献": true,
+    "阅读顺序": true
+  },
+  "source_path": "samples\\self-authored\\pdf\\SELF-002-two-column.pdf",
+  "source_sha256": "614c8a0cd2fe20b50419aa024f71ed93bb7b938c1f7aaf7b2a765dfe9a4fdddb"
+}

@@ -1,0 +1,1239 @@
+{
+  "physical_page": 2,
+  "status": "succeeded",
+  "render_size": [
+    3424,
+    4758
+  ],
+  "render_ms": 1309.2946000033407,
+  "preprocess_ms": 310.9753999997338,
+  "ocr_ms": 3537.3813999976846,
+  "elapsed_ms": 5172.020000001794,
+  "text": "扫描 型 中 文 样本 / OCR TEST\n第 2 页 文档 解析 质量 验证\n本 页 故意 包含 中 文 、English abbreviation、 数字 12345 和 全 角 标 点 。\nOCR 应 保留 物理 页 码 ， 并 标记 可 能 存在 的 字符 错误 。\n表格 区 域 : 解析 器 应 至 少 保留 行列 关系 或 原 图 位 置 。\n+: 页 面 略 有 倾斜 ， 背 景 包含 轻微 噪声 。\neee\n扫描 样本 页 脚 page label: 2",
+  "words": [
+    {
+      "text": "扫描",
+      "confidence": 95.594559,
+      "bbox": [
+        258,
+        328,
+        474,
+        76
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "型",
+      "confidence": 95.812553,
+      "bbox": [
+        426,
+        320,
+        73,
+        89
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "中",
+      "confidence": 93.299774,
+      "bbox": [
+        498,
+        320,
+        62,
+        89
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "文",
+      "confidence": 92.666016,
+      "bbox": [
+        559,
+        320,
+        85,
+        89
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": "样本",
+      "confidence": 62.962509,
+      "bbox": [
+        643,
+        320,
+        112,
+        89
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "/",
+      "confidence": 62.962509,
+      "bbox": [
+        771,
+        332,
+        13,
+        60
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 6
+    },
+    {
+      "text": "OCR",
+      "confidence": 96.726295,
+      "bbox": [
+        807,
+        328,
+        143,
+        56
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 7
+    },
+    {
+      "text": "TEST",
+      "confidence": 95.583572,
+      "bbox": [
+        971,
+        324,
+        153,
+        56
+      ],
+      "block": 1,
+      "paragraph": 1,
+      "line": 1,
+      "word": 8
+    },
+    {
+      "text": "第",
+      "confidence": 95.782944,
+      "bbox": [
+        285,
+        606,
+        46,
+        46
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "2",
+      "confidence": 95.782944,
+      "bbox": [
+        350,
+        608,
+        24,
+        36
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "页",
+      "confidence": 96.394463,
+      "bbox": [
+        390,
+        606,
+        46,
+        44
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "文档",
+      "confidence": 95.56662,
+      "bbox": [
+        465,
+        596,
+        385,
+        50
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": "解析",
+      "confidence": 95.28344,
+      "bbox": [
+        586,
+        592,
+        89,
+        74
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "质量",
+      "confidence": 96.092285,
+      "bbox": [
+        674,
+        596,
+        102,
+        50
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 1,
+      "word": 6
+    },
+    {
+      "text": "验证",
+      "confidence": 93.755112,
+      "bbox": [
+        775,
+        592,
+        80,
+        74
+      ],
+      "block": 2,
+      "paragraph": 1,
+      "line": 1,
+      "word": 7
+    },
+    {
+      "text": "本",
+      "confidence": 96.687149,
+      "bbox": [
+        291,
+        806,
+        45,
+        46
+      ],
+      "block": 3,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "页",
+      "confidence": 96.324059,
+      "bbox": [
+        350,
+        808,
+        35,
+        44
+      ],
+      "block": 3,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "故意",
+      "confidence": 96.934113,
+      "bbox": [
+        404,
+        802,
+        77,
+        46
+      ],
+      "block": 3,
+      "paragraph": 1,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "包含",
+      "confidence": 96.072495,
+      "bbox": [
+        483,
+        796,
+        205,
+        50
+      ],
+      "block": 3,
+      "paragraph": 1,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": "中",
+      "confidence": 93.255707,
+      "bbox": [
+        602,
+        784,
+        59,
+        72
+      ],
+      "block": 3,
+      "paragraph": 1,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "文",
+      "confidence": 91.655273,
+      "bbox": [
+        660,
+        784,
+        46,
+        72
+      ],
+      "block": 3,
+      "paragraph": 1,
+      "line": 1,
+      "word": 6
+    },
+    {
+      "text": "、English",
+      "confidence": 92.285599,
+      "bbox": [
+        726,
+        794,
+        154,
+        52
+      ],
+      "block": 3,
+      "paragraph": 1,
+      "line": 1,
+      "word": 7
+    },
+    {
+      "text": "abbreviation、",
+      "confidence": 91.317368,
+      "bbox": [
+        900,
+        788,
+        298,
+        44
+      ],
+      "block": 3,
+      "paragraph": 1,
+      "line": 1,
+      "word": 8
+    },
+    {
+      "text": "数字",
+      "confidence": 95.659653,
+      "bbox": [
+        1233,
+        780,
+        95,
+        50
+      ],
+      "block": 3,
+      "paragraph": 1,
+      "line": 1,
+      "word": 9
+    },
+    {
+      "text": "12345",
+      "confidence": 91.501846,
+      "bbox": [
+        1347,
+        782,
+        132,
+        38
+      ],
+      "block": 3,
+      "paragraph": 1,
+      "line": 1,
+      "word": 10
+    },
+    {
+      "text": "和",
+      "confidence": 96.893036,
+      "bbox": [
+        1505,
+        778,
+        37,
+        43
+      ],
+      "block": 3,
+      "paragraph": 1,
+      "line": 1,
+      "word": 11
+    },
+    {
+      "text": "全",
+      "confidence": 90.505829,
+      "bbox": [
+        1550,
+        778,
+        41,
+        42
+      ],
+      "block": 3,
+      "paragraph": 1,
+      "line": 1,
+      "word": 12
+    },
+    {
+      "text": "角",
+      "confidence": 90.323776,
+      "bbox": [
+        1604,
+        774,
+        32,
+        46
+      ],
+      "block": 3,
+      "paragraph": 1,
+      "line": 1,
+      "word": 13
+    },
+    {
+      "text": "标",
+      "confidence": 92.000595,
+      "bbox": [
+        1653,
+        776,
+        35,
+        44
+      ],
+      "block": 3,
+      "paragraph": 1,
+      "line": 1,
+      "word": 14
+    },
+    {
+      "text": "点",
+      "confidence": 93.134575,
+      "bbox": [
+        1707,
+        772,
+        27,
+        46
+      ],
+      "block": 3,
+      "paragraph": 1,
+      "line": 1,
+      "word": 15
+    },
+    {
+      "text": "。",
+      "confidence": 92.897202,
+      "bbox": [
+        1739,
+        804,
+        12,
+        12
+      ],
+      "block": 3,
+      "paragraph": 1,
+      "line": 1,
+      "word": 16
+    },
+    {
+      "text": "OCR",
+      "confidence": 96.357498,
+      "bbox": [
+        296,
+        1008,
+        101,
+        38
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "应",
+      "confidence": 96.719917,
+      "bbox": [
+        425,
+        1002,
+        49,
+        48
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "保留",
+      "confidence": 96.871948,
+      "bbox": [
+        477,
+        978,
+        100,
+        76
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "物理",
+      "confidence": 95.783989,
+      "bbox": [
+        577,
+        1000,
+        100,
+        46
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": "页",
+      "confidence": 92.5578,
+      "bbox": [
+        701,
+        1002,
+        19,
+        38
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "码",
+      "confidence": 92.737473,
+      "bbox": [
+        729,
+        1000,
+        33,
+        42
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 6
+    },
+    {
+      "text": "，",
+      "confidence": 93.119629,
+      "bbox": [
+        771,
+        978,
+        34,
+        76
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 7
+    },
+    {
+      "text": "并",
+      "confidence": 93.049858,
+      "bbox": [
+        805,
+        996,
+        39,
+        44
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 8
+    },
+    {
+      "text": "标记",
+      "confidence": 96.679497,
+      "bbox": [
+        857,
+        978,
+        96,
+        76
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 9
+    },
+    {
+      "text": "可",
+      "confidence": 96.623055,
+      "bbox": [
+        952,
+        994,
+        36,
+        42
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 10
+    },
+    {
+      "text": "能",
+      "confidence": 96.950905,
+      "bbox": [
+        1004,
+        988,
+        31,
+        48
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 11
+    },
+    {
+      "text": "存在",
+      "confidence": 96.788849,
+      "bbox": [
+        1056,
+        986,
+        101,
+        48
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 12
+    },
+    {
+      "text": "的",
+      "confidence": 96.829315,
+      "bbox": [
+        1156,
+        978,
+        44,
+        76
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 13
+    },
+    {
+      "text": "字符",
+      "confidence": 96.793091,
+      "bbox": [
+        1199,
+        978,
+        96,
+        76
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 14
+    },
+    {
+      "text": "错误",
+      "confidence": 90.898315,
+      "bbox": [
+        1294,
+        978,
+        77,
+        76
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 15
+    },
+    {
+      "text": "。",
+      "confidence": 82.608482,
+      "bbox": [
+        1375,
+        1014,
+        12,
+        12
+      ],
+      "block": 4,
+      "paragraph": 1,
+      "line": 1,
+      "word": 16
+    },
+    {
+      "text": "表格",
+      "confidence": 94.193932,
+      "bbox": [
+        301,
+        1204,
+        206,
+        48
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "区",
+      "confidence": 93.260422,
+      "bbox": [
+        415,
+        1180,
+        50,
+        79
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "域",
+      "confidence": 92.137207,
+      "bbox": [
+        464,
+        1180,
+        46,
+        79
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": ":",
+      "confidence": 89.448425,
+      "bbox": [
+        509,
+        1180,
+        21,
+        79
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": "解析",
+      "confidence": 95.889076,
+      "bbox": [
+        573,
+        1198,
+        77,
+        48
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "器",
+      "confidence": 95.92543,
+      "bbox": [
+        667,
+        1200,
+        30,
+        46
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 6
+    },
+    {
+      "text": "应",
+      "confidence": 96.82946,
+      "bbox": [
+        716,
+        1196,
+        51,
+        46
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 7
+    },
+    {
+      "text": "至",
+      "confidence": 93.182182,
+      "bbox": [
+        766,
+        1180,
+        50,
+        79
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 8
+    },
+    {
+      "text": "少",
+      "confidence": 93.276657,
+      "bbox": [
+        815,
+        1194,
+        39,
+        46
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 9
+    },
+    {
+      "text": "保留",
+      "confidence": 96.23243,
+      "bbox": [
+        864,
+        1190,
+        91,
+        48
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 10
+    },
+    {
+      "text": "行列",
+      "confidence": 96.640884,
+      "bbox": [
+        963,
+        1190,
+        68,
+        46
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 11
+    },
+    {
+      "text": "关系",
+      "confidence": 96.881516,
+      "bbox": [
+        1052,
+        1187,
+        76,
+        47
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 12
+    },
+    {
+      "text": "或",
+      "confidence": 93.136917,
+      "bbox": [
+        1151,
+        1188,
+        27,
+        42
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 13
+    },
+    {
+      "text": "原",
+      "confidence": 92.843147,
+      "bbox": [
+        1200,
+        1188,
+        25,
+        42
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 14
+    },
+    {
+      "text": "图",
+      "confidence": 82.752838,
+      "bbox": [
+        1245,
+        1184,
+        41,
+        46
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 15
+    },
+    {
+      "text": "位",
+      "confidence": 75.649048,
+      "bbox": [
+        1294,
+        1184,
+        50,
+        44
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 16
+    },
+    {
+      "text": "置",
+      "confidence": 75.764809,
+      "bbox": [
+        1343,
+        1180,
+        31,
+        79
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 17
+    },
+    {
+      "text": "。",
+      "confidence": 93.126465,
+      "bbox": [
+        1373,
+        1214,
+        12,
+        12
+      ],
+      "block": 5,
+      "paragraph": 1,
+      "line": 1,
+      "word": 18
+    },
+    {
+      "text": "+:",
+      "confidence": 72.806328,
+      "bbox": [
+        305,
+        1406,
+        62,
+        46
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "页",
+      "confidence": 93.283142,
+      "bbox": [
+        416,
+        1406,
+        31,
+        44
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "面",
+      "confidence": 92.69574,
+      "bbox": [
+        469,
+        1400,
+        59,
+        48
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "略",
+      "confidence": 73.828377,
+      "bbox": [
+        527,
+        1384,
+        39,
+        77
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": "有",
+      "confidence": 92.942642,
+      "bbox": [
+        565,
+        1400,
+        39,
+        46
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "倾斜",
+      "confidence": 26.909149,
+      "bbox": [
+        605,
+        1396,
+        97,
+        48
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 6
+    },
+    {
+      "text": "，",
+      "confidence": 91.398796,
+      "bbox": [
+        714,
+        1384,
+        40,
+        77
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 7
+    },
+    {
+      "text": "背",
+      "confidence": 91.231209,
+      "bbox": [
+        753,
+        1394,
+        59,
+        48
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 8
+    },
+    {
+      "text": "景",
+      "confidence": 92.56501,
+      "bbox": [
+        811,
+        1384,
+        44,
+        77
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 9
+    },
+    {
+      "text": "包含",
+      "confidence": 76.333176,
+      "bbox": [
+        854,
+        1394,
+        73,
+        44
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 10
+    },
+    {
+      "text": "轻微",
+      "confidence": 95.308052,
+      "bbox": [
+        928,
+        1388,
+        207,
+        48
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 11
+    },
+    {
+      "text": "噪声",
+      "confidence": 66.996315,
+      "bbox": [
+        1051,
+        1384,
+        69,
+        77
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 12
+    },
+    {
+      "text": "。",
+      "confidence": 80.863319,
+      "bbox": [
+        1119,
+        1384,
+        20,
+        77
+      ],
+      "block": 6,
+      "paragraph": 1,
+      "line": 1,
+      "word": 13
+    },
+    {
+      "text": "eee",
+      "confidence": 52.285515,
+      "bbox": [
+        300,
+        1570,
+        2640,
+        68
+      ],
+      "block": 7,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "扫描",
+      "confidence": 95.962677,
+      "bbox": [
+        379,
+        4402,
+        120,
+        50
+      ],
+      "block": 8,
+      "paragraph": 1,
+      "line": 1,
+      "word": 1
+    },
+    {
+      "text": "样本",
+      "confidence": 96.605576,
+      "bbox": [
+        498,
+        4390,
+        70,
+        66
+      ],
+      "block": 8,
+      "paragraph": 1,
+      "line": 1,
+      "word": 2
+    },
+    {
+      "text": "页",
+      "confidence": 92.96524,
+      "bbox": [
+        589,
+        4400,
+        59,
+        46
+      ],
+      "block": 8,
+      "paragraph": 1,
+      "line": 1,
+      "word": 3
+    },
+    {
+      "text": "脚",
+      "confidence": 92.396881,
+      "bbox": [
+        647,
+        4390,
+        38,
+        66
+      ],
+      "block": 8,
+      "paragraph": 1,
+      "line": 1,
+      "word": 4
+    },
+    {
+      "text": "page",
+      "confidence": 96.95726,
+      "bbox": [
+        710,
+        4408,
+        107,
+        42
+      ],
+      "block": 8,
+      "paragraph": 1,
+      "line": 1,
+      "word": 5
+    },
+    {
+      "text": "label:",
+      "confidence": 95.491226,
+      "bbox": [
+        838,
+        4394,
+        113,
+        40
+      ],
+      "block": 8,
+      "paragraph": 1,
+      "line": 1,
+      "word": 6
+    },
+    {
+      "text": "2",
+      "confidence": 95.978439,
+      "bbox": [
+        971,
+        4394,
+        23,
+        36
+      ],
+      "block": 8,
+      "paragraph": 1,
+      "line": 1,
+      "word": 7
+    }
+  ],
+  "stderr": "Estimating resolution as 561",
+  "cer_all": 0.10240963855421686,
+  "cer_chinese": 0.08,
+  "wer_latin_number": 0.16666666666666666,
+  "critical_string_recall": 0.6666666666666666,
+  "critical_string_hits": {
+    "OCR TEST": true,
+    "English abbreviation": true,
+    "12345": true,
+    "物理页码": true,
+    "表格区域": true,
+    "A-01": false,
+    "0.95": false,
+    "表格候选单元格": false,
+    "page label": true
+  },
+  "word_count": 86,
+  "mean_word_confidence": 90.5355628488372,
+  "low_confidence_word_ratio": 0.023255813953488372,
+  "words_with_bbox_ratio": 1.0
+}

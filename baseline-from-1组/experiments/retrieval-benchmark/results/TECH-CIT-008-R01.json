@@ -1,0 +1,36 @@
+{
+  "experiment_id": "TECH-CIT-008-R01",
+  "cases": [
+    {
+      "variant": "base300",
+      "critical_string_recall_min": 0.6666666666666666,
+      "cer_max": 0.10240963855421686,
+      "action": "page_image_warning"
+    },
+    {
+      "variant": "downsample150",
+      "critical_string_recall_min": 0.6666666666666666,
+      "cer_max": 0.10843373493975904,
+      "action": "page_image_warning"
+    },
+    {
+      "variant": "blur",
+      "critical_string_recall_min": 0.6666666666666666,
+      "cer_max": 0.12048192771084337,
+      "action": "page_image_warning"
+    },
+    {
+      "variant": "low_contrast_noise",
+      "critical_string_recall_min": 0.6666666666666666,
+      "cer_max": 0.10843373493975904,
+      "action": "page_image_warning"
+    },
+    {
+      "variant": "rotate3",
+      "critical_string_recall_min": 1.0,
+      "cer_max": 0.05421686746987952,
+      "action": "page_image_warning"
+    }
+  ],
+  "scope": "Reuses OCR degradation matrix; tests citation safety policy, not OCR model ranking."
+}
