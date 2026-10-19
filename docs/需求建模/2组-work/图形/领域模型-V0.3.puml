@@ -1,0 +1,203 @@
+@startuml
+title 智能阅读器需求模型 V0.3｜领域模型（2 组修订）
+hide methods
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam defaultFontName Microsoft YaHei
+skinparam linetype ortho
+
+class Workspace {
+  workspace_id
+  policy
+  storage_quota
+}
+class User {
+  user_id
+  role
+  locale
+}
+class DocumentSpace {
+  space_id
+  name
+  authorization_scope
+}
+class Document {
+  document_id
+  title
+  format
+  sensitivity
+  authorization_status
+}
+class DocumentVersion {
+  version_id
+  source_hash
+  imported_at
+  stale
+}
+class ParseRun {
+  parser_version
+  config_hash
+  status
+  warnings
+}
+class Page {
+  physical_page
+  page_label
+  asset_ref
+}
+class ContentBlock {
+  block_id
+  block_type
+  text
+  section_path
+  char_start/end
+  bbox
+  confidence
+}
+class PermissionGrant {
+  subject
+  resource
+  action
+  policy_version
+}
+class DocumentSet {
+  set_id
+  selected_scope
+}
+class Query {
+  query_id
+  text
+  created_at
+}
+class Evidence {
+  evidence_id
+  location_status
+  contract_status
+}
+class Answer {
+  answer_id
+  status
+  model
+  needs_review
+}
+class Claim {
+  claim_id
+  text
+  support_status
+}
+class Citation {
+  citation_id
+  quote
+  page
+  locator
+}
+class Note {
+  note_id
+  type
+  body
+  tags
+}
+class ExportJob {
+  format
+  status
+}
+
+' ===== V0.3 新增类（R-06 ~ R-08）=====
+class IndexingRun {
+  run_id
+  engine_version
+  config_hash
+  status
+  warnings
+}
+class Index {
+  index_id
+  version_id
+  index_type
+  build_status
+  built_at
+  stale
+}
+class ModelConfig {
+  config_id
+  provider
+  model_name
+  routing_policy
+  allow_cloud
+}
+class Policy {
+  policy_id
+  policy_version
+  require_citation
+  require_per_file_consent
+  confidence_threshold
+  export_scope
+}
+class Notification {
+  notification_id
+  type
+  resource_ref
+  created_at
+  read
+}
+class AuditEvent {
+  event_id
+  event_type
+  actor
+  resource_ref
+  occurred_at
+}
+' ===== 新增类结束 =====
+
+Workspace "1" o-- "0..*" DocumentSpace
+DocumentSpace "1" o-- "0..*" Document
+Document "1" o-- "1..*" DocumentVersion
+DocumentVersion "1" o-- "0..*" ParseRun
+DocumentVersion "1" o-- "1..*" Page
+Page "1" o-- "0..*" ContentBlock
+DocumentSpace "1" o-- "0..*" PermissionGrant
+DocumentSet "1" o-- "1..*" DocumentVersion
+User "1" -- "0..*" Query
+Query "0..*" --> "0..1" Answer
+Answer "1" o-- "1..*" Claim
+Claim "1" o-- "0..*" Citation
+Citation "1" --> "1" Evidence
+Evidence "1" --> "1" ContentBlock
+User "1" -- "0..*" Note
+Note "0..*" --> "0..1" ContentBlock
+Note "0..*" --> "0..1" Answer
+User "1" -- "0..*" ExportJob
+ExportJob "1" --> "0..*" Citation
+PermissionGrant ..> DocumentVersion : filters
+Answer ..> PermissionGrant : gate
+Answer ..> Evidence : requires contract
+
+' ===== V0.3 修订关联（R-03 ~ R-08）=====
+User "0..*" -- "1..*" Workspace : 成员
+Query "0..*" --> "0..1" DocumentSet
+ExportJob "0..*" --> "0..*" Note
+DocumentVersion "1" o-- "0..*" IndexingRun
+IndexingRun "1" --> "0..*" Index
+Index "0..*" --> "1..*" ContentBlock : 索引条目
+Workspace "1" o-- "0..*" Policy
+Workspace "1" o-- "0..*" ModelConfig
+Answer "0..*" --> "0..1" ModelConfig
+PermissionGrant ..> Policy : 依据
+User "1" -- "0..*" Notification
+Notification "0..*" --> "0..1" Answer
+Notification "0..*" --> "0..1" ParseRun
+User "1" -- "0..*" AuditEvent : 触发
+AuditEvent "0..*" --> "0..1" Answer : 记录
+AuditEvent "0..*" --> "0..1" ExportJob : 记录
+' ===== 修订关联结束 =====
+
+legend right
+  V0.3 修订（详见 V0.3-需求模型.md §1）：
+  R-03 User—Workspace：组合改为多对多关联
+  R-04 Query—DocumentSet：1 改为 0..1
+  R-05 ExportJob—Note：改为多对多
+  R-06 新增 IndexingRun / Index
+  R-07 新增 ModelConfig / Policy
+  R-08 新增 Notification / AuditEvent
+endlegend
+@enduml

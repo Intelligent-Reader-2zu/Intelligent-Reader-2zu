@@ -1,0 +1,105 @@
+@startuml
+title 智能阅读器需求模型 V0.3｜关键流程·四泳道（2 组新增 A8）
+skinparam shadowing false
+skinparam defaultFontName Microsoft YaHei
+skinparam activity {
+  BackgroundColor #EAF3F8
+  BorderColor #1F4E78
+  FontColor #1F2937
+  DiamondBackgroundColor #EAF3F8
+  DiamondBorderColor #1F4E78
+}
+
+' 基线：1 组《需求模型-关键流程.puml》（V0.2，单张活动图，无泳道）
+' 本图只做泳道划分与状态名对齐，判断条件与活动顺序一律照抄原图，不改语义
+
+|用户|
+start
+:用户选择文档;
+
+|系统|
+:登记 document_id、source_hash、敏感级别和授权状态;
+:创建 DocumentVersion 和 ParseRun;
+
+if (格式和权限允许处理?) then (是)
+  |本地解析|
+  :本地解析/OCR/结构识别;
+  :生成页面、块、章节、bbox、offset、confidence;
+  |系统|
+  if (结构或 OCR 低置信?) then (是)
+    :标记 needs_review / ocr_low_confidence;
+    :保留原页或截图;
+  else (否)
+    :建立全文/向量索引;
+  endif
+else (否)
+  |系统|
+  :显示失败原因;
+  stop
+endif
+
+|用户|
+:用户在线或离线阅读、检索或提交问题;
+
+|系统|
+if (当前为离线状态?) then (是)
+  :打开已导入文档并提供本地阅读/基础检索;
+  :标记 AI 联网能力不可用;
+  stop
+else (否)
+  :继续在线 AI 请求;
+  :按权限和选定文档范围过滤证据;
+  if (证据契约完整且允许外发?) then (是)
+    |用户|
+    :展示拟外发文件/证据范围、模型服务和用途;
+    |系统|
+    if (用户逐文件确认外发?) then (是)
+      :记录本次授权并组装 Evidence Contract;
+      |云端模型|
+      :调用云端模型适配器;
+      |系统|
+      if (模型成功且返回格式合法?) then (是)
+        :逐条校验 claim 与 citation;
+        if (引用支持且定位有效?) then (是)
+          |用户|
+          :展示回答、来源、页码/章节/原文高亮;
+        else (否)
+          |系统|
+          :标记 needs_human_review 或 refused;
+          |用户|
+          :提供原文/检索结果;
+        endif
+      else (否)
+        |系统|
+        :记录失败/超时;
+        |用户|
+        :回退原文、检索或人工复核;
+      endif
+    else (否)
+      |系统|
+      :不调用云端模型;
+      |用户|
+      :展示本地证据、原文或拒答;
+    endif
+  else (否)
+    |用户|
+    :展示本地证据、原文或拒答;
+  endif
+endif
+
+|用户|
+:用户保存批注/笔记或导出;
+stop
+
+legend right
+  依据
+  · 基线图：1 组《需求模型-关键流程.puml》（V0.2）
+  · 泳道划分参照 SRS §2「用户与系统边界」的参与者定义
+  相对基线的改动（仅此两项）
+  · 增加四条泳道：用户 / 系统 / 本地解析 / 云端模型
+  · 状态名对齐冻结口径：原图 low_confidence → ocr_low_confidence
+    （见《编号规则与术语表》§1.4）
+  未改动
+  · 全部判断条件文本、活动顺序、分支方向与基线图一致
+endlegend
+@enduml

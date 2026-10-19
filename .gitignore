@@ -19,3 +19,12 @@ docs/需求建模/2组-work/访谈/raw-local/
 *.m4a
 *.mp3
 *样本*
+
+# 1 组仓库 .git 的本地备份，不入库
+.git-from-1组/
+
+# 本地 PlantUML 插件的渲染产物，不入库
+# 最终出图以华为 CodeArts Modeling 平台为准，本地产物仅作自查
+out/
+**/out/
+
