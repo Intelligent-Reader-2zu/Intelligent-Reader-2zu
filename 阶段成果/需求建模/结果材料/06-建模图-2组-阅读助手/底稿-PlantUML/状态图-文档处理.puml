@@ -1,0 +1,52 @@
+@startuml
+title 智能笔记助手需求模型 V0.3｜文档处理状态图（2 组新增 A1）
+skinparam shadowing false
+skinparam defaultFontName Microsoft YaHei
+skinparam state {
+  BackgroundColor #EAF3F8
+  BorderColor #1F4E78
+  FontColor #1F2937
+}
+
+' 依据：需求模型 V0.2 §8 关键状态；SPEC V1.0 §3.1 处理状态、§3.3 验收条件
+' 状态名冻结于《编号规则与术语表》§1.4，不得自造
+
+[*] --> registered : 用户明确选择文件
+
+registered --> queued : 登记文档与版本，创建 ParseRun
+queued --> processing : 调度解析任务
+processing --> parsed : 生成 IR（Page / ContentBlock / bbox / offset / confidence）
+parsed --> indexed : 建立全文索引与可选向量索引
+
+' ---- 异常分支（SPEC §3.1 列举的 6 个异常状态）----
+processing --> ocr_low_confidence : 扫描件 OCR 低置信
+processing --> layout_uncertain : 双栏 / 表格 / 公式结构不确定
+processing --> failed : 解析异常
+parsed --> needs_review : 存在低置信内容块
+ocr_low_confidence --> needs_review : 保留原页或截图
+layout_uncertain --> needs_review : 保留原页或截图
+needs_review --> indexed : 人工复核通过
+failed --> queued : 用户重试（记录错误码与重试次数）
+registered --> deleted : 删除文档
+indexed --> deleted : 删除文档
+
+' ---- 撤权 / 版本变化的失效传播（BR06）----
+indexed --> stale : 版本变化 / 撤权 / 删除传播未完成
+stale --> queued : 重新解析与索引
+
+indexed --> [*]
+deleted --> [*]
+
+legend right
+  依据
+  · 需求模型 V0.2 §8「文档处理状态」
+  · SPEC V1.0 §3.1「处理状态」、§3.3「验收条件」
+  · BR06 索引与引用的 stale 传播
+  说明
+  · 正常流转 5 态：registered → queued → processing → parsed → indexed
+  · 异常态 6 个：needs_review / ocr_low_confidence /
+    layout_uncertain / failed / stale / deleted
+  · failed → queued 的重试依据 SPEC §3.3「用户可重试」
+  · 异常态均可终止或经复核回到主流程，本图只画主要回路
+endlegend
+@enduml

@@ -1,0 +1,56 @@
+@startuml
+title 智能笔记助手需求模型 V0.3｜活动图·笔记与导出（2 组新增 A7）
+skinparam shadowing false
+skinparam defaultFontName Microsoft YaHei
+skinparam activity {
+  BackgroundColor #EAF3F8
+  BorderColor #1F4E78
+  FontColor #1F2937
+  DiamondBackgroundColor #EAF3F8
+  DiamondBorderColor #1F4E78
+}
+
+' 依据：需求模型 V0.2 §5 UC09 / UC10；SPEC V1.0 §6 笔记与导出模块
+' 规则依据：BR09（保留版本关联）、BR14（源文件只读、写入指定位置）、NFR-05
+
+start
+:选中文本、回答或引用;
+
+' ---- 笔记路径 ----
+:创建 Note（关联 user_id、document_version_id、block_id 或 answer_id）;
+if (原文版本已变化?) then (是)
+  :标记关联失效，提示用户复核（BR09）;
+else (否)
+  :保存笔记与标签;
+endif
+
+' ---- 导出路径 ----
+:选择导出范围（摘要 / 笔记 / 引用）、格式与目标路径;
+if (目标路径可写且已授权?) then (是)
+  :创建 ExportJob（format、scope、target_path、status、created_at）;
+  :写入前对源文件做差分检查;
+  :写入导出文件（保留原文位置、来源文档、版本与引用）;
+  :写入后再次对源文件做差分检查（BR14）;
+  if (源文件未被修改?) then (是)
+    :显示写入结果与 target_path;
+  else (否)
+    :回滚导出并报错;
+  endif
+else (否)
+  :提示路径无权限，不写入;
+  :记录 ExportJob.status = failed 与错误码;
+endif
+
+stop
+
+legend right
+  依据
+  · 需求模型 V0.2 §5 UC09 创建批注/笔记、UC10 导出阅读成果
+  · SPEC V1.0 §6「笔记与导出模块」
+  · BR09 笔记与导出保留原文位置、来源与版本关联，失效时提示复核
+  · BR14 不得静默修改源文件，衍生文件写入用户指定位置并显示结果
+  说明
+  · ExportJob 的 format / scope / target_path / status / created_at / error 字段见 SPEC §6
+  · 源文件差分检查是"只读源文件"的可验证手段
+endlegend
+@enduml

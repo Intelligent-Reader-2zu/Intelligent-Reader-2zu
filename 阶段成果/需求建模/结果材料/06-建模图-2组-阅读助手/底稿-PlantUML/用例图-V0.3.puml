@@ -1,0 +1,65 @@
+@startuml
+title 智能笔记助手需求模型 V0.3｜用例图（2 组修订）
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam defaultFontName Microsoft YaHei
+actor "阅读者\nReader" as Reader
+actor "工作区所有者\nWorkspace Owner" as Owner
+actor "本地解析/OCR\nParser" as Parser
+actor "云端模型服务\nAuthorized Model" as Model
+actor "导出/通知目标" as Target
+rectangle "智能笔记助手" {
+  usecase "导入文档" as UC01
+  usecase "处理并索引文档" as UC02
+  usecase "管理文档空间" as UC03
+  usecase "在线/离线阅读文档与目录" as UC04
+  usecase "全文/语义/模糊检索" as UC05
+  usecase "对文档或选中文本提问" as UC06
+  usecase "生成摘要/要点" as UC07
+  usecase "核验回答引用" as UC08
+  usecase "创建批注/笔记" as UC09
+  usecase "导出阅读成果" as UC10
+  usecase "配置模型与隐私边界" as UC11
+  usecase "查看处理/核验通知" as UC12
+  usecase "确认本次外发文件" as UploadConfirm
+  usecase "执行权限与证据门控" as Gate
+  usecase "执行引用校验" as Cite
+  usecase "原文/检索/人工复核降级" as Fallback
+}
+Reader --> UC01
+Reader --> UC03
+Reader --> UC04
+Reader --> UC05
+Reader --> UC06
+Reader --> UC07
+Reader --> UC08
+Reader --> UC09
+Reader --> UC10
+Reader --> UC12
+Owner --> UC11
+Owner --> UC03
+Parser --> UC02
+Model --> UC06
+Model --> UC07
+Target --> UC10
+UC06 ..> Gate : <<include>>
+UC07 ..> Gate : <<include>>
+UC06 ..> Cite : <<include>>
+UC07 ..> Cite : <<include>>
+UC06 ..> UploadConfirm : <<include>>
+UC07 ..> UploadConfirm : <<include>>
+UC06 ..> Fallback : <<extend>>
+UC07 ..> Fallback : <<extend>>
+' ===== V0.3 修订区 =====
+UC01 ..> UC02 : <<include>>
+UC08 ..> UC06 : <<extend>>
+UC08 ..> UC07 : <<extend>>
+' ===== 修订结束 =====
+legend right
+  V0.3 相对 V0.2 的修订（详见 11-需求模型V0.3-2组-阅读助手.md §1）：
+  R-01 导入→处理：extend 改为 include
+  R-02 核验引用宿主改为 UC06/UC07；
+       移除原 UC09 ..> UC08（笔记与引用为数据关联）
+endlegend
+@enduml

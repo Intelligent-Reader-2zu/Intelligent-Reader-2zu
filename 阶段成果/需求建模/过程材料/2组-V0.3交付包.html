@@ -1,0 +1,7597 @@
+<h1 id="v03-2">智能笔记助手 · 需求建模 V0.3 交付包（2 组）</h1>
+<blockquote>
+<p><strong>本件为 2 组在 1 组建模基线上完成的 V0.3 增量交付全文合并稿。</strong> 全部内容按章节顺序排列，可直接通读或按目录跳转。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>交付方</td>
+<td>2 组</td>
+</tr>
+<tr>
+<td>组员</td>
+<td>郭谦（组长）、程禹轩、朱紫轩、廖欣豪、汪昊</td>
+</tr>
+<tr>
+<td>交付日期</td>
+<td>2026-10-20</td>
+</tr>
+<tr>
+<td>基线</td>
+<td>1 组《需求模型 V0.2》+《SRS V1.0》+《SPEC V1.0》+《需求建模启动包》</td>
+</tr>
+<tr>
+<td>分支</td>
+<td><code>2zu/gq/g6-g7-codearts</code>（提交 <code>84485f9</code>）</td>
+</tr>
+<tr>
+<td>图件</td>
+<td>11 张 UML 图（底稿 <code>.puml</code> + 渲染 PNG，见第 9 部分）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_1">本包阅读顺序建议</h2>
+<ol>
+<li><strong>只想看"2 组做了什么"</strong> → 第 1 部分（交付总览与修改说明）＋ 第 9 部分（11 张图）</li>
+<li><strong>要看模型正文</strong> → 第 2 部分（需求模型 V0.3）＋ 第 3 部分（编号口径）</li>
+<li><strong>要看建模成果的完备性</strong> → 第 4 / 5 / 6 / 7 部分（用例规约 / RTM / TBD 收口 / 错误码表）</li>
+<li><strong>要看对评审问题的正面回答</strong> → 第 8 部分（9 问逐条作答）</li>
+<li><strong>要裁决或需要 1 组配合的事项</strong> → 第 11 部分（SRS 返修清单）＋ 第 12 部分（R-02 裁决材料）</li>
+<li><strong>过程与规范留存</strong> → 附录 A–D</li>
+</ol>
+<h2 id="_2">目录</h2>
+<table>
+<thead>
+<tr>
+<th>章节</th>
+<th>内容</th>
+<th>来源文件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第 1 部分</td>
+<td>交付总览与修改说明</td>
+<td><code>2组修改说明.md</code></td>
+</tr>
+<tr>
+<td>第 2 部分</td>
+<td>需求模型 V0.3（增量修订正文）</td>
+<td><code>11-需求模型V0.3-2组-阅读助手.md</code></td>
+</tr>
+<tr>
+<td>第 3 部分</td>
+<td>编号规则与术语表（口径冻结件）</td>
+<td><code>编号规则与术语表.md</code></td>
+</tr>
+<tr>
+<td>第 4 部分</td>
+<td>用例规约 UC01–UC12</td>
+<td><code>12-用例规约-2组-阅读助手.md</code></td>
+</tr>
+<tr>
+<td>第 5 部分</td>
+<td>需求追踪矩阵（RTM）</td>
+<td><code>13-需求追踪矩阵-2组-阅读助手.md</code></td>
+</tr>
+<tr>
+<td>第 6 部分</td>
+<td>TBD 收口表</td>
+<td><code>14-TBD收口表-2组-阅读助手.md</code></td>
+</tr>
+<tr>
+<td>第 7 部分</td>
+<td>SPEC 错误码表（V0.3 附录 A）</td>
+<td><code>15-SPEC错误码表-2组-阅读助手.md</code></td>
+</tr>
+<tr>
+<td>第 8 部分</td>
+<td>评审入口问题回答（9 问）</td>
+<td><code>16-评审入口问题回答-2组-阅读助手.md</code></td>
+</tr>
+<tr>
+<td>第 9 部分</td>
+<td>UML 图件（11 张，渲染 PNG）</td>
+<td><code>06-建模图-2组-阅读助手/导出图-PNG/*.png</code></td>
+</tr>
+<tr>
+<td>第 10 部分</td>
+<td>建模图件清单</td>
+<td><code>06-建模图-2组-阅读助手/出图清单-2组-阅读助手.md</code></td>
+</tr>
+<tr>
+<td>第 11 部分</td>
+<td>SRS V1.1 返修清单（交 1 组）</td>
+<td><code>文档/SRS-V1.1返修清单.md</code></td>
+</tr>
+<tr>
+<td>第 12 部分</td>
+<td>R-02 裁决材料（评审会一页纸）</td>
+<td><code>文档/R-02裁决材料.md</code></td>
+</tr>
+<tr>
+<td>附录 A</td>
+<td>版本记录</td>
+<td><code>版本记录.md</code></td>
+</tr>
+<tr>
+<td>附录 B</td>
+<td>2 组 Git 协作规范</td>
+<td><code>2组Git协作规范.md</code></td>
+</tr>
+<tr>
+<td>附录 C</td>
+<td>AI 使用说明</td>
+<td><code>09-AI使用声明-2组-阅读助手.md</code></td>
+</tr>
+<tr>
+<td>附录 D</td>
+<td>2 组建模任务分工书</td>
+<td><code>2组建模任务分工书.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">交付边界声明</h2>
+<ul>
+<li>第 2–8、11、12 部分与附录 A–D 均以 <strong>Markdown 源文件</strong>为准，本包为其合并呈现；</li>
+<li>第 9 部分图件为 <strong>PlantUML 底稿的渲染导出件</strong>；底稿（<code>.puml</code>）与导出图（<code>.png</code>）一一对应、可追溯，图件清单与验收标准见第 10 部分；</li>
+<li><strong>未纳入本包</strong>：访谈录音与原始纪要（隐私合规，见附录 C 与项目管理约定）。</li>
+</ul>
+<div class="pagebreak"></div>
+
+<h1 id="1">第 1 部分 · 交付总览与修改说明</h1>
+<blockquote>
+<p>来源文件：<code>2组修改说明.md</code></p>
+</blockquote>
+<h1 id="2">智能笔记助手需求建模 · 2 组修改说明</h1>
+<ul>
+<li>文档版本：V1.2</li>
+<li>编制：郭谦（2 组组长）</li>
+<li>日期：2026-10-17（修订 2026-10-19 / 2026-10-20）</li>
+<li>基线：1 组《需求模型 V0.2》+《SRS V1.0》+《SPEC V1.0》</li>
+<li>配套版本记录：<a href="./版本记录.md">版本记录.md</a></li>
+</ul>
+<hr />
+<h2 id="1_1">1. 说明范围</h2>
+<p>本说明用于向评审说明：<strong>2 组相对 1 组建模基线改了什么、为什么改、依据是什么</strong>，以及<strong>哪些缺口已识别但尚未修改</strong>。</p>
+<p>2 组的定位是<strong>在前期共同基础材料上做增量迭代</strong>，不是另起一套模型。所有对前期材料的改动都可追溯到具体条目，未改动部分保持原样并显式声明。</p>
+<hr />
+<h2 id="2-wp1">2. 已完成的修改（WP1）</h2>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>位置</th>
+<th>基线原状</th>
+<th>修改后</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R-01</td>
+<td>用例图</td>
+<td><code>UC02 ..&gt; UC01 : &lt;&lt;extend&gt;&gt;</code></td>
+<td><code>UC01 ..&gt; UC02 : &lt;&lt;include&gt;&gt;</code></td>
+<td>导入必然触发处理与索引，原写法与 UC02 前置条件"文档已登记"矛盾</td>
+</tr>
+<tr>
+<td>R-02</td>
+<td>用例图</td>
+<td><code>UC09 ..&gt; UC08 : &lt;&lt;extend&gt;&gt;</code></td>
+<td>移除；改为 <code>UC08 ..&gt; UC06/UC07 : &lt;&lt;extend&gt;&gt;</code></td>
+<td>核验引用的宿主是被核验的回答用例；笔记与引用是数据关联而非行为扩展</td>
+</tr>
+<tr>
+<td>R-03</td>
+<td>领域模型</td>
+<td><code>Workspace "1" o-- "1..*" User</code></td>
+<td><code>User "0..*" -- "1..*" Workspace : 成员</code></td>
+<td>用户是系统一等实体，不应被工作区独占组合</td>
+</tr>
+<tr>
+<td>R-04</td>
+<td>领域模型</td>
+<td><code>Query "1" --&gt; "1" DocumentSet</code></td>
+<td><code>Query "0..*" --&gt; "0..1" DocumentSet</code></td>
+<td>单文档问答不构造文档集合</td>
+</tr>
+<tr>
+<td>R-05</td>
+<td>领域模型</td>
+<td><code>ExportJob "1" --&gt; "1..*" Note</code></td>
+<td><code>ExportJob "0..*" --&gt; "0..*" Note</code></td>
+<td>仅导出摘要/引用时导出任务不含笔记</td>
+</tr>
+<tr>
+<td>R-06</td>
+<td>领域模型</td>
+<td>无索引类</td>
+<td>新增 <code>IndexingRun</code>、<code>Index</code></td>
+<td>BR06 的 stale 传播需索引级对象承载；NFR-05 溯源要求</td>
+</tr>
+<tr>
+<td>R-07</td>
+<td>领域模型</td>
+<td>无模型/策略类</td>
+<td>新增 <code>ModelConfig</code>、<code>Policy</code></td>
+<td>UC11、BR02、BR12、FR-09 无法落在 <code>Workspace.policy</code> 单个字符串上</td>
+</tr>
+<tr>
+<td>R-08</td>
+<td>领域模型</td>
+<td>无通知/审计类</td>
+<td>新增 <code>Notification</code>、<code>AuditEvent</code></td>
+<td>UC12、BR12 的"本次确认"须可追溯</td>
+</tr>
+</tbody>
+</table>
+<p>逐条修订的完整论证见 <a href="../结果材料/11-需求模型V0.3-2组-阅读助手.md"><code>11-需求模型V0.3-2组-阅读助手.md</code></a> §1。</p>
+<p><strong>修改性质分布</strong>：关系/多重度修正 5 条（R-01 ~ R-05），补全缺失领域对象 3 条（R-06 ~ R-08）。<strong>没有新增用例、没有新增业务规则、没有改动需求编号体系</strong>。</p>
+<hr />
+<h2 id="3">3. 未修改的部分（显式声明）</h2>
+<p>以下基线内容在 V0.3 中<strong>保持原样</strong>，2 组不做主张：</p>
+<table>
+<thead>
+<tr>
+<th>内容</th>
+<th>状态</th>
+<th>后续归属</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>§4 参与者（5 个 Actor 及其定义）</td>
+<td>未改动</td>
+<td>—</td>
+</tr>
+<tr>
+<td>§6 业务规则 BR01–BR15</td>
+<td><strong>内容未改动</strong>；编号口径已定（以 V0.2 为准，术语表 §1.2b）</td>
+<td>SRS 返修时按 RTM §6 返修清单恢复 7 条独立编号</td>
+</tr>
+<tr>
+<td>§9 非功能需求 NFR-01–NFR-13</td>
+<td><strong>内容未改动</strong>；新增 <code>NFR-14</code>（术语表 §1.3）</td>
+<td>SRS 返修时映射 SRS NFR-06 → <code>NFR-14</code></td>
+</tr>
+<tr>
+<td>§10 功能需求 FR-01–FR-12</td>
+<td><strong>内容未改动</strong>；编号口径已定（以 V0.2 为准，术语表 §1.2）</td>
+<td>WP-B</td>
+</tr>
+<tr>
+<td>§11 建模待验证清单 TBD-1–TBD-12</td>
+<td>未改动</td>
+<td>G5 已给验证方案，见 <a href="../结果材料/14-TBD收口表-2组-阅读助手.md"><code>14-TBD收口表-2组-阅读助手.md</code></a></td>
+</tr>
+<tr>
+<td>16 个原有领域类及其属性</td>
+<td>未改动</td>
+<td>—</td>
+</tr>
+<tr>
+<td>三张基线图中的「关键流程活动图」</td>
+<td>未改动</td>
+<td>WP-A 加泳道</td>
+</tr>
+<tr>
+<td>SRS V1.0 / SPEC V1.0 正文</td>
+<td>未改动</td>
+<td>WP-B</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4">4. 已识别缺口的处理状态</h2>
+<p>以下缺口在基线复核中已定位。原计划分配给 2 组其他工作包，<strong>2026-10-19 起由组长按 G4/G5/G6 收回自做，当前状态如下</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>缺口</th>
+<th>说明</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>缺状态图</td>
+<td>基线只在模型与 SPEC 中以文字描述状态机，无对应图</td>
+<td><strong>已补齐</strong>：<a href="../结果材料/06-建模图-2组-阅读助手/底稿-PlantUML/状态图-文档处理.puml"><code>图形/状态图-文档处理.puml</code></a>、<a href="../结果材料/06-建模图-2组-阅读助手/底稿-PlantUML/状态图-回答生成.puml"><code>图形/状态图-回答生成.puml</code></a>（G4，A1、A2）</td>
+</tr>
+<tr>
+<td>缺时序图</td>
+<td>SPEC §7 定义了 <code>/answers</code> 事件流，无承载图</td>
+<td><strong>已补齐</strong>：<a href="./图形"><code>图形/</code></a> 下 3 张时序图（G4，A3–A5）</td>
+</tr>
+<tr>
+<td>活动图不全</td>
+<td>M4 要求三张活动图，基线仅一张混编图</td>
+<td><strong>已补齐</strong>：<a href="./图形/活动图-检索.puml"><code>图形/活动图-检索.puml</code></a>、<a href="./图形/活动图-笔记与导出.puml"><code>图形/活动图-笔记与导出.puml</code></a>、<a href="./图形/活动图-关键流程带泳道.puml"><code>图形/活动图-关键流程带泳道.puml</code></a>（G4，A6–A8）</td>
+</tr>
+<tr>
+<td>用例规约残缺</td>
+<td>12 个用例仅写了 5 条简述，UC03/04/11/12 缺失</td>
+<td><strong>已补齐</strong>：<a href="../结果材料/12-用例规约-2组-阅读助手.md"><code>12-用例规约-2组-阅读助手.md</code></a>（G5 + W2，UC01–UC12 <strong>全部完整规约</strong>，6 处 <code>【待补】</code> 已于 2026-10-20 补满）</td>
+</tr>
+<tr>
+<td>评审入口问题无回答件</td>
+<td>基线《需求建模启动包》§5 列了 9 个必答评审问题，但只有问题、没有回答件</td>
+<td><strong>已补齐</strong>：<a href="../结果材料/16-评审入口问题回答-2组-阅读助手.md"><code>16-评审入口问题回答-2组-阅读助手.md</code></a>（W1，9 问逐条含结论 / 证据 / 残余）</td>
+</tr>
+<tr>
+<td>编号冲突（FR/BR/NFR）</td>
+<td>FR、BR 同号不同义；SRS NFR-06 在模型无对应项</td>
+<td><strong>已裁决</strong>（2026-10-19，1 组确认以 V0.2 为准；NFR-06 新增 <code>NFR-14</code>），口径见术语表 §1.2/§1.2b/§1.3</td>
+</tr>
+<tr>
+<td>追踪矩阵缺失</td>
+<td>基线 §10 追踪为一段文字，非矩阵表</td>
+<td><strong>已补齐</strong>：<a href="../结果材料/13-需求追踪矩阵-2组-阅读助手.md"><code>13-需求追踪矩阵-2组-阅读助手.md</code></a>（G5，FR 12 行 + NFR 14 行）</td>
+</tr>
+<tr>
+<td>TBD 无验证方案</td>
+<td>12 项待验证项未给验证方式与责任人</td>
+<td><strong>已补齐</strong>：<a href="../结果材料/14-TBD收口表-2组-阅读助手.md"><code>14-TBD收口表-2组-阅读助手.md</code></a>（G5）</td>
+</tr>
+<tr>
+<td>SPEC 错误码未定义</td>
+<td>SPEC §3.1/§6/§7 要求使用错误码，但全文无任何取值</td>
+<td><strong>已补齐</strong>：<a href="../结果材料/15-SPEC错误码表-2组-阅读助手.md"><code>15-SPEC错误码表-2组-阅读助手.md</code></a>（G5，7 段 44 条）</td>
+</tr>
+<tr>
+<td>无界面模型</td>
+<td>基线未涉及伪前端页面，无任何界面件</td>
+<td><strong>已补齐</strong>：<a href="../结果材料/06-建模图-2组-阅读助手/底稿-PlantUML/界面导航图-V0.3.puml"><code>06-建模图-2组-阅读助手/底稿-PlantUML/界面导航图-V0.3.puml</code></a>（G6，A9：9 个页面可达关系 + 门控控件落点）</td>
+</tr>
+<tr>
+<td>无用户访谈证据</td>
+<td>基线交付材料中 4 份为空白模板，无可追溯访谈记录</td>
+<td>WP-D</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5">5. 需要评审裁决的一点</h2>
+<p><strong>R-02</strong> 的处理方式超出了原计划中"修正关系方向"的表述——UC09 与 UC08 之间是<strong>关系类型误用</strong>而非方向错误，因此按语义重挂而非简单反向。</p>
+<ul>
+<li>采纳本方案：<code>UC08 ..&gt; UC06/UC07 : &lt;&lt;extend&gt;&gt;</code>（推荐）</li>
+<li>保守方案：仅反向为 <code>UC08 ..&gt; UC09 : &lt;&lt;extend&gt;&gt;</code></li>
+</ul>
+<p>请评审会确认采用哪一种。<strong>完整的两方案对比、问题诊断与建议见 <a href="../结果材料/19-R-02裁决材料-2组-阅读助手.md"><code>文档/R-02裁决材料.md</code></a>（一页纸，评审会可直接裁决）。</strong></p>
+<hr />
+<h2 id="6">6. 本轮交付物清单</h2>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../结果材料/11-需求模型V0.3-2组-阅读助手.md"><code>11-需求模型V0.3-2组-阅读助手.md</code></a></td>
+<td>主交付物：8 条修订逐条说明</td>
+</tr>
+<tr>
+<td><a href="../结果材料/06-建模图-2组-阅读助手/底稿-PlantUML/用例图-V0.3.puml"><code>06-建模图-2组-阅读助手/底稿-PlantUML/用例图-V0.3.puml</code></a></td>
+<td>修订后用例图源文件</td>
+</tr>
+<tr>
+<td><a href="../结果材料/06-建模图-2组-阅读助手/底稿-PlantUML/领域模型-V0.3.puml"><code>06-建模图-2组-阅读助手/底稿-PlantUML/领域模型-V0.3.puml</code></a></td>
+<td>修订后领域模型源文件</td>
+</tr>
+<tr>
+<td><a href="../结果材料/06-建模图-2组-阅读助手/底稿-PlantUML/界面导航图-V0.3.puml"><code>06-建模图-2组-阅读助手/底稿-PlantUML/界面导航图-V0.3.puml</code></a></td>
+<td>G6 新增：界面导航图（A9），基线完全未做</td>
+</tr>
+<tr>
+<td><a href="../结果材料/12-用例规约-2组-阅读助手.md"><code>12-用例规约-2组-阅读助手.md</code></a></td>
+<td>G5 + W2：UC01–UC12 全部完整规约</td>
+</tr>
+<tr>
+<td><a href="../结果材料/16-评审入口问题回答-2组-阅读助手.md"><code>16-评审入口问题回答-2组-阅读助手.md</code></a></td>
+<td>W1：启动包 §5 的 9 个评审问题逐条回答</td>
+</tr>
+<tr>
+<td><a href="../结果材料/13-需求追踪矩阵-2组-阅读助手.md"><code>13-需求追踪矩阵-2组-阅读助手.md</code></a></td>
+<td>G5：FR 12 条 + NFR 14 条追踪矩阵，含 SRS 返修清单</td>
+</tr>
+<tr>
+<td><a href="../结果材料/14-TBD收口表-2组-阅读助手.md"><code>14-TBD收口表-2组-阅读助手.md</code></a></td>
+<td>G5：TBD-1 ~ TBD-12 的验证方案与建模期口径</td>
+</tr>
+<tr>
+<td><a href="../结果材料/15-SPEC错误码表-2组-阅读助手.md"><code>15-SPEC错误码表-2组-阅读助手.md</code></a></td>
+<td>G5：SPEC V1.1 附录 A，44 条错误码</td>
+</tr>
+<tr>
+<td><a href="../结果材料/18-SRS-V1.1返修清单-2组-阅读助手.md"><code>文档/SRS-V1.1返修清单.md</code></a></td>
+<td>W4：交 1 组的 SRS 返修清单（3 必改 + 6 建议）</td>
+</tr>
+<tr>
+<td><a href="../结果材料/19-R-02裁决材料-2组-阅读助手.md"><code>文档/R-02裁决材料.md</code></a></td>
+<td>W5：评审会一页纸裁决件</td>
+</tr>
+<tr>
+<td><a href="../结果材料/06-建模图-2组-阅读助手/出图清单-2组-阅读助手.md"><code>06-建模图-2组-阅读助手/出图清单-2组-阅读助手.md</code></a></td>
+<td>G6：本地底稿 ↔ CodeArts 工程的出图登记与落地方案</td>
+</tr>
+<tr>
+<td><a href="./2组修改说明.md"><code>2组修改说明.md</code></a></td>
+<td>本文件</td>
+</tr>
+<tr>
+<td><a href="./版本记录.md"><code>版本记录.md</code></a></td>
+<td>全部交付物的版本流水</td>
+</tr>
+<tr>
+<td><a href="../结果材料/09-AI使用声明-2组-阅读助手.md"><code>09-AI使用声明-2组-阅读助手.md</code></a></td>
+<td>AI 辅助范围与人工确认边界</td>
+</tr>
+<tr>
+<td><a href="../结果材料/07-需求建模汇报PPT-2组-阅读助手.pptx"><code>07-需求建模汇报PPT-2组-阅读助手.pptx</code></a></td>
+<td>2 组版汇报（中间版）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><code>.puml</code> 为源文件，正式出图需按课程要求导入<strong>华为 CodeArts Modeling</strong> 建档导出 PNG/SVG，对应登记见 <a href="../结果材料/06-建模图-2组-阅读助手/出图清单-2组-阅读助手.md"><code>06-建模图-2组-阅读助手/出图清单-2组-阅读助手.md</code></a>（G6）。</p>
+</blockquote>
+<div class="pagebreak"></div>
+
+<h1 id="2-v03">第 2 部分 · 需求模型 V0.3（增量修订正文）</h1>
+<blockquote>
+<p>来源文件：<code>11-需求模型V0.3-2组-阅读助手.md</code></p>
+</blockquote>
+<h1 id="v032">智能笔记助手需求模型 V0.3（2 组修订版）</h1>
+<ul>
+<li>版本：V0.3</li>
+<li>基线：1 组《需求模型 V0.2》，来源 <code>阶段成果/需求建模/旧版废稿/需求模型V0.1.md</code>（1 组仓库提交 <code>899957a</code>）</li>
+<li>修订：2 组 · 郭谦（WP1）</li>
+<li>日期：2026-10-17</li>
+<li>本轮范围：<strong>只修订参与者边界对应的用例图关系（§2）与领域模型（§3）</strong>。V0.2 的 §6 业务规则（BR01–BR15）、§9 非功能需求（NFR-01–NFR-13）、§10 功能需求（FR-01–FR-12）、§11 待验证清单（TBD-1–TBD-12）<strong>本轮保持原样</strong>，由 WP-B（朱紫轩）负责后续修订。（编号写法按术语表 §1.3 统一为带连字符形式，V0.2 原文写作 <code>NFR01</code>。）</li>
+</ul>
+<blockquote>
+<p>修订原则：一切以 V0.2 为唯一基线，<strong>不自造概念、状态名与编号</strong>；每条修订都必须能指回 V0.2 的具体问题，并给出依据。</p>
+</blockquote>
+<hr />
+<h2 id="1_2">1. 修订总览</h2>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>位置</th>
+<th>V0.2 原状</th>
+<th>V0.3 修订后</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R-01</td>
+<td>用例图</td>
+<td><code>UC02 ..&gt; UC01 : &lt;&lt;extend&gt;&gt;</code></td>
+<td><code>UC01 ..&gt; UC02 : &lt;&lt;include&gt;&gt;</code></td>
+<td>导入文档<strong>必然</strong>触发处理与索引，属包含关系。原写法使"处理并索引"变成可选扩展，与 UC02 前置条件"文档已登记"矛盾</td>
+</tr>
+<tr>
+<td>R-02</td>
+<td>用例图</td>
+<td><code>UC09 ..&gt; UC08 : &lt;&lt;extend&gt;&gt;</code></td>
+<td>移除；改为 <code>UC08 ..&gt; UC06 : &lt;&lt;extend&gt;&gt;</code>、<code>UC08 ..&gt; UC07 : &lt;&lt;extend&gt;&gt;</code></td>
+<td>核验引用是对"提问/摘要"回答的<strong>可选扩展行为</strong>（宿主应为 UC06/UC07）；笔记与引用之间是<strong>数据关联</strong>（领域模型中 Note ⟶ Citation），不是行为扩展关系</td>
+</tr>
+<tr>
+<td>R-03</td>
+<td>领域模型</td>
+<td><code>Workspace "1" o-- "1..*" User</code></td>
+<td><code>User "0..*" -- "1..*" Workspace : 成员</code></td>
+<td>组合关系意味着用户被工作区独占且每区必含≥1 用户。用户是系统一等实体（可登录、可发起 Query），不应被工作区拥有；且共享工作区仍属 TBD-1 未决项，模型不应提前锁死</td>
+</tr>
+<tr>
+<td>R-04</td>
+<td>领域模型</td>
+<td><code>Query "1" --&gt; "1" DocumentSet</code></td>
+<td><code>Query "0..*" --&gt; "0..1" DocumentSet</code></td>
+<td>单文档问答（UC06 对当前文档提问）不构成文档集合，V0.2 强制 1 个 DocumentSet 使单文档场景无法建模</td>
+</tr>
+<tr>
+<td>R-05</td>
+<td>领域模型</td>
+<td><code>ExportJob "1" --&gt; "1..*" Note</code></td>
+<td><code>ExportJob "0..*" --&gt; "0..*" Note</code></td>
+<td>UC10 允许仅导出摘要或引用，此时导出任务不含任何 Note；V0.2 强制 1..* 与此冲突</td>
+</tr>
+<tr>
+<td>R-06</td>
+<td>领域模型</td>
+<td>缺索引类</td>
+<td>新增 <code>IndexingRun</code>、<code>Index</code>，并建立与 <code>DocumentVersion</code> / <code>ContentBlock</code> 的关联</td>
+<td>BR06 要求删除/撤权/版本变化后<strong>索引</strong>与引用一并标记 stale，需要索引级对象承载 <code>version_id</code> 与 <code>stale</code>；NFR-05 要求保留解析溯源字段</td>
+</tr>
+<tr>
+<td>R-07</td>
+<td>领域模型</td>
+<td>缺模型与策略类</td>
+<td>新增 <code>ModelConfig</code>、<code>Policy</code></td>
+<td>UC11（配置模型与隐私边界）、BR02（证据包准入）、BR12（逐文件确认）、FR-09 在 V0.2 中只以 <code>Workspace.policy</code> 一个字符串承载，无法落到可实现的实体</td>
+</tr>
+<tr>
+<td>R-08</td>
+<td>领域模型</td>
+<td>缺通知与审计类</td>
+<td>新增 <code>Notification</code>、<code>AuditEvent</code></td>
+<td>UC12 需要通知对象；BR02/BR12 的"本次明确确认"与"可审计"要求需要有事件记录载体</td>
+</tr>
+</tbody>
+</table>
+<p><strong>统计</strong>：共 8 条修订，其中用例图 2 条（R-01、R-02）、领域模型 6 条（R-03 ~ R-08）。</p>
+<hr />
+<h2 id="2_1">2. 修订后用例图</h2>
+<p>源文件：<a href="../结果材料/06-建模图-2组-阅读助手/底稿-PlantUML/用例图-V0.3.puml"><code>06-建模图-2组-阅读助手/底稿-PlantUML/用例图-V0.3.puml</code></a></p>
+<h3 id="21">2.1 关系修订明细</h3>
+<p><strong>R-01｜导入 → 处理并索引（extend 改为 include）</strong></p>
+<pre><code class="language-text">V0.2：  UC02 ..&gt; UC01 : &lt;&lt;extend&gt;&gt;      （处理并索引 扩展 导入文档）
+V0.3：  UC01 ..&gt; UC02 : &lt;&lt;include&gt;&gt;     （导入文档 包含 处理并索引）
+</code></pre>
+<p>修订理由：</p>
+<ol>
+<li>UC02 的前置条件本身写的是"文档已登记"，说明处理总是在导入之后发生，是<strong>必经步骤</strong>而非可选扩展；</li>
+<li>格式不支持、权限不足等失败分支仍由 UC02 的异常路径承载（<code>ParseRun.status = failed</code>），不影响 include 的成立；</li>
+<li>原写法会让读者误解为"用户可以只导入不处理"，与 UC03"查看文档状态"依赖处理结果的设定冲突。</li>
+</ol>
+<p><strong>R-02｜核验引用的宿主用例（重新挂载 extend）</strong></p>
+<pre><code class="language-text">V0.2：  UC09 ..&gt; UC08 : &lt;&lt;extend&gt;&gt;      （创建批注/笔记 扩展 核验回答引用）
+V0.3：  UC08 ..&gt; UC06 : &lt;&lt;extend&gt;&gt;      （核验回答引用 扩展 对文档/选中文本提问）
+        UC08 ..&gt; UC07 : &lt;&lt;extend&gt;&gt;      （核验回答引用 扩展 生成摘要/要点）
+        移除 UC09 ..&gt; UC08
+</code></pre>
+<p>修订理由：</p>
+<ol>
+<li>核验引用是用户在<strong>看到一条带引用的回答之后</strong>才会做的可选动作，其宿主必然是被核验的两类回答用例 UC06 与 UC07；</li>
+<li>创建批注/笔记与核验引用之间是<strong>数据关联</strong>（领域模型中 <code>Note "0..*" --&gt; "0..1" Answer</code>、<code>Citation</code>、<code>Evidence</code>），V0.2 把它写成行为扩展属于关系类型误用；</li>
+<li>该修订不影响 UC08 的参与者与主成功路径，仅修正其挂载位置。</li>
+</ol>
+<blockquote>
+<p>说明：此条相对 <a href="./2组建模任务分工书.md">2 组建模任务分工书 §4</a> 中"修正两处关系方向"的表述略有扩展——UC09 与 UC08 之间不是方向问题而是关系类型问题，故按语义重挂而非简单反向。<strong>如组内评审认为应保守处理（仅反向为 <code>UC08 ..&gt; UC09 : &lt;&lt;extend&gt;&gt;</code>），可在评审会上提出由组长裁决。</strong></p>
+</blockquote>
+<h3 id="22">2.2 未改动的部分</h3>
+<p>以下内容与 V0.2 完全一致：5 个参与者及其与用例的连接、UC01–UC12 与 4 个内部用例（UploadConfirm / Gate / Cite / Fallback）的清单、<code>UC06/UC07</code> 对 <code>Gate</code>/<code>Cite</code>/<code>UploadConfirm</code> 的 include、<code>UC06/UC07</code> 对 <code>Fallback</code> 的 extend。</p>
+<hr />
+<h2 id="3_1">3. 修订后领域模型</h2>
+<p>源文件：<a href="../结果材料/06-建模图-2组-阅读助手/底稿-PlantUML/领域模型-V0.3.puml"><code>06-建模图-2组-阅读助手/底稿-PlantUML/领域模型-V0.3.puml</code></a></p>
+<h3 id="31">3.1 多重度修订明细</h3>
+<p><strong>R-03｜User 与 Workspace</strong></p>
+<pre><code class="language-text">V0.2：  Workspace &quot;1&quot; o-- &quot;1..*&quot; User
+V0.3：  User &quot;0..*&quot; -- &quot;1..*&quot; Workspace : 成员
+</code></pre>
+<ul>
+<li>由<strong>组合</strong>（<code>o--</code>）改为<strong>关联</strong>（<code>--</code>）：用户不是工作区的组成部分；</li>
+<li>多重度由 <code>1..*</code> 改为两侧显式标注：一个用户可参与多个工作区，一个工作区至少有 1 名用户；</li>
+<li>⚠️ "一个用户能否同时属于多个工作区"本身是 <strong>TBD-1 未决项</strong>（V0.2 §11.1）。本修订只解除"用户被工作区独占"的硬约束，<strong>不主张共享工作区已确认</strong>。</li>
+</ul>
+<p><strong>R-04｜Query 与 DocumentSet</strong></p>
+<pre><code class="language-text">V0.2：  Query &quot;1&quot; --&gt; &quot;1&quot; DocumentSet
+V0.3：  Query &quot;0..*&quot; --&gt; &quot;0..1&quot; DocumentSet
+</code></pre>
+<ul>
+<li><code>0..1</code>：单文档问答（UC06 对当前文档提问）不构造 DocumentSet；</li>
+<li><code>0..*</code>：同一个文档集合可被多次查询复用。</li>
+</ul>
+<p><strong>R-05｜ExportJob 与 Note</strong></p>
+<pre><code class="language-text">V0.2：  ExportJob &quot;1&quot; --&gt; &quot;1..*&quot; Note
+V0.3：  ExportJob &quot;0..*&quot; --&gt; &quot;0..*&quot; Note
+</code></pre>
+<ul>
+<li>导出范围可为纯摘要或纯引用（UC10 主成功路径），此时 Note 数量为 0；</li>
+<li>同一条笔记可出现在多次导出任务中。</li>
+</ul>
+<h3 id="32-r-06-r-08">3.2 新增类（R-06 ~ R-08）</h3>
+<table>
+<thead>
+<tr>
+<th>类</th>
+<th>关键属性</th>
+<th>关联</th>
+<th>覆盖的需求 / 规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IndexingRun</strong> 索引运行</td>
+<td>run_id、engine_version、config_hash、status、warnings</td>
+<td><code>DocumentVersion "1" o-- "0..*" IndexingRun</code></td>
+<td>NFR-05（溯源字段）、UC02（处理状态可见）</td>
+</tr>
+<tr>
+<td><strong>Index</strong> 索引</td>
+<td>index_id、version_id、index_type(fulltext/vector/hybrid)、build_status、built_at、stale</td>
+<td><code>IndexingRun "1" --&gt; "0..*" Index</code>；<code>Index "0..*" --&gt; "1..*" ContentBlock</code></td>
+<td>BR06（stale 传播）、FR-03（全文/语义检索）</td>
+</tr>
+<tr>
+<td><strong>ModelConfig</strong> 模型配置</td>
+<td>config_id、provider、model_name、routing_policy、allow_cloud</td>
+<td><code>Workspace "1" o-- "0..*" ModelConfig</code>；<code>Answer "0..*" --&gt; "0..1" ModelConfig</code></td>
+<td>UC11、FR-09、BR02</td>
+</tr>
+<tr>
+<td><strong>Policy</strong> 策略</td>
+<td>policy_id、policy_version、require_citation、require_per_file_consent、confidence_threshold、export_scope</td>
+<td><code>Workspace "1" o-- "0..*" Policy</code>；<code>PermissionGrant ..&gt; Policy : 依据</code></td>
+<td>BR02、BR12、NFR-08、SURVEY-007/008</td>
+</tr>
+<tr>
+<td><strong>Notification</strong> 通知</td>
+<td>notification_id、type、resource_ref、created_at、read</td>
+<td><code>User "1" -- "0..*" Notification</code>；→ Answer / ParseRun</td>
+<td>UC12、FR-10</td>
+</tr>
+<tr>
+<td><strong>AuditEvent</strong> 审计事件</td>
+<td>event_id、event_type、actor、resource_ref、occurred_at</td>
+<td><code>User "1" -- "0..*" AuditEvent</code>；→ Answer / ExportJob</td>
+<td>BR02、BR12（"本次明确确认"须可追溯）、UC10</td>
+</tr>
+</tbody>
+</table>
+<p><strong>设计说明</strong>：</p>
+<ul>
+<li><code>Index</code> 显式保留 <code>version_id</code> 与 <code>stale</code>，是为了让 BR06 的"删除/撤权/版本变化 → 索引与引用同时失效"可以落到具体对象上，而不是散落在文字规则里；</li>
+<li><code>Policy</code> 与 <code>PermissionGrant</code> 分开：<code>PermissionGrant</code> 回答"谁能访问哪个资源"，<code>Policy</code> 回答"系统在什么条件下允许外发与生成回答"，两者生命周期与修改入口（UC11）不同；</li>
+<li><code>AuditEvent</code> 与 <code>Notification</code> 分开：前者是<strong>只增不改的审计留痕</strong>（BR12 的逐文件确认记录），后者是<strong>面向用户的状态提醒</strong>（可标记已读），语义与保留策略不同。</li>
+</ul>
+<h3 id="33">3.3 未改动的部分</h3>
+<p><code>Workspace / DocumentSpace / Document / DocumentVersion / ParseRun / Page / ContentBlock / PermissionGrant / DocumentSet / Query / Evidence / Answer / Claim / Citation / Note / ExportJob</code> 共 16 个原有类的属性与其余关联均保持 V0.2 原样；<code>PermissionGrant ..&gt; DocumentVersion : filters</code>、<code>Answer ..&gt; PermissionGrant : gate</code>、<code>Answer ..&gt; Evidence : requires contract</code> 三条依赖保持不变。</p>
+<hr />
+<h2 id="4_1">4. 与下游工作的接口</h2>
+<table>
+<thead>
+<tr>
+<th>下游</th>
+<th>依赖本文件的什么</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WP-A 图形（廖欣豪）</td>
+<td>新增的 <code>IndexingRun</code> / <code>Index</code> / <code>Policy</code> 状态取值</td>
+<td>状态图的异常态（stale、failed、needs_review）需与本文档 §3.2 保持一致，<strong>不得自造状态名</strong></td>
+</tr>
+<tr>
+<td>WP-B 文档（朱紫轩）</td>
+<td>§1 修订表 + §3.2 新增类表</td>
+<td>用例规约（UC09/UC10/UC11/UC12）与 RTM 需引用本文件的新增类与关联</td>
+</tr>
+<tr>
+<td>WP-C 界面（程禹轩）</td>
+<td><code>Policy.require_per_file_consent</code>、<code>ModelConfig.allow_cloud</code></td>
+<td>settings 页面的外发确认控件需对应这两个字段</td>
+</tr>
+<tr>
+<td>WP-D 访谈（汪昊）</td>
+<td>§1 中 R-03 标记的 TBD-1</td>
+<td>访谈提纲可直接验证"是否需要共享工作区 / 多工作区归属"</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5_1">5. 下一步</h2>
+<ol>
+<li>本文件与两张 V0.3 图提交至 2 组仓库（分支 <code>2zu/gq/wp1-model-revision</code>），走 PR 合并；</li>
+<li>待 WP-A/WP-B/WP-C/WP-D 产出回流后，由组长归并为完整 V0.3 模型包；</li>
+<li>原始 <code>.puml</code> 需按 §3.3 工具约束导入<strong>华为 CodeArts Modeling</strong> 正式建档出图（课程强制）。</li>
+</ol>
+<div class="pagebreak"></div>
+
+<h1 id="3_2">第 3 部分 · 编号规则与术语表（口径冻结件）</h1>
+<blockquote>
+<p>来源文件：<code>编号规则与术语表.md</code></p>
+</blockquote>
+<h1 id="_4">智能笔记助手 · 编号规则与术语表</h1>
+<ul>
+<li>版本：V1.1（冻结版）</li>
+<li>编制：郭谦（2 组组长）</li>
+<li>日期：2026-10-18（V1.1 修订：2026-10-19）</li>
+<li>基线：1 组《需求模型 V0.2》《SRS V1.0》《SPEC V1.0》</li>
+<li>用途：2 组全员共用的编号与术语口径，是 WP-B（朱紫轩）的前置件</li>
+<li><strong>V1.1 变更</strong>：新增 §1.2b「BR 编号统一口径」；§1.3 更正「SRS NFR 是子集」的错误表述并新增 <code>NFR-14</code>；§1.2 的 FR 口径由「待裁决」转为「已裁决」。<strong>依据：1 组组长 2026-10-19 就基线编号冲突的书面确认</strong></li>
+</ul>
+<blockquote>
+<p><strong>冻结声明</strong>：本表发布后即为 2 组唯一的编号与术语口径。<strong>不得新增、改名、改号</strong>；确需变更时先在组内提出，由组长统一更新本表后再动工。原因是多人各改一套编号会导致合并阶段无法对齐（见《2组建模任务分工书》§10 风险表）。</p>
+</blockquote>
+<hr />
+<h2 id="1_3">1. 编号规则</h2>
+<h3 id="11">1.1 编号前缀总表</h3>
+<table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>含义</th>
+<th>编号空间（冻结）</th>
+<th>唯一出处</th>
+<th>维护人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>UC</code></td>
+<td>用例</td>
+<td>UC01–UC12（12 条）</td>
+<td>需求模型 V0.2 §5</td>
+<td>组长</td>
+</tr>
+<tr>
+<td><code>BR</code></td>
+<td>业务规则</td>
+<td>BR01–BR15（15 条）</td>
+<td>需求模型 V0.2 §6</td>
+<td>组长</td>
+</tr>
+<tr>
+<td><code>FR</code></td>
+<td>功能需求</td>
+<td>FR-01–FR-12（12 条）</td>
+<td>需求模型 V0.2 §10</td>
+<td>组长</td>
+</tr>
+<tr>
+<td><code>NFR</code></td>
+<td>非功能需求</td>
+<td>NFR-01–NFR-14（14 条；<strong>NFR-14 为 2 组新增</strong>，见 §1.3）</td>
+<td>需求模型 V0.2 §9 + 本表 §1.3</td>
+<td>组长</td>
+</tr>
+<tr>
+<td><code>SURVEY</code></td>
+<td>问卷证据</td>
+<td>SURVEY-001-Q1 – SURVEY-011-Q11</td>
+<td>需求模型 V0.2 §2</td>
+<td>不可新增</td>
+</tr>
+<tr>
+<td><code>INT</code></td>
+<td>访谈证据（<strong>2 组新增</strong>）</td>
+<td>INT-001 起（连续编号）</td>
+<td>本表</td>
+<td>汪昊</td>
+</tr>
+<tr>
+<td><code>TBD</code></td>
+<td>待验证项</td>
+<td>TBD-1 – TBD-12（12 项）</td>
+<td>需求模型 V0.2 §11</td>
+<td>组长</td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td>2 组修订条目</td>
+<td>R-01 – R-08</td>
+<td>V0.3-需求模型 §1</td>
+<td>组长</td>
+</tr>
+<tr>
+<td><code>ERR</code></td>
+<td>错误码（<strong>2 组新增</strong>）</td>
+<td>ERR-1xx – ERR-6xx、ERR-9xx（7 段，见 §1.6）</td>
+<td>本表 §1.6 + SPEC V1.1 附录 A</td>
+<td>组长</td>
+</tr>
+<tr>
+<td><code>WP</code> / 字母+序号</td>
+<td>工作包与任务</td>
+<td>WP1、WP6、WP-A~WP-D；A1–A8、B1–B5、C1–C5、D1–D5</td>
+<td>2组建模任务分工书</td>
+<td>组长</td>
+</tr>
+</tbody>
+</table>
+<p><strong>写法约定</strong>：正文引用时前缀与数字之间不加空格（<code>UC05</code>、<code>BR12</code>、<code>TBD-1</code>）；<code>FR</code> 与 <code>NFR</code> 的编号<strong>带连字符</strong>（<code>FR-01</code>、<code>NFR-01</code>）。</p>
+<h3 id="12-fr-v02">1.2 FR 编号统一口径（已裁决：以 V0.2 为准）</h3>
+<p>基线中 V0.2 与 SRS 各有一套 FR，<strong>编号相同但语义不同</strong>，这是 1 组遗留的实质冲突。统一口径如下：</p>
+<table>
+<thead>
+<tr>
+<th>V0.2 编号</th>
+<th>V0.2 名称</th>
+<th>对应 SRS 编号</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-01</td>
+<td>文档导入、登记、版本管理</td>
+<td>FR-01 文档导入与登记</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>FR-02</td>
+<td>文档解析状态与结构化阅读</td>
+<td>FR-02 解析与索引、FR-03 阅读与目录</td>
+<td><strong>V0.2 FR-02 合并承载 SRS 两条</strong></td>
+</tr>
+<tr>
+<td>FR-03</td>
+<td>文档内和授权文档集检索</td>
+<td>FR-04 全文/语义检索</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>FR-04</td>
+<td>选中文本/当前文档问答</td>
+<td>FR-06 选中文本问答</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>FR-05</td>
+<td>摘要与章节要点</td>
+<td>FR-05 摘要与要点</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>FR-06</td>
+<td>引用展示、跳转和核验</td>
+<td>FR-07 引用核验</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>FR-07</td>
+<td>批注、笔记、标签和回溯</td>
+<td>FR-08 批注笔记</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>FR-08</td>
+<td>导出摘要、笔记和引用</td>
+<td>FR-09 导出成果</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>FR-09</td>
+<td>隐私、权限、模型和外发设置</td>
+<td>FR-10 隐私与外发</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>FR-10</td>
+<td>通知和待复核状态</td>
+<td>FR-11 通知与复核</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>FR-11</td>
+<td>跨知识库/跨项目问答</td>
+<td>—</td>
+<td>保留编号，标注「暂不纳入一期」</td>
+</tr>
+<tr>
+<td>FR-12</td>
+<td>本地生成模型问答</td>
+<td>—</td>
+<td>保留编号，标注「不承诺」</td>
+</tr>
+</tbody>
+</table>
+<p><strong>规则</strong>：<strong>编号空间以 V0.2 的 12 条为准，不得改号。</strong> SRS 的 11 条视为该编号空间的映射视图；RTM 中的 FR 引用必须能映射回 V0.2 的 12 条。SRS 的 FR-02/FR-03 两条统一挂到 V0.2 FR-02 名下。</p>
+<blockquote>
+<p><strong>裁决结果（2026-10-19）</strong>：1 组组长已书面确认——<strong>FR 编号统一以 V0.2 的 12 条为准，SRS 的 11 条作为映射视图，不改号</strong>。SRS 后续返修时在表中增加「模型编号」列，或直接改写为 <code>FR-01–FR-12</code>。上表据此定稿，本项<strong>不再是待裁决项</strong>。</p>
+<p>过渡期内如必须引用 SRS 原文编号，写作 <code>SRS-FR04</code>（带来源前缀）以示区分，不得单独写 <code>FR04</code>。</p>
+</blockquote>
+<h3 id="12b-br-v02">1.2b BR 编号统一口径（已裁决：以 V0.2 为准）</h3>
+<p>基线中 V0.2 §6 有 BR01–BR15，SRS §5 有 BR01–BR07，<strong>同号不同义</strong>。经逐条核对，SRS 的 7 条<strong>不是</strong> V0.2 的摘录或子集，而是<strong>重新归纳、合并、重排后的映射视图</strong>；因前 3 条恰好同号同义，扫读时不易发现。规则与 §1.2 一致：</p>
+<blockquote>
+<p><strong>编号空间以 V0.2 的 15 条为准，不得改号。</strong> SRS 的 7 条视为映射视图，不构成编号空间。RTM 与后续文档中的 <code>BRxx</code> 一律指 V0.2 口径；过渡期引用 SRS 原文时写作 <code>SRS-BR04</code>。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>V0.2 BR</th>
+<th>规则摘要</th>
+<th>SRS §5</th>
+<th>关系</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BR01</td>
+<td>检索/缓存/上下文组装/模型调用前须完成文档权限过滤</td>
+<td>BR01</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>BR02</td>
+<td>云端只接收授权、版本有效、证据契约完整且置信度达标的证据包</td>
+<td>BR02</td>
+<td>一致（SRS 增补"本次外发确认通过"）</td>
+</tr>
+<tr>
+<td>BR03</td>
+<td>引用须来自本次证据 allow-list 并经服务端校验</td>
+<td>BR03</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>BR04</td>
+<td>关键 claim 须绑定 citation；部分支持/冲突/未支持/定位失效须显式标记</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong></td>
+</tr>
+<tr>
+<td>BR05</td>
+<td>无依据问题不得用"看起来相关"的结果伪装成有依据回答</td>
+<td>BR04</td>
+<td>同义、<strong>异号</strong></td>
+</tr>
+<tr>
+<td>BR06</td>
+<td>版本变化/撤权/删除传播未完成时，索引与引用标记 <code>stale</code></td>
+<td>BR05</td>
+<td>同义、<strong>异号</strong></td>
+</tr>
+<tr>
+<td>BR07</td>
+<td>低置信解析保留原页/截图与风险标记，不承诺精确结构化问答</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong>（部分并入 SRS FR-02 描述）</td>
+</tr>
+<tr>
+<td>BR08</td>
+<td>多文档回答须显示来源、版本、时间与冲突；跨库不进一期</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong></td>
+</tr>
+<tr>
+<td>BR09</td>
+<td>笔记与导出须保留原文位置、来源文档与版本关联；失效时提示复核</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong></td>
+</tr>
+<tr>
+<td>BR10</td>
+<td>真实联系方式、未授权样本、受限原文不得进入公开演示或外部调用</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong>（与新增 <code>NFR-14</code> 同源）</td>
+</tr>
+<tr>
+<td>BR11</td>
+<td>默认只访问用户明确选择的文件或工作区范围，不自动遍历或上传</td>
+<td>BR06</td>
+<td>同义、<strong>异号</strong></td>
+</tr>
+<tr>
+<td>BR12</td>
+<td>调用云端前须逐文件展示范围/服务/用途并取得<strong>本次</strong>明确确认</td>
+<td>BR02（部分）</td>
+<td>部分并入</td>
+</tr>
+<tr>
+<td>BR13</td>
+<td>离线时阅读与基础检索仍可用；AI 不可用须给出明确降级状态</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong>（SRS 体现为 NFR-02）</td>
+</tr>
+<tr>
+<td>BR14</td>
+<td>不得静默修改源文件；衍生文件写入指定位置并显示写入结果</td>
+<td>BR07</td>
+<td>同义、<strong>异号</strong></td>
+</tr>
+<tr>
+<td>BR15</td>
+<td>处理进度必须可见；长任务不得以无反馈等待替代状态展示</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong>（SRS 体现为 NFR-03）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>口径统计</strong>：SRS 承接了 7 条中的 BR01/BR03（一致）、BR05/BR06/BR11/BR14（异号）、BR02（一致并增补）。<strong>完全未在 SRS 单列的 7 条</strong>：BR04、BR07、BR08、BR09、BR10、BR13、BR15；<strong>部分并入的 1 条</strong>：BR12（并入 SRS BR02）。</p>
+<blockquote>
+<p>⚠️ 未单列 <strong>不等于废止</strong>。这 7 条仍以 V0.2 编号为有效规则，作为 SRS 的<strong>返修项</strong>登记于《<a href="../结果材料/13-需求追踪矩阵-2组-阅读助手.md">V0.3-需求追踪矩阵</a>》§6，返修前不得从任何交付件中删除。</p>
+</blockquote>
+<h3 id="13-nfr">1.3 NFR 编号统一口径（已更正）</h3>
+<p>基线中 V0.2 写 <code>NFR01</code>（无连字符），SRS 写 <code>NFR-01</code>（有连字符），共 2 种写法。统一为 <strong><code>NFR-01</code> 格式</strong>（与 SRS 一致，便于评审对照）。</p>
+<p>编号空间以 V0.2 的 13 条为准，<strong>并顺延新增 1 条 <code>NFR-14</code></strong>。</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>名称</th>
+<th>出处</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NFR-01 – NFR-13</td>
+<td>见需求模型 V0.2 §9</td>
+<td>需求模型 V0.2 §9</td>
+<td>沿用，不改号</td>
+</tr>
+<tr>
+<td><strong>NFR-14</strong></td>
+<td><strong>数据与合规可追溯性</strong></td>
+<td><strong>2 组新增（2026-10-19 经 1 组确认）</strong></td>
+<td>承接 SRS §7 的 NFR-06；V0.2 的 13 条中没有对应项</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>NFR-14</code> 内容</strong>（取自 SRS §7 NFR-06，补足可验收项）：</p>
+<ul>
+<li>公开或授权样本：进入演示或外发的样本必须公开或已获授权；</li>
+<li>演示数据必须脱敏；</li>
+<li>版权或来源标识必须保留；</li>
+<li>删除请求必须可追踪；</li>
+<li>外部模型调用必须留下授权记录；</li>
+<li>不得将未经授权的真实资料用于公开演示或外部模型调用。</li>
+</ul>
+<p><strong>SRS → V0.2 的 NFR 映射</strong>（SRS 的 7 条）：</p>
+<table>
+<thead>
+<tr>
+<th>SRS §7</th>
+<th>对应 V0.2</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NFR-01 引用可回到版本、页码/章节和原文</td>
+<td>NFR-01</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>NFR-02 离线可打开已导入文档并基础阅读/检索，AI 不可用有降级状态</td>
+<td>NFR-09</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>NFR-03 普通问答优先 30 秒内流式反馈，超时显示进度</td>
+<td>NFR-10</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>NFR-04 解析和问答限制资源，不因单个大文档导致阅读器不可用</td>
+<td>NFR-12</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>NFR-05 默认最小权限，源文件不被静默修改，不支持格式明确提示</td>
+<td>NFR-13</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>NFR-06 公开或授权样本、脱敏、版权标识、删除机制可追溯</td>
+<td><strong>NFR-14（新增）</strong></td>
+<td>V0.2 无对应项</td>
+</tr>
+<tr>
+<td>NFR-07 所有失败、低置信、过期和人工复核状态可解释</td>
+<td>NFR-03 + NFR-04</td>
+<td>一条并入 V0.2 两条</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>更正说明</strong>：本表 V1.0 曾表述"SRS 的 7 条是 V0.2 的 13 条中被选中进入验收的子集"。经逐条核对<strong>不成立</strong>——SRS NFR-06 在 V0.2 的 13 条中<strong>没有</strong>对应项（其相关内容此前只散落在业务规则 BR10）。现按上表新增 <code>NFR-14</code> 承接；其余 6 条的映射见上表。</p>
+</blockquote>
+<p><strong>反向不对称（V0.2 → SRS）</strong>：上表是 SRS → V0.2 的正向映射；反向看，V0.2 的 13 条中有 <strong>5 条在 SRS §7 完全未单列</strong>（<code>NFR-02</code>、<code>NFR-05</code>、<code>NFR-06</code>、<code>NFR-08</code>、<code>NFR-11</code>），另有 <strong>3 条仅部分并入</strong>（<code>NFR-03</code>、<code>NFR-04</code> → SRS NFR-07；<code>NFR-07</code> → SRS NFR-03 + NFR-04）；合计 <strong>8 条在 SRS 无 1:1 对应项</strong>，逐条映射以《<a href="../结果材料/13-需求追踪矩阵-2组-阅读助手.md">V0.3-需求追踪矩阵</a>》§2 的「SRS 映射」列为准。<strong>这不构成缺陷</strong>——V0.2 是建模口径的编号空间，SRS 是验收视图，两者覆盖范围本可不同；但<strong>已登记进 SRS 返修清单，避免评审误判为"V0.2 多写了 8 条"</strong>。</p>
+<blockquote>
+<p>⚠️ <strong>同号异义陷阱</strong>：<code>NFR-06</code> 在两个口径下<strong>完全不是同一条</strong>——V0.2 <code>NFR-06</code> 是"多文档查询集合上限（候选 20 份）"，SRS <code>NFR-06</code> 是"数据与合规可追溯性"（已由新增 <code>NFR-14</code> 承接）。引用 <code>NFR-06</code> 时<strong>必须注明来源口径</strong>（V0.2 / SRS），否则必然误读。</p>
+</blockquote>
+<h3 id="14">1.4 状态与枚举（冻结，不得自造）</h3>
+<p><strong>文档处理状态</strong>（出处：V0.2 §8、SPEC §3.1）</p>
+<ul>
+<li>正常流转（5）：<code>registered</code> → <code>queued</code> → <code>processing</code> → <code>parsed</code> → <code>indexed</code></li>
+<li>异常分支（6）：<code>needs_review</code>、<code>ocr_low_confidence</code>、<code>layout_uncertain</code>、<code>failed</code>、<code>stale</code>、<code>deleted</code></li>
+</ul>
+<p><strong>回答状态</strong>（出处：V0.2 §8、SPEC §5.1 §5.2）</p>
+<ul>
+<li>正常流转（6）：<code>requested</code> → <code>retrieving</code> → <code>evidence_checked</code> → <code>generating</code> → <code>citation_checked</code> → <code>answered</code></li>
+<li>分支状态（6）：<code>local_evidence_only</code>、<code>needs_human_review</code>、<code>refused</code>、<code>model_failed</code>、<code>citation_invalid</code>、<code>stale</code></li>
+</ul>
+<blockquote>
+<p>⚠️ 注：V0.2 §8 的分支状态只列了 5 个，<strong>漏了 <code>stale</code></strong>（SPEC §5.2 降级规则表中有）。本表按 6 个冻结，依据 SPEC §5.2。</p>
+</blockquote>
+<p><strong>Claim 支持状态 <code>support_status</code></strong>（出处：V0.2 BR04、SPEC §5.1）</p>
+<p><code>supported</code>（已支持）、<code>partial</code>（部分支持）、<code>conflicting</code>（冲突）、<code>unsupported</code>（未支持）、<code>locator_failed</code>（定位失效）</p>
+<blockquote>
+<p>上述英文取值中，前 4 个由 BR04 的中文描述直接对应，<code>locator_failed</code> 对应 BR04 的"定位失效"。<strong>若实现阶段需调整取值拼写，须回到本表更新并通知全员。</strong></p>
+</blockquote>
+<h3 id="15">1.5 领域类命名</h3>
+<p>类名一律使用 <strong>英文 PascalCase</strong>，中文名仅作说明。22 个类（16 原有 + 6 新增）见 §2.3。</p>
+<h3 id="16-2">1.6 错误码编号（2 组新增空间）</h3>
+<p>SPEC V1.0 在 §3.1、§6、§7 三处<strong>要求</strong>使用错误码却未定义任何取值，2 组补建 <code>ERR-</code> 前缀。格式 <code>ERR-&lt;段号&gt;&lt;两位序号&gt;</code>，段位划分：</p>
+<table>
+<thead>
+<tr>
+<th>段</th>
+<th>模块</th>
+<th>主要涉及用例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ERR-1xx</code></td>
+<td>导入与登记</td>
+<td>UC01</td>
+</tr>
+<tr>
+<td><code>ERR-2xx</code></td>
+<td>解析与索引</td>
+<td>UC02</td>
+</tr>
+<tr>
+<td><code>ERR-3xx</code></td>
+<td>权限与门控</td>
+<td>UC05、UC06、UC07、UC11</td>
+</tr>
+<tr>
+<td><code>ERR-4xx</code></td>
+<td>外发确认</td>
+<td>UC06、UC07、UC11</td>
+</tr>
+<tr>
+<td><code>ERR-5xx</code></td>
+<td>模型调用与引用校验</td>
+<td>UC06、UC07、UC08</td>
+</tr>
+<tr>
+<td><code>ERR-6xx</code></td>
+<td>笔记与导出</td>
+<td>UC09、UC10</td>
+</tr>
+<tr>
+<td><code>ERR-9xx</code></td>
+<td>通用</td>
+<td>全局</td>
+</tr>
+</tbody>
+</table>
+<p><strong>取值与触发条件不写在本表</strong>，唯一出处为《<a href="../结果材料/15-SPEC错误码表-2组-阅读助手.md">V0.3-SPEC错误码表</a>》（目标并入 SPEC V1.1 附录 A）。本表只冻结<strong>前缀与段位划分</strong>：新增错误码可在既有段内顺延序号，<strong>不得新增段位、不得改动既有取值语义</strong>。</p>
+<blockquote>
+<p>本表 V1.0 未收录 <code>ERR-</code>。V1.1 按 §3 使用规则 5 补登，该前缀自此为正式编号空间。</p>
+</blockquote>
+<hr />
+<h2 id="2_2">2. 术语表</h2>
+<h3 id="21_1">2.1 核心业务术语</h3>
+<table>
+<thead>
+<tr>
+<th>中文</th>
+<th>英文</th>
+<th>定义</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>统一中间表示</td>
+<td>IR (Intermediate Representation)</td>
+<td>保存页面、内容块、结构、坐标和置信度的统一对象层，是检索与引用的共同底座</td>
+<td>SRS §1.3</td>
+</tr>
+<tr>
+<td>证据契约</td>
+<td>Evidence Contract</td>
+<td>允许进入模型调用的证据包及其来源、版本、权限和定位约束</td>
+<td>SRS §1.3</td>
+</tr>
+<tr>
+<td>证据</td>
+<td>Evidence</td>
+<td>一条可定位的原文片段，是引用的实际来源</td>
+<td>V0.2 §7</td>
+</tr>
+<tr>
+<td>失效</td>
+<td>stale</td>
+<td>文档版本已变化、撤权或删除传播未完成的失效状态</td>
+<td>SRS §1.3</td>
+</tr>
+<tr>
+<td>引用</td>
+<td>Citation</td>
+<td>可回到来源版本、页码、章节或原文片段的回答依据</td>
+<td>SRS §1.3</td>
+</tr>
+<tr>
+<td>引用核验</td>
+<td>—</td>
+<td>用户点击引用后跳转到对应版本、页码与原文高亮的动作（UC08）</td>
+<td>V0.2 §5</td>
+</tr>
+<tr>
+<td>门控</td>
+<td>Gate / Evidence Gate</td>
+<td>在检索与模型调用之前执行的权限、版本、敏感级别、置信度检查链</td>
+<td>SPEC §4.1</td>
+</tr>
+<tr>
+<td>外发确认</td>
+<td>UploadConfirm</td>
+<td>逐文件展示拟外发范围、服务与用途并取得<strong>本次</strong>明确确认的交互</td>
+<td>V0.2 §5、SPEC §4.2</td>
+</tr>
+<tr>
+<td>降级</td>
+<td>Fallback</td>
+<td>云端不可用、用户拒绝外发或证据不足时退回本地证据、原文或拒答的路径</td>
+<td>SPEC §5.2</td>
+</tr>
+<tr>
+<td>解析运行</td>
+<td>ParseRun</td>
+<td>一次文档解析的执行记录（parser 版本、配置哈希、状态、警告），可重放可审计</td>
+<td>V0.2 §7、SPEC §3.2</td>
+</tr>
+<tr>
+<td>索引运行</td>
+<td>IndexingRun</td>
+<td>一次索引构建的执行记录，与 ParseRun 分开（<strong>2 组新增</strong>）</td>
+<td>V0.3-需求模型 §3.2</td>
+</tr>
+<tr>
+<td>文档集合</td>
+<td>DocumentSet</td>
+<td>一次检索或问答的显式上下文范围，由用户选择而非系统推定</td>
+<td>V0.2 §7</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22_1">2.2 易混术语辨析（必须区分）</h3>
+<table>
+<thead>
+<tr>
+<th>易混对</th>
+<th>区别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Evidence 证据</strong> vs <strong>Citation 引用</strong></td>
+<td>证据是原文片段本身；引用是回答里指向某条证据的落点（含 quote、页码、locator）。一条证据可被多条引用使用</td>
+</tr>
+<tr>
+<td><strong>Claim 断言</strong> vs <strong>Answer 回答</strong></td>
+<td>回答是整体产出（含状态、模型、不确定度）；断言是回答内部可独立核验的句子，每条断言绑定 0..n 条引用</td>
+</tr>
+<tr>
+<td><strong>Policy 策略</strong> vs <strong>PermissionGrant 权限授权</strong></td>
+<td>权限授权回答"谁能访问哪个资源"（subject/resource/action）；策略回答"系统在什么条件下允许外发与生成回答"（是否强制引用、是否逐文件确认、置信度阈值）。修改入口与生命周期不同</td>
+</tr>
+<tr>
+<td><strong>Notification 通知</strong> vs <strong>AuditEvent 审计事件</strong></td>
+<td>通知面向用户、可标记已读（UC12）；审计事件是只增不改的留痕（BR12 的逐文件确认记录），不可删改</td>
+</tr>
+<tr>
+<td><strong>ParseRun 解析运行</strong> vs <strong>IndexingRun 索引运行</strong></td>
+<td>前者产出页面与内容块（IR），后者在 IR 之上建全文/向量索引；两者可分别失败与重试</td>
+</tr>
+<tr>
+<td><strong>Document 文档</strong> vs <strong>DocumentVersion 文档版本</strong></td>
+<td>文档是逻辑实体；版本是一次导入的内容快照（source_hash 唯一），引用与笔记必须绑定版本而非文档</td>
+</tr>
+</tbody>
+</table>
+<h3 id="23">2.3 领域类中英对照</h3>
+<table>
+<thead>
+<tr>
+<th>英文类名</th>
+<th>中文</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Workspace</td>
+<td>工作区</td>
+<td>V0.2</td>
+</tr>
+<tr>
+<td>DocumentSpace</td>
+<td>文档空间</td>
+<td>V0.2</td>
+</tr>
+<tr>
+<td>Document</td>
+<td>文档</td>
+<td>V0.2</td>
+</tr>
+<tr>
+<td>DocumentVersion</td>
+<td>文档版本</td>
+<td>V0.2</td>
+</tr>
+<tr>
+<td>ParseRun</td>
+<td>解析运行</td>
+<td>V0.2</td>
+</tr>
+<tr>
+<td>Page</td>
+<td>页面</td>
+<td>V0.2</td>
+</tr>
+<tr>
+<td>ContentBlock</td>
+<td>内容块</td>
+<td>V0.2</td>
+</tr>
+<tr>
+<td>DocumentSet</td>
+<td>文档集合</td>
+<td>V0.2</td>
+</tr>
+<tr>
+<td>PermissionGrant</td>
+<td>权限授权</td>
+<td>V0.2</td>
+</tr>
+<tr>
+<td>Query</td>
+<td>查询</td>
+<td>V0.2</td>
+</tr>
+<tr>
+<td>Evidence</td>
+<td>证据</td>
+<td>V0.2</td>
+</tr>
+<tr>
+<td>Answer</td>
+<td>回答</td>
+<td>V0.2</td>
+</tr>
+<tr>
+<td>Claim</td>
+<td>断言</td>
+<td>V0.2</td>
+</tr>
+<tr>
+<td>Citation</td>
+<td>引用</td>
+<td>V0.2</td>
+</tr>
+<tr>
+<td>Note</td>
+<td>批注笔记</td>
+<td>V0.2（又名 Annotation/Note）</td>
+</tr>
+<tr>
+<td>ExportJob</td>
+<td>导出任务</td>
+<td>V0.2</td>
+</tr>
+<tr>
+<td>User</td>
+<td>用户</td>
+<td>V0.2</td>
+</tr>
+<tr>
+<td>IndexingRun</td>
+<td>索引运行</td>
+<td><strong>2 组新增 R-06</strong></td>
+</tr>
+<tr>
+<td>Index</td>
+<td>索引</td>
+<td><strong>2 组新增 R-06</strong></td>
+</tr>
+<tr>
+<td>ModelConfig</td>
+<td>模型配置</td>
+<td><strong>2 组新增 R-07</strong></td>
+</tr>
+<tr>
+<td>Policy</td>
+<td>策略</td>
+<td><strong>2 组新增 R-07</strong></td>
+</tr>
+<tr>
+<td>Notification</td>
+<td>通知</td>
+<td><strong>2 组新增 R-08</strong></td>
+</tr>
+<tr>
+<td>AuditEvent</td>
+<td>审计事件</td>
+<td><strong>2 组新增 R-08</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="24-5">2.4 参与者（5 个，冻结）</h3>
+<table>
+<thead>
+<tr>
+<th>英文</th>
+<th>中文</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reader</td>
+<td>阅读者</td>
+<td>主要业务参与者</td>
+</tr>
+<tr>
+<td>Workspace Owner</td>
+<td>工作区所有者</td>
+<td>业务/策略参与者</td>
+</tr>
+<tr>
+<td>Local Parser/OCR</td>
+<td>本地解析处理器</td>
+<td>外部系统组件</td>
+</tr>
+<tr>
+<td>Authorized Model Service</td>
+<td>云端模型服务</td>
+<td>外部系统</td>
+</tr>
+<tr>
+<td>Notification/Export Target</td>
+<td>通知或导出目标</td>
+<td>外部边界</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>管理/运维人员暂作为 Workspace Owner 的扩展角色，<strong>不单独设参与者</strong>（V0.2 §4 仍为 TBD-1）。</p>
+</blockquote>
+<h3 id="25-4">2.5 图内内部用例（4 个，无编号）</h3>
+<p><code>UploadConfirm</code>（确认本次外发文件）、<code>Gate</code>（权限与证据门控）、<code>Cite</code>（引用核验）、<code>Fallback</code>（降级）。这四个只出现在用例图内部，<strong>不参与 UC 编号</strong>。</p>
+<h3 id="26">2.6 优先级术语</h3>
+<p>MoSCoW，取值固定为 <code>Must</code> / <code>Should</code> / <code>Could</code> / <code>Won't</code>，<strong>不使用</strong>高/中/低等自定义分级（出处：1 组调研报告、SRS §1.1）。</p>
+<hr />
+<h2 id="3_3">3. 使用规则</h2>
+<ol>
+<li><strong>不自造</strong>。编号、状态名、类名、术语一律取自本表；表中没有的，先问组长，不要自己拼一个"看起来对"的。</li>
+<li><strong>引用必标来源</strong>。写作时用 <code>（承接 V0.2 §用例清单 UC05）</code>、<code>（来源：SPEC §5.2）</code>、<code>（依据：BR12）</code> 三种写法之一。</li>
+<li><strong>发现冲突先记录、不擅自改</strong>。基线与本表、或基线与基线之间矛盾时，登记到本表 §4 与《<a href="../结果材料/13-需求追踪矩阵-2组-阅读助手.md">V0.3-需求追踪矩阵</a>》§6，由组长统一裁决。</li>
+<li><strong>新增编号只在指定空间内顺延</strong>。可在既有段内新增的只有 <code>INT-</code>（汪昊）与 <code>ERR-</code>（§1.6，段位不可扩展）；<code>NFR-14</code> 为 2 组新增项（§1.3）。其余前缀已满号，不得新增。</li>
+<li><strong>本表变更须同步</strong>。组长更新本表后，须在组内通知，并同步 <code>11-需求模型V0.3-2组-阅读助手.md</code> 与图形文件中的引用。</li>
+</ol>
+<hr />
+<h2 id="4_2">4. 已发现但本轮不处理的基线形式缺陷</h2>
+<p>以下为阅读基线时发现的形式问题，<strong>不改语义</strong>，登记备查：</p>
+<table>
+<thead>
+<tr>
+<th>位置</th>
+<th>问题</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>需求模型 V0.2 §8</td>
+<td>子节编号写作 <code>7.1</code> / <code>7.2</code>，与其父节 §8 不符</td>
+<td>形式缺陷，V0.3 合并时统一为 §8.1 / §8.2</td>
+</tr>
+<tr>
+<td>需求模型 V0.2 §8.2</td>
+<td>回答分支状态漏 <code>stale</code></td>
+<td>已在本表 §1.4 按 SPEC 补全</td>
+</tr>
+<tr>
+<td>需求模型 V0.2 §9</td>
+<td>NFR 编号为 <code>NFR01</code> 无连字符</td>
+<td>已在本表 §1.3 统一</td>
+</tr>
+<tr>
+<td>V0.2 §10 与 SRS §3</td>
+<td>FR 编号同号不同义（V0.2 12 条 / SRS 11 条）</td>
+<td>已在本表 §1.2 给出统一口径；<strong>2026-10-19 已裁决：以 V0.2 为准</strong></td>
+</tr>
+<tr>
+<td>V0.2 §6 与 SRS §5</td>
+<td>BR 编号同号不同义（V0.2 15 条 / SRS 7 条）</td>
+<td>已在本表 §1.2b 给出统一口径；<strong>2026-10-19 已裁决：以 V0.2 为准</strong></td>
+</tr>
+<tr>
+<td>V0.2 §9 与 SRS §7</td>
+<td>SRS NFR-06 在 V0.2 的 13 条中无对应项</td>
+<td>已在本表 §1.3 新增 <code>NFR-14</code> 承接</td>
+</tr>
+<tr>
+<td>1 组交付材料</td>
+<td>文件名 <code>需求模型V0.1.md</code> 与正文标题「需求模型 V0.2」不一致</td>
+<td><strong>1 组侧返修项</strong>（登记于 RTM §6），2 组不提请改名，避免与基线快照对不上</td>
+</tr>
+</tbody>
+</table>
+<div class="pagebreak"></div>
+
+<h1 id="4-uc01uc12">第 4 部分 · 用例规约 UC01–UC12</h1>
+<blockquote>
+<p>来源文件：<code>12-用例规约-2组-阅读助手.md</code></p>
+</blockquote>
+<h1 id="v03">智能笔记助手 · V0.3 用例规约</h1>
+<ul>
+<li>版本：V0.3</li>
+<li>编制：2 组 · 郭谦</li>
+<li>日期：2026-10-18（修订 2026-10-20）</li>
+<li>基线：1 组《需求模型 V0.2》§5 核心用例清单、《SRS V1.0》§4 用例说明</li>
+<li>编号口径：《<a href="../结果材料/17-编号规则与术语表-2组-阅读助手.md">编号规则与术语表</a>》§1</li>
+<li>用途：补齐 1 组交付中<strong>缺失</strong>的用例规约</li>
+</ul>
+<h2 id="0">0. 阅读说明</h2>
+<p>1 组基线中，用例只以两种形式存在：V0.2 §5 的<strong>一张清单表</strong>（12 行，列出参与者/前置/结果/异常），和 SRS §4 的 <strong>5 条一句话简述</strong>（UC01/UC02/UC05/UC06/UC07/UC08/UC09+10）。两者都不是可执行的用例规约——没有编号化的主成功路径，也没有把异常路径落到冻结的状态名上。</p>
+<p>本文件补这一块：<strong>12 条用例全部按 UC01 的格式标杆完整填写</strong>（编号化主成功路径 + 异常与降级路径表 + 后置条件 + 关联），字段内容取自 V0.2 §5 / SRS / SPEC，不新增语义。原 V0.3 初稿中 UC02/UC03/UC04/UC07/UC11/UC12 的 6 处 <code>【待补】</code> 主成功路径已于 2026-10-20 全部补齐。</p>
+<p><strong>编号与状态名一律取自《编号规则与术语表》</strong>，不得自造。</p>
+<h2 id="1_4">1. 规约模板</h2>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>填写要求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用例编号</td>
+<td><code>UC01</code>–<code>UC12</code>，取自 V0.2 §5</td>
+</tr>
+<tr>
+<td>用例名称</td>
+<td>与 V0.2 §5 一致，<strong>不得改名</strong></td>
+</tr>
+<tr>
+<td>主要参与者</td>
+<td>取自 5 个冻结参与者</td>
+</tr>
+<tr>
+<td>前置条件</td>
+<td>可验证的系统状态</td>
+</tr>
+<tr>
+<td>触发事件</td>
+<td>启动该用例的用户动作或系统事件</td>
+</tr>
+<tr>
+<td>主成功路径</td>
+<td>编号步骤，每步写明"谁做什么 → 系统响应"</td>
+</tr>
+<tr>
+<td>异常与降级路径</td>
+<td>编号为主路径号 + 字母；写明触发条件与<strong>结果状态</strong>（状态名取自术语表 §1.4）</td>
+</tr>
+<tr>
+<td>后置条件</td>
+<td>成功后的系统状态</td>
+</tr>
+<tr>
+<td>关联业务规则</td>
+<td><code>BR01</code>–<code>BR15</code></td>
+</tr>
+<tr>
+<td>关联功能需求</td>
+<td><code>FR-01</code>–<code>FR-12</code></td>
+</tr>
+<tr>
+<td>关联非功能需求</td>
+<td><code>NFR-01</code>–<code>NFR-14</code></td>
+</tr>
+<tr>
+<td>关联领域对象</td>
+<td>类名（见术语表 §2.3）</td>
+</tr>
+<tr>
+<td>关联图</td>
+<td><code>A1</code>–<code>A9</code>、用例图、领域模型</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-uc01">2. UC01 导入文档（完整样例）</h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用例编号</td>
+<td><code>UC01</code></td>
+</tr>
+<tr>
+<td>用例名称</td>
+<td>导入文档</td>
+</tr>
+<tr>
+<td>主要参与者</td>
+<td>Reader</td>
+</tr>
+<tr>
+<td>前置条件</td>
+<td>用户已进入工作区；文档库可用</td>
+</tr>
+<tr>
+<td>触发事件</td>
+<td>用户在文档库中选择"导入"并明确选定文件</td>
+</tr>
+</tbody>
+</table>
+<p><strong>主成功路径</strong></p>
+<ol>
+<li>用户明确选择一个或多个文件（系统不遍历目录、不自动读取工作区，BR11）。</li>
+<li>系统校验文件格式与访问权限。</li>
+<li>系统计算 <code>source_hash</code>，登记 <code>Document</code> 与 <code>DocumentVersion</code>；若同一 <code>source_hash</code> 已存在有效版本，则不重复创建（SPEC §3.2）。</li>
+<li>系统创建 <code>ParseRun</code>，文档状态置为 <code>registered</code> 后进入 <code>queued</code>。</li>
+<li>系统向用户返回 <code>document_id</code>、<code>version_id</code>、<code>parse_run_id</code>（SPEC §7 <code>/documents/import</code>）。</li>
+<li>系统生成导入完成通知（<code>Notification</code>）。</li>
+</ol>
+<p><strong>异常与降级路径</strong></p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>触发条件</th>
+<th>系统响应</th>
+<th>结果状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1a</td>
+<td>格式不支持</td>
+<td>明确提示不支持及原因，不读入其他文件</td>
+<td>不创建版本</td>
+</tr>
+<tr>
+<td>1b</td>
+<td>权限不足</td>
+<td>提示权限原因，不读入其他文件</td>
+<td>不创建版本</td>
+</tr>
+<tr>
+<td>3a</td>
+<td>同一 <code>source_hash</code> 已存在有效版本</td>
+<td>不重复创建，提示已存在并定位到既有版本</td>
+<td>复用既有 <code>DocumentVersion</code></td>
+</tr>
+<tr>
+<td>4a</td>
+<td>解析任务创建失败</td>
+<td>记录错误码，提示可重试或删除任务</td>
+<td><code>ParseRun.status = failed</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>后置条件</strong>：<code>Document</code>、<code>DocumentVersion</code>、<code>ParseRun</code> 存在且状态可查；源文件保持只读未修改。</p>
+<p><strong>关联</strong></p>
+<ul>
+<li>业务规则：BR11、BR14</li>
+<li>功能需求：FR-01</li>
+<li>非功能需求：NFR-05（溯源字段）、NFR-13（格式优先级与明确提示）</li>
+<li>领域对象：Document、DocumentVersion、ParseRun、Notification</li>
+<li>图：A5（时序图·导入-解析-索引）、A1（状态图·文档处理）、用例图 UC01</li>
+</ul>
+<h2 id="3-uc02uc12">3. UC02–UC12 完整规约</h2>
+<blockquote>
+<p>字段与 UC01 样例<strong>完全同构</strong>：先列表头字段，再给编号化的主成功路径、异常与降级路径表、后置条件与关联。
+字段值直接取自 V0.2 §5 与 SRS，<strong>不新增语义</strong>；状态名取自《编号规则与术语表》§1.4，错误码取自《<a href="./V0.3-SPEC错误码表.md">V0.3-SPEC错误码表</a>》。
+V0.2 §5 与 SRS 均未列出某项时，写 <code>—（基线未列）</code>，<strong>不自造</strong>。</p>
+</blockquote>
+<h3 id="uc02">UC02 处理并索引文档</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用例编号</td>
+<td><code>UC02</code></td>
+</tr>
+<tr>
+<td>用例名称</td>
+<td>处理并索引文档</td>
+</tr>
+<tr>
+<td>主要参与者</td>
+<td>Local Parser/OCR、Reader</td>
+</tr>
+<tr>
+<td>前置条件</td>
+<td>文档已登记（<code>UC01</code> 完成）</td>
+</tr>
+<tr>
+<td>触发事件</td>
+<td>解析任务被调度</td>
+</tr>
+</tbody>
+</table>
+<p><strong>主成功路径</strong></p>
+<ol>
+<li>系统调度解析任务，文档状态由 <code>queued</code> 进入 <code>processing</code>。</li>
+<li>Local Parser/OCR 解析文档并产出统一中间表示（IR）：<code>Page</code>（<code>physical_page</code>、<code>page_label</code>、<code>asset_ref</code>）与 <code>ContentBlock</code>（<code>text</code>、<code>section_path</code>、<code>char_start/end</code>、<code>bbox</code>、<code>confidence</code>）（SPEC §3.2）。</li>
+<li>解析器写回 <code>ParseRun</code>（<code>parser_version</code>、<code>config_hash</code>、<code>status</code>、<code>warnings</code>）；全部内容块置信度达标时，状态由 <code>processing</code> 进入 <code>parsed</code>。</li>
+<li>系统在 IR 之上创建 <code>IndexingRun</code> 与 <code>Index</code>，记录 <code>version_id</code>、<code>index_type</code>（全文 / 向量）与权限范围。</li>
+<li>索引构建成功，状态进入 <code>indexed</code>；系统生成处理完成通知（<code>Notification</code>）（BR15）。</li>
+<li>用户可随时查询处理状态、进度、警告与错误码（SPEC §7 <code>GET /documents/{id}/status</code>）。</li>
+</ol>
+<p><strong>异常与降级路径</strong></p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>触发条件</th>
+<th>系统响应</th>
+<th>结果状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2a</td>
+<td>扫描件 OCR 低置信</td>
+<td>保留原页/截图并标注风险，<strong>不承诺精确结构化问答</strong>（BR07）</td>
+<td><code>ocr_low_confidence</code> → <code>needs_review</code>（<code>ERR-201</code>）</td>
+</tr>
+<tr>
+<td>2b</td>
+<td>双栏 / 表格 / 公式结构不确定</td>
+<td>同上</td>
+<td><code>layout_uncertain</code> → <code>needs_review</code>（<code>ERR-202</code>）</td>
+</tr>
+<tr>
+<td>3a</td>
+<td>解析器异常或文件损坏</td>
+<td>记录错误码与重试次数，提示可重试或删除任务</td>
+<td><code>failed</code>（<code>ERR-203</code>）</td>
+</tr>
+<tr>
+<td>3b</td>
+<td>解析超时</td>
+<td>同上</td>
+<td><code>failed</code>（<code>ERR-205</code>）</td>
+</tr>
+<tr>
+<td>4a</td>
+<td>全文索引构建失败</td>
+<td>保留已解析结果，提示"当前仅可原文阅读"</td>
+<td><code>parsed</code>（索引未完成，<code>Index.build_status = failed</code>）（<code>ERR-206</code>）</td>
+</tr>
+<tr>
+<td>4b</td>
+<td>向量索引引擎缺失或未启用</td>
+<td>降级为全文检索，明确提示</td>
+<td><code>indexed</code>（仅全文）（<code>ERR-207</code>）</td>
+</tr>
+<tr>
+<td>5a</td>
+<td>用户删除失败任务</td>
+<td>任务标记删除，不再占用队列</td>
+<td><code>deleted</code>（<code>ERR-208</code>）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>后置条件</strong>：生成 IR、结构候选与索引；处理状态、进度与警告可见（关闭浏览器后仍可查）。</p>
+<p><strong>关联</strong></p>
+<ul>
+<li>业务规则：BR07、BR15</li>
+<li>功能需求：FR-02</li>
+<li>非功能需求：NFR-05（溯源字段）、NFR-11（处理耗时须记录）</li>
+<li>领域对象：ParseRun、Page、ContentBlock、IndexingRun、Index、Notification</li>
+<li>图：A1（状态图·文档处理）、A5（时序图·导入-解析-索引）</li>
+</ul>
+<h3 id="uc03">UC03 管理文档空间</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用例编号</td>
+<td><code>UC03</code></td>
+</tr>
+<tr>
+<td>用例名称</td>
+<td>管理文档空间</td>
+</tr>
+<tr>
+<td>主要参与者</td>
+<td>Reader / Workspace Owner</td>
+</tr>
+<tr>
+<td>前置条件</td>
+<td>工作区可用</td>
+</tr>
+<tr>
+<td>触发事件</td>
+<td>用户创建空间、筛选、收藏、删除或查看文档状态</td>
+</tr>
+</tbody>
+</table>
+<p><strong>主成功路径</strong></p>
+<ol>
+<li>用户进入文档库，选择一个工作区或 <code>DocumentSpace</code>（BR11：系统不自动遍历工作区）。</li>
+<li>用户执行空间操作之一：新建 / 重命名空间、按条件筛选、收藏、删除文档，或查看某文档的处理状态。</li>
+<li>系统校验 <code>PermissionGrant</code>（<code>subject</code> / <code>resource</code> / <code>action</code>）；校验通过后执行操作。</li>
+<li>系统更新 <code>DocumentSpace</code> 与 <code>Document</code> 的归属关系，并把文档状态回显到文档库（状态名取自术语表 §1.4）。</li>
+<li>若操作为删除或撤权，系统按 BR06 触发失效传播：<code>DocumentVersion.stale</code> 置位，关联 <code>Index</code> 与引用一并标记 <code>stale</code>。</li>
+<li>系统写入 <code>AuditEvent</code>，并在传播完成时生成 <code>Notification</code>。</li>
+</ol>
+<p><strong>异常与降级路径</strong></p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>触发条件</th>
+<th>系统响应</th>
+<th>结果状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3a</td>
+<td>无匹配 <code>PermissionGrant</code></td>
+<td>拒绝操作并提示原因，<strong>不做任何归属变更</strong></td>
+<td>不变更（<code>ERR-102</code> 口径同源）</td>
+</tr>
+<tr>
+<td>5a</td>
+<td>删除传播未完成</td>
+<td>相关内容标记失效，<strong>不得继续作为有效引用</strong></td>
+<td><code>stale</code>（<code>ERR-305</code>）</td>
+</tr>
+<tr>
+<td>5b</td>
+<td>文档版本已失效或已被撤权</td>
+<td>同上</td>
+<td><code>stale</code>（<code>ERR-303</code>）</td>
+</tr>
+<tr>
+<td>6a</td>
+<td>查看的文档正在处理中</td>
+<td>返回当前状态而非结果，不假装已完成</td>
+<td>保持 <code>queued</code> / <code>processing</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>后置条件</strong>：文档空间成员与文档归属更新，且删除 / 撤权传播<strong>可审计</strong>。</p>
+<p><strong>关联</strong></p>
+<ul>
+<li>业务规则：BR06、BR11</li>
+<li>功能需求：FR-01</li>
+<li>非功能需求：—（基线未列）</li>
+<li>领域对象：DocumentSpace、Document、DocumentVersion、PermissionGrant、Index、AuditEvent、Notification</li>
+<li>图：A1（状态图·文档处理）</li>
+</ul>
+<h3 id="uc04">UC04 阅读文档与目录</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用例编号</td>
+<td><code>UC04</code></td>
+</tr>
+<tr>
+<td>用例名称</td>
+<td>阅读文档与目录</td>
+</tr>
+<tr>
+<td>主要参与者</td>
+<td>Reader</td>
+</tr>
+<tr>
+<td>前置条件</td>
+<td>文档可打开</td>
+</tr>
+<tr>
+<td>触发事件</td>
+<td>用户打开已导入文档</td>
+</tr>
+</tbody>
+</table>
+<p><strong>主成功路径</strong></p>
+<ol>
+<li>用户从文档库打开一个文档，系统加载其<strong>当前有效</strong> <code>DocumentVersion</code> 与 IR。</li>
+<li>系统按 <code>Page</code> 渲染正文与页码（同时给出 <code>physical_page</code> 与 <code>page_label</code>），并按 <code>ContentBlock.section_path</code> 生成目录 / 章节树。</li>
+<li>用户按页、章节或目录跳转；系统记录阅读位置，供下次继续。</li>
+<li>用户可对正文或选中文本发起后续动作：检索（UC05）、提问（UC06）、记笔记（UC09）。</li>
+<li>离线时：已导入文档仍可打开、阅读，并可执行<strong>已建立索引的基础检索</strong>（BR13、NFR-09）；AI 相关入口显示明确降级状态而非无响应。</li>
+</ol>
+<p><strong>异常与降级路径</strong></p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>触发条件</th>
+<th>系统响应</th>
+<th>结果状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2a</td>
+<td>页码标签不确定（视觉页码 ≠ 物理页）</td>
+<td>双字段并列展示；引用回退到 <code>section_path</code> + 字符偏移</td>
+<td><code>layout_uncertain</code></td>
+</tr>
+<tr>
+<td>2b</td>
+<td>结构候选待人工复核</td>
+<td>保留原页/截图与风险标记，目录标为"待复核"</td>
+<td><code>needs_review</code></td>
+</tr>
+<tr>
+<td>1a</td>
+<td>文档被撤权或删除</td>
+<td>不打开正文，提示来源已失效</td>
+<td><code>stale</code> / <code>deleted</code></td>
+</tr>
+<tr>
+<td>5a</td>
+<td>离线且索引不可用</td>
+<td>仅提供原文阅读，检索入口提示不可用</td>
+<td>阅读可用（BR13）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>后置条件</strong>：用户按页 / 章节 / 目录 / 阅读位置浏览；<strong>离线仍可用</strong>（BR13）。</p>
+<p><strong>关联</strong></p>
+<ul>
+<li>业务规则：BR07、BR13</li>
+<li>功能需求：FR-02（含 SRS-FR03 阅读与目录）</li>
+<li>非功能需求：NFR-01（引用可回页/章节/原文）、NFR-11（打开与首屏耗时须记录）</li>
+<li>领域对象：DocumentVersion、Page、ContentBlock、Index</li>
+<li>图：A1（状态图·文档处理）</li>
+</ul>
+<h3 id="uc05">UC05 检索文档或授权文档集</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用例编号</td>
+<td><code>UC05</code></td>
+</tr>
+<tr>
+<td>用例名称</td>
+<td>检索文档或授权文档集</td>
+</tr>
+<tr>
+<td>主要参与者</td>
+<td>Reader</td>
+</tr>
+<tr>
+<td>前置条件</td>
+<td>文档已索引且用户有权访问</td>
+</tr>
+<tr>
+<td>触发事件</td>
+<td>用户提交检索词或模糊问题</td>
+</tr>
+</tbody>
+</table>
+<p><strong>主成功路径</strong></p>
+<ol>
+<li>用户选择检索范围：当前文档，或显式选定的 <code>DocumentSet</code>（NFR-06：由用户选择，不由系统推定）。</li>
+<li>系统在检索排序之前先完成权限过滤（BR01）；缓存命中时同样先过滤（<code>ERR-307</code>）。</li>
+<li>系统执行全文 / 语义 / 混合检索（<code>Index.index_type</code>），返回候选 <code>ContentBlock</code> 与 <code>Evidence</code>。</li>
+<li>系统按来源文档分组返回结果，每组展示来源、版本、页码 / 章节与原文片段。</li>
+<li>用户可点选结果跳回原文（UC08 口径），或基于结果发起提问（UC06）。</li>
+</ol>
+<p><strong>异常与降级路径</strong></p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>触发条件</th>
+<th>系统响应</th>
+<th>结果状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2a</td>
+<td>权限过滤后集合为空</td>
+<td>返回"无答案"并提示调整范围，<strong>不得用看似相关的结果伪装</strong></td>
+<td>降级为原文阅读（BR04、BR05）（<code>ERR-301</code>）</td>
+</tr>
+<tr>
+<td>3a</td>
+<td>结果噪声过高 / 无高置信命中</td>
+<td>标注置信度，提示缩小范围或改写提问</td>
+<td>正常返回但不承诺答案</td>
+</tr>
+<tr>
+<td>4a</td>
+<td>来源版本已变化、索引未重建</td>
+<td>该来源的结果标记失效</td>
+<td><code>stale</code>（<code>ERR-304</code>）</td>
+</tr>
+<tr>
+<td>4b</td>
+<td>来源已撤权</td>
+<td>同上</td>
+<td><code>stale</code>（<code>ERR-303</code>）</td>
+</tr>
+<tr>
+<td>3b</td>
+<td>向量索引不可用</td>
+<td>降级为全文检索并明确提示</td>
+<td><code>indexed</code>（仅全文）（<code>ERR-207</code>）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>后置条件</strong>：结果展示来源文档、版本、页码 / 章节与原文片段；跨库问答（FR-11）不在本期范围。</p>
+<p><strong>关联</strong></p>
+<ul>
+<li>业务规则：BR01、BR04、BR05、BR08</li>
+<li>功能需求：FR-03</li>
+<li>非功能需求：NFR-02（权限过滤先于检索排序）、NFR-06（集合上限候选 20 份）</li>
+<li>领域对象：Query、DocumentSet、Index、Evidence、PermissionGrant</li>
+<li>图：A6（活动图·检索）</li>
+</ul>
+<h3 id="uc06">UC06 对当前文档/选中文本提问</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用例编号</td>
+<td><code>UC06</code></td>
+</tr>
+<tr>
+<td>用例名称</td>
+<td>对当前文档/选中文本提问</td>
+</tr>
+<tr>
+<td>主要参与者</td>
+<td>Reader、Authorized Model Service</td>
+</tr>
+<tr>
+<td>前置条件</td>
+<td>有可用证据且满足外发策略</td>
+</tr>
+<tr>
+<td>触发事件</td>
+<td>用户提交问题</td>
+</tr>
+</tbody>
+</table>
+<p><strong>主成功路径</strong></p>
+<ol>
+<li>用户提交查询，系统创建 <code>Query</code>（单文档提问不构造 <code>DocumentSet</code>，见 R-04）。</li>
+<li>系统完成权限过滤与门控，组装 Evidence Contract（版本有效、敏感级别允许、置信度达阈值）（BR01、BR02）。</li>
+<li>系统按 BR12 逐文件展示拟外发范围、模型服务与用途，取得<strong>本次</strong>明确确认（<code>UploadConfirm</code>，<code>Policy.require_per_file_consent</code>）。</li>
+<li>系统调用云端模型；回答状态经 <code>requested → retrieving → evidence_checked → generating</code>。</li>
+<li>系统逐条校验 <code>Claim</code> 与 <code>Citation</code>：引用必须来自本次 allow-list（BR03），支持状态记入 <code>support_status</code>；状态进入 <code>citation_checked</code>。</li>
+<li>系统展示带引用的回答，状态进入 <code>answered</code>；用户可点击引用进入 UC08 核验。</li>
+</ol>
+<p><strong>异常与降级路径</strong></p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>触发条件</th>
+<th>系统响应</th>
+<th>结果状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3a</td>
+<td>用户拒绝本次外发 / 策略禁止云端</td>
+<td>不调用云端，仅返回本地证据与原文</td>
+<td><code>local_evidence_only</code>（<code>ERR-401</code>、<code>ERR-306</code>）</td>
+</tr>
+<tr>
+<td>2a</td>
+<td>证据覆盖不足</td>
+<td>标记待人工复核，提示补充检索范围</td>
+<td><code>needs_human_review</code>（<code>ERR-509</code>）</td>
+</tr>
+<tr>
+<td>2b</td>
+<td>无依据问题</td>
+<td>明确"无法确认"，<strong>不得伪装成有依据回答</strong></td>
+<td><code>refused</code>（<code>ERR-510</code>）</td>
+</tr>
+<tr>
+<td>4a</td>
+<td>云端模型超时或失败</td>
+<td>提示模型不可用，返回原文 / 检索结果</td>
+<td><code>model_failed</code>（<code>ERR-501</code>、<code>ERR-502</code>）</td>
+</tr>
+<tr>
+<td>5a</td>
+<td>引用不在 allow-list / 页码越界 / <code>quote</code> 不匹配 / 定位失败</td>
+<td>标记该引用失效，<strong>禁止显示为已核验答案</strong></td>
+<td><code>citation_invalid</code>（<code>ERR-504</code>–<code>ERR-508</code>）</td>
+</tr>
+<tr>
+<td>5b</td>
+<td>回答所依据的证据过期或撤权</td>
+<td>不复用旧答案，重新检索</td>
+<td><code>stale</code>（<code>ERR-303</code>、<code>ERR-304</code>）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>后置条件</strong>：<code>Answer</code> 及其 <code>Claim</code> / <code>Citation</code> 存在；本次外发确认留有 <code>AuditEvent</code>。</p>
+<p><strong>关联</strong></p>
+<ul>
+<li>业务规则：BR01、BR02、BR03、BR04、BR05、BR12</li>
+<li>功能需求：FR-04（含 SRS-FR06）</li>
+<li>非功能需求：NFR-10（30 秒流式反馈为候选目标）</li>
+<li>领域对象：Query、Answer、Claim、Citation、Evidence、ModelConfig、Policy、AuditEvent</li>
+<li>图：A2（状态图·回答生成）、A3（时序图·问答与引用校验）、A4（时序图·逐文件外发确认）</li>
+</ul>
+<h3 id="uc07">UC07 生成摘要/要点</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用例编号</td>
+<td><code>UC07</code></td>
+</tr>
+<tr>
+<td>用例名称</td>
+<td>生成摘要/要点</td>
+</tr>
+<tr>
+<td>主要参与者</td>
+<td>Reader、Authorized Model Service</td>
+</tr>
+<tr>
+<td>前置条件</td>
+<td>文档或章节已选定</td>
+</tr>
+<tr>
+<td>触发事件</td>
+<td>用户请求全文或章节摘要</td>
+</tr>
+</tbody>
+</table>
+<p><strong>主成功路径</strong></p>
+<ol>
+<li>用户选定范围：整篇文档或指定章节（对应 <code>DocumentVersion</code> 与 <code>section_path</code>）。</li>
+<li>系统检索该范围内的 <code>ContentBlock</code>，组装 Evidence Contract（版本有效、权限通过、置信度达标），生成 <code>Query</code>。</li>
+<li>系统按 BR12 逐文件展示外发范围、模型服务与用途，取得本次明确确认。</li>
+<li>系统调用 Authorized Model Service 生成全文提纲 / 章节要点；回答状态经 <code>requested → retrieving → evidence_checked → generating</code>。</li>
+<li>系统为每条关键结论绑定 <code>Citation</code>（SRS-FR05「关键结论绑定引用」），校验引用来自本次 allow-list（BR03）；状态进入 <code>citation_checked</code>。</li>
+<li>系统展示带引用的提纲与要点，状态进入 <code>answered</code>；用户可点击引用进入 UC08 核验。</li>
+</ol>
+<p><strong>异常与降级路径</strong></p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>触发条件</th>
+<th>系统响应</th>
+<th>结果状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2a</td>
+<td>证据覆盖不足</td>
+<td>标记待复核，提示补充范围</td>
+<td><code>needs_human_review</code>（<code>ERR-509</code>）</td>
+</tr>
+<tr>
+<td>2b</td>
+<td>证据低置信或版本失效</td>
+<td>仅返回原文 / 检索结果，不生成确定性结论</td>
+<td>降级（原文 / 检索）（BR07、BR13）</td>
+</tr>
+<tr>
+<td>3a</td>
+<td>用户拒绝本次外发</td>
+<td>不调用云端，仅提供本地证据与原文</td>
+<td><code>local_evidence_only</code>（<code>ERR-401</code>）</td>
+</tr>
+<tr>
+<td>4a</td>
+<td>云端模型超时或失败</td>
+<td>提示模型不可用，返回原文 / 检索结果</td>
+<td><code>model_failed</code>（<code>ERR-501</code>、<code>ERR-502</code>）</td>
+</tr>
+<tr>
+<td>5a</td>
+<td>引用定位失败或不在 allow-list</td>
+<td>标记失效，禁止显示为已核验答案</td>
+<td><code>citation_invalid</code>（<code>ERR-504</code>–<code>ERR-508</code>）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>后置条件</strong>：生成带引用的提纲与要点；摘要同样受证据契约与引用校验约束，不因"是摘要"而放宽。</p>
+<p><strong>关联</strong></p>
+<ul>
+<li>业务规则：BR02、BR03、BR04、BR12</li>
+<li>功能需求：FR-05</li>
+<li>非功能需求：NFR-10（长任务须显示进度）</li>
+<li>领域对象：Query、Answer、Claim、Citation、Evidence、Policy、AuditEvent</li>
+<li>图：A2（状态图·回答生成）、A3（时序图·问答与引用校验）</li>
+</ul>
+<h3 id="uc08">UC08 核验回答引用</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用例编号</td>
+<td><code>UC08</code></td>
+</tr>
+<tr>
+<td>用例名称</td>
+<td>核验回答引用</td>
+</tr>
+<tr>
+<td>主要参与者</td>
+<td>Reader</td>
+</tr>
+<tr>
+<td>前置条件</td>
+<td>回答包含 <code>Citation</code></td>
+</tr>
+<tr>
+<td>触发事件</td>
+<td>用户点击某条引用</td>
+</tr>
+</tbody>
+</table>
+<p><strong>主成功路径</strong></p>
+<ol>
+<li>用户点击回答中的一条引用。</li>
+<li>系统按 <code>Citation.evidence_id</code> 定位来源 <code>Evidence</code> → <code>ContentBlock</code> → <code>Page</code> 与 <code>DocumentVersion</code>。</li>
+<li>系统跳转到对应页码 / 章节，并高亮原文片段或展示 <code>bbox</code>。</li>
+<li>系统回显该引用对应的 <code>support_status</code>（<code>supported</code> / <code>partial</code> / <code>conflicting</code> / <code>unsupported</code> / <code>locator_failed</code>）。</li>
+<li>用户可在原文位置直接发起记笔记（UC09）。</li>
+</ol>
+<p><strong>异常与降级路径</strong></p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>触发条件</th>
+<th>系统响应</th>
+<th>结果状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2a</td>
+<td>来源版本已变化或已撤权</td>
+<td>提示来源已变更，引用标记失效</td>
+<td><code>stale</code>（<code>ERR-303</code>、<code>ERR-304</code>）</td>
+</tr>
+<tr>
+<td>3a</td>
+<td>引用定位失败</td>
+<td>提示无法定位，<strong>禁止显示为已核验答案</strong></td>
+<td><code>citation_invalid</code>（<code>ERR-508</code>），<code>support_status = locator_failed</code></td>
+</tr>
+<tr>
+<td>3b</td>
+<td>引用 <code>quote</code> 与原文不匹配</td>
+<td>同上</td>
+<td><code>citation_invalid</code>（<code>ERR-507</code>）</td>
+</tr>
+<tr>
+<td>4a</td>
+<td>来源之间存在冲突</td>
+<td>按 <code>support_status = conflicting</code> 显式标记，不以单条为准</td>
+<td>保留冲突标记</td>
+</tr>
+</tbody>
+</table>
+<p><strong>后置条件</strong>：用户回到来源版本与原文位置；核验结果不修改回答内容本身。</p>
+<p><strong>关联</strong></p>
+<ul>
+<li>业务规则：BR03、BR06</li>
+<li>功能需求：FR-06（含 SRS-FR07）</li>
+<li>非功能需求：NFR-01（引用可回到版本、页码 / 章节与原文）</li>
+<li>领域对象：Citation、Evidence、ContentBlock、Page、DocumentVersion</li>
+<li>图：A3（时序图·问答与引用校验）</li>
+<li>备注：挂载关系见 R-02（<code>UC08 ..&gt; UC06</code> / <code>UC08 ..&gt; UC07</code> 为 <code>&lt;&lt;extend&gt;&gt;</code>），裁决材料见《<a href="./R-02裁决材料.md">R-02裁决材料</a>》</li>
+</ul>
+<h3 id="uc09">UC09 创建批注/笔记</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用例编号</td>
+<td><code>UC09</code></td>
+</tr>
+<tr>
+<td>用例名称</td>
+<td>创建批注/笔记</td>
+</tr>
+<tr>
+<td>主要参与者</td>
+<td>Reader</td>
+</tr>
+<tr>
+<td>前置条件</td>
+<td>有选中文本、回答或引用</td>
+</tr>
+<tr>
+<td>触发事件</td>
+<td>用户保存笔记</td>
+</tr>
+</tbody>
+</table>
+<p><strong>主成功路径</strong></p>
+<ol>
+<li>用户选中文本、回答或引用作为笔记的锚点。</li>
+<li>系统创建 <code>Note</code>，并关联 <code>user_id</code>、<code>document_version_id</code>，以及 <code>block_id</code> 或 <code>answer_id</code>（BR09：<strong>绑定版本而非文档</strong>）。</li>
+<li>用户填写个人思考与标签，系统保存并回显在 <code>notes</code> 页面。</li>
+</ol>
+<p><strong>异常与降级路径</strong></p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>触发条件</th>
+<th>系统响应</th>
+<th>结果状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2a</td>
+<td>原文版本已变更</td>
+<td>标记关联失效并提示复核（BR09）</td>
+<td><code>stale</code>（<code>ERR-601</code>）</td>
+</tr>
+<tr>
+<td>2b</td>
+<td>定位漂移（<code>block_id</code> 不存在）</td>
+<td>保留笔记文字，提示定位失效</td>
+<td>定位失效（<code>ERR-602</code>）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>后置条件</strong>：笔记保存且<strong>保留版本关联</strong>，可回溯到原文位置。</p>
+<p><strong>关联</strong></p>
+<ul>
+<li>业务规则：BR09</li>
+<li>功能需求：FR-07（含 SRS-FR08）</li>
+<li>非功能需求：—（基线未列）</li>
+<li>领域对象：Note、ContentBlock、DocumentVersion、Answer、Citation</li>
+<li>图：A7（活动图·笔记与导出）、领域模型</li>
+</ul>
+<h3 id="uc10">UC10 导出阅读成果</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用例编号</td>
+<td><code>UC10</code></td>
+</tr>
+<tr>
+<td>用例名称</td>
+<td>导出阅读成果</td>
+</tr>
+<tr>
+<td>主要参与者</td>
+<td>Reader</td>
+</tr>
+<tr>
+<td>前置条件</td>
+<td>已选择摘要、笔记或引用；用户已指定保存位置</td>
+</tr>
+<tr>
+<td>触发事件</td>
+<td>用户提交导出</td>
+</tr>
+</tbody>
+</table>
+<p><strong>主成功路径</strong></p>
+<ol>
+<li>用户选择导出范围与格式（摘要 / 笔记 / 引用）。</li>
+<li>用户<strong>指定目标路径</strong>（BR11：只写用户指定位置）。</li>
+<li>系统创建 <code>ExportJob</code>，记录 <code>format</code>、<code>scope</code>、<code>target_path</code>、<code>status</code>、<code>created_at</code>（SPEC §6）。</li>
+<li>系统在写入前后对<strong>源文件</strong>执行差分检查，确认源文件未被修改（BR14）。</li>
+<li>系统写入导出文件并显示写入结果。</li>
+<li>若导出内容含引用，系统保留其来源版本与位置关联（BR09）。</li>
+</ol>
+<p><strong>异常与降级路径</strong></p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>触发条件</th>
+<th>系统响应</th>
+<th>结果状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1a</td>
+<td>导出范围为空</td>
+<td>提示"没有可导出的内容"，不创建任务</td>
+<td>不创建（<code>ERR-603</code>）</td>
+</tr>
+<tr>
+<td>4a</td>
+<td>源文件差分检查不通过</td>
+<td>中止导出，提示源文件被改动</td>
+<td><code>ExportJob.status = failed</code>（<code>ERR-606</code>）</td>
+</tr>
+<tr>
+<td>2a</td>
+<td>目标路径不存在或无写权限</td>
+<td>提示且<strong>不写入</strong></td>
+<td>不写入（<code>ERR-604</code>）</td>
+</tr>
+<tr>
+<td>5a</td>
+<td>写入失败（IO）</td>
+<td>记录 <code>ExportJob.error</code>，提示可重试</td>
+<td><code>ExportJob.status = failed</code>（<code>ERR-605</code>）</td>
+</tr>
+<tr>
+<td>6a</td>
+<td>导出内容中的部分引用已失效</td>
+<td>在导出文件中标注失效引用，不静默剔除</td>
+<td>正常导出 + 标注（<code>ERR-607</code>）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>后置条件</strong>：指定位置生成衍生文件；<strong>源文件未被修改</strong>；失败时留有 <code>error</code> 且不静默覆盖。</p>
+<p><strong>关联</strong></p>
+<ul>
+<li>业务规则：BR09、BR14</li>
+<li>功能需求：FR-08（含 SRS-FR09）</li>
+<li>非功能需求：NFR-05（保留溯源字段）</li>
+<li>领域对象：ExportJob、Note、Citation、DocumentVersion</li>
+<li>图：A7（活动图·笔记与导出）</li>
+</ul>
+<h3 id="uc11">UC11 配置模型与隐私边界</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用例编号</td>
+<td><code>UC11</code></td>
+</tr>
+<tr>
+<td>用例名称</td>
+<td>配置模型与隐私边界</td>
+</tr>
+<tr>
+<td>主要参与者</td>
+<td>Workspace Owner</td>
+</tr>
+<tr>
+<td>前置条件</td>
+<td>用户进入设置页</td>
+</tr>
+<tr>
+<td>触发事件</td>
+<td>用户修改模型或隐私设置</td>
+</tr>
+</tbody>
+</table>
+<p><strong>主成功路径</strong></p>
+<ol>
+<li>Workspace Owner 进入 <code>settings</code> 页面，系统展示当前 <code>Policy</code> 与 <code>ModelConfig</code> 取值。</li>
+<li>用户设置回答策略：<code>Policy.require_citation</code>（是否强制引用）、无依据时是否显示"无法确认"。</li>
+<li>用户设置外发策略：<code>Policy.require_per_file_consent</code>（逐文件外发确认）、<code>Policy.confidence_threshold</code>、拟用模型服务与用途（<code>ModelConfig.provider</code> / <code>model_name</code> / <code>routing_policy</code>）（SPEC §4.2）。</li>
+<li>用户设置本地文件访问范围与 <code>ModelConfig.allow_cloud</code>（BR11：默认只访问明确选择的范围）。</li>
+<li>系统校验配置一致性；通过后保存 <code>Policy</code> 与 <code>ModelConfig</code>。</li>
+<li>系统写入 <code>AuditEvent</code>，并把设置回显到 <code>settings</code> 与 <code>answer-more</code> 页面（A9）。</li>
+</ol>
+<p><strong>异常与降级路径</strong></p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>触发条件</th>
+<th>系统响应</th>
+<th>结果状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5a</td>
+<td>配置冲突（如 <code>require_citation = false</code> 与 BR04 冲突）</td>
+<td>拒绝保存并提示冲突原因</td>
+<td>不落库</td>
+</tr>
+<tr>
+<td>5b</td>
+<td>策略拒绝（越权修改）</td>
+<td>拒绝并提示</td>
+<td>不落库</td>
+</tr>
+<tr>
+<td>5c</td>
+<td>尝试关闭逐文件外发确认</td>
+<td><strong>拒绝</strong>：该策略不允许关闭（BR12、NFR-08）</td>
+<td>不落库（<code>ERR-404</code>）</td>
+</tr>
+<tr>
+<td>5d</td>
+<td><code>allow_cloud = false</code> 时用户仍发起云端问答</td>
+<td>按策略走本地证据路径</td>
+<td><code>local_evidence_only</code>（<code>ERR-306</code>）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>后置条件</strong>：设置覆盖"回答需引用、无依据显示无法确认、外传确认、本地文件访问范围"；<strong>逐文件外发确认不得被默认关闭</strong>。</p>
+<p><strong>关联</strong></p>
+<ul>
+<li>业务规则：BR02、BR10、BR11、BR12</li>
+<li>功能需求：FR-09（含 SRS-FR10）</li>
+<li>非功能需求：NFR-08（外发确认）、NFR-14（数据与合规可追溯性）</li>
+<li>领域对象：Policy、ModelConfig、PermissionGrant、AuditEvent</li>
+<li>图：A4（时序图·逐文件外发确认）、领域模型、A9（界面导航图）</li>
+</ul>
+<h3 id="uc12">UC12 查看处理/核验通知</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用例编号</td>
+<td><code>UC12</code></td>
+</tr>
+<tr>
+<td>用例名称</td>
+<td>查看处理/核验通知</td>
+</tr>
+<tr>
+<td>主要参与者</td>
+<td>Reader</td>
+</tr>
+<tr>
+<td>前置条件</td>
+<td>系统产生事件</td>
+</tr>
+<tr>
+<td>触发事件</td>
+<td>解析完成、低置信、摘要完成、引用失效或待复核状态产生</td>
+</tr>
+</tbody>
+</table>
+<p><strong>主成功路径</strong></p>
+<ol>
+<li>系统事件产生时创建 <code>Notification</code>，字段为 <code>type</code>、<code>resource_ref</code>、<code>created_at</code>、<code>read</code>（初始 <code>false</code>）。</li>
+<li>通知类型覆盖：解析完成、低置信 / 结构不确定（<code>needs_review</code>）、摘要完成、引用失效（<code>stale</code>）、引用定位失败（<code>citation_invalid</code>）、待人工复核（<code>needs_human_review</code>）。</li>
+<li>用户打开 <code>notifications</code> 页面，系统按类型与时间列出未读通知。</li>
+<li>用户点击通知，系统按 <code>resource_ref</code> 跳转到对应对象（<code>ParseRun</code> / <code>Answer</code> / <code>Citation</code> / <code>DocumentVersion</code>），并展示<strong>可解释状态与错误码</strong>。</li>
+<li>用户标记已读，<code>Notification.read</code> 置位。</li>
+</ol>
+<p><strong>异常与降级路径</strong></p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>触发条件</th>
+<th>系统响应</th>
+<th>结果状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1a</td>
+<td>同一事件重复产生通知</td>
+<td>按（<code>type</code> + <code>resource_ref</code>）去重，不重复投递</td>
+<td>单条通知</td>
+</tr>
+<tr>
+<td>3a</td>
+<td>事件延迟到达</td>
+<td>按 <code>created_at</code> 排序并标注延迟，不隐藏</td>
+<td>通知照常可见</td>
+</tr>
+<tr>
+<td>4a</td>
+<td>通知指向的对象已失效</td>
+<td>展示失效原因与错误码，<strong>不跳转到空对象</strong></td>
+<td>提示失效（<code>ERR-303</code> 等）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>后置条件</strong>：用户可查看并标记已读；<code>Notification</code> 可改，而 <code>AuditEvent</code> <strong>只增不改</strong>（术语表 §2.2）。</p>
+<p><strong>关联</strong></p>
+<ul>
+<li>业务规则：BR04、BR15</li>
+<li>功能需求：FR-10（含 SRS-FR11）</li>
+<li>非功能需求：—（基线未列）</li>
+<li>领域对象：Notification、AuditEvent、ParseRun、Answer、Citation</li>
+<li>图：A5（时序图·导入-解析-索引）、领域模型</li>
+</ul>
+<h2 id="4_3">4. 相对基线的说明</h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>补齐了什么</td>
+<td>12 条字段化用例规约（基线只有清单表 + 5 条一句话简述）</td>
+</tr>
+<tr>
+<td>与 SRS §4 的差异</td>
+<td>SRS 把 UC09/UC10 合并为一条"笔记与导出"，本文件按 V0.2 §5 拆为 <code>UC09</code>、<code>UC10</code> 两条——<strong>编号空间以 V0.2 为准</strong>（术语表 §1.2）</td>
+</tr>
+<tr>
+<td>未改动</td>
+<td>12 个用例的编号、名称、参与者与 V0.2 §5 完全一致</td>
+</tr>
+<tr>
+<td>待补项</td>
+<td><strong>无</strong>。V0.3 初稿的 6 处 <code>【待补】</code>（UC02/UC03/UC04/UC07/UC11/UC12 主成功路径）已于 2026-10-20 全部补齐；UC01–UC12 字段完整、格式与 UC01 样例同构</td>
+</tr>
+<tr>
+<td>本次修订（2026-10-20）</td>
+<td>① 模板表关联项扩到 <code>NFR-01</code>–<code>NFR-14</code> 与 <code>A1</code>–<code>A9</code>；② UC02–UC12 由一行骨架升级为完整规约（编号化路径 + 异常表 + 错误码 + 关联）</td>
+</tr>
+</tbody>
+</table>
+<div class="pagebreak"></div>
+
+<h1 id="5-rtm">第 5 部分 · 需求追踪矩阵（RTM）</h1>
+<blockquote>
+<p>来源文件：<code>13-需求追踪矩阵-2组-阅读助手.md</code></p>
+</blockquote>
+<h1 id="v03-rtm">智能笔记助手 · V0.3 需求追踪矩阵（RTM）</h1>
+<ul>
+<li>版本：V0.3</li>
+<li>编制：2 组 · 郭谦</li>
+<li>日期：2026-10-19</li>
+<li>基线：1 组《需求模型 V0.2》§9、§10；《SRS V1.0》§3、§7</li>
+<li>编号口径：《<a href="../结果材料/17-编号规则与术语表-2组-阅读助手.md">编号规则与术语表</a>》§1.2、§1.2b、§1.3——<strong>FR 以 V0.2 的 12 条为准，BR 以 V0.2 的 15 条为准，NFR 以 V0.2 的 13 条 + 新增 <code>NFR-14</code> 为准</strong>（三项均于 2026-10-19 经 1 组确认）</li>
+</ul>
+<h2 id="0_1">0. 阅读说明</h2>
+<p>基线 V0.2 §10 的"需求追踪初稿"是一张 12 行文字表，只追到 UC 与领域类，<strong>没有追到图、用例规约与测试点</strong>，且完全没有 NFR 追踪。本文件把它补成真正可用的矩阵：任一需求都能反查到"它由哪条证据支撑、由哪个用例实现、被哪张图承载、由哪个测试组验收、还挂着哪个 TBD"。</p>
+<table>
+<thead>
+<tr>
+<th>列</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SRS 映射</td>
+<td>对应 SRS §3 的 FR 编号（<strong>只是映射视图，不改号</strong>，规则见术语表 §1.2）</td>
+</tr>
+<tr>
+<td>级别</td>
+<td>取自 SRS §3 的 MoSCoW 取值（<code>Must</code> / <code>Should</code>）</td>
+</tr>
+<tr>
+<td>来源证据</td>
+<td><code>SURVEY-xxx</code> 问卷证据、A 线技术调研、1 组伪前端页面</td>
+</tr>
+<tr>
+<td>UC</td>
+<td>V0.2 §5 的 12 个用例编号</td>
+</tr>
+<tr>
+<td>BR</td>
+<td><strong>V0.2 §6 口径</strong>的 15 条业务规则</td>
+</tr>
+<tr>
+<td>领域类</td>
+<td>V0.3 领域模型中的类（含 R-06~R-08 新增 6 类）</td>
+</tr>
+<tr>
+<td>图</td>
+<td><code>A1</code>–<code>A8</code> 对应《<a href="./2组建模任务分工书.md">2组建模任务分工书</a>》§4 G4 表；<code>A9</code> 为 G6 新增的界面导航图</td>
+</tr>
+<tr>
+<td>规约</td>
+<td>《<a href="../结果材料/12-用例规约-2组-阅读助手.md">V0.3-用例规约</a>》中承载该需求的用例</td>
+</tr>
+<tr>
+<td>测试组</td>
+<td>SPEC §8 的 5 个测试组</td>
+</tr>
+<tr>
+<td>TBD</td>
+<td>V0.2 §11 的 12 项待验证项编号（详见《<a href="../结果材料/14-TBD收口表-2组-阅读助手.md">V0.3-TBD收口表</a>》）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-fr">1. FR 追踪矩阵</h2>
+<h3 id="11_1">1.1 需求 → 用例 → 业务规则 → 证据</h3>
+<table>
+<thead>
+<tr>
+<th>FR</th>
+<th>需求名称</th>
+<th>SRS 映射</th>
+<th>级别</th>
+<th>来源证据</th>
+<th>UC</th>
+<th>BR（V0.2 口径）</th>
+<th>TBD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-01</td>
+<td>文档导入、登记、版本管理</td>
+<td>FR-01</td>
+<td>Must</td>
+<td><code>library.html</code>、样本包、A 多文档调研、SURVEY-005-Q5</td>
+<td>UC01、UC03</td>
+<td>BR11、BR14</td>
+<td>TBD-7</td>
+</tr>
+<tr>
+<td>FR-02</td>
+<td>文档解析状态与结构化阅读</td>
+<td>FR-02 + FR-03（两条合并挂靠）</td>
+<td>Must</td>
+<td>文档解析/OCR 调研、<code>notifications.html</code>、SURVEY-002-Q2</td>
+<td>UC02、UC04</td>
+<td>BR07、BR13、BR15</td>
+<td>TBD-3、TBD-5、TBD-6、TBD-10</td>
+</tr>
+<tr>
+<td>FR-03</td>
+<td>文档内和授权文档集检索</td>
+<td>FR-04</td>
+<td>Must</td>
+<td><code>search.html</code>、T07 多文档检索、SURVEY-003-Q3</td>
+<td>UC05</td>
+<td>BR01、BR04、BR08</td>
+<td>TBD-2</td>
+</tr>
+<tr>
+<td>FR-04</td>
+<td>选中文本/当前文档问答</td>
+<td>FR-06</td>
+<td>Must</td>
+<td><code>index.html</code>、T07 文档问答、SURVEY-007-Q7</td>
+<td>UC06</td>
+<td>BR02、BR03、BR04、BR05、BR12</td>
+<td>TBD-8、TBD-11</td>
+</tr>
+<tr>
+<td>FR-05</td>
+<td>摘要与章节要点</td>
+<td>FR-05</td>
+<td>Must</td>
+<td><code>summary.html</code>、SURVEY-003-Q3</td>
+<td>UC07</td>
+<td>BR02、BR03、BR04、BR12</td>
+<td>TBD-11</td>
+</tr>
+<tr>
+<td>FR-06</td>
+<td>引用展示、跳转和核验</td>
+<td>FR-07</td>
+<td>Must</td>
+<td><code>answer-more.html</code>、A 引用调研、SURVEY-004-Q4</td>
+<td>UC08</td>
+<td>BR03、BR06</td>
+<td>TBD-5</td>
+</tr>
+<tr>
+<td>FR-07</td>
+<td>批注、笔记、标签和回溯</td>
+<td>FR-08</td>
+<td>Should</td>
+<td><code>notes.html</code></td>
+<td>UC09</td>
+<td>BR09</td>
+<td>—</td>
+</tr>
+<tr>
+<td>FR-08</td>
+<td>导出摘要、笔记和引用</td>
+<td>FR-09</td>
+<td>Should</td>
+<td><code>export.html</code>、SURVEY-005-Q5</td>
+<td>UC10</td>
+<td>BR09、BR14</td>
+<td>TBD-7</td>
+</tr>
+<tr>
+<td>FR-09</td>
+<td>隐私、权限、模型和外发设置</td>
+<td>FR-10</td>
+<td>Must</td>
+<td><code>settings.html</code>、A Evidence Gate、SURVEY-005-Q5、SURVEY-007-Q7、SURVEY-008-Q8</td>
+<td>UC11</td>
+<td>BR02、BR11、BR12</td>
+<td>TBD-8</td>
+</tr>
+<tr>
+<td>FR-10</td>
+<td>通知和待复核状态</td>
+<td>FR-11</td>
+<td>Should</td>
+<td><code>notifications.html</code></td>
+<td>UC12</td>
+<td>BR04、BR15</td>
+<td>TBD-3</td>
+</tr>
+<tr>
+<td>FR-11</td>
+<td>跨知识库/跨项目问答</td>
+<td>—（SRS 无对应）</td>
+<td>暂不纳入一期</td>
+<td>A 多文档调研</td>
+<td>—</td>
+<td>BR08</td>
+<td>TBD-2</td>
+</tr>
+<tr>
+<td>FR-12</td>
+<td>本地生成模型问答</td>
+<td>—（SRS 无对应）</td>
+<td>明确不承诺</td>
+<td>A 全局架构调研</td>
+<td>—</td>
+<td>BR13</td>
+<td>TBD-8</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>FR-11、FR-12 的级别取自 V0.2 §10 状态列（"暂不纳入"/"明确不承诺"），与 SRS 无对应条目——V0.2 的 12 条比 SRS 的 11 条多出的正是这两条。</p>
+</blockquote>
+<h3 id="12">1.2 需求 → 领域类 → 图 → 规约 → 测试</h3>
+<table>
+<thead>
+<tr>
+<th>FR</th>
+<th>领域类</th>
+<th>图</th>
+<th>用例规约</th>
+<th>SPEC §8 测试组</th>
+<th>覆盖状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-01</td>
+<td>Document、DocumentVersion、ParseRun、Notification</td>
+<td>A5、A1</td>
+<td>UC01（完整样例）</td>
+<td>解析</td>
+<td>已覆盖</td>
+</tr>
+<tr>
+<td>FR-02</td>
+<td>ParseRun、Page、ContentBlock、IndexingRun、Index、Notification</td>
+<td>A1、A5</td>
+<td>UC02、UC04</td>
+<td>解析</td>
+<td>已覆盖</td>
+</tr>
+<tr>
+<td>FR-03</td>
+<td>Query、DocumentSet、Index、Evidence、PermissionGrant</td>
+<td>A6</td>
+<td>UC05</td>
+<td>权限</td>
+<td>部分覆盖（权限过滤已有，噪声与去重未展开）</td>
+</tr>
+<tr>
+<td>FR-04</td>
+<td>Query、Answer、Claim、Citation、Evidence、ModelConfig、Policy、AuditEvent</td>
+<td>A2、A3、A4</td>
+<td>UC06</td>
+<td>引用、外发</td>
+<td>已覆盖</td>
+</tr>
+<tr>
+<td>FR-05</td>
+<td>Answer、Claim、Citation、Evidence</td>
+<td>A2、A3</td>
+<td>UC07</td>
+<td>引用</td>
+<td>已覆盖</td>
+</tr>
+<tr>
+<td>FR-06</td>
+<td>Citation、Evidence、ContentBlock</td>
+<td>A3</td>
+<td>UC08</td>
+<td>引用</td>
+<td>已覆盖</td>
+</tr>
+<tr>
+<td>FR-07</td>
+<td>Note、ContentBlock、Answer、DocumentVersion</td>
+<td>A7</td>
+<td>UC09</td>
+<td>导出</td>
+<td>已覆盖</td>
+</tr>
+<tr>
+<td>FR-08</td>
+<td>ExportJob、Note、Citation</td>
+<td>A7</td>
+<td>UC10</td>
+<td>导出</td>
+<td>已覆盖</td>
+</tr>
+<tr>
+<td>FR-09</td>
+<td>PermissionGrant、Policy、ModelConfig、AuditEvent</td>
+<td>A4、领域模型</td>
+<td>UC11</td>
+<td>外发</td>
+<td>已覆盖</td>
+</tr>
+<tr>
+<td>FR-10</td>
+<td>Notification、AuditEvent</td>
+<td>A5、领域模型</td>
+<td>UC12</td>
+<td>解析</td>
+<td>已覆盖</td>
+</tr>
+<tr>
+<td>FR-11</td>
+<td>DocumentSet</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>范围外（不进一期）</td>
+</tr>
+<tr>
+<td>FR-12</td>
+<td>ModelConfig</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>范围外（不承诺）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-nfr">2. NFR 追踪矩阵</h2>
+<p>基线的 NFR 完全没有追踪表，本表按"要求 → 映射 → 证据 → 验收方式 → 图 → TBD"补齐。</p>
+<table>
+<thead>
+<tr>
+<th>NFR</th>
+<th>要求（摘要）</th>
+<th>SRS 映射</th>
+<th>来源证据</th>
+<th>验收方式</th>
+<th>关联 UC</th>
+<th>图</th>
+<th>TBD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NFR-01</td>
+<td>引用可回到版本、页/章节、原文片段；PDF/扫描件附 bbox 或原页图</td>
+<td>NFR-01</td>
+<td>V0.2 §9</td>
+<td>人工抽样 + 自动定位检查</td>
+<td>UC06、UC08</td>
+<td>A3</td>
+<td>TBD-5</td>
+</tr>
+<tr>
+<td>NFR-02</td>
+<td>权限过滤先于检索排序、缓存和云端调用</td>
+<td>—（SRS 未单列）</td>
+<td>A 实验、BR01</td>
+<td>授权/撤权/未授权集合测试</td>
+<td>UC05、UC06</td>
+<td>A6、A3</td>
+<td>TBD-2</td>
+</tr>
+<tr>
+<td>NFR-03</td>
+<td>低置信 OCR、结构不确定、证据过期或来源冲突不得静默生成确定性回答</td>
+<td>NFR-07（部分）</td>
+<td>A 实验</td>
+<td>异常场景演示</td>
+<td>UC02、UC06、UC08</td>
+<td>A1、A2、A3</td>
+<td>TBD-3、TBD-5</td>
+</tr>
+<tr>
+<td>NFR-04</td>
+<td>处理、核验、云端调用失败均应有可解释状态与本地/原文降级</td>
+<td>NFR-07（部分）</td>
+<td>A 实验</td>
+<td>异常场景演示</td>
+<td>UC02、UC06</td>
+<td>A1、A2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>NFR-05</td>
+<td>解析结果保留 document/version/hash/parser/config/block/page/bbox/offset/confidence 溯源字段</td>
+<td>—（SRS 未单列）</td>
+<td>当前缺口</td>
+<td>解析结果字段检查（SPEC §3.2）</td>
+<td>UC02</td>
+<td>A5</td>
+<td>TBD-3</td>
+</tr>
+<tr>
+<td>NFR-06</td>
+<td>多文档查询由用户显式选择授权集合；候选上限单次 20 份</td>
+<td>—（SRS 未单列）</td>
+<td>候选值</td>
+<td>集合规模压测</td>
+<td>UC05、UC06</td>
+<td>A6</td>
+<td>TBD-2</td>
+</tr>
+<tr>
+<td>NFR-07</td>
+<td>回答时延、处理时延、并发、成本和存储配额需实测</td>
+<td>NFR-03 + NFR-04（部分）</td>
+<td>待验证</td>
+<td>代表性样本压测</td>
+<td>—</td>
+<td>—</td>
+<td>TBD-11</td>
+</tr>
+<tr>
+<td>NFR-08</td>
+<td>云端外发逐文件展示范围并等待确认；仅访问明确选择的文件</td>
+<td>—（SRS 未单列；内容见 SRS FR-10 与 SRS BR02）</td>
+<td>伪前端意图</td>
+<td>外发确认/拒绝测试</td>
+<td>UC06、UC11</td>
+<td>A4</td>
+<td>TBD-8</td>
+</tr>
+<tr>
+<td>NFR-09</td>
+<td>离线可打开已导入文档并基础阅读；AI 不可用须展示降级状态</td>
+<td>NFR-02</td>
+<td>SURVEY-006-Q6</td>
+<td>断网演示</td>
+<td>UC04、UC05、UC06</td>
+<td>A2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>NFR-10</td>
+<td>普通问答优先 30 秒内流式反馈，候选完成目标 1 分钟；超时显示进度</td>
+<td>NFR-03</td>
+<td>SURVEY-011-Q11</td>
+<td>代表性样本压测</td>
+<td>UC06、UC07</td>
+<td>A2、A3</td>
+<td>TBD-11</td>
+</tr>
+<tr>
+<td>NFR-11</td>
+<td>打开/首屏、解析和索引应记录耗时；不得无状态长时间卡顿</td>
+<td>—（SRS 未单列）</td>
+<td>SURVEY-010-Q10</td>
+<td>耗时埋点检查</td>
+<td>UC02、UC04</td>
+<td>A5</td>
+<td>TBD-3、TBD-11</td>
+</tr>
+<tr>
+<td>NFR-12</td>
+<td>限制 CPU、内存和并发；不得因单个大文档导致阅读器不可用</td>
+<td>NFR-04</td>
+<td>SURVEY-010-Q10</td>
+<td>CPU/内存/并发测试</td>
+<td>—</td>
+<td>—</td>
+<td>TBD-11</td>
+</tr>
+<tr>
+<td>NFR-13</td>
+<td>源文件只读为默认；不支持格式必须明确提示；一期格式优先级 PDF &gt; DOCX/Markdown &gt; PPTX</td>
+<td>NFR-05</td>
+<td>SURVEY-002-Q2、SURVEY-005-Q5、SURVEY-010-Q10</td>
+<td>权限与文件差分测试</td>
+<td>UC01、UC02、UC10</td>
+<td>A5、A7</td>
+<td>TBD-6、TBD-10</td>
+</tr>
+<tr>
+<td><strong>NFR-14</strong></td>
+<td><strong>数据与合规可追溯性</strong>（2 组新增）：样本公开/授权、演示脱敏、版权与来源标识保留、删除可追踪、外发调用留授权记录</td>
+<td>NFR-06</td>
+<td>SRS §7 NFR-06、BR10</td>
+<td>材料审计</td>
+<td>UC11</td>
+<td>领域模型（<code>Policy</code>、<code>AuditEvent</code>）</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><code>—（SRS 未单列）</code> 表示该 NFR 只存在于 V0.2 的 13 条中，SRS 的 7 条未收录。SRS 的 7 条与 V0.2 的完整映射见术语表 §1.3——<strong>SRS 的 7 条并非 V0.2 的子集</strong>，其中 NFR-06 在 V0.2 中无对应项，已按术语表 §1.3 新增 <code>NFR-14</code> 承接。</p>
+<p><strong>反向不对称（V0.2 → SRS）</strong>：本表是本方向的逐条映射；反向看，V0.2 的 13 条中 <strong>5 条在 SRS §7 完全未单列</strong>（<code>NFR-02</code>、<code>NFR-05</code>、<code>NFR-06</code>、<code>NFR-08</code>、<code>NFR-11</code>）、<strong>3 条仅部分并入</strong>（<code>NFR-03</code>、<code>NFR-04</code> → SRS NFR-07；<code>NFR-07</code> → SRS NFR-03 + NFR-04），合计 8 条在 SRS 无 1:1 对应项。二者覆盖范围本可不同，<strong>不构成缺陷</strong>，已登记进 SRS 返修清单（见 §6）与术语表 §1.3。</p>
+<p>⚠️ <strong>同号异义陷阱</strong>：<code>NFR-06</code> 在 V0.2 口径是"多文档查询集合上限"（本表 §2 第 6 行），在 SRS 口径是"数据与合规可追溯性"（映射为 <code>NFR-14</code>，本表 §2 末行）。引用时必须注明来源口径。</p>
+</blockquote>
+<h2 id="3-br">3. 反向索引：BR → 需求与用例</h2>
+<table>
+<thead>
+<tr>
+<th>BR（V0.2 口径）</th>
+<th>规则摘要</th>
+<th>关联 FR</th>
+<th>关联 UC</th>
+<th>承载图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BR01</td>
+<td>检索/缓存/上下文/模型调用前必须完成文档权限过滤</td>
+<td>FR-03、FR-09</td>
+<td>UC05、UC06、UC11</td>
+<td>A6、A3</td>
+</tr>
+<tr>
+<td>BR02</td>
+<td>云端只接收授权、版本有效、证据契约完整且置信度达标的证据包</td>
+<td>FR-04、FR-05、FR-09</td>
+<td>UC06、UC07、UC11</td>
+<td>A3、A4</td>
+</tr>
+<tr>
+<td>BR03</td>
+<td>模型不得自由生成页码或 citation；引用须来自 allow-list 并经服务端校验</td>
+<td>FR-04、FR-05、FR-06</td>
+<td>UC06、UC07、UC08</td>
+<td>A3</td>
+</tr>
+<tr>
+<td>BR04</td>
+<td>关键 claim 须绑定 citation；部分支持/冲突/未支持/定位失效须显式标记</td>
+<td>FR-04、FR-06、FR-10</td>
+<td>UC06、UC07、UC08、UC12</td>
+<td>A2、A3</td>
+</tr>
+<tr>
+<td>BR05</td>
+<td>无依据问题不得用"看起来相关"的结果伪装成有依据回答</td>
+<td>FR-04、FR-05</td>
+<td>UC06、UC07</td>
+<td>A2</td>
+</tr>
+<tr>
+<td>BR06</td>
+<td>版本变化、撤权或删除传播未完成时，索引与引用标记 <code>stale</code></td>
+<td>FR-06</td>
+<td>UC03、UC08</td>
+<td>A1、A3</td>
+</tr>
+<tr>
+<td>BR07</td>
+<td>低置信时保留原页/截图与风险标记，不承诺精确结构化问答</td>
+<td>FR-02</td>
+<td>UC02、UC04</td>
+<td>A1、A5</td>
+</tr>
+<tr>
+<td>BR08</td>
+<td>多文档回答须显示来源、版本、时间和冲突；跨库不进一期</td>
+<td>FR-03、FR-11</td>
+<td>UC05、UC06</td>
+<td>A6</td>
+</tr>
+<tr>
+<td>BR09</td>
+<td>笔记和导出须保留原文位置、来源文档与版本关联；失效时提示复核</td>
+<td>FR-07、FR-08</td>
+<td>UC09、UC10</td>
+<td>A7</td>
+</tr>
+<tr>
+<td>BR10</td>
+<td>真实联系方式、未授权样本和受限原文不得进入公开演示或外部模型调用</td>
+<td>FR-09</td>
+<td>UC11</td>
+<td>领域模型（Policy）</td>
+</tr>
+<tr>
+<td>BR11</td>
+<td>默认只访问用户明确选择的文件或工作区范围，不得自动遍历或上传</td>
+<td>FR-01、FR-09</td>
+<td>UC01、UC03、UC11</td>
+<td>A5、A4</td>
+</tr>
+<tr>
+<td>BR12</td>
+<td>调用云端前须逐文件展示范围、服务与用途并取得本次明确确认</td>
+<td>FR-04、FR-05、FR-09</td>
+<td>UC06、UC07、UC11</td>
+<td>A4</td>
+</tr>
+<tr>
+<td>BR13</td>
+<td>离线时阅读与基础检索仍可用；AI 不可用须给出明确降级状态</td>
+<td>FR-02、FR-12</td>
+<td>UC04、UC05、UC06</td>
+<td>A2</td>
+</tr>
+<tr>
+<td>BR14</td>
+<td>不得静默修改源文件；衍生文件须写入指定位置并显示写入结果</td>
+<td>FR-01、FR-08</td>
+<td>UC01、UC10</td>
+<td>A7</td>
+</tr>
+<tr>
+<td>BR15</td>
+<td>处理进度必须可见；长任务不得以无反馈等待替代状态展示</td>
+<td>FR-02、FR-10</td>
+<td>UC02、UC07、UC10、UC12</td>
+<td>A5、A2</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>15 条 BR <strong>全部有落点</strong>，无孤立规则。BR10 是唯一主要以领域模型（<code>Policy</code>）而非用例承载的规则。</p>
+</blockquote>
+<h2 id="4_4">4. 图 → 需求覆盖</h2>
+<p>用于证明 2 组新增的 9 张图不是装饰件——每张图都能指回具体需求条款。</p>
+<table>
+<thead>
+<tr>
+<th>图</th>
+<th>名称</th>
+<th>覆盖 FR</th>
+<th>覆盖 NFR</th>
+<th>覆盖 UC</th>
+<th>覆盖 BR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A1</td>
+<td>状态图·文档处理</td>
+<td>FR-02、FR-10</td>
+<td>NFR-03、NFR-04</td>
+<td>UC02、UC03、UC04、UC12</td>
+<td>BR06、BR07、BR15</td>
+</tr>
+<tr>
+<td>A2</td>
+<td>状态图·回答生成</td>
+<td>FR-04、FR-05</td>
+<td>NFR-03、NFR-09、NFR-10</td>
+<td>UC06、UC07</td>
+<td>BR02、BR05、BR13</td>
+</tr>
+<tr>
+<td>A3</td>
+<td>时序图·问答与引用校验</td>
+<td>FR-04、FR-05、FR-06</td>
+<td>NFR-01、NFR-02、NFR-03、NFR-10</td>
+<td>UC06、UC07、UC08</td>
+<td>BR01、BR02、BR03、BR04、BR06</td>
+</tr>
+<tr>
+<td>A4</td>
+<td>时序图·逐文件外发确认</td>
+<td>FR-04、FR-05、FR-09</td>
+<td>NFR-08</td>
+<td>UC06、UC07、UC11</td>
+<td>BR02、BR11、BR12</td>
+</tr>
+<tr>
+<td>A5</td>
+<td>时序图·导入-解析-索引</td>
+<td>FR-01、FR-02</td>
+<td>NFR-05、NFR-11、NFR-13</td>
+<td>UC01、UC02、UC12</td>
+<td>BR07、BR11、BR14、BR15</td>
+</tr>
+<tr>
+<td>A6</td>
+<td>活动图·检索</td>
+<td>FR-03</td>
+<td>NFR-02、NFR-06</td>
+<td>UC05</td>
+<td>BR01、BR04、BR08</td>
+</tr>
+<tr>
+<td>A7</td>
+<td>活动图·笔记与导出</td>
+<td>FR-07、FR-08</td>
+<td>NFR-13</td>
+<td>UC09、UC10</td>
+<td>BR09、BR14</td>
+</tr>
+<tr>
+<td>A8</td>
+<td>活动图·关键流程带泳道（1 组原图拆分）</td>
+<td>FR-01 ~ FR-05</td>
+<td>NFR-09</td>
+<td>UC01、UC02、UC05、UC06</td>
+<td>BR07、BR12、BR13</td>
+</tr>
+<tr>
+<td>A9</td>
+<td>界面导航图（2 组新增，G6）</td>
+<td>FR-01 ~ FR-10</td>
+<td>NFR-08、NFR-14</td>
+<td>UC01 ~ UC12</td>
+<td>BR02、BR03、BR06、BR10、BR11、BR12、BR14、BR15</td>
+</tr>
+</tbody>
+</table>
+<p><strong>覆盖缺口</strong>：FR-11、FR-12 无图（范围外，不设图）；NFR-07、NFR-12 无图（属实测指标，不由流程图承载）。</p>
+<h2 id="5_2">5. 覆盖缺口汇总（含关闭状态）</h2>
+<table>
+<thead>
+<tr>
+<th>缺口</th>
+<th>影响</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NFR-07 / NFR-11 / NFR-12 的阈值未定（时延、资源、配额）</td>
+<td>三条 NFR 无法作为验收基线</td>
+<td>需压测；建模期只保留"须记录耗时、须有进度"的可验证部分</td>
+</tr>
+<tr>
+<td>NFR-06 的多文档上限（20 份）为候选值</td>
+<td>FR-03、FR-11</td>
+<td>TBD-2，建模期保留候选值并标注"待实测"</td>
+</tr>
+<tr>
+<td>用例规约 6 处主成功路径未补</td>
+<td>FR-01 ~ FR-10 相关</td>
+<td><strong>已关闭（W2）</strong>：《<code>V0.3-用例规约</code>》§3 的 UC02/UC03/UC04/UC07/UC11/UC12 已于 2026-10-20 补为完整规约，UC01–UC12 全部与样例同构</td>
+</tr>
+<tr>
+<td>评审入口 9 问无回答件</td>
+<td>全部评审问题</td>
+<td><strong>已关闭（W1）</strong>：新增 <code>16-评审入口问题回答-2组-阅读助手.md</code>，9 问逐条含结论 / 证据 / 残余</td>
+</tr>
+<tr>
+<td>SRS 与 V0.2 编号口径待 1 组返修</td>
+<td>全部 BR / NFR / FR 对照</td>
+<td><strong>已登记（W4）</strong>：<code>文档/SRS-V1.1返修清单.md</code> 交 1 组 lzt，3 必改 + 6 建议</td>
+</tr>
+<tr>
+<td>界面模型缺失</td>
+<td>FR-01 ~ FR-10</td>
+<td><strong>已关闭（G6）</strong>：新增 A9 界面导航图 <code>06-建模图-2组-阅读助手/底稿-PlantUML/界面导航图-V0.3.puml</code>，覆盖 9 个页面与门控控件落点</td>
+</tr>
+<tr>
+<td>无访谈证据，NFR 证据强度只有 n=20 问卷</td>
+<td>全部 NFR</td>
+<td>待 WP-D；若零产出，相关 TBD 在《TBD 收口表》中标为"建模期未关闭"</td>
+</tr>
+<tr>
+<td>图件尚未在 CodeArts 出图</td>
+<td>全部图</td>
+<td><strong>G6 进行中</strong>：本地 <code>.puml</code> 仅为结构定义，出图登记见《<a href="../结果材料/06-建模图-2组-阅读助手/出图清单-2组-阅读助手.md">CodeArts出图清单</a>》</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-2026-10-19">6. 与基线的编号差异（2026-10-19 已裁决）</h2>
+<p>编制本矩阵时发现两处<strong>基线内部编号冲突</strong>，已提交 1 组核对。<strong>1 组组长 2026-10-19 书面确认：裁决口径与 2 组建议一致</strong>，结果已写入术语表 §1.2 / §1.2b / §1.3。本节保留核对记录与返修清单。</p>
+<p><strong>(1) BR 编号：V0.2 与 SRS 同号不同义（新发现，已于 2026-10-19 裁决）</strong></p>
+<p>V0.2 有 BR01–BR15，SRS §5 有 BR01–BR07，<strong>同号不同义</strong>。典型：<code>BR04</code> 在 V0.2 是"关键 claim 须绑定 citation"，在 SRS 是"无依据问题返回无法确认"（= V0.2 的 BR05）。</p>
+<p><strong>裁决</strong>：<strong>编号空间以 V0.2 的 15 条为准</strong>（与术语表 §1.1"BR 唯一出处 = 需求模型 V0.2 §6"一致），SRS 的 7 条作为映射视图，不改号。<strong>口径定稿于术语表 §1.2b</strong>；下表已按 SRS §5 原文逐条复核：</p>
+<table>
+<thead>
+<tr>
+<th>V0.2 BR</th>
+<th>SRS BR</th>
+<th>关系</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BR01</td>
+<td>BR01</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>BR02</td>
+<td>BR02</td>
+<td>一致（SRS 增补"本次外发确认通过"）</td>
+</tr>
+<tr>
+<td>BR03</td>
+<td>BR03</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>BR04</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong></td>
+</tr>
+<tr>
+<td>BR05</td>
+<td>BR04</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>BR06</td>
+<td>BR05</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>BR07</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong>（部分并入 SRS FR-02 描述）</td>
+</tr>
+<tr>
+<td>BR08</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong></td>
+</tr>
+<tr>
+<td>BR09</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong></td>
+</tr>
+<tr>
+<td>BR10</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong>（与新增 <code>NFR-14</code> 同源）</td>
+</tr>
+<tr>
+<td>BR11</td>
+<td>BR06</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>BR12</td>
+<td>BR02（部分）</td>
+<td>部分并入</td>
+</tr>
+<tr>
+<td>BR13</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong>（SRS 体现为 NFR-02）</td>
+</tr>
+<tr>
+<td>BR14</td>
+<td>BR07</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>BR15</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong>（SRS 体现为 NFR-03）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>SRS 返修清单（7 条待恢复独立编号）</strong>：BR04、BR07、BR08、BR09、BR10、BR13、BR15。SRS §5 返修时须为这 7 条恢复独立编号，或统一在表中增加「模型编号」映射列；BR12 须在 SRS BR02 中拆出或标注为部分并入。<strong>返修前这 7 条仍以 V0.2 编号为有效规则，不得从任何交付件中删除。</strong></p>
+<p><strong>(2) SRS NFR-06 在 V0.2 的 13 条 NFR 中无对应项</strong></p>
+<p>SRS NFR-06 = "公开或授权样本、脱敏、版权标识、删除机制可追溯"。V0.2 §9 的 13 条中<strong>没有</strong>这一条（相关内容只出现在业务规则 BR10）。因此术语表 §1.3 现表述"SRS 的 7 条是 V0.2 13 条的子集"<strong>不成立</strong>。</p>
+<p><strong>裁决（2026-10-19，1 组确认）</strong>：采用<strong>方案 A</strong>——在 V0.3 中<strong>新增 <code>NFR-14</code> 数据与合规可追溯性</strong>，已在术语表 §1.1 / §1.3 顺延登记，并作为本文件 §2 矩阵的末行。SRS 返修时将 SRS NFR-06 映射到 <code>NFR-14</code>。</p>
+<p><strong>(3) 其他已登记的基线缺陷</strong></p>
+<table>
+<thead>
+<tr>
+<th>位置</th>
+<th>问题</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>需求模型 V0.2 §8</td>
+<td>子节编号写作 <code>7.1</code> / <code>7.2</code>，与父节 §8 不符</td>
+<td>术语表 §4；形式缺陷，V0.3 合并时统一为 §8.1 / §8.2</td>
+</tr>
+<tr>
+<td>1 组交付材料</td>
+<td>文件名 <code>需求模型V0.1.md</code> 与正文标题「需求模型 V0.2」不一致</td>
+<td><strong>1 组侧返修项</strong>；2 组不改名，避免与基线快照 <code>899957a</code> 对不上</td>
+</tr>
+<tr>
+<td>需求建模启动包 §4 M6</td>
+<td>要求产出「需求追踪矩阵」，交付材料中只有 SRS §8 一段文字</td>
+<td><strong>1 组已确认无独立 RTM 产物</strong>，由 2 组新建（即本文件）</td>
+</tr>
+</tbody>
+</table>
+<div class="pagebreak"></div>
+
+<h1 id="6-tbd">第 6 部分 · TBD 收口表</h1>
+<blockquote>
+<p>来源文件：<code>14-TBD收口表-2组-阅读助手.md</code></p>
+</blockquote>
+<h1 id="v03-tbd">智能笔记助手 · V0.3 TBD 收口表</h1>
+<ul>
+<li>版本：V0.3</li>
+<li>编制：2 组 · 郭谦</li>
+<li>日期：2026-10-19</li>
+<li>基线：1 组《需求模型 V0.2》§11 建模待验证清单（TBD-1 ~ TBD-12）</li>
+<li>关联：《<a href="./V0.3-需求追踪矩阵.md">V0.3-需求追踪矩阵</a>》（TBD 列由此表解释）</li>
+</ul>
+<h2 id="0_2">0. 为什么需要这张表</h2>
+<p>基线 §11 是 12 条<strong>光秃秃的问题列表</strong>：没有问题影响哪个模型元素、没有验证方式、没有责任人，也没有说"建模期能不能先关掉"。</p>
+<p>后果是这份清单在评审时无法被使用——它既不能说明"哪些问题已经在建模期定下了保守口径、不阻塞交付"，也不能说明"哪些问题必须在测试阶段实测"。本表把它收口成可检查的四段式：<strong>问题 → 影响落点 → 验证方案 → 建模期口径</strong>，并给出关闭状态。</p>
+<h2 id="1_5">1. 收口口径</h2>
+<p>每条 TBD 的<strong>建模期状态</strong>取三态之一：</p>
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>建模期已关闭</code></td>
+<td>建模阶段即可给出确定结论，不需要实测</td>
+</tr>
+<tr>
+<td><code>降级关闭</code></td>
+<td>无法在建模期实测，但已选定<strong>保守且不锁死未来</strong>的建模口径；数值/细节留待验证阶段</td>
+</tr>
+<tr>
+<td><code>建模期未关闭</code></td>
+<td>必须依赖实测或外部输入（访谈、压测），建模期只能标注风险、不能结论</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>判断原则：<strong>只要基线语义已足以支撑建模决策，就关闭；只要是"数值/阈值/供应商"这类实测项，就降级关闭或标记未关闭。</strong> 建模期不阻塞，但清单必须能被测试阶段直接接管。</p>
+</blockquote>
+<h2 id="2-tbd">2. TBD 收口明细</h2>
+<h3 id="21_2">2.1 问题与影响落点</h3>
+<table>
+<thead>
+<tr>
+<th>TBD</th>
+<th>问题（承接 V0.2 §11）</th>
+<th>影响落点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TBD-1</td>
+<td>真实用户是否需要共享工作区、团队角色和管理员权限</td>
+<td>R-03（User ↔ Workspace 多重度）、参与者定义（是否存在独立管理员）</td>
+</tr>
+<tr>
+<td>TBD-2</td>
+<td>多文档集合的创建、保存、默认范围和单次查询规模</td>
+<td>FR-03、FR-11、NFR-06、<code>DocumentSet</code>、A6</td>
+</tr>
+<tr>
+<td>TBD-3</td>
+<td>解析完成、低置信度和人工复核的可接受等待时间</td>
+<td>NFR-11、NFR-03、BR15、A1、A5</td>
+</tr>
+<tr>
+<td>TBD-4</td>
+<td>删除文档后索引、缓存、笔记和引用的传播时限</td>
+<td>BR06、R-06（<code>IndexingRun</code> / <code>Index</code>）、A1</td>
+</tr>
+<tr>
+<td>TBD-5</td>
+<td>DOCX 视觉页码与段落/标题路径的最终引用策略</td>
+<td>NFR-01、FR-06、UC08、A3、<code>Page.page_label</code> / <code>Citation.locator</code></td>
+</tr>
+<tr>
+<td>TBD-6</td>
+<td>Markdown 方言、表格、脚注、公式和代码块支持范围</td>
+<td>FR-02、NFR-13、A1</td>
+</tr>
+<tr>
+<td>TBD-7</td>
+<td>导出格式、文件命名、覆盖策略和失败恢复</td>
+<td>FR-08、UC10、<code>ExportJob</code>、A7</td>
+</tr>
+<tr>
+<td>TBD-8</td>
+<td>云端模型供应商、地区、费用、数据保留和长期 SLA</td>
+<td>FR-04、FR-05、FR-09、NFR-08、<code>ModelConfig</code>（R-07）、A4</td>
+</tr>
+<tr>
+<td>TBD-9</td>
+<td>统计样本的用户类型、文档规模和使用频率是否覆盖目标群体</td>
+<td>全部 NFR 的证据强度、SURVEY 证据边界（V0.2 §2）</td>
+</tr>
+<tr>
+<td>TBD-10</td>
+<td>PPTX、XLSX、TXT 的一期边界，以及复杂表格/公式/演示文稿引用的可接受准确率</td>
+<td>FR-02、NFR-13、SURVEY-002-Q2</td>
+</tr>
+<tr>
+<td>TBD-11</td>
+<td>30 秒流式反馈、1 分钟完成目标在代表性设备与样本下是否可达</td>
+<td>NFR-10、NFR-07、NFR-11、NFR-12</td>
+</tr>
+<tr>
+<td>TBD-12</td>
+<td>"外部权威资料及链接"是否属于一期核心流程</td>
+<td>FR-03、FR-06 范围、SURVEY-004-Q4</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22_2">2.2 验证方案、归属与建模期口径</h3>
+<table>
+<thead>
+<tr>
+<th>TBD</th>
+<th>验证方案</th>
+<th>归属</th>
+<th>建模期口径（V0.3 采用）</th>
+<th>建模期状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TBD-1</td>
+<td>用户访谈（WP-D/D-1 含该题）+ 补充问卷</td>
+<td>汪昊（WP-D）；组长兜底</td>
+<td>保留 R-03 的 <code>User "0..*" -- "1..*" Workspace : 成员</code>，<strong>只解除"用户被工作区独占"的硬约束，不主张共享已确认</strong>；不新增独立管理员参与者</td>
+<td>降级关闭</td>
+</tr>
+<tr>
+<td>TBD-2</td>
+<td>集合规模压测 + 访谈</td>
+<td>组长（压测）；汪昊（访谈）</td>
+<td><code>DocumentSet</code> <strong>由用户显式选择、不由系统推定</strong>（V0.2 §7）；单次上限保留候选值 20 份并标注"待实测"；跨库问答（FR-11）明确不进一期</td>
+<td>降级关闭</td>
+</tr>
+<tr>
+<td>TBD-3</td>
+<td>代表性样本压测 + 用户可接受度访谈</td>
+<td>组长；汪昊</td>
+<td>建模期只要求"<strong>进度可见、状态可查、失败可解释</strong>"（BR15 / NFR-04），<strong>不承诺具体秒数</strong></td>
+<td>降级关闭</td>
+</tr>
+<tr>
+<td>TBD-4</td>
+<td>设计评审 + 权限组测试（SPEC §8）</td>
+<td>组长（建模口径）</td>
+<td>采用<strong>同步语义</strong>：删除/撤权/版本变化后，索引与引用必须传播失效，<strong>传播完成前不得作为有效引用</strong>（BR06）；不规定时限</td>
+<td>建模期已关闭</td>
+</tr>
+<tr>
+<td>TBD-5</td>
+<td>DOCX 样本文档比对（视觉页码 ≠ 物理页）</td>
+<td>组长（口径）</td>
+<td>采用 SPEC §3.2 的<strong>双字段</strong>：<code>Page.physical_page</code> + <code>Page.page_label</code>；引用可回退到 <code>section_path</code> + 字符偏移。<strong>引用绑定版本与块，不绑定视觉页码</strong></td>
+<td>建模期已关闭</td>
+</tr>
+<tr>
+<td>TBD-6</td>
+<td>样本集测试</td>
+<td>组长（口径）</td>
+<td>只承诺"高优先级输入格式"（NFR-13）；具体方言范围标为<strong>受限支持</strong>，低置信时保留原页/原文（BR07），不承诺完整兼容</td>
+<td>降级关闭</td>
+</tr>
+<tr>
+<td>TBD-7</td>
+<td>设计评审 + 导出组测试（SPEC §8）</td>
+<td>组长（口径）</td>
+<td><code>ExportJob</code> 必须记录 <code>format</code>、<code>scope</code>、<code>target_path</code>、<code>status</code>、<code>created_at</code>、<code>error</code>（SPEC §6）；<strong>只写用户指定位置</strong>；失败留 <code>error</code> 且<strong>不得静默覆盖</strong>。文件命名与覆盖策略建模期不定</td>
+<td>降级关闭</td>
+</tr>
+<tr>
+<td>TBD-8</td>
+<td>供应商与技术选型评估（A 线）</td>
+<td>组长</td>
+<td>抽象为 <code>ModelConfig(provider, model_name, routing_policy, allow_cloud)</code>（R-07），<strong>不绑定具体供应商</strong>；确认页须可见 <code>model_service</code> 与地区（SPEC §4.2）；费用、数据保留、SLA 列为技术选型待办</td>
+<td>建模期已关闭</td>
+</tr>
+<tr>
+<td>TBD-9</td>
+<td>用户访谈（WP-D/D-2，覆盖 ≥2 类用户）+ 补充问卷</td>
+<td>汪昊（WP-D）</td>
+<td>V0.2 §2 已声明"描述性证据、不代表全体目标用户"；<strong>结论不改，仅补强证据</strong>。若 WP-D 零产出，相关证据强度缺口记入 RTM §5</td>
+<td>建模期未关闭</td>
+</tr>
+<tr>
+<td>TBD-10</td>
+<td>样本测试</td>
+<td>组长（口径）</td>
+<td>一期优先级固定为 <strong>PDF（Must）&gt; DOCX/Markdown（高优先级）&gt; PPTX（候选扩展，能力验证后启用，SPEC §3.3）</strong>；XLSX/TXT 不承诺</td>
+<td>建模期已关闭</td>
+</tr>
+<tr>
+<td>TBD-11</td>
+<td>代表性设备 + 样本文档 + 模型服务压测</td>
+<td>组长</td>
+<td>NFR-10 的 30 秒/1 分钟保留为<strong>候选目标</strong>，不作为一期验收硬指标；验收只要求"<strong>有流式反馈 + 超时显示进度</strong>"</td>
+<td>建模期未关闭</td>
+</tr>
+<tr>
+<td>TBD-12</td>
+<td>范围评审 + 访谈</td>
+<td>组长</td>
+<td>一期<strong>不做外部检索</strong>，只保留"文档内引用核验"（FR-06）；外部权威链接列为后续单独立项（V0.2 §2 已明确其"不能替代文档内引用"）</td>
+<td>建模期已关闭</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3_4">3. 汇总</h2>
+<table>
+<thead>
+<tr>
+<th>建模期状态</th>
+<th>条数</th>
+<th>TBD 编号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>建模期已关闭</td>
+<td>5</td>
+<td>TBD-4、TBD-5、TBD-8、TBD-10、TBD-12</td>
+</tr>
+<tr>
+<td>降级关闭</td>
+<td>5</td>
+<td>TBD-1、TBD-2、TBD-3、TBD-6、TBD-7</td>
+</tr>
+<tr>
+<td>建模期未关闭</td>
+<td>2</td>
+<td>TBD-9、TBD-11</td>
+</tr>
+<tr>
+<td>合计</td>
+<td>12</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>结论</strong>：12 项中 <strong>10 项在建模期已给出不阻塞交付的口径</strong>，仅 TBD-9（样本代表性）与 TBD-11（时延阈值）必须等实测/外部输入。<strong>这两项都不影响 V0.3 模型的结构，只影响证据强度与 NFR 阈值的写法</strong>，因此 V0.3 可以按当前口径定稿。</p>
+<h2 id="4-v03">4. 对 V0.3 的修订建议（关闭后再触发）</h2>
+<table>
+<thead>
+<tr>
+<th>若 TBD 结论为…</th>
+<th>需触发的模型修订</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TBD-1 确认需要共享工作区</td>
+<td>补 <code>Workspace</code> 成员角色与 <code>PermissionGrant.subject</code> 的类型枚举；参与者是否新增管理员/团队成员</td>
+</tr>
+<tr>
+<td>TBD-2 上下限与 TBD-11 阈值确定</td>
+<td>更新 NFR-06（集合上限）与 NFR-10 / NFR-11 / NFR-12（阈值为可验收数值）</td>
+</tr>
+<tr>
+<td>TBD-5 结论改动引用策略</td>
+<td>更新 A3 时序图与 <code>Citation</code> 字段</td>
+</tr>
+<tr>
+<td>TBD-8 选定供应商</td>
+<td>收敛 <code>ModelConfig</code> 的 <code>provider</code> 取值域</td>
+</tr>
+<tr>
+<td>TBD-9 发现样本不覆盖目标群体</td>
+<td>按 V0.2 §2 的声明追加证据边界说明，不改变模型结构</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>以上均<strong>不在本轮 V0.3 执行</strong>，登记为后续修订触发条件。</p>
+</blockquote>
+<div class="pagebreak"></div>
+
+<h1 id="7-spec-v03-a">第 7 部分 · SPEC 错误码表（V0.3 附录 A）</h1>
+<blockquote>
+<p>来源文件：<code>15-SPEC错误码表-2组-阅读助手.md</code></p>
+</blockquote>
+<h1 id="spec-v03-a">智能笔记助手 · SPEC 错误码表（V0.3 附录 A）</h1>
+<ul>
+<li>版本：V0.3（目标并入 SPEC V1.1 附录 A）</li>
+<li>编制：2 组 · 郭谦</li>
+<li>日期：2026-10-19</li>
+<li>基线：1 组《SPEC V1.0》</li>
+<li>编号口径：状态名取自《<a href="../结果材料/17-编号规则与术语表-2组-阅读助手.md">编号规则与术语表</a>》§1.4；错误码前缀见本文件 §1</li>
+</ul>
+<h2 id="0_3">0. 为什么需要这张表</h2>
+<p>SPEC V1.0 在三处<strong>要求</strong>使用错误码，却<strong>没有定义任何一个取值</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>出处</th>
+<th>原文要求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SPEC §3.1</td>
+<td>状态转换必须记录时间、解析器版本、配置哈希、<strong>错误码</strong>和重试次数</td>
+</tr>
+<tr>
+<td>SPEC §6</td>
+<td><code>ExportJob</code> 必须记录 <code>format</code>、<code>scope</code>、<code>target_path</code>、<code>status</code>、<code>created_at</code> 和 <strong><code>error</code></strong></td>
+</tr>
+<tr>
+<td>SPEC §7</td>
+<td><code>GET /documents/{id}/status</code> 返回状态、进度、警告和<strong>错误码</strong></td>
+</tr>
+</tbody>
+</table>
+<p>结果是：状态机有值、失败路径有描述，但"失败"落到哪个可枚举、可断言、可进测试用例的标识上，基线没有给。本表把它补上，作为 SPEC V1.1 的<strong>附录 A</strong>。</p>
+<p><strong>本表只做"把 SPEC 已描述的失败路径编号化"，不新增任何失败路径。</strong> 每条错误码都以 SPEC 原文为唯一依据。</p>
+<h2 id="1_6">1. 编号归属（需登记）</h2>
+<p><code>ERR-</code> 为 <strong>2 组新增编号空间</strong>，格式 <code>ERR-&lt;模块号&gt;&lt;序号&gt;</code>：</p>
+<table>
+<thead>
+<tr>
+<th>段</th>
+<th>模块</th>
+<th>主要涉及用例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ERR-1xx</code></td>
+<td>导入与登记</td>
+<td>UC01</td>
+</tr>
+<tr>
+<td><code>ERR-2xx</code></td>
+<td>解析与索引</td>
+<td>UC02</td>
+</tr>
+<tr>
+<td><code>ERR-3xx</code></td>
+<td>权限与门控</td>
+<td>UC05、UC06、UC07、UC11</td>
+</tr>
+<tr>
+<td><code>ERR-4xx</code></td>
+<td>外发确认</td>
+<td>UC06、UC07、UC11</td>
+</tr>
+<tr>
+<td><code>ERR-5xx</code></td>
+<td>模型调用与引用校验</td>
+<td>UC06、UC07、UC08</td>
+</tr>
+<tr>
+<td><code>ERR-6xx</code></td>
+<td>笔记与导出</td>
+<td>UC09、UC10</td>
+</tr>
+<tr>
+<td><code>ERR-9xx</code></td>
+<td>通用</td>
+<td>全局</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>✅ <strong>已登记（2026-10-19）</strong>：<code>ERR-</code> 已补入《<a href="../结果材料/17-编号规则与术语表-2组-阅读助手.md">编号规则与术语表</a>》§1.1 编号前缀总表，并新增 §1.6「错误码编号」冻结前缀与段位划分。术语表 §1.6 只冻结<strong>前缀与段位</strong>，<strong>取值语义以本文件为唯一出处</strong>。</p>
+</blockquote>
+<h2 id="2_3">2. 通用约定</h2>
+<ul>
+<li><strong>结果状态</strong>一律使用术语表 §1.4 的冻结状态名；<code>—</code> 表示该错误不落到状态机，只返回错误响应（多为<strong>前置校验失败</strong>，尚未产生状态对象）。</li>
+<li><strong>重试</strong>三态：</li>
+<li><code>不可重试</code>——条件不可变（如格式不支持）；</li>
+<li><code>可重试</code>——原样重试有效（如解析失败、模型超时）；</li>
+<li><code>改善后可重试</code>——需用户先改条件（权限、范围、路径、网络）。</li>
+<li><strong>可见性</strong>：建议对用户只展示语义提示，错误码仅进日志与 <code>/status</code> 接口（见 §6）。</li>
+</ul>
+<h2 id="3_5">3. 错误码总表</h2>
+<h3 id="31-err-1xx-uc01">3.1 ERR-1xx 导入与登记（UC01）</h3>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>触发条件</th>
+<th>结果状态</th>
+<th>用户可见提示</th>
+<th>重试</th>
+<th>承载对象</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ERR-101</code></td>
+<td>文件格式不支持</td>
+<td>—</td>
+<td>不支持的格式，一期支持 PDF；DOCX/Markdown 高优先级</td>
+<td>不可重试</td>
+<td>导入响应</td>
+<td>SPEC §3.3、NFR-13、SURVEY-002-Q2</td>
+</tr>
+<tr>
+<td><code>ERR-102</code></td>
+<td>文件读取权限不足</td>
+<td>—</td>
+<td>无法读取该文件：权限不足</td>
+<td>改善后可重试</td>
+<td>导入响应</td>
+<td>UC01 异常、BR11</td>
+</tr>
+<tr>
+<td><code>ERR-103</code></td>
+<td>同一 <code>source_hash</code> 已有有效版本</td>
+<td>—</td>
+<td>该文件已导入，已定位到既有版本</td>
+<td>不需重试</td>
+<td>复用既有 <code>DocumentVersion</code></td>
+<td>SPEC §3.2</td>
+</tr>
+<tr>
+<td><code>ERR-104</code></td>
+<td>文件为空或已损坏</td>
+<td>—</td>
+<td>文件无法读取或内容为空</td>
+<td>不可重试</td>
+<td>导入响应</td>
+<td>UC01 异常</td>
+</tr>
+<tr>
+<td><code>ERR-105</code></td>
+<td>超出工作区存储配额</td>
+<td>—</td>
+<td>存储配额不足，请清理后重试</td>
+<td>改善后可重试</td>
+<td><code>Workspace.storage_quota</code></td>
+<td>V0.2 §7 Workspace</td>
+</tr>
+<tr>
+<td><code>ERR-106</code></td>
+<td>登记持久化失败</td>
+<td>—</td>
+<td>登记失败，请稍后重试</td>
+<td>可重试</td>
+<td>导入响应</td>
+<td>SPEC §7 <code>/documents/import</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>说明：<code>ERR-101</code>/<code>ERR-102</code> 必须是<strong>前置校验</strong>——SPEC §3.3 与 BR11 要求"不读入其他文件"，因此这两条不得在发现后继续遍历目录或读取其他内容。</p>
+</blockquote>
+<h3 id="32-err-2xx-uc02">3.2 ERR-2xx 解析与索引（UC02）</h3>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>触发条件</th>
+<th>结果状态</th>
+<th>用户可见提示</th>
+<th>重试</th>
+<th>承载对象</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ERR-201</code></td>
+<td>OCR 识别低置信</td>
+<td><code>ocr_low_confidence</code></td>
+<td>识别置信度低，已保留原页/截图</td>
+<td>可重试</td>
+<td><code>ParseRun.warnings</code></td>
+<td>SPEC §3.1/§3.3、BR07</td>
+</tr>
+<tr>
+<td><code>ERR-202</code></td>
+<td>版面/结构不确定（双栏、表格、公式）</td>
+<td><code>layout_uncertain</code></td>
+<td>结构不确定，已保留原页/截图</td>
+<td>可重试</td>
+<td><code>ParseRun.warnings</code></td>
+<td>SPEC §3.3、BR07</td>
+</tr>
+<tr>
+<td><code>ERR-203</code></td>
+<td>解析失败（解析器异常、文件损坏）</td>
+<td><code>failed</code></td>
+<td>解析失败：&lt;原因&gt;，可重试或删除任务</td>
+<td>可重试</td>
+<td><code>ParseRun.status</code>、<code>warnings</code></td>
+<td>SPEC §3.1、§3.3</td>
+</tr>
+<tr>
+<td><code>ERR-204</code></td>
+<td>需要人工复核</td>
+<td><code>needs_review</code></td>
+<td>已标记待复核，不承诺精确结构化问答</td>
+<td>改善后可重试</td>
+<td><code>ParseRun</code>、<code>Notification</code></td>
+<td>SPEC §3.3、BR07、UC12</td>
+</tr>
+<tr>
+<td><code>ERR-205</code></td>
+<td>解析超时</td>
+<td><code>failed</code></td>
+<td>解析超时，可重试</td>
+<td>可重试</td>
+<td><code>ParseRun.status</code></td>
+<td>SPEC §3.1</td>
+</tr>
+<tr>
+<td><code>ERR-206</code></td>
+<td>全文索引构建失败</td>
+<td><code>parsed</code>（索引未完成）</td>
+<td>索引构建失败，当前仅可原文阅读</td>
+<td>可重试</td>
+<td><code>Index.build_status</code></td>
+<td>SPEC §3.3 索引须记录 <code>version_id</code> 与权限范围</td>
+</tr>
+<tr>
+<td><code>ERR-207</code></td>
+<td>向量索引不可用（引擎缺失或未启用）</td>
+<td><code>indexed</code>（仅全文）</td>
+<td>未启用向量检索，已降级为全文检索</td>
+<td>不可重试</td>
+<td><code>Index</code></td>
+<td>SPEC §3.3"可选向量索引"</td>
+</tr>
+<tr>
+<td><code>ERR-208</code></td>
+<td>解析失败后用户删除任务</td>
+<td><code>deleted</code></td>
+<td>任务已删除</td>
+<td>不需重试</td>
+<td><code>ParseRun.status</code></td>
+<td>SPEC §3.1 异常状态含 <code>deleted</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>说明：SPEC §3.1 要求每次状态转换记录"时间、解析器版本、配置哈希、错误码、重试次数"。承载方式固定为 <code>ParseRun</code>（<code>parser_version</code>、<code>config_hash</code>、<code>status</code>、<code>warnings</code>）+ 状态转换日志，<code>ERR-201</code>~<code>ERR-207</code> 全部写入 <code>warnings</code>。</p>
+</blockquote>
+<h3 id="33-err-3xx-uc05uc06uc07uc11">3.3 ERR-3xx 权限与门控（UC05、UC06、UC07、UC11）</h3>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>触发条件</th>
+<th>结果状态</th>
+<th>用户可见提示</th>
+<th>重试</th>
+<th>承载对象</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ERR-301</code></td>
+<td>检索范围内无任何授权文档</td>
+<td>—</td>
+<td>当前范围内没有可访问的文档，请调整范围</td>
+<td>改善后可重试</td>
+<td>检索响应</td>
+<td>SPEC §4.1、BR01、BR04</td>
+</tr>
+<tr>
+<td><code>ERR-302</code></td>
+<td>证据契约不完整（版本无效 / 敏感级别不允许 / 置信度低于策略阈值）</td>
+<td>—</td>
+<td>证据不满足外发策略，已提供原文</td>
+<td>改善后可重试</td>
+<td><code>Evidence.contract_status</code></td>
+<td>SPEC §4.1、BR02、<code>Policy.confidence_threshold</code></td>
+</tr>
+<tr>
+<td><code>ERR-303</code></td>
+<td>目标文档版本已撤权</td>
+<td><code>stale</code></td>
+<td>该来源已撤销授权，引用已标记失效</td>
+<td>不需重试</td>
+<td><code>Index.stale</code>、<code>DocumentVersion.stale</code></td>
+<td>SPEC §5.2、BR06</td>
+</tr>
+<tr>
+<td><code>ERR-304</code></td>
+<td>文档版本已变化、索引未重建</td>
+<td><code>stale</code></td>
+<td>来源文档已更新，请重新检索</td>
+<td>改善后可重试</td>
+<td><code>Index.stale</code></td>
+<td>SPEC §5.2、BR06</td>
+</tr>
+<tr>
+<td><code>ERR-305</code></td>
+<td>删除传播未完成</td>
+<td><code>stale</code></td>
+<td>相关内容已标记失效</td>
+<td>不需重试</td>
+<td><code>Index.stale</code>、<code>DocumentVersion.stale</code></td>
+<td>BR06</td>
+</tr>
+<tr>
+<td><code>ERR-306</code></td>
+<td>策略禁止云端调用（<code>allow_cloud = false</code>）</td>
+<td><code>local_evidence_only</code></td>
+<td>已按策略仅使用本地证据</td>
+<td>改善后可重试</td>
+<td><code>ModelConfig.allow_cloud</code></td>
+<td>SPEC §4.1 末句、BR12</td>
+</tr>
+<tr>
+<td><code>ERR-307</code></td>
+<td>缓存命中但权限已变更</td>
+<td>—</td>
+<td>（内部）丢弃缓存并重新过滤</td>
+<td>不需重试</td>
+<td>缓存项</td>
+<td>SPEC §4.1、BR01"缓存前必须权限过滤"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="34-err-4xx-uc06uc07uc11">3.4 ERR-4xx 外发确认（UC06、UC07、UC11）</h3>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>触发条件</th>
+<th>结果状态</th>
+<th>用户可见提示</th>
+<th>重试</th>
+<th>承载对象</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ERR-401</code></td>
+<td>用户拒绝本次外发</td>
+<td><code>local_evidence_only</code></td>
+<td>已按你的选择不调用云端模型</td>
+<td>可重试</td>
+<td><code>AuditEvent</code></td>
+<td>SPEC §4.2 <code>decision=rejected</code>、BR12</td>
+</tr>
+<tr>
+<td><code>ERR-402</code></td>
+<td>确认凭证过期或 <code>request_id</code> 被复用</td>
+<td>—</td>
+<td>本次确认已失效，请重新确认</td>
+<td>可重试</td>
+<td><code>request_id</code></td>
+<td>SPEC §4.2"不可复用为永久授权"</td>
+</tr>
+<tr>
+<td><code>ERR-403</code></td>
+<td>拟外发文件与当前证据范围不一致</td>
+<td>—</td>
+<td>外发范围已变化，请重新确认</td>
+<td>改善后可重试</td>
+<td><code>file_ids</code></td>
+<td>SPEC §4.2"逐文件展示，不允许隐藏工作区文件"</td>
+</tr>
+<tr>
+<td><code>ERR-404</code></td>
+<td>逐文件确认被配置关闭</td>
+<td>—</td>
+<td>该策略不允许关闭逐文件确认</td>
+<td>不可重试</td>
+<td><code>Policy.require_per_file_consent</code></td>
+<td>BR12、UC11 异常、NFR-08</td>
+</tr>
+</tbody>
+</table>
+<h3 id="35-err-5xx-uc06uc07uc08">3.5 ERR-5xx 模型调用与引用校验（UC06、UC07、UC08）</h3>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>触发条件</th>
+<th>结果状态</th>
+<th>用户可见提示</th>
+<th>重试</th>
+<th>承载对象</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ERR-501</code></td>
+<td>云端模型超时</td>
+<td><code>model_failed</code></td>
+<td>模型服务超时，已返回原文/检索结果</td>
+<td>可重试</td>
+<td><code>Answer.status</code></td>
+<td>SPEC §5.2</td>
+</tr>
+<tr>
+<td><code>ERR-502</code></td>
+<td>云端模型失败或不可用</td>
+<td><code>model_failed</code></td>
+<td>模型服务不可用，已返回原文/检索结果</td>
+<td>可重试</td>
+<td><code>Answer.status</code></td>
+<td>SPEC §5.2</td>
+</tr>
+<tr>
+<td><code>ERR-503</code></td>
+<td>网络不可用（离线）</td>
+<td><code>local_evidence_only</code></td>
+<td>当前离线，仅提供本地证据与原文</td>
+<td>改善后可重试</td>
+<td><code>Answer.status</code></td>
+<td>SPEC §5.2、BR13、NFR-09</td>
+</tr>
+<tr>
+<td><code>ERR-504</code></td>
+<td>模型响应非合法 JSON（AnswerSchema 解析失败）</td>
+<td><code>citation_invalid</code></td>
+<td>回答格式不可信，已转为原文/检索</td>
+<td>可重试</td>
+<td><code>Answer.status</code></td>
+<td>SPEC §5.1</td>
+</tr>
+<tr>
+<td><code>ERR-505</code></td>
+<td>引用使用未知 <code>evidence_id</code>（不在 allow-list）</td>
+<td><code>citation_invalid</code></td>
+<td>该引用无法核验，已标记失效</td>
+<td>可重试</td>
+<td><code>Citation</code></td>
+<td>SPEC §5.1、BR03</td>
+</tr>
+<tr>
+<td><code>ERR-506</code></td>
+<td>引用页码越界</td>
+<td><code>citation_invalid</code></td>
+<td>该引用无法核验，已标记失效</td>
+<td>可重试</td>
+<td><code>Citation</code></td>
+<td>SPEC §5.1</td>
+</tr>
+<tr>
+<td><code>ERR-507</code></td>
+<td>引用 <code>quote</code> 与原文不匹配</td>
+<td><code>citation_invalid</code></td>
+<td>该引用无法核验，已标记失效</td>
+<td>可重试</td>
+<td><code>Citation</code></td>
+<td>SPEC §5.1</td>
+</tr>
+<tr>
+<td><code>ERR-508</code></td>
+<td>引用定位失败（UC08 核验时跳转失败）</td>
+<td><code>citation_invalid</code></td>
+<td>无法定位到原文，该引用标记为失效</td>
+<td>可重试</td>
+<td><code>Citation</code></td>
+<td>SPEC §5.2、BR03、UC08</td>
+</tr>
+<tr>
+<td><code>ERR-509</code></td>
+<td>证据覆盖不足</td>
+<td><code>needs_human_review</code></td>
+<td>证据不足，请补充检索范围</td>
+<td>改善后可重试</td>
+<td><code>Answer.needs_review</code></td>
+<td>SPEC §5.2、BR05</td>
+</tr>
+<tr>
+<td><code>ERR-510</code></td>
+<td>无依据问题</td>
+<td><code>refused</code></td>
+<td>无法从当前文档确认该问题</td>
+<td>改善后可重试</td>
+<td><code>Answer.status</code></td>
+<td>SPEC §5.2、BR04、BR05</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>说明：<code>ERR-504</code>~<code>ERR-508</code> 五条对应 SPEC §5.1 末句列出的四种判定（JSON 解析失败、未知 <code>evidence_id</code>、页码越界、<code>quote</code> 不匹配），加上 §5.2 的"引用定位失败"，共 5 条，全部归一为 <code>citation_invalid</code>。SPEC §5.2 明确该状态"禁止显示为已核验答案"，实现上应同时给出 <code>support_status = locator_failed</code>。</p>
+</blockquote>
+<h3 id="36-err-6xx-uc09uc10">3.6 ERR-6xx 笔记与导出（UC09、UC10）</h3>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>触发条件</th>
+<th>结果状态</th>
+<th>用户可见提示</th>
+<th>重试</th>
+<th>承载对象</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ERR-601</code></td>
+<td>笔记关联的文档版本已变更</td>
+<td><code>stale</code>（关联失效）</td>
+<td>原文版本已变化，笔记关联已失效，请复核</td>
+<td>不需重试</td>
+<td><code>Note</code></td>
+<td>SPEC §6、BR09</td>
+</tr>
+<tr>
+<td><code>ERR-602</code></td>
+<td>笔记定位漂移（<code>block_id</code> 不存在）</td>
+<td>—</td>
+<td>已保留笔记文字，但定位失效</td>
+<td>不需重试</td>
+<td><code>Note</code>、<code>ContentBlock</code></td>
+<td>UC09 异常</td>
+</tr>
+<tr>
+<td><code>ERR-603</code></td>
+<td>导出范围为空</td>
+<td>—</td>
+<td>没有可导出的内容</td>
+<td>改善后可重试</td>
+<td><code>ExportJob</code></td>
+<td>UC10 异常</td>
+</tr>
+<tr>
+<td><code>ERR-604</code></td>
+<td>目标路径不存在或无写权限</td>
+<td>—</td>
+<td>无法写入目标位置：&lt;原因&gt;</td>
+<td>改善后可重试</td>
+<td><code>ExportJob.target_path</code></td>
+<td>SPEC §6、BR14</td>
+</tr>
+<tr>
+<td><code>ERR-605</code></td>
+<td>导出写入失败（IO）</td>
+<td><code>failed</code>（<code>ExportJob.status</code>）</td>
+<td>导出失败：&lt;原因&gt;</td>
+<td>可重试</td>
+<td><code>ExportJob.error</code></td>
+<td>SPEC §6、§7 <code>/exports</code></td>
+</tr>
+<tr>
+<td><code>ERR-606</code></td>
+<td>源文件差分检查不通过</td>
+<td><code>failed</code></td>
+<td>检测到源文件被改动，已中止导出</td>
+<td>不可重试</td>
+<td><code>ExportJob.error</code></td>
+<td>SPEC §6"源文件写入前后执行差分检查"、BR14</td>
+</tr>
+<tr>
+<td><code>ERR-607</code></td>
+<td>导出内容中的部分引用已失效</td>
+<td>—</td>
+<td>部分引用已失效，已在导出文件中标注</td>
+<td>不需重试</td>
+<td><code>Citation</code></td>
+<td>UC10 异常</td>
+</tr>
+</tbody>
+</table>
+<h3 id="37-err-9xx">3.7 ERR-9xx 通用</h3>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>触发条件</th>
+<th>结果状态</th>
+<th>用户可见提示</th>
+<th>重试</th>
+<th>承载对象</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ERR-901</code></td>
+<td>未登录或会话失效</td>
+<td>—</td>
+<td>登录状态已失效，请重新登录</td>
+<td>改善后可重试</td>
+<td>—</td>
+<td>系统边界</td>
+</tr>
+<tr>
+<td><code>ERR-999</code></td>
+<td>未分类错误（兜底）</td>
+<td>按所属模块归一</td>
+<td>发生未知错误，已记录日志</td>
+<td>可重试</td>
+<td>日志</td>
+<td>兜底项</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-spec-52">4. 与 SPEC §5.2 降级规则的对应</h2>
+<p>SPEC §5.2 的 5 条降级规则 → 状态 → 错误码：</p>
+<table>
+<thead>
+<tr>
+<th>SPEC §5.2 条件</th>
+<th>结果状态</th>
+<th>由哪些错误码触发</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无网络或用户拒绝外发</td>
+<td><code>local_evidence_only</code></td>
+<td><code>ERR-306</code>、<code>ERR-401</code>、<code>ERR-503</code></td>
+</tr>
+<tr>
+<td>证据覆盖不足</td>
+<td><code>needs_human_review</code></td>
+<td><code>ERR-509</code></td>
+</tr>
+<tr>
+<td>模型超时或失败</td>
+<td><code>model_failed</code></td>
+<td><code>ERR-501</code>、<code>ERR-502</code></td>
+</tr>
+<tr>
+<td>引用定位失败</td>
+<td><code>citation_invalid</code></td>
+<td><code>ERR-504</code>、<code>ERR-505</code>、<code>ERR-506</code>、<code>ERR-507</code>、<code>ERR-508</code></td>
+</tr>
+<tr>
+<td>证据过期或撤权</td>
+<td><code>stale</code></td>
+<td><code>ERR-303</code>、<code>ERR-304</code>、<code>ERR-305</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>5 条规则全部有错误码落地，无缺口、无溢出</strong>（错误码不产生 §5.2 之外的新状态）。</p>
+<h2 id="5-spec-8">5. 与 SPEC §8 测试组的对应</h2>
+<p>SPEC §8 定义了 5 个测试组，每组的最小用例应覆盖以下错误码：</p>
+<table>
+<thead>
+<tr>
+<th>SPEC §8 测试组</th>
+<th>最小用例</th>
+<th>应覆盖错误码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>解析</td>
+<td>文本 PDF、扫描 PDF、DOCX、Markdown、低置信样本</td>
+<td><code>ERR-201</code>、<code>ERR-202</code>、<code>ERR-203</code>、<code>ERR-204</code>、<code>ERR-205</code>、<code>ERR-206</code>、<code>ERR-207</code></td>
+</tr>
+<tr>
+<td>权限</td>
+<td>授权 / 撤权 / 未授权文档集合</td>
+<td><code>ERR-301</code>、<code>ERR-302</code>、<code>ERR-303</code>、<code>ERR-307</code></td>
+</tr>
+<tr>
+<td>引用</td>
+<td>页码、bbox、版本变化、无依据问题</td>
+<td><code>ERR-304</code>、<code>ERR-505</code>、<code>ERR-506</code>、<code>ERR-507</code>、<code>ERR-508</code>、<code>ERR-509</code>、<code>ERR-510</code></td>
+</tr>
+<tr>
+<td>外发</td>
+<td>确认、拒绝、网络断开</td>
+<td><code>ERR-401</code>、<code>ERR-402</code>、<code>ERR-403</code>、<code>ERR-404</code>、<code>ERR-502</code>、<code>ERR-503</code></td>
+</tr>
+<tr>
+<td>导出</td>
+<td>指定路径、无权限路径、源文件差分</td>
+<td><code>ERR-603</code>、<code>ERR-604</code>、<code>ERR-605</code>、<code>ERR-606</code>、<code>ERR-607</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="6_1">6. 待确认项</h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ERR-</code> 前缀登记</td>
+<td>需并入《编号规则与术语表》§1.1（见 §1）</td>
+</tr>
+<tr>
+<td>HTTP 状态码映射</td>
+<td>SPEC 未规定 HTTP 层，本表只定义领域错误码；<code>/status</code> 与响应体中的映射留待 SPEC V1.1 补</td>
+</tr>
+<tr>
+<td>提示文案定稿</td>
+<td>本表给出的是语义要点，非最终文案；多语言留待实现阶段</td>
+</tr>
+<tr>
+<td><code>ERR-306</code> 与 <code>ERR-503</code></td>
+<td>前者是策略<strong>主动禁止</strong>（配置），后者是环境<strong>不可用</strong>；提示不同，但可共用同一条本地降级实现路径</td>
+</tr>
+<tr>
+<td>用户可见性</td>
+<td>建议用户只见语义提示，错误码仅进日志与 <code>/documents/{id}/status</code> 响应</td>
+</tr>
+</tbody>
+</table>
+<div class="pagebreak"></div>
+
+<h1 id="8-9">第 8 部分 · 评审入口问题回答（9 问）</h1>
+<blockquote>
+<p>来源文件：<code>16-评审入口问题回答-2组-阅读助手.md</code></p>
+</blockquote>
+<h1 id="v03_1">智能笔记助手 · V0.3 建模评审入口问题回答</h1>
+<ul>
+<li>版本：V0.3</li>
+<li>编制：2 组 · 郭谦</li>
+<li>日期：2026-10-20</li>
+<li>依据：1 组《<a href="../../../阶段成果/需求建模/旧版废稿/需求建模启动包.md">需求建模启动包</a>》§5「建模评审入口」的 9 个必答问题</li>
+<li>编号口径：《<a href=".../结果材料/17-编号规则与术语表-2组-阅读助手.md">编号规则与术语表</a>》V1.1（冻结版）</li>
+<li>关联：《<a href="./V0.3-需求追踪矩阵.md">V0.3-需求追踪矩阵</a>》《<a href="./V0.3-TBD收口表.md">V0.3-TBD收口表</a>》《<a href="./V0.3-用例规约.md">V0.3-用例规约</a>》</li>
+</ul>
+<h2 id="0_4">0. 这份文件补的是什么</h2>
+<p>启动包 §5 明确"第一轮模型评审时必须回答"这 9 个问题，但 1 组基线交付中<strong>没有对应的回答件</strong>——需求模型 V0.2 按"参与者 / 用例 / 规则 / 类 / 状态 / NFR / TBD"分节组织，SRS 与 SPEC 按模块组织，两者都没有按评审问题组织过内容。评审时只能临场翻材料拼答案。</p>
+<p>本文件即该回答件。每条按三段式写：</p>
+<table>
+<thead>
+<tr>
+<th>段</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>结论</strong></td>
+<td>一句话给出"能不能过"，结论只能是"是 / 部分 / 否"</td>
+</tr>
+<tr>
+<td><strong>证据</strong></td>
+<td>模型与文档里的具体落点（编号 + 文件名），评审可现场翻</td>
+</tr>
+<tr>
+<td><strong>残余</strong></td>
+<td>本问题<strong>尚未关闭</strong>的部分，指向 TBD 编号或缺口的登记位置</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>原则：<strong>凡结论说"是"的，都能在仓库里指到具体编号；指不到的一律写进"残余"，不假装已解决。</strong> 因此本文件的"残余"段与《TBD 收口表》《RTM》§5 缺口表是同一批内容的三个视角。</p>
+</blockquote>
+<hr />
+<h2 id="1_7">1. 每个核心用例是否能追溯到用户任务或原型入口？</h2>
+<p><strong>结论：是。</strong> 12 个用例 12 个都有落点，其中 11 个直接对应伪前端页面，1 个（UC02）是系统内部用例。</p>
+<table>
+<thead>
+<tr>
+<th>UC</th>
+<th>用例名</th>
+<th>用户任务 / 原型入口</th>
+<th>承载页面</th>
+<th>图与规约</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UC01</td>
+<td>导入文档</td>
+<td>导入并登记文档</td>
+<td><code>library.html</code></td>
+<td>A5、规约 UC01</td>
+</tr>
+<tr>
+<td>UC02</td>
+<td>处理并索引文档</td>
+<td>（系统内部，无用户页面）</td>
+<td><code>notifications.html</code>（仅状态可见性）</td>
+<td>A1、A5、规约 UC02</td>
+</tr>
+<tr>
+<td>UC03</td>
+<td>管理文档空间</td>
+<td>建空间、筛选、收藏、删除</td>
+<td><code>library.html</code></td>
+<td>A1、规约 UC03</td>
+</tr>
+<tr>
+<td>UC04</td>
+<td>阅读文档与目录</td>
+<td>打开并浏览正文/目录</td>
+<td><code>index.html</code></td>
+<td>A1、规约 UC04</td>
+</tr>
+<tr>
+<td>UC05</td>
+<td>检索文档或授权文档集</td>
+<td>搜索</td>
+<td><code>search.html</code></td>
+<td>A6、规约 UC05</td>
+</tr>
+<tr>
+<td>UC06</td>
+<td>对当前文档/选中文本提问</td>
+<td>阅读中提问</td>
+<td><code>index.html</code></td>
+<td>A2、A3、A4、规约 UC06</td>
+</tr>
+<tr>
+<td>UC07</td>
+<td>生成摘要/要点</td>
+<td>生成提纲/要点</td>
+<td><code>summary.html</code></td>
+<td>A2、A3、规约 UC07</td>
+</tr>
+<tr>
+<td>UC08</td>
+<td>核验回答引用</td>
+<td>点引用跳回原文</td>
+<td><code>answer-more.html</code></td>
+<td>A3、规约 UC08</td>
+</tr>
+<tr>
+<td>UC09</td>
+<td>创建批注/笔记</td>
+<td>记笔记</td>
+<td><code>notes.html</code></td>
+<td>A7、规约 UC09</td>
+</tr>
+<tr>
+<td>UC10</td>
+<td>导出阅读成果</td>
+<td>导出成果</td>
+<td><code>export.html</code></td>
+<td>A7、规约 UC10</td>
+</tr>
+<tr>
+<td>UC11</td>
+<td>配置模型与隐私边界</td>
+<td>改模型与隐私设置</td>
+<td><code>settings.html</code></td>
+<td>A4、规约 UC11</td>
+</tr>
+<tr>
+<td>UC12</td>
+<td>查看处理/核验通知</td>
+<td>看待复核状态</td>
+<td><code>notifications.html</code></td>
+<td>A5、规约 UC12</td>
+</tr>
+</tbody>
+</table>
+<p>来源：V0.2 §4 参与者表、§5 用例清单的"当前建模依据"列、§10 需求追踪初稿的"来源"列；页面可达关系见 <a href=".../结果材料/06-建模图-2组-阅读助手/底稿-PlantUML/界面导航图-V0.3.puml"><code>06-建模图-2组-阅读助手/底稿-PlantUML/界面导航图-V0.3.puml</code></a>（A9）。</p>
+<p><strong>残余</strong></p>
+<ul>
+<li>UC02 无独立用户页面，因为它的主要参与者是 <code>Local Parser/OCR</code>（系统外部组件）而非 Reader。<strong>这是参与者差异，不是追溯缺口</strong>；其"处理状态可见"的要求由 BR15 经 <code>notifications.html</code>（A9 中 <code>notifications</code> 节点）承载。</li>
+<li>1 组基线的伪前端素材（<code>伪前端.zip</code>）为<strong>产品意图</strong>，不是已实现功能（启动包 §1 证据分层表）。本表只主张"用例能追到原型入口"，<strong>不主张这些页面已实现</strong>。</li>
+</ul>
+<hr />
+<h2 id="2-ai">2. 每个 AI 回答是否必须经过权限、证据契约和引用校验？</h2>
+<p><strong>结论：是，且是强制链，无旁路。</strong> 三道关都挂在 AI 回答用例上，且都是 <code>&lt;&lt;include&gt;&gt;</code>（必经）而非 <code>&lt;&lt;extend&gt;&gt;</code>（可选）。</p>
+<table>
+<thead>
+<tr>
+<th>关</th>
+<th>检查内容</th>
+<th>规则</th>
+<th>结构落点</th>
+<th>图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 权限</td>
+<td>检索 / 缓存 / 上下文组装 / 模型调用<strong>前</strong>完成文档权限过滤</td>
+<td>BR01</td>
+<td><code>PermissionGrant</code>；<code>Answer ..&gt; PermissionGrant : gate</code></td>
+<td>A6（第一步即权限过滤）、A3</td>
+</tr>
+<tr>
+<td>② 证据契约</td>
+<td>授权允许外发 + 版本有效 + 契约完整 + 置信度达策略阈值</td>
+<td>BR02</td>
+<td><code>Evidence</code>；<code>Answer ..&gt; Evidence : requires contract</code>；<code>Policy.confidence_threshold</code></td>
+<td>A3（<code>evidence_checked</code>）</td>
+</tr>
+<tr>
+<td>③ 引用校验</td>
+<td>引用必须来自本次 allow-list，服务端校验，不得自由生成页码</td>
+<td>BR03、BR04</td>
+<td><code>Claim</code>、<code>Citation</code>；<code>support_status</code> 五值</td>
+<td>A3（<code>citation_checked</code>）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>"必经"的证据（不是靠文字承诺，是靠关系类型）</strong></p>
+<ul>
+<li>用例图 V0.3：<code>UC06 ..&gt; Gate : &lt;&lt;include&gt;&gt;</code>、<code>UC06 ..&gt; Cite : &lt;&lt;include&gt;&gt;</code>、<code>UC06 ..&gt; UploadConfirm : &lt;&lt;include&gt;&gt;</code>，UC07 同样三条——<strong>include 意味着执行宿主用例必然执行它</strong>；只有 <code>Fallback</code> 是 extend（可选降级）。</li>
+<li>状态图 A2：正常流转链 <code>requested → retrieving → evidence_checked → generating → citation_checked → answered</code>，<strong>没有任何一步可以跳过</strong>；任一关不过就转入分支态（<code>refused</code> / <code>needs_human_review</code> / <code>citation_invalid</code> / <code>local_evidence_only</code>），而<strong>不存在"未校验但已是 answered"的路径</strong>。</li>
+<li>规约：UC06 主成功路径第 2/5 步、UC07 主成功路径第 2/5 步明确写出组装 Evidence Contract 与校验 claim/citation。</li>
+</ul>
+<p><strong>残余</strong></p>
+<ul>
+<li>置信度阈值是策略参数（<code>Policy.confidence_threshold</code>），<strong>具体取值未定</strong>——依赖 TBD-8（供应商与 SLA）。建模期冻结的是"必须有这道关且阈值可配"，不是阈值数值。</li>
+<li>引用校验的<strong>失败判据</strong>（多大偏移算 <code>locator_failed</code>）未定，与 TBD-5（DOCX 页码策略）绑定。</li>
+</ul>
+<hr />
+<h2 id="3_6">3. 文档解析不确定、云端不可用、无依据或过期证据时，系统是否仍有明确结果？</h2>
+<p><strong>结论：是。</strong> 四类异常各自有<strong>冻结的状态名 + 用户可见的提示语 + 错误码</strong>，没有一类是"静默继续"。</p>
+<table>
+<thead>
+<tr>
+<th>异常类别</th>
+<th>触发条件</th>
+<th>结果状态（术语表 §1.4 冻结）</th>
+<th>错误码</th>
+<th>用户看到什么</th>
+<th>图 / 规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文档解析不确定</td>
+<td>扫描件 OCR 低置信</td>
+<td><code>ocr_low_confidence</code> → <code>needs_review</code></td>
+<td><code>ERR-201</code></td>
+<td>"识别置信度低，已保留原页/截图"</td>
+<td>A1、A5、BR07</td>
+</tr>
+<tr>
+<td>文档解析不确定</td>
+<td>双栏/表格/公式结构不确定</td>
+<td><code>layout_uncertain</code> → <code>needs_review</code></td>
+<td><code>ERR-202</code></td>
+<td>"结构不确定，已保留原页/截图"</td>
+<td>A1、A5、BR07</td>
+</tr>
+<tr>
+<td>文档解析不确定</td>
+<td>解析异常</td>
+<td><code>failed</code></td>
+<td><code>ERR-203</code></td>
+<td>"解析失败，可重试或删除任务"</td>
+<td>A1、A5</td>
+</tr>
+<tr>
+<td>云端不可用</td>
+<td>模型超时或失败</td>
+<td><code>model_failed</code></td>
+<td><code>ERR-501</code>、<code>ERR-502</code></td>
+<td>明确失败态，可重试</td>
+<td>A2、A3</td>
+</tr>
+<tr>
+<td>云端不可用</td>
+<td>无网络 / 用户拒绝外发 / 策略禁止</td>
+<td><code>local_evidence_only</code></td>
+<td><code>ERR-503</code>、<code>ERR-401</code>、<code>ERR-306</code></td>
+<td>"已按你的选择不调用云端模型"</td>
+<td>A2、A3、BR12、BR13</td>
+</tr>
+<tr>
+<td>无依据</td>
+<td>检索后无可用证据</td>
+<td><code>refused</code></td>
+<td><code>ERR-510</code></td>
+<td>"无法从当前文档确认该问题"，<strong>不得伪装成有依据回答</strong></td>
+<td>A2、BR04、BR05</td>
+</tr>
+<tr>
+<td>无依据（证据不足但非空）</td>
+<td>证据覆盖不足</td>
+<td><code>needs_human_review</code></td>
+<td><code>ERR-509</code></td>
+<td>"证据不足，请补充检索范围"</td>
+<td>A2</td>
+</tr>
+<tr>
+<td>过期证据</td>
+<td>版本变化 / 撤权 / 删除传播未完成</td>
+<td><code>stale</code></td>
+<td><code>ERR-303</code>、<code>ERR-304</code>、<code>ERR-305</code></td>
+<td>"来源已变更，引用已标记失效"</td>
+<td>A1、A3、BR06、UC08</td>
+</tr>
+<tr>
+<td>引用定位失败</td>
+<td>引用无法回到原文 / 引用不合规</td>
+<td><code>citation_invalid</code></td>
+<td><code>ERR-504</code>–<code>ERR-508</code></td>
+<td><strong>禁止显示为已核验答案</strong>（同时给 <code>support_status = locator_failed</code>）</td>
+<td>A2、A3、BR03、BR04、UC08</td>
+</tr>
+</tbody>
+</table>
+<p>来源：《<a href="./V0.3-SPEC错误码表.md">V0.3-SPEC错误码表</a>》（44 条，覆盖 <code>ERR-1xx</code>~<code>ERR-6xx</code> + <code>ERR-9xx</code>）。</p>
+<p><strong>近似失败的兜底</strong>：BR13 / NFR-09 规定<strong>离线时阅读与基础检索仍可用</strong>，AI 不可用不得导致阅读器整体不可用；BR15 规定长任务必须显示进度。所以"云端挂了"不是"产品挂了"。</p>
+<p><strong>残余</strong></p>
+<ul>
+<li>人工复核的<strong>可接受等待时间</strong>未定（TBD-3）；建模期只保证"复核状态可见且不需要实测就能判断进入复核"。</li>
+<li>部分状态（<code>citation_invalid</code>、<code>ERR-5xx</code>）在 SPEC V1.0 中只被"要求存在"，具体取值由 2 组补建——见 W4 的 SRS/SPEC 返修清单。</li>
+</ul>
+<hr />
+<h2 id="4_5">4. 多文档检索是否显式选择授权范围，是否能够区分来源和冲突？</h2>
+<p><strong>结论：范围显式——是；区分来源——是；区分冲突——部分（规则在，可视化未细化）。</strong></p>
+<p><strong>(1) 授权范围是显式的，不是系统推定的</strong></p>
+<ul>
+<li>领域模型 R-04 把 <code>Query "1" --&gt; "1" DocumentSet</code> 改为 <code>Query "0..*" --&gt; "0..1" DocumentSet</code>：<strong>单文档问答不构造集合</strong>，多文档检索才需要集合，集合由用户选择。</li>
+<li>A6 活动图第一步就是"选择范围"，第二步才是权限过滤（BR01）。</li>
+<li><code>DocumentSet</code> 定义（术语表 §2.1）："一次检索或问答的<strong>显式</strong>上下文范围，<strong>由用户选择而非系统推定</strong>"。</li>
+<li>NFR-06：多文档查询默认由用户显式选择授权集合。</li>
+</ul>
+<p><strong>(2) 来源可区分</strong></p>
+<p>BR08 要求多文档回答显示<strong>来源、版本、时间与冲突</strong>；A6 按来源分组返回结果；<code>Citation</code> 绑定 <code>evidence_id</code> → <code>Evidence</code> → <code>block_id</code> / 版本 / 页码（术语表 §2.2）。</p>
+<p><strong>(3) 冲突部分</strong></p>
+<p>BR04 的 <code>support_status</code> 五值中包含 <code>conflicting</code>（冲突），即"两条证据互相矛盾"有明确表示位；但<strong>"冲突怎么展示给用户"尚未细化</strong>（列表式？并排式？以哪条为准？）。</p>
+<p><strong>残余</strong></p>
+<ul>
+<li>单次查询规模上限 <strong>20 份</strong>是 <strong>NFR-06 的候选值</strong>，未实测（TBD-2）。RTM §5 已登记为缺口。</li>
+<li><strong>冲突可视化规则未细化</strong>——RTM §5 未单列该缺口，<strong>本文件作为新增缺口登记</strong>：建议在 V0.3 合并时补一条界面级说明，或明确记为"实现期细化"。</li>
+<li>FR-11（跨知识库/跨项目问答）<strong>不进一期</strong>，所以"跨库冲突"不在本期范围。</li>
+</ul>
+<hr />
+<h2 id="5_3">5. 笔记、引用、回答和原文之间是否存在稳定关联？</h2>
+<p><strong>结论：是。</strong> 四类对象之间的关联在领域模型中全部显式落类，且<strong>稳定性靠绑定版本而非绑定文档</strong>来保证。</p>
+<p><strong>关联链（领域模型 V0.3 §3）</strong></p>
+<pre><code>原文            ContentBlock ──→ Page ──→ DocumentVersion ──→ Document
+                   ↑                （reference 的稳定锚点）
+回答            Answer ──→ Claim ──→ Citation ──→ Evidence ──→ ContentBlock
+                                       ↑
+笔记            Note ──────────────────┘
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>关联</th>
+<th>承载方式</th>
+<th>规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Note ↔ 原文</td>
+<td><code>Note</code> 关联 <code>document_version_id</code> + <code>block_id</code></td>
+<td>BR09</td>
+</tr>
+<tr>
+<td>Note ↔ 回答/引用</td>
+<td>R-05 修订后 <code>ExportJob "0..*" --&gt; "0..*" Note</code>；<code>Note ⟶ Citation</code> 为<strong>数据关联</strong>（R-02 明确它不是行为扩展）</td>
+<td>BR09、R-02</td>
+</tr>
+<tr>
+<td>Citation ↔ 原文</td>
+<td><code>Citation.evidence_id</code> → <code>Evidence</code> → <code>ContentBlock</code> → <code>bbox</code> / <code>char_start-end</code></td>
+<td>BR03、NFR-01</td>
+</tr>
+<tr>
+<td>稳定性</td>
+<td>引用与笔记<strong>必须绑定 <code>DocumentVersion</code> 而非 <code>Document</code></strong>（术语表 §2.2「Document vs DocumentVersion」）</td>
+<td>BR06、BR09</td>
+</tr>
+<tr>
+<td>失效可见</td>
+<td>版本变化/撤权/删除 → <code>DocumentVersion.stale</code> + <code>Index.stale</code>，笔记与引用提示复核</td>
+<td>BR06、BR09</td>
+</tr>
+<tr>
+<td>可回溯</td>
+<td><code>Index</code> 显式保留 <code>version_id</code> 与 <code>stale</code>（R-06 新增），使 stale 传播能落到具体对象</td>
+<td>BR06</td>
+</tr>
+</tbody>
+</table>
+<p><strong>残余</strong></p>
+<ul>
+<li><strong>定位漂移的容忍阈值与修复策略未定</strong>（原文改版后笔记锚点偏移多少算失效）：属实现细节，与 TBD-5 相关。</li>
+<li><code>Citation.locator</code> 的最终策略（DOCX 用视觉页码还是段落/标题路径）<strong>未定</strong>（TBD-5）。</li>
+</ul>
+<hr />
+<h2 id="6_2">6. 模型中哪些内容是已确认需求，哪些是技术建议，哪些仍待验证？</h2>
+<p><strong>结论：已按三层分类，且每层的出处可查。</strong> 这是本次评审最该被追问的一题，因此单列成表。</p>
+<table>
+<thead>
+<tr>
+<th>层</th>
+<th>内容</th>
+<th>数量</th>
+<th>唯一出处</th>
+<th>可否作为验收依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>① 已确认需求</strong></td>
+<td>核心用例</td>
+<td>12（UC01–UC12）</td>
+<td>V0.2 §5</td>
+<td>可</td>
+</tr>
+<tr>
+<td></td>
+<td>业务规则</td>
+<td>15（BR01–BR15）</td>
+<td>V0.2 §6</td>
+<td>可</td>
+</tr>
+<tr>
+<td></td>
+<td>功能需求</td>
+<td>12（FR-01–FR-12，其中 FR-11「暂不纳入」、FR-12「不承诺」）</td>
+<td>V0.2 §10</td>
+<td>可（含 2 条范围外标注）</td>
+</tr>
+<tr>
+<td></td>
+<td>非功能需求</td>
+<td>14（NFR-01–NFR-13 + 2 组新增 NFR-14）</td>
+<td>V0.2 §9 + 术语表 §1.3</td>
+<td>仅"可验证部分"可（阈值类除外）</td>
+</tr>
+<tr>
+<td></td>
+<td>状态与枚举</td>
+<td>文档处理 5+6、回答 6+6、<code>support_status</code> 5</td>
+<td>术语表 §1.4</td>
+<td>可（冻结，不得自造）</td>
+</tr>
+<tr>
+<td><strong>② 技术建议</strong>（来自 A 线调研与实验，<strong>不是用户需求</strong>）</td>
+<td>Evidence Gate 前置与门控链、IR 溯源字段清单、服务端 citation 校验、模型路由、<code>IndexingRun</code> 与 <code>Index</code> 分离、降级路径设计</td>
+<td>—</td>
+<td><code>阶段成果/前期实验/</code> 的实验记录；V0.3-需求模型 §3.2 设计说明</td>
+<td>不可直接当验收依据；须先被 ① 里的某条需求"认领"</td>
+</tr>
+<tr>
+<td><strong>③ 仍待验证</strong></td>
+<td>12 条 TBD</td>
+<td>12</td>
+<td>V0.2 §11 + 《V0.3-TBD收口表》</td>
+<td>不可</td>
+</tr>
+</tbody>
+</table>
+<p><strong>③ 的细分状态（直接取自《V0.3-TBD收口表》§3 汇总）</strong></p>
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>数量</th>
+<th>编号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>建模期已关闭</code></td>
+<td>5</td>
+<td>TBD-4、TBD-5、TBD-8、TBD-10、TBD-12</td>
+</tr>
+<tr>
+<td><code>降级关闭</code>（选定保守口径，细节留待实测）</td>
+<td>5</td>
+<td>TBD-1、TBD-2、TBD-3、TBD-6、TBD-7</td>
+</tr>
+<tr>
+<td><code>建模期未关闭</code>（必须实测或外部输入）</td>
+<td>2</td>
+<td><strong>TBD-9</strong>（样本代表性）、<strong>TBD-11</strong>（性能阈值）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>残余</strong></p>
+<ul>
+<li>TBD-9 与 TBD-11 <strong>建模期无法关闭</strong>：前者要统计样本扩样，后者要压测。二者已明确登记，不作为 V0.3 的阻塞项，但在 RTM 与汇报中必须显式保留。</li>
+<li>② 类内容目前<strong>没有独立的登记表</strong>——它们散在 A 线实验中，只靠 V0.3-需求模型 §3.2 的"设计说明"段间接体现。<strong>建议</strong>：V0.3 合并时为"技术建议"补一张出处表，避免评审时把实验结论误读成用户需求。</li>
+</ul>
+<hr />
+<h2 id="7-pdfdocxmarkdownpptx-xlsxtxt">7. 是否将 PDF、DOCX/Markdown、PPTX 的格式优先级转化为分阶段验收范围，XLSX/TXT 采用何种受限支持策略？</h2>
+<p><strong>结论：是，且已转成可判定的规则与提示语。</strong></p>
+<table>
+<thead>
+<tr>
+<th>格式</th>
+<th>一期定位</th>
+<th>依据</th>
+<th>验收方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PDF</strong></td>
+<td><code>Must</code> —— 首要输入格式，含文本型与扫描型</td>
+<td>SURVEY-002-Q2（18/20 选择）；V0.2 §10 FR-02；NFR-13</td>
+<td>解析测试组：文本 PDF 结构化 + 扫描 PDF 走 OCR 与低置信分支</td>
+</tr>
+<tr>
+<td><strong>DOCX / Markdown</strong></td>
+<td>高优先级（一期）</td>
+<td>SURVEY-002-Q2（各 11/20）；NFR-13</td>
+<td>解析测试组：结构化提取 + 目录/章节树</td>
+</tr>
+<tr>
+<td><strong>PPTX</strong></td>
+<td>候选扩展（<code>Should</code>，<strong>受限</strong>）</td>
+<td>SURVEY-002-Q2（10/20）；V0.2 §10 "PPTX 进入候选扩展范围"</td>
+<td>可导入登记；不承诺页面布局与演讲者注释的精确结构化</td>
+</tr>
+<tr>
+<td><strong>XLSX / TXT</strong></td>
+<td><strong>受限支持</strong></td>
+<td>SURVEY-002-Q2（各 4/20）；V0.2 §2.2</td>
+<td>可导入登记并做基础文本提取；<strong>明确提示"不承诺结构化问答"</strong>，不作为一期验收项</td>
+</tr>
+</tbody>
+</table>
+<p><strong>"受限支持"落到模型上的三个可判定点</strong></p>
+<ol>
+<li><strong>不装死</strong>：不支持的格式必须<strong>明确提示</strong>，不得静默失败（NFR-13）。</li>
+<li><strong>不越界</strong>：提示格式不支持时<strong>不得继续遍历目录或读取其他文件</strong>（BR11；规范化为 <code>ERR-101</code>/<code>ERR-102</code> 的前置校验，见错误码表 §2 说明）。</li>
+<li><strong>低置信可降级</strong>：PPTX/XLSX 等复杂版面走 BR07 —— 保留原页/截图与风险标记，<code>ERR-201</code>/<code>ERR-202</code> → <code>needs_review</code>，<strong>不承诺精确结构化问答</strong>。</li>
+</ol>
+<p><strong>残余</strong></p>
+<ul>
+<li>PPTX / XLSX / TXT 的<strong>一期边界线</strong>与"复杂表格/公式/演示文稿引用的可接受准确率"未定 → <strong>TBD-10</strong>（<code>降级关闭</code>：建模期按"受限支持 + 明确提示"处理）。</li>
+<li>Markdown 方言、表格、脚注、公式、代码块的支持范围未定 → <strong>TBD-6</strong>（<code>降级关闭</code>）。</li>
+<li>n=20 的偏好排序<strong>不等于兼容承诺</strong>（启动包 §1 证据分层表），不得把 18/20 读成"PDF 完整兼容"。</li>
+</ul>
+<hr />
+<h2 id="8">8. 云端和本地模型路径是否都默认逐文件确认外发，并为拒绝外发保留离线阅读/本地证据路径？</h2>
+<p><strong>结论：是——但必须先纠正这题的一个前提。</strong> 一期的<strong>云端路径有，本地模型路径没有</strong>。</p>
+<p><strong>(1) 先把术语说清（这题的前提本身有歧义）</strong></p>
+<table>
+<thead>
+<tr>
+<th>题目里的措辞</th>
+<th>一期实际含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"本地模型路径"</td>
+<td>⚠️ <strong>一期不存在本地大模型推理路径</strong>：FR-12「本地生成模型问答」在 V0.2 §10 中被标注为<strong>"明确不承诺"</strong>，RTM §1.1 记为"范围外"</td>
+</tr>
+<tr>
+<td>"本地证据路径"</td>
+<td>✅ 存在：拒绝外发后走 <code>local_evidence_only</code>——返回<strong>本地证据与原文</strong>，不生成"看似有依据"的模型回答（BR12、BR05）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>因此第 8 题的正确答案是："<strong>云端路径逐文件确认；本地没有模型路径，但有本地证据/原文降级路径。</strong>" 若照题目字面回答"两条路径都逐文件确认"，会凭空承诺一个不存在的本地推理能力。
+附带风险：SURVEY-008-Q8 问的是"<strong>所谓本地模型场景</strong>"下的接受度（50% 接受询问 / 35% 不接受任何上传），V0.2 §2 已标注"<strong>需验证产品术语理解</strong>"——用户未必分得清"本地推理"与"本地证据降级"。本项<strong>待访谈验证</strong>（WP-D）。</p>
+</blockquote>
+<p><strong>(2) 确认机制（云端路径）</strong></p>
+<table>
+<thead>
+<tr>
+<th>要求</th>
+<th>落点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>逐文件展示范围、模型服务与用途，取得<strong>本次</strong>明确确认</td>
+<td>BR12、NFR-08；<code>Policy.require_per_file_consent</code>；<code>UploadConfirm</code> 内部用例；A4 时序图</td>
+</tr>
+<tr>
+<td><strong>不得默认关闭</strong>逐文件确认</td>
+<td>BR12；UC11 异常路径明写"逐文件外发确认不得被默认关闭"；错误码 <code>ERR-404</code>（"该策略不允许关闭逐文件确认"，不可重试）</td>
+</tr>
+<tr>
+<td>默认不自动上传、不自动遍历</td>
+<td>BR11；<code>ModelConfig.allow_cloud</code></td>
+</tr>
+<tr>
+<td>确认记录可追溯（"本次"的含义）</td>
+<td><code>AuditEvent</code>（只增不改）；<code>ERR-401</code> 记录 <code>decision=rejected</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>(3) 拒绝外发后的降级链</strong></p>
+<p><code>用户拒绝</code> → <code>Fallback</code>（extend）→ <code>local_evidence_only</code> → 仍返回<strong>本地检索到的原文与证据</strong>，并提示"已按你的选择不调用云端模型"（<code>ERR-401</code>）。</p>
+<p><strong>(4) 离线兜底与"路径分离"</strong></p>
+<ul>
+<li>BR13 / NFR-09：离线时<strong>阅读、打开、已建索引的基础检索仍可用</strong>，AI 入口显示明确降级状态，<strong>不得导致阅读器整体不可用</strong>。</li>
+<li>A9 界面导航图中，门控控件落点被固定在 <code>settings</code>（BR11/BR12/BR02/BR10）与 <code>answer-more</code>（BR03/BR06）两个页面，避免确认入口散落。</li>
+</ul>
+<p><strong>残余</strong></p>
+<ul>
+<li>云端模型的供应商、地区、费用、数据保留与长期 SLA 全部未定 → <strong>TBD-8</strong>（<code>建模期已关闭</code>：建模期只冻结"必须逐文件确认"这一机制）。</li>
+<li>用户能否正确理解"本地证据降级 ≠ 本地模型"未验证 → 与 WP-D 访谈绑定；若访谈推翻，需回到 §2.4 参与者与 FR-12 的口径。</li>
+</ul>
+<hr />
+<h2 id="9-30-1-cpu">9. 如何在代表性样本上验证 30 秒流式反馈、1 分钟完成目标、文档打开速度和 CPU/内存上限？</h2>
+<p><strong>结论：建模期只能交付"验证方案 + 埋点要求 + 候选阈值"，不能交付数值承诺。</strong> 这正是 TBD-11 仍为 <code>建模期未关闭</code> 的原因。</p>
+<p><strong>(1) 指标与候选阈值</strong></p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>候选目标</th>
+<th>出处</th>
+<th>当前性质</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>首个流式反馈时延</td>
+<td>≤ 30 秒</td>
+<td>NFR-10、SURVEY-011-Q11（30% 期望 30s 内）</td>
+<td><strong>候选目标</strong>，非验收门槛</td>
+</tr>
+<tr>
+<td>普通问答完成时延</td>
+<td>≤ 1 分钟</td>
+<td>NFR-10、SURVEY-011-Q11（45% 期望 1 分钟内）</td>
+<td><strong>候选目标</strong>，非验收门槛</td>
+</tr>
+<tr>
+<td>文档打开 / 首屏时延</td>
+<td>须记录耗时，阈值待定</td>
+<td>NFR-11、SURVEY-010-Q10（13/20 抱怨打开慢）</td>
+<td><strong>必须埋点，数值未定</strong></td>
+</tr>
+<tr>
+<td>解析与索引耗时</td>
+<td>须记录耗时，阈值待定</td>
+<td>NFR-11</td>
+<td><strong>必须埋点，数值未定</strong></td>
+</tr>
+<tr>
+<td>CPU / 内存 / 并发上限</td>
+<td>不得因单个大文档导致阅读器不可用，上限待测</td>
+<td>NFR-12、SURVEY-010-Q10</td>
+<td><strong>原则已定，数值未定</strong></td>
+</tr>
+<tr>
+<td>长任务反馈</td>
+<td>必须有进度展示，不得无反馈等待</td>
+<td>BR15、NFR-10</td>
+<td><strong>可验收</strong>（判定为有/无，不需数值）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>(2) 代表性样本如何构成</strong></p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>要求</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文档长度</td>
+<td>覆盖短文档（&lt;10 页，SURVEY-001-Q1 占 50%）与长文档（&gt;10 页，占 35%）两档</td>
+<td>SURVEY-001-Q1</td>
+</tr>
+<tr>
+<td>格式</td>
+<td>覆盖 PDF（文本型 + 扫描型）、DOCX、Markdown；PPTX 可选</td>
+<td>SURVEY-002-Q2、NFR-13</td>
+</tr>
+<tr>
+<td>结构难度</td>
+<td>覆盖纯文本、双栏、含表格、含公式、低质量扫描</td>
+<td>BR07 的四种低置信分支</td>
+</tr>
+<tr>
+<td>设备</td>
+<td>至少一台<strong>低配</strong>与一台<strong>主流配置</strong>，以暴露 CPU/内存上限</td>
+<td>NFR-12</td>
+</tr>
+<tr>
+<td>业务场景</td>
+<td>覆盖学生精读（课程资料/论文）与办公审阅（技术文档）两类</td>
+<td>V0.2 §3 核心场景</td>
+</tr>
+</tbody>
+</table>
+<p><strong>(3) 方法</strong></p>
+<ol>
+<li><strong>埋点</strong>：<code>ParseRun</code>（parser_version、config_hash、warnings）、<code>IndexingRun</code>（built_at）、<code>AuditEvent</code>（occurred_at）已提供时间锚点；需在文档打开/首屏、首次流式返回、回答完成三处补埋点。</li>
+<li><strong>压测</strong>：按 SPEC §8 的测试组执行——"解析"组负责处理时延与资源，"引用/外发"组负责问答时延。</li>
+<li><strong>判定</strong>：先测出实际分布，再由"测得的 P95"反推是否接受 NFR-10 的 30s/60s；<strong>不得先用候选值当验收线再测</strong>。</li>
+</ol>
+<p><strong>(4) 交付边界</strong></p>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>建模期（本轮）</th>
+<th>测试阶段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30s / 60s</td>
+<td>作为<strong>候选目标</strong>写进 NFR-10，标注"待压测"</td>
+<td>实测后决定维持、放宽或收紧</td>
+</tr>
+<tr>
+<td>打开/解析/索引耗时</td>
+<td>只要求<strong>必须埋点</strong>（可验收）</td>
+<td>实测后补阈值</td>
+</tr>
+<tr>
+<td>CPU/内存/并发上限</td>
+<td>只要求"不因单文档导致不可用"（可验收）</td>
+<td>实测后补数值</td>
+</tr>
+<tr>
+<td>进度反馈</td>
+<td><strong>已可验收</strong>（有/无进度展示）</td>
+<td>无需实测</td>
+</tr>
+</tbody>
+</table>
+<p><strong>残余</strong></p>
+<ul>
+<li><strong>TBD-11 建模期未关闭</strong>：30s/60s 是否可达，必须在代表性设备与样本上实测。</li>
+<li><strong>TBD-9 建模期未关闭</strong>：n=20 样本的用户类型、文档规模与使用频率是否覆盖目标群体未知，直接决定上表"代表性样本"是否真的代表性。</li>
+<li><strong>TBD-3</strong>（解析完成/低置信/人工复核的可接受等待时间）与本问题同源，<code>降级关闭</code>。</li>
+</ul>
+<hr />
+<h2 id="10">10. 九个问题的收口状态</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>问题</th>
+<th>结论</th>
+<th>残余是否已登记</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>用例追溯到用户任务/原型入口</td>
+<td>是</td>
+<td>是（UC02 属参与者差异，非缺口）</td>
+</tr>
+<tr>
+<td>2</td>
+<td>AI 回答必经权限 + 证据契约 + 引用校验</td>
+<td>是（强制 include，无旁路）</td>
+<td>是（TBD-8、TBD-5）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>四类异常均有明确结果</td>
+<td>是（9 个冻结状态 + 错误码）</td>
+<td>是（TBD-3）</td>
+</tr>
+<tr>
+<td>4</td>
+<td>多文档范围显式 + 区分来源与冲突</td>
+<td>是 / 是 / <strong>部分</strong></td>
+<td>是（TBD-2；<strong>冲突可视化规则为本文件新增缺口</strong>）</td>
+</tr>
+<tr>
+<td>5</td>
+<td>笔记/引用/回答/原文稳定关联</td>
+<td>是（绑定版本而非文档）</td>
+<td>是（TBD-5）</td>
+</tr>
+<tr>
+<td>6</td>
+<td>已确认 / 技术建议 / 待验证三层可分</td>
+<td>是</td>
+<td>是（TBD-9、TBD-11；<strong>建议补技术建议出处表</strong>）</td>
+</tr>
+<tr>
+<td>7</td>
+<td>格式优先级转分阶段验收</td>
+<td>是（受限支持有 3 个可判定点）</td>
+<td>是（TBD-6、TBD-10）</td>
+</tr>
+<tr>
+<td>8</td>
+<td>逐文件确认 + 拒绝后本地路径</td>
+<td>是（<strong>但须纠正"本地模型路径"前提</strong>）</td>
+<td>是（TBD-8；术语理解待访谈验证）</td>
+</tr>
+<tr>
+<td>9</td>
+<td>性能指标的验证方案</td>
+<td>方案已定，<strong>数值不承诺</strong></td>
+<td>是（TBD-9、TBD-11 未关闭）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>本文件新增的两处缺口 / 建议</strong>（需在 V0.3 合并时处理）</p>
+<ol>
+<li><strong>多文档"冲突"的可视化规则未细化</strong>（第 4 题残余）——建议补界面级说明，或明确记为"实现期细化"。</li>
+<li><strong>"技术建议"缺独立出处表</strong>（第 6 题残余）——建议为 A 线实验结论补一张出处表，避免评审时被误读为已确认需求。</li>
+</ol>
+<h2 id="11_2">11. 相对基线的说明</h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>补齐了什么</td>
+<td>启动包 §5 的 9 个必答问题的<strong>书面回答件</strong>——基线只有问题、没有回答</td>
+</tr>
+<tr>
+<td>依据来源</td>
+<td>全部取自 V0.2、SRS V1.0、SPEC V1.0 与 2 组已产出的 V0.3 件；<strong>未新增需求语义</strong></td>
+</tr>
+<tr>
+<td>未改动</td>
+<td>V0.2 的编号、用例名、状态名、类名</td>
+</tr>
+<tr>
+<td>主动纠偏</td>
+<td>第 8 题按题目字面回答会凭空承诺"本地模型路径"，本文件先纠正前提再作答</td>
+</tr>
+</tbody>
+</table>
+<div class="pagebreak"></div>
+
+<h1 id="10_1">第 10 部分 · 建模图件清单</h1>
+<blockquote>
+<p>来源文件：<code>06-建模图-2组-阅读助手/出图清单-2组-阅读助手.md</code></p>
+</blockquote>
+<h1 id="g6">智能笔记助手 · G6 建模图件清单</h1>
+<ul>
+<li>版本：V1.1</li>
+<li>编制：2 组 · 郭谦</li>
+<li>日期：2026-10-19（定稿 2026-10-20）</li>
+<li>用途：登记 2 组 V0.3 全部建模图的<strong>底稿 ↔ 交付件</strong>一一对应关系与定稿状态，供评审核对<strong>图件可追溯</strong>。</li>
+<li>依据：《<a href="./2组建模任务分工书.md">2组建模任务分工书</a>》§3.3 工具约束、§4 G6</li>
+</ul>
+<h2 id="1_8">1. 图件交付信息</h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>图件范围</td>
+<td>A1–A9（新增件）＋ 用例图 V0.3 / 领域模型 V0.3（G2 修订件），共 <strong>11 张</strong></td>
+</tr>
+<tr>
+<td>底稿</td>
+<td><code>图形/*.puml</code>；交付包内 <code>06-建模图-2组-阅读助手/底稿-PlantUML/</code>（11 个 <code>.puml</code>）</td>
+</tr>
+<tr>
+<td>交付件</td>
+<td>交付包内 <code>06-建模图-2组-阅读助手/导出图-PNG/</code>（11 张 PNG）</td>
+</tr>
+<tr>
+<td>责任人</td>
+<td>郭谦（2 组组长）</td>
+</tr>
+<tr>
+<td>定稿日期</td>
+<td>2026-10-20</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2_4">2. 图件形式</h2>
+<p>本轮 11 张图以 <strong>PlantUML 底稿（<code>.puml</code>）＋ 渲染导出图（PNG）</strong> 的形式定稿，两部分<strong>一一对应</strong>：底稿是唯一结构依据，导出图是交付件，两者语义必须一致——状态名、消息顺序、泳道划分、关系方向不得改动，只允许排版差异。</p>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>交付形式</td>
+<td>底稿 <code>.puml</code> ＋ 导出图 <code>.png</code>（11 张，命名见 §3）</td>
+</tr>
+<tr>
+<td>试跑结论</td>
+<td>平台不支持导入外部 <code>.puml</code>，逐张手工重建成本高且易产生语义漂移；本轮按「底稿＋渲染导出图」定稿</td>
+</tr>
+<tr>
+<td>定稿日期</td>
+<td>2026-10-20</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>说明：上述「试跑结论」为原方案的验证记录，保留备查；无论采用哪种形式，<strong>本地 <code>.puml</code> 都是唯一结构依据</strong>，交付件与底稿必须可对照。</p>
+</blockquote>
+<h2 id="3_7">3. 出图登记表</h2>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>图名</th>
+<th>本地底稿</th>
+<th>依据来源</th>
+<th>出图状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A1</td>
+<td>状态图·文档处理</td>
+<td><code>图形/状态图-文档处理.puml</code></td>
+<td>V0.2 §8、SPEC §3.1</td>
+<td>✅ 已定稿 · <code>导出图-PNG/状态图-文档处理.png</code></td>
+</tr>
+<tr>
+<td>A2</td>
+<td>状态图·回答生成</td>
+<td><code>图形/状态图-回答生成.puml</code></td>
+<td>SPEC §5.1、§5.2</td>
+<td>✅ 已定稿 · <code>导出图-PNG/状态图-回答生成.png</code></td>
+</tr>
+<tr>
+<td>A3</td>
+<td>时序图·问答与引用校验</td>
+<td><code>图形/时序图-问答与引用校验.puml</code></td>
+<td>SPEC §7 <code>/answers</code></td>
+<td>✅ 已定稿 · <code>导出图-PNG/时序图-问答与引用校验.png</code></td>
+</tr>
+<tr>
+<td>A4</td>
+<td>时序图·逐文件外发确认</td>
+<td><code>图形/时序图-逐文件外发确认.puml</code></td>
+<td>SPEC §4.1、§4.2</td>
+<td>✅ 已定稿 · <code>导出图-PNG/时序图-逐文件外发确认.png</code></td>
+</tr>
+<tr>
+<td>A5</td>
+<td>时序图·导入-解析-索引</td>
+<td><code>图形/时序图-导入解析索引.puml</code></td>
+<td>SPEC §3</td>
+<td>✅ 已定稿 · <code>导出图-PNG/时序图-导入解析索引.png</code></td>
+</tr>
+<tr>
+<td>A6</td>
+<td>活动图·检索</td>
+<td><code>图形/活动图-检索.puml</code></td>
+<td>V0.2 UC05</td>
+<td>✅ 已定稿 · <code>导出图-PNG/活动图-检索.png</code></td>
+</tr>
+<tr>
+<td>A7</td>
+<td>活动图·笔记与导出</td>
+<td><code>图形/活动图-笔记与导出.puml</code></td>
+<td>UC09/UC10、SPEC §6</td>
+<td>✅ 已定稿 · <code>导出图-PNG/活动图-笔记与导出.png</code></td>
+</tr>
+<tr>
+<td>A8</td>
+<td>活动图·关键流程带泳道</td>
+<td><code>图形/活动图-关键流程带泳道.puml</code></td>
+<td>1 组 <code>需求模型-关键流程.puml</code></td>
+<td>✅ 已定稿 · <code>导出图-PNG/活动图-关键流程带泳道.png</code></td>
+</tr>
+<tr>
+<td>A9</td>
+<td>界面导航图</td>
+<td><code>06-建模图-2组-阅读助手/底稿-PlantUML/界面导航图-V0.3.puml</code></td>
+<td>启动包 §2、V0.2 §5/§10</td>
+<td>✅ 已定稿 · <code>导出图-PNG/界面导航图-V0.3.png</code></td>
+</tr>
+<tr>
+<td>—（G2 修订件）</td>
+<td>用例图 V0.3</td>
+<td><code>06-建模图-2组-阅读助手/底稿-PlantUML/用例图-V0.3.puml</code></td>
+<td>V0.2 用例图 + R-01/R-02 修订</td>
+<td>✅ 已定稿 · <code>导出图-PNG/用例图-V0.3.png</code></td>
+</tr>
+<tr>
+<td>—（G2 修订件）</td>
+<td>领域模型 V0.3</td>
+<td><code>06-建模图-2组-阅读助手/底稿-PlantUML/领域模型-V0.3.puml</code></td>
+<td>V0.2 领域模型 + R-03~R-08 修订</td>
+<td>✅ 已定稿 · <code>导出图-PNG/领域模型-V0.3.png</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>编号口径：<code>A1</code>–<code>A9</code> 沿用《2组建模任务分工书》§4 G4 表与《V0.3-需求追踪矩阵》§4 的既有编号。<strong>用例图与领域模型不新编字母号</strong>（它们是 G2 对 1 组基线图的修订件，不是新增图），以免与 RTM §4「图 → 需求覆盖」的口径不一致。</p>
+<p><strong>修订件</strong>（1 组基线三张图中的两张）与 1 组原图<strong>并存对照</strong>，不覆盖基线快照。</p>
+</blockquote>
+<h2 id="4_6">4. 图件验收标准</h2>
+<table>
+<thead>
+<tr>
+<th>图类</th>
+<th>验收标准</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>状态图（A1 / A2）</td>
+<td>① 状态名与《<a href="../结果材料/17-编号规则与术语表-2组-阅读助手.md">编号规则与术语表</a>》§1.4 <strong>逐字一致</strong>；② 初始/终止态正确；③ 异常态不得增删语义，只能补细节</td>
+</tr>
+<tr>
+<td>时序图（A3 / A4 / A5）</td>
+<td>① 生命线命名与领域模型类名一致；② 消息顺序与 SPEC 事件流一致；③ <code>alt</code> 降级分支<strong>一条都不能删</strong>；④ 不自造消息或参与者</td>
+</tr>
+<tr>
+<td>活动图（A6 / A7 / A8）</td>
+<td>① A8 泳道名必须为「用户 / 系统 / 本地解析 / 云端模型」；② A8 判断条件<strong>一字不改</strong>；③ A6 权限过滤节点必须排在检索之前；④ A7 须体现写入前后源文件差分</td>
+</tr>
+<tr>
+<td>修订件（用例图 / 领域模型 V0.3）</td>
+<td>① R-01~R-08 八条修订<strong>全部在图上可见</strong>；② 关系方向与多重度以《<a href="../结果材料/11-需求模型V0.3-2组-阅读助手.md">V0.3-需求模型</a>》为准；③ 不回退成基线画法；④ 1 组原图并存对照</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5_4">5. 与需求条目的追踪</h2>
+<p>图与需求条目的对照关系以《<a href="./V0.3-需求追踪矩阵.md">V0.3-需求追踪矩阵</a>》§4「图 → 需求覆盖」为唯一口径，<strong>本表不重抄该矩阵</strong>。</p>
+<h2 id="6_3">6. 收尾</h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>导出格式</td>
+<td>PNG，已入库交付包 <code>06-建模图-2组-阅读助手/导出图-PNG/</code>（工作副本 <code>06-建模图-2组-阅读助手/导出图-PNG/</code> 已在 <code>.gitignore</code> 排除，<strong>只提交最终定稿图</strong>）</td>
+</tr>
+<tr>
+<td>命名</td>
+<td>与 §3「图名」一致，如 <code>状态图-文档处理.png</code></td>
+</tr>
+<tr>
+<td>更新</td>
+<td>本表 §3 状态已回填；《<a href="./版本记录.md">版本记录</a>》§2 已同步为「已定稿」</td>
+</tr>
+</tbody>
+</table>
+<div class="pagebreak"></div>
+
+<h1 id="11-srs-v11-1">第 11 部分 · SRS V1.1 返修清单（交 1 组）</h1>
+<blockquote>
+<p>来源文件：<code>文档/SRS-V1.1返修清单.md</code></p>
+</blockquote>
+<h1 id="srs-v11-2-1">智能笔记助手 · SRS V1.1 返修清单（2 组 → 1 组）</h1>
+<ul>
+<li>版本：V1.0</li>
+<li>编制：2 组 · 郭谦</li>
+<li>日期：2026-10-20</li>
+<li>接收方：1 组 · 组长 lzt</li>
+<li>依据：1 组《需求模型 V0.2》《SRS V1.0》《SPEC V1.0》《需求建模启动包》</li>
+<li>关联：2 组《<a href="./V0.3-需求追踪矩阵.md">V0.3-需求追踪矩阵</a>》§6、《<a href="../结果材料/17-编号规则与术语表-2组-阅读助手.md">编号规则与术语表</a>》§1.2 / §1.2b / §1.3</li>
+</ul>
+<h2 id="0_5">0. 这份清单要解决什么</h2>
+<p>2 组在基线上做 V0.3 增量时，逐条核对了 V0.2 与 SRS V1.0 的编号对应关系，发现<strong>三处编号冲突</strong>与<strong>两处产物缺失</strong>。这些问题的裁决<strong>已于 2026-10-19 经 1 组组长书面确认，口径与 2 组建议一致</strong>（记录见 2 组 RTM §6）。</p>
+<p>本清单<strong>不重新讨论已裁决的口径</strong>，只做两件事：</p>
+<ol>
+<li>把已裁决口径<strong>转成 1 组 SRS 侧可直接执行的改法</strong>（§1）；</li>
+<li>把核对中发现的<strong>其余基线缺陷</strong>一并列出，供 1 组决定是否纳入 V1.1（§2）。</li>
+</ol>
+<p><strong>优先级定义</strong></p>
+<table>
+<thead>
+<tr>
+<th>级别</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>必改</code></td>
+<td>不改会导致评审对照失败（同一编号在两组材料里指不同需求）</td>
+</tr>
+<tr>
+<td><code>建议</code></td>
+<td>不影响正确性，但影响评审可读性与交付完整性</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1_9">1. 已裁决事项的落地改法（口径不再讨论）</h2>
+<h3 id="11-br">1.1 BR 编号空间</h3>
+<p><strong>现状</strong>：V0.2 §6 有 <code>BR01–BR15</code>，SRS §5 有 <code>BR01–BR07</code>，<strong>同号不同义</strong>（前 3 条恰好同号同义，扫读不易发现）。典型错位：<code>BR04</code> 在 V0.2 是"关键 claim 须绑定 citation"，在 SRS 是"无依据问题返回无法确认"（= V0.2 的 <code>BR05</code>）。</p>
+<p><strong>已裁决口径</strong>：编号空间以 V0.2 的 15 条为准，SRS 的 7 条视为<strong>映射视图</strong>，不改 V0.2 的号。</p>
+<p><strong>1 组落地改法（二选一，2 组无偏好）</strong></p>
+<ul>
+<li><strong>改法 A（推荐，改动最小）</strong>：SRS §5 表格<strong>增加一列「模型编号（V0.2）」</strong>，逐行填 V0.2 对应号，原有 SRS 编号保留不动。</li>
+<li><strong>改法 B</strong>：SRS §5 改用 V0.2 编号，并<strong>为未单列的 7 条补写条目</strong>，使 §5 覆盖 <code>BR01–BR15</code>。</li>
+</ul>
+<p>对应关系表（供填列直接取用，逐条已按 SRS §5 原文复核）：</p>
+<table>
+<thead>
+<tr>
+<th>模型编号（V0.2）</th>
+<th>SRS §5 编号</th>
+<th>关系</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BR01</td>
+<td>BR01</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>BR02</td>
+<td>BR02</td>
+<td>一致（SRS 增补"本次外发确认通过"）</td>
+</tr>
+<tr>
+<td>BR03</td>
+<td>BR03</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>BR04</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong></td>
+</tr>
+<tr>
+<td>BR05</td>
+<td>BR04</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>BR06</td>
+<td>BR05</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>BR07</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong>（部分并入 SRS FR-02 描述）</td>
+</tr>
+<tr>
+<td>BR08</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong></td>
+</tr>
+<tr>
+<td>BR09</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong></td>
+</tr>
+<tr>
+<td>BR10</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong>（与 V0.3 新增 <code>NFR-14</code> 同源）</td>
+</tr>
+<tr>
+<td>BR11</td>
+<td>BR06</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>BR12</td>
+<td>BR02（部分）</td>
+<td>部分并入</td>
+</tr>
+<tr>
+<td>BR13</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong>（SRS 体现为 NFR-02）</td>
+</tr>
+<tr>
+<td>BR14</td>
+<td>BR07</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>BR15</td>
+<td>—</td>
+<td><strong>SRS 未单列</strong>（SRS 体现为 NFR-03）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>若采用改法 B，需为 <code>BR04</code>、<code>BR07</code>、<code>BR08</code>、<code>BR09</code>、<code>BR10</code>、<code>BR13</code>、<code>BR15</code> <strong>7 条补写内容</strong>（规则原文见 V0.2 §6），并<strong>把 <code>BR12</code> 从 SRS <code>BR02</code> 中拆出</strong>（现为部分并入）。
+<strong>返修完成前，这 7 条仍以 V0.2 编号为有效规则，不得从任何交付件中删除。</strong></p>
+</blockquote>
+<h3 id="12-nfr-06">1.2 NFR-06 的承接</h3>
+<p><strong>现状</strong>：SRS §7 的 <code>NFR-06</code>（公开/授权样本、脱敏、版权标识、删除机制可追溯）在 V0.2 §9 的 13 条中<strong>没有对应项</strong>——相关内容此前只散落在业务规则 <code>BR10</code>。因此术语表 V1.0 原表述"SRS 的 7 条是 V0.2 13 条的子集"<strong>不成立</strong>。</p>
+<p><strong>已裁决口径</strong>：采用<strong>方案 A</strong>——在 V0.3 中<strong>新增 <code>NFR-14 数据与合规可追溯性</code></strong> 承接（已在 2 组术语表 §1.1 / §1.3 顺延登记，并在 RTM §2 矩阵末行落位）。</p>
+<p><strong>1 组落地改法</strong>：SRS §7 的 <code>NFR-06</code> <strong>改写为 <code>NFR-14</code></strong>，或保留 <code>NFR-06</code> 但在同表注明"模型侧编号 = <code>NFR-14</code>（2 组新增）"。</p>
+<blockquote>
+<p>⚠️ <strong>同号异义陷阱（务必注意）</strong>：<code>NFR-06</code> 在 V0.2 口径是"多文档查询集合上限（候选 20 份）"，在 SRS 口径是"数据与合规可追溯性"，<strong>完全不是同一条</strong>。SRS 若保留原号，评审极可能误读。</p>
+</blockquote>
+<h3 id="13-fr">1.3 FR 编号空间</h3>
+<p><strong>现状</strong>：SRS §3 有 <code>FR-01–FR-11</code>，V0.2 §10 有 <code>FR-01–FR-12</code>。此前 2 组内部把这一项判断为"只是条数不同、编号不冲突"，<strong>经与 1 组复核后确认该判断偏松</strong>：FR 同样存在同号异义，典型为 <code>FR-03</code>——模型 <code>FR-03</code> 是"文档内和授权文档集检索"，SRS <code>FR-03</code> 是"阅读与目录"（其能力实际来自模型 <code>FR-02</code>）。</p>
+<p><strong>已裁决口径</strong>：与 BR 一致，编号空间以 V0.2 的 12 条为准，SRS 的 11 条视为<strong>映射视图</strong>，不改 V0.2 的号。</p>
+<p><strong>1 组落地改法</strong>：SRS §3 表格<strong>增加一列「模型编号（V0.2）」</strong>，逐行填对应号（同 §1.1 改法 A），原有 SRS 编号保留不动。</p>
+<p>对应关系表（供填列直接取用，逐条已按 2 组 RTM §1.1 复核）：</p>
+<table>
+<thead>
+<tr>
+<th>模型编号（V0.2）</th>
+<th>SRS §3 编号</th>
+<th>关系</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-01</td>
+<td>FR-01</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>FR-02</td>
+<td>FR-02 + FR-03</td>
+<td>SRS 拆为两条（"结构化阅读"单列）</td>
+</tr>
+<tr>
+<td>FR-03</td>
+<td>FR-04</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>FR-04</td>
+<td>FR-06</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>FR-05</td>
+<td>FR-05</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>FR-06</td>
+<td>FR-07</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>FR-07</td>
+<td>FR-08</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>FR-08</td>
+<td>FR-09</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>FR-09</td>
+<td>FR-10</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>FR-10</td>
+<td>FR-11</td>
+<td>同义、异号</td>
+</tr>
+<tr>
+<td>FR-11</td>
+<td>—</td>
+<td><strong>SRS 无对应</strong>（跨知识库问答，暂不纳入一期）</td>
+</tr>
+<tr>
+<td>FR-12</td>
+<td>—</td>
+<td><strong>SRS 无对应</strong>（本地生成模型问答，明确不承诺）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>反方向读同表即可：SRS 的 <code>FR-03</code> → 模型 <code>FR-02</code>；SRS 的 <code>FR-04</code> → 模型 <code>FR-03</code>；其余依次下移一位。
+映射逐条登记在 2 组《<a href="./V0.3-需求追踪矩阵.md">V0.3-需求追踪矩阵</a>》§1.1 的「SRS 映射」列，SRS 返修时可直接取用，<strong>无需重新比对</strong>。</p>
+</blockquote>
+<h2 id="2-1-v11">2. 其余基线缺陷（供 1 组决定是否纳入 V1.1）</h2>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>位置</th>
+<th>现状</th>
+<th>建议改法</th>
+<th>级别</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>R-SRS-01</code></td>
+<td>SRS §5</td>
+<td>7 条 BR 与 V0.2 同号不同义</td>
+<td>增加「模型编号」列，或补写 7 条</td>
+<td><strong>必改</strong></td>
+<td>见 §1.1</td>
+</tr>
+<tr>
+<td><code>R-SRS-02</code></td>
+<td>SRS §5 BR02</td>
+<td>V0.2 <code>BR12</code>（逐文件确认）部分并入，边界不清</td>
+<td>拆出独立条目，或在表中标注"部分并入 BR12"</td>
+<td><strong>必改</strong></td>
+<td>术语表 §1.2b</td>
+</tr>
+<tr>
+<td><code>R-SRS-03</code></td>
+<td>SRS §7 NFR-06</td>
+<td>在 V0.2 无对应项</td>
+<td>改写为 <code>NFR-14</code> 或加模型编号注</td>
+<td><strong>必改</strong></td>
+<td>见 §1.2</td>
+</tr>
+<tr>
+<td><code>R-SRS-04</code></td>
+<td>SRS §7</td>
+<td>V0.2 的 13 条中 <strong>8 条</strong>在 SRS 无 1:1 对应项（<code>NFR-02</code>、<code>NFR-05</code>、<code>NFR-06</code>、<code>NFR-08</code>、<code>NFR-11</code> 完全未单列；<code>NFR-03</code>、<code>NFR-04</code>、<code>NFR-07</code> 仅部分并入）</td>
+<td>在 §7 增加「覆盖说明」脚注，声明 SRS 是验收视图、不覆盖全部建模 NFR，避免评审误判为"V0.2 多写了 8 条"</td>
+<td><strong>建议</strong></td>
+<td>术语表 §1.3、RTM §2</td>
+</tr>
+<tr>
+<td><code>R-SRS-05</code></td>
+<td>SRS §3</td>
+<td>SRS 有 <code>FR-01–FR-11</code>，V0.2 有 <code>FR-01–FR-12</code>；差集为 V0.2 <code>FR-11</code>（跨知识库问答，暂不纳入一期）与 <code>FR-12</code>（本地生成模型问答，明确不承诺）</td>
+<td>在 §3 表末加一行注：这两条<strong>属 V0.2 范围外项，SRS 有意不收录</strong>（而非遗漏）</td>
+<td><strong>建议</strong></td>
+<td>§1.3、RTM §1.1 末注</td>
+</tr>
+<tr>
+<td><code>R-SRS-06</code></td>
+<td>文件名</td>
+<td><code>需求模型V0.1.md</code> 与正文标题「需求模型 V0.2」不一致</td>
+<td>1 组侧改名为 <code>需求模型V0.2.md</code>（<strong>2 组不改</strong>，避免与基线快照 <code>899957a</code> 对不上）</td>
+<td><strong>建议</strong></td>
+<td>RTM §6(3)</td>
+</tr>
+<tr>
+<td><code>R-SRS-07</code></td>
+<td>需求模型 V0.2 §8、§11</td>
+<td>子节编号写作 <code>7.1</code> / <code>7.2</code>、<code>11.1</code>，与父节号不符</td>
+<td>统一为 §8.1 / §8.2 / §11.1</td>
+<td><strong>建议</strong></td>
+<td>术语表 §4</td>
+</tr>
+<tr>
+<td><code>R-SRS-08</code></td>
+<td>SPEC V1.0</td>
+<td>§3.1 / §6 / §7 三处<strong>要求</strong>使用错误码，但全文<strong>无任何取值定义</strong></td>
+<td>将 2 组《<a href="./V0.3-SPEC错误码表.md">V0.3-SPEC错误码表</a>》列为 <strong>SPEC V1.1 附录 A</strong>（<code>ERR-1xx</code>~<code>ERR-9xx</code>，44 条，均以 SPEC 原文为唯一依据，未新增失败路径）</td>
+<td><strong>建议</strong></td>
+<td>错误码表 §0</td>
+</tr>
+<tr>
+<td><code>R-SRS-09</code></td>
+<td>SRS / SPEC</td>
+<td>启动包 §4 M6 要求产出「需求追踪矩阵」，1 组交付材料中只有 SRS 一段文字描述</td>
+<td>采纳 2 组《<a href="./V0.3-需求追踪矩阵.md">V0.3-需求追踪矩阵</a>》为交付件，或由 1 组补独立 RTM</td>
+<td><strong>建议</strong></td>
+<td>RTM §6(3)</td>
+</tr>
+<tr>
+<td><code>R-SRS-10</code></td>
+<td>SRS §3</td>
+<td>11 条 FR 与 V0.2 的 12 条<strong>存在同号异义</strong>（SRS <code>FR-03</code>＝模型 <code>FR-02</code> 的"结构化阅读"；SRS <code>FR-04</code>＝模型 <code>FR-03</code>），此前 2 组内部误判为"仅条数不同、编号不冲突"</td>
+<td>在 §3 表增加「模型编号（V0.2）」列，逐行填映射（表见 §1.3）</td>
+<td><strong>必改</strong></td>
+<td>见 §1.3、RTM §1.1</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><code>R-SRS-10</code> 与 <code>R-SRS-01</code> 同性质：都是"同一编号在两组材料里指不同需求"，按本清单 §0 的级别定义属 <strong>必改</strong>（不改会导致评审对照失败）。它<strong>不加重 1 组的返修量</strong>——映射表已由 2 组列全，1 组只需填列。</p>
+</blockquote>
+<h2 id="3_8">3. 明确不建议改的部分</h2>
+<ul>
+<li><strong>FR 的语义内容</strong>：SRS §3 的 11 条 FR <strong>描述的本身没有错</strong>，错的是编号对位（见 §1.3）；<strong>只需加「模型编号」列，不必改写任何一条 FR 的正文与 MoSCoW 级别</strong>；</li>
+<li><strong>SRS 与 SPEC 正文其余内容</strong>：2 组的 V0.3 是在其<strong>之上</strong>做增量，基线正文本身<strong>未发现实质错误</strong>，只做上述编号与附录层面的返修；</li>
+<li><strong>V0.2 的 15 条 BR / 13 条 NFR / 12 条 FR</strong>：内容与编号均保持原样，不改。</li>
+</ul>
+<h2 id="4-2">4. 返修完成后 2 组的动作</h2>
+<table>
+<thead>
+<tr>
+<th>1 组完成</th>
+<th>2 组随即执行</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SRS 编号口径与 V0.2 对齐</td>
+<td>把 RTM §6「与基线的编号差异」由『差异记录 + 返修清单』改为『<strong>已对齐</strong>』，并撤下返修待办标记</td>
+</tr>
+<tr>
+<td>SPEC V1.1 附录 A 收编错误码表</td>
+<td>删除 2 组 <code>V0.3-SPEC错误码表.md</code> 中的"目标并入 SPEC V1.1 附录 A"过渡说明，改为指向 SPEC 附录 A 的引用</td>
+</tr>
+<tr>
+<td>RTM 采用 2 组版本</td>
+<td>2 组 RTM 由『新建件』升级为『共用件』，并在 V0.3 交付包中改注来源</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5_5">5. 汇总</h2>
+<table>
+<thead>
+<tr>
+<th>级别</th>
+<th>条数</th>
+<th>编号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>必改</td>
+<td>4</td>
+<td><code>R-SRS-01</code>、<code>R-SRS-02</code>、<code>R-SRS-03</code>、<code>R-SRS-10</code></td>
+</tr>
+<tr>
+<td>建议</td>
+<td>6</td>
+<td><code>R-SRS-04</code>、<code>R-SRS-05</code>、<code>R-SRS-06</code>、<code>R-SRS-07</code>、<code>R-SRS-08</code>、<code>R-SRS-09</code></td>
+</tr>
+<tr>
+<td>合计</td>
+<td>10</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键点</strong>：4 条必改项<strong>都属"已裁决、只需落地"</strong>（BR / FR / NFR 三处编号空间各一项，加上 <code>BR12</code> 边界），不涉及新决策；且映射表已由 2 组列全，1 组只需在 SRS §3 / §5 表格各加一列、§7 改一处编号。2 组 V0.3 的编号口径<strong>不依赖这 4 条是否已改</strong>——已按"V0.2 为准"独立定稿；本清单只保证两组材料在评审时<strong>不会因同号异义而互相打脸</strong>。</p>
+<div class="pagebreak"></div>
+
+<h1 id="12-r-02">第 12 部分 · R-02 裁决材料（评审会一页纸）</h1>
+<blockquote>
+<p>来源文件：<code>文档/R-02裁决材料.md</code></p>
+</blockquote>
+<h1 id="r-02-uc08">R-02 裁决材料 · 核验引用（UC08）的宿主用例</h1>
+<ul>
+<li>提交：2 组 · 郭谦</li>
+<li>日期：2026-10-20</li>
+<li>用途：评审会一页纸裁决件</li>
+<li>关联：<a href="../结果材料/11-需求模型V0.3-2组-阅读助手.md"><code>11-需求模型V0.3-2组-阅读助手.md</code></a> §2.1 R-02、<a href="./2组修改说明.md"><code>2组修改说明.md</code></a> §5、<a href="../结果材料/06-建模图-2组-阅读助手/底稿-PlantUML/用例图-V0.3.puml"><code>06-建模图-2组-阅读助手/底稿-PlantUML/用例图-V0.3.puml</code></a></li>
+</ul>
+<h2 id="1_10">1. 一句话说明</h2>
+<p>V0.2 用例图把「创建批注/笔记（UC09）」写成「核验回答引用（UC08）」的扩展（<code>UC09 ..&gt; UC08 : &lt;&lt;extend&gt;&gt;</code>）。2 组认为这<strong>同时有两处错</strong>（宿主错 + 关系类型错），提出重挂方案；评审会需在下面两个方案中裁决其一。</p>
+<p><strong>两个方案都不改动任何用例的内容、参与者与主成功路径，只改用例图中的关系线。</strong></p>
+<pre><code>V0.2 原状：  UC09 ..&gt; UC08 : &lt;&lt;extend&gt;&gt;      （创建批注/笔记 扩展 核验回答引用）
+</code></pre>
+<h2 id="2_5">2. 问题诊断</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>问题</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①</td>
+<td><strong>宿主（base）选错</strong></td>
+<td><code>&lt;&lt;extend&gt;&gt;</code> 的含义是"扩展用例在特定条件下插入到基础用例中"。核验引用是用户在<strong>看到一条带引用的回答之后</strong>才会做的可选动作，其基础用例必然是被核验的两类回答用例——<strong>UC06 对文档/选中文本提问</strong>、<strong>UC07 生成摘要/要点</strong>，而不是 UC09。</td>
+</tr>
+<tr>
+<td>②</td>
+<td><strong>关系类型误用</strong></td>
+<td>笔记与引用之间是<strong>数据关联</strong>，不是行为扩展：领域模型中 <code>Note "0..*" --&gt; "0..1" Answer</code>、<code>Citation</code>、<code>Evidence</code>。V0.2 把它画成 <code>&lt;&lt;extend&gt;&gt;</code>，属于把"数据关系"画成了"行为关系"。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3_9">3. 方案对比</h2>
+<h3 id="a2">方案 A（2 组推荐）</h3>
+<pre><code>移除：  UC09 ..&gt; UC08 : &lt;&lt;extend&gt;&gt;
+新增：  UC08 ..&gt; UC06 : &lt;&lt;extend&gt;&gt;      （核验回答引用 扩展 对文档/选中文本提问）
+        UC08 ..&gt; UC07 : &lt;&lt;extend&gt;&gt;      （核验回答引用 扩展 生成摘要/要点）
+</code></pre>
+<h3 id="b">方案 B（保守）</h3>
+<pre><code>仅反向：UC09 ..&gt; UC08 : &lt;&lt;extend&gt;&gt;  →  UC08 ..&gt; UC09 : &lt;&lt;extend&gt;&gt;
+</code></pre>
+<h3 id="_5">对比</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>方案 A（推荐）</th>
+<th>方案 B（保守）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>宿主是否选对（问题 ①）</td>
+<td>✅ 是。宿主改为被核验的回答用例 UC06/UC07</td>
+<td>❌ 否。宿主仍是 UC09（笔记），核验引用仍挂在不该挂的用例上</td>
+</tr>
+<tr>
+<td>关系类型是否修正（问题 ②）</td>
+<td>✅ 是。移除 UC09↔UC08 的行为扩展，笔记与引用回归领域模型中的数据关联</td>
+<td>❌ 否。仍然把数据关联画成行为扩展，只是方向反了</td>
+</tr>
+<tr>
+<td>与领域模型是否自洽</td>
+<td>✅ 自洽。<code>Note → Answer/Citation/Evidence</code> 为数据关联，图中不再出现 <code>Note</code> 的行为扩展</td>
+<td>❌ 冲突。图上说"核验引用扩展记笔记"，模型里两者并无行为依赖</td>
+</tr>
+<tr>
+<td>改动的图形元素</td>
+<td>2 增 1 删（3 条线）</td>
+<td>1 条线反向</td>
+</tr>
+<tr>
+<td>对用例内容/路径/参与者的影响</td>
+<td>无</td>
+<td>无</td>
+</tr>
+<tr>
+<td>评审解释成本</td>
+<td>需说明"本条超出原计划『修正关系方向』的表述，因为它是关系类型问题而非方向问题"（见下）</td>
+<td>无需额外解释</td>
+</tr>
+<tr>
+<td>风险</td>
+<td>无技术风险；仅需评审接受"按语义重挂"这一表述扩展</td>
+<td><strong>语义站不住</strong>：若评审追问"核验引用为什么是记笔记的可选扩展"，无法给出合理回答</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4_7">4. 两种方案的图示语差</h2>
+<pre><code class="language-text">方案 A：
+  UC06 提问 ◁── &lt;&lt;extend&gt;&gt; ── UC08 核验引用
+  UC07 摘要 ◁── &lt;&lt;extend&gt;&gt; ── UC08 核验引用
+  UC09 笔记        （与 UC08 之间：无行为关系，改由领域模型 Note→Citation 承载）
+
+方案 B：
+  UC09 笔记 ◁── &lt;&lt;extend&gt;&gt; ── UC08 核验引用      （仅方向反了，宿主仍是 UC09）
+</code></pre>
+<h2 id="5-2">5. 2 组建议</h2>
+<p><strong>采用方案 A。</strong> 理由：</p>
+<ol>
+<li>只有方案 A 同时修掉问题 ① 与 ②；方案 B 只改了箭头方向，两处错误都还在；</li>
+<li>方案 A 与领域模型（<code>Note</code> / <code>Answer</code> / <code>Citation</code> 的数据关联）<strong>自洽</strong>，不需要在评审时为一张图单独辩护；</li>
+<li>方案 A 不改变任何用例的行为，<strong>对需求内容零影响</strong>，改动只在图形表达层；</li>
+<li>现 <a href="../结果材料/06-建模图-2组-阅读助手/底稿-PlantUML/用例图-V0.3.puml"><code>06-建模图-2组-阅读助手/底稿-PlantUML/用例图-V0.3.puml</code></a> 已按方案 A 落稿，若裁决采用方案 B，2 组按裁决回改即可（成本 1 条线）。</li>
+</ol>
+<p><strong>需要评审会明确的一句话</strong>：R-02 的处理<strong>超出了原计划中"修正两处关系方向"的表述</strong>——UC09 与 UC08 之间是关系<strong>类型</strong>误用而非方向错误，故按语义重挂而非简单反向。</p>
+<h2 id="6_4">6. 裁决结果（由评审会填写）</h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>采用方案</td>
+<td>☐ 方案 A　☐ 方案 B　☐ 其他：__________</td>
+</tr>
+<tr>
+<td>裁决人 / 日期</td>
+<td></td>
+</tr>
+<tr>
+<td>备注</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="pagebreak"></div>
+
+<h1 id="a">附录 A · 版本记录</h1>
+<blockquote>
+<p>来源文件：<code>版本记录.md</code></p>
+</blockquote>
+<h1 id="_6">智能笔记助手需求建模 · 版本记录</h1>
+<ul>
+<li>维护：郭谦（2 组组长）</li>
+<li>最近更新：2026-10-20</li>
+<li>用途：记录建模阶段全部交付物的版本演进，满足评审的"可追溯"要求</li>
+</ul>
+<blockquote>
+<p>约定：<strong>前期共同基础材料的版本号沿用不改</strong>；2 组的改动以递增版本号表示，并在"变更摘要"中标注修订编号（R-xx，对应 <a href="./2组修改说明.md"><code>2组修改说明.md</code></a> §2）。</p>
+</blockquote>
+<hr />
+<h2 id="1_11">1. 需求模型</h2>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>日期</th>
+<th>作者</th>
+<th>变更摘要</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1</td>
+<td>2026-09（1 组）</td>
+<td>1 组</td>
+<td>初稿：12 用例 / 15 业务规则 / 16 领域对象 / 状态机 / NFR / FR 初稿</td>
+<td>已被 V0.2 取代</td>
+</tr>
+<tr>
+<td>V0.2</td>
+<td>2026-10（1 组）</td>
+<td>1 组</td>
+<td>纳入 n=20 问卷统计证据（SURVEY-001~011）；补充系统边界、参与者、用例清单</td>
+<td>基线（已过 1 组自查）</td>
+</tr>
+<tr>
+<td><strong>V0.3</strong></td>
+<td><strong>2026-10-17</strong></td>
+<td><strong>2 组 / 郭谦</strong></td>
+<td><strong>R-01 ~ R-08：用例图关系修正 2 条、领域模型多重度修正 3 条、新增领域类 6 个</strong></td>
+<td><strong>进行中（待 WP-A~D 回流后归并）</strong></td>
+</tr>
+<tr>
+<td>V0.4（规划）</td>
+<td>待定</td>
+<td>2 组</td>
+<td>归并 WP-A 图形、WP-B 文档、WP-C 界面、WP-D 访谈证据</td>
+<td>未开始</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-plantuml">2. 图（PlantUML 源文件）</h2>
+<table>
+<thead>
+<tr>
+<th>图</th>
+<th>基线版本</th>
+<th>2 组版本</th>
+<th>变更摘要</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用例图</td>
+<td>V0.2</td>
+<td><strong>V0.3</strong></td>
+<td>R-01 导入→处理改 include；R-02 核验引用重挂 UC06/UC07、移除 UC09→UC08</td>
+<td>已定稿</td>
+</tr>
+<tr>
+<td>领域模型</td>
+<td>V0.2</td>
+<td><strong>V0.3</strong></td>
+<td>R-03~R-05 多重度修正；R-06~R-08 新增 6 类</td>
+<td>已定稿</td>
+</tr>
+<tr>
+<td>关键流程活动图</td>
+<td>V0.2</td>
+<td><strong>V0.3</strong></td>
+<td>A8：拆为四条泳道（用户/系统/本地解析/云端模型），判断条件一字未改</td>
+<td>已定稿</td>
+</tr>
+<tr>
+<td>文档处理状态图</td>
+<td>无</td>
+<td><strong>V0.3</strong></td>
+<td>A1：5 正常态 + 6 异常态；含 <code>failed → queued</code> 重试与 <code>indexed → stale</code> 失效传播</td>
+<td>已定稿</td>
+</tr>
+<tr>
+<td>回答生成状态图</td>
+<td>无</td>
+<td><strong>V0.3</strong></td>
+<td>A2：6 正常态 + 6 分支态（按 SPEC §5.2 补回 V0.2 漏掉的 <code>stale</code>）</td>
+<td>已定稿</td>
+</tr>
+<tr>
+<td>时序图 ×3</td>
+<td>无</td>
+<td><strong>V0.3</strong></td>
+<td>A3 问答与引用校验（三层 <code>alt</code> 降级）、A4 逐文件外发确认、A5 导入-解析-索引</td>
+<td>已定稿</td>
+</tr>
+<tr>
+<td>活动图（检索 / 笔记导出）</td>
+<td>无</td>
+<td><strong>V0.3</strong></td>
+<td>A6 检索（BR01 权限先过滤）、A7 笔记与导出（BR14 写入前后源文件差分）</td>
+<td>已定稿</td>
+</tr>
+<tr>
+<td>界面导航图</td>
+<td>无</td>
+<td><strong>V0.3</strong></td>
+<td>A9：9 个页面可达关系 + 门控控件落点（BR11/BR12/BR02/BR10/BR14/BR15）；基线完全未做</td>
+<td>已定稿</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3_10">3. 文档</h2>
+<table>
+<thead>
+<tr>
+<th>文档</th>
+<th>版本</th>
+<th>日期</th>
+<th>作者</th>
+<th>变更摘要</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SRS</td>
+<td>V1.0</td>
+<td>2026-10</td>
+<td>1 组</td>
+<td>FR-01~FR-11、用例说明 5 条、业务规则 7 条、NFR-01~07、追踪段落</td>
+<td>基线</td>
+</tr>
+<tr>
+<td>SRS</td>
+<td>V1.1（规划）</td>
+<td>待定</td>
+<td>2 组 / 郭谦</td>
+<td>补全 12 条用例规约、按返修清单对齐 FR/BR 编号</td>
+<td>进行中（规约已出；编号口径 2026-10-19 已裁决）</td>
+</tr>
+<tr>
+<td>SPEC</td>
+<td>V1.0</td>
+<td>2026-10</td>
+<td>1 组</td>
+<td>4 模块接口/状态/降级规则/6 个 API/测试定义</td>
+<td>基线</td>
+</tr>
+<tr>
+<td>SPEC</td>
+<td>V1.1（规划）</td>
+<td>待定</td>
+<td>2 组 / 郭谦</td>
+<td>附录 A 错误码表；与 V0.3 新增类对齐</td>
+<td>进行中（附录 A 已出；<code>ERR-</code> 已登记入术语表 §1.6）</td>
+</tr>
+<tr>
+<td><strong>编号规则与术语表</strong></td>
+<td><strong>V1.0 → V1.1</strong></td>
+<td><strong>2026-10-18 / 修订 10-19</strong></td>
+<td>2 组 / 郭谦</td>
+<td>V1.1：新增 §1.2b BR 口径、§1.6 <code>ERR-</code> 段位；§1.3 更正 NFR 子集表述并新增 <code>NFR-14</code>；§1.2 转已裁决</td>
+<td><strong>V1.1 冻结</strong></td>
+</tr>
+<tr>
+<td>V0.3 用例规约</td>
+<td><strong>V0.3</strong></td>
+<td><strong>2026-10-18 / 修订 10-20</strong></td>
+<td>2 组 / 郭谦</td>
+<td>补齐基线缺失的用例规约：模板 + UC01 完整样例 + <strong>UC02–UC12 全部完整规约</strong>（编号化主成功路径 + 异常与降级路径表 + 错误码 + 关联）</td>
+<td><strong>已完成（12 条全满）</strong></td>
+</tr>
+<tr>
+<td>V0.3 SPEC 错误码表</td>
+<td><strong>V0.3</strong></td>
+<td><strong>2026-10-19</strong></td>
+<td>2 组 / 郭谦</td>
+<td>SPEC V1.1 附录 A：7 段共 44 条错误码，与冻结状态名对齐</td>
+<td>已完成（<code>ERR-</code> 已登记入术语表 §1.6）</td>
+</tr>
+<tr>
+<td>V0.3 需求追踪矩阵</td>
+<td><strong>V0.3</strong></td>
+<td><strong>2026-10-19</strong></td>
+<td>2 组 / 郭谦</td>
+<td>FR 12 条 + NFR 14 条追踪矩阵、BR 反查表、图覆盖表；含 SRS 返修清单</td>
+<td>已完成（编号冲突 2026-10-19 已裁决）</td>
+</tr>
+<tr>
+<td>V0.3 TBD 收口表</td>
+<td><strong>V0.3</strong></td>
+<td><strong>2026-10-19</strong></td>
+<td>2 组 / 郭谦</td>
+<td>TBD-1 ~ TBD-12 的验证方案、归属与建模期口径</td>
+<td>已完成（10/12 建模期已给口径）</td>
+</tr>
+<tr>
+<td>V0.3 评审入口问题回答</td>
+<td><strong>V0.3</strong></td>
+<td><strong>2026-10-20</strong></td>
+<td>2 组 / 郭谦</td>
+<td>逐条回答《需求建模启动包》§5 的 9 个评审问题，每问含结论 / 证据 / 残余；含第 8 题前提纠偏</td>
+<td><strong>已完成（9 问全答）</strong></td>
+</tr>
+<tr>
+<td>SRS V1.1 返修清单</td>
+<td><strong>V1.0</strong></td>
+<td><strong>2026-10-20</strong></td>
+<td>2 组 / 郭谦</td>
+<td>交 1 组 lzt：3 条必改（BR 编号空间、BR12 拆分、SRS NFR-06 → <code>NFR-14</code>）+ 6 条建议（含 SPEC 附录 A 收编错误码表）</td>
+<td><strong>待 1 组接收</strong></td>
+</tr>
+<tr>
+<td>R-02 裁决材料</td>
+<td><strong>V1.0</strong></td>
+<td><strong>2026-10-20</strong></td>
+<td>2 组 / 郭谦</td>
+<td>评审会一页纸：UC08 宿主用例的方案 A / B 对比、诊断与建议</td>
+<td><strong>待评审会裁决</strong></td>
+</tr>
+<tr>
+<td>G6 建模图件清单</td>
+<td><strong>V1.0 → V1.1</strong></td>
+<td>2026-10-19 / 定稿 10-20</td>
+<td>2 组 / 郭谦</td>
+<td>11 张图（A1–A9 新增件 + 用例图/领域模型 2 张 G2 修订件）的本地底稿 ↔ 交付件对应关系、验收标准与定稿状态</td>
+<td><strong>已定稿（11 张全部出图）</strong></td>
+</tr>
+<tr>
+<td>需求建模启动包</td>
+<td>V1.0</td>
+<td>2026-10</td>
+<td>1 组</td>
+<td>M1–M6 任务定义 + 9 个评审入口问题</td>
+<td>基线</td>
+</tr>
+<tr>
+<td>需求调研报告</td>
+<td>V1.0</td>
+<td>2026-10</td>
+<td>1 组</td>
+<td>调研结论、MoSCoW 优先级、技术验证指标</td>
+<td>基线（已过老师审查）</td>
+</tr>
+<tr>
+<td>2 组修改说明</td>
+<td><strong>V1.0 → V1.2</strong></td>
+<td><strong>2026-10-17 / 修订 10-19 · 10-20</strong></td>
+<td>2 组 / 郭谦</td>
+<td>V1.1：§3/§4 的缺口状态更新为「已关闭 / 已裁决」；V1.2：新增 W1 回答件缺口、§6 交付物清单补 3 件、§5 关联 R-02 裁决材料</td>
+<td>已完成</td>
+</tr>
+<tr>
+<td>版本记录</td>
+<td><strong>V1.0</strong></td>
+<td><strong>2026-10-17</strong></td>
+<td>2 组 / 郭谦</td>
+<td>本文件</td>
+<td>已完成</td>
+</tr>
+<tr>
+<td>AI 使用说明</td>
+<td><strong>V1.0</strong></td>
+<td><strong>2026-10-17</strong></td>
+<td>2 组 / 郭谦</td>
+<td>补 1 组 PPT 第 8 页承诺未交项</td>
+<td>已完成</td>
+</tr>
+<tr>
+<td>2 组版汇报 PPT</td>
+<td><strong>V1.0 → V1.1（交付稿）</strong></td>
+<td>2026-10-17 / 修订 10-20</td>
+<td>2 组 / 郭谦</td>
+<td>V1.1：图数 8 → <strong>11 张</strong>、补 A9 界面导航图、补 W1–W5 文档侧成果、下一步改为「1 组补 Word → 合并提交」</td>
+<td><strong>已定稿</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4_8">4. 仓库与提交</h2>
+<table>
+<thead>
+<tr>
+<th>提交</th>
+<th>分支</th>
+<th>日期</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ba96ab6</code></td>
+<td><code>main</code></td>
+<td>2026-10-17</td>
+<td>初始化 2 组仓库，归档前期共同材料</td>
+</tr>
+<tr>
+<td><code>a2792ee</code></td>
+<td><code>2zu/gq/wp1-model-revision</code></td>
+<td>2026-10-17</td>
+<td>WP1：修订用例图与领域模型关系，产出 V0.3 需求模型（已推送）</td>
+</tr>
+<tr>
+<td><code>af41747</code></td>
+<td><code>2zu/gq/wp6-deliverables</code></td>
+<td>2026-10-17</td>
+<td>WP6：修改说明、版本记录、AI 使用说明、2 组版 PPT（已推送）</td>
+</tr>
+<tr>
+<td><code>fcfe7b5</code></td>
+<td><code>2zu/gq/wp-a-graph</code></td>
+<td>2026-10-18</td>
+<td>G1：冻结编号规则与术语表，同步工具与提交约束（已推送）</td>
+</tr>
+<tr>
+<td><code>eb1073f</code></td>
+<td><code>2zu/gq/wp-a-graph</code></td>
+<td>2026-10-18</td>
+<td>G4：新增 8 张状态图、时序图与活动图骨架（已推送）</td>
+</tr>
+<tr>
+<td><code>096cc03</code></td>
+<td><code>2zu/gq/wp-a-graph</code></td>
+<td>2026-10-19</td>
+<td>G5：用例规约、SPEC 错误码表、需求追踪矩阵、TBD 收口表（已推送）</td>
+</tr>
+<tr>
+<td><code>b140468</code></td>
+<td><code>main</code></td>
+<td>2026-10-19</td>
+<td><strong>PR 合并</strong>：<code>2zu/gq/wp-a-graph</code> 合入 main，覆盖 WP1、WP6、G1、G4、G5 五个工作包</td>
+</tr>
+<tr>
+<td><code>5494668</code></td>
+<td><code>main</code></td>
+<td>2026-10-19</td>
+<td><strong>PR 合并</strong>：<code>2zu/gq/v0.3-baseline-align</code> 合入 main。编号口径落定：术语表 V1.1（§1.2b BR 口径、§1.6 <code>ERR-</code>、<code>NFR-14</code>）；RTM / 错误码表 / 修改说明 / 本文件同步</td>
+</tr>
+<tr>
+<td><em>本批</em></td>
+<td><code>2zu/gq/g6-g7-codearts</code></td>
+<td>2026-10-19</td>
+<td>G6：新增 A9 界面导航图、CodeArts 出图清单；RTM §4/§5、修改说明 §4/§6 与本文件同步（自 <code>5494668</code> 新开分支，<strong>进行中</strong>，合并为 main 汇总提交后回填哈希）</td>
+</tr>
+<tr>
+<td><em>本批</em></td>
+<td><code>2zu/gq/g6-g7-codearts</code></td>
+<td>2026-10-20</td>
+<td>文档侧收口 W1–W5：新增《V0.3-评审入口问题回答》《SRS-V1.1返修清单》《R-02裁决材料》3 件；<code>V0.3-用例规约.md</code> 补齐 6 处 <code>【待补】</code>；编号口径全库校对（分工书 §0/§3.3/§5/§7、术语表 §1.3、RTM §2、需求模型 NFR 连字符统一）。<strong>进行中</strong>，合并后回填哈希</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>合并方式说明</strong>：仓库当前仅开放 <code>Squash and merge</code>。main 上因此保留 <strong>2 条</strong>汇总提交（<code>b140468</code>、<code>5494668</code>），各工作包的原始提交链完整保留在 PR 记录与对应特性分支上，追溯链未断。</p>
+<p>⚠️ 本地 <code>main</code> 已于 2026-10-19 快进至 <code>5494668</code>。后续开发一律从最新 <code>main</code> 开新分支，<strong>不要在已合并的特性分支上继续叠加</strong>。</p>
+</blockquote>
+<p><strong>前期材料来源</strong>：1 组仓库 <code>https://github.com/Aut-172/Intelligent-Reader</code>，提交 <code>899957a</code>，现已整理到 <a href="../../../阶段成果/前期资料说明.md"><code>阶段成果/前期资料说明.md</code></a>。</p>
+<hr />
+<h2 id="5_6">5. 版本号约定</h2>
+<table>
+<thead>
+<tr>
+<th>版本段</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.x</td>
+<td>需求模型的工作版本（调研/建模期迭代）</td>
+</tr>
+<tr>
+<td>V1.x</td>
+<td>已成文的规格类文档（SRS、SPEC）</td>
+</tr>
+<tr>
+<td>V1.0 → V1.1</td>
+<td>内容修订、结构不变</td>
+</tr>
+<tr>
+<td>V1.0 → V2.0</td>
+<td>范围或结构重大变化</td>
+</tr>
+</tbody>
+</table>
+<div class="pagebreak"></div>
+
+<h1 id="b-2-git">附录 B · 2 组 Git 协作规范</h1>
+<blockquote>
+<p>来源文件：<code>2组Git协作规范.md</code></p>
+</blockquote>
+<h1 id="2-git-github">智能笔记助手 · 2 组 Git / GitHub 协作规范</h1>
+<ul>
+<li>版本：V2.0</li>
+<li>编制：郭谦（2 组组长）</li>
+<li>日期：2026-10-17</li>
+<li>适用：2 组全体成员</li>
+<li>仓库：<strong>2 组自有仓库</strong>（Public），地址见根目录 <code>README.md</code></li>
+</ul>
+<blockquote>
+<p>V2.0 变更：lzt 已明确后续代码由两组<strong>独立开发</strong>，2 组改为<strong>自建仓库</strong>。因此 V1.0 中"借用 1 组仓库 / 需要 lzt 加权限"的内容全部作废，改为本版。</p>
+</blockquote>
+<hr />
+<h2 id="1_12">1. 为什么必须单独定这份规范</h2>
+<p>1 组 4 人同宿舍，可以线下商量、由一个人统一提交，不写规范也能跑。</p>
+<p>2 组 5 人<strong>分散在不同宿舍/不同时间</strong>，没有线下协调条件，只能靠<strong>显式规范</strong>。规范缺一条，就多一次覆盖、冲突或返工。</p>
+<hr />
+<h2 id="2_6">2. 仓库归属与目录职责</h2>
+<p>2 组的仓库由<strong>郭谦作为 owner</strong>，组员可拿到写权限。仓库内部按来源分两块，边界必须清楚：</p>
+<table>
+<thead>
+<tr>
+<th>目录</th>
+<th>归属</th>
+<th>权限</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>阶段成果/需求调研/**</code>、<code>阶段成果/需求建模/旧版废稿/**</code>、<code>阶段成果/前期实验/**</code></td>
+<td>前期资料</td>
+<td>建议只读</td>
+<td>前期调研、共同基础件与实验记录；引用时标注来源，通常不直接在原件上改</td>
+</tr>
+<tr>
+<td><code>阶段成果/需求建模/结果材料/**</code></td>
+<td>2 组</td>
+<td>读写</td>
+<td>2 组本轮建模产出</td>
+</tr>
+<tr>
+<td><code>src/**</code>、<code>工作区/需求分析/**</code> 等</td>
+<td>2 组</td>
+<td>读写</td>
+<td>后续阶段新增</td>
+</tr>
+</tbody>
+</table>
+<p><strong>规则：只改自己工作包对应的子目录；<code>阶段成果/需求调研/</code>、<code>阶段成果/需求建模/旧版废稿/</code> 与 <code>阶段成果/前期实验/</code> 默认视为参考材料，不作为本轮主工作区。</strong> 所有组员都在 <code>阶段成果/需求建模/结果材料/</code> 下各有独立子目录（分工见任务分工书），因此冲突概率极低。</p>
+<hr />
+<h2 id="3_11">3. 仓库初始化（郭谦执行，一次性）</h2>
+<p><strong>3.1 在 GitHub 建仓库</strong>
+- 名称建议：<code>Intelligent-Reader-2zu</code>
+- 可见性：<strong>Public</strong>
+- <strong>不要</strong>勾选 "Add a README" / ".gitignore" / "license"（本地已有）</p>
+<p><strong>3.2 拉组员进仓库</strong>
+Settings → Collaborators → Add people，把 4 名组员（程禹轩、朱紫轩、廖欣豪、汪昊）加成 <strong>Write</strong>。</p>
+<p><strong>3.3 开启主干保护</strong>
+Settings → Branches → 对 <code>main</code> 添加规则，勾选 <strong>Require a pull request before merging</strong>。
+小团队若嫌繁琐，可退一步：不做强制保护，但<strong>约定所有人都走 PR、不直推 main</strong>。</p>
+<p><strong>3.4 本地切换到 2 组仓库</strong>
+当前本地目录原本是 1 组仓库的克隆，需要切换为 2 组仓库。建议<strong>重建历史</strong>，让 2 组仓库的历史从零开始（前期材料已整理进 <code>阶段成果/</code>，不丢信息）：</p>
+<pre><code class="language-powershell"># 把 1 组仓库的 git 记录改名备份（确认无误后可删）
+Rename-Item .git .git-from-1组
+
+# 初始化 2 组仓库
+git init -b main
+git remote add origin https://github.com/&lt;你的用户名&gt;/Intelligent-Reader-2zu.git
+git remote add upstream https://github.com/Aut-172/Intelligent-Reader.git   # 保留 1 组仓库为上游，便于日后对照
+
+# 首次提交
+git add README.md .gitignore 阶段成果 docs
+git commit -m &quot;chore: 初始化 2 组仓库，归档前期共同材料&quot;
+git push -u origin main
+</code></pre>
+<blockquote>
+<p><code>upstream</code> 是可选但推荐的一步：日后若 1 组更新了调研材料，可用 <code>git fetch upstream</code> 对照，而不会污染 2 组的主干。</p>
+</blockquote>
+<hr />
+<h2 id="4_9">4. 分支策略</h2>
+<ul>
+<li><code>main</code>：<strong>只接受 PR 合并</strong>，不直接 push。</li>
+<li>工作分支：<strong>一人一分支一主题</strong>，命名 <code>2zu/&lt;姓名拼音&gt;/&lt;主题&gt;</code>。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>成员</th>
+<th>示例分支</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>郭谦</td>
+<td><code>2zu/gq/model-v03</code></td>
+</tr>
+<tr>
+<td>廖欣豪</td>
+<td><code>2zu/lxh/state-diagram</code></td>
+</tr>
+<tr>
+<td>朱紫轩</td>
+<td><code>2zu/zzx/use-case-spec</code></td>
+</tr>
+<tr>
+<td>程禹轩</td>
+<td><code>2zu/cyx/ui-model</code></td>
+</tr>
+<tr>
+<td>汪昊</td>
+<td><code>2zu/wh/interview-evidence</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>分支生命周期：从最新 <code>main</code> 切出 → 完成 → 提 PR → 合并后<strong>立即删除</strong>。</li>
+<li>一个分支只做一件事，不要把"图形 + 文档"混在一个分支里。</li>
+</ul>
+<hr />
+<h2 id="5_7">5. 提交信息规范</h2>
+<p>格式：</p>
+<pre><code>&lt;类型&gt;(&lt;范围&gt;): &lt;描述&gt; [&lt;任务编号&gt;]
+</code></pre>
+<p><strong>类型</strong>（取其一）</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>feat</td>
+<td>新增内容（新图、新章节）</td>
+</tr>
+<tr>
+<td>fix</td>
+<td>修正基线中的错误</td>
+</tr>
+<tr>
+<td>docs</td>
+<td>文档类变更</td>
+</tr>
+<tr>
+<td>chore</td>
+<td>杂项（目录、配置、说明）</td>
+</tr>
+<tr>
+<td>test</td>
+<td>测试相关</td>
+</tr>
+</tbody>
+</table>
+<p><strong>范围</strong>：<code>2组/图形</code>、<code>2组/文档</code>、<code>2组/界面</code>、<code>2组/访谈</code>、<code>2组/模型</code></p>
+<p><strong>任务编号</strong>：对应任务分工书的编号，如 <code>WP-A/A1</code></p>
+<p><strong>示例</strong></p>
+<pre><code>docs(2组/文档): 补全 UC01-UC12 用例规约 [WP-B/B1]
+feat(2组/图形): 新增文档处理与回答生成状态图 [WP-A/A1-A2]
+fix(2组/模型): 修正用例图 UC02 与 UC01 的关系方向 [WP1]
+feat(2组/界面): 新增界面导航图与界面-用例映射 [WP-C/C3-C5]
+chore(2组): 新增 2 组建模任务分工书与 Git 协作规范
+</code></pre>
+<p><strong>硬要求</strong>
+- 描述用中文，写清"做了什么"，不许出现"更新""修改""提交"这类无信息量的词；
+- 一次提交只做一件事；
+- <code>git add</code> 必须<strong>按文件名加</strong>，禁止 <code>git add -A</code> / <code>git add .</code>。</p>
+<hr />
+<h2 id="6_5">6. 标准工作流（每人每次照做）</h2>
+<pre><code class="language-bash"># 1. 同步主干
+git checkout main
+git pull
+
+# 2. 切自己的分支
+git checkout -b 2zu/&lt;姓名拼音&gt;/&lt;主题&gt;
+
+# 3. 干活，然后按文件名暂存
+git add 阶段成果/需求建模/结果材料/06-建模图-2组-阅读助手/状态图-文档处理.puml
+
+# 4. 提交（按第 5 节格式）
+git commit -m &quot;feat(2组/图形): 新增文档处理状态图 [WP-A/A1]&quot;
+
+# 5. 推送自己的分支
+git push -u origin 2zu/&lt;姓名拼音&gt;/&lt;主题&gt;
+</code></pre>
+<ol>
+<li>到 GitHub 上对该分支开 <strong>Pull Request</strong>，说明关联的任务编号；</li>
+<li>由<strong>郭谦 Review</strong> 通过后 <strong>Squash merge</strong> 进 main；</li>
+<li>合并后删除该分支。</li>
+</ol>
+<hr />
+<h2 id="7">7. 冲突处理</h2>
+<ul>
+<li>动手前先 <code>git pull --rebase origin main</code>，保持分支是最新的。</li>
+<li>只改自己的子目录，冲突概率极低——<strong>这也是目录隔离的意义</strong>。</li>
+<li>真冲突时<strong>找郭谦处理，禁止自行 force push</strong>。</li>
+</ul>
+<hr />
+<h2 id="8_1">8. 禁止事项（违反需回滚）</h2>
+<table>
+<thead>
+<tr>
+<th>禁止</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>直接 push 到 <code>main</code></td>
+<td>绕过评审，主干受保护</td>
+</tr>
+<tr>
+<td><code>git push --force</code> / <code>--force-with-lease</code></td>
+<td>会覆盖他人提交</td>
+</tr>
+<tr>
+<td>修改 <code>阶段成果/需求调研/**</code>、<code>阶段成果/需求建模/旧版废稿/**</code>、<code>阶段成果/前期实验/**</code></td>
+<td>那些是前期资料，默认不作为本轮主工作区</td>
+</tr>
+<tr>
+<td>提交访谈录音、姓名、学号、联系方式</td>
+<td>仓库为 Public，合规风险</td>
+</tr>
+<tr>
+<td>提交 <code>部分样本.zip</code>、<code>伪前端.zip</code>、<code>raw-local/</code></td>
+<td>含受限或个人信息</td>
+</tr>
+<tr>
+<td>提交大于 10MB 的单个文件</td>
+<td>仓库体积膨胀</td>
+</tr>
+<tr>
+<td><code>git add .</code> / <code>git add -A</code></td>
+<td>极易误带敏感文件</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="9-git">9. 组员接入方式（分三层，不要求所有人都会用 Git）</h2>
+<p>郭谦有可用 VPN，可直连 GitHub；组员情况不一，因此按能力分层：</p>
+<table>
+<thead>
+<tr>
+<th>通道</th>
+<th>适用</th>
+<th>做法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>L1 直连</strong></td>
+<td>能正常访问 GitHub</td>
+<td>按第 6 节走完整「分支 + PR」</td>
+</tr>
+<tr>
+<td><strong>L2 代提交</strong></td>
+<td>能读不能推，或没配好环境</td>
+<td>产出打包发给郭谦，由郭谦推到<strong>该成员自己的分支</strong>，提交信息注明原作者</td>
+</tr>
+<tr>
+<td><strong>L3 交文件</strong></td>
+<td>完全零基础 / 无账号</td>
+<td>只交成品文件（<code>.md</code> / <code>.puml</code> / <code>.png</code>），由郭谦统一入库</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>无论走哪一层，<strong>分支名、提交信息、目录规范一视同仁</strong>——代提交时沿用原作者的分支名，保证历史可追溯、分工可查证。</p>
+</blockquote>
+<hr />
+<h2 id="10_2">10. 备份与兜底</h2>
+<ul>
+<li><strong>VPN 不稳定是本项目最大的工程风险</strong>：它随时可能让 <code>push</code> / <code>pull</code> 失败。</li>
+<li>应对：<strong>先在本地 commit，联网后再 push</strong>。本地仓库始终保有完整历史，网络中断不影响工作。</li>
+<li>此外，<code>阶段成果/需求建模/结果材料/</code> 的全部产出建议在个人网盘/群文件<strong>另存一份</strong>，不依赖仓库单点。</li>
+<li>每次合并到 main 后，郭谦在群里通报一次「已合并 &lt;分支名&gt; &lt;提交号&gt;」，保证全员知道主干状态。</li>
+</ul>
+<hr />
+<h2 id="11_3">11. 责任矩阵</h2>
+<table>
+<thead>
+<tr>
+<th>事项</th>
+<th>责任人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>建仓库、拉组员、开启 main 保护</td>
+<td>郭谦</td>
+</tr>
+<tr>
+<td>下发编号规则 / 术语表、Review PR</td>
+<td>郭谦</td>
+</tr>
+<tr>
+<td>自建分支、规范提交、提 PR</td>
+<td>每名成员</td>
+</tr>
+<tr>
+<td>代提交（L2）、统一入库（L3）</td>
+<td>郭谦</td>
+</tr>
+<tr>
+<td>个人信息合规检查</td>
+<td>郭谦（合并前逐次检查）</td>
+</tr>
+<tr>
+<td>主干状态通报</td>
+<td>郭谦</td>
+</tr>
+</tbody>
+</table>
+<div class="pagebreak"></div>
+
+<h1 id="c-ai">附录 C · AI 使用说明</h1>
+<blockquote>
+<p>来源文件：<code>09-AI使用声明-2组-阅读助手.md</code></p>
+</blockquote>
+<h1 id="ai">智能笔记助手需求建模 · AI 使用说明</h1>
+<ul>
+<li>文档版本：V1.0</li>
+<li>编制：郭谦（2 组组长）</li>
+<li>日期：2026-10-17</li>
+<li>用途：说明建模阶段 AI 辅助的范围与人工确认边界，供评审核查</li>
+</ul>
+<blockquote>
+<p>本文件与 <a href="./2组修改说明.md"><code>2组修改说明.md</code></a>、<a href="./版本记录.md"><code>版本记录.md</code></a> 三者同为 1 组《02-需求建模汇报PPT》第 8 页承诺但未随仓库交付的材料，由 2 组补齐。</p>
+</blockquote>
+<hr />
+<h2 id="1_13">1. 总体原则</h2>
+<ol>
+<li><strong>AI 用于提速，不用于定责任</strong>。AI 产出一律视为<strong>初稿</strong>，进入仓库的每个结论都由组员人工确认后才生效。</li>
+<li><strong>AI 不接触受限材料</strong>。用户访谈记录、姓名/学号/联系方式、未授权样本原文<strong>一律不输入任何外部模型</strong>（与 BR10、调研任务书 §12 一致）。</li>
+<li><strong>编号体系与术语冻结</strong>。AI 不得自造用例编号、状态名、业务规则编号——所有编号以 1 组 V0.2 基线为唯一来源。</li>
+</ol>
+<hr />
+<h2 id="2-wp1-wp6-ai">2. 本轮（WP1 / WP6）的 AI 使用范围</h2>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th>AI 参与方式</th>
+<th>人工确认内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基线材料解析</td>
+<td>辅助提取 1 组 <code>.docx</code> / <code>.pptx</code> / <code>.pdf</code> 交付材料的正文，形成结构化摘要</td>
+<td>组员核对提取结果与原文件一致</td>
+</tr>
+<tr>
+<td>图关系复核</td>
+<td>辅助比对用例图关系与用例前置条件，<strong>提出</strong>可疑关系（如导入与处理的 extend/include 归属）</td>
+<td>组员判断是否成立、是否修改</td>
+</tr>
+<tr>
+<td>领域模型复核</td>
+<td>辅助检查领域类与业务规则的覆盖关系，<strong>提出</strong>缺失类（Index/Policy/Notification 等）</td>
+<td>组员确认新增类是否必要、属性是否与 SPEC 冲突</td>
+</tr>
+<tr>
+<td>修订方案起草</td>
+<td>辅助起草 R-01 ~ R-08 的修订说明与依据文本</td>
+<td>组员逐条核对依据、裁决争议项（见第 4 节）</td>
+</tr>
+<tr>
+<td><code>.puml</code> 源文件生成</td>
+<td>辅助生成 PlantUML 代码</td>
+<td>组员本地渲染预览，确认图规范、无语法错误</td>
+</tr>
+<tr>
+<td>文档成文</td>
+<td>辅助起草修改说明、版本记录、AI 使用说明、汇报 PPT 骨架</td>
+<td>组员确认事实准确性与表述口径</td>
+</tr>
+</tbody>
+</table>
+<p><strong>结论</strong>：AI 的贡献集中在<strong>检索、比对、初稿生成</strong>；<strong>关系取舍、编号口径、交付口径</strong>全部由人工决定。</p>
+<hr />
+<h2 id="3-ai">3. AI 不参与的部分</h2>
+<ul>
+<li><strong>用户访谈</strong>：提纲设计可由人员撰写，访谈执行、记录整理与证据编号（<code>INT-xxx</code>）<strong>必须人工完成</strong>，不得由 AI 生成或推断受访者观点。</li>
+<li><strong>证据编号与溯源</strong>：<code>SURVEY-xxx</code>、技术实验编号（<code>TECH-*</code>）均来自 1 组既有材料，<strong>不新增、不推断</strong>。</li>
+<li><strong>基线的既有结论</strong>：1 组已过老师审查的调研结论（PDF 为首要入口、4 类用户场景、MoSCoW 优先级）<strong>不做任何 AI 改写</strong>。</li>
+</ul>
+<hr />
+<h2 id="4_10">4. 需要人工裁决的记录（本轮实例）</h2>
+<p>以下两处是"AI 提出、人工裁决"的实际案例，记录在案以说明人机边界：</p>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>AI 的初步方案</th>
+<th>人工裁决</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R-02（核验引用的挂载）</td>
+<td>提出"UC08 应扩展 UC06/UC07，并移除 UC09→UC08"</td>
+<td><strong>暂列待评审</strong>：保留推荐方案，同时在修改说明 §5 给出保守方案，交评审会确认</td>
+</tr>
+<tr>
+<td>R-03（User—Workspace）</td>
+<td>提出"组合改为多对多关联"</td>
+<td>组员确认：只解除"用户被工作区独占"的硬约束，<strong>不主张共享工作区已确认</strong>（该点仍属 TBD-1）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5_8">5. 数据合规</h2>
+<ul>
+<li>2 组仓库为 <strong>Public</strong>，禁止入库内容见 <a href="./2组Git协作规范.md"><code>2组Git协作规范.md</code></a> 与 <a href="../../../.gitignore"><code>.gitignore</code></a>：访谈录音、访谈记录原件、个人信息、未授权样本（<code>*样本*</code>）、压缩包等。</li>
+<li>所有进入外部模型的材料均为<strong>团队自制的建模文档与 1 组已公开的仓库材料</strong>，不含个人信息与受限原文。</li>
+<li>原始访谈记录统一存放 <code>访谈/raw-local/</code>（该目录已加入 <code>.gitignore</code>，不入库）。</li>
+</ul>
+<hr />
+<h2 id="6_6">6. 声明</h2>
+<p>本项目建模阶段采用"<strong>AI 辅助生成与检查 + 人工确认</strong>"的协作方式，与 1 组在《02-需求建模汇报PPT》中的表述一致。仓库内所有交付内容均经组员审阅，<strong>文责由 2 组承担</strong>。</p>
+<div class="pagebreak"></div>
+
+<h1 id="d-2">附录 D · 2 组建模任务分工书</h1>
+<blockquote>
+<p>来源文件：<code>2组建模任务分工书.md</code></p>
+</blockquote>
+<h1 id="2_7">智能笔记助手 · 2 组需求建模任务分工书</h1>
+<ul>
+<li>版本：V1.1</li>
+<li>编制：郭谦（2 组组长）</li>
+<li>日期：2026-10-18</li>
+<li>用途：2 组内部任务下发与验收依据</li>
+</ul>
+<blockquote>
+<p><strong>V1.1 修订说明（2026-10-18）</strong>
+原 V1.0 把第 3 类"新增件"（状态图、时序图、界面模型、访谈）全部分派给组员，而分工书 §1 又认定这一类就是<strong>评分核心增量</strong>——结果区分度 100% 依赖组员配合度。
+V1.1 调整为 <strong>「承重墙由组长扛、组员做可叠加的增量件」</strong>：所有图与文档的<strong>骨架由组长起草</strong>，组员在骨架上深化；<strong>任何组员零产出，V0.3 交付包依然完整</strong>；署名按实际提交记录标注。</p>
+</blockquote>
+<hr />
+<h2 id="0_6">0. 一页速览</h2>
+<table>
+<thead>
+<tr>
+<th>成员</th>
+<th>定位</th>
+<th>本轮任务</th>
+<th>核心交付物</th>
+<th>依赖</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>郭谦（组长）</td>
+<td><strong>承重墙</strong>（不可外移）</td>
+<td>模型修订、11 张图骨架、RTM 与规约骨架、CodeArts 出图、最终归并</td>
+<td>V0.3 模型、11 张图 <code>.puml</code>、RTM 骨架、CodeArts 出图、2 组版 PPT</td>
+<td>无</td>
+</tr>
+<tr>
+<td>廖欣豪</td>
+<td>增量件</td>
+<td>图形深化</td>
+<td>2 张深化图 + <code>图形说明.md</code></td>
+<td>组长的图骨架</td>
+</tr>
+<tr>
+<td>朱紫轩</td>
+<td>增量件</td>
+<td>用例规约补写</td>
+<td><code>V0.3-用例规约.md</code> 的 3 条完整规约</td>
+<td>组长模板 + 编号表</td>
+</tr>
+<tr>
+<td>程禹轩</td>
+<td>增量件</td>
+<td>界面清单</td>
+<td><code>界面清单.md</code>、<code>界面-用例映射表.md</code></td>
+<td>无</td>
+</tr>
+<tr>
+<td>汪昊</td>
+<td>增量件（<strong>唯一不可替代</strong>）</td>
+<td>用户访谈</td>
+<td><code>访谈提纲.md</code>、<code>证据映射.md</code>、<code>假设验证结论.md</code></td>
+<td>需约到受访者</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>所有产出统一放在 <code>阶段成果/需求建模/结果材料/</code> 下，每人一个独立子目录，互不覆盖。
+<strong>共同原则</strong>：组员任务全部为<strong>可叠加的增量件</strong>——骨架已由组长准备好，组员做的是"让它更厚"，不是"从零造"。</p>
+</blockquote>
+<hr />
+<h2 id="1_14">1. 背景与本轮目标</h2>
+<p>前期已形成一套共同使用的需求调研结果，并沉淀了需求建模基础件（需求模型 V0.2、SRS V1.0、SPEC V1.0、三张图）。</p>
+<p>2 组本轮工作<strong>不是从零建模</strong>，而是在前期共同基础材料上做 <strong>V0.3 增量</strong>，目标有三：</p>
+<ol>
+<li><strong>修订</strong>：改正基线中的编号错位、图关系错误、领域模型多重度与缺类问题；</li>
+<li><strong>补全</strong>：补齐 1 组漏交的用例规约、追踪矩阵、TBD 验证方案；</li>
+<li><strong>新增</strong>：做出 1 组完全没有的部分（状态图、时序图、界面模型、用户访谈证据）。</li>
+</ol>
+<blockquote>
+<p>课程要求两组在技术路线/迭代过程上有区分度。<strong>2 组的区分度就建立在第 3 类"新增"上</strong>，这也是本次评分的核心增量。
+<strong>因此第 3 类不由单一组员独占——骨架由组长亲自起草，组员只在骨架上做增量。</strong></p>
+</blockquote>
+<hr />
+<h2 id="2_8">2. 共同基线（所有人动工前必须先读）</h2>
+<p><strong>前期共同材料已归档到 <code>阶段成果/需求调研/</code>、<code>阶段成果/需求建模/旧版废稿/</code> 与 <code>阶段成果/前期实验/</code>，2 组产出统一放在 <code>阶段成果/需求建模/结果材料/</code>。</strong></p>
+<table>
+<thead>
+<tr>
+<th>材料</th>
+<th>路径</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>需求模型 V0.2</td>
+<td><code>阶段成果/需求建模/旧版废稿/需求模型V0.1.md</code></td>
+<td>12 用例 / 15 业务规则 / 16 领域对象 / 13 NFR / 12 FR / 12 TBD</td>
+</tr>
+<tr>
+<td>SRS V1.0</td>
+<td><code>阶段成果/需求建模/旧版废稿/02-SRS-智能阅读器.docx</code></td>
+<td>功能需求、用例说明、非功能需求与验收</td>
+</tr>
+<tr>
+<td>SPEC V1.0</td>
+<td><code>阶段成果/需求建模/旧版废稿/02-SPEC-智能阅读器.docx</code></td>
+<td>4 模块接口、状态机、降级规则、API</td>
+</tr>
+<tr>
+<td>三张基线图</td>
+<td><code>阶段成果/需求建模/旧版废稿/需求模型-{用例图,领域模型,关键流程}.puml</code></td>
+<td>需修订与扩展的对象</td>
+</tr>
+<tr>
+<td>建模启动包</td>
+<td><code>阶段成果/需求建模/旧版废稿/需求建模启动包.md</code></td>
+<td>M1–M6 任务定义与 9 个评审问题</td>
+</tr>
+<tr>
+<td>调研报告</td>
+<td><code>阶段成果/需求调研/结果材料/01-需求调研报告-智能阅读器.docx</code></td>
+<td>调研结论、MoSCoW 优先级</td>
+</tr>
+<tr>
+<td>问卷统计</td>
+<td><code>阶段成果/需求调研/结果材料/统计结果.pdf</code></td>
+<td>SURVEY-001~011 的原始数据（n=20）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2 组已产出的件（可作参考，不要重复造）</strong></p>
+<table>
+<thead>
+<tr>
+<th>材料</th>
+<th>路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>编号与术语口径</td>
+<td><code>阶段成果/需求建模/结果材料/17-编号规则与术语表-2组-阅读助手.md</code></td>
+</tr>
+<tr>
+<td>V0.3 模型修订（R-01~R-08）</td>
+<td><code>阶段成果/需求建模/结果材料/11-需求模型V0.3-2组-阅读助手.md</code></td>
+</tr>
+<tr>
+<td>用例图 / 领域模型 V0.3</td>
+<td><code>阶段成果/需求建模/结果材料/06-建模图-2组-阅读助手/</code></td>
+</tr>
+<tr>
+<td>工作包划分依据</td>
+<td><code>阶段成果/需求建模/结果材料/2组建模任务分工书.md</code>（本文件）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>前期共同材料来源于 1 组仓库 <code>https://github.com/Aut-172/Intelligent-Reader</code>（提交 <code>899957a</code>），现已按课程阶段整理到 <code>阶段成果/</code> 目录下。引用时仍需标注来源。</p>
+</blockquote>
+<hr />
+<h2 id="3_12">3. 协作规则（硬约束，违反需返工）</h2>
+<h3 id="31_1">3.1 目录与命名</h3>
+<ul>
+<li>根目录：<code>阶段成果/需求建模/结果材料/</code></li>
+<li>子目录：<code>图形/</code>（廖欣豪）、<code>文档/</code>（朱紫轩）、<code>界面/</code>（程禹轩）、<code>访谈/</code>（汪昊）</li>
+<li>命名规范：文档用 <code>V0.3-&lt;主题&gt;.md</code>；图用 <code>&lt;图类型&gt;-&lt;主题&gt;.puml</code>（图类型取 状态图/时序图/活动图/用例图/领域模型）。</li>
+<li><strong>本地 PlantUML 插件的渲染产物（<code>out/</code> 目录）不入库</strong>，最终出图以 CodeArts 平台为准。</li>
+</ul>
+<h3 id="32">3.2 基线规则</h3>
+<ul>
+<li>一切以仓库现有 <strong>V0.2 基线</strong>为准，<strong>不得自造</strong>概念、状态名、编号。</li>
+<li>新增内容必须标注来源，写法：<code>（承接 V0.2 §用例清单 UC05）</code> 或 <code>（来源：SPEC §5.2）</code>。</li>
+<li>确需偏离基线时，先在工作群提出，由组长确认后统一修改，<strong>不允许各自改一套</strong>。</li>
+</ul>
+<h3 id="33_1">3.3 工具约束</h3>
+<ul>
+<li>课程强制：建模图须使用<strong>华为 CodeArts Modeling</strong> 正式建档出图。</li>
+<li>执行流程：先出 PlantUML 草图定结构 → 在 CodeArts 中正式建档出图 → 导出 PNG/SVG 入库。</li>
+<li><strong>CodeArts 项目由组长统一创建</strong>，成员加入同一项目，图与需求条目建立追踪。</li>
+<li>✅ <strong>已查证（2026-10-19）</strong>：CodeArts <strong>不支持导入外部 <code>.puml</code></strong>（XMI 导入仅支持 6 类图且默认不带关系）→ 11 张图<strong>只能手工重建</strong>。落地方案与分批计划见 §9 阶段 4 与 <a href="../结果材料/06-建模图-2组-阅读助手/出图清单-2组-阅读助手.md"><code>06-建模图-2组-阅读助手/出图清单-2组-阅读助手.md</code></a>。</li>
+</ul>
+<h3 id="34">3.4 提交约束（重要）</h3>
+<ul>
+<li>本仓库为 <strong>Public 公开仓库</strong>。</li>
+<li><strong>以下内容一律不得 push</strong>：访谈录音、访谈记录原件、姓名/学号/联系方式、<code>部分样本.zip</code>、<code>伪前端.zip</code> 等含个人或受限信息的文件。</li>
+<li>允许 push 的：<code>.md</code> / <code>.puml</code> / <code>.png</code> / <code>.docx</code> 等不含个人信息的成果。</li>
+<li>原始访谈记录请放在 <code>访谈/raw-local/</code>（该目录约定不入库，已在 <code>.gitignore</code> 中排除）。</li>
+</ul>
+<h3 id="35">3.5 术语与编号</h3>
+<ul>
+<li>统一口径见 <a href="../结果材料/17-编号规则与术语表-2组-阅读助手.md"><code>编号规则与术语表.md</code></a>（<strong>V1.0 冻结版，2026-10-18</strong>），全员必须按此执行。</li>
+<li>三条要点：<strong>不自造</strong>编号/状态名/类名；<strong><code>FR</code> 与 <code>NFR</code> 编号带连字符</strong>（<code>FR-01</code>、<code>NFR-01</code>）；引用必标来源。</li>
+<li>编号空间：<code>UC01–UC12</code>、<code>BR01–BR15</code>、<code>FR-01–FR-12</code>、<code>NFR-01–NFR-13</code>、<code>SURVEY-001-Q1~SURVEY-011-Q11</code>、<code>INT-001</code> 起（仅此可新增）、<code>TBD-1~TBD-12</code>。</li>
+</ul>
+<h3 id="36-git">3.6 Git 提交规范</h3>
+<ul>
+<li>分支策略、提交信息格式、PR 流程、禁止事项<strong>另见</strong> <a href="./2组Git协作规范.md"><code>2组Git协作规范.md</code></a>。</li>
+<li>两条底线：<strong>不许直接 push 到 <code>main</code></strong>；<strong><code>git add</code> 必须按文件名加，不许 <code>git add .</code></strong>。</li>
+<li>2 组仓库已就绪（<code>main</code> 已开分支保护，组员 Write 权限已配置），<strong>推送通道无阻塞，可正常提交</strong>。</li>
+</ul>
+<hr />
+<h2 id="4_11">4. 郭谦（组长）—— 承重墙</h2>
+<p><strong>G1 · 统筹件</strong>
+- 产出并冻结「编号规则与术语表」→ <a href="../结果材料/17-编号规则与术语表-2组-阅读助手.md"><code>编号规则与术语表.md</code></a>（<strong>已完成</strong>）。</p>
+<p><strong>G2 · 模型本体修订</strong>（已完成，WP1）
+- 用例图关系修订（R-01、R-02）；领域模型多重度修订与新增类（R-03~R-08）。
+- 交付物：<code>11-需求模型V0.3-2组-阅读助手.md</code>、<code>06-建模图-2组-阅读助手/底稿-PlantUML/用例图-V0.3.puml</code>、<code>06-建模图-2组-阅读助手/底稿-PlantUML/领域模型-V0.3.puml</code>。</p>
+<p><strong>G3 · 交付整合件</strong>（已完成，WP6）
+- <code>2组修改说明.md</code>、<code>版本记录.md</code>、<code>09-AI使用声明-2组-阅读助手.md</code>、<code>07-需求建模汇报PPT-2组-阅读助手.pptx</code>。</p>
+<p><strong>G4 · 图形骨架起草（原 WP-A 主体，收回自做）</strong></p>
+<p>组长起草 A 系列全部 8 张图（A1–A8）的 <code>.puml</code> 骨架，保证图形件不依赖任何人即可存在（另有用例图 V0.3 / 领域模型 V0.3 两张修订件见 G2，界面导航图 A9 见 G6）：</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>图</th>
+<th>依据来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A1</td>
+<td>文档处理状态图：<code>registered→queued→processing→parsed→indexed</code>；异常态 6 个</td>
+<td>需求模型 V0.2 §8、SPEC §3.1</td>
+</tr>
+<tr>
+<td>A2</td>
+<td>回答生成状态图：<code>requested→…→answered</code>；分支态 6 个</td>
+<td>SPEC §5.1、§5.2、《编号规则与术语表》§1.4</td>
+</tr>
+<tr>
+<td>A3</td>
+<td>时序图·问答与引用校验</td>
+<td>SPEC §7 <code>/answers</code> 事件流</td>
+</tr>
+<tr>
+<td>A4</td>
+<td>时序图·逐文件外发确认</td>
+<td>SPEC §4.1、§4.2</td>
+</tr>
+<tr>
+<td>A5</td>
+<td>时序图·导入-解析-索引</td>
+<td>SPEC §3</td>
+</tr>
+<tr>
+<td>A6</td>
+<td>活动图·检索（权限先过滤，无答案降级）</td>
+<td>需求模型 UC05</td>
+</tr>
+<tr>
+<td>A7</td>
+<td>活动图·笔记与导出（源文件只读、指定路径、写入前后差分）</td>
+<td>UC09/UC10、SPEC §6</td>
+</tr>
+<tr>
+<td>A8</td>
+<td>给 1 组活动图加泳道（用户/系统/云端模型/本地解析）</td>
+<td><code>需求模型-关键流程.puml</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>G5 · 文档骨架（原 WP-B 主体，收回自做）</strong>
+- 用例规约模板 + 12 条骨架（含 UC01 完整样例）、SPEC 错误码表、需求追踪矩阵（RTM）骨架、TBD 收口表。</p>
+<p><strong>G6 · CodeArts 项目与出图</strong>
+- 创建 CodeArts 模型工程 → 用 G4 首张图试跑 → 确认落地方案 → 全员图形建档出图。
+- 补齐 1 组完全未做的<strong>界面导航图</strong> <code>.puml</code>。</p>
+<p><strong>G7 · 最终归并</strong>
+- 按「图形 → 文档 → 模型 V0.3 → 交付包」顺序归并组员增量件，输出统一 V0.3 模型包与汇报定稿。</p>
+<hr />
+<h2 id="5_9">5. 廖欣豪 —— 增量件 · 图形深化</h2>
+<p><strong>组长已提供</strong>：A1–A9 全部 9 张图的 <code>.puml</code> 骨架。
+<strong>你负责</strong>：在其中选定 2 张做<strong>深化</strong>，并独立编制图形说明。</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>任务</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A-1</td>
+<td>深化 <strong>A3 时序图·问答与引用校验</strong></td>
+<td>补全消息参数、生命线激活与异常返回分支（<code>model_failed</code>、<code>citation_invalid</code>）</td>
+</tr>
+<tr>
+<td>A-2</td>
+<td>深化 <strong>A8 活动图·泳道改造</strong></td>
+<td>给 1 组 <code>需求模型-关键流程.puml</code> 拆泳道：用户 / 系统 / 云端模型 / 本地解析</td>
+</tr>
+<tr>
+<td>A-3</td>
+<td>编制 <code>图形说明.md</code></td>
+<td>逐张说明 A1–A9 的依据来源与对应评审问题（可对照启动包 §5 的 9 个问题）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>交付物</strong>：<code>图形/</code> 下 2 个深化后的 <code>.puml</code> + <code>图形/图形说明.md</code></p>
+<p><strong>验收标准</strong>
+- 深化图与骨架<strong>语义一致</strong>（状态名、消息顺序不得改动），只允许在细节层增加密度；
+- <code>图形说明.md</code> 覆盖全部 11 张图（A1–A9 + 用例图 V0.3 / 领域模型 V0.3），每张图能指出对应的评审问题；
+- 发现骨架与模型描述冲突时，<strong>记录在 <code>图形说明.md</code> 并反馈组长，不要自己改骨架</strong>。</p>
+<p><strong>零产出后果</strong>：无。图骨架仍由组长交付，仅图形说明缺失。</p>
+<hr />
+<h2 id="6_7">6. 朱紫轩 —— 增量件 · 用例规约补写</h2>
+<p><strong>组长已提供</strong>：用例规约模板 + 12 条骨架（含 UC01 完整样例作为格式标杆）。
+<strong>你负责</strong>：补齐 3 条最复杂用例的完整规约。</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>任务</th>
+<th>依据来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B-1</td>
+<td>按模板补齐 <strong>UC06 问答</strong> 完整规约</td>
+<td>需求模型 V0.2 §5 UC06、BR02/BR04/BR05/BR12</td>
+</tr>
+<tr>
+<td>B-2</td>
+<td>按模板补齐 <strong>UC10 导出阅读成果</strong> 完整规约</td>
+<td>V0.2 §5 UC10、BR09/BR14、SPEC §6</td>
+</tr>
+<tr>
+<td>B-3</td>
+<td>按模板补齐 <strong>UC11 配置模型与隐私边界</strong> 完整规约</td>
+<td>V0.2 §5 UC11、BR12、SPEC §4.2</td>
+</tr>
+<tr>
+<td>B-4</td>
+<td>校对 12 条骨架中的 FR/BR 引用格式（尤其 <code>FR-01</code>、<code>NFR-01</code> 的连字符）</td>
+<td><a href="../结果材料/17-编号规则与术语表-2组-阅读助手.md"><code>编号规则与术语表.md</code></a> §1.2、§1.3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>每条规约必须含</strong>：编号 / 名称 / 主要参与者 / 前置条件 / 主成功路径（带步骤编号）/ 异常与降级路径 / 后置条件 / 关联 BR / 关联 FR。</p>
+<p><strong>交付物</strong>：<code>12-用例规约-2组-阅读助手.md</code> 中你负责的 3 条</p>
+<p><strong>验收标准</strong>
+- 三条规约格式与 UC01 样例完全一致，主成功路径与异常路径均可执行（改稿人可照着写测试）；
+- 除显式标注为 TBD 的项外，各字段无空缺；
+- 编号引用与《编号规则与术语表》一致。</p>
+<p><strong>前置</strong>：组长已下发模板与编号表，<strong>可立即开工</strong>。
+<strong>零产出后果</strong>：无。骨架在，缺的 3 条由组长补。</p>
+<hr />
+<h2 id="7_1">7. 程禹轩 —— 增量件 · 界面清单</h2>
+<p><strong>组长已提供</strong>：界面导航图 <code>.puml</code>（你不需要画图）。
+<strong>你负责</strong>：清单与映射两张表。</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>任务</th>
+<th>依据来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C-1</td>
+<td>编制 <code>界面清单.md</code>：9 个页面（<code>index</code> / <code>library</code> / <code>search</code> / <code>answer-more</code> / <code>summary</code> / <code>notes</code> / <code>export</code> / <code>notifications</code> / <code>settings</code>）的入口、用户任务、状态</td>
+<td>V0.2 §5 用例、SRS §3 功能需求、<code>06-建模图-2组-阅读助手/底稿-PlantUML/界面导航图-V0.3.puml</code></td>
+</tr>
+<tr>
+<td>C-2</td>
+<td>编制 <code>界面-用例映射表.md</code>：每个界面对应哪些 UC，标注权限与外发相关控件</td>
+<td>需求模型 UC01–UC12</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>说明：<strong>不需要伪前端素材</strong>也能完成——页面名来自 1 组调研材料中已出现的页面，任务与状态可由 UC 与 FR 反推。素材后续若到位，再补视觉细节。</p>
+</blockquote>
+<p><strong>交付物</strong>：<code>界面/界面清单.md</code>、<code>界面/界面-用例映射表.md</code></p>
+<p><strong>验收标准</strong>
+- 每个界面至少映射到 1 个用例，无孤立页面；
+- <code>settings</code> 页面必须体现 <strong>BR11 与 BR12</strong>：默认不自动遍历/上传 + 调用云端前逐文件确认（对应 FR-09；FR-10 的通知与待复核由 <code>notifications</code> 页承载）；
+- 不引入 V0.2 中不存在的页面名。</p>
+<p><strong>零产出后果</strong>：无。导航图在，清单由组长补。</p>
+<hr />
+<h2 id="8_2">8. 汪昊 —— 增量件 · 用户访谈</h2>
+<p><strong>组长已提供</strong>：访谈提纲的<strong>建议问题清单</strong>（见下），你可直接增删后使用。
+<strong>你负责</strong>：执行访谈。这是四条增量件中<strong>唯一无法由组长替代</strong>的（受访者资源只能靠你去约）。</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>任务</th>
+<th>依据来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D-1</td>
+<td>定稿访谈提纲，覆盖 n=20 问卷未触及项：用户角色代表性、性能阈值（30 秒流式/1 分钟完成）、外发顾虑、格式优先级、开启速度与资源占用、<strong>是否需要共享工作区</strong>（TBD-1）</td>
+<td>需求模型 SURVEY 表、V0.3-需求模型 §3.1 R-03</td>
+</tr>
+<tr>
+<td>D-2</td>
+<td>招募 3–5 位受访者，覆盖 ≥2 类用户（学生 / 科研 / 办公审阅）</td>
+<td>启动包 §3 统计证据边界</td>
+</tr>
+<tr>
+<td>D-3</td>
+<td>执行访谈并脱敏记录（原始记录放 <code>访谈/raw-local/</code>，<strong>不入库</strong>）</td>
+<td>—</td>
+</tr>
+<tr>
+<td>D-4</td>
+<td>证据整理：产出 <code>INT-001</code> 起的证据编号，映射到 <code>SURVEY-xxx</code> / <code>BR</code> / <code>NFR</code></td>
+<td>编号体系 §3.5</td>
+</tr>
+<tr>
+<td>D-5</td>
+<td>结论：哪些 V0.2 假设被证实或推翻，形成对 V0.3 的修订建议</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>交付物</strong>：<code>访谈/访谈提纲.md</code>、<code>访谈/证据映射.md</code>、<code>访谈/假设验证结论.md</code></p>
+<p><strong>验收标准</strong>
+- 至少 3 份有效记录，覆盖 ≥2 类用户；
+- 每条证据有编号且能映射到模型中的 BR / NFR / SURVEY；
+- <strong>含个人信息的记录绝不 push</strong>。</p>
+<p><strong>降级方案</strong>：2 天内约不到受访者，降级为"问卷补充设计"——即原 V0.2 §11 TBD 项转成补充问卷题项，交付 <code>访谈/补充问卷设计.md</code>，同样计入。</p>
+<p><strong>零产出后果</strong>：无。相关 TBD 在 RTM 中标注为「建模期未关闭」即可。</p>
+<hr />
+<h2 id="9-w1w8">9. 工作顺序（W1–W8）与合并</h2>
+<blockquote>
+<p><strong>排序原则（2026-10-20 组长决定）</strong>：课程强制用 CodeArts 出图，但<strong>出图不是前置条件</strong>。因此先把<strong>不依赖出图的工作做满</strong>——做完阶段 1，即使一张图都没出，V0.3 在文档侧也已自洽、可完整答辩；出图排在其后，且与阶段 1–3 <strong>完全并行、互不阻塞</strong>。
+阶段 1–3 由组长独立推进，<strong>不等任何人</strong>；四人增量件（§5–§8）同期下发，谁先完成谁先回流。</p>
+</blockquote>
+<h3 id="1_15">阶段 1 · 不依赖出图的核心件（最高优先，组长独立推进）</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+<th>产出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>W1</strong> ✅</td>
+<td>逐条回答《需求建模启动包》§5 的 <strong>9 个评审问题</strong></td>
+<td>新建 <code>16-评审入口问题回答-2组-阅读助手.md</code></td>
+</tr>
+<tr>
+<td><strong>W2</strong> ✅</td>
+<td>补齐 <code>V0.3-用例规约.md</code> 中 <strong>6 处 <code>【待补】</code> 主成功路径</strong>（UC02 / UC03 / UC04 / UC07 / UC11 / UC12，含异常与降级路径）</td>
+<td>更新 <code>12-用例规约-2组-阅读助手.md</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>阶段 1 的完成标准</strong>：12 条用例规约全满 + 9 个评审问题全答 + RTM / TBD 收口表在册 → <strong>文档侧可独立答辩</strong>，不依赖任何图形件。</p>
+<h3 id="2-3">阶段 2 · 口径收尾（必须在阶段 3 之前完成）</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>W3</strong> ✅</td>
+<td>编号口径全库校对：① 本文件 §7 验收标准中「<code>FR-10</code> 与 <code>BR06</code>」按 2026-10-19 裁决应写作 <strong><code>BR11</code> + <code>BR12</code></strong>；② 本文件 §7 C-1 页面数「8 个」应为 <strong>9 个</strong>（漏 <code>answer-more</code>）；③ 登记 V0.2 <code>NFR06</code>（多文档查询集合上限）在 SRS §7 无对应项的<strong>反向不对称</strong>；④ 全库 <code>FR</code> / <code>NFR</code> 连字符与 <code>SRS-</code> 来源前缀格式统一；⑤ 本文件 §0 速览行「8 张图」应为 <strong>11 张</strong>（A1–A9 + 用例图 / 领域模型 V0.3 两张修订件），§3.3 的「待验证项」已被 §9 阶段 4 的查证结论覆盖</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-w3">阶段 3 · 对外同步（依赖 W3）</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+<th>去向 / 产出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>W4</strong></td>
+<td>SRS V1.1 返修清单定稿（3 条必改 + 6 条建议）</td>
+<td>交 1 组 lzt；产出 <a href="../结果材料/18-SRS-V1.1返修清单-2组-阅读助手.md"><code>文档/SRS-V1.1返修清单.md</code></a></td>
+</tr>
+<tr>
+<td><strong>W5</strong></td>
+<td>R-02 裁决材料（一页纸 · 两方案对比）</td>
+<td>提交评审会；产出 <a href="../结果材料/19-R-02裁决材料-2组-阅读助手.md"><code>文档/R-02裁决材料.md</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-codearts-g6-13">阶段 4 · CodeArts 出图（G6，与阶段 1–3 并行）</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>W6a</strong></td>
+<td>组长在 CodeArts 试跑 <strong>1 张</strong>（建议 A1 文档处理状态图）→ 拿准单张工时与落地方案</td>
+</tr>
+<tr>
+<td><strong>W6b</strong></td>
+<td>分批出图：<strong>第 1 批 4 张</strong>（用例图 V0.3、领域模型 V0.3、A1、A3）为评审必看；第 2 / 3 批再铺 A2 / A4 / A5 与 A6 / A7 / A8 / A9</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>已查证（2026-10-19）</strong>：CodeArts <strong>不支持导入 PlantUML</strong>；XMI 导入仅支持 6 类图，且 PlantUML <code>-xmi</code> 默认不带关系 → 11 张图基本<strong>只能手工重建</strong>。因此 W6b 按「分批推进、不追求一次到位」执行；助教口径为"尽量出全部"，<strong>非硬性门槛</strong>，不构成阻塞项。分包与验收见 <a href="../结果材料/06-建模图-2组-阅读助手/出图清单-2组-阅读助手.md"><code>06-建模图-2组-阅读助手/出图清单-2组-阅读助手.md</code></a> §4。</p>
+</blockquote>
+<h3 id="5_10">阶段 5 · 归并与收尾</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>W7</strong></td>
+<td><code>07-需求建模汇报PPT-2组-阅读助手.pptx</code> 定稿</td>
+</tr>
+<tr>
+<td><strong>W8</strong></td>
+<td>G7 交付包归并（按「图形 → 文档 → 模型 V0.3 → 交付包」顺序；组员增量件<strong>允许缺失</strong>）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">依赖关系</h3>
+<ul>
+<li><strong>W1 / W2 / W3 互不依赖</strong>，可任选开头；建议 <strong>W1 优先</strong>（覆盖面最广，直接对应评审入口）。</li>
+<li><strong>W4 / W5 必须等 W3</strong>：口径未统一前对外同步，必然返工。</li>
+<li><strong>W6（出图）完全独立</strong>，可与任何阶段并行；但 W6b 第 1 批建议<strong>组长自画</strong>，不占用组员产能。</li>
+<li><strong>W7 / W8 收口全部前置项</strong>，不得提前动工。</li>
+</ul>
+<h3 id="_8">里程碑（按阶段，不排日期）</h3>
+<ol>
+<li>编号规则与术语表冻结 ✅ <strong>已完成</strong></li>
+<li>图形底稿齐备（A1–A9 + 用例图 V0.3 / 领域模型 V0.3，共 11 张 <code>.puml</code>）+ CodeArts 出图清单与分包表 ✅ <strong>已完成</strong>（分支 <code>2zu/gq/g6-g7-codearts</code>，本地渲染通过，待 PR 合并）</li>
+<li>四人增量件任务书就绪（§5–§8，<strong>允许缺失</strong>）✅ <strong>已就绪</strong></li>
+<li><strong>阶段 1 完成</strong>（W1/W2）✅ <strong>已完成（2026-10-20）</strong>：9 个评审问题全答（<code>16-评审入口问题回答-2组-阅读助手.md</code>）+ 12 条用例规约全满（UC02–UC12 与 UC01 同构）→ <strong>文档侧可独立答辩</strong></li>
+<li><strong>阶段 2 / 3 完成</strong>（W3/W4/W5）✅ <strong>已完成（2026-10-20）</strong>：编号口径全库校对 + <a href="../结果材料/18-SRS-V1.1返修清单-2组-阅读助手.md"><code>文档/SRS-V1.1返修清单.md</code></a>（待 1 组接收）+ <a href="../结果材料/19-R-02裁决材料-2组-阅读助手.md"><code>文档/R-02裁决材料.md</code></a>（待评审会裁决）</li>
+<li><strong>阶段 4 完成</strong>：CodeArts 第 1 批 4 张出图通过</li>
+<li><strong>阶段 5 完成</strong>：V0.3 交付包归并 + 汇报定稿</li>
+</ol>
+<hr />
+<h2 id="10_3">10. 风险提示</h2>
+<table>
+<thead>
+<tr>
+<th>风险</th>
+<th>影响</th>
+<th>应对</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>组员增量件零产出</td>
+<td>交付包缺口</td>
+<td>V1.1 已把全部骨架收归组长，零产出<strong>不构成缺口</strong>；缺口仅在"厚度"上</td>
+</tr>
+<tr>
+<td>组员零产出却要求署名</td>
+<td>评审风险</td>
+<td>署名<strong>按实际提交记录</strong>标注：未提交者不署名；1 组基线显式注明引用来源</td>
+</tr>
+<tr>
+<td>CodeArts 无法导入 <code>.puml</code></td>
+<td>图形落地返工</td>
+<td>组长先试跑 1 张图确认落地方案（导入 vs 手工重建）再通知全员，避免全员返工</td>
+</tr>
+<tr>
+<td>伪前端素材拿不到</td>
+<td>界面视觉缺失</td>
+<td>C-1/C-2 已改为<strong>不依赖素材</strong>的版本；素材到位后另补视觉细节</td>
+</tr>
+<tr>
+<td>约不到受访者</td>
+<td>WP-D 无法完成</td>
+<td>已设降级方案（问卷补充设计）；相关 TBD 标注为「建模期未关闭」</td>
+</tr>
+<tr>
+<td>多人改同一套编号/术语</td>
+<td>合并冲突</td>
+<td>编号与术语表已冻结并下发，冻结后才动工</td>
+</tr>
+<tr>
+<td>误将个人信息推送到公开仓库</td>
+<td>合规风险</td>
+<td>严格遵守 §3.4，原始记录只留 <code>访谈/raw-local/</code>（已入 <code>.gitignore</code>）</td>
+</tr>
+<tr>
+<td>图形与文档对不上</td>
+<td>验收返工</td>
+<td>所有人以 V0.2 为唯一基线 + 编号表为唯一口径，偏离必须报备</td>
+</tr>
+</tbody>
+</table>
+<div class="pagebreak"></div>
+
+<h1 id="9-uml-11">第 9 部分 · UML 图件（11 张）</h1>
+<blockquote>
+<p>底稿为 <code>图形/*.puml</code>（PlantUML），下图为对应渲染导出件（PNG）；底稿与导出图一一对应，清单见第 10 部分。</p>
+</blockquote>
+<h3 id="a1"><strong>A1</strong> · 状态图 · 文档处理（新增）</h3>
+<p>UC01/UC02 的文档状态机：<code>queued → processing → parsed → indexed</code> 及 <code>failed / needs_review / deleted</code> 分支。</p>
+<p><img alt="状态图 · 文档处理（新增）" src="d:/大三上/软件系统分析与设计/大作业/阶段成果/需求建模/结果材料/06-建模图-2组-阅读助手/导出图-PNG/状态图-文档处理.png" /></p>
+<h3 id="a2_1"><strong>A2</strong> · 状态图 · 回答生成（新增）</h3>
+<p>UC06/UC07 的回答状态机：正常 6 态 + 6 个降级态（含 V0.2 漏列的 <code>stale</code>）。</p>
+<p><img alt="状态图 · 回答生成（新增）" src="d:/大三上/软件系统分析与设计/大作业/阶段成果/需求建模/结果材料/06-建模图-2组-阅读助手/导出图-PNG/状态图-回答生成.png" /></p>
+<h3 id="a3"><strong>A3</strong> · 时序图 · 问答与引用校验（新增）</h3>
+<p>权限过滤 → 证据契约 → 云端生成 → 逐条 claim/citation 校验。</p>
+<p><img alt="时序图 · 问答与引用校验（新增）" src="d:/大三上/软件系统分析与设计/大作业/阶段成果/需求建模/结果材料/06-建模图-2组-阅读助手/导出图-PNG/时序图-问答与引用校验.png" /></p>
+<h3 id="a4"><strong>A4</strong> · 时序图 · 逐文件外发确认（新增）</h3>
+<p>BR11/BR12 的落地：默认不外发、逐文件确认、拒绝后降级为本地证据。</p>
+<p><img alt="时序图 · 逐文件外发确认（新增）" src="d:/大三上/软件系统分析与设计/大作业/阶段成果/需求建模/结果材料/06-建模图-2组-阅读助手/导出图-PNG/时序图-逐文件外发确认.png" /></p>
+<h3 id="a5-"><strong>A5</strong> · 时序图 · 导入-解析-索引（新增）</h3>
+<p>UC01/UC02 的全链路：登记 → <code>ParseRun</code> → IR → <code>IndexingRun</code>。</p>
+<p><img alt="时序图 · 导入-解析-索引（新增）" src="d:/大三上/软件系统分析与设计/大作业/阶段成果/需求建模/结果材料/06-建模图-2组-阅读助手/导出图-PNG/时序图-导入解析索引.png" /></p>
+<h3 id="a6"><strong>A6</strong> · 活动图 · 检索（新增）</h3>
+<p>UC05 检索流程，含权限范围与噪声过滤。</p>
+<p><img alt="活动图 · 检索（新增）" src="d:/大三上/软件系统分析与设计/大作业/阶段成果/需求建模/结果材料/06-建模图-2组-阅读助手/导出图-PNG/活动图-检索.png" /></p>
+<h3 id="a7"><strong>A7</strong> · 活动图 · 笔记与导出（新增）</h3>
+<p>UC09/UC10，含 <code>ExportJob</code> 状态与失败恢复。</p>
+<p><img alt="活动图 · 笔记与导出（新增）" src="d:/大三上/软件系统分析与设计/大作业/阶段成果/需求建模/结果材料/06-建模图-2组-阅读助手/导出图-PNG/活动图-笔记与导出.png" /></p>
+<h3 id="a8"><strong>A8</strong> · 关键流程 · 四泳道（新增）</h3>
+<p>用户 / 系统 / 模型服务 / 存储 四泳道的端到端关键流程。</p>
+<p><img alt="关键流程 · 四泳道（新增）" src="d:/大三上/软件系统分析与设计/大作业/阶段成果/需求建模/结果材料/06-建模图-2组-阅读助手/导出图-PNG/活动图-关键流程带泳道.png" /></p>
+<h3 id="a9"><strong>A9</strong> · 界面导航图（新增）</h3>
+<p>9 个页面的导航关系，基线完全未做，2 组补齐。</p>
+<p><img alt="界面导航图（新增）" src="d:/大三上/软件系统分析与设计/大作业/阶段成果/需求建模/结果材料/06-建模图-2组-阅读助手/导出图-PNG/界面导航图-V0.3.png" /></p>
+<h3 id="_9">用例图（修订）</h3>
+<p>R-01/R-02 修订：参与者边界与核心 use case 关系。</p>
+<p><img alt="用例图（修订）" src="d:/大三上/软件系统分析与设计/大作业/阶段成果/需求建模/结果材料/06-建模图-2组-阅读助手/导出图-PNG/用例图-V0.3.png" /></p>
+<h3 id="_10">领域模型（修订）</h3>
+<p>R-06 新增 <code>IndexingRun</code> / <code>Index</code>，并建立与 <code>DocumentVersion</code> / <code>ContentBlock</code> 的关联。</p>
+<p><img alt="领域模型（修订）" src="d:/大三上/软件系统分析与设计/大作业/阶段成果/需求建模/结果材料/06-建模图-2组-阅读助手/导出图-PNG/领域模型-V0.3.png" /></p>
