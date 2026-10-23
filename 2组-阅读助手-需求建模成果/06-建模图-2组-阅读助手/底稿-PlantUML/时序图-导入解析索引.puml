@@ -1,0 +1,50 @@
+@startuml
+title 智能阅读器需求模型 V0.3｜时序图·导入-解析-索引（2 组新增 A5）
+skinparam shadowing false
+skinparam defaultFontName Microsoft YaHei
+skinparam sequence {
+  ArrowColor #1F4E78
+  LifeLineBorderColor #1F4E78
+  ParticipantBackgroundColor #EAF3F8
+  ParticipantBorderColor #1F4E78
+}
+autonumber
+
+' 依据：SPEC V1.0 §3 文档解析与索引模块、§7 接口约定
+'   POST /documents/import、GET /documents/{id}/status
+' 规则依据：FR-01、FR-02、NFR-05（溯源字段）、BR07（低置信保留原页）
+
+actor "阅读者\nReader" as U
+participant "智能阅读器" as S
+participant "本地解析 / OCR\nLocal Parser" as P
+
+U -> S : 选择文件（POST /documents/import）
+S -> S : 登记 Document / DocumentVersion\n（同一 source_hash 不重复创建有效版本）
+S --> U : document_id、version_id、parse_run_id
+
+S -> P : 提交解析任务（创建 ParseRun）
+P -> P : 提取 Page（physical_page / page_label / asset_ref）
+P -> P : 提取 ContentBlock（text / section_path / char_start-end / bbox / confidence）
+P --> S : IR 与 ParseRun（parser_version、config_hash、status、warnings）
+
+alt 存在低置信或结构不确定
+  S -> S : 保留原页或截图，标记 needs_review / ocr_low_confidence
+  S --> U : 通知：解析完成但存在低置信内容，待复核
+else 解析成功
+  S -> S : 建立全文索引与可选向量索引\n（IndexingRun → Index，记录 version_id 与权限范围）
+  S --> U : 通知：解析与索引完成
+end
+
+U -> S : 查询进度（GET /documents/{id}/status）
+S --> U : 状态、进度、警告与错误码
+
+legend right
+  依据
+  · SPEC V1.0 §3.1 处理状态、§3.2 统一中间表示、§3.3 验收条件
+  · SPEC §7 接口约定 /documents/import、/documents/{id}/status
+  · NFR-05 保留 document/version/hash/parser/block/page/bbox/offset/confidence 溯源字段
+  · BR07 低置信时保留原页或截图，不承诺精确结构化问答
+  说明
+  · 解析失败不阻断已成功导入文档的阅读，用户可重试、查看原因或删除任务
+endlegend
+@enduml
