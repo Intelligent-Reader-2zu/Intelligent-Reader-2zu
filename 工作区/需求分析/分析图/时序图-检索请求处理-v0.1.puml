@@ -1,0 +1,90 @@
+@startuml
+title 智能笔记助手需求分析｜时序图·检索请求处理 v0.1
+
+skinparam shadowing false
+skinparam defaultFontName Microsoft YaHei
+skinparam sequence {
+  ArrowColor #1F4E78
+  LifeLineBorderColor #1F4E78
+  ParticipantBackgroundColor #EAF3F8
+  ParticipantBorderColor #1F4E78
+}
+autonumber
+
+' 依据：
+' - 工作区/需求分析/分析文档/02-关键流程文字脚本-v0.1.md §4
+' - 工作区/需求分析/分析文档/01-业务对象清单-v0.1.md
+
+actor "用户" as U
+boundary "检索界面" as SearchUI
+control "检索控制器" as SC
+entity "权限规则" as PR
+entity "文档集合" as DS
+entity "索引" as IDX
+entity "证据" as EV
+entity "回答结果" as ANS
+entity "引用" as CIT
+entity "通知" as N
+
+U -> SearchUI : 输入检索词/问题\n选择检索范围
+SearchUI -> SC : 提交检索请求(文本, 类型, 范围)
+SC -> DS : 解析文档集合范围
+SC -> PR : 执行权限过滤
+
+alt 过滤后无可访问资源
+  SC --> SearchUI : 返回空范围提示
+  SearchUI --> U : 提示当前范围无可访问内容
+else 范围有效
+  SC -> IDX : 检索候选内容
+
+  alt 无命中结果
+    IDX --> SC : 返回空结果
+    SC --> SearchUI : 返回无命中提示
+    SearchUI --> U : 提示调整关键词或范围
+  else 检索命中
+    IDX --> SC : 返回候选内容块
+    SC -> EV : 组装证据集合
+
+    alt 请求类型为普通检索
+      SC --> SearchUI : 返回结果列表与定位信息
+      SearchUI --> U : 展示检索结果
+    else 请求类型为问答/摘要
+      SC -> ANS : 生成回答结果
+
+      alt 回答生成失败
+        ANS --> SC : 返回失败状态
+        SC --> SearchUI : 降级返回证据列表
+        SearchUI --> U : 展示证据与原始结果
+      else 回答生成成功
+        ANS --> SC : 返回回答内容
+        SC -> CIT : 绑定引用
+
+        alt 引用定位失败
+          CIT --> SC : 返回待复核状态
+          SC -> N : 生成待复核提示
+          SC --> SearchUI : 返回回答结果(待复核)
+          SearchUI --> U : 标记为待复核展示
+        else 引用绑定成功
+          CIT --> SC : 返回可追溯引用
+          SC --> SearchUI : 返回回答结果与引用
+          SearchUI --> U : 展示回答与引用
+        end
+      end
+    end
+  end
+end
+
+legend right
+  主线说明
+  · 权限过滤必须先于检索与回答生成
+  · 问答/摘要结果必须绑定到证据与引用
+  · 当回答失败或引用失效时，应降级而不是硬给结论
+
+  本图刻意保留的关键异常
+  · 当前范围无可访问资源
+  · 无命中结果
+  · 回答生成失败
+  · 引用定位失败，结果标记待复核
+endlegend
+
+@enduml
