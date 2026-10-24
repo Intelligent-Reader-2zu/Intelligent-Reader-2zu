@@ -19,7 +19,7 @@ actor "用户" as U
 boundary "检索界面" as SearchUI
 control "检索控制器" as SC
 entity "权限规则" as PR
-entity "文档集合" as DS
+entity "文档集合" as DocSet
 entity "索引" as IDX
 entity "证据" as EV
 entity "回答结果" as ANS
@@ -28,7 +28,7 @@ entity "通知" as N
 
 U -> SearchUI : 输入检索词/问题\n选择检索范围
 SearchUI -> SC : 提交检索请求(文本, 类型, 范围)
-SC -> DS : 解析文档集合范围
+SC -> DocSet : 解析文档集合范围
 SC -> PR : 执行权限过滤
 
 alt 过滤后无可访问资源
