@@ -1,5 +1,5 @@
 @startuml
-title 智能笔记助手需求分析｜核心业务类图 v0.2
+title 智能笔记助手需求分析｜核心业务类图 v0.2（定稿）
 
 hide methods
 skinparam classAttributeIconSize 0
@@ -209,7 +209,7 @@ class 策略 {
 
 legend right
   本图定位：
-  1. 需求分析阶段核心业务类图 v0.2
+  1. 需求分析阶段核心业务类图 v0.2（定稿）
   2. 覆盖数据采集入库、门户认领审核、检索请求处理三条关键流程
   3. 暂不展开数据库表、接口字段、部署组件
 
