@@ -1,0 +1,95 @@
+@startuml
+title 智能笔记助手需求分析｜时序图·门户认领审核 v0.2
+
+skinparam shadowing false
+skinparam defaultFontName Microsoft YaHei
+skinparam sequence {
+  ArrowColor #1F4E78
+  LifeLineBorderColor #1F4E78
+  ParticipantBackgroundColor #EAF3F8
+  ParticipantBorderColor #1F4E78
+}
+autonumber
+
+' 依据：
+' - 工作区/需求分析/分析文档/02-关键流程文字脚本-v0.1.md §3
+' - 工作区/需求分析/分析文档/01-业务对象清单-v0.1.md
+' v0.2 变更：补 §3.7.3 审核超时分支；legend 增补并行结论约束说明
+
+actor "用户/作者" as U
+boundary "门户界面" as PortalUI
+control "认领控制器" as CC
+entity "门户条目" as Entry
+entity "认领申请" as Claim
+entity "审核任务" as ReviewTask
+actor "审核人" as Reviewer
+boundary "审核界面" as ReviewUI
+control "审核控制器" as RC
+entity "审核结论" as Decision
+entity "通知" as N
+
+U -> PortalUI : 查看门户条目\n发起认领
+PortalUI -> CC : 提交认领申请(条目, 身份说明, 证明材料)
+CC -> Entry : 校验条目是否允许认领
+CC -> CC : 校验用户资格与申请条件
+
+alt 条目不可认领或已锁定
+  CC --> PortalUI : 返回拒绝原因
+  PortalUI --> U : 提示暂不可认领
+else 校验通过
+  CC -> Claim : 创建认领申请
+  CC -> ReviewTask : 生成审核任务
+  CC -> N : 发送待审核通知
+  N --> Reviewer : 提醒有新的认领审核任务
+
+  alt 审核任务超时
+    ReviewTask --> CC : 状态超时(待处理提醒/升级)
+    CC -> N : 发送超时提醒或升级请求
+    N --> Reviewer : 提醒复审，或升级给管理员复核
+  else 审核人按时处理
+    Reviewer -> ReviewUI : 打开审核任务
+    ReviewUI -> RC : 读取申请详情(认领申请, 门户条目)
+    RC -> Claim : 查询申请信息
+    RC -> Entry : 查询条目上下文与归属状态
+
+    alt 证明材料不足
+      Reviewer -> ReviewUI : 要求补充材料
+      ReviewUI -> RC : 提交补充材料要求
+      RC -> Decision : 生成待补充结论
+      RC -> Claim : 更新为待补充
+      RC -> N : 发送补充材料通知
+      N --> U : 通知补充证明材料
+    else 审核通过
+      Reviewer -> ReviewUI : 提交通过结论
+      ReviewUI -> RC : 提交审核结论(通过)
+      RC -> Decision : 生成通过结论
+      RC -> Claim : 更新为已通过
+      RC -> Entry : 更新作者归属状态
+      RC -> N : 发送审核通过通知
+      N --> U : 通知认领成功
+    else 审核驳回
+      Reviewer -> ReviewUI : 提交驳回结论
+      ReviewUI -> RC : 提交审核结论(驳回)
+      RC -> Decision : 生成驳回结论
+      RC -> Claim : 更新为已驳回
+      RC -> N : 发送审核驳回通知
+      N --> U : 通知认领被驳回
+    end
+  end
+end
+
+legend right
+  主线说明
+  · 认领流程的业务主线是
+    “发起申请 → 生成审核任务 → 审核结论 → 回写条目归属”
+  · 审核通过后，门户条目归属状态必须与认领申请可追溯关联
+  · 同一门户条目同一时刻至多一个生效中的审核结论
+
+  本图刻意保留的关键异常
+  · 条目当前不可认领
+  · 审核任务超时：提醒复审或升级管理员复核
+  · 证明材料不足，进入待补充
+  · 审核驳回，条目归属维持原状
+endlegend
+
+@enduml
