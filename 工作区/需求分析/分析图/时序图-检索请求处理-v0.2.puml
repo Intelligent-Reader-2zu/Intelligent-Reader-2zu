@@ -1,5 +1,5 @@
 @startuml
-title 智能笔记助手需求分析｜时序图·检索请求处理 v0.2（门控与降级）
+title 智能笔记助手需求分析｜时序图·检索请求处理 v0.2（定稿）
 
 skinparam shadowing false
 skinparam defaultFontName Microsoft YaHei
