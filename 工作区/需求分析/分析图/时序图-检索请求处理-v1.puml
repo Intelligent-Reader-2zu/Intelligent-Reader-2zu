@@ -1,0 +1,61 @@
+@startuml
+title 智能笔记助手｜检索请求处理时序图 v1（主流程）
+
+skinparam shadowing false
+skinparam defaultFontName Microsoft YaHei
+skinparam maxMessageSize 80
+skinparam ParticipantPadding 60
+skinparam sequence {
+  ArrowColor #1F4E78
+  LifeLineBorderColor #1F4E78
+  ParticipantBackgroundColor #EAF3F8
+  ParticipantBorderColor #1F4E78
+}
+hide footbox
+autonumber
+
+actor "用户" as U
+boundary "检索界面" as UI
+control "检索控制器" as SC
+entity "权限规则" as PR
+entity "索引" as IDX
+entity "证据" as EV
+participant "授权模型服务" as MS <<外部>>
+entity "回答结果" as ANS
+entity "引用" as CIT
+
+U -> UI : 输入查询并显式选择范围
+UI -> SC : 提交检索请求(类型, 范围)
+SC -> PR : 确认身份/工作区并过滤授权版本
+PR --> SC : 可访问版本集
+SC -> IDX : 检索有效版本中的候选内容块
+IDX --> SC : 候选块及来源定位
+SC -> EV : 组装本次证据范围
+EV --> SC : 证据及版本/页码/章节/定位
+
+alt 普通检索（UC05）
+  SC --> UI : 返回结果列表与来源定位
+  UI --> U : 展示来源、原文片段和跳转入口
+else 问答/摘要（UC06/UC07）
+  SC -> EV : 核查版本、敏感级别、置信度与覆盖度
+  EV --> SC : 合格证据契约
+  SC -> UI : 展示拟外发文件/版本、服务和用途
+  UI -> U : 请求本次逐文件确认
+  U --> UI : 确认
+  UI --> SC : 传回本次确认
+  SC -> MS : 仅发送确认过的证据契约
+  MS --> SC : 返回结构化回答/摘要
+  SC -> ANS : 记录回答及结论
+  SC -> CIT : 绑定并核验本次证据引用
+  CIT -> EV : 校验 evidence_id、原文和定位
+  EV --> CIT : 有效来源与定位
+  CIT --> SC : 已核验引用
+  SC --> UI : 返回回答结果与引用
+  UI --> U : 展示结论、引用与原文入口
+end
+
+note over SC,IDX
+权限过滤先于检索；失效索引和撤权版本不得进入有效结果。
+end note
+
+@enduml
