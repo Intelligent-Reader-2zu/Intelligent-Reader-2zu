@@ -15,7 +15,7 @@ hide footbox
 autonumber
 
 actor "用户" as U
-boundary "检索界面" as UI
+boundary "检索界面" as SearchUI
 control "检索控制器" as SC
 entity "权限规则" as PR
 entity "索引" as IDX
@@ -24,14 +24,14 @@ participant "授权模型服务" as MS <<外部>>
 entity "回答结果" as ANS
 entity "引用" as CIT
 
-U -> UI : 输入查询并显式选择当前文档/文档集合
-UI -> SC : 提交检索请求(类型, 范围)
+U -> SearchUI : 输入查询并显式选择当前文档/文档集合
+SearchUI -> SC : 提交检索请求(类型, 范围)
 SC -> PR : 确认身份/工作区，过滤授权版本
 PR --> SC : 可访问版本集
 
 break 范围为空：不检索未授权内容（ERR-301）
-  SC --> UI : 返回空范围提示
-  UI --> U : 提示调整范围或权限
+  SC --> SearchUI : 返回空范围提示
+  SearchUI --> U : 提示调整范围或权限
 end
 
 SC -> IDX : 检查有效版本并检索候选块
@@ -40,38 +40,38 @@ SC -> EV : 组装本次证据范围
 EV --> SC : 证据及版本/页码/章节/定位
 
 break 来源失效或无依据：不生成确定结论
-  SC --> UI : 返回失效/空结果与原文入口
-  UI --> U : 提示重新检索或补充范围
+  SC --> SearchUI : 返回失效/空结果与原文入口
+  SearchUI --> U : 提示重新检索或补充范围
 end
 
 alt 普通检索（UC05）
-  SC --> UI : 返回按来源分组的结果及定位
-  UI --> U : 展示来源、原文片段与跳转入口
+  SC --> SearchUI : 返回按来源分组的结果及定位
+  SearchUI --> U : 展示来源、原文片段与跳转入口
 else 问答/摘要（UC06/UC07）
   SC -> EV : 核查版本、敏感级别、置信度和覆盖度
   EV --> SC : 合格证据契约与 allow-list
 
   break 证据不合格/不足：本地证据或待复核
-    SC --> UI : 返回证据/needs_human_review
-    UI --> U : 提示补充范围或人工复核
+    SC --> SearchUI : 返回证据/needs_human_review
+    SearchUI --> U : 提示补充范围或人工复核
   end
 
-  SC -> UI : 展示拟外发文件/版本、服务和用途
-  UI -> U : 请求本次逐文件确认
-  U --> UI : 确认或拒绝
-  UI --> SC : 传回本次决定
+  SC -> SearchUI : 展示拟外发文件/版本、服务和用途
+  SearchUI -> U : 请求本次逐文件确认
+  U --> SearchUI : 确认或拒绝
+  SearchUI --> SC : 传回本次决定
 
   break 拒绝/离线/策略禁云：不调用云端
-    SC --> UI : local_evidence_only
-    UI --> U : 展示本地证据与原文
+    SC --> SearchUI : local_evidence_only
+    SearchUI --> U : 展示本地证据与原文
   end
 
   SC -> MS : 仅发送确认过的证据契约
   MS --> SC : 返回结构化回答/摘要
 
   break 模型失败：降级为本地结果
-    SC --> UI : model_failed，返回检索结果
-    UI --> U : 提示模型不可用
+    SC --> SearchUI : model_failed，返回检索结果
+    SearchUI --> U : 提示模型不可用
   end
 
   SC -> ANS : 记录回答及结论
@@ -81,13 +81,13 @@ else 问答/摘要（UC06/UC07）
 
   break 引用无效：禁止显示为已核验答案
     CIT --> SC : citation_invalid
-    SC --> UI : 返回失效提示与本地证据
-    UI --> U : 展示待复核/原文
+    SC --> SearchUI : 返回失效提示与本地证据
+    SearchUI --> U : 展示待复核/原文
   end
 
   CIT --> SC : 已核验引用
-  SC --> UI : 返回回答结果与引用
-  UI --> U : 展示结论及可回溯原文入口
+  SC --> SearchUI : 返回回答结果与引用
+  SearchUI --> U : 展示结论及可回溯原文入口
 end
 
 legend right
