@@ -1,0 +1,102 @@
+@startuml
+title 智能笔记助手需求分析｜时序图·笔记保存与导出 v0.2（定稿）
+
+skinparam shadowing false
+skinparam defaultFontName Microsoft YaHei
+skinparam maxMessageSize 80
+skinparam ParticipantPadding 40
+skinparam sequence {
+  ArrowColor #1F4E78
+  LifeLineBorderColor #1F4E78
+  ParticipantBackgroundColor #EAF3F8
+  ParticipantBorderColor #1F4E78
+}
+hide footbox
+autonumber
+
+' 依据：
+' - 阶段成果/需求分析/分析文档/02-关键流程文字脚本-v0.1.md §3
+' - 阶段成果/需求分析/分析文档/01-业务对象清单-v0.1.md（BO-01 ~ BO-24）
+' - 阶段成果/需求分析/分析文档/04-模型一致性检查表-v0.2.md
+' - 阶段成果/需求分析/分析文档/流程脚本-笔记保存与导出.md（消息编号 M01–M25 与本图一一对应）
+
+actor "用户" as U
+boundary "笔记界面" as NoteUI
+control "笔记控制器" as NC
+entity "内容块" as BLK
+entity "笔记模板" as TPL
+entity "笔记" as Note
+entity "批注" as ANN
+entity "标签" as TAG
+entity "引用" as CIT
+entity "回答结果" as ANS
+entity "分享链接" as SHARE
+entity "通知" as N
+
+== 阶段一：保存校验 ==
+
+U -> NoteUI : 在原文中选中内容\n发起"保存为笔记"
+NoteUI -> NC : 提交保存意图(选区, 原文定位, 可选模板)
+NC -> BLK : 校验原文定位是否有效
+
+alt 定位失效
+  NC --> NoteUI : 返回定位失效原因
+  NoteUI --> U : 提示重新选择原文片段
+end
+
+' 定位有效时进入阶段二；失效则流程到此结束
+
+== 阶段二：生成与落库 ==
+
+  NC -> TPL : 读取模板字段与输出格式
+  TPL --> NC : 模板定义(无模板时取默认)
+  NC -> Note : 创建笔记(正文, 类型, 定位锚点)
+  NC -> ANN : 写入批注(可选)
+  NC -> TAG : 绑定标签
+  NC -> CIT : 关联引用
+
+  alt 存在回答结论
+    CIT -> ANS : 核验结论来源
+    ANS --> CIT : 来源与定位
+  end
+
+  NC -> N : 生成保存成功通知
+  N --> U : 通知笔记已保存
+
+== 阶段三：导出与分享 ==
+
+  U -> NoteUI : 选择笔记范围\n发起导出或分享
+  NoteUI -> NC : 提交导出请求(范围, 格式)
+  NC -> Note : 收集笔记及其批注、标签
+  NC -> CIT : 汇总引用与原文定位
+
+  alt 部分引用定位失效
+    NC --> NoteUI : 返回失效项并标记待复核
+    NoteUI --> U : 提示部分引用无法回溯
+  else 引用校验通过
+    NC -> SHARE : 创建分享链接(范围, 有效期)
+    SHARE --> NC : 链接与访问范围
+    NC -> N : 生成导出完成通知
+    N --> U : 提供带引用的导出结果与分享入口
+  end
+
+legend right
+  主线说明
+  · 保存笔记不等于"把一段文字复制走"
+  · 必须保留原文定位与引用，笔记才可回溯
+  · 导出与分享的每一条结论都必须带原文定位
+
+  结束标志
+  · 笔记对象落库且引用可回溯的那一刻
+  · 分享链接生成，即本次导出完成
+
+  关键异常（刻意只保留两条）
+  · 原文定位失效：不允许保存无锚点的笔记
+  · 引用定位失效：导出时标注待复核，不静默丢弃
+
+  边界说明
+  · 笔记界面为边界对象，不进业务对象清单（见《04-模型一致性检查表》§4）
+  · 分享范围受权限规则约束，本图不展开权限实现
+endlegend
+
+@enduml
