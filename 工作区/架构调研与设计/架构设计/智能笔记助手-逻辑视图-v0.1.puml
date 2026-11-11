@@ -1,0 +1,54 @@
+@startuml
+title 智能笔记助手 · 逻辑视图 v0.1（首轮设计稿）
+
+top to bottom direction
+skinparam shadowing false
+skinparam defaultFontName Microsoft YaHei
+skinparam componentStyle rectangle
+skinparam packageStyle rectangle
+skinparam linetype ortho
+skinparam ArrowColor #1F4E78
+skinparam PackageBorderColor #1F4E78
+skinparam PackageBackgroundColor #F7FAFC
+skinparam ComponentBorderColor #1F4E78
+skinparam ComponentBackgroundColor #EAF3F8
+
+actor "用户" as User
+component "客户端\nWeb/桌面形态待定" as Client
+component "用例入口与编排\n导入 · 检索/问答 · 笔记/导出" as UseCases
+component "身份、权限与策略门\n身份/工作区 · 有效版本 · 外发/引用/分享规则" as Governance
+
+package "核心业务模块（逻辑边界，不代表独立部署）" {
+  together {
+    component "文档导入与索引\n文档/版本生命周期\n异步任务编排 · 解析/OCR\n索引可用后才可检索" as Documents
+    component "检索、证据与回答\n全文/可选语义召回\n证据契约 · 问答路由/模型适配\n引用独立校验" as SearchEvidence
+    component "笔记、导出与分享\n原文锚点校验\n笔记/批注/标签管理\n分享范围校验" as Notes
+  }
+}
+
+component "适配器与持久化端口\n解析器/OCR · 索引读写\n业务状态/任务 · 原文/解析产物" as Adapters
+component "持久化角色（技术待定）\n业务状态/任务 · 原文/解析产物\n全文索引 · 可选向量索引" as Stores
+cloud "外部授权模型服务\n可选；只接收获准证据" as ModelService
+
+User --> Client
+Client --> UseCases
+UseCases --> Governance
+Governance --> Documents
+Governance --> SearchEvidence
+Governance --> Notes
+Documents --> Adapters
+SearchEvidence --> Adapters
+Notes --> Adapters
+Adapters --> Stores
+SearchEvidence --> ModelService
+
+legend right
+  图示范围：核心逻辑模块及主要依赖方向
+  不等同于需求分析业务类图，不表示组件独立部署
+  检索先过滤权限/有效版本；外发受策略及逐文件/版本确认控制
+  模型禁用/失败时仍提供本地检索、证据和原文能力
+  引用按本次 allow-list、来源版本和原文定位独立校验
+  异步任务首版可同机运行；数据库、队列和具体模型待确认
+endlegend
+
+@enduml

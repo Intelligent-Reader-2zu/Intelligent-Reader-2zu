@@ -1,0 +1,71 @@
+@startuml
+!theme plain
+title Open WebUI v0.13.0 架构调研视图\n源码结构与仓库 Compose 示例
+
+left to right direction
+skinparam shadowing false
+skinparam componentStyle rectangle
+skinparam packageStyle rectangle
+skinparam defaultTextAlignment center
+skinparam defaultFontName "Microsoft YaHei"
+
+actor "用户" as User
+
+node "浏览器" as Browser {
+  component "Svelte / SvelteKit 前端\n在浏览器运行" as Frontend
+}
+
+node "Docker Compose 示例部署" as Deployment {
+  node "open-webui 容器\n主机 3000 → 容器 8080" as WebContainer {
+    component "FastAPI / Uvicorn\n同一主应用托管 API 与静态前端" as API
+    component "WebSocket / Socket.IO" as WS
+    component "业务路由模块\n聊天、用户、文件、知识库、检索、模型" as Routes
+    component "RAG 处理\n解析、切分、Embedding、检索、可选重排" as RAG
+    component "模型接入路由\nOllama / OpenAI 兼容 API" as Provider
+    folder "open-webui 持久化卷\n/app/backend/data\nSQLite + Chroma + 本地文件（默认）" as AppVolume
+  }
+
+  node "ollama 容器\nCompose 示例" as OllamaContainer {
+    component "Ollama 模型服务" as Ollama
+  }
+
+  folder "ollama 持久化卷\n模型文件" as ModelVolume
+}
+
+cloud "可选远程模型服务\nOpenAI 兼容 API 等" as RemoteModels
+cloud "可选外部持久化适配器\nPostgreSQL / pgvector\nS3 / GCS / Azure 等" as ExternalStores
+
+User --> Frontend : HTTPS / HTTP
+Frontend --> API : REST API
+Frontend --> WS : 实时消息
+API --> Routes
+Routes --> RAG
+Routes --> Provider
+
+API --> AppVolume : 结构化数据
+RAG --> AppVolume : 向量索引
+Routes --> AppVolume : 文件读写
+
+Provider --> Ollama : HTTP API\n默认 Compose 连接
+Provider ..> RemoteModels : 按配置调用
+Ollama --> ModelVolume : 模型持久化
+API ..> ExternalStores : 按配置替换
+RAG ..> ExternalStores : 按配置替换
+Routes ..> ExternalStores : 按配置替换
+
+note bottom of Deployment
+  仓库 Compose 示例是一个 WebUI 容器加一个 Ollama 容器。
+  SQLite、Chroma 和本地文件使用 WebUI 数据卷持久化；
+  PostgreSQL/pgvector 与对象存储是可配置替代项，
+  并非默认 Compose 中各自独立运行的服务。
+  该示例未展示多副本、负载均衡或灾备。
+end note
+
+legend right
+  | 线型 | 含义 |
+  | --> | 主要请求 / 数据路径 |
+  | ..> | 可选或配置后才使用 |
+  本图为对 v0.13.0 源码与 Compose 示例的归纳，
+  不是 Open WebUI 官方发布的部署架构图。
+endlegend
+@enduml

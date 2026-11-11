@@ -1,0 +1,48 @@
+@startuml
+title 智能笔记助手 · 部署视图 v0.1（暂定单机演示剖面）
+
+left to right direction
+skinparam shadowing false
+skinparam defaultFontName Microsoft YaHei
+skinparam componentStyle rectangle
+skinparam packageStyle rectangle
+skinparam linetype ortho
+skinparam ArrowColor #1F4E78
+skinparam NodeBorderColor #1F4E78
+skinparam NodeBackgroundColor #F7FAFC
+skinparam ComponentBorderColor #1F4E78
+skinparam ComponentBackgroundColor #EAF3F8
+
+actor "用户" as User
+node "用户设备" as UserDevice {
+  artifact "浏览器/客户端\n形态待定" as Client
+}
+
+node "演示/单机运行环境\n（当前工作假设，部署位置待确认）" as Host {
+  node "应用部署单元" as AppNode {
+    artifact "智能笔记助手应用\nWeb/API + 模块化业务逻辑\n解析/索引异步任务逻辑\n含受控模型适配器" as App
+  }
+
+  node "本机持久化区\n（角色划分，物理拆分待定）" as DataNode {
+    database "业务状态存储\n用户/权限/版本/任务/笔记\n技术待定" as BusinessData
+    folder "原文及解析产物\n技术待定" as OriginalData
+    database "全文索引\n可选向量索引\n技术待定" as SearchIndex
+  }
+}
+
+cloud "外部授权模型服务\n可选；只接收门控通过的证据" as CloudModel
+
+User --> Client
+Client --> App : HTTPS / 本地连接（待定）
+App --> DataNode
+App <--> CloudModel
+
+legend right
+  暂定单机演示剖面；应用内含解析/索引异步任务逻辑
+  持久化区按角色表达，可同机共置；具体技术和备份方案未定
+  是否拆分独立 worker、是否单用户/多人仍待确认
+  云端模型可禁用或失败；本地检索、证据和原文阅读仍可用
+  不规定容器编排、消息代理、数据库产品或高可用拓扑
+endlegend
+
+@enduml
